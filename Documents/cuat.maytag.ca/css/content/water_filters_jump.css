@@ -1,0 +1,39 @@
+#wf_wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+#wf_wrapper h1 {
+	margin: 10px 0 25px 0;
+	color: #666666;
+	font-size: 21px;
+}
+.wf_con {
+	width: 422px;
+	height: 408px;
+	margin: 0 auto;
+	padding: 79px 0 0 538px;
+	background: url('/images/content/jumppage/mt_wf_hero.jpg');
+}
+.wf_con div {
+	width: 350px;
+}
+html[lang='fr'] .wf_con h2 {
+	font-size:20px;
+}
+.wf_con h3 {
+	font-weight: normal;
+}
+.wf_con ul li{
+	list-style: disc;
+}
+html[lang='fr'] .wf_con ul, .wf_con a{
+	margin: 0 0 35px 20px;
+}
+.wf_con ul, .wf_con a {
+	display: block;
+	margin: 10px 0 40px 20px;
+}
+.wf-con a span {
+	margin-left: 10px;
+	color: #005ABB;
+}

@@ -1,0 +1,98 @@
+@charset UTF-8;
+div#ten-year-warranty {
+  width: 845px;
+  margin: 0 auto;
+}
+div#ten-year-warranty div.row {
+  height: 441px;
+  margin: 35px 0 55px;
+  clear: both;
+}
+div#ten-year-warranty div.row div.cell {
+  width: 280px;
+  border-right: 2px solid #dfdfdf;
+  float: left;
+  text-align: center;
+}
+div#ten-year-warranty div.row div.cell img {
+  width: 210px;
+  margin: 0 35px;
+}
+div#ten-year-warranty div.row div.cell div.infobox {
+  background: url(/images/10-years/sectionbg.jpg) center top no-repeat;
+  margin: 0 35px;
+  height: 170px;
+}
+div#ten-year-warranty div.row div.cell div.infobox h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+div#ten-year-warranty div.row div.cell div.infobox p,
+div#ten-year-warranty div.row div.cell div.infobox ul {
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: 20px;
+}
+div#ten-year-warranty div.row div.cell div.infobox li {
+  line-height: 20px;
+}
+div#ten-year-warranty div.row div.cell div.infobox ul,
+div#ten-year-warranty div.row div.cell div.infobox li {
+  list-style: disc;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+}
+div#ten-year-warranty div.row div.cell div.infobox.fr {
+  height: 210px;
+  margin: 0 35px 15px;
+}
+div#ten-year-warranty div.row div.cell div.infobox.fr p,
+div#ten-year-warranty div.row div.cell div.infobox.fr ul {
+  line-height: 18px;
+}
+div#ten-year-warranty div.row div.cell div.infobox.fr li {
+  line-height: 18px;
+}
+div#ten-year-warranty div.row div.cell a.button {
+  background: #005abb;
+  border-radius: 7px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 9px 9px;
+  margin: 5px auto;
+  display: block;
+  width: 200px;
+}
+div#ten-year-warranty div.row div.cell a.download {
+  display: block;
+  margin-top: 10px;
+}
+div#ten-year-warranty div.row div.cell a.download:hover {
+  text-decoration: underline !important;
+}
+div#ten-year-warranty div.row div.cell a.download img {
+  width: 22px;
+  display: inline;
+  vertical-align: middle;
+  margin: 3px;
+}
+div#ten-year-warranty div.row div.cell:last-child {
+  border-right: none;
+}
+#ten-footer {
+  background: url(../images/10-years/footer.jpg) center top no-repeat;
+  padding: 13px 280px 15px 250px;
+  height: 106px;
+}
+#ten-footer h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#ten-footer p {
+  font-size: 10px;
+}

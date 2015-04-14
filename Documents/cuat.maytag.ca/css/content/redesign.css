@@ -1,0 +1,529 @@
+/------------------ OLD CONTENT CSS DO NOT DELETE ---------------------/ .product-details-page #main-container{width:960px}
+.main-column{float:left;padding:25px 0 0 0;width:745px}
+#my-appliances .main-column{padding:0}
+.product-details-page .main-column{width:720px}
+.product-details-page .recently_products{float:left}
+#my-appliances.product-details-page .main-column{width:944px}
+#water-filters.product-details-page .main-column{width:620px}
+.product-listing-page .main-column{width:165px;padding:0}
+.side-column{margin:10px 38px 0 0;float:left;width:160px}
+.product-listing#main-container{*float:left;width:auto}
+#small-appliances.product-listing-page .product-listing .side-column #accessories.product-listing-page .accessories-listing .side-column{width:720px}
+.error_msg,.required-field1,.oc_entry_field_error,.errorMessage,#errMsgDiv,.continue-shopping a,#checkout_crumb a span,.return_to_search_results,ol#show_result li a,.page_number_part ol li a,.tips a,.billing_address a,.order_content,#order_details tr td a,#need_help a,.oc_register #main .owner_center_continue_link a,.follow_info a,.orange_star,.inForm .location_cont .oc_entry_field_input a,.oc_required_field,.download-adobe,.pdf_link ul li a,.link_list a,.product_detail a.model_name,.myaccount_link,.leftnav_myaccount_dotted a,.thickbox,.column.simple_register div .required-field,.sign_in_linkLostPassword,.endeca_viewAll_btn,.red,.category-page ul li p.red,.pagination .active,.compare_action_links .right a,.required-field,.product-help-search-result a,.manual-item a,.service_plan_btn a,.schedule_repairs a,.add_to_cart,.callout a{color:#c00}
+.red:hover{color:#c00}
+#HelpContactUsDisplay .inputCol .errorMessage{margin:0;visibility:hidden}
+.owner_center_modal #got_more_app .add_btn a:link,.owner_center_modal #got_more_app .add_btn a:active,.owner_center_modal #got_more_app .add_btn a:visited,.owner_center_modal #add_reg_an_app .add_btn a.thickbox{color:#fff}
+#unregistered_form #shippingAddressCreateEditFormDiv_1 div.required-field,#unregistered_form #billingAddressCreateEditFormDiv_1 div.required-field,#QuickCheckout .dijitContentPane div div.required-field,.AddressBook .column div.required-field,.required-field{float:left;width:auto;padding:0 2px 0 0;margin:0}
+.label_spacer .text-label{padding:0 0 0 7px}
+.personalInformationPage .column div.required-field,.column.simple_register div .required-field,#my-account-page .quick-checkout-address-page .required-field{margin:0;width:auto;float:left}
+#mid_part .indicates_ins,#oc_repair_required_field_message .quick-checkout-address-page .required-fields-text{float:right;width:auto}
+.forgot-password .required-field{display:none}
+#my-account-page .personalInformationPage #Register #WC_UserRegistrationUpdateForm_div_12 .required-field{margin:0 0 0 350px!important}
+.pdf_link ul li,.pdf{background:url(/images/global/icons/pdf.png) no-repeat scroll left top transparent;float:left;margin:0;padding:6px 0 5px 20px;text-transform:uppercase;width:100%;font-weight:bold;font-size:90%;line-height:110%}
+#search_box{margin:0 10px 0 0;background:#fff}
+#submission_ok_popup input,#oc_register_auth #oc_content #productRegistration .inForm .location_cont .oc_entry_field .oc_entry_field_input a,.navLinks div a,.owner_center_modal .got_more_app_btn,.owner_center_modal .add_btn,#oc_action_sub_wrapper #sumit,.secondary_button a,.primary_button a,.oc_search_content_formInfo .medium-btn,#oc_existing_apps_section #btn a,#nextstep,#searchButtonId,#AddAppliance,.register_button a,.search_btn .search_btn,.yellow,#HelpContactUsDisplay .submit_button{background:none repeat scroll 0 0 #c00;border:medium none;color:#fff;cursor:pointer;font-size:110%;padding:6px 10px 5px;text-transform:uppercase;float:left}
+.primary_button a.sign-in img{display:none}
+#submission_ok_popup input{background:none repeat scroll 0 0 #c00;border:medium none;color:#fff;cursor:pointer;font-size:110%;padding:6px 10px 20px;text-transform:uppercase;float:left;margin:10px 0 0 0}
+.owner_center_modal .got_more_app_btn a{color:#fff}
+#oc_register_auth #oc_content #productRegistration .inForm .location_cont .oc_entry_field .oc_entry_field_input a{margin:30px 10px 0 0}
+.owner_center_modal .got_more_app_btn,.owner_center_modal .add_btn{margin:20px 10px 0 0}
+div#promotions #PromotionCodeForm .secondary_button.button_fit a,.register_button a,.login_button a{margin:0}
+.secondary_button a#WC_ShopcartAddressFormDisplay_links_2,.navLinks div.popupButtonNo a,.secondary_button a#WC_UnregisteredCheckout_links_3,.secondary_button a#WC_ShipmentDisplay_links_5,.personalInformationPage .secondary_button a{background:#bbb}
+.navLinks div.popupButtonNo a{margin:0 25px 0 0}
+#oc_action_sub_wrapper{float:left;width:100%;padding:6px 25px 5px 0}
+#oc_action_sub_wrapper .ui-button{float:left;padding:6px 25px 5px 10px}
+#oc_action_sub_wrapper #cancel.ui-button{padding:6px 10px 5px}
+#oc_action_sub_wrapper #nextstep{background:url("/images/global/icons/white-arrow.png") no-repeat 74px 8px #c00}
+.oc_existing_app.other_row br{display:none}
+#searchPage a.more_info_link{background:0;color:#c00;font-size:100%;text-transform:none;padding:0;display:block;clear:both;padding:0}
+.oc_search_content_formInfo{float:left}
+#oc_repair_print_link a{border:1px solid #ddd;cursor:pointer;float:right;font-size:110%;margin:0;padding:5px 10px;text-transform:capitalize}
+a#print{background:url(/images/global/icons/print.jpg) no-repeat scroll 5px 2px #fff;border:1px solid #ddd;cursor:pointer;float:right;font-size:110%;margin:0;padding:5px 10px 5px 30px}
+.ui-button.gray{background:none repeat scroll 0 0 #bbb;border:medium none;color:#fff;cursor:pointer;font-size:110%;margin:0 10px 20px 0;padding:6px 10px 5px;text-transform:uppercase;float:left}
+#filter-selection .red-button{margin:10px}
+.final-option{border-left:1px solid #000;padding:0 0 0 5px}
+tr.grey,.spec_contents_line.odd{background:#eee;width:100%;float:left;margin:0}
+.order_total tr.odd,.carousels_panels table tr.odd{background:#eee;width:100%;float:left}
+.carousels_panels table{border-bottom:solid 1px #ddd}
+table tr.last{border-bottom:1px solid #bbb}
+table tr.table-title{margin:10px 0}
+.specs_content table tr.odd td{background:#e2e2e2}
+table tr.odd td.even{background:0}
+table tr.table-title td{width:100%;padding:0;font-weight:normal;border:0}
+#global-utilities{width:100%;height:20px;margin:10px 0;text-align:right}
+label.tremname2,#global-utilities a{margin:0 5px;font-size:110%}
+#global-utilities a.chat{display:none;}
+#global-utilities a img{margin:0 0 -5px 2px}
+.carousel-controls{float:left;width:20px;height:70px;background:url(/images/scrollingArrows.png) no-repeat 0 0}
+.carousel-next.carousel-controls{background-position:-23px 30px!important}
+.carousel-next.carousel-controls.active{background-position:-23px -35px!important}
+#carousel-previous{background-position:0 25px!important}
+#carousel-next{background-position:-20px 25px!important}
+#carousel-next.carousel-controls.active{background-position:-20px -39px!important}
+#carousel-previous.carousel-controls.active{background-position:0 -39px!important}
+.carousel-previous.carousel-controls{background-position:3px 30px!important}
+.carousel-previous.carousel-controls.active{background-position:3px -35px!important}
+.product-option-select label{text-transform:uppercase}
+.text-select{background:url(/images/global/product-detail-bg.png) left top no-repeat;width:175px;height:30px;margin:10px 0 20px;overflow:hidden}
+.text-select #choose-color{width:195px}
+.language-select{background:url("/images/global/select-language-background.png") no-repeat scroll left top transparent;height:25px;margin:-4px 0 0;overflow:hidden;width:100px;display:none}
+#WC_PersonalInfoExtension_birth_month,#WC_PersonalInfoExtension_birth_date{background:url(/images/global/icons/dropdown-smallest.png) no-repeat scroll 0 top transparent!important;float:left;height:26px;padding:2px 32px 1px 20px;position:relative;text-indent:-5px;width:65px}
+.number-select{background:url(/images/global/select-number-bg.png) left top no-repeat;width:31%;height:30px}
+.number-select input{background:none repeat scroll 0 0 transparent;border:medium none;font-size:130%;padding:6px;text-align:left;width:30px}
+.filter-form ul li{width:100%;float:left;margin:5px 0}
+.top-row.attachments-item,.top-row.accessories-item,.top-row .manual-item{border-top:0}
+.endeca_compare_btn{width:100%;margin:10px 0 0 0}
+.endeca_compare_btn .label_check_compare{background:url(/images/global/icons/add.png) no-repeat scroll 0 0 transparent;padding:3px 0 0 15px;text-transform:uppercase;font-weight:bold}
+.endeca_compare_btn .label_check_compare input{left:-9999px;position:absolute}
+.product-filtering-container a{color:#c60000;float:left;margin:0 0 10px;width:100%}
+.ui-draggable{cursor:move;height:100%}
+.my_account .main_header_text,#customers_new_or_returning h2,.shoppingCartPage h1,h2.faq_h2,h4.whirlpool,h4.maytag,.which_appliance2,h1.myaccount_link,.status_msg,.main_header_text,#oc_search_manuals_unauth .oc_search_content #main_header h4,#need_help h2,.which_appliance,#main_title,#right_part #sidebar h2,#oc_header_question,#oc_repair_title_wrapper,.product_tab_section_middle #searchArea #ins_text,.reg_app_title,.personalInformationPage .main_header_text,.myaccount_title,.registration_header,#compare_top_carousels .info_counts,.error-message h2{font-size:160%;line-height:130%;font-weight:normal;padding:0;margin:12px 0}
+.error-message h2{float:left}
+.quick-checkout-address-page .myaccount_link,.sign_in_registration .registration_header{width:100%}
+.billing-address-indications{float:left;padding:0 0 10px}
+#ShopCartPagingDisplay,#promotions #PromotionCodeForm,.glossary-navigation,.contentgrad_header,#retainSearchArea,#searchResultDisplayArea{float:left;width:100%}
+form .align{position:relative;float:left;width:100%}
+form .align .myaccount_title{background:#000;color:#fff;font-size:100%;padding:5px;position:absolute;top:-5px;width:265px;right:-235px}
+#compare_top_carousels .info_counts{float:left;margin:10px 10%;width:80%}
+#compare_top_carousels .compare-first-col-espot{font-size:120%;color:#333;margin:0 10%;float:left;width:80%}
+#compare_top_carousels .compare-first-col-espot .phone,#compare_top_carousels .compare-first-col-espot a,#compare_top_carousels .compare-first-col-espot .schedule{padding:0 0 0 25px}
+#compare_top_carousels .compare-first-col-espot .intro{margin:0 0 10px}
+#compare_top_carousels .compare-first-col-espot .phone{font-weight:bold;font-size:13px;background:url(/images/global/icons/phone.jpg) no-repeat;margin:0 0 7px}
+#compare_top_carousels .compare-first-col-espot .live-chat{color:#c00;background:url(/images/global/icons/chat.jpg) no-repeat;margin:0 0 7px}
+#compare_top_carousels .compare-first-col-espot .print{color:#c00;background:url(/images/global/icons/print.jpg) no-repeat}
+#compare_top_carousels .compare-first-col-espot .schedule{font-size:10px;margin:0 0 7px}
+.bold{float:left;font-weight:bold;margin:0 3px 0 0}
+.order_checkout #progress_bar{visibility:hidden}
+#progress_bar{position:fixed;left:50%!important;z-index:10002}
+#progress_bar_dialog{position:fixed;top:50%;left:50%;z-index:10002;visibility:hidden}
+.sixpixels{float:left;width:6px;height:1px}
+img.prod_code_msrp_div,#MiniShoppingCart #placeHolder,.tbl_cell .content_container div[align="center"] img,#interestItemMessages,#allItemsList,#MessageArea br,#quick_cart_container{display:none!important}
+.homepage #returning-user-content-wrap,#submission_ok_popup img,.iframe #footer-nav,.iframe #footer-container,.iframe #header-wrap,.iframe #breadcrumb-section,.iframe .utility-page .left_nav,#shopcartAddressForm #WC_ShoppingCartAddressEntryFormf_div_8_5,.order_checkout #WC_BillingAddressDropDownDisplay_div_1.billing_address img,.order_checkout .button_side_message,#Register br,#MessageArea,.closeText,.my_account #WC_UserRegistrationAddForm_div_4,.my_account #WC_UserRegistrationAddForm_div_8 br,.compare_action_links .left,.compare_types .space_y.left,.tbl_cell br,.tbl_cell .yellow,.ygtvtph,#search_filter_results .sub_header,#Register .clear,#Logon .clear,#WC_PersonalInfoExtension_DOB_div_1 #WC_PersonalInfoExtension_DOB_div_8,#WC_PersonalInfoExtension_DOB_div_6 #WC_PersonalInfoExtension_DOB_div_9,.order_status_table .li.clear_float,.order_status_table .li.option_1,#ygtvt123,#ygtvt235,#ygtvt1,#ygtvt113,.ygtvtp,#order_details tr th br,.order_checkout #total_breakdown #order_total td.product_discount,#oc_my_apps_noregapps.owner_center #breadcrumb_container,#oc_my_apps_edit.owner_center #Indicates_a_required_field,.AddressBook #WC_AccountForm_div_4,.AddressBook .addr_detail_contact,.recently_product_taxes,.recently_prod_detail_viewthis,a#wishList,.shoppingPipe,.shoppingCartPipe,.orderSummaryPipe,.shippingBillingPipe,.content_footer .button_footer_line .button_side_message,.order_checkout .spanacce,h4.maytag,#WC_PersonalInfoExtension_mobile_div_mobileCountryCode,span.whirlpool,.view_btn2,.bold2,.page_number_ins2,.mobile-example,.countryCode,.hidden_summary,.my-account-page .my_account .main_header,#my-account-page .my_account .contentline,div#main_content_wrapper div#second_level_category_popup_main_div,.hidden,#my-account-page .sidebar_header,#my-account-page #left_nav br,.productPopup,.whatsInside,.insideList,.endeca_sortViewDisplayBar_bottom,.nodisplay,.endeca_quickView.thickbox,#fancybox-overlay,.msrp_text,#Search_Result_div .endeca_sortViewDisplayBar_top,#sortBy_text,.small_blue_divider,.spacer,.large_blue_divider,.search_title,#global_utilities,.nodisplay,.product-tab-selection #features #top_features .feature img,.row_cell,.quick_view_hover_button,.product_list_table_desc_cell .top_features,#my-appliances .serial_num,.compare_types .col_2.left .upcase,.compare_types .col_2.left br{display:none}
+.side-column-espot-content{float:left;width:100%;margin:0;height:100px;color:#fff;text-align:center;padding:25px 0}
+.espot-top-content{background:none repeat scroll 0 0 #bbb;color:#fff;float:left;height:20px;padding:20px 0;text-align:center;width:100%}
+.espot-listing-bottom-content{background:none repeat scroll 0 0 #bbb;color:#000;float:left;padding:40px 0;text-align:center;width:100%;margin:10px 0 0 0}
+.countertop_appliances_bottom_espot{background:none repeat scroll 0 0 #f3f3f3;float:left;padding:15px 0;width:100%}
+.side-column-espot-content .left_eSpot{border:3px solid #c00;color:#c00;font-size:105%;font-weight:bold;height:95px;padding:25px 0 0;text-transform:uppercase;width:153px;display:block}
+.side-column-espot-content .left_eSpot h3{color:#c00;font-weight:bold}
+.side-column-espot-content .left_eSpot span{color:#666}
+#main-slider{float:left;width:100%;height:500px;background:#333;overflow:hidden;position:relative}
+.promotions-slider{margin:0;list-style:none;position:absolute;top:0;left:0}
+.promotions-slider .promotion{float:left;position:relative;width:1020px;height:500px}
+.promotions-slider .promotion .promotion-copy{text-align:center;color:#fff;position:absolute;font-size:15px}
+.promotions-slider .promotion a:hover .promotion-copy{text-decoration:underline}
+.promotions-slider .promotion #home-slide1.promotion-copy{bottom:25px;left:40px}
+.promotions-slider .promotion #home-slide2.promotion-copy{text-align:left;left:40px;top:160px}
+.promotions-slider .promotion #home-slide3.promotion-copy{color:#000;left:190px;bottom:150px}
+.promotions-slider .promotion #home-slide4.promotion-copy{right:45px;bottom:90px}
+.promotions-slider .promotion #home-slide5.promotion-copy{left:65px;bottom:55px}
+.promotions-slider .promotion .promotion-image{position:absolute;top:0;left:0}
+#slider-controls-container{width:100%;float:left;margin:10px 0}
+.slider-controls{width:625px;margin:10px auto}
+.slider-controls .slider-control{width:100px;height:20px;margin:0 5px;background:#ccc;color:#ccc;cursor:pointer}
+.slider-controls .slider-control.selected,.slider-controls .slider-control.active{background:#c00;color:#c00}
+.slider-number{background:none repeat scroll 0 0 #fff;height:10px;margin:6px 0 0;padding:4px 0 0;text-align:center;width:100%}
+#lowerRightContent,#bottomContent{width:960px;margin:20px auto}
+#lowerRightContent .home-entry-column,#bottomContent .home-entry-column{float:left;width:300px;margin:0 10px}
+#lowerRightContent .home-entry-column .home-entry-large,#lowerRightContent .home-entry-column .home-entry-med,#lowerRightContent .home-entry-column .home-entry-small,#bottomContent .home-entry-column .home-entry-large,#bottomContent .home-entry-column .home-entry-med,#bottomContent .home-entry-column .home-entry-small{float:left;width:300px;border:4px solid #ddd;position:relative;margin:0 0 10px 0}
+#lowerRightContent .home-entry-column .home-entry-large,#lowerRightContent .home-entry-column .home-entry-large .initial-promo,#lowerRightContent .home-entry-column .home-entry-large .overlay-cta,#lowerRightContent .home-entry-column .home-entry-large .overlay-cta-background,#bottomContent .home-entry-column .home-entry-large,#bottomContent .home-entry-column .home-entry-large .initial-promo,#bottomContent .home-entry-column .home-entry-large .overlay-cta,#bottomContent .home-entry-column .home-entry-large .overlay-cta-background{height:335px}
+#lowerRightContent .home-entry-column .home-entry-med,#lowerRightContent .home-entry-column .home-entry-med .initial-promo,#lowerRightContent .home-entry-column .home-entry-med .overlay-cta,#lowerRightContent .home-entry-column .home-entry-med .overlay-cta-background,#bottomContent .home-entry-column .home-entry-med,#bottomContent .home-entry-column .home-entry-med .initial-promo,#bottomContent .home-entry-column .home-entry-med .overlay-cta,#bottomContent .home-entry-column .home-entry-med .overlay-cta-background{height:160px}
+#lowerRightContent .home-entry-column .home-entry-small,#lowerRightContent .home-entry-column .home-entry-small .initial-promo,#lowerRightContent .home-entry-column .home-entry-smal .overlay-cta,#lowerRightContent .home-entry-column .home-entry-small .overlay-cta-background,#bottomContent .home-entry-column .home-entry-small,#bottomContent .home-entry-column .home-entry-small .initial-promo,#bottomContent .home-entry-column .home-entry-smal .overlay-cta,#bottomContent .home-entry-column .home-entry-small .overlay-cta-background{height:90px}
+#lowerRightContent .home-entry-column .home-entry-med{margin:0 0 8px}
+.home-entry-small .overlay-cta-copy{line-height:125%;top:8%;width:260px}
+.home-entry-small .overlay-cta-copy.shop,.home-entry-small .overlay-cta-copy.kitchenware{padding:10px 0 0;*padding:9px 0 0}
+.overlay-cta{opacity:0;filter:alpha(opacity=0);position:absolute;top:0;left:0;z-index:150;width:100%;height:100%}
+.overlay-cta:hover{opacity:1;filter:alpha(opacity=100)}
+.overlay-cta-background{background:none repeat scroll 0 0 #c00;left:0;position:absolute;top:0;width:300px;z-index:100;opacity:.75;filter:alpha(opacity=75)}
+.overlay-cta-background>a{float:left;height:100%;width:100%}
+.overlay-cta-copy{color:#fff;font-size:120%;font-weight:bold;left:20px;line-height:150%;position:absolute;top:35%;width:230px;z-index:150;filter:alpha(opacity=100)}
+.overlay-cta-copy>a{color:#fff;float:left}
+.home-entry-med .overlay-cta-copy{top:30%;width:260px}
+.initial-promo{left:0;position:absolute;top:0;width:300px;z-index:50}
+.initial-promo img.breakplain{margin:-10px 0 0 0}
+.home-bottom-legal{clear:both;padding:35px 0 0}
+body.product_detail{width:100%;position:relative;margin:0;padding:0;font-family:Helvetica,Arial,sans-serif;font-size:10px;color:#333;float:left;}
+.product_list,.product-display{float:left;width:100%}
+.product_img{float:left;width:390px;text-align:center}
+.product-display .product-image-container{float:left;width:380px;margin-bottom:20px}
+.product-display .product-image-container .product-image{margin:0;text-align:center}
+.product-display .product-image-container .product-image img{max-width:100%}
+.product-display .product-image-container #product-carousel{margin:0 auto}
+.carousel-visible-items{float:left;height:72px;overflow:hidden;position:relative}
+#waffle-bakers-carousel .carousel-visible-items,#commercial-carousel .carousel-visible-items{float:none}
+.kitchen-gallery-appliances .carousel-visible-items{height:160px}
+.module-carousel{float:left;margin:10px 0 0 0;width:100%}
+#kitchen-galleries-carousel .carousel-visible-items{height:85px}
+.carousel-items{position:absolute;left:0}
+.carousel-items .carousel-item{padding:0;cursor:pointer;width:72px;height:72px;text-align:center;margin:0 auto;float:left;}
+.module-item.carousel-item img{border:1px solid #fff}
+.module-item.carousel-item img:hover{border:1px solid #c00}
+.carousel-items .carousel-item img{font-size:50%}
+.kitchen-gallery-appliances{border:1px solid #eee;float:left;width:942px}
+.kitchen-gallery-appliances h3{background:none repeat scroll 0 0 #eee;float:left;font-weight:bold;padding:10px;text-transform:uppercase;width:922px}
+.kitchen-gallery-appliances .module-carousel{display:none}
+.kitchen-gallery-appliances .module-carousel.active{display:block}
+.kitchen-gallery-appliances .carousel-items .carousel-item,#kitchen-galleries-carousel .carousel-items .carousel-item{width:150px;height:auto;text-align:left}
+.kitchen-gallery-appliances .carousel-items .carousel-item .kitchen-gallery-thumbnail{text-align:center;height:115px}
+.carousel-items .carousel-item img{width:69px;height:69px}
+#kitchen-galleries-carousel .carousel-items .carousel-item img{width:auto}
+.kitchen-gallery-appliances .carousel-items .carousel-item img{max-height:90%;width:auto}
+.product_detail{float:left;width:27%;padding:30px 5% 0 1%;font-size:120%;line-height:135%}
+.owner_center_modal .product_detail{width:100%;font-size:100%}
+.owner_center_modal label{width:100%;float:left;text-align:center}
+.product_list .product_detail .instruction{font-weight:bold}
+#water-filter-details{float:left;width:100%;margin:10px 0}
+#water-filter-details .water-filters-specifications-title,#water-filter-details .water-filters-features-title{width:100%;text-transform:uppercase;font-weight:bold;font-size:100%;float:left;margin:0 0 5px 0}
+#water-filter-details .water-filters-specifications-content,#water-filter-details .water-filters-features-content{width:100%;float:left;margin:0 0 5px 0;line-height:135%}
+.product-display .product-overview .product-description{margin:10px 0;padding:10px 0;border-bottom:1px dotted #ddd}
+.product-display .product-overview #color-swatches,.product-display .product-overview .product-color-sku{float:left;font-size:50%;line-height:100%;margin:0 0 5px;width:100%}
+.product-display .product-overview .product-color-sku .product-color{text-transform:capitalize}
+.review-entry-details-column .review-entry-title-container{font-size:140%;line-height:120%;font-weight:bold}
+.product-display .product-overview .product-rating{width:100%;padding:0 0 10px 0;height:25px}
+.product-display .product-overview .product-detail-copy{width:100%;line-height:150%;padding:20px 0;border-top:1px dotted #666;border-bottom:1px dotted #666;margin:0 0 20px 0}
+.product-display .product-overview #color-swatches img{float:left;width: 25px;height: 25px;margin: 0 10px 0 0;cursor:pointer;border:1px solid #fff;font-size:50%}
+.product-display .product-overview #color-swatches img.selected{border:1px solid #666}
+.product-display-color{text-transform:capitalize}
+#product_help_tabs,#product-tabs{width:100%;float:left;margin:0 0 20px}
+.product-options-select-label,.product-options-label{font-weight:bold;margin:0 0 5px 0}
+#product_help_tabs_menu,#product-tabs .product-tabs-menu{float:left;overflow:visible;height:31px;border-bottom:1px solid #bbb;width:100%}
+#product_help_tabs_menu li,#product-tabs .product-tabs-menu .product-tab-option{background: none repeat scroll 0 0 #707070;border-color:#bbb #BBBBBb #bbb #FFFFFF;border-style:solid;border-width:1px;color:#fff;cursor:pointer;font-size:110%;padding:7px 10px;text-align:center;text-transform:uppercase;float:left;}
+#my-appliances #product-tabs .product-tabs-menu .product-tab-option{padding:8px 1% 7px;width:14.45%}
+#product_help_tabs_menu li:hover,#product_help_tabs_menu li.selected,#product-tabs .product-tabs-menu .product-tab-option.selected, #product-tabs .product-tabs-menu .product-tab-option:hover{background:#fff;color:#000;border-top:1px solid #bbb;border-right:1px solid #bbb;border-bottom:1px solid #fff;border-left:1px solid #bbb;padding:7px 10px 8px;}
+#product-tabs .product-tabs-menu .product-tab-option:hover {background:#002E5F; color: #fff;}
+.product-tab-selection{border-bottom:1px solid #bbb;border-left:1px solid #bbb;border-right:1px solid #bbb;float:left;margin:-1px 0 0;padding:2.9%;width:94%}
+.product-tab-selection .product-content{display:none;float:left;line-height:135%}
+.product_help_tab_section{display:none;float:left;line-height:135%;border-bottom:1px solid #bbb;border-left:1px solid #bbb;border-right:1px solid #bbb;margin:-1px 0 0;min-height:135px}
+.product_help_tab_section.selected,.product-tab-selection .product-content.active{display:block;position:relative;width:100%}
+.carousel-controls.active{cursor:pointer}
+.product_help_tab_section #top_features,.product-tab-selection #features #top_features{border-bottom:1px solid #bbb;float:left;padding:0;width:100%}
+.product_help_tab_section #top_features .feature,#features #top_features .feature{width:29%;float:left;border-right:1px solid #bbb;padding:0 3%;height:245px}
+html[lang="fr"] .product_help_tab_section #top_features .feature,#features #top_features .feature{height:350px;}
+.product_help_tab_section #top_features .feature img,#features #top_features .feature img{display:none}
+.product_help_tab_section #top_features .feature.first,.product-tab-selection #features #top_features .feature.first{padding:0 3% 0 0}
+.product_help_tab_section #top_features .feature.last,.product-tab-selection #features #top_features .feature.last{border-right:0;padding:0 0 0 3%}
+.product_help_tab_section #additional_features,.product-tab-selection #features #additional_features{float:left;padding:0 0 10px;margin:20px 0 0 0}
+.product-tab-selection #features #additional_features .feature{float:left;margin:0 20px 0 0;padding:0 20px 0 0;width:290px}
+.manuals_left,.manuals_right{float:left;margin:0 3% 0 0;padding:0 3% 0 0;width:43%}
+.manuals_left{border-right:1px solid #ddd}
+.manual_note{float:left;width:100%;padding:15px 0}
+.product_help_tab_section .product_tab_section_middle{margin:15px 0 0 15px;position:relative;width:915px;float:left}
+.pdf_link{float:left;width:100%;margin:0 0 10px 0}
+.pdf_link ul li{float:left;width:100%;margin:0}
+#product-ratings-reviews-content .reviews-ratings-header #featured-row-2{margin:25px 0 0 0}
+.recently_products. #products-recently-viewed{float:left;width:720px;margin:0 0 20px 0}
+#product-detail-legal{float:left;width:100%;margin:5px 0}
+#product-detail-legal ul li{width:100%;margin:3px 0;font-size:10px;display:inline}
+#products-recently-viewed h4{width:710px;border-bottom:1px solid #bbb;padding:0 0 5px 10px;margin:0 0 10px 0}
+#products-recently-viewed .products-recently-viewed-list{float:left;padding:10px 0;width:720px;border-top:1px solid #bbb;border-bottom:1px solid #bbb}
+#products-recently-viewed .products-recently-viewed-list .recently-viewed-product{width:23%;padding:0 1%}
+#products-recently-viewed .products-recently-viewed-list .recently-viewed-product .recently-viewed-prouct-image{width:100%;text-align:center}
+.modalHeader,.product_help_tab_section .title,.product-overview h1,#products-recently-viewed .products-recently-viewed-list .recently-viewed-product p{color: #323232;/* line-height:125%; */margin:10px 0 5px;padding:0;text-transform: uppercase;line-height: 19px;font-size: 14px;}
+.boldSigleLabel{font-weight:bold;float:left;width:100%;margin:0 0 10px 0}
+.product_help_tab_section .title{font-weight:bold}
+#cta-content{float:left;background:none repeat scroll 0 0 #f3f3f3;border:2px solid #ddd;padding:10px;width:92%}
+.filter-form-single-purchase ul li{width:100%;float:left;margin:5px 0}
+.cta-options .product-detail-price{border-bottom:1px dotted #bbb;margin:0 0 20px;padding:20px 0;width:100%;color: #323232;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.cta-options .product-detail-price .offer-price{position:relative;font-size:120%;font-weight:bold;padding:0}
+.cta-options .product-detail-price .list-price{position:relative;text-decoration:line-through}
+.cta-options .product-detail-price .price{font-size:12px;color:#333;font-weight:bold}
+.share-options{float:left;width:100%}
+.share-options .stButton{margin-right:0;z-index:0}
+.share-options .stButton .stMainServices img,.stButton img{z-index:0!important}
+input.filter-pack{float:left;width:5%}
+.callout{border:1px solid #bbb;padding:13px;position:absolute;top:0;right:0}
+.featured-included{list-style:disc inside none;margin:2px 0}
+#featured-row-2 h4{float:left;width:100%;margin:20px 0}
+#product-manuals-warranty-content{font-size:120%;line-height:140%}
+.manual-item-container{border-right:1px solid #bbb;float:left;margin:0 1% 0 0;padding:1% 1% 0;width:30%}
+.manual-item-container.last{border-right:0}
+.manual-item{float:left;border-top:1px dotted #bbb;width:100%;min-height:170px}
+.ratings-summary-container,.review-entry-main-copy{padding:15px 0;border-bottom:1px dotted #bbb}
+.ratings-reviewer-recommends-container,.review-author,.review-date{font-size:12px;padding:0 5px}
+.review-entry-details-column .review-entry-auth-date-container,.ratings-reviewer-recommends-container{float:right}
+.review-entry-details-column .review-entry-title-container,.add-review .red-button,.reviews-ratings-header h4{float:left}
+.rating-graph{position:relative;background:none repeat scroll 0 0 #bbb;height:12px;width:55px}
+.rating-percentage{position:absolute;top:0;left:0;background:#f9cb00;height:12px;width:10px}
+.ratings-star-amount{float:left;padding:0 2% 0 0}
+.ratings-breakdown{float:left;width:75%;padding:0 0 0 2%;border-left:1px solid #bbb}
+.ratings-breakdown-item{width:32%;padding:0 1% 0 0;margin:3px 0}
+.review-entry-ratings-column .ratings-breakdown-item{width:99%}
+.ratings-breakdown-item .rating-label{font-weight:bold;text-transform:uppercase;font-size:9px}
+.ratings-breakdown-item .rating-graph,.ratings-breakdown-item .rating-ranking{float:left;margin:0 5px 0 0}
+.sort-rating-filters{float:right;margin:25px 0 0 0;width:80px}
+#sort-filters{background:url(/images/ratings/sort-by-bg.jpg) left top no-repeat;font-size:100%;height:25px}
+.endeca_displayedItems,.endeca_totalItems,.text_highlight{font-weight:bold}
+.review-entries-header .review-entries-header-title{float:left;font-weight:bold}
+.review-entries-header .review-entries-header-pagination{float:right;font-weight:bold}
+.review-entry{padding:20px 0;border-top:1px solid #bbb;margin:5px 0 0 0}
+.review-entry-ratings-column{float:left;width:25%}
+.review-entry-details-column{float:left;width:74%;margin:0 0 0 1%}
+.review-entry-heading{margin:0 0 15px 0}
+.review-entry-helpful-rating{margin:15px 0 5px 0}
+.spec_section h3{border-top:1px solid #ddd;float:left;font-size:16px;font-weight:bold;padding:20px 0 10px 7px;width:98%}
+.spec_section.callout,.product_help_tab_section .spec_section.callout{width:185px}
+. spec_section h3#spec_header_1{border:0}
+.spec_contents h3{border:0;width:100%}
+.product-dimensions .product-dimensions-row{width:100%;margin:30px 0}
+.spec_contents_info{float:left;padding:2%;width:46%}
+.spec_contents_label{float:left;padding:2%;width:45.5%;font-weight:bold}
+.spec_section,#accessories_section{float:left;width:450px}
+.product_help_tab_section .spec_section,.product_help_tab_section #accessories_section{float:left;width:500px}
+.attachments-item,.accessories-item{float:left;width:25%;border-top:1px dotted #bbb;margin:10px 0}
+.attachments-item .attachments-image,.accessories-item .accessories-image{border:0;padding:10px 0}
+.attachments-item .attachments-title,.accessories-item .accessories-title{font-weight:bold;padding:0 0 5px 0}
+#accessories_section .accessories_item{border-top:1px dotted #ddd;float:left;margin:10px 5% 10px 0;padding:10px 0}
+#accessories_section .accessories_item .product_image{float:left;width:25%;text-align:center}
+#accessories_section .accessories_item .product_image img{width:95%}
+#accessories_section #main_accessories,#accessories_section #additional_accessories{float:left;width:100%}
+#accessories_section .accessories_item .product_code,#accessories_section .accessories_item .product_name,#accessories_section .accessories_item .product_desc,#accessories_section .accessories_item .product_price,#accessories_section .accessories_item .product_actions{float:right;width:75%}
+#accessories_section .accessories_item .product_code{margin:20px 0 0 0}
+#accessories_section .accessories_item .product_name{font-weight:bold}
+#accessories_section .accessories_item .product_actions{text-transform:uppercase;font-weight:bold;width:auto}
+#accessories_section .accessories_item .product_actions .view_details{padding:0 10px 0 0;}
+.dijitTooltip{display:block;left:50%;overflow:visible;position:absolute;top:-10000px;z-index:6000}
+.dijitTooltip,.dijitTooltipDialog{background:none repeat scroll 0 0 transparent;opacity:.95;z-index:10003}
+.dijitTooltip.dijitTooltipRight{padding:0 0 0 5px;background:url("/images/global/alertArrow.png") no-repeat scroll 0 2px transparent}
+.dijitTooltipContainer.dijitTooltipContents{background:#333;color:#fff;padding:5px}
+.dijitTooltipContainer{background-color:#fafafa;border:1px solid #b6c7d5;border-radius:6px 6px 6px 6px;color:#f00;font-size:small;padding:.45em;z-index:2}
+.dijitTooltipRight{padding-left:13px}
+#MessageArea{margin:15px auto 5px;text-align:center;width:940px}
+#WC_MyAccountDisplay_div_3_9 #MessageArea{width:100%}
+#MessageArea #ErrorMessageText.status_msg{color:#fff;font-size:100%;line-height:200%;text-align:center;width:100%;text-transform:uppercase;background:#c00;float:left;margin:10px 0}
+#MessageArea .error_msg{background:none repeat scroll 0 0 #c00;color:#fff;float:left;font-size:100%;line-height:200%;margin:10px 0;text-align:center;text-transform:uppercase;width:100%}
+.my_account #MessageArea #ErrorMessageText.status_msg,.my_account #MessageArea .error_msg,.AddressBook #MessageArea #ErrorMessageText.status_msg{width:730px;margin:10px 0 0 40px}
+iframe.ytplayer{height:360px;width:640px}
+.module-container{display:none;position:absolute;top:0;left:0;width:100%;z-index:9999}
+.module-background{background:#fff;opacity:.6;filter:alpha(opacity=60);position:absolute;top:0;left:0;width:100%;z-index:4}
+#module-carousel{float:left;width:690px}
+.module-content{background:none repeat scroll 0 0 #fff;border:1px solid #bbb;box-shadow:0 0 15px #bbb;left:50%;margin:0 0 0 -350px;position:absolute;width:690px;padding:20px 15px;z-index:5;top:40px}
+#water-filters.module-container .module-content{width:640px}
+.module-close{cursor:pointer;float:right;height:10px;margin:-50px -15px 0 0;text-align:center;padding:10px 15px}
+.module-header{border-bottom:1px dotted #bbb;font-size:12px;padding:20px 10px}
+.product-details-page .module-header{float:left;margin:0 0 10px;padding:10px 0;width:100%}
+.module-main-content{float:left;min-height:475px;max-height:535px;position:relative;text-align:center;width:100%;overflow:hidden}
+#water-filters.module-container .module-main-content{height:390px;min-height:0}
+.product-details-page .module-main-content{height:475px}
+.product-details-page .module-main-content #product img{width:100%}
+.category-overview-content{float:left;margin:0 0 15px;width:100%}
+.category-overview-content-video,.category-overview-content-image{float:left;margin:0 0 15px;width:100%}
+.module-main-content .category-overview-content-copy{float:left;font-size:100%;margin:10px 0 0 20px;text-align:left}
+.module-main-content .category-overview-content-copy sup{line-height:0;font-size:70%}
+.module-main-content .category-overview-content-copy h4,.module-main-content .category-overview-content-copy p{font-size:105%}
+.module-main-content .category-overview-content-copy h4{font-weight:bold;}
+.module-main-content .category-overview-content-copy p{font-weight:normal}
+.module-main-content .category-overview-content-copy p.model-information{float:left;font-weight:bold;margin:10px 0;width:100%;}
+.module-main-content .category-main-content{position:absolute;left:0;top:0}
+.product-details-page .product-overview .product-title{font-size:14px;font-weight:bold}
+.product-details-page .product-overview .product-color-sku{font-size:9px}
+.product-details-page .product-options-select-label{font-size:105%}
+.product-details-page .number-select{margin:5px 0 15px}
+.product-details-page .submit-section{position:relative;padding:0 0 10px;background-color:transparent!important;margin-bottom:10px}
+.submit-section .red-button{margin:0;position:absolute;bottom:0;left:0}
+.product-details-page.accessories_item div{float:left}
+.product-details-page #features #additional_features div.feature{padding-top:20px}
+.product-details-page #features #additional_features div.feature.first{padding-top:0}
+.product-details-page #additional_features h3{font-size:13px;font-weight:bold;padding:0 0 30px}
+.product-details-page #additional_features .feature h4{font-size:105%}
+.product-details-page .spec_contents h3{border:0 none;padding:0 0 10px;width:100%}
+.product-details-page .manual_item.top h3{font-size:12px;font-weight:bold;padding:0 0 8px}
+.product-details-page .manual_item.top .pdf_manual{background:url("/images/global/icons/pdf_icon.png") no-repeat scroll left top transparent;color:#c00;float:left;font-size:90%;font-weight:bold;margin:25px 0 0;padding:3px 0 29px 22px;width:195px;text-transform:uppercase}
+.manual_item.addendum .adobe{display:none}
+.product-display .product-overview{float:left;font-size:120%;line-height:135%;padding:30px 0 0 1%;width:37%}
+.product-details-page .manual_item{border-right:1px solid #ddd;float:left;height:150px;margin:0 20px 0 0;padding:0 10px 0 0;width:210px}
+.product-details-page .recently_products img{max-width:100%}
+.product-details-page .recently_products h2{font-size:16px;border-bottom:1px solid #ddd;padding-bottom:12px}
+.product-details-page .recently_products_bottom_ul li.recently_product .recently_product_ul{float:left;font-size:110%;font-weight:bold;text-align:left;width:100%}
+.product-details-page .recently_product .recently_product_ul li{width:100%}
+.product-details-page .recently_product .recently_product_ul .recently_product_id{display:none}
+.product-details-page .recently_product{width:23%;margin:0 1%;text-align:center}
+.product-details-page .recently_product .recently_product_ul li p.recently_crossed_price{font-size:90%;padding:3px 5px 0 0;text-decoration:line-through}
+.product-details-page .recently_product .recently_product_ul li p.recently_actual_price,.product-details-page .recently_product .recently_product_ul li p.recently_product_taxes{padding:0 0 5px;font-weight:normal}
+.product-details-page .side-column{position:relative;width:200px;margin:0 0 0 20px}
+.product-details-page .recently_products h2{border-bottom:1px solid #ddd;font-size:16px;padding-bottom:12px}
+.product-details-page #accessories_section .accessories_item .product_actions a{float:right:}
+.product-details-page #accessories_section .accessories_item .product_name a{font-size:105%;font-weight:bold;}
+.product-details-page #accessories_section .accessories_item .product_desc{padding:10px 0 10px}
+.product-details-page #replacement_parts .accessories_item h3{font-weight:bold;padding:0 0 5px}
+#replacement_parts.callout{width:195px}
+#popuppage .popup_header{font-size:16px;padding:0 0 0 20px;margin:0 0 15px}
+#popuppage .filter_content{background:#f3f3f3;border:solid 1px #bbb;width:760px;margin:0 auto 20px;padding:10px 20px}
+#popuppage .specs_header.specs_header_open{float:none!important;display:none}
+#popuppage .column_sub{width:25%;float:left;min-height:140px}
+#popuppage .column_header{font-weight:bold;text-transform:uppercase;font-size:10px;margin:0 0 8px}
+#popuppage .column_content_lines{overflow:hidden;margin:0 0 10px}
+#popuppage .column_content_lines .select_box{float:left;margin:0 8px 0 0}
+#popuppage .list-text{font-size:12px;font-weight:bold;margin:0 0 12px;padding:0 0 0 23px}
+#popuppage .product_list .cols{float:left;width:195px;padding:10px;border:solid 1px #bbb;min-height:325px;margin:0 30px 20px}
+#popuppage .product_list .clear{clear:none}
+#popuppage .product_image_wrapper.center img{max-width:100%}
+#popuppage .compare_types{overflow:hidden;margin:0 0 30px}
+#popuppage .compare_types .col_l.left{float:left!important;font-weight:bold;font-size:12px}
+#popuppage .compare_types .col_2.left{float:right!important;width:50%;text-align:right;border-left:dotted 1px #bbb;clear:none!important;font-weight:bold;font-size:12px}
+#popuppage .compare_action .comments{font-weight:bold}
+#popuppage .compare_action .btns a{background:url(/images/global/icons/add.png) no-repeat 0 0;display:block;margin:0 auto;width:50px}
+#popuppage .product_list_header{display:none}
+#popuppage .list-clear{display:none}
+#popuppage #close_tab_filter{display:none}
+body .TB_overlayBG{background-color:#fff;opacity:.6;-ms-filter:"alpha(opacity=60)";filter:alpha(opacity=60)}
+/------------------ END OLD CONTENT CSS DO NOT DELETE ---------------------/ .product-display .product-image-container{float:left;width:400px}
+.product-details-page .product-overview .product-title{font-size:14px;font-weight:700}
+.product-details-page .product-overview .product-color-sku{font-size:9px;margin-bottom:40px}
+.product-details-page .product-options-select-label{font-size:105%;text-transform: initial;}
+.product-details-page .number-select{margin:5px 0 15px}
+.product-details-page .submit-section{position:relative;padding:0 0 10px;width:100%;float:left;background-color:transparent!important}
+.submit-section .red-button{margin:0;position:absolute;bottom:0;left:0}
+.product-details-page.accessories_item div{float:left}
+.product-details-page #features #additional_features div.feature{padding-top:20px}
+.product-details-page #features #additional_features div.feature.first{padding-top:0}
+.product-details-page #additional_features h3{font-size:13px;font-weight:700;padding:0 0 30px}
+.product-details-page #additional_features .feature h4{font-size:105%}
+.product-details-page .spec_contents h3{border:0 none;padding:0 0 10px;width:100%}
+.product-details-page .manual_item h3{font-size:12px;font-weight:700;padding:0 0 8px}
+.product-details-page .manual_item .pdf_manual{background:url(/images/global/icons/pdf_icon.png) no-repeat scroll left top transparent;color:#c00;float:left;font-size:90%;font-weight:700;margin:25px 0 0;padding:3px 0 29px 22px;width:195px;text-transform:uppercase}
+.manual_item.addendum .adobe{display:none}
+.product-display .product-overview{float:left;font-size:120%;line-height:135%;padding:30px 0 0 1%;width:37%}
+.product-details-page .manual_item{border-right:1px solid #ddd;float:left;height:150px;margin:0 20px 0 0;padding:0 10px 0 0;width:194px}
+.product-details-page .recently_products img{max-width:100%}
+.product-details-page .recently_products h2{font-size:16px;border-bottom:1px solid #ddd;padding-bottom:12px}
+.product-details-page .recently_products_bottom_ul li.recently_product .recently_product_ul{float:left;font-size:110%;font-weight:700;text-align:left;width:100%}
+.product-details-page .recently_product .recently_product_ul li{width:100%}
+.product-details-page .recently_product .recently_product_ul .recently_product_id{display:none}
+.product-details-page .recently_product{width:23%;margin:0 1%;text-align:center}
+.product-details-page .recently_product .recently_product_ul li p.recently_crossed_price{font-size:90%;padding:3px 5px 0 0;text-decoration:line-through}
+.product-details-page .recently_product .recently_product_ul li p.recently_actual_price,.product-details-page .recently_product .recently_product_ul li p.recently_product_taxes{padding:0 0 5px;font-weight:400}
+.product-details-page .side-column{position:relative;right:-20px;width:204px;top:-50px}
+.product-details-page .recently_products h2{border-bottom:1px solid #ddd;font-size:16px;padding-bottom:12px}
+.product-details-page #accessories_section .accessories_item .product_actions a{float:right:}
+.product-details-page #accessories_section .accessories_item .product_name a{font-size:105%;font-weight:700;}
+.product-details-page #accessories_section .accessories_item .product_desc{padding:10px 0}
+.product-details-page #replacement_parts .accessories_item h3{font-weight:700;padding:0 0 5px}
+#product-tabs .product-tabs-menu .product-tab-option{font-size:11px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: bold;}
+html[lang="fr"] #product-tabs .product-tabs-menu .product-tab-option{font-size:87%;}
+select{background:none repeat scroll 0 0 transparent;border:medium none;color:#707070;padding:3px 0 5px 5px;width:130%;font-size:11px;font-family:Helvetica,Arial,sans-serif;line-height:120%;-webkit-appearance:none;outline:0;ie-dummy:expression(this.hideFocus=true)}
+select option{padding:5px 0 5px 5px;background:none repeat scroll 0 0 transparent}
+.product-details-page .where_to_buy{background: url(/images/btn_where_to_buy.png);background-repeat:no-repeat;width:155px;height:35px}
+html[lang="fr"] .product-details-page .where_to_buy{background:url(/images/btn_where_to_buy_PDP_FR.png);background-repeat:no-repeat;width:155px;height:35px}
+.product-details-page .submit-section .red-button{background-color:transparent;text-indent:-9999px;width:155px;height:35px;margin:0;padding:0}
+.product-details-page .main-column{margin-top:15px}
+.product-details-page .side-column{margin-top:25px}
+.product-display .product-overview{padding:30px 0 0 5%}
+.module-close{background:url(/images/module_close_bg.png);background-position:top center;background-repeat:no-repeat;cursor:pointer;float:right;height:31px;width:79px;text-align:center;padding:10px 0;margin:-48px -23px 0 0}
+#overview .overview_left_column{width:430px;float:left;margin-right:20px;padding-right:20px;border-right-width:1px;border-right-style:solid;border-right-color:#ccc}
+#overview .overview_right_column{width:200px;float:left}
+#overview h1{font-size:14px;font-weight:700;margin-top:20px;margin-bottom:30px; text-transform: uppercase;}
+#overview .hr_grey_dots{background:url(/images/hr_grey_dots.png);background-repeat:repeat-x;width:100%;height:1px;margin-top:40px}
+#overview .overview_feature .overview_feature_left{width:84px;float:left}
+#overview .overview_feature .overview_feature_left img{width:100%}
+#overview .overview_feature .overview_feature_right{width:300px;float:left;margin-left:25px;margin-bottom:65px}
+#overview .overview_feature .overview_feature_right h2{font-size:12px;font-weight:700;margin-bottom:15px}
+#overview .overview_feature .overview_feature_right p{font-size:10px;line-height:15px;margin-top:20px}
+.product-display .product-overview .product-description{font-size:11px;border-bottom:0;display:none}
+.product-details-page .manual_item.top .pdf_manual{color:#005abb;font-weight:400;text-transform:none}
+.product-details-page .manual_item .pdf_manual{color:#002e5f;font-weight:400;text-transform:none}
+a.view-demo-btn-link{background-image:url(/images/btn_view_demo2.png);background-repeat:no-repeat;width:131px;height:24px;text-indent:-9999px;display:none}
+.view-demo-btn{border-bottom:1px dotted #DDD;float:left;width:100%;padding-bottom:10px}
+.product-options-select-label,.product-options-label{font-size:11px;font-weight:700;margin-top:20px}
+.product-details-page #accessories_section .accessories_item .product_actions a.add_to_cart{text-indent:-9999px;width:111px;height:28px;margin-top:20px}
+.product-details-page .product_actions a.view_details{background:transparent url(/images/btn_view_details.png) no-repeat 0 -28px;width:90px;height:28px;text-indent:-9999em;display:block;float:left;margin-top:20px}
+.product-details-page .product_actions a.view_details:hover{background-position:0 0}
+#accessories_section .accessories_item .product_image{width:30%}
+#accessories_section .accessories_item .product_code,#accessories_section .accessories_item .product_name,#accessories_section .accessories_item .product_desc,#accessories_section .accessories_item .product_price,#accessories_section .accessories_item .product_actions{width:65%}
+img.open-module.item-module-selected{border:1px solid #005abb}
+.module-item.carousel-item img:hover{border:1px solid #333}
+img.open-module.item-module-selected{border:1px solid #005abb}
+.module-item.carousel-item img:hover{border:1px solid #333}
+#share-title{font-size:10px;margin-left:2px;float:left;text-align:left;width:100%;font-weight:700}
+.product-details-page #accessories_section .accessories_item .product_actions a.add_to_cart{background:url(/images/btn_add_to_cart_tab.png) no-repeat}
+.product-details-page #accessories_section .accessories_item .product_actions a.add_to_cart:hover{background-position:0 -28px}
+.caps{text-transform:uppercase;font-size:80%!important;font-weight:700}
+.product-display .product-overview .product-description{margin:0 0 20px}
+.product-display .product-overview{width:39%;padding-top:0}
+.product_list,.product-display{width:105%}
+.product-details-page .side-column{margin-top:20px}
+#cta-content{position:relative;top:40px;margin-bottom:30px}
+.main-column{padding-top:0}
+#top_features h3{padding:15px 0 20px}
+#additional_features #left-col{float:left;width:330px}
+#additional_features #right-col{float:right;width:330px}
+.text-select select{background:url(/images/product-detail-bg.png) no-repeat scroll left top transparent;height:30px;margin:0;overflow:hidden;border:none!important}
+.manual_item.top .pdf_manual{padding-bottom:30px!important;width:175px!important}
+.manual_item.right{border-right:0;padding-right:0;margin-right:0}
+.module-header{border-bottom:1px dotted #ddd}
+#accessories_section .accessories_item.first{border:0}
+.spec_section,#accessories_section{width:430px;border-right:1px solid #ddd;margin-right:20px}
+.recently_products{float:left;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #DDD}
+.recently_products h2{border-bottom:1px solid #DDD;font-size:14px!important;margin-bottom:20px}
+.recently_product{margin:0 1%;text-align:center;width:23%;float:left}
+.product-details-page .recently_products img{width:82px;height:auto}
+.product-details-page .recently_products_bottom_ul li.recently_product .recently_product_ul{float:left;font-size:110%;font-weight:700;text-align:left;width:100%}
+.product-details-page .recently_product .recently_product_ul li{width:100%;font-size:10px}
+.text-select #choose-color{width:195px;height:24px}
+.spec_section,#accessories_section,.spec_section h3{border:0}
+.spec_section{border-bottom:1px solid #DDD}
+.error_msg,.required-field1,.oc_entry_field_error,.errorMessage,#errMsgDiv,.continue-shopping a,#checkout_crumb a span,.return_to_search_results,ol#show_result li a,.page_number_part ol li a,.tips a,.billing_address a,.order_content,#order_details tr td a,#need_help a,.oc_register #main .owner_center_continue_link a,.follow_info a,.orange_star,.inForm .location_cont .oc_entry_field_input a,.oc_required_field,.download-adobe,.pdf_link ul li a,.link_list a,.product_detail a.model_name,.myaccount_link,.leftnav_myaccount_dotted a,.thickbox,.column.simple_register div .required-field,.sign_in_linkLostPassword,.endeca_viewAll_btn,.red,.category-page ul li p.red,.pagination .active,.compare_action_links .right a,.required-field,.product-help-search-result a,.manual-item a,.service_plan_btn a,.schedule_repairs a,.add_to_cart,.callout a,#replacement_parts .accessories_item a,.product-details-page .manual_item .pdf_manual{color:#005abb}
+.side-column-espot-content{height:auto}
+.product-details-page .where_to_buy:hover{background:url("/images/btn_where_to_buy_hover.png") no-repeat scroll 0 0 transparent}
+/*.product-details-page .where_to_buy:hover{background:url("/images/content/jumppage/endeca_pages/btn_where_to_buy_hover.png") no-repeat scroll 0 0 transparent}*/
+html[lang="fr"] .product-details-page .where_to_buy:hover{background:url("/images/btn_where_to_buy_hover_FR.png") no-repeat scroll 0 0 transparent}
+.number-select{background:url("/images/input_text.png") no-repeat scroll left top transparent;height:30px;width:31%}
+.number-select input{background:url("/images/input_text.png") no-repeat scroll left top transparent;width:31%;color:#707070;font-size:11px}
+.product-details-page .add_to_cart_big {
+	height: 30px;
+	width: 174px;
+	background: url("/images/btn_add_to_cart_tab.png") no-repeat scroll 0 0 transparent;
+}
+.product-details-page .add_to_cart_big:hover {
+	background-image: url("/images/btn_add_to_cart_tab_hover.png");
+}
+/*
+remove for new btn styles WM1625 1626
+.product-details-page .add_to_cart_big{background:url("/images/add_to_cart_big.png") no-repeat scroll 0 0 transparent;height:35px;width:145px}
+.product-details-page .add_to_cart_big:hover{background:url("/images/add_to_cart_big_hover.png") no-repeat scroll 0 0 transparent}
+*/
+#accessories_section #main_accessories{border-bottom:1px solid #ddd;margin-bottom:30px}
+.spec_section,#accessories_section{border-right:1px solid #ddd}
+.spec_section,#accessories_section h3{text-transform:capitalize}
+.product-display .product-image-container .product-image img{height:300px}
+.carousel-visible-items{margin-top:20px}
+.product-color-options{margin-top:10px}
+.carousel-controls{background:url("/images/scrollingArrows.png") no-repeat scroll 0 0 rgba(0,0,0,0)!important}
+.red-button{font-size:12px;text-transform:capitalize}
+.manual-items div:first-child+div+div,.manual-items div:first-child+div+div+div+div+div{border-right:0}
+#manual_items div:first-child+div+div,#manual_items div:first-child+div+div+div+div+div{border-right:medium none!important}
+#manual_items div:first-child,#manual_items div:first-child+div,#manual_items div:first-child+div+div{padding-bottom:40px}
+#manual_items div:first-child .pdf_manual,#manual_items div:first-child+div .pdf_manual,#manual_items div:first-child+div+div .pdf_manual{border-bottom:1px dotted #ccc}
+.base-msrp{font-weight:bold}
+.product-options-select-label{text-transform:uppercase}
+.product-image-container{margin-bottom:20px}
+#features h3{font-size:14px;padding-bottom:20px}
+#features h4{margin-bottom:20px}
+#specifications .callout{display:none}
+.carousel-controls{margin-top:20px}
+#number1RatedWasher{display:none!important}
+.product-accessory-page #product-tabs{display:none}
+.product-accessory-page .product-description{display:inline!important;float:left;margin-top:20px!important}
+.product-accessory-page .base-msrp{display:none}
+.product-accessory-page .product-display .product-image-container .product-image img{width:410px!important;height:451px!important}
+#color-swatches img[alt="White"],#color-swatches img[alt="White Ice"]{border:1px solid #ddd!important}
+#color-swatches .selected[alt="White"],#color-swatches .selected[alt="White Ice"]{border:1px solid #666!important}
+.BVRRPrimarySummary .BVRRRatingSummaryLinks,.BVRRRatingSummaryLinkWriteFirst{clear:both!important;margin-top:5px!important}
+.bf_product_promo{position:static!important}
+#features h3, .spec_section h3, #accessories_section h3, .manual_item h3 {
+	font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 16px;
+	color: #323232;
+}
+
+.spec_section h3 {
+	background: url("/images/content/product_detail/icon_arrow_black_up.png") no-repeat scroll 0 25px transparent;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.spec_section h3.selected {
+	background: url("/images/content/product_detail/icon_arrow_black_down.png") no-repeat scroll 0 25px transparent;
+}
+
+.product-details-page .submit-section .red-button{background-color:transparent;text-indent:-9999px;width:155px;height:35px;margin:0;margin-bottom:30px;padding:0}

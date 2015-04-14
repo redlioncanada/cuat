@@ -1,0 +1,65 @@
+body.washer_selection_page.nobg { margin:0 auto; width:780px;}
+body.washer_selection_page table.table_print { margin:0 auto; width:100%;}
+body.washer_selection_page table.table_print tr td { border:none}
+body.washer_selection_page table.table_print table { width:100%}
+body.washer_selection_page table.table_print #button_print { overflow:hidden}
+body.washer_selection_page table.table_print #button_print a {position: static; float: right; overflow: hidden; display: block;}
+body.washer_selection_page table.table_print td .main_header,
+body.washer_selection_page table.table_print td .contentgrad_header {display:none}
+body.washer_selection_page table.table_print td h2.logo { overflow:hidden}
+body.washer_selection_page table.table_print td h2.logo a{ float:left;}
+body.washer_selection_page table.table_print td #h2_text_print {clear: right; float: left; font-size: 1.8em; padding-top: 22px; padding-left:10px;}
+body.washer_selection_page table.table_print td.item .product-container a.product_title {color: #505050; font-size: 12px; font-weight: bold; text-decoration: none;}
+body.washer_selection_page table.table_print td.item .product-container a.product_title:hover { text-decoration:underline}
+body.washer_selection_page table.table_print td.item .product-container .contentLeft {float: left; margin: 10px 0 0; width: 110px;}
+body.washer_selection_page table.table_print td.item .product-container .contentLeft .thumbnail img { max-width:85px; max-height:100px;}
+body.washer_selection_page table.table_print td.item .productContent {
+padding-top:10px;
+}
+body.washer_selection_page table.table_print td.item .productContent .contentRight {float: left; font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif; font-size: 10px; font-weight: 400; line-height: 180%; margin-top: 8px; padding-right: 60px; text-align: left; width: 198px;}
+
+body.washer_selection_page table.table_print td.item .productContent .contentRight ul{ margin:0 0 10px; padding:0px;}
+body.washer_selection_page table.table_print td.item .productContent .contentRight ul li{
+color:#666666;
+font-family:'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;
+font-size:10px;
+line-height:18px;}
+
+body.washer_selection_page table.table_print td.item .productContent p.price_text{
+float:left;
+font-weight:bold;
+margin:0;
+padding:0;}
+body.washer_selection_page table.table_print td.item .product-container a.view_details,
+body.washer_selection_page table.table_print td.item .product-container a.add-to-cart,
+body.washer_selection_page table.table_print td.item .product-container a.where_to_buy,
+body.washer_selection_page table.table_print td.item .product-container a.remove,
+body.washer_selection_page table.table_print td.item .product-container .product_taxes,
+body.washer_selection_page table.table_print td.item .product-container .stock_icon { display:none}
+
+
+/*print registered*/
+body.washer_selection_page {margin:0 auto; width:780px; background:none;}
+body.washer_selection_page table.table_print td { padding:0; width:100%}
+body.washer_selection_page table.table_print table#four-grid td { width:50%}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper { width:100%; clear:both; overflow:hidden; padding-top:20px; word-wrap:break-word;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.productContent { margin-top:10px;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container {width:370px;float:left; padding-right:10px;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container.right { padding-left:10px;padding-right:0; float:right}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentLeft {float: left; margin: 10px 0; width:160px;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentLeft img { width:158px;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentRight {float:left; font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif; font-size: 10px; font-weight: 700; line-height: 180%; margin-top: 8px; text-align: left; width:210px;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container a.product_title {color: #505050; font-size: 12px; font-weight: bold; text-decoration: none;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container a.product_title:hover { text-decoration:underline}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container a.add-to-cart,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container a.where_to_buy,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container a.remove,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentRight a.details,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentRight p.price_text .product_taxes,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentRight span.stock_icon,
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.contentRight div.special-offers
+{ display:none}
+/*end print registered*/
+body.washer_selection_page table.table_print h2.logo{overflow:hidden;}
+body.washer_selection_page table.table_print div#results_grid_view div.productWrapper div.product-container div.productContent div.thumbnail img { max-width:85px; max-height:100px;}
+body.washer_selection_page table.table_print .price_text{margin-left:15px;}

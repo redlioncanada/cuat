@@ -1,0 +1,355 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;line-height:1.4;font-family:inherit;vertical-align:baseline}
+a img,:link img,:visited img{border:0}
+a{outline:0}
+table{border-collapse:collapse;border-spacing:0}
+ol,ul{list-style:none}
+q:before,q:after,blockquote:before,blockquote:after{content:""}
+input{align:middle}
+.clear{clear:both}
+html{*overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-weight:bold}
+h1{font-size:2em;line-height:1;margin-bottom:.5em}
+h2{font-size:1.8em;line-height:1;margin-bottom:.75em}
+h3{font-size:1.1em;line-height:1;margin-bottom:1em}
+h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em}
+h5{font-size:1em;margin-bottom:1.5em}
+h6{font-size:1em}
+p{font-size:.9em;margin:0 0 1.25em}
+ul,ol{margin:0 1.5em 1.5em 1.5em}
+ul{list-style-type:square}
+ol{list-style-type:decimal}
+dl{margin:0 0 1.5em 0}
+dl dt{font-weight:bold}
+dl dd{margin-left:1.5em}
+abbr,acronym{border-bottom:1px dotted #000}
+address{margin-top:1.5em;font-style:italic}
+del{color:#000}
+a{color:#009;text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{margin:1.5em}
+strong{font-weight:bold}
+em,dfn{font-style:italic}
+dfn{font-weight:bold}
+pre,code{margin:1.5em 0;white-space:pre}
+pre,code,tt{font:1em monospace;line-height:1.5}
+tt{display:block;margin:1.5em 0;line-height:1.5}
+table{margin-bottom:1.4em}
+th{border-bottom:2px solid #ddd;font-weight:bold}
+td{border-bottom:1px solid #ddd}
+th,td{padding:4px 10px 4px 0}
+tfoot{font-style:italic}
+caption{background:#ffc}
+tr.white td{background-color:#fff;color:black}
+tr.grey td{background-color:#eee;color:black}
+td.compareleft{font-weight:bold;border-bottom:0;border-right:1px solid #000;padding-left:10px;font-size:.6em}
+td.comparemiddle{font-weight:bold;border-right:1px solid #000;border-bottom:0;padding-left:10px;font-size:.6em}
+td.compareright{font-weight:bold;border-bottom:0;padding-left:10px;font-size:.6em}
+td.detailleft{font-weight:bold;border-bottom:0;border-right:1px solid #ddd;padding-left:10px}
+td.detailmiddle{border-right:1px solid #ddd;border-bottom:0;padding-left:10px}
+td.detailright{border-bottom:0;padding-left:10px}
+td.midalign{vertical-align:middle}
+td.no_bottom_brdr{border-bottom:0}
+td.no_border_bottom{border-bottom:0}
+ul.paginator{margin-left:0;padding-left:0;display:inline}
+ul.paginator li{margin-left:0;margin-right:2px;padding:3px 5px;border:1px dotted #a9a9a9;list-style:none;display:inline}
+ul.paginator li.end_cap{margin-left:0;padding:3px 5px;border:0;list-style:none;display:inline}
+sup{font-size:.8em!important;vertical-align:top!important}
+.small{font-size:1em;margin-bottom:1.875em;line-height:1.875em}
+.large{font-size:1.2em;line-height:2.5em;margin-bottom:1.25em}
+.quiet{color:#999}
+.hide{display:none}
+.highlight{background:#ffc}
+.top{margin-top:0;padding-top:0}
+.bottom{margin-bottom:0;padding-bottom:0}
+.center{margin-left:auto;margin-right:auto;text-align:center}
+#page{text-align:left}
+body{text-align:center}
+#wrap,#page{width:100%;margin:0 auto}
+html{font-family:'Lucida Grande', Lucida Sans,Lucida Sans Unicode,Lucida Sans Regular,Tahoma,Verdana,sans-serif;color:#505050;font-size:11px}
+p{text-align:left}
+a{color:#005abb;text-decoration:none}
+#page.kitchen h1,#page.kitchen h2{color:#b22c41 font-family:Georgia,"Times New Roman",Times,serif;font-weight:500}
+#page.filters_acc h1,#page.filters_acc h2{color:#11a9cc font-family:Georgia,"Times New Roman",Times,serif;font-weight:500}
+.bold{font-weight:bold}
+img.crimg{width:100px;height:100px}
+img.crarrow{margin-top:40px;margin-right:10px;margin-left:10px}
+.maytag_blue{color:#005abb}
+.dark_blue{color:#002e5f}
+.amber{color:#fccb34}
+.grey_1{color:#d0d0d0}
+.grey_2{color:#8c8c8c}
+.grey_3{color:#505050}
+.grey_4{color:#2d2d2d}
+.generic_popup.dijitDialog{position:absolute;z-index:999;background:#fff;border:1px solid #7eabcd;left:0;padding:0;-webkit-box-shadow:0 5px 10px #adadad}
+div#second_level_category_popup{display:none}
+
+#check_order_new {
+    /*float: left;*/
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    /*margin-top: 25px;*/
+    margin:10px 0 15px;
+    text-align: justify;
+    z-index:100;
+    display:block;
+    /*width:400px;*/
+    clear:both;
+    /*position: absolute;*/
+}
+
+#top_bottom_new {
+    margin-right: 25px;
+    padding: 0;
+
+}
+
+#clickhere_btn {
+    color: red !important;
+    font-family: verdana;
+    margin-right: 0; 
+    text-decoration: underline; 
+}
+
+/* language toggle */
+.langListItem{
+    display:inline;
+    float:left;
+}
+.languageContent{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: inline;
+    z-index: 100;
+    width: 70px;
+    text-align: right;
+}
+#language{
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    position: absolute;
+    display: none;
+}
+
+
+
+/* Overlay Box */
+#quickViewBlackOut,
+#OverlayLangBlackOut{
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1002;
+}
+#OverlayLangConfirm{
+    background: none repeat scroll 0 0 #FBFBFB;
+    display: none;
+    left: 15%;
+    margin-left: 20%;
+    padding: 25px;
+    position: fixed;
+    top: 30%;
+    width: 510px;
+    z-index: 1003;
+}
+#OverlayLangConfirm .MessageBlock{
+    background: none repeat scroll 0 0 #F3F4EE;
+    padding: 10px;
+    text-align: left;
+}
+#OverlayLangConfirm .MessageBlock p{
+    font-size: 12px;
+}
+#OverlayLangConfirm .ButtonOk{
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    height: 28px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 67px;
+    margin-right:-5px;
+}
+#OverlayLangConfirm .ButtonOk .ok-left
+{
+    background-image: url("../images/bg-btn-med-left-blue.png");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    height: 39px;
+    float: left;
+    line-height: 39px;
+    display: block;
+    width: 18px;
+}
+#OverlayLangConfirm .ButtonOk .ok-center
+{
+    background-image: url("../images/bg-btn-med-middle-blue.png");
+    background-repeat: repeat-x;
+    background-position-x: 0;
+    background-position-y: 0;
+    height: 33px;
+    float: left;
+    line-height: 27px;
+    display: block;
+    color: #FFF;
+    padding-bottom: 3px;
+}
+#OverlayLangConfirm .ButtonOk .ok-right
+{
+    background-image: url("../images/bg-btn-med-blue-right-arrow.png");
+    background-repeat: no-repeat;
+    background-position-x:0;
+    background-position-y:0;
+    width: 28px;
+    height: 39px;
+    float: left;
+    display: block;
+}
+#OverlayLangConfirm .ButtonCancel{
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 28px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 102px;
+}
+html[lang=fr] #OverlayLangConfirm .ButtonCancel{
+    width: 110px;
+}
+
+#OverlayLangConfirm .ButtonCancel .can-left
+{
+    background-image: url("../images/bg-btn-med-blue-left-arrow.png");
+    background-repeat:no-repeat;
+    background-position-x:0;
+    background-position-y:0;
+    height: 39px;
+    float: left;
+    line-height: 39px;
+    display: block;
+    width: 25px;
+}
+#OverlayLangConfirm .ButtonCancel .can-center
+{
+    background-image: url("../images/bg-btn-med-middle-blue.png");
+    background-repeat: repeat-x;
+    background-position-x:0;
+    background-position-y:0;  
+    height: 33px;
+    float: left;
+    line-height: 27px;
+    display: block;
+    color: #FFF;
+    padding-bottom: 3px;
+}
+#OverlayLangConfirm .ButtonCancel .can-right
+{
+    background-image: url("../images/bg-btn-med-right-blue.png");
+    background-repeat: no-repeat;
+    background-position-x:0;
+    background-position-y:0;  
+    width: 28px;
+    height: 39px;
+    float: left;
+    display: block;
+}
+.inputCol #modelNumberDiv
+{
+    padding-top: 10px;
+}
+.inputCol #modelNumberDiv .labelCol {
+    margin-left: -10px;
+}
+.inputCol #modelNumberDiv .inputCol {
+margin-left: -18px;
+padding-top: 5px;
+}
+
+.pdotBox{
+margin:5px;
+}
+#page.product_detail #product_tabs .pdotBox h4{
+padding:16px 0 5px;
+font-size:110%;
+}
+#page.product_detail_page #overview .pdotBox .footnote{
+font-size:85%;
+}
+
+.clPromo{
+background:url('/images/content/categorylanding/laundry/mt_bg_laundry_promo.jpg') top left no-repeat;
+clear:both;
+height:118px;
+}
+.clPromo .inner{
+float: left; 
+margin: 13px 30px 0px 490px;
+}
+.clPromo .inner img{
+float: left;
+}
+.clPromo h2{
+font-size: 18px; 
+margin: 0px 0px 2px;
+}
+.clPromo p{
+font-size: 90%;
+}
+.clPromo p.footnote{
+font-size: 70%;
+}
+.clPromo .clPromoContent{
+margin-left:110px;
+}
+.clPromo .clPromoContent a{
+margin: 3px auto 0;
+}
+html[lang=fr] .clPromo h2{
+font-size: 16px; 
+margin: 0;
+}
+html[lang=fr] .clPromo p{
+font-size: 85%;
+}
+html[lang=fr] .clPromo p.footnote{
+font-size: 70%;
+}
+.viewProdBtn{
+background:url(/images/data/en_CA/content/homeImg/viewProductBtn.png) no-repeat top left;
+display:block;
+height:32px;
+width:115px;
+text-indent:-9999px;
+}
+.viewProdBtn:hover{
+background-position:0 -31px;
+}
+html[lang=fr] .viewProdBtn{
+background:url(/images/data/fr_CA/content/homeImg/viewProductBtn.png) no-repeat top left;
+height:30px;
+width:115px;
+margin:0 auto;
+}
+html[lang=fr] .viewProdBtn:hover{
+background-position:0 -29px;
+}
+#WC_ContentAreaESpot_div_1_PDREspot div.socialIcons {text-align: left}
+#WC_ContentAreaESpot_div_1_PDREspot div.socialIcons span.socialShareTxt {font: 700 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;color: #323232;margin: 30px 0 8px;display: inline-block}
+

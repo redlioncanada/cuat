@@ -1,0 +1,9 @@
+li.applince div.color-swatches{display:block;float:left;margin-bottom:10px;min-height:0;padding:0}
+li.applince div.color-swatches .color_text{display:block;float:left;min-height:0;padding:0}
+li.applince div.color-swatches .color_text span{color:#454545}
+.row_cell .color-swatches{margin-top:10px}
+.color-swatches img{margin-bottom:1px;cursor:pointer;margin-right:5px;width:16px;height:16px}
+.color-swatches .selected{border:1px solid #000;padding:1px;margin:0 3px 0 -2px}
+.color-swatches .more-swatches{margin-bottom:5px;margin-left:5px}
+div.endeca_applianceImg{padding:0 0 7px!important;margin-bottom:0!important}
+.endeca_content .applince .endeca_applianceImg .img_appliance{border-bottom:1px dotted #c9c4c4;padding-bottom:5px}

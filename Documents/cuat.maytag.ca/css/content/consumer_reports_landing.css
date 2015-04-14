@@ -1,0 +1,282 @@
+/* ==========================================================================
+ Consumer Reports Landing Page styles
+ ========================================================================== */
+
+#cr_wrapper p, #cr_wrapper h2, #cr_wrapper h3, #cr_wrapper h5, #cr_wrapper a, #cr_wrapper ul, #cr_wrapper li {
+	font-family: Arial, "Lucida Grande", Verdana, "Lucida Sans Unicode", sans-serif;
+}
+#cr_wrapper a {
+	text-decoration: none;
+	color: inherit;
+}
+.cr_white {
+	color: white;
+}
+.thousand_forty {
+	width: 1040px;
+	margin: 0 auto;
+}
+.cr_blue {
+	color: #23396a;
+}
+.cr_grey {
+	color: #3f3f3f;
+}
+/* ==========================================================================
+ wrapper styles
+ ========================================================================== */
+
+#page #main_content_wrapper {
+    margin: 0 auto;
+    width: 1080px !important;
+}
+
+#cr_wrapper {
+	min-height: 800px;
+	width: 1080px;
+	/*margin: 0 auto;*/
+}
+/* ==========================================================================
+ hero area styles
+ ========================================================================== */
+
+.cr_hero {
+	height: 313px;
+	position: relative;
+	background: #000;
+}
+.cr_hero img {
+	float: right;
+}
+div.cr_heroText {
+	height: 232px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+p.cr_heroTitle {
+	font-size: 44px;
+	font-weight: bolder;
+	line-height: 40px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+p.cr_heroCopy {
+	line-height: 20px;
+}
+/* ==========================================================================
+ hero menu styles
+ ========================================================================== */
+
+div.cr_heroMenu {
+	position: absolute;
+	top: 263px;
+	left: 5px;
+	z-index: 100;
+}
+html[lang="en"] div.cr_heroMenu {
+	top: 265px;
+}
+ul.cr_heroMenu {
+
+	margin: 0px;
+	padding: 0px;
+}
+ul.cr_heroMenu li {
+	height: 45px;
+	width: 140px;
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 5px;
+	/*background: #F8F8F8;*/
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+}
+ul.cr_heroMenu li a {
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #000000;
+}
+li.cr_choose {
+	padding: 20px 10px 10px 22px !important;
+	background: none !important;
+}
+html[lang="fr"] li.cr_choose{
+	width:162px;
+}
+ul.cr_heroMenu li a{
+	background: #F8F8F8;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+/* ==========================================================================
+ SKU area styles
+ ========================================================================== */
+
+div.cr_category {
+	height: 30px;
+	margin: 40px auto;
+	background: #23396a;
+	font-weight: bold;
+}
+div.cr_category p {
+	padding-left: 40px;
+	padding-top: 4px;
+	font-size: 17px;
+}
+.cr_category p{
+	float: left;
+}
+.cr_back{
+	float:right;
+	margin-right: 40px;
+	padding-top: 4px;
+	font-size: 17px;
+}
+.cr_SKUs {
+	/*height:340px;*/
+	margin-bottom: 10px;
+}
+/* ==========================================================================
+ SKU Card styles
+ ========================================================================== */
+
+div.cr_SKUCard {
+	height: 340px;
+	border-bottom: medium solid #888fa0;
+	margin-bottom: 30px;
+}
+div.cr_SKUCard div {
+	float: left;
+}
+/* ==========================================================================
+ SKU area styles
+ ========================================================================== */
+
+div.cr_imgCon {
+	width: 280px;
+	text-align: center;
+}
+.cr_img {
+	width: 250px;
+}
+.cr_title {
+	padding-left: 40px;
+	padding-bottom: 10px;
+	font-size: 19px;
+}
+
+/* ==========================================================================
+ SKU details area styles
+ ========================================================================== */
+div.cr_details {
+	width: 390px;
+	margin-right: 20px;
+	height: 267px;
+	position: relative;
+}
+div.cr_details p {
+	font-size: 11px;
+}
+.cr_detail_one {
+	height: 85px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.cr_details h3, div.cr_review h3 {
+	margin: 3px 0 10px;
+	font-size: 19px;
+}
+div.cr_details h5, div.cr_review h5 {
+	margin: 3px 0 5px;
+	font-size: 13px;
+}
+img.cr_badge {
+	width: 85px;
+	height: 85px;
+	float: left;
+	background: #23396a;
+	margin-right: 10px;
+}
+img.cr_badge[src="#"] {
+	display: none;
+}
+
+/* ==========================================================================
+ SKU review area styles
+ ========================================================================== */
+
+div.cr_review {
+	width: 310px;
+	height: 267px;
+	position: relative;
+}
+
+div.cr_review p.cr_revCopy {
+    font-size: 14px !important;
+}
+.cr_reviewCon {
+	width: 100%;
+}
+.cr_reviewCon div {
+}
+.cr_rating {
+	font-weight: bolder;
+	font-size: 28px;
+	line-height: 21px !important;
+}
+html[lang="fr"] .cr_rating {
+	line-height: 25px !important;
+}
+.cr_revNum {
+	font-weight: normal;
+	font-size: 12px;
+}
+.cr_rateCon {
+	padding-left: 10px;
+	
+}
+/* ==========================================================================
+ SKU button styles
+ ========================================================================== */
+
+a.cr_btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+a.cr_btn div {
+	height: 32px;
+	width: 109px;
+	background: #d6d6d6;
+	border-radius: 5px;
+}
+a.cr_btn div * {
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+a.cr_btn div p {
+	font-size: 10px;
+	margin-top: 4px;
+	font-weight: bold;
+}
+html[lang="fr"] a.cr_rev div {
+	width: 157px;
+}
+html[lang="fr"] a.cr_prod div {
+	width: 125px;
+}
+html[lang="fr"] a.cr_revNew div {
+	width: 187px;
+}
+a.cr_revNew div {
+	width: 128px;
+}
+
+.cr_legal{
+	padding-left:40px;
+}

@@ -1,0 +1,102 @@
+/*--------------------------- CSS Declarations for Print Product List Pages - Maytag  ------------------------------------- */
+
+body { width: 720px; padding-top: 20px; margin-left: 15px; background: #FFFFFF; }
+.product_detail_list_group_heading { display: none; }
+.detail_header_wrapper_top { display: none; }
+.color_selection_with_image { display: none; }
+
+#page #main_content_wrapper { width: 720px; }
+#print_header { width: 100%; }
+#print_header #logo { float: left; margin-bottom: 10px; }
+#print_header #print_title { float: left; font-size: 24px; padding-top: 10px; font-weight: bold; margin-left: 10px; }
+#print_header #print_title #sub_header { font-size: 14px; margin-bottom: 0px; }
+
+#header-wrap { display: none; }
+#content-wrap #breadcrumb-section { display: none; }
+#content-wrap #content { margin: 0px; padding: 0px; width: 100%; }
+#content-wrap { margin: 0px; padding: 0px; width: 100%; }
+
+#page #main_content_wrapper #espot_image { display: none; }
+#page #main_content_wrapper .endeca_displayingViewAllIndicators { display: none; }
+#page #main_content_wrapper .endeca_sortViewDisplayBar_top { display: none; }
+#page #main_content_wrapper .endeca_sortViewDisplayBar_bottom { display: none; }
+#page #main_content_wrapper .endeca_leftNav { display: none; }
+
+
+#legal-content-wrap { display: none; }
+#footer-wrap { display: none; }
+
+#page .main_content_wrapper .product_list_detail .row_cell { display: none; }
+#page .main_content_wrapper .product_list_detail .tbl_cell { display: none; }
+
+#product_list_view_table { border: 0px; margin: 0px; padding: 0px; width: 100%; }
+#product_list_view_table td { border: 0px; width: 100%; margin: 0px; padding: 0px; }
+
+#print_header .print_page_wrapper { width: 100%; text-align: right; }
+#print_header .header_wrapper { width: 100%; height: 75px; margin-top: 10px; clear: both; }
+#print_header .header_wrapper .logo_wrapper { width: 130px; float: left; }
+#print_header .header_wrapper .title_wrapper { color: #2A2A2A; float: left; font-size: 24pt; padding-top: 5px; padding-left: 10px; }
+#print_header .header_wrapper .title_wrapper h1 { margin: 0px; margin-top: -5px; padding: 0px; font-size: 22pt; margin-left: -65px; font-weight: 300; }
+#print_header .header_wrapper .title_wrapper .title_pre_title { font-size: 16pt; margin: 0px; margin-bottom: 5px; }
+
+#print_header .selection_criteria_wrapper { text-align: left; clear: both; margin-top: 20px; margin-bottom: 20px; padding-bottom: 5px; background-color: #D0D0D0; width: 100%; overflow: hidden; }
+#print_header .selection_criteria_wrapper .criteria_title_wrapper { width: 97%; color: #2A2A2A; border-bottom: 1px solid #2A2A2A; font-size:1.4em; font-weight:700; margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-bottom: 5px; }
+#print_header .selection_criteria_wrapper .criteria_detail_wrapper p { margin: 0px; padding: 0px; margin-bottom: 5px; }
+#print_header .selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_1 { background-color: transparent; float: left; width: 48%; }
+#print_header .selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_2 { float: left; width: 48%; margin-left: 20px; }
+#print_header .selection_criteria_wrapper .criteria_detail_wrapper { padding-left: 10px; line-height: 2.0; }
+#print_header .selection_criteria_wrapper .criteria_detail_wrapper p .criteria_detail_label { font-weight:700; }
+
+.large_green_bar { display: none; }
+.small_green_bar { border: 0px; border-top: 1px solid #2A2A2A; border-bottom: 1px solid #2A2A2A; clear: both; height: 3px; margin-top: 20px; }
+#page .first_bar { display: none; }
+#print_header .results_label { clear: both; color: #2A2A2A; width: 100%; text-align: left; margin-left: 10px; }
+#page .clear_div { clear: both; }
+
+#page .tbl_cell_print { width: 100%; margin-top: 15px; margin-bottom: 15px; overflow: hidden; }
+#page .tbl_cell_print .product_list_item_image_wrapper { float: left; width: 230px; margin: 0px; text-align: center;  }
+#page .tbl_cell_print .product_list_item_image_wrapper .product_list_item_main_image { width:85px; height:100px; }
+#page .tbl_cell_print .product_list_item_image_wrapper .color_selection_with_image { display: none; }
+
+#page .tbl_cell_print .product_list_item_detail_wrapper { float: left; width: 445px; margin: 0px; color: #2A2A2A; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_header_wrapper_top { display: none; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_bottom .color_selection_with_title { display: none; float: left; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_bottom .color_selection_with_title .color_label { font-size: 8pt; font-weight: bold; vertical-align: top; margin-top: -5px; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_bottom .detail_serial_bottom { float: left; margin-right: 10px; font-size: 8pt; font-weight: 700; color: #2A2A2A; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_bottom .detail_price_bottom { float: left; margin-right: 10px; font-size: 8pt; font-weight: 700; color:#2A2A2A; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_bottom { clear: both; color: #2A2A2A; font-weight: bold; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_bottom span { margin-top: -3px; padding-right: 5px; vertical-align: top; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_bottom img { }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_detail_title { clear: both; }
+
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_description { margin: 0px; padding: 0px; margin-top: 15px; margin-bottom: 15px; color: #2A2A2A; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_feature_title { display: inline; font-weight: 400; font-size: 10pt; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_features { display: inline; font-size: 10pt; margin: 0px; padding: 0px; font-weight: 400; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_features span { text-decoration: underline; }
+
+/**************************************************/
+#page.product_list_page.SC_Laundry div.main_content_wrapper, #page.product_list_page.SC_Kitchen div.main_content_wrapper{ width:700px}
+#page.SC_Laundry .product_review_count { padding-left:0px;}
+div#page div.main_content_wrapper.espot-wrapper, 
+#page.product_list_page.SC_Kitchen div.main_content_wrapper.espot-wrapper, 
+#page.product_list_page.SC_Accessories div.main_content_wrapper.espot-wrapper, 
+#page.product_list_page.SC_Laundry div.main_content_wrapper.espot-wrapper { margin-top:0px;}
+#page.product_list_page .main_content_wrapper .masthead { display:none}
+#page.product_list_page #espot_image { display:none}
+#page.product_list_page .main_content_wrapper .product_list_detail .row_cell { display: block; }
+#page.product_list_page .product_list_table_container .product_detail_set {  height:auto;min-height:50px; width:100%;border-bottom: 2px solid #A9A9A9;}
+#page.product_list_page .product_list_table_container .product_detail_set .row_cell table.row_cell_table_container tr.product_row td.product_list_table_action_cell{ display:none}
+#page.product_list_page .product_detail_msrp { float:none}
+#page.product_list_page .product_list_table_container .product_detail_set .row_cell table.row_cell_table_container tr.product_row td.product_list_table_id_cell { width:170px;}
+#page.product_list_page .product_list_table_container .product_detail_set .row_cell table.row_cell_table_container tr.product_row td { vertical-align:top;}
+#page.product_list_page .main_content_wrapper .product_list_table_container .product_image_link a img {   max-height: 100px;  max-width: 85px; width:auto; height:auto;}
+#page.product_list_page div.product_list_backboard { overflow:hidden; padding-bottom:30px;}
+
+body.print_product_list { margin:0 auto;}
+body.print_product_list #button_print { overflow:hidden}
+body.print_product_list #button_print a {float: right; display: block; overflow: hidden; position: static;}
+body.print_product_list #print_logo { width:100%; overflow:hidden;margin:0;padding-bottom:20px;}
+body.print_product_list #print_logo a { height:auto; width:auto; float:left;}
+body.print_product_list #print_logo #h2_text_print {color: #000000; float: left; font-weight: bold; padding-left: 10px; padding-top: 15px;}
+body.print_product_list #print_logo #h2_text_print .types { font-size:12px}
+body.print_product_list #print_logo #h2_text_print .print_types { font-size:24px}

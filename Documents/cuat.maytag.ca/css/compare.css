@@ -1,0 +1,735 @@
+.counter{
+	float:right;
+}
+.displayNone{
+	display:none;
+}
+.bottom_box
+{
+float:right;
+}
+#compare_product_error h2{
+	color:#666666;
+	float:left;
+}
+
+.highlight{
+	background:url('../images/content/compare/btn-highlight.png') no-repeat top center;
+	width:auto;
+	height:41px;
+	 margin-top: 224px;
+	 cursor:pointer;
+	 text-align:center;
+}
+html[lang=fr] .highlight{
+        background:url('../images/content/compare/btn-highlight_fr.png') no-repeat top center;
+        margin-top: 206px;
+}
+.highlight_active{
+	background:url('../images/content/compare/btn-highlight.png') no-repeat center -40px;
+		width:auto;
+	height:41px;
+	 margin-top: 224px;
+	 cursor:pointer;
+	 text-align:center;
+}
+html[lang=fr] .highlight_active{
+        background:url('../images/content/compare/btn-highlight_fr.png') no-repeat center -40px;
+        margin-top: 206px;
+}
+
+tr.row_highlight
+{
+    background: none repeat scroll 0 0 #005abb!important;
+    color: #ffffff!important;
+    border-top: 1px solid #FFFFFF;
+}
+.row_highlight td
+{
+    background: none repeat scroll 0 0 #005abb!important;
+    color: #ffffff!important;
+}
+
+.expanded_all{
+    background: url("../images/content/compare/plus-expand.jpg") no-repeat scroll 0 2px transparent;
+    color: #666666;
+    float: right;
+    font-size: 11pt;
+    padding-left: 22px;
+    position: relative;
+    top: 28px;
+    right:17px;
+    cursor:pointer;
+}
+
+.collapsed_all{
+     background: url("../images/content/compare/minus-collapse.jpg") no-repeat scroll 0 2px transparent;
+    color: #666666;
+    float: right;
+    font-size: 11pt;
+    padding-left: 22px;
+    position: relative;
+    top: 28px;
+    right:17px;
+    cursor:pointer;
+}
+.back_button
+{
+    text-align:center;
+}
+
+html[lang=fr] #compare_top_carousels .back_button a img{
+    display: none;
+}
+html[lang=fr] #compare_top_carousels .back_button a{
+    background: url("../images/btn-back-products_fr.png") no-repeat scroll 0 2px transparent;
+    width: 150px;
+    height: 33px;
+    display: inline-block;
+}
+
+.cols_first .info_counts {
+    margin-top: 15px;
+    min-height: 80px;
+}
+
+body#popuppage .product_list .cols, #compare_top_carousels .compare_product_list .cols {
+    background: none;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols .cols_con_whirlpool {
+    border-left: 1px dotted #999999;
+    display: inline;
+    float: left;
+    min-height: 415px;
+    width: 189px;
+}
+
+#compare_top_carousels .compare_product_list .cols_space {
+    background:none;
+}
+
+.cols_add_product {
+    border-left: 1px dotted #999999;
+    height: 415px;
+}
+
+.remove_link {
+    margin: 8px 10px 10px 0;
+    text-align: right;
+    text-transform:uppercase;
+}
+
+.remove_link a{
+    background: url("../images/content/compare/close_remove.jpg") no-repeat scroll 0 2px transparent;
+    display: inline;
+    height: 13px;
+    padding-left: 15px;
+    width: 13px;
+}
+
+.product_image_wrapper {
+    text-align: center;
+    margin-top: 27px;
+}
+.rating {
+    border-bottom: 1px dotted #DDDDDD;
+    margin: 10px 7% 0;
+    padding-bottom: 10px;
+    text-align: center;
+    clear: both;
+}
+.rating .reviews{
+    display: inline-block;
+}
+
+.compare_types {
+    margin-left: 10px;
+}
+.compare_types .col_2 {
+    padding-left: 0;
+}
+
+.comments {
+    margin-left: 12px;
+}
+
+.reviews a, .reviews a:hover 
+{
+    color:#005ABB;
+    text-decoration:none!important;
+}
+
+.comments a, .comments a:hover 
+{
+    color:#005ABB;
+    text-decoration:none!important;
+}
+
+
+.specs_header_open {
+    background: none;
+    border-bottom:1px solid #a6a6a6;
+    width: 900px;
+}
+
+.specs_header_close {
+    background: none;
+    border-bottom:1px solid #a6a6a6;
+}
+
+.btns
+{
+    margin-left:12px;
+}
+.btns a.where-to-buy {
+    background: url("../images/content/compare/btn-where-to-buy.png") no-repeat scroll -17px -38px transparent;
+    width:125px;
+    height:31px;
+    display:inline-block;    
+    margin-top: 5px;
+}
+html[lang=fr] .btns a.where-to-buy{
+    background: url("../images/content/compare/btn-where-to-buy_fr.png") no-repeat scroll -12px -41px transparent;
+    width: 150px;
+}
+
+.btns a.where-to-buy:hover {
+    background: url("../images/content/compare/btn-where-to-buy.png") no-repeat scroll -17px -88px transparent;
+}
+html[lang=fr] .btns a.where-to-buy:hover {
+    background: url("../images/content/compare/btn-where-to-buy_fr.png") no-repeat scroll -12px -90px transparent;
+}
+
+.save_to_favorites, .saved_to_favorites_checked
+{
+     background: url("../images/content/compare/save-product.png") no-repeat scroll left center transparent;
+    width:125px;
+    height:12px;
+    display:inline-block;     
+    margin-top: 5px;
+}
+html[lang=fr] .save_to_favorites, html[lang=fr] .saved_to_favorites_checked
+{
+     background: url("../images/content/compare/save-product_fr.png") no-repeat scroll left center transparent;
+     width: 135px;
+}
+.compare_action_links
+{
+    margin-left:12px;
+    padding:0;
+}
+
+.add_product
+{
+     background: url("../images/content/compare/btn-add-product.png") no-repeat scroll center center transparent;
+    width:125px;
+    height:29px;
+    display:inline-block;        
+}
+html[lang=fr] .add_product
+{
+     background: url("../images/content/compare/btn-add-product_fr.png") no-repeat scroll center center transparent;
+     height: 29px;
+}
+
+#compare_top_carousels .compare_product_list .cols_first {
+    background: url("../images/content/compare/bg_compare_grey_v2.png") no-repeat scroll center bottom transparent;
+    margin-top:0;
+    height:415px;
+}
+
+#compare_sub_body {
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+#page.product_detail_page .main_link.expanded {
+    background: url("../images/content/compare/icon_arrow_green_down.png") no-repeat scroll 14px 19px transparent;
+    color: #005abb;
+    font-size: 14pt;
+    text-transform: capitalize;
+}
+
+.add_product_con {
+    background: url("../images/content/compare/btn_compare_add_product_bg.png") no-repeat scroll left top transparent;
+}
+
+.col_2 span {
+    color: #3f3f3f;
+}
+
+.col_2 span.grey {
+    color: #989898;
+}
+
+
+.carousels_panels {
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;    
+    width: 947px;
+}
+
+
+#compare_body div.btn_back {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#compare_body div.btn_back a
+{
+     border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    color: #005ABB;
+    font-weight: bold;
+   padding: 10px 15px;
+    text-transform: uppercase;
+}
+/*endeca.css*/
+
+.endeca_sortViewDisplayBar_top {    
+    width: 685px;
+}
+.endeca_content {    
+    width: 685px;
+}
+ul.sortBy_sections li div#sortBy_text {
+    color: #333333;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 13px;
+    padding: 0 10px 0 0;
+    position: relative;
+    width: 55px;
+}
+html[lang=fr] ul.sortBy_sections li div#sortBy_text {
+    color: #333333;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 13px;
+    padding: 0 10px 0 0;
+    position: relative;
+    width: 60px;
+}
+
+#sortBy_text 
+{
+    display:block;
+}
+
+ul.sortBy_sections li.first {
+    border:none;
+}
+
+ul.sortBy_sections {    
+    padding: 0;    
+}
+
+.bar_compare_btn {  
+    /*Add in Add to Compare btn WM1626 WM1625*/
+    display: none;  
+    float: right;    
+    margin-right: 10px;    
+    background:none;
+    color:#333333;
+}
+
+div.endeca_displayingViewAllIndicators {    
+    height: 30px;    
+}
+
+div.endeca_displayingViewAllIndicators ul {
+    color: #999999;
+    float: left;
+    font-size: 9px;
+    height: 22px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 5px;
+    position: relative;
+    width: 320px;
+}
+
+div.endeca_displayingViewAllIndicators ul#displaying_count li
+{
+    padding-left: 16px;
+}
+
+div.endeca_displayingViewAllIndicators ul li {
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: relative;
+    width: auto;
+}
+
+div.endeca_displayingViewAllIndicators ul.pageIndicator_conteiner {
+    float: right;
+    font-size: 12px;
+    height: 22px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    right: 17px;
+}
+
+div.endeca_displayingViewAllIndicators ul li a {
+    border-bottom: none;
+    font-size: 12px;    
+}
+
+
+div.endeca_displayingViewAllIndicators ul li.endeca_viewAll_btn {
+    color:#333333;
+}
+.sortView_content {    
+    padding: 13px 0;    
+}
+.endeca_rightContainer {    
+    width: 685px;
+}
+
+
+div.endeca_content ul.endeca_aplliancesList {    
+    width: 685px;
+}
+
+
+div.endeca_content ul.endeca_aplliancesList li {    
+    width: 655px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div {
+    padding-left:;
+}
+li.applince div {
+    padding: 10px 0;
+    max-width: 330px;
+}
+div.endeca_applianceImg {
+    height: 135px;
+    margin: 10px 0;
+    padding: 0 !important;
+    width: 150px;
+}
+
+div.endeca_applinceInfo {
+    float: left;
+    height: 175px;
+    position: relative;
+    width: 358px;
+}
+
+div.endeca_applinceInfo ul li.applinceInfo_title {
+    font-size: 10pt;          
+    font-weight: bold;
+    padding: 6px 0 5px;
+    width: 330px;
+}
+
+div.endeca_applinceInfo ul li.whatsInside {
+    padding-left: 25px;
+    
+    text-transform: uppercase;
+}
+
+
+div.endeca_applinceInfo ul li.insideList {    
+    width: 320px;
+    height:auto;
+}
+
+
+div.endeca_applinceInfo ul li.insideList ul li { 
+    padding: 5px 0 0;
+    width: 330px;
+    height:auto;
+}
+
+div.endeca_applinceInfo ul li.insideList ul li span {
+    display: inline;
+}
+
+
+div.endeca_applianceImg {
+    border-right: none;    
+}
+
+div.endeca_applinceInfo {    
+    width: 358px;
+}
+
+div.endeca_viewBuy_btns {    
+    width: 145px;
+    text-align:right;
+}
+div.endeca_viewBuy_btns ul.endecaProdCompare li.prodprice {
+    font-weight: bold; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color: #323232; font-size: 12.5px;
+  
+}
+
+div.endeca_viewBuy_btns ul.endecaProdCompare li.prodprice span {
+    color:#333333;
+    font-weight: bold;
+}
+
+div.endeca_viewBuy_btns ul.endecaProdCompare li.prodRateReviews a {
+    color: #005ABB;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.endeca_viewBuy_btns ul.endecaProdCompare li.prodRateStars a {
+    float:right!important;
+}
+
+
+.has-js .prodCompare .label_check 
+{
+    background: url("../images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 0 5px transparent;    
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare {
+    height: 24px;
+    margin: 25px 8px 15px;
+    width: auto!important;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateReviews {    
+    margin: 10px 8px 0;    
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateStars {    
+    margin: 0 8px 0;    
+}
+.has-js .prodCompare .label_check, .has-js .prodCompare .label_radio {
+    cursor: pointer;
+    min-height:10%;
+    float: left;
+    height: 11px;
+    margin: 0;
+    padding-bottom: 8px;
+    position: relative;
+    width: 0px;
+}
+
+.has-js .prodCompare label.c_on {
+    background: url("../images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 0 -15px transparent;
+	margin:5px 0 0;
+}
+
+.has-js .prodCompare label.c_off {
+    background: url("../images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 0 5px transparent;
+    margin: 0;
+    margin-right: -60px;
+    padding-right: 60px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare_active.readyCompare {
+  background: url("../images/content/compare/compare_active.png") no-repeat scroll 0 3px transparent;
+    /*color: transparent;
+    font-size: 9px;*/
+	font-size: 0;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    padding-left: 2px;
+    padding-right: 5px;
+    text-align: center;
+    width: 60px;
+    display:block;
+}
+html[lang=fr] div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare_active.readyCompare {
+  background: url("../images/content/compare/compare_active_fr.png") no-repeat scroll 0 3px transparent;
+}
+
+
+.bar_compare_btn.active {
+    background: url("../images/content/compare/compareBox.png") no-repeat scroll 1px 0 transparent;
+    cursor: pointer!important;
+    font-weight: bold;
+    height: 14px;
+    margin-right: 10px;
+    width: 56px;
+    /*color:transparent;
+    font-size: 10px;*/
+	font-size: 0;
+}
+html[lang=fr] .bar_compare_btn.active {
+    background-image: url("../images/content/compare/compareBox_fr.png");
+    background-position: 1px 0;
+    background-repeat: no-repeat;
+    width: 67px;
+}
+
+.bar_compare_btn {    
+    float: right;
+    font-size: 12px;
+    height: 15px;
+    line-height: 12px;
+    padding: 5px 9px;
+    position: relative;    
+    width: 54px;
+}
+html[lang=fr] .bar_compare_btn{
+    width: 67px;
+}
+.bar_compare_btn:hover
+{
+    color: #333333;
+    cursor:auto;   
+}
+.bar_compare_btn.active:hover
+{
+    color: transparent;
+    cursor:pointer;   
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare {
+    margin: 0;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare_active {
+    color: #000000;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare {
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    margin: 4px 0 0;
+    padding: 0;
+    text-decoration: none;
+    width: 53px;
+    text-transform:uppercase;
+}
+html[lang=fr] div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare{
+    width: 68px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare {
+    text-decoration: none;
+    list-style: none outside none;
+    float: right;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns ul.endecaProdCompare li {
+    float: right; 
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns ul.endecaProdCompare li.whereToBuy {
+    float: right;
+    width: auto !important;
+}
+
+div.endeca_viewBuy_btns ul .whereToBuy a {
+    background: url("../images/content/compare/btn-where-to-buy.png") no-repeat scroll -17px -38px transparent;
+    color: #666666;
+    display: block;
+    height: 32px;
+    line-height: 15px;
+    margin: 15px 0 0;
+    width: 118px;
+}
+html[lang=fr] div.endeca_viewBuy_btns ul .whereToBuy a {
+    background: url("../images/content/compare/btn-where-to-buy_fr.png") no-repeat scroll -12px -41px transparent;
+    width: 126px;
+}
+div.endeca_viewBuy_btns ul .whereToBuy a:hover {
+    background: url("../images/content/compare/btn-where-to-buy.png") no-repeat scroll -17px -88px transparent;
+}
+html[lang=fr] div.endeca_viewBuy_btns ul .whereToBuy a:hover {
+    background: url("../images/content/compare/btn-where-to-buy_fr.png") no-repeat scroll -12px -90px transparent;
+}
+
+.product_compare_error_main_box {
+    background: none repeat scroll 0 0 white;    
+    border: 4px solid #2669c0;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #CCCCCC;
+    float: left;
+    left: 30%;
+    padding: 5px 25px 25px;
+    position: fixed;
+    top: 30%;
+    width: 550px;
+    z-index: 10001;
+}
+
+#compare_product_underlay {
+                position:fixed;
+                top:0;
+                left:0;
+                background:#fff;
+                opacity:0.5;
+				filter:alpha(opacity=50);
+                z-index:998;
+                height:100%;
+                width:100%;}
+                
+.bottom_box {
+    float: right;
+    margin-right: -23px;
+}
+
+#compare_product_error h2 {
+    color: #666666;
+    float: left;
+    font-weight: normal;
+    font-size: 1.6em;
+    padding-right: 25px;
+}
+
+div.endeca_applinceInfo ul li.whatsInside div {
+}
+
+.endeca_sortViewDisplayBar_bottom {
+    padding-bottom: 0;
+}
+
+li.applince {    
+    padding: 15px 0 0 22px;
+}
+
+
+/*Compare Page*/
+#content-wrap #breadcrumb-section {
+    display: block;
+}
+
+div.compare_appliances_body ul.tabs li a {
+    margin-left: 0;
+}
+div.compare_appliances_body ul.tabs li a.tab_close {
+     float: right;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#scroll_carrousel
+{
+    overflow:hidden;
+}
+
+.button_container
+{
+    float:left;
+    width:100%;
+}
+
+
+#compare_body #compare_sub_body #compare_top_carousels .product_image_wrapper img
+{
+width: 135px;
+}
+
+.endeca_content .applince .endeca_applianceImg .img_appliance{width:135px; height:135px;}
+.endeca_content .applince .endeca_viewBuy_btns .endeca_buy_buttons .prodprice {margin-bottom:10px;}
+

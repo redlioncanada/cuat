@@ -1,0 +1,75 @@
+/*__________Product Detail Print Page - Matthew Day ______________*/
+
+* { text-align: left; }
+body { width: 700px; margin-left: 50px; margin-right: auto; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Sans Regular', Verdana, sans-serif; }
+body.product_detail_page { margin:auto;}
+
+#header_wrapper #header_info .product_rating_top { display: none; }
+#colors_and_msrp_independent { display: none; }
+
+#print_button { width: 100%; text-align: right; margin-top: 10px; }
+#print_button a{background:url(../images/btn_print_page.png) left top no-repeat;width:91px;height:35px;float:right;}
+
+#header_wrapper { width: 100%; clear: both; overflow: hidden; }
+
+#header_wrapper #logo { float: left; width: 150px; height: 85px; }
+#header_wrapper #header_info { float: left; width: 64%; }
+#header_wrapper #header_info #header_title { font-weight: bold; font-size: 14pt; margin: 0px; padding: 0px; margin-bottom: 5px; }
+#header_wrapper #header_info #header_title sup { font-size: 10pt; }
+#header_wrapper #header_info #header_details { padding: 0px; margin: 0px; }
+#header_wrapper #header_info #header_details span { margin-right: 10px; }
+#header_wrapper #header_info #header_details .model_number { font-weight: bold; }
+#header_wrapper #header_info #header_details .product_rating_top { }
+#header_wrapper #header_info #header_details .product_rating_top img { height: 15px; width: 15px; }
+#header_wrapper #header_info #header_details .product_rating_top span { font-weight: bold; }
+
+#header_icon_wrapper { float: right; }
+#header_icon_wrapper img { width: 46px; height: 47px; }
+
+#content_wrapper { width: 100%; clear: both; margin-top: 20px; overflow: hidden; }
+
+#content_wrapper .column_1 { padding: 0px; margin: 0px; float: left; width: 360px; text-align: center; }
+#content_wrapper .column_1 img { max-height:306px; max-width:204px; width:auto; height:auto;}
+#content_wrapper .column_1 #product_rating_image { text-align: left; margin: 0px; padding: 0px; margin-bottom: 5px; font-size: 12pt; width; 100%; font-weight: bold; }
+#content_wrapper .column_1 #product_rating_image .rating_reviews { font-size: 8pt; font-weight: 300; }
+#content_wrapper .column_1 #product_rating_image img { height: auto; width: auto; margin-bottom: -3px; }
+
+#content_wrapper .column_2 { padding: 0px; margin: 0px; float: left; margin-left: 15px; width: 310px; }
+#content_wrapper .column_2 .content_title { font-size: 14pt; font-weight: 700; padding-bottom: 5px; border-bottom: 1px solid #222222; }
+#content_wrapper .column_2 .content_feature { clear: both; margin-bottom: 20px; overflow: hidden; }
+#content_wrapper .column_2 .content_feature .content_feature_image_wrapper { float: left; text-align: center; width: 75px; }
+#content_wrapper .column_2 .content_feature .feature_info { float: left; width: 65%; }
+#content_wrapper .column_2 .content_feature .feature_info .feature_title { font-weight: bold; padding: 0px; margin: 0px; margin-bottom: 5px; }
+#content_wrapper .column_2 .content_feature .feature_info .feature_details { padding: 0px; margin: 0px; }
+
+#content_wrapper .column_2 #colors_and_msrp_content { margin: 0px; padding: 0px; clear: both; }
+#content_wrapper .column_2 #colors_and_msrp_content .colors_content_title { border-bottom: 1px solid #222222; font-size: 14pt; margin: 0px; padding: 0px; margin-bottom: 15px; }
+#content_wrapper .column_2 #colors_and_msrp_content .color_line { margin: 0px; padding: 0px; margin-bottom: 5px; overflow:hidden;}
+#content_wrapper .column_2 #colors_and_msrp_content .color_line img { float:left;}
+#content_wrapper .column_2 #colors_and_msrp_content .color_line span { font-weight: bold; padding-left: 10px; display:block; float:left; line-height:2.5;}
+#product_details_wrapper { clear: both; }
+#product_details_wrapper .category_wrapper { overflow: hidden; margin-top: 20px; }
+#product_details_wrapper .category_wrapper .category_point_wrapper { margin-bottom: 10px; }
+#product_details_wrapper .category_wrapper .category_point_wrapper .category_point_text { display: inline; margin: 0px; padding: 0px; }
+
+#product_details_wrapper .category_wrapper .spec_line_wrapper { width: 100%; overflow: hidden; padding: 0px; margin: 0px; }
+#product_details_wrapper .category_wrapper .spec_line_wrapper .spec_line_title { width: 30%; float: left; margin: 0px; padding: 0px; padding-left: 25px; padding-top: 5px; padding-bottom: 5px; font-size: 8pt; }
+#product_details_wrapper .category_wrapper .spec_line_wrapper .spec_line_text { float: left; margin: 0px; padding: 0px; width: 65%; }
+#product_details_wrapper .category_wrapper .spec_line_wrapper .spec_line_text .spec_column { float: left; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 5px; padding-left: 15px; border-left: 1px dotted #DDDDDD; float: left; width: 29%; font-size: 8pt; }
+#product_details_wrapper .category_wrapper .last_spec_line { border-bottom: 0px solid; }
+
+#product_details_wrapper #specifications_wrapper { margin-left: -10px; }
+#product_details_wrapper #promotions_wrapper { padding-top: 10px; }
+#product_details_wrapper #promotions_wrapper img { float: left; }
+#product_details_wrapper #promotions_wrapper p { margin-left: 10px; width: 90%; float: left; }
+
+#product_details_wrapper .category_wrapper .row_odd { background: #EEEEEE; overflow: hidden; }
+#product_details_wrapper .category_wrapper .row_even { background: #FFFFFF; overflow: hidden; }
+
+#footer_wrapper { clear: both; overflow: hidden; margin-bottom: 20px; margin-top: 40px; }
+#footer_wrapper #footer_reference_list { list-style-type: decimal; margin-left: 2.5em; }
+#footer_wrapper #footer_reference_list li { }
+#footer_wrapper #disclaimer_text { width:700px; }
+/*product_detail_page h4*/
+.product_detail_page #product_details_wrapper h4.category_point_title { margin: 0px; padding: 0px; margin-bottom: 5px; font-size: 12pt; font-weight: 700; }
+.product_detail_page #product_details_wrapper h4.category_title {display: none;  }

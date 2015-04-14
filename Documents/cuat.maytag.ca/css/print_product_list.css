@@ -1,0 +1,53 @@
+/*--------------------------- CSS Declarations for Print Product List Pages - Maytag  ------------------------------------- */
+
+body { background-color: #FFFFFF; }
+
+#page {
+	width: 720px;
+	float: left;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+}
+#page .print_page_wrapper { float: right; width: 95px; height: 35px; border: 0px; margin: 0px; margin-bottom: 0px; }
+#page .print_page_wrapper a { margin: 0px; padding: 0px; }
+
+#page .header_wrapper { width: 100%; height: 75px; margin-top: 10px; clear: both; }
+#page .header_wrapper .logo_wrapper { width: 130px; float: left; }
+#page .header_wrapper .title_wrapper { color: #2A2A2A; float: left; font-size: 24pt; padding-top: 5px; padding-left: 10px; }
+#page .header_wrapper .title_wrapper .title_pre_title { font-size: 18pt; margin: 0px; margin-bottom: 5px; }
+
+#page .selection_criteria_wrapper { clear: both; margin-top: 20px; margin-bottom: 20px; background-color: #D0D0D0; width: 100%; }
+#page .selection_criteria_wrapper .criteria_title_wrapper { width: 97%; color: #2A2A2A; border-bottom: 1px solid #2A2A2A; font-size:1.4em; font-weight:700; margin-left: 10px; padding-top: 5px; padding-bottom: 5px; }
+#page .selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_1 { background-color: transparent; float: left; width: 49%; }
+#page .selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_2 { float: left; width: 49%; }
+#page .selection_criteria_wrapper .criteria_detail_wrapper { padding-left: 10px; line-height: 2.0; }
+#page .selection_criteria_wrapper .criteria_detail_wrapper .criteria_detail_label { font-weight:700; }
+
+#page .large_green_bar { display: none; }
+#page .small_green_bar { border: 0px; border-top: 1px solid #2A2A2A; border-bottom: 1px solid #2A2A2A; clear: both; height: 3px; }
+#page .first_bar { display: none; }
+#page .results_label { clear: both; color: #2A2A2A; }
+#page .clear_div { clear: both; }
+
+#page .product_list_item_wrapper { width: 100%; margin-top: 15px; margin-bottom: 15px; }
+#page .product_list_item_wrapper .product_list_item_image_wrapper { float: left; width: 230px; margin: 0px; text-align: center;  }
+#page .product_list_item_wrapper .product_list_item_image_wrapper .product_list_item_main_image { }
+#page .product_list_item_wrapper .product_list_item_image_wrapper .color_selection_with_image { display: none; }
+
+#page .product_list_item_wrapper .product_list_item_detail_wrapper { float: left; width: 445px; margin: 0px; color: #2A2A2A; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .detail_header_wrapper_top { display: none; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .serial_and_price_bottom .color_selection_with_title { float: left; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .serial_and_price_bottom .color_selection_with_title .color_label { font-size: 11pt; font-weight: bold; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .serial_and_price_bottom .detail_serial_bottom { float: left; margin-right: 10px; font-size:10pt; font-weight: 700; color: #2A2A2A; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .serial_and_price_bottom .detail_price_bottom { float: left; margin-right: 10px; font-size:10pt; font-weight: 700; color:#2A2A2A; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .detail_rating_bottom { clear: both; color: #2A2A2A; font-weight: bold; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .detail_rating_bottom img { width: 11px; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .product_list_item_detail_title { clear: both; }
+
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .product_list_item_description { margin: 0px; padding: 0px; margin-top: 15px; margin-bottom: 15px; color: #2A2A2A; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .product_list_item_feature_title { display: inline; font-size: 8pt; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .product_list_item_features { display: inline; font-size: 8pt; margin: 0px; padding: 0px; font-weight: bold; }
+#page .product_list_item_wrapper .product_list_item_detail_wrapper .product_list_item_features span { text-decoration: underline; }
+
+/* fix issues in print page - product list */
+#page.product_list_page.SC_Accessories .main_content_wrapper .product_detail_set .tbl_cell{display:block;}

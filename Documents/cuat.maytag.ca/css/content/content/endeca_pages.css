@@ -1,0 +1,496 @@
+ul.tooltip_details{float:left!important;list-style:none outside none!important;position:relative!important}
+ul.tooltip_details li b{color:#000!important}
+body.tooltip_body_detail{font-family:Helvetica,Arial!important;font-size:12px!important;margin:0!important;padding:0!important}
+ul.title{float:left!important;list-style:none outside none!important;margin:0!important;padding:0 0 20px!important;position:relative!important;width:100%!important;color:#696868}
+ul.title li:first-child{border-bottom:1px dotted #c9c4c4!important;border-left:1px dotted #c9c4c4!important;border-right:1px dotted #c9c4c4!important;height:20px!important;margin-bottom:0!important;margin-left:auto!important;margin-right:auto!important;padding:8px 20px 0 25px!important;text-transform:uppercase!important;width:100px!important}
+ul.tooltip_details li{padding-bottom:15px!important;position:relative!important}
+ul.title li div{background-color:#f7f7f7!important;border:2px solid #fff!important;float:left!important;font-size:11px!important;font-weight:bold!important;height:18px!important;left:-25px!important;padding:8px 0 0 25px!important;position:relative!important;top:-10px!important;width:116px!important}
+body.endeca_pages{font-family:Helvetica,Arial}
+.endeca_compare_btn input{border:0 none!important;height:13px!important;padding:0!important;width:13px!important}
+.endeca_rightContainer{float:left;height:auto;position:relative;width:707px}
+#endeca_leftNavContainer{float:left;height:auto;padding:12px 14px 10px 0;position:relative;width:239px}
+#leftNav_topBorder{background:url("/images/content/jumppage/endeca_pages/filter_list_top.png") no-repeat scroll 0 0 transparent;float:left;height:12px;position:relative;width:239px}
+#btn_narrowBy{background-color:#e4e4e4;float:left;height:53px;padding:0 10px;position:relative;width:219px}
+#leftNav_bottomBorder{background:url("/images/content/jumppage/endeca_pages/filter_list_bottom.png") no-repeat scroll 0 0 transparent;float:left;height:12px;position:relative;width:239px}
+.leftNav_content{background-color:#e4e4e4;float:left;height:auto;position:relative;width:239px}
+div.nav_sections.first div.dotted_line{border-top:medium none}
+.nav_sections{float:left;height:auto;position:relative;width:239px}
+.nav_sections .tag_img{display:table-cell;float:left;height:auto;position:relative;vertical-align:middle;width:41px}
+.nav_sections div.tag_img img{padding:7px 0;vertical-align:middle}
+.nav_sections.first .opt_list_container{padding-left:4px}
+.nav_sections.first{padding-top:0px; padding-bottom: 18px;}
+.nav_sections.first div.tag_img img {padding-top: 30px;}
+.dotted_line{border-top:1px dotted #c9c4c4;float:left;height:1px;margin-left:8px;position:relative;width:150px}
+.dotted_line.colorChooserDot{margin-left:51px}
+.opt_list_container{float:left;padding:0 0 15px 10px;position:relative;width:188px;*padding:0 0 15px 0px;}
+.opt_list_container h4{color:#3F3F3F;font-size:11px;padding:10px 0 10px 5px;text-transform:uppercase;float:left;position:relative}
+.opt_list_container h4.endeca_opt_subtitle{color:#696868;font-size:9px;margin:11px 0 0;padding-left:23px;padding-right:23px;text-transform:none;width:120px}
+.endeca_optWrap.colorChooserWrap{padding-top:10px;width:230px}
+.endeca_textOpt{color:#696868;font-size:9px}
+.endeca_textOpt.inline{display:inline-block;float:left;height:30px;position:relative;width:113px}
+.endeca_textOpt.inactive_listItem{color:#B0B0B0;}
+div.colorChooserWrap div.endeca_textOpt img{float:left;position:relative}
+div.colorChooserWrap div.endeca_textOpt label.label_check{float:left;left:12px;margin:0;padding-left:17px;position:relative;top:-4px;width:0;z-index:1}
+.c_name{float:left;height:24px;padding-left:3px;padding-top:3px;position:relative;width:68px}
+.endeca_colorCheckbox{left:12px;margin:0;padding:0;position:relative;top:-4px}
+#endeca_refigeratorsHeader{/*background:url("/images/content/jumppage/endeca_pages/bg_header.png") no-repeat scroll 0 bottom transparent*/}
+.endeca_headers{float:left;height:103px;position:relative;width:707px}
+#refrigerator_text{background:url("/images/content/jumppage/endeca_pages/mayRefHead.png") no-repeat scroll 25px 60% transparent;height:90px;padding:10px 20px 0 0;width:345px}
+.endeca_headers_text{float:left;position:relative}
+#refrigerator_applinceImg{background:url("/images/content/jumppage/endeca_pages/refriHead.png") no-repeat scroll 0 0 transparent;height:103px;width:257px}
+.endeca_headers_applianceImg{float:left;position:relative}
+.endeca_sortViewDisplayBar_top{float:left;height:50px;position:relative;width:707px}
+.endeca_sortViewDisplayBar_top.sticky{position:fixed;top:-1px;z-index:100}
+/*.endeca_sortViewDisplayBar_top{float:left;height:42px;position:relative;width:707px}*/
+/*html[lang=fr].endeca_sortViewDisplayBar_top{height:82px;}*/
+
+.sortView_content{background-color:#e3e1e1;float:left;height:22px;margin-top:1px;padding:9px 0 9px 14px;position:relative;width:677px}
+.sortView_borderLeft{background:url("/images/content/jumppage/endeca_pages/sortByNav_borderLeft.png") no-repeat scroll 0 0 transparent;height: 42px !important}
+.sortView_borderRight{background:url("/images/content/jumppage/endeca_pages/sortByNav_borderRight.png") no-repeat scroll 0 0 transparent;height: 42px !important}
+
+html[lang=fr] .sortView_content{background-color:#e3e1e1;float:left;height:44px;margin-top:1px;padding:9px 0 0px 0px;position:relative;width:677px}
+html[lang=fr] .sortView_borderLeft{background:url("/images/content/jumppage/endeca_pages/sortByNav_borderLeft_tall.png") no-repeat scroll 0 0 transparent;margin-top: 1px;height: 62px !important}
+html[lang=fr] .sortView_borderRight{background:url("/images/content/jumppage/endeca_pages/sortByNav_borderRight_tall.png") no-repeat scroll 0 0 transparent;margin-top: 1px;height: 62px !important}
+
+.sortView_general{float:left;height:42px;position:relative;width:8px}
+.bar_compare_btn{background:url("/images/content/jumppage/endeca_pages/compareBox.png") no-repeat transparent;background-size:74px 46px;color:#696868;float:left;font-size:10px;height:12px;padding:5px 9px;position:relative;text-transform:uppercase;width:69px}
+.bar_compare_btn:hover{background-position:0 -23px;color:#fff;cursor:pointer}
+ul.sortBy_sections{float:left;height:22px;list-style:none outside none;margin:0;padding:0 0 0 23px;position:relative;width:auto;}
+ul.sortBy_sections li{border-left:1px dotted #696868;float:left;font-size:10px;height:17px;padding:5px 10px 0;position:relative;width:auto;}
+html[lang=fr] ul.sortBy_sections li{float:left;font-size:10px;height:25px;padding:5px 10px 0;position:relative;width:auto;}
+ul.sortBy_sections li.first{width:auto;}
+ul.sortBy_sections li div#sortBy_text{float:left;font-size:10px;height:13px;padding-right:10px;position:relative;width:46px}
+ul.sortBy_sections li a{background:url("/images/content/jumppage/endeca_pages/sortBy.png") no-repeat scroll 0 -16px transparent;color:#9E9E9E;float:left;height:15px;padding:1px 0 0 22px;position:relative;text-decoration:none;font-family: inherit;font-size: 11px;}
+ul.sortBy_sections li a.active{background-position:0 0}
+ul.pageIndicator_conteiner{float:right;font-size:12px;height:22px;list-style:none outside none;margin:0;padding:4px 0 0;position:relative;width:auto;}
+ul.pageIndicator_conteiner li{float:left;height:18px;padding:0 0 0 4px;position:relative;width:15px}
+ul.pageIndicator_conteiner li a{color:#696868;float:left;padding-top:4px;position:relative;text-decoration:none}
+ul.pageIndicator_conteiner li a.pageIndicator_pageNumber{background:url("/images/content/jumppage/endeca_pages/numberBox.png") no-repeat scroll 0 -18px transparent;color:#696868;float:left;height:13px;padding:1px 4px 4px;position:relative;color:#3f3f3f;width:10px}
+ul.pageIndicator_conteiner li a.pageIndicator_pageNumber.activePage{background:url("/images/content/jumppage/endeca_pages/numberBox.png") no-repeat scroll 0 0 transparent;color:#fff}
+ul.pageIndicator_conteiner li a.pageIndicator_leftArrow{background:url("/images/content/jumppage/endeca_pages/leftarrow.png") no-repeat scroll 0 3px transparent;float:left;height:16px;padding-top:5px;position:relative;width:8px}
+ul.pageIndicator_conteiner li a.pageIndicator_righArrow{background:url("/images/content/jumppage/endeca_pages/rightarrow.png") no-repeat scroll 0 3px transparent;float:left;height:16px;padding-top:5px;position:relative;width:8px}
+div.endeca_displayingViewAllIndicators{float:right;height:22px;padding-top:5px;position:relative;width:707px}
+div.endeca_displayingViewAllIndicators ul{color:#000;float:right;font-size:9px;height:22px;list-style:none outside none;margin:0;padding:0 15px 0 0;position:relative;width:300px;text-align: right;}
+div.endeca_displayingViewAllIndicators ul li{color:#989898;float:left;padding-left:5px;padding-right:5px;position:relative;width:51px}
+div.endeca_displayingViewAllIndicators ul li.endeca_displayedItems,div.endeca_displayingViewAllIndicators ul li.endeca_totalItems{font-size:10px;font-weight:bold;width:auto;color:#3F3F3F;}
+div.endeca_displayingViewAllIndicators ul li a{color:#000;font-size:9px;font-weight:bolder;text-decoration:none;border-bottom:1px solid #000; padding-bottom: 0px; display: block;}
+div.endeca_displayingViewAllIndicators ul li.endeca_viewAll_btn{padding-left:12px; width:auto; float: right;}
+div.endeca_displayingViewAllIndicators ul li.outOf_text{width:32px}
+.endeca_content{float:left;height:auto;position:relative;width:707px}
+html[lang=fr] .endeca_content{float:left;height:auto;position:relative;width:707px;margin-top:22px;}
+div.endeca_content ul.endeca_aplliancesList{float:left;list-style:none outside none;margin:0;padding:0;position:relative;width:707px}
+div.endeca_content ul.endeca_aplliancesList li{float:left;position:relative;width:684px}
+div.endeca_content ul.endeca_aplliancesList li.applince div{float:left;position:relative}
+li.applince div.endeca_applinceReviews{border-right:1px dotted #c9c4c4;height:142px;width:104px}
+li.applince div.endeca_applinceReviews h3.msrp_text{color:#989898;font-size: 9px !important;padding-bottom:0!important}
+li.applince div.endeca_applinceReviews h3.price{color: #3F3F3F;font-size:16px;font-weight:bold;}
+html[lang=fr] li.applince div.endeca_applinceReviews h3.price{font-size:15px;}
+li.applince div.endeca_applinceReviews h3.model{color:#696868;font-size:.78em;padding-bottom:20px}
+li.applince div.endeca_applinceReviews h3.model a{color: #989898; text-decoration: none;}
+li.applince div.endeca_applinceReviews h3.reviews{color:#4773f2;font-size:.8em}
+li.applince{border-bottom:1px dotted #c9c4c4;border-top:1px dotted #c9c4c4;margin-bottom:1px;padding:15px 10px; min-height:190px;}
+
+/*li.applince.first{-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;border-top:medium none!important;border-bottom:medium none!important;margin-bottom:0;margin-top:10px;padding-top:10px;background:#e4e4e4;behavior:url(PIE.htc)!important}*/
+li.applince.first{
+	border-color: #C9C4C4 !important;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	border-style: dotted dotted none;
+	border-width: 1px 1px medium;
+	margin-bottom: 0;
+	margin-top: 1px;
+	padding-top: 10px;
+	behavior:url(/PIE.htc)!important;
+}
+/*li.applince.second{-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;border-top:medium none!important;border-bottom:medium none!important;background:#e4e4e4;behavior:url(PIE.htc)!important}*/
+li.applince.second{
+	border-color: #C9C4C4 !important;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	border-bottom: 1px dotted;
+	border-left: 1px dotted;
+	border-right: 1px dotted;
+	border-top: medium none !important;
+	behavior:url(/PIE.htc)!important
+}
+li.applince.first, li.applince.second{
+	/*background: url("/images/content/jumppage/endeca_pages/gradient.png") repeat scroll 0 0 #E4E4E4;
+	-pie-background: url("/images/content/jumppage/endeca_pages/gradient.png") #e4e4e4 0px 0px !important;
+	behavior:url(PIE.htc)!important;*/
+}
+li.applince h3{float:right;margin:0;padding:0;position:relative}
+.floated_right{float:right!important}
+div.msrp_price{border-bottom:1px dotted #c9c4c4;float:right!important;height:35px;padding-right:20px;padding-top:6px;width:84px}
+html[lang="fr"] div.msrp_price { padding-right:5px; width: 97px; }
+div.code_reviews{float:right!important;padding:5px 10px 0 0;width:94px}
+div.endeca_compare_btn{background:url("/images/content/jumppage/endeca_pages/bg_ckeck_compare.png") no-repeat scroll 0 0 transparent;color:#696868;float:right!important;font-size:9px;height:17px;margin-top:10px;padding:6px 0 0 7px;position:relative;text-transform:uppercase;width:77px}
+div.endeca_applianceImg{border-right:1px dotted #c9c4c4;height:110px;padding:15px 20px 10px;width:110px}
+a.endeca_quickView img{border:medium none;}
+html[lang=fr] a.endeca_quickView img{display:none;}
+html[lang=fr] div.endeca_applianceImg:hover + a.endeca_quickView{background-image:url("http://nqan1.maytag.ca/images/data/fr_CA/btn_quick_view_hover_small.png") !important; float:left;left:-11px;position:relative;text-decoration:none;top:-86px;width:136px;height:53px;}
+html[lang=fr] div.endeca_applianceImg:hover > a.endeca_quickView{background-image:url("http://nqan1.maytag.ca/images/data/fr_CA/btn_quick_view_hover_small.png") !important; float:left;left:-11px;position:relative;text-decoration:none;top:-86px;width:136px;height:53px;}
+html[lang=fr] div.endeca_applianceImg:hover ~ a.endeca_quickView{background-image:url("http://nqan1.maytag.ca/images/data/fr_CA/btn_quick_view_hover_small.png") !important; float:left;left:-11px;position:relative;text-decoration:none;top:-86px;width:136px;height:53px;}
+a.endeca_quickView{display:none;float:left;left:-11px;position:relative;text-decoration:none;top:-86px}
+div.endeca_applinceInfo{float:left;height:142px;position:relative;width:305px}
+div.endeca_applinceInfo ul{list-style:none outside none;margin:0;padding:0;position:relative}
+div.endeca_applinceInfo ul li{font-size:9px}
+div.endeca_applinceInfo ul li.applinceInfo_title{border-bottom:1px dotted #c9c4c4;color:#4773f2;font-size:10px;font-weight:bold;padding:6px 25px 5px;width:260px}
+div.endeca_applinceInfo ul li.applinceInfo_title a{
+    font-size: 14px; font-weight: bold; text-transform: uppercase; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color: #005abb; line-height: 19px; text-decoration: none;
+}
+div.endeca_applinceInfo ul li.whatsInside{}
+div.endeca_applinceInfo ul li.whatsInside div{width:116px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color: #323232; float: left; font-size: 13px; font-weight: bold; height: 18px; left: -25px; padding: 8px 0 0 0; position: relative; top: -10px; width: 116px; margin: 10px 0 0;}
+div.endeca_applinceInfo ul li.insideList{padding-top:0}
+div.endeca_applinceInfo ul li.insideList ul{height:inherit;margin:0;padding:0;width:inherit}
+div.endeca_applinceInfo ul li.insideList{height:70px;width:320px}
+div.endeca_applinceInfo ul li.insideList ul li{margin:0;padding:5px 0 0 25px}
+div.endeca_applinceInfo ul li.insideList ul li a{color:#005ABB;font-size:10px;font-weight:bold;text-decoration:none}
+div.endeca_applinceInfo ul li.insideList ul li a.productPopup{color:#3F3F3F;font-size:10px;font-weight:normal;text-decoration:underline}
+div.endeca_viewBuy_btns{float:left;padding-top:7px;position:relative;width:110px}
+html[lang=fr] div.endeca_viewBuy_btns ul li{width:139px!important}
+div.endeca_viewBuy_btns ul li{width:120px!important}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons{font-size:11px;list-style:none outside none;margin:0;padding:0 0 0 5px}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a{font-size:9px;font-weight:bold;text-decoration:none;text-transform:uppercase}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_whereTobuy{color:#005ABB;font-size:10px;font-weight:bold;padding-left:20px}
+html[lang=fr] div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_whereTobuy{font-size:10px;padding:0 0 0 20px;font-weight: bold;margin-left:-10px;}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_viewProduct{background:url("/images/content/jumppage/endeca_pages/prodDetailBox.png") no-repeat scroll 0 0 transparent;color:#fff;float:left;height:15px;margin:5px;padding:8px 10px;position:relative;width:95px; text-align:center}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_viewProduct:hover {background: url("/images/content/jumppage/endeca_pages/prodDetailBox.png") no-repeat scroll 0 -33px transparent;}
+/*check box styles*/
+.has-js .label_check,.has-js .label_radio{float:left;height:100%;min-height:100%;margin-left:4px;padding-bottom:5px;padding-left:19px;position:relative;width:160px; word-wrap: break-word;}
+.has-js .label_check input,.has-js .label_check_compare input,.has-js .label_radio input{left:-9999px;position:absolute}
+.has-js .label_check_compare{
+	float: left;
+    height: 14px;
+    margin-left: -3px;
+    min-height: 0;
+    padding-bottom: 0;
+    padding-left: 17px;
+    padding-top: 1px;
+    width: 50px;
+	color: #909090;
+text-align:center;
+}
+a.product-link{
+	color:#005abb;
+}
+/*style 1*/
+.has-js .label_check{background:url("/images/content/jumppage/endeca_pages/check-off.png") no-repeat scroll 0 0 transparent}
+.has-js label.c_on{background:url("/images/content/jumppage/endeca_pages/check-on.png") no-repeat scroll 0 0 transparent}
+.has-js label.c_inactive{color:#989898;background:url("/images/content/jumppage/endeca_pages/check-inactive.png") no-repeat scroll 0 0 transparent;}
+
+/*style 2*/
+.has-js .label_check_compare{background: url("/images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 0 0 transparent;}
+.has-js label.c_on_compare{ background: url("/images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 0 -15px transparent;}
+/*.has-js label.c_inactive_compare{color:#B0B0B0;background:url("/images/content/jumppage/endeca_pages/check-inactive.png") no-repeat scroll 0 0 transparent;}*/
+
+/*style 3*/
+.has-js .label_radio{background:url("radio-off.png") no-repeat scroll 0 0 transparent}
+.has-js label.r_on{background:url("radio-on.png") no-repeat scroll 0 0 transparent}
+
+/*end - check box styles*/
+h2.tooltip_subtitle{font-size:10pt;margin:0;padding:20px 0 0;}
+p.tooltip_content{color:#969696;font-size:10pt;margin:0;padding:10px 0}
+a.bigTooltip_endeca{
+background: url("/images/content/jumppage/endeca_pages/question_mark.png") no-repeat scroll right 0 transparent;
+float: left;
+height: 19px;
+margin: 8px 5px;
+padding: 0;
+position: absolute;
+right: 70px;
+text-indent: 9999px;
+width: 110px;
+}
+#amount{border:1px solid #696868!important;float:left;height:13px!important;left:70px;padding:2px!important;position:relative;top:61px;width:30px!important}
+.ui-helper-hidden{display:none!important}
+.ui-helper-hidden-accessible{clip:rect(1px,1px,1px,1px)!important;position:absolute!important}
+.ui-helper-reset{border:0 none!important;font-size:100%!important;line-height:1.3!important;list-style:none outside none!important;margin:0!important;outline:0 none!important;padding:0!important;text-decoration:none!important}
+.ui-helper-clearfix:before,.ui-helper-clearfix:after{content:"";display:table!important}
+.ui-helper-clearfix:after{clear:both!important}
+.ui-helper-zfix{height:100%!important;left:0!important;opacity:0!important;position:absolute!important;top:0!important;width:100%!important}
+.ui-state-disabled{cursor:default!important}
+.ui-icon{background-repeat:no-repeat!important;display:block!important;overflow:hidden!important;text-indent:-99999px!important}
+.ui-widget-overlay{height:100%!important;left:0!important;position:absolute!important;top:0!important;width:100%!important}
+.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif!important;font-size:1.1em!important}
+.ui-widget .ui-widget{font-size:1em!important}
+.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif!important;font-size:1em!important}
+.ui-widget-content{margin-top: -30px !important; background:url("/images/content/jumppage/endeca_pages/endeca_slider_bg.png") repeat-x scroll 50% top transparent!important}
+.ui-widget-content a{color:#333!important}
+.ui-widget-header{background:url("/images/content/jumppage/endeca_pages/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50% transparent!important;border:1px solid #e78f08!important;color:#fff!important;font-weight:bold!important}
+.ui-widget-header a{color:#fff!important}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{background:url("/images/content/jumppage/endeca_pages/endeca_slider_btn.png") repeat-x scroll 50% 50% transparent!important;border:0 solid transparent!important;color:transparent!important;font-weight:bold!important}
+.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#1c94c4!important;text-decoration:none!important}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{background:url("/images/content/jumppage/endeca_pages/endeca_slider_btn.png") repeat-x scroll 50% 50% transparent!important;border:0 solid transparent!important;color:transparent!important;font-weight:bold!important}
+.ui-state-hover a,.ui-state-hover a:hover{color:#c77405!important;text-decoration:none!important}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{background:url("/images/content/jumppage/endeca_pages/endeca_slider_btn.png") repeat-x scroll 50% 50% transparent!important;border:0 solid transparent!important;color:transparent!important;font-weight:bold!important}
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#eb8f00!important;text-decoration:none!important}
+.ui-widget *:active{outline:medium none!important}
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{background:url("/images/content/jumppage/endeca_pages/ui-bg_highlight-soft_75_ffe45c_1x100.png") repeat-x scroll 50% top #ffe45c!important;border:1px solid #fed22f!important;color:#363636!important}
+.ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#363636!important}
+.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{background:url("/images/content/jumppage/endeca_pages/ui-bg_diagonals-thick_18_b81900_40x40.png") repeat scroll 50% 50% #b81900!important;border:1px solid #cd0a0a!important;color:#fff!important}
+.ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:#fff!important}
+.ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#fff!important}
+.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:bold!important}
+.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{font-weight:normal!important;opacity:.7!important}
+.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{background-image:none!important;opacity:.35!important}
+.ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_222222_256x240.png")!important;height:16px!important;width:16px!important}
+.ui-widget-content .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_222222_256x240.png")!important}
+.ui-widget-header .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_ffffff_256x240.png")!important}
+.ui-state-default .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_ef8c08_256x240.png")!important}
+.ui-state-hover .ui-icon,.ui-state-focus .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_ef8c08_256x240.png")!important}
+.ui-state-active .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_ef8c08_256x240.png")!important}
+.ui-state-highlight .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_228ef1_256x240.png")!important}
+.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url("/images/content/jumppage/endeca_pages/ui-icons_ffd27a_256x240.png")!important}
+.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{border-top-left-radius:4px!important}
+.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:4px!important}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:4px!important}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:4px!important}
+.ui-widget-overlay{background:url("/images/content/jumppage/endeca_pages/ui-bg_diagonals-thick_20_666666_40x40.png") repeat scroll 50% 50% #666!important;opacity:.5}
+.ui-widget-shadow{background:url("/images/content/jumppage/endeca_pages/ui-bg_flat_10_000000_40x100.png") repeat-x scroll 50% 50% #000!important;border-radius:5px 5px 5px 5px!important;margin:-5px 0 0 -5px!important;opacity:.2!important;padding:5px!important}
+.ui-slider{position:relative!important;text-align:left!important}
+.ui-slider .ui-slider-handle{cursor:default!important;height:3.2em!important;position:absolute!important;width:1.3em!important;z-index:2!important}
+.ui-slider .ui-slider-range{background-position:0 0!important;border:0 none!important;display:block!important;font-size:.7em!important;position:absolute!important;z-index:1!important}
+.ui-slider-horizontal{height:27px!important;top:53px;width:166px!important}
+.ui-slider-horizontal .ui-slider-handle{margin-left:-0.6em!important;top:-0.3em!important}
+.ui-slider-horizontal .ui-slider-range{height:.8em!important;top:14px!important}
+.ui-slider-horizontal .ui-slider-range-min{left:0!important}
+.ui-slider-horizontal .ui-slider-range-max{right:0!important}
+.ui-slider-vertical{height:100px!important;width:.8em!important}
+.ui-slider-vertical .ui-slider-handle{left:-0.3em!important;margin-bottom:-0.6em!important;margin-left:0!important}
+.ui-slider-vertical .ui-slider-range{left:0!important;width:100%!important}
+.ui-slider-vertical .ui-slider-range-min{bottom:0!important}
+.ui-slider-vertical .ui-slider-range-max{top:0!important}
+#page #main_content_wrapper {margin: 0 auto;width: 960px;}
+div#page div.main-content-wrapper-top{display:none;}
+p.min_price, p.max_price {
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 42px;
+	left:5px;
+	top:30px;
+	font-size:10px;
+}
+p.max_price {
+    float: right;
+}
+
+html[lang=fr] p.max_price {
+    margin-right: 7px;
+}
+
+div.endeca_applinceInfo ul li.insideList ul li span {font-size:10px;color:#3F3F3F}
+.disable {
+	background-position: 0 -14px !important;
+	cursor: default;
+}
+#sortBy_text{
+	float: left;
+	font-size: 10px;
+	font-weight: normal;
+	padding-left: 121px;
+	position: relative;
+	width: auto;
+	display:none;
+}
+#global_utilities li a.print{
+	margin-top:17px;
+}
+#global_utilities li.share{
+	display:none;
+}
+.endeca_rightContainer #espot_image{
+    height: auto;
+    min-height: 107px;
+	text-align: center;
+}
+`.endeca_rightContainer #espot_image img{
+    position: relative;
+    top: 12px;
+}
+.endeca_rightContainer #espot_image #eHeadDishWash{top:-25px;}
+#wallSeeitworkbutton{
+    display: none;
+}
+.nav_sections div.tag_img img[src="/images/content/endeca_filters/SC_Laundry_Laundry_Appliances_Washers/WHAT'S-INSIDE.png"] {
+    padding-top: 30px;
+}
+div.nav_sections.first_NoSlider div.dotted_line {
+    border-top: medium none;
+}
+#breadcrumb-section{
+    height:36px !important;
+}
+li.print {
+    float: right;
+    position: relative;
+    right: -10px;
+    top: -2px;
+    *top: -10px;
+}
+.endeca_rightContainer #espot_image img[src="/images/content/endeca_headers/Laundry_Organizers_endeca_hero.jpg"] {
+    top: -5px;
+}
+.endeca_rightContainer #espot_image img[src='/images/content/endeca_headers/Refrigerator_endeca_hero.jpg'] {
+    top: -3px;
+}
+.endeca_rightContainer #espot_image img[src='/images/content/endeca_headers/Cooking_Cooktop_hero.jpg'] {
+    top: -3px;
+}
+/*.fancybox-outer {
+    position: relative !important;
+    box-shadow: 0 2px 20px #969696 !important;
+	border-radius: 4px !important;
+	behavior: url(PIE.htc)!important;
+}*/
+/*Compare tray styles for PDP/PLP*/
+#compare-tray-container.plp {
+    position:relative;  
+}
+#compare-tray-container.plp.sticky{
+    position: fixed !important;
+    width: 688px;
+    top: -31px;
+    z-index: 500;
+}
+#compare-tray-container.plp #compare-tray {
+    position: absolute;
+    right: 13px;
+    top: 39px;
+    width: 285px;
+}
+html[lang=fr] #compare-tray-container.plp #compare-tray {
+    position: absolute;
+    right: 13px;
+    top: 42px;
+    width: 285px;
+}
+#compare-tray-container.plp #compare-tray .compare-text {
+    color: #000;
+    float: left;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: right;
+    width: 64px;
+    margin-left: 14px;
+    margin-right: 2px;
+    padding-top: 3px;
+}
+
+#compare-tray-container.plp #compare-tray-button {
+   background: url("/images/content/compare/compare_active_new.png") no-repeat scroll 3px 0px transparent;
+    text-indent: 900000px;
+    border-color: transparent;
+    text-transform: none;
+    height: 20px;
+    width: 67px;    
+    padding: 0;
+    margin: 9px 1px 0 0px;
+	float:right;
+}
+
+#compare-tray-container.plp #compare-tray-button.active {
+  background: url("/images/content/compare/compare_active_new.png") no-repeat scroll 3px -71px transparent;
+}
+
+#compare-tray-container.plp #compare-tray-button.active:hover {
+  background: url("/images/content/compare/compare_active_new.png") no-repeat scroll 3px -37px transparent;
+}
+
+/*french button styles*/
+html[lang=fr] #compare-tray-container.plp #compare-tray-button {
+   background: url("/images/content/compare/compare_active_new_fr.png") no-repeat scroll 3px 0px transparent;
+    text-indent: 900000px;
+    border-color: transparent;
+    text-transform: none;
+    height: 20px;
+    width: 67px;    
+    padding: 0;
+    margin: 9px 1px 0 0px;
+	float:right;
+}
+
+html[lang=fr] #compare-tray-container.plp #compare-tray-button.active {
+  background: url("/images/content/compare/compare_active_new_fr.png") no-repeat scroll 3px -71px transparent;
+}
+
+html[lang=fr] #compare-tray-container.plp #compare-tray-button.active:hover {
+  background: url("/images/content/compare/compare_active_new_fr.png") no-repeat scroll 3px -37px transparent;
+}
+
+/*end french styles*/
+
+#compare-tray-container.plp #compare-tray li {
+    background-color: #fff;
+    float: left;
+    height: 34px;
+    margin: 0 0 0 2px;
+    width: 30px;
+    position:relative;
+}
+#compare-tray-container.plp #compare-tray ul{margin-top:3px;}
+#compare-tray-container.plp.sticky #compare-tray {top:34px;}
+#compare-tray-container.plp #compare-tray li img.delete { position:absolute; right:0; top:-6px; width:12px;  }
+#compare-tray-container.plp #compare-tray li.empty img.delete { display:none; }
+#compare-tray-container.plp #compare-tray li img {
+    width:100%;
+    height:auto;    
+}
+
+#compare-tray-container.plp #compare-tray li.empty {
+    border: 1px solid #000;
+}
+
+ul.sortBy_sections li div#sortBy_text { padding-right:2px !important; }
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_whereTobuy.water-filters-atc {
+display: none;
+}
+
+.companion-item{
+    padding: 9px 10px;
+}
+.companion-item .companion-item-title, .companion-item .companion-item-model{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #323232;
+    font-weight:bold;
+    padding: 0px;
+}
+.companion-item .companion-item-title{  
+    font-size:14px;
+    width: inherit; 
+}
+.companion-item .companion-item-model{
+    width: 90px;
+    font-size:12px;
+}
+.companion-item .companion-item-cta{padding:0px;}
+.companion-item .companion-item-cta a{
+    font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #005ABB;
+    padding: 2px;
+    text-decoration: none;
+}
+.companion-item .companion-item-cta:hover{
+    color: #002e5f !important;
+    text-decoration: underline;
+}
+.companion-item.pdp{
+    padding:9px 0px;
+}
+.companion-item.pdp .companion-item-model{
+    float:left;
+}
+
+.companion-item.plp .companion-item-title{  
+    width: 275px; 
+}
+
+/*lang fr compare tray styles*/
+html[lang=fr] .endeca_sortViewDisplayBar_top {
+height: 35px;
+}
+/*end compare tray css*/
