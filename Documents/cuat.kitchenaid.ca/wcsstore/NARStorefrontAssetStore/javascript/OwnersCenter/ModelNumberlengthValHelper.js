@@ -1,0 +1,1 @@
+ModelNumberlengthValHelper={isValidLength:function(str,strLenMin,strLenMax){if(str!=""&&(str.length<=strLenMax)&&(str.length>=strLenMin)){return false;}else{return true;}}};

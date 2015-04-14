@@ -1,0 +1,4 @@
+.takeover-message-wrapper{position:fixed;top:0;bottom:0;width:100%;background:rgba(0,0,0,.85);z-index:10014}
+.takeover-message-content{position:fixed;top:25%;width:70%;left:15%;text-align:center}
+.takeover-message-content p{text-align:center;color:#fff;font-size:32px;line-height:150%;width:100%}
+.takeover-message-content img{margin:0 0 10px 0;text-align:center;width:30%}

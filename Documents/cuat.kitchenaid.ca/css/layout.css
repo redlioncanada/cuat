@@ -1,0 +1,481 @@
+.product_detail #main-container
+.product-details-page #main-container {
+	width: 962px;
+}
+.product_detail .main-column,
+.product-details-page .main-column {
+	width: 720px;
+}
+.product_detail .recently_products,
+.product-details-page .recently_products {
+	float: left;
+}
+
+
+/* ==========================================================================
+   PRODUCT DETAIL PAGES - PDP AND MY APPLIANCES PDP
+   ========================================================================== */
+body.product_detail {
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	float: left;
+}
+
+.product_detail {
+	float: left;
+	width: 27%;
+	padding: 30px 5% 0 1%;
+	font-size: 120%;
+	line-height: 135%;
+}
+
+.product_list .product_detail .instruction {
+	font-weight: bold;
+}
+
+.product-display .product-overview .product-description {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-top: 1px dotted #DDDDDD;
+	border-bottom: 1px dotted #DDDDDD;
+}
+
+#product_help_tabs, #product_tabs {
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+}
+
+#product_help_tabs_menu, #product_tabs #product_tabs_menu {
+	float: left;
+	overflow: visible;
+	height: 24px;
+	border-bottom: 1px solid #BBBBBB;
+	width: 99%;
+}
+html[lang="fr"] #product_help_tabs_menu, #product_tabs #product_tabs_menu {
+	float: left;
+	overflow: visible;
+	height: 46px;
+	border-bottom: 1px solid #BBBBBB;
+	width: 99%;
+}
+
+#product_tabs_menu li,
+#product_help_tabs_menu li, 
+#product_tabs #product_tabs_menu .product-tab-option {
+	background: none repeat scroll 0 0 #BBBBBB;
+	border-color: #BBBBBB #BBBBBB #BBBBBB #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 110%;
+	padding: 7px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+
+}
+html[lang="fr"] #product_tabs_menu li,
+html[lang="fr"] #product_help_tabs_menu li, 
+html[lang="fr"] #product_tabs #product_tabs_menu .product-tab-option {
+	background: none repeat scroll 0 0 #BBBBBB;
+	border-color: #BBBBBB #BBBBBB #BBBBBB #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 110%;
+	padding: 7px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+	max-width: 136px;
+min-height: 30px;
+font-size: 100%;
+}
+
+#product_help_tabs_menu li:hover, #product_help_tabs_menu li.selected, #product_tabs #product_tabs_menu .product-tab-option:hover, #product_tabs #product_tabs_menu .product-tab-option.selected {
+	background: #FFFFFF;
+	color: #000000;
+	border-top: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #BBBBBB;
+	padding: 7px 10px 8px;
+}
+
+.product_tab_section {
+	border-bottom: 1px solid #BBBBBB;
+	border-left: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+	float: left;
+	margin: -1px 0 0;
+	padding: 2.9%;
+	width: 94%;
+}
+
+.product_tab_section{
+	display: none;
+	float: left;
+	line-height: 135%;
+}
+
+.product_help_tab_section {
+	display: none;
+	float: left;
+	line-height: 135%;
+	border-bottom: 1px solid #BBBBBB;
+	border-left: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+	margin: -1px 0 0;
+	min-height: 135px;
+}
+
+.product_help_tab_section.selected, 
+.product_tab_section.selected {
+	display: block;
+	position: relative;
+	width: 93%;
+}
+
+.product_help_tab_section #top_features, 
+.product_tab_section #features #top_features {
+	border-bottom: 1px dotted #BBBBBB;
+	float: left;
+	padding: 0 0 10px;
+	width: 100%;
+}
+
+.product_help_tab_section #top_features .feature, #features #top_features .feature {
+	width: 29%;
+	float: left;
+	border-right: 1px solid #BBBBBB;
+	padding: 0 3%;
+	min-height: 140px;
+}
+
+.product_help_tab_section #top_features .feature img, #features #top_features .feature img {
+	display: none;
+}
+
+.product_help_tab_section #top_features .feature.first, .product_tab_section #features #top_features .feature.first {
+	padding: 0 3% 0 0;
+}
+
+.product_help_tab_section #top_features .feature.last, .product_tab_section #features #top_features .feature.last {
+	border-right: none;
+	padding: 0 0 0 3%;
+}
+
+.product_help_tab_section #additional_features, .product_tab_section #features #additional_features {
+	float: left;
+	padding: 0 0 10px;
+	margin: 20px 0 0 0;
+}
+
+.product_tab_section #features #additional_features .feature {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0 20px 0 0;
+	width: 290px;
+}
+
+.product_help_tab_section .product_tab_section_middle {
+	margin: 15px 0 0 15px;
+	position: relative;
+	width: 915px;
+	float: left;
+}
+
+
+.modalHeader, .product_help_tab_section .title, .product-overview h1, #products-recently-viewed .products-recently-viewed-list .recently-viewed-product p {
+	color: #666666;
+	line-height: 125%;
+	margin: 10px 0 5px;
+	padding: 0;
+}
+
+.product_help_tab_section .title {
+	font-weight: bold;
+}
+
+
+/* ==========================================================================
+   SPECIFICATION TAB STYLES
+   ========================================================================== */
+
+.spec_section.callout, .product_help_tab_section .spec_section.callout {
+	width: 185px;
+}
+
+/* ==========================================================================
+   ATTACHMENTS TAB AND ACCESSORIES TAB
+   ========================================================================== */
+
+
+.product_detail .module-header,
+.product-details-page .module-header {
+	float: left;
+	margin: 0 0 10px;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.product_detail .module-main-content,
+.product-details-page .module-main-content {
+	height: 475px;
+}
+.product_detail, .module-main-content #product img,
+.product-details-page .module-main-content #product img {
+	width: 100%;
+}
+
+*+html #my-account-page #frequency,  
+*+html #shippingAddress #subscriptionOrderShipmentAddress, 
+*+html #billingAddress #subscriptionOrderBillingAddress, 
+*+html #frequency_1, *+html #order_details .replacement_program_wrapper select#frequency_1, 
+*+html #order_details .replacement_program_wrapper select, 
+*+html .product-details-page .text-select #choose-color, 
+*+html .product_details .text-select #choose-color, 
+*+html .product-details-page .text-select,
+*+html .product_details .text-select {
+	background-image: none!important;
+	width: 175px
+}
+/* ======================================================
+PDP
+======================================================== */
+.product_details .product-overview .product-title,
+.product-details-page .product-overview .product-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.product_details .product-overview .product-color-sku,
+.product-details-page .product-overview .product-color-sku {
+	font-size: 9px;
+}
+
+.product_details .product-options-select-label,
+.product-details-page .product-options-select-label {
+	font-size: 105%
+}
+
+.product_details .number-select,
+.product-details-page .number-select {
+	margin: 5px 0 15px;
+}
+
+.product_details .submit-section,
+.product-details-page .submit-section {
+	position: relative;
+	padding: 0 0 10px;
+	width: 100%;
+	float: left;
+	background-color: transparent !important; /*forced rule due to an inline style*/
+}
+
+.product_details.accessories_item div,
+.product-details-page.accessories_item div {
+	float: left;
+}
+
+.product_details #features #additional_features div.feature,
+.product-details-page #features #additional_features div.feature {
+	padding-top: 20px
+}
+
+.product_details #features #additional_features div.feature.first,
+.product-details-page #features #additional_features div.feature.first {
+	padding-top: 0;
+}
+
+.product_details #additional_features h3,
+.product-details-page #additional_features h3 {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 0 30px;
+}
+
+.product_details #additional_features .feature h4,
+.product-details-page #additional_features .feature h4 {
+	font-size: 105%;
+}
+
+.product_details .spec_contents h3,
+.product-details-page .spec_contents h3 {
+	border: 0 none;
+	padding: 0 0 10px;
+	width: 100%;
+}
+
+.product_details .manual_item h3,
+.product-details-page .manual_item h3 {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 0 8px;
+}
+
+.product_details .manual_item .pdf_manual,
+.product-details-page .manual_item .pdf_manual {
+	background: url("/images/global/icons/pdf_icon.png") no-repeat scroll left top transparent;
+	/*border-bottom: 1px dotted #DDDDDD;*/
+	color: #CC0000;
+	float: left;
+	font-size: 90%;
+	font-weight: bold;
+	margin: 25px 0 0;
+	padding: 3px 0 29px 22px;
+	width: 195px;
+	text-transform: uppercase;
+}
+
+.product_details .manual_item,
+.product-details-page .manual_item {
+	border-right: 1px solid #DDDDDD;
+	float: left;
+	height: 150px;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+	width: 220px;
+}
+
+.product_details .recently_products img,
+.product-details-page .recently_products img {
+	max-width: 100%;
+}
+
+.product_details .recently_products h2,
+.product-details-page .recently_products h2 {
+	color: #666666;
+	font-size: 16px;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 12px;
+}
+
+.product_details .recently_products_bottom_ul li.recently_product .recently_product_ul,
+.product-details-page .recently_products_bottom_ul li.recently_product .recently_product_ul {
+	float: left;
+	font-size: 110%;
+	font-weight: bold;
+	text-align: left;
+	width: 100%;
+}
+
+.product_details .recently_product .recently_product_ul li,
+.product-details-page .recently_product .recently_product_ul li {
+	width: 100%;
+}
+
+.product_details .recently_product .recently_product_ul .recently_product_id,
+.product-details-page .recently_product .recently_product_ul .recently_product_id {
+	display: none;
+}
+
+.product_details .recently_product,
+.product-details-page .recently_product {
+	width: 23%;
+	margin: 0 1%;
+	text-align: center;
+}
+
+.product_details .recently_product .recently_product_ul li p.recently_crossed_price,
+.product-details-page .recently_product .recently_product_ul li p.recently_crossed_price {
+	color: #666666;
+	font-size: 90%;
+	padding: 3px 5px 0 0;
+	text-decoration: line-through;
+}
+.product_details .recently_product .recently_product_ul li p.recently_actual_price, 
+.product_details .recently_product .recently_product_ul li p.recently_product_taxes,
+.product-details-page .recently_product .recently_product_ul li p.recently_actual_price, 
+.product-details-page .recently_product .recently_product_ul li p.recently_product_taxes {
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+
+.product_details .side-column,
+.product-details-page .side-column {
+	position: relative;
+	right: -20px;
+	width: 204px;
+}
+
+.product_details .recently_products h2,
+.product-details-page .recently_products h2 {
+	border-bottom: 1px solid #DDDDDD;
+	color: #666666;
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+.product_details #accessories_section .accessories_item .product_actions a, 
+.product-details-page #accessories_section .accessories_item .product_actions a {
+float:right;
+}
+
+.product_details #accessories_section .accessories_item .product_name a,
+.product-details-page #accessories_section .accessories_item .product_name a {
+	font-size: 105%;
+	font-weight: bold;
+	color: #333;
+}
+
+.product_details #accessories_section .accessories_item .product_desc,
+.product-details-page #accessories_section .accessories_item .product_desc {
+	padding: 10px 0 10px;
+}
+
+.product_details #replacement_parts .accessories_item h3,
+.product-details-page #replacement_parts .accessories_item h3 {
+	font-weight: bold;
+	padding: 0 0 5px;
+}
+
+c #additional_features {float:right;width:180px;position:relative;top:-140px;}
+#main-container.small-appliances-details.caspers .callout {top:20px !important;right:10px !important;}
+#main-container.small-appliances-details.caspers .cta-options .where_to_buy {background-color: rgb(204, 0, 0); float: left; margin-top:10px; cursor: pointer; font-size: 110%; text-transform: uppercase; color: rgb(255, 255, 255); padding: 6px 10px 5px; height: auto !important;font-weight:bold !important;}
+#main-container.small-appliances-details.caspers .cta-options .where_to_buy:hover {color:#333;}
+#main-container.small-appliances-details.caspers + .color_tooltip .product_tooltip_middle .product_price {display:none;}
+.dj_ie body.homepage.body.ie10{top:0px !important;}
+#main-container.small-appliances-details.caspers .inactive-product-text {margin-bottom:10px !important;}
+#main-container.small-appliances-details.caspers .inactive-product-text p {font-weight:bold !important;}
+#main-container.small-appliances-details.caspers .inactive-product-text p a {color: #CC0000 !important;}
+#main-container.small-appliances-details.caspers .inactive-product-text p a:hover {text-decoration:underline !important;}
+#main-container.small-appliances-details.caspers .modalHeader, .product_help_tab_section .title, .product-overview h1 {font-size:14px; font-weight:bold;}
+#main-container.small-appliances-details.caspers .product-display .product-overview #product_rating {display:none;}
+#main-container.small-appliances-details.caspers #producthelp #searchArea #span1 { font-weight:bold; }
+#main-container.small-appliances-details.caspers .show_result {width:100%;}
+#main-container.small-appliances-details.caspers #productHelpSearchForm {width:500px;}
+#main-container.small-appliances-details.caspers #productHelpSearchForm label {width:200px; margin-top:0;}
+#main-container.small-appliances-details.caspers #searchResultDisplayArea .title_line .headerline {display:none;}
+#main-container.small-appliances-details.caspers #searchResultDisplayArea .result_title {font-weight:bold;}
+
+#main-container.small-appliances-details.caspers #product_tabs #product_tabs_menu li:hover, 
+#main-container.small-appliances-details.caspers #product_tabs #product_tabs_menu li.selected {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #BBBBBB #BBBBBB #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    padding: 7px 10px 8px;
+}
+
+#main-container.small-appliances-details.caspers #manualsandliterature .manual_item { border-right: 1px solid #DDDDDD; float: left; height: 150px; margin: 0 10px 0 0; padding: 0 10px 0 0; width: 220px;}
+#main-container.small-appliances-details.caspers #manualsandliterature .manual_item h3 { font-size: 12px; font-weight: bold;padding: 0 0 8px;}
+#main-container.small-appliances-details.caspers #manualsandliterature .manual_item .pdf_manual { background: url("/images/global/icons/pdf_icon.png") no-repeat scroll left top transparent; color: #CC0000; float: left; font-size: 90%; font-weight: bold; margin: 25px 0 0; padding: 3px 0 29px 22px; text-transform: uppercase; width: 195px; }
+
+#main-container.small-appliances-details.caspers #features #top_features { border-bottom: 1px dotted #BBBBBB; float: left; padding: 0 0 10px; width: 100%; }
+#main-container.small-appliances-details.caspers #features #top_features .feature.first { padding: 0 3% 0 0; }
+#main-container.small-appliances-details.caspers #features #top_features .feature.last {  border-right: medium none; padding: 0 0 0 3%; }
+#main-container.small-appliances-details.caspers #features #additional_features h3 { font-size: 13px; font-weight: bold; padding: 0 0 30px; }
+#main-container.small-appliances-details.caspers #features #additional_features .feature { float: left; margin: 0 20px 0 0; padding: 20px 20px 0 0; width: 290px; }
+#main-container.small-appliances-details.caspers #features #additional_features div.feature.first { padding-top: 0; }
+#main-container.small-appliances-details.caspers #features #additional_features { float: left; margin: 20px 0 0; padding: 0 0 10px; }
+#main-container.small-appliances-details.caspers .inactive-product-links a:hover {text-decoration:underline;}

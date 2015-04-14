@@ -1,0 +1,134 @@
+.ygtvtn {
+    background: none repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 1em;
+}
+.ygtvtm {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 6px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvtmh {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -794px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvtp {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -2392px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvtph {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -3191px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvln {
+    background: none repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 1em;
+}
+.ygtvlm {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 6px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvlmh {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -794px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvlp {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -2392px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvlph {
+    background: url("../images/treeview-menu-sprite.gif") no-repeat scroll 0 -3191px transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 1em;
+}
+.ygtvloading {
+    /*background: url("treeview-menu-loading.gif") no-repeat scroll -2px 4px transparent;*/
+    height: 22px;
+    width: 1em;
+}
+.ygtvdepthcell {
+    background: none repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 1em;
+}
+.ygtvblankdepthcell {
+    background: none repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 1em;
+}
+.ygtvitem {
+    border: 0 solid grey;
+}
+.ygtvchildren {
+}
+* html .ygtvchildren {
+    height: 1%;
+}
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+    color: #111111;
+    font-size: 12px;
+    margin-left: 2px;
+    text-decoration: none;
+	width:400px;
+	display:block;
+}
+.ygtvfocus {
+    border: medium none;
+}
+.ygtvfocus .ygtvlabel, .ygtvfocus .ygtvlabel:link, .ygtvfocus .ygtvlabel:visited, .ygtvfocus .ygtvlabel:hover {
+}
+.ygtvfocus a {
+    outline-style: none;
+}
+a.ygtvspacer {
+    display: block;
+    text-decoration: none;
+    width: 15px;
+}
+
+input#reshow_product-type, input#product-type {
+	z-index:0;	
+}
+
+td#ygtvcontentel1 {
+	text-indent:-9999px;	
+}
+
+li.first-reshow_product-help-type, li.first-product-help-type {
+	display:none;	
+}
+
+input#reshow_product-type, input#product-type {
+	display:none;	
+}
+
+input#reshow_product-type-button, input#product-type-button {
+	width:300px;
+	height:24px;
+	padding-left:10px;
+	border:none;
+	cursor:pointer;
+	text-align:left;
+	background:	url("../images/bg-product-help-btn.png") repeat-y scroll 0 0 transparent;
+}
+
+#ygtvlabelel1 {display:none; }
+td#ygtvt1 { display:none; }
+div#reshow_product-help-search-tree, div#product-help-search-tree {display:none; position:absolute; background-color:#ffffff; padding-top:5px; width:299px; border:1px solid #dddddd; height:240px; overflow:auto; overflow-x:hidden; left:180px; z-index:9999;}
+
+div#reshow_product-select-container, div#product-select-container { position:relative; width:500px; height:50px;  margin:20px 0 0}

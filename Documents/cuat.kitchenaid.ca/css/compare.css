@@ -1,0 +1,594 @@
+
+
+.compare-option p {    
+    border: 1px solid #bbbbbb;    
+    font-weight:bold;
+}
+
+#pagination a
+{
+    color:#cc0000;
+}
+
+#pagination a.active {
+    color: #666666;
+    font-weight: bold;
+}
+
+
+.tbl_cell .product_detail_msrp {    
+    height: 15px;    
+      margin-bottom: 10px;
+} 
+
+
+.tbl_cell .add_btn_container, .tbl_cell .add_to_cart {
+    color: #FFFFFF;
+    float: left;
+    margin: 0;
+    width: 100px;
+}
+
+.tbl_cell .yellow {
+    display: block;
+    text-align: left;
+}
+
+/*.tbl_cell .where_btn_container .yellow {
+    display: none;
+}*/
+
+.tbl_cell .product_image_link {    
+    margin: 20px 0 10px;    
+}
+
+.tbl_cell {    
+    min-height: 440px;    
+}
+html[lang=fr] .tbl_cell{
+    min-height: 440px;
+}
+
+
+.tbl_cell .prodCompare {    
+    margin: 0 0 11px;    
+}
+
+.tbl_cell .view_details_container {    
+    float: right;    
+}
+
+.tbl_cell .compare_where_add {
+    text-align: left;
+}
+
+
+label.c_off {
+    background: url("../images/compare/checkbox_compare.png") no-repeat scroll 0 0;
+    margin: 0;
+    float:left;
+}
+
+label.c_on {
+    background: url("../images/compare/checkbox_compare.png") no-repeat scroll 0 -20px;
+    float:left;
+}
+.label_check, .label_radio {
+    cursor: pointer;
+    float: left;
+    height: 11px;    
+    min-height: 10%;
+    padding-bottom: 8px;
+    position: relative;
+    width: 20px;
+}
+
+.label_check input, .label_check_compare input, .label_radio input {
+    left: -9999px;
+    position: absolute;
+}
+
+/*.prodCompare a.compare {
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    margin: 4px 0 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 53px;
+}*/
+
+.displayNone {
+    display: none!important;
+}
+
+.product_compare_error_main_box {
+    background: none repeat scroll 0 0 white;    
+    border: 2px solid #bbbbbb;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #CCCCCC;
+    float: left;
+    left: 30%;
+    padding: 40px 25px;
+    position: fixed;
+    top: 30%;
+    width: 550px;
+    z-index: 10001;
+}
+
+#compare_product_underlay {
+                position:fixed;
+                top:0;
+                left:0;
+                background:#fff;
+                opacity:0.5;
+				filter:alpha(opacity=50);
+                z-index:998;
+                height:100%;
+                width:100%;}
+                
+                
+.bottom_box {
+    
+    float: right;
+    height: 35px;
+    margin-right: -27px;
+    margin-top: -75px;
+    width: 82px;
+    font-size:10pt;
+    color:#ffffff;
+     font-weight: bold;
+}
+html[lang=fr] .bottom_box{
+    margin-right: -11px;
+}
+
+.bottom_box .second
+{
+    width:82px;
+    height:35px;
+    text-align:center;
+    padding-top:2px;
+}
+html[lang=fr] .bottom_box .second{
+    width: 97px;
+}
+
+.bottom_box .second a
+{
+    background: url("../images/compare/close_btn.jpg") no-repeat scroll 0 0;
+     width:82px;
+    height:35px;
+    display:block;
+}
+html[lang=fr] .bottom_box .second a{
+    background: url("../images/compare/close_btn_fr.jpg") no-repeat scroll 0 0;
+    width:99px;
+}
+
+.close_btn
+{
+    text-align:center;
+    float:left;
+}
+
+.modal_text a
+{    
+    background: url("../images/compare/ok_btn.jpg") no-repeat scroll center center;    
+    height: 35px;
+    display:block;
+}
+
+
+#compare_product_error h2 
+{
+    background: url("../images/compare/info_symbol.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #666666;
+    font-weight: normal;
+    height: 23px;
+    padding-top: 3px;
+    padding-left: 34px;
+    text-align: left;
+}
+
+#compare_product_error .modal_text
+{
+    text-align:center;
+     float: left;
+     width: 100%;
+}
+
+.prodCompare a.compare_active.readyCompare {
+  background: url("../images/compare/compare_active.jpg") no-repeat scroll 0 3px transparent;    
+	font-size: 0;
+    height: 25px;            
+    text-align: center;
+    width: 107px;
+    display:block;
+    float:left;
+     margin-left: 6px;
+     margin-top:-6px;
+}
+html[lang=fr] .prodCompare a.compare_active.readyCompare{
+  background: url("../images/compare/compare_active_fr.jpg") no-repeat scroll 0 3px transparent;
+}
+.prodCompare a.compare_active {
+    color: #000000;
+     margin-left: 6px;
+}
+
+.prodCompare .counter
+{
+    float:left;
+}
+
+
+.compare-option.active {
+     background: url("../images/compare/compare_active_gen.jpg") no-repeat scroll 0 0;
+    cursor: pointer;
+    font-size: 0;
+    font-weight: bold;
+    height: 24px;
+    margin-right: 10px;
+    width: 109px;
+}
+html[lang=fr] .compare-option.active{
+    background: url("../images/compare/compare_active_gen_fr.jpg") no-repeat scroll 0 0;
+}
+
+.compare-option.active p
+{
+    border:none;
+    background:transparent;
+}
+
+.back_button 
+{
+    color:#cc0000;
+     float: left;
+    margin: 10px 10%;
+    width: 80%;
+    font-weight: bold;
+}
+.compare_action_links .right
+{
+    text-transform:capitalize;
+}
+
+.btns .where_to_buy
+{
+    background: url("../images/compare/where_to_buy.jpg") no-repeat scroll center center;
+   cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    width: 100%;  
+}
+html[lang=fr] .btns .where_to_buy{
+    background: url("../images/compare/where_to_buy_fr.jpg") no-repeat scroll center center;
+}
+
+.compare_action .comments {
+    min-height: 50px;
+}
+
+.carousels_panels
+{
+    overflow-y:scroll;
+	overflow-x:hidden;
+    max-height:500px;
+    width: 100%;
+     margin: 0;
+ border-top: 1px solid #CCCCCC;
+}
+
+#scroll_carrousel
+{
+    overflow:hidden;
+}
+
+.expanded_all{
+    background: url("../images/compare/expand_collapse.png") no-repeat scroll 0 -16px transparent;
+    color: #666666;
+    font-size: 10pt;
+    padding-left: 22px;
+    position: relative;
+    cursor:pointer;
+    margin-right: 20px;
+    float:right;
+    top: 7px;
+    margin-right: 20px;
+}
+
+.collapsed_all{
+    background: url("../images/compare/expand_collapse.png") no-repeat scroll 0 2px transparent;
+    color: #666666;
+    font-size: 10pt;
+    padding-left: 22px;
+    position: relative;
+    cursor:pointer;
+    float:right;
+    top: 7px;
+    margin-right: 20px;
+}
+
+.highlight{
+	background:url('../images/compare/checkbox_compare.png') no-repeat 0 2px;
+	width:190px;
+	height:17px;
+	 cursor:pointer;
+	 padding-left:20px;
+	 font-size:10pt;
+	 float:right;
+	 margin-right: 20px;
+	 margin-top: 7px;
+	 margin-bottom: 7px;
+	 top: 0;
+	 position:relative;
+}
+.highlight_active{
+	background:url('../images/compare/checkbox_compare.png') no-repeat 0 -19px;
+	width:190px;
+	height:17px;
+	 cursor:pointer;
+	 padding-left:20px;
+	 font-size:10pt;
+	 float:right;
+	 margin-right: 20px;
+	 margin-top: 7px;
+	margin-bottom: 7px;
+	 top: 0;
+	 position:relative;
+}
+html[lang=fr] .highlight{
+	width: 280px;
+}
+html[lang=fr] .highlight_active{
+	width: 280px;
+}
+
+tr.row_highlight
+{
+    background: none repeat scroll 0 0 #878787!important;
+    color: #ffffff!important;
+     border-bottom: 1px solid #CCCCCC;
+}
+.row_highlight td
+{
+    background: none repeat scroll 0 0 #878787!important;
+    color: #ffffff!important;
+}
+
+/*#compare_body table tr td {
+	float:none !important;
+	padding: 10px 1% !important;
+	padding: 10px 3% 10px 3px\9 !important;
+	width:17%\9 !important;
+}*/
+
+
+.main_link.expanded {
+     background: url("../images/compare/icon_arrow_down.png") no-repeat scroll 0 7px;
+    font-size: 14pt;
+    padding-left: 19px;
+    text-transform: capitalize;
+}
+
+.specs_header.specs_header_open 
+{
+    margin: 10px 0 15px 0;
+    float: none;
+}
+
+.specs_header.specs_header_close
+{
+     margin: 10px 0 15px 0;
+     float: none;
+     width: 600px;
+}
+
+.specs_content {
+   /* float: none;*/
+    display:block;
+    width:auto;
+}
+
+.specs_content table tr td {
+    width: 18%;
+}
+
+
+.compare_tabs_content_carousels {
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+     margin: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+.order_total tr.odd, .carousels_panels table tr.odd,
+.order_total tr, .carousels_panels table tr {    
+    float: none;
+}
+
+table tr.odd td {
+    background: none repeat scroll 0 center #ffffff;
+}
+
+#compare_body table tr td {
+    float: none !important;
+    padding: 10px 1% !important;
+    margin: 0;
+    vertical-align:baseline;
+}
+
+.specs_content table tr .table_first_col {
+    font-weight: bold;
+    border-right:2px solid #cccccc;
+}
+
+
+
+#compare_body #compare_top_many_tabs {
+    float: left;
+    width: 100%;
+}
+#compare_body #compare_top_many_tabs #tabs_shower {
+    width: 942px !important;
+}
+
+#compare_body #compare_top_many_tabs .tabs {
+    /*border-top: 1px solid #CCCCCC;*/
+    height: 30px;
+    width: 100% !important;
+}
+#compare_body #compare_top_many_tabs .tabs .fisrt_tab {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    margin-left: 0;
+}
+
+
+#compare_body #compare_top_many_tabs .tabs li {
+    background-color: #BBBBBB !important;
+    background-image: url("../images/compare/close-tab.jpg") !important;
+    background-position: 164px 7px;
+    background-repeat: no-repeat;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px 0 1px;
+    text-indent: 8px;
+    width: 184px;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform:uppercase;
+}
+#compare_body #compare_top_many_tabs .tabs li a.compare-tab {
+    color: #FFFFFF;
+    font-size: 110%;
+}
+
+#compare_body #compare_top_many_tabs .tabs li.selected a.compare-tab
+{
+    color:#000000;
+}
+
+#compare_body #compare_top_many_tabs .tabs .selected {
+    background-color: #FFFFFF !important;
+    background-image: url("../images/compare/close-tab.jpg") !important;
+    border-bottom: medium none #FFFFFF !important;    
+}
+
+#compare_body #compare_top_many_tabs .tabs li a.tab_close {
+    float: right;
+    height: 20px;
+    margin: -25px 0 0;
+    width: 20px;
+}
+
+#compare_body #compare_top_many_tabs .tabs div.title_tab
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#ffffff;
+}
+
+#compare_body #compare_top_many_tabs .tabs .selected div.title_tab
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#000000;
+}
+
+#compare_body #compare_top_many_tabs .tabs li:after
+{
+    content:"";
+    color:#ffffff;
+    overflow:hidden;
+}
+
+.tab_footer
+{
+    background:#ffffff;
+     height: 5px;
+    margin-top: -1px;
+    position: absolute;
+    width: 184px;
+}
+
+
+.page_title, .product_header .product_title {
+    border-top:1px solid #DDDDDD;
+    margin: 10px 0 0 20px;
+}
+
+.page_title
+{
+    margin: 0;
+}
+.product_header .product_title h1{
+	padding: 20px 0;
+}
+ 
+#content-wrap #breadcrumb-section {
+    display: block;
+}
+
+#breadcrumb-section ul{
+    border-bottom: 0 none;
+    padding-bottom:0;
+}
+
+
+#compare_top_carousels .compare-first-col-espot .schedule {
+    width: 95%;
+}
+
+
+#compare_top_carousels .info_counts .counts 
+{
+    text-transform:uppercase;    
+}
+
+.row_cell .prodCompare
+{
+    margin-top: 40px;
+    width: 115px;
+}
+
+
+.row_cell .prodCompare a.compare_active {
+    color: #000000;
+    padding-right: 12px;
+    margin-left:0;
+}
+
+.row_cell .prodCompare a.compare_active.readyCompare 
+{
+    margin-top:0;
+}
+
+
+.product_list_page .sort-listing-container .compare-option a{ 
+	background: none repeat scroll 0 0 transparent;
+    border: 0;
+}

@@ -1,0 +1,43 @@
+.ka_overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 9000;
+    display: none;
+}
+.ka_callOverlay{
+	cursor:pointer;
+}
+.ka_con {
+	position: fixed;
+	top: 50px;
+	z-index: 9100;
+	width: 640px;
+	margin: 0 auto;
+	background: #ffffff;
+	padding: 40px;
+	line-height: 125%;
+	display: none;
+}
+.ka_con iframe {
+	margin: 0 auto;
+	position: relative;
+	z-index: 9200;
+	display: none;
+}
+.ka_close{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	cursor: pointer;
+	color:white;
+	float: right;
+	height: 10px;
+	margin: -50px -15px 0 0;
+	text-align: center;
+	padding: 10px 15px;
+	background-color: red;
+}
+
