@@ -113,7 +113,7 @@ html[lang=fr] #rightSection #meetHim span{padding: 6px 0 0;}
 #rightSection #homeWarranty:hover p, html[lang=fr] #rightSection #homeWarranty:hover p{color:#505050;}
 html[lang=fr] #rightSection #homeWarranty{width:240px;background: url("../img/homeWarranty_fr.jpg") 0 0 no-repeat;}
 #homeWarranty p{font-size:11px;font-weight:normal;padding:46px 0px 15px 115px;width:145px;}
-html[lang=fr] #homeWarranty p{width: 180px; padding: 45px 0 2px 115px;}
+html[lang=fr] #homeWarranty p{width: 180px;}
 #rightSection #homeWarranty span{float:right;padding: 4px 45px 0;text-transform:uppercase;font-size:11px;}
 html[lang=fr] #rightSection #homeWarranty span{padding: 4px 28px 0;}
 
