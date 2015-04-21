@@ -1,3 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+.plpBadgeNew, .plpBadge1Rated, .plpBadgeCommingSoon {
+    display: block;
+    height: 60px;
+	width: 60px;
+    background: url("/images/badges.png") no-repeat scroll 0 0 transparent;
+	position: absolute;
+	margin: -6px 0 0 161px;
+}
+.plpBadge1Rated {
+	background-position: 0 -120px;
+}
+.plpBadgeComingSoon {
+	background-position: 0 -240px;
+}
+.plpBadgeNew:lang(fr) {
+	background-position: 0 -60px;
+}
+.plpBadge1Rated:lang(fr) {
+	background-position: 0 -180px;
+}
+.plpBadgeComingSoon:lang(fr) {
+	background-position: 0 -300px;
+}
+
+td.product_list_table_action_cell .plpBadgeNew,
+td.product_list_table_action_cell .plpBadge1Rated,
+td.product_list_table_action_cell .plpBadgeComingSoon { margin: -56px 0 0 81px; }

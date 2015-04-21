@@ -1,6 +1,6 @@
 #vbl-wrapper {
   border: 0;
-  font-family: 'Nunito', Arial, sans-serif;
+  font-family: 'Open+Sans', 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -435,30 +435,6 @@
   padding: 18px 20px 20px 20px;
   right: 7%;
   top: 12%;
-  /*.vbl-gallery-info-watch:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 305px 0px;
-      }
-
-      .vbl-gallery-info-watch:hover:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 305px 33px;
-      }
-
-      .vbl-gallery-info-next:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 0px 0px;
-      }
-
-      .vbl-gallery-info-next:hover:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 1px 33px;
-      }
-
-      .vbl-gallery-info-nexta:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 172px 0px;
-      }
-
-      .vbl-gallery-info-nexta:hover:lang(fr) {
-        background: url(/images/vbl/info-buttons-fr.png) 172px 33px;
-      }*/
-
 }
 #vbl-wrapper .vbl-container .vbl-gallery-info-panel h4 {
   color: #cc0309;
@@ -468,6 +444,12 @@
 #vbl-wrapper .vbl-container .vbl-gallery-info-panel h1 {
   margin-top: 14px;
   line-height: 27pt;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel h1:lang(fr) {
+  line-height: 41px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-social:lang(fr) {
+  right: 1.5px;
 }
 #vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-body {
   margin: 20px 0 48px 0;
@@ -512,6 +494,26 @@
 }
 #vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-nexta:hover {
   background: url(/images/vbl/info-buttons.png) 172px 33px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-watch:lang(fr) {
+  background: url(/images/vbl/info-buttons-fr.png) 305px 0px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-watch:hover:lang(fr) {
+  background: url(/images/vbl/info-buttons-fr.png) 305px 33px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-next:lang(fr) {
+  width: 270px;
+  background: url(/images/vbl/info-buttons-fr.png) 0px 0px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-next:hover:lang(fr) {
+  background: url(/images/vbl/info-buttons-fr.png) 0px 33px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-nexta:lang(fr) {
+  width: 263px;
+  background: url(/images/vbl/info-buttons-fr.png) 264px 0px;
+}
+#vbl-wrapper .vbl-container .vbl-gallery-info-panel .vbl-gallery-info-nexta:hover:lang(fr) {
+  background: url(/images/vbl/info-buttons-fr.png) 264px 33px;
 }
 #vbl-wrapper #vbl-container-1 li.vbl-panel {
   width: 100%;
