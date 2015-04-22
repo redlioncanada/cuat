@@ -3538,3 +3538,47 @@ div.orderTotalInfoPcr176 {
 .regAppLink a {
     color: #005ABB !important;
 }
+
+/*REQ0275535 - NKB:Online Self Scheduler Canada - Change of confirmation email*/
+
+#oc_entry_field_section div#validate_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#validate_btn a
+{
+    background: url("../images/btn_verify_address_bg.jpg") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 21px;
+    left: 131px;
+    margin:0 0 20px 0;
+    position: relative;
+    /*text-indent: -9999em;*/
+	font: bold 12px "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Lucida Sans Regular",Verdana,sans-serif;
+	color:#fff;
+    width: 270px;
+	padding: 4px 0 0 16px;
+}
+
+#oc_entry_field_section div#edit_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#edit_btn a
+{
+    background: url("../images/btn_edit_address_bg.jpg") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 33px;
+    left: 131px;
+    margin-bottom: 10px;
+    position: relative;
+    /*text-indent: -9999em;*/
+    width: 157px;
+	font: bold 12px "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Lucida Sans Regular",Verdana,sans-serif;
+	color:#fff;
+	padding:3px 0 0 7px;
+}

@@ -27,7 +27,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17645/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17645/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
 	
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -199,7 +209,7 @@ var currentprotocol = document.location.protocol;
 			MessageHelper.setMessage("ERROR_EMPTY_NUM", "Page number cannot be empty");
 			MessageHelper.setMessage("ERROR_PAGE_NUM", "Enter a valid page number");
 			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
-			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Jurisdiction code could not be determined.");
+			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 			MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			categoryDisplayJS.setCommonParameters('-300','10229','10579');
 			categoryDisplayJS.initHistory("CategoryDisplay_Widget", 'http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRORNCategoryOnlyResultsDisplayView?pageView=&catalogId=10579&beginIndex=&categoryId=102290022&langId=-300&SRC_sortById=&storeId=10229');
@@ -238,14 +248,14 @@ var currentprotocol = document.location.protocol;
 
 <body >
 
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-MM4FFD'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-MM4FFD');</script>
-	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Tue Apr 21 10:56:01 EDT 2015] -->
+	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Wed Apr 22 10:30:16 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -292,7 +302,7 @@ var currentprotocol = document.location.protocol;
 		    initTB();
 			// Go to top of page
 			//window.scrollTo(0,0);
-			
+			refreshSearchPR($("#prPLPArray").val());
 			//QC 57: endeca_dynamic.js loaded after ajx call so that it can re bind all the events
 			init_endeca_dynamic_js();
 			}
@@ -366,11 +376,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 10:54:58 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:43:39 EDT 2015] -->
   
 
 
@@ -410,7 +420,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13464168");
+			var contextUserId = parseInt("13467108");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -527,7 +537,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 11:04:52 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 10:40:15 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -790,7 +800,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Jurisdiction code could not be determined.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -873,7 +883,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 	EndecaHelperJS.setPageSize('10');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Tue Apr 21 10:56:01 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Wed Apr 22 10:30:16 EDT 2015] --> 
 
 		<div id="priceSliderVars" style="display:none;">
 			{
@@ -1134,7 +1144,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 									
 	</div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Tue Apr 21 10:56:01 EDT 2015] --> 
+<!-- END: [WHRORNProductListFilterOptions, Wed Apr 22 10:30:16 EDT 2015] --> 
 		
 	<div class="endeca_rightContainer">
 	 	<div id="espot_image">
@@ -1361,10 +1371,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$159.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4136ADS]-1505469/UXT4136ADS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4136ADS]-1505469/UXT4136ADS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4136ADS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4136ADS]-1505469/UXT4136ADS/#ratingsandreviews">
+		<div class="pr-snippet-UXT4136ADS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505516 counter">(<span class="valueCounter1505516"></span>
@@ -1498,10 +1511,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$149.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4130ADS]-1505468/UXT4130ADS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4130ADS]-1505468/UXT4130ADS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4130ADS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4130ADS]-1505468/UXT4130ADS/#ratingsandreviews">
+		<div class="pr-snippet-UXT4130ADS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505513 counter">(<span class="valueCounter1505513"></span>
@@ -1619,10 +1635,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$1,299.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXL5430BSS]-1502442/UXL5430BSS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXL5430BSS]-1502442/UXL5430BSS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXL5430BSS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXL5430BSS]-1502442/UXL5430BSS/#ratingsandreviews">
+		<div class="pr-snippet-UXL5430BSS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505050 counter">(<span class="valueCounter1505050"></span>
@@ -1752,10 +1771,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$349.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5236BDS]-1505425/UXT5236BDS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5236BDS]-1505425/UXT5236BDS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT5236BDS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5236BDS]-1505425/UXT5236BDS/#ratingsandreviews">
+		<div class="pr-snippet-UXT5236BDS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505446 counter">(<span class="valueCounter1505446"></span>
@@ -1889,10 +1911,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$299.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5230BDS]-1505424/UXT5230BDS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5230BDS]-1505424/UXT5230BDS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT5230BDS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT5230BDS]-1505424/UXT5230BDS/#ratingsandreviews">
+		<div class="pr-snippet-UXT5230BDS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505444 counter">(<span class="valueCounter1505444"></span>
@@ -2026,10 +2051,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$249.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4236ADS]-1505423/UXT4236ADS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4236ADS]-1505423/UXT4236ADS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4236ADS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4236ADS]-1505423/UXT4236ADS/#ratingsandreviews">
+		<div class="pr-snippet-UXT4236ADS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505441 counter">(<span class="valueCounter1505441"></span>
@@ -2161,10 +2189,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$199.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4230ADS]-1505422/UXT4230ADS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4230ADS]-1505422/UXT4230ADS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4230ADS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4230ADS]-1505422/UXT4230ADS/#ratingsandreviews">
+		<div class="pr-snippet-UXT4230ADS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505438 counter">(<span class="valueCounter1505438"></span>
@@ -2298,10 +2329,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$129.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4030ADS]-1505420/UXT4030ADS/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4030ADS]-1505420/UXT4030ADS/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4030ADS">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4030ADS]-1505420/UXT4030ADS/#ratingsandreviews">
+		<div class="pr-snippet-UXT4030ADS"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505434 counter">(<span class="valueCounter1505434"></span>
@@ -2433,10 +2467,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$109.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4036ADW]-1505421/UXT4036ADW/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4036ADW]-1505421/UXT4036ADW/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT4036ADW">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT4036ADW]-1505421/UXT4036ADW/#ratingsandreviews">
+		<div class="pr-snippet-UXT4036ADW"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505437 counter">(<span class="valueCounter1505437"></span>
@@ -2568,10 +2605,13 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 						$89.99
 					</span>
 				</li>
-				
-				<li class="prodRateReviews"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT3030ADW]-1505419/UXT3030ADW/#ratingsandreviews">0 reviews</a></li>
-				<li class="prodRateStars"><a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT3030ADW]-1505419/UXT3030ADW/#ratingsandreviews" class="rating_point product-link"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a></li>
-			
+				<div class="pr-category" id="pr-category-UXT3030ADW">  
+    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/cooking-2/hoods-3/-[UXT3030ADW]-1505419/UXT3030ADW/#ratingsandreviews">
+		<div class="pr-snippet-UXT3030ADW"></div>
+	</a>
+</div>
+
+
 				<li class="prodCompare">
 					
 							<span class="displayNone count1505432 counter">(<span class="valueCounter1505432"></span>
@@ -2681,13 +2721,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 <!-- QC224 Changes made for the new style END --><!--END - SortView Bar--><!-- END WHRORNPageControls.jspf -->
 	</div>
 
-<script type="text/javascript">
-	var BVprodArr = "";
-	$BV.ui('rr','inline_ratings',{
-		productIds : BVprodArr.split(","),
-		containerPrefix: 'BVRRInlineRating'
-	});
-</script>
+<input type="hidden" id="prPLPArray" value=",UXT4136ADS,UXT4130ADS,UXL5430BSS,UXT5236BDS,UXT5230BDS,UXT4236ADS,UXT4230ADS,UXT4030ADS,UXT4036ADW,UXT3030ADW"/>
 		
 		</div>
     </div>
@@ -2695,7 +2729,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 10:54:36 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:43:44 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">

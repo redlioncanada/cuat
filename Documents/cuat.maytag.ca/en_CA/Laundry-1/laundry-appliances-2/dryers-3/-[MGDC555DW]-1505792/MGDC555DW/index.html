@@ -36,7 +36,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17645/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17645/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
 	<link href="/css/content/redesign.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -210,7 +220,7 @@ var currentprotocol = document.location.protocol;
 
 
 		<body class="product-details-page">
-	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-MM4FFD'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -283,11 +293,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 10:54:58 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:43:39 EDT 2015] -->
   
 
 
@@ -327,7 +337,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13464168");
+			var contextUserId = parseInt("13467108");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -444,7 +454,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 10:59:37 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 10:34:36 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -707,7 +717,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Jurisdiction code could not be determined.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -766,12 +776,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/ProductDisplay.js"></script>
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
 <script type="text/javascript" src="/javascript/compare.js"></script>
-
-
-<script type="text/javascript" src="//display-stg.ugc.bazaarvoice.com/static/maytagcanada/en_CA/bvapi.js"></script>
-
-
-
+<!--Removed include of WHRORNBazaarVoiceInclude.jspf -->
 
 <script type="text/javascript">
 	function selectAddToCart(itemID) {
@@ -846,13 +851,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	
 </script>
 
-
-		<script type="text/javascript">
-			$BV.configure("global", {
-				productId: 'MGDC555DW-NAR'
-			});
-		</script>
-	<!-- End Set Product type -->
+<!-- Removed BV api call --><!-- End Set Product type -->
 
 <div id="entitledItem_1505792" style="display: none;">
 	[ 
@@ -944,8 +943,15 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 		<div class="product-overview">
 			<h1 class="product-title">Centennial® Dryer with 10-Year Limited Parts Warranty<sup>1</sup> - 7.0 cu. ft.</h1>
 			
-				<div id="BVRRSummaryContainer" class="BVBrowserWebkit"></div>
-			
+
+<div id="pr-pdp-snippet-MGDC555DW" class="pr-pdp">
+	<script type="text/javascript">
+	POWERREVIEWS.display.snippet(document, {
+	    pr_page_id:"MGDC555DW",
+	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MGDC555DW&storeId=10229",
+	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
+	</script>
+</div>
 			<div class="product-description">
 				<p>With a massive 7.0 cu. ft. capacity and moisture sensor that stops the cycle at exactly the right time, this Centennial® dryer moves mountains of laundry. We combined the power of a heavy-duty motor with sturdy Maytag® Commercial Technology to make sure it could get your largest loads evenly dried every time. And then we backed the dryer with a 10-year limited parts warranty<sup>1</sup>—our first ever on traditional models. That means you'll be covered for every demanding laundry job for a decade. Count on the Wrinkle Control option to help keep clothes looking good, and count on feeling great about a large capacity dryer that's designed, engineered and assembled in the U.S.A. with American pride.</p>
 			</div>
@@ -1553,25 +1559,17 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						
 						<div id="ratingsandreviews" class="product-content ">
 							
-	
 <div class="product_tab_section_top"></div>
 <div class="product_tab_section_middle">	
-	<div style="review_general_options">
-			
-	</div>
-	
-			<script type="text/javascript">
-				$BV.ui("rr", "show_reviews", {
-					doShowContent: function() {
-						$('#ratingsandreviews_tab').click();
-					},				
-				});
-				$(document).ready(function(){
-					$("#BVRRContainer").appendTo("#ratingsandreviews .product_tab_section_middle");
-					console.log("go");
-				});
-			</script>	
-				
+
+
+<div id="pr-pdp-tab-MGDC555DW" class="pr-pdp-tab">
+	<script type="text/javascript">
+	POWERREVIEWS.display.engine(document,{
+	    pr_page_id:"MGDC555DW",
+	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MGDC555DW&storeId=10229"});
+	</script>
+</div>		
 </div>
 <div class="product_tab_section_bottom"></div>
 
@@ -1815,55 +1813,57 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 
 	<div id="cta-content">
 		<div class="cta-options">
-			<form class="product-detail-options-form">
-				
-						<div class="product-detail-price">
-							<p class="base-msrp">BASE MSRP</p>
-							<p class="offer-price">
-								<span class="offer-price-amount">$949.99 </span>
-							</p>
-							
-						</div>
-						<div class="product-detail-option-select">
-							<div class="product-form-option">
-								<label class="product-options-select-label">
-									Choose A Color
-								</label>
-								<div class="text-select">
-									<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
-										
-																<option selected="selected" value="White"
-																	id="MGDC555DW"
-																	title="$949.99">White</option>
-																
-									</select>
+			
+					<form class="product-detail-options-form">
+						
+								<div class="product-detail-price">
+									<p class="base-msrp">BASE MSRP</p>
+									<p class="offer-price">
+										<span class="offer-price-amount">$949.99 </span>
+									</p>
+									
 								</div>
-							</div>
+								<div class="product-detail-option-select">
+									<div class="product-form-option">
+										<label class="product-options-select-label">
+											Choose A Color
+										</label>
+										<div class="text-select">
+											<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
+												
+																		<option selected="selected" value="White"
+																			id="MGDC555DW"
+																			title="$949.99">White</option>
+																		
+											</select>
+										</div>
+									</div>
+									
+								</div>
 							
-						</div>
-					
-				<div class="submit-section" id="submit-section">
-					<!-- REQ0030843 - Change Where to Buy link on Whirlpool, Maytag, KitchenAid -->
-						<div class="where_to_buy">
-							<a id="wheretoBuyCid" onclick="trackWhereToBuy('ProductPage');"
-								href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mgdc555dw" class="red-button">
-								<span class="ub-left"></span>
-								<span class="ub-center">where to buy</span>
-								<span class="ub-right"></span> 
-							</a>
-						</div>
-					
-		<div id="pdp-cta-compare">
-			<label id="complist_1505801" class="label_check c_off" for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'155173','1505801', 'list', 'PDP');">
-				<input type="checkbox" name="sample-check"  id="addToCompare_1505801" value="1505792"/>
-			</label>
-			<a id="btn_complist_1505801" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'155173','1505801', 'list', 'PDP');" class="compare">Add to Compare</a> 
-		</div>
-		<input type="hidden" id="compareCatGroupId" value="155173"/>
-		<input type="hidden" id="compareCatEntId" value="1505801"/>
-	
-				</div>				
-			</form>
+						<div class="submit-section" id="submit-section">
+							<!-- REQ0030843 - Change Where to Buy link on Whirlpool, Maytag, KitchenAid -->
+								<div class="where_to_buy">
+									<a id="wheretoBuyCid" onclick="trackWhereToBuy('ProductPage');"
+										href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mgdc555dw" class="red-button">
+										<span class="ub-left"></span>
+										<span class="ub-center">where to buy</span>
+										<span class="ub-right"></span> 
+									</a>
+								</div>
+							
+				<div id="pdp-cta-compare">
+					<label id="complist_1505801" class="label_check c_off" for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'155173','1505801', 'list', 'PDP');">
+						<input type="checkbox" name="sample-check"  id="addToCompare_1505801" value="1505792"/>
+					</label>
+					<a id="btn_complist_1505801" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'155173','1505801', 'list', 'PDP');" class="compare">Add to Compare</a> 
+				</div>
+				<input type="hidden" id="compareCatGroupId" value="155173"/>
+				<input type="hidden" id="compareCatEntId" value="1505801"/>
+			
+						</div>				
+					</form>
+				
 		</div>
 	</div>
 	<div class="side-column-espot espot">
@@ -1959,38 +1959,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 		</div>
 	</div>
 </div>
-<!-- MODULE FRAGMENT ENDS -->
-<div id="BVRRContainer">
-<ul id="BVSEOSDK" style="display:none;">
-	<li id="vn">bvseo-2.1.0.1</li>
-	<li id="en">bvseo-true</li>
-	<li id="sl">bvseo-j</li>
-	<li id="mt">bvseo-CLOUD</li>
-	<li id="et">bvseo-162ms</li>
-	<li id="ct">bvseo-REVIEWS</li>
-	<li id="st">bvseo-PRODUCT</li>
-	<li id="pn">bvseo-1</li>
-	<li id="am">bvseo-getAggregateRating</li>
-	<li id="ms">bvseo-msg: The resource to the URL or file is currently unavailable.;</li>
-</ul>
-
-
-<ul id="BVSEOSDK" style="display:none;">
-	<li id="vn">bvseo-2.1.0.1</li>
-	<li id="en">bvseo-true</li>
-	<li id="sl">bvseo-j</li>
-	<li id="mt">bvseo-CLOUD</li>
-	<li id="et">bvseo-0ms</li>
-	<li id="ct">bvseo-REVIEWS</li>
-	<li id="st">bvseo-PRODUCT</li>
-	<li id="pn">bvseo-1</li>
-	<li id="am">bvseo-getReviews</li>
-	<li id="ms">bvseo-msg: The resource to the URL or file is currently unavailable.;</li>
-</ul>
-
-</div>	
-
-
+<!-- MODULE FRAGMENT ENDS --><!-- Removed elements containing sBvOutputSummary and sBvOutputReviews -->
 <script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('MGDC555DW', 'Centennial® Dryer with 10-Year Limited Parts Warranty&lt;sup&gt;1&lt;/sup&gt; - 7.0 cu. ft.', 'traditional', 'Maytag', 'White', '$949.99', 'PDP', '1');</script>
 <script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('MGDC555DW', 'Centennial® Dryer with 10-Year Limited Parts Warranty&lt;sup&gt;1&lt;/sup&gt; - 7.0 cu. ft.', 'traditional', 'Maytag', 'White', '$949.99');</script>
 <script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('1505801', 'MGDC555DW', 'Centennial® Dryer with 10-Year Limited Parts Warranty&lt;sup&gt;1&lt;/sup&gt; - 7.0 cu. ft.', 'traditional', 'Maytag', 'White', '$949.99');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
@@ -2004,7 +1973,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 		</div>
 		<br clear="all" />
 	</div>
-	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 10:54:36 EDT 2015] -->
+	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:43:44 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">
