@@ -1,0 +1,1826 @@
+@charset UTF-8;#content-wrap #content #subnav{color:#999;font-family:Helvetica,Arial,sans-serif;font-size:11px;height:20px;text-transform:lowercase;width:920px;margin:0 auto;padding:16px 10px 10px}
+#content-wrap #content #subnav ul li a:hover{color:#eeb111}
+#content-wrap #content #subnav ul.breadcrumb li{float:left;list-style:none;background:url("/images/content/kitchen/stainless_collection/breadcrumb-arrow.png") no-repeat right center;padding:0 15px}
+#content-wrap #content #subnav ul.breadcrumb li:first-child{padding:0 15px 0 0}
+#content-wrap #content #subnav ul.breadcrumb li.current{background:0;color:#999;padding:0 0 0 10px}
+#content-wrap #content #subnav ul.share{position:relative;float:right;margin:0;padding:0}
+#content-wrap #content #subnav ul.share li{display:inline;float:left;padding:0 7px 0 0;color:#999}
+#content-wrap #content #subnav ul.share li.share_link{background:url(/images/content/icon_share.png) no-repeat left center;padding:0 0 0 20px}
+#content-wrap #content #subnav.L2_page{height:32px;padding:16px 10px 0}
+#content-wrap #content #subnav.L1_page{height:35px;padding:18px 0 0}
+#content-wrap #content #subnav.laundry_L1_page{height:25px;padding:5px 0 0}
+#content-wrap #content #subnav.Accessories_page{height:34px;padding:17px 10px 0}
+.nav_breadcrumb a{color:#eeb111;font-family:Helvetica,Arial,sans-serif;font-style:normal!important}
+#masthead{width:905px;height:auto;position:relative;color:#FFF;margin:0 auto}
+
+#WC_MiniShopCartDisplay_link_5 {margin-right: -12px; padding-right: 17px; font-size: 12px !important; background: url("/images/content/owner_center/icon_yellow_little_arrow.png") no-repeat scroll right center transparent;}
+#WC_MiniShopCartDisplay_link_5:hover {color: #999; background: url("/images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;}
+#WC_MiniShopCartDisplay_link_5 {*display: block; *left: 200px; *top: 300px; *width: 200px;}
+
+
+.jumppage #masthead{height:365px}
+.waterfiltration #masthead{background:url(/images/content/page_bg/jump_waterfiltration_masthead.png) no-repeat;height:495px}
+.watercoolers #masthead{background:url(/images/content/page_bg/jump_watercooler_masthead.jpg) no-repeat}
+.waterheaters #masthead{background:url(/images/content/page_bg/jump_waterheaters_masthead.jpg) no-repeat}
+.watersoftener #masthead{background:url(/images/content/page_bg/jump_watersoftener_masthead.jpg) no-repeat}
+.hvac #masthead{background:url(/images/content/page_bg/jump_hvac_masthead.jpg) no-repeat}
+#glossary #masthead{height:115px;color:#FFF;padding-top:25px}
+#about #masthead{height:137px}
+#masthead .callout_holder{padding:10px}
+#masthead_footer div.footer_text sup{font-size:190%;vertical-align:middle}
+.hvac #masthead p span{color:#666;display:none}
+.waterheaters #masthead h1{font-weight:400;font-size:38px}
+.waterheaters #masthead p span.noHover{width:265px;display:block;margin-top:0}
+.replacement #masthead h1{font-size:38px;margin-bottom:15px}
+.replacement #masthead #callout_holder_one{background:url(/images/content/hash_header_orange.png) repeat scroll 0 0 #FFF\9;width:425px}
+.replacement #masthead p span{font-size:11px;color:#666;font-weight:400;font-family:Helvetica,Arial}
+.replacement #masthead .icon_arrow_right{right:15px;bottom:15px;position:absolute}
+#masthead h1{font-family:Helvetica,Arial;font-weight:700;font-size:40px;color:#fff}
+#masthead h2{font-family:Helvetica,Arial;font-size:18px;font-style:italic;font-weight:400;color:#fff}
+.jumppage #masthead h1{font-size:48px}
+.jumppage #masthead h2{margin:12px 0 0;padding:0}
+.jumppage.waterheaters #masthead h2{font-size:18px;font-style:italic;font-family:Helvetica,Arial;font-weight:400;margin:0;padding:0}
+.commlaundry #masthead{background:url(/images/content/page_bg/jump_commlaundry_masthead.png) no-repeat}
+.replacement #masthead{background:url(/images/content/page_bg/jump_replacement_masthead.jpg) no-repeat}
+.hvac #masthead h2{font-size:17px!important}
+.hvac #masthead h1.purple,.hvac #masthead h2.purple{color:#62086f;font-size:24px!important}
+.airtreatment #masthead{background:url(/images/content/page_bg/jump_airtreatment_masthead.jpg) no-repeat}
+.waterfiltration #masthead h1.purple,.waterfiltration #masthead h2.purple{color:#62086f;margin-top:25px}
+.waterheaters #masthead .picture{bottom:18px;left:492px;position:absolute}
+.watersoftener #masthead p,.watercoolers #masthead p{margin-top:7px}
+#masthead.laundromats #callout_holder_one .callout_image{position:absolute;bottom:10px;left:20px}
+.commlaundry #masthead.laundromats #callout_box{width:455px}
+.commlaundry #masthead.laundromats #callout_holder_one{overflow:visible!important}
+#masthead.laundromats #callout_holder_one{width:455px;background:url(/images/content/hash_header_green.png) #FFF\9}
+.serviceplan #masthead .icon_arrow_right{bottom:20px;right:20px}
+.serviceplan #masthead{background:url(/images/content/page_bg/jump_serviceplan_masthead.jpg) no-repeat scroll 0 0 transparent}
+.winecooler #masthead p span.noHover{width:265px;display:inline}
+#L2_main_content{width:940px;height:auto;margin:0 auto;padding-top:250px}
+#L2_main_accordion{width:940px;margin:0;padding:0}
+#body_content div.horizontal_header{margin-top:35px;height:18px;width:940px}
+#body_content div.horizontal_header_left{height:18px;width:35px;float:left}
+#body_content div.horizontal_header_right{height:18px;float:left;width:702px}
+#body_content div.horizontal_header h2{font-family:Helvetica,Arial;font-size:13px;font-style:italic;font-weight:400;text-align:center;float:left;line-height:120%;margin:0;padding:0 5px}
+#body_content h3{display:inline;float:left;font-family:Helvetica,Arial;font-weight:400;font-size:30px;text-transform:uppercase;margin:5px 0 17px 35px}
+#body_content p{font-family:Helvetica,Arial;font-size:11px;font-weight:400;color:#666}
+#body_content p.horizontal_header_p{font-family:Helvetica,Arial;font-size:14px;font-weight:400;color:#868686;float:left;font-style:italic;margin-left:11px;margin-top:15px}
+#body_content #takealookDisclaimer{font-size:9px;clear:both;margin:0 auto}
+#category_landing_cooklearning_bg,#category_landing_dishlearning_bg,#category_landing_filterlearning_bg,#category_landing_kitchensuiteslearning_bg,#category_landing_laundrylearning_bg,#category_landing_refrigeratorlearning_bg,#category_landing_aircond_bg{width:100%;height:740px;position:absolute;top:0;left:0;z-index:-1}
+#category_landing_aircond_bg,#category_landing_aircond_bg.explore{background:url(/images/content/page_bg/aircond_explore_bg.jpg) no-repeat center 165px}
+#accordion.red .ui-accordion-header{border-top:3px solid #b73b4e}
+#accordion.blue .ui-accordion-header{border-top:3px solid #eeb111}
+#accordion.green .ui-accordion-header{border-top:3px solid #62ac39}
+#accordion.purple .ui-accordion-header{border-top:3px solid #62086f}
+#accordion .ui-accordion-header,#accordion .ui-accordion-content{overflow:visible}
+#L2_main_accordion.green h1:hover{color:#3a8c0d}
+#L2_main_accordion.purple #accordion_segment_2,#L2_main_accordion.purple #accordion_segment_3{/*border-bottom:0px solid #62086f*/}
+#L2_main_accordion.green h1,#body_content.green h3,#body_content.green div.horizontal_header h2{color:#62ac39;line-height:110%}
+#accordion h1{float:left;font-family:Helvetica,Arial;font-style:italic;font-weight:400;font-size:28px;line-height:110%;text-decoration:none;margin:5px 0 0 10px}
+#category_landing_filterlearning #accordion h3 p{color:#868686;float:left;font-family:Helvetica,Arial;font-size:12px;font-weight:400;text-decoration:none;margin:16px 0 0 10px;padding:0}
+#accordion p{color:#868686;float:left;font-family:Helvetica,Arial;font-size:12px;font-weight:400;margin-left:0;margin-top:15px;text-decoration:none;}
+#accordion #accordion_segment_1 h2{margin-top:21px}
+#accordion #accordion_segment_1 h2.narrow_letters{letter-spacing:-1px}
+#accordion #accordion_segment_1 h4{margin-top:6px}
+#accordion h2{font-family:Helvetica,Arial;font-size:45px;color:#FFF;margin-top:30px;padding-left:40px;margin-bottom:0}
+#accordion h2.twoline_consider{margin-top:28px}
+#accordion h2.dish_consider{margin-top:20px;font-size:43px}
+#accordion h4{font-family: helvetica,serif;
+font-style: normal;
+font-weight: 400;
+margin-bottom: 0;
+margin-top: 12px;
+padding: 0 0 0 40px;}
+.category_landing_cooklearning #accoridion_segment_3 #accordion h4{padding:0 0 0 40px}
+#category_landing_L2.category_landing_refrigeratorlearning #accordion .four_col{width:235px;float:left;margin:7px 0 0}
+#category_landing_L2 #accordion_segment_1 ul li ul,#category_landing_L2 #accordion_segment_2 ul li ul,#category_landing_L2 #accordion_segment_3 ul li ul{display:inline;float:left;margin:0;padding:0}
+#category_landing_L2 .three_col ul.productPoints{width:305px}
+#category_landing_L2 #accordion .three_col .product_image{width:315px;height:175px;text-align:center;text-decoration:none}
+#category_landing_L2.category_landing_dishlearning #accordion .three_col .product_image{width:315px;height:160px;text-align:center}
+#category_landing_L2.category_landing_refrigeratorlearning #accordion .four_col .product_image{width:235px;height:200px;text-align:center;margin:15px 0 0}
+#category_landing_L2 #accordion .four_col .product_image{width:235px;height:165px;text-align:center;text-decoration:none;margin:15px 0 0}
+#category_landing_L2 #accordion #front-load-he.product_image{background:url(/images/content/L2/laundry_front_loader_he.png) no-repeat -5px top}
+#category_landing_L2 #accordion #front-load-he.product_image:hover{background:url(/images/content/L2/laundry_front_loader_he.png) no-repeat -306px top}
+#category_landing_L2 #accordion #top-load-he.product_image{background:url(/images/content/L2/laundry_top_loader_he2.png) no-repeat 18px top}
+#category_landing_L2 #accordion #top-load-trad.product_image{background:url(/images/content/L2/laundry_top_loader_trad.png) no-repeat 0 top}
+#category_landing_L2 #accordion #ranges.product_image{background:url(/images/content/L2/cooking_ranges.png) no-repeat center top}
+#category_landing_L2 #accordion #ranges.product_image:hover{background:url(/images/content/L2/cooking_ranges.png) no-repeat center -190px}
+#category_landing_L2 #accordion #builtin.product_image{background:url(/images/content/L2/cooking_wall_ovens.png) no-repeat center top}
+#category_landing_L2 #accordion #cooktops.product_image{background:url(/images/content/L2/cooking_cooktops.png) no-repeat center top}
+#category_landing_L2 #accordion #microwaves.product_image{background:url(/images/content/L2/cooking_microwaves.png) no-repeat center top}
+#category_landing_L2 #accordion #french-doors.product_image{background:url(/images/content/L2/refrigeration-french-doors.png) no-repeat 10px top}
+#category_landing_L2 #accordion #french-doors.product_image:hover{background:url(/images/content/L2/refrigeration-french-doors.png) no-repeat 10px -240px}
+#category_landing_L2 #accordion #side-by-side.product_image{background:url(/images/content/L2/refrigeration-side-by-side.png) no-repeat scroll 46px 11px transparent}
+#category_landing_L2 #accordion #bottom-freezer.product_image{background:url(/images/content/L2/refrigeration-bottom-freezer.png) no-repeat center top}
+#category_landing_L2 #accordion #top-freezer.product_image{background:url(/images/content/L2/refrigeration-top-freezer.png) no-repeat 10px top}
+#category_landing_L2 #accordion #int-console.product_image{background:url(/images/content/L2/dishwasher_int_console.png) no-repeat center top}
+#category_landing_L2 #accordion #int-console.product_image:hover{background:url(/images/content/L2/dishwasher_int_console.png) no-repeat center -160px}
+#category_landing_L2 #accordion #trad-console.product_image{background:url(/images/content/L2/dishwasher_trad_console.png) no-repeat center top}
+#category_landing_L2 #accordion #portable.product_image{background:url(/images/content/L2/dishwasher_portable.png) no-repeat center top}
+#category_landing_L2 #accordion_segment_1>ul li div h2,#category_landing_L2 #accordion_segment_2>ul li div h2,#category_landing_L2 #accordion_segment_3>ul li div h2{list-style:none;font-family:helvetica,serif;font-size:22px;font-style:italic;text-align:center;margin-top:0;color:#666;font-weight:normal;padding:0}
+#category_landing_L2 #accordion_segment_1>ul li div h2 span{font-size:10px;font-family:Helvetica,Arial,serif;font-style:normal;text-transform:uppercase;margin-right:5px;color:#666}
+#category_landing_L2 #accordion_segment_1>ul li div.dishwasher_header,#category_landing_L2 #accordion_segment_1>ul li div.laundry_header{list-style:none;background-image:none;min-height:5px;margin:-45px 0 0;padding:0 0 10px}
+#category_landing_L2 #accordion_segment_1>ul li div.col_three{width:289px}
+#category_landing_L2 #accordion_segment_1>ul li div.seeproducts,#category_landing_L2 #accordion_segment_2>ul li div.seeproducts,#category_landing_L2 #accordion_segment_3>ul li div.seeproducts{list-style:none;background-image:none;border-bottom:0;text-align:center;margin:0;padding:35px 0 0}
+#category_landing_L2 #accordion_segment_1>ul li div.seeproducts a,#category_landing_L2 #accordion_segment_2>ul li div.seeproducts a,#category_landing_L2 #accordion_segment_3>ul li div.seeproducts a,#category_landing_L2 #accordion_segment_3>ul li div.accordion_footer_link a{font-family:sans-serif;font-size:14px;font-style:normal;font-weight:700;color:#09f;text-decoration:none;background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat 0 5px;line-height:110%;padding:0 8px}
+#category_landing_L2 #accordion_segment_1>ul li div.seeproducts a:hover,#category_landing_L2 #accordion_segment_2>ul li div.seeproducts a:hover,#category_landing_L2 #accordion_segment_3>ul li div.seeproducts a:hover,#category_landing_L2 #accordion_segment_3>ul li div.accordion_footer_link a:hover{background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat 0 -9px;color:#3cf}
+#category_landing_L2 #accordion_segment_1>ul li div.seeproducts span,#category_landing_L2 #accordion_segment_2>ul li div.seeproducts span,#category_landing_L2 #accordion_segment_3>ul li div.seeproducts span{color:#09f;font-size:11px;font-weight:400;padding-left:10px}
+#category_landing_L2 #accordion_segment_2 ul#consider2,#category_landing_L2 #accordion_segment_3 ul#consider2{float:left;margin:50px 0 0;padding:0}
+#category_landing_L2 #accordion_segment_3 ul#consider2{margin:27px 0 0}
+#category_landing_L2 #accordion_segment_2 ul li div,#category_landing_L2 #accordion_segment_3 ul li div{background:0;border-bottom:0;margin-bottom:0}
+#category_landing_L2 #accordion_segment_2 ul li div.product_image,#category_landing_L2 #accordion_segment_3 ul li div.product_image{height:50px;text-align:center}
+#category_landing_L2 #accordion_segment_2 ul,#category_landing_L2 #accordion_segment_3 ul{float:left;margin:30px 0 0;padding:0}
+#category_landing_L2.category_landing_laundrylearning #accordion_segment_2 ul{margin:49px 0 0}
+#category_landing_L2 #accordion_segment_2 ul li div.seeproducts,#category_landing_L2 #accordion_segment_2 ul li div.seeproducts{margin-bottom:25px}
+#accordion_segment_1,#accordion_segment_2,#accordion_segment_3{display:inline;float:left;z-index:49;margin:0;padding:0}
+#accordion_segment_1 ul,#accordion_segment_2 ul,#accordion_segment_3 ul{list-style:none;margin:12px 0 0}
+#accordion .ui-state-active{background:#fff;opacity:.8;filter:alpha(opacity=80)}
+#accordion .ui-accordion-header{float:left;height:46px;width:100%;margin:0}
+#accordion .ui-icon{float:left;height:22px;width:22px;margin:10px 0 0 15px}
+#accordion.red .ui-state-default .ui-icon{background:url(/images/content/L2/arrow_red_unselect.png) no-repeat transparent}
+#accordion.red .ui-state-active .ui-icon{background:url(/images/content/L2/arrow_red_select.png) no-repeat transparent}
+#accordion.red .ui-state-hover .ui-icon{background:url(/images/content/L2/arrow_red_mouseover.png) no-repeat transparent}
+#accordion.green .ui-state-default .ui-icon{background:url(/images/content/L2/arrow_green_unselect.png) no-repeat transparent}
+#accordion.green .ui-state-active .ui-icon{background:url(/images/content/L2/arrow_green_select.png) no-repeat transparent}
+#accordion.green .ui-state-hover .ui-icon{background:url(/images/content/L2/arrow_green_mouseover.png) no-repeat transparent}
+#accordion.blue .ui-state-default .ui-icon{background:url(/images/content/L2/arrow_blue_unselect.png) no-repeat transparent}
+#accordion.blue .ui-state-active .ui-icon{background:url(/images/content/L2/arrow_blue_select.png) no-repeat transparent}
+#accordion.blue .ui-state-hover .ui-icon{background:url(/images/content/L2/arrow_blue_mouseover.png) no-repeat transparent}
+#accordion.purple .ui-state-default .ui-icon{background:url(/images/content/L2/arrow_purple_unselect.png) no-repeat transparent}
+#accordion.purple .ui-state-active .ui-icon{background:url(/images/content/L2/arrow_purple_select.png) no-repeat transparent}
+#accordion.purple .ui-state-hover .ui-icon{background:url(/images/content/L2/arrow_purple_mouseover.png) no-repeat transparent}
+#category_landing_aircond #accordion_segment_1 ul li.main h2,#category_landing_aircond #accordion_segment_2 ul li.main h2,#category_landing_aircond #accordion_segment_3 ul li.main h2{color: #EEBB10;
+font-family: Helvetica;
+font-size: 30px;
+font-style: normal;
+font-weight: normal;
+margin-bottom: 0;
+margin-top: 0;
+width: 712px;}
+.grey_room_air{
+	color:#666;
+}
+#category_landing_aircond #accordion_segment_1 ul li.main h4,#category_landing_aircond #accordion_segment_2 ul li.main h4,#category_landing_aircond #accordion_segment_3 ul li.main h4{font-size:16px}
+#category_landing_aircond #accordion_segment_3 ul li.main h4{width:650px}
+#category_landing_aircond #accordion_segment_3 h2{color: #666;
+font-family: Helvetica,Arial,helvetica,serif;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+margin-bottom: 0;
+padding-left: 40px;}
+#category_landing_aircond #accordion_segment_3 #aircond_fig_1{float: right;
+position: relative;
+right: -22px;
+*right: 100px;
+top: -14px;
+width: 272px;
+height: 0;}
+#category_landing_aircond #accordion_segment_1 ul{position:relative;overflow:visible}
+#category_landing_aircond #accordion_segment_2 ul li{display:inline;float:left;width:940px}
+#category_landing_aircond #accordion_segment_2 ul li ul{width:320px;list-style:circle;overflow:visible;min-height:376px;margin:-15px auto 0;padding:0}
+#category_landing_aircond #accordion_segment_2 ul li ul li{font-family:Helvetica,Arial,sans-serif;font-size:10px;color:#666;line-height:17px;width:330px;border-bottom:1px dotted #e6e6e6;margin:0 auto;padding:6.5px 0}
+#category_landing_aircond #accordion_segment_3 ul.product_instructions,#category_landing_aircond #accordion_segment_3 p.product_instructions{padding-left:40px;font-family:Helvetica,Arial,'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;font-size:11px;color:#666;line-height:15px;margin-top:10px}
+#category_landing_aircond #accordion_segment_3 ul.step_1 li,#category_landing_aircond #accordion_segment_3 ul.step_3 li{width:800px;margin:5px 0}/*width:500*/
+#category_landing_aircond #accordion_segment_3 ul.step_2,#category_landing_aircond #accordion_segment_3 ul.step_4{width:475px}
+#category_landing_aircond #accordion_segment_3 ul.step_2 li,#category_landing_aircond #accordion_segment_3 ul.step_4 li{width:140px;border-bottom:1px dotted #e6e6e6;float:left;padding:10px}
+#category_landing_aircond #accordion_segment_3 ul.step_2 li.left,#category_landing_aircond #accordion_segment_3 ul.step_4 li.left{margin-left:-10px}
+#category_landing_aircond #accordion_segment_3 ul.step_2 li.right{width:170px}
+#category_landing_aircond #accordion_segment_3 p.seeproducts{margin:20px 0 0 40px}
+#category_landing_filterlearning #accordion_segment_1 ul li.main h2 span,#category_landing_filterlearning #accordion_segment_2 ul li.main h2 span,#category_landing_filterlearning #accordion_segment_3 ul li.main h2 span{font-family:Helvetica,Arial,parisplus-clair-1,parisplus-clair-2,sans-serif;font-size:45px;font-weight:700;color:#eeb111;margin-bottom:0;margin-top:0;font-style:normal}
+div#content div#category_landing_filterlearning div#accordion_segment_3.ui-accordion-content ul li.main h2{background:url(/images/content/page_bg/filters_installEasily_title.jpg) no-repeat scroll 0 0 transparent}
+#category_landing_aircond ul{overflow:hidden;margin:25px 0 0}
+#category_landing_aircond ul li.main{width:650px}
+#category_landing_aircond ul>li.main p{padding-left:40px;width:350px}
+#category_landing_aircond ul>li.main p.seeproducts{margin-bottom:56px;margin-top:10px}
+#category_landing_aircond ul>li.main p.white{color:#FFF;margin-top:15px}
+#category_landing_aircond ul>li.main p.gray{color:#666;margin-top:57px}
+#category_landing_aircond a#aircond_both_img{width:500px;height:300px;position:absolute;left:410px;background:url(/images/content/L2/aircond_both_ac.png) no-repeat scroll 0 0 transparent;margin-top:50px}
+#category_landing_aircond a#aircond_both_img:hover{background:url(/images/content/L2/aircond_both_ac.png) no-repeat scroll 0 -400px transparent}
+#category_landing_aircond ul>li.main p a{font-size:14px;font-weight:700;background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat scroll 0 6px transparent;padding:0 0 0 10px}
+#category_landing_aircond ul>li.main p a:hover{background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat scroll 0 -8px transparent}
+#category_landing_aircond ul>li.main #product_white{float:left;width:470px}
+#category_landing_aircond ul>li.main #product_black{float:right;width:470px}
+#category_landing_aircond ul>li.main #product_title .small_span{font-size:11px;text-transform:uppercase;float:left}
+#category_landing_aircond ul>li.main #product_title .large_span{float: left;
+font-family: helvetica,serif;
+font-size: 20px;
+font-style: normal;
+margin: 0 auto;
+padding: 0 0 25px;
+text-align: center;
+width:320px;
+height: 25px;
+color:#666;
+}
+.last_li_air_conditioner{
+	border-bottom: none !important;
+}
+#category_landing_aircond ul>li.main div.see_products{width:470px;text-align:center;clear:both;margin-bottom:30px}
+#category_landing_aircond ul>li.main a#aircond_white_ac,#category_landing_aircond ul>li.main a#aircond_black_ac{width:400px;height:285px;display:block;margin:0 auto}
+#category_landing_aircond ul>li.main a#aircond_white_ac{background:url(/images/content/L2/aircond_white_ac.png) no-repeat scroll center 0 transparent}
+#category_landing_aircond ul>li.main a#aircond_black_ac{background:url(/images/content/L2/aircond_black_ac.png) no-repeat scroll center 0 transparent}
+#category_landing_aircond ul>li.main a#aircond_black_ac:hover{}
+#category_landing_filterlearning ul>li.main{width:581px}
+#category_landing_filterlearning ul>li.callout p a{background:url(/images/content/img_arrow_left_blue_2.png) no-repeat scroll left center transparent;color:#09f;display:block;text-decoration:none;margin:10px 0 0;padding:0 0 0 8px}
+#category_landing_filterlearning ul>li.main p{padding-left:28px;margin:0}
+#filterFinder{background:url(/images/content/L2/filterFinder_bg.jpg) no-repeat top left;width:180px;height:156px;float:left;position:relative;margin-bottom:20px}
+#filterFinder h1{font-family:helvetica,serif;font-size:13px;color:#999;line-height:120%;font-weight:400;font-style:italic;text-align:left;margin:15px 0 0 15px;padding:0}
+#filterFinder p a{background:url(/images/content/L2/getStartedBtn.png) no-repeat left 11px transparent;font-size:14px;font-family:helvetica,serif;font-style:italic;color:#12a8ca;position:absolute;bottom:15px;right:20px;font-weight:700;padding:10px 0 0 22px}
+#body_content.green div.horizontal_header_left,#body_content.green div.horizontal_header_right{background:url(/images/content/hash_header_green.png)}
+#category_landing_L2 .three_col{width:305px;float:left;margin:15px 0 0}
+#category_landing_L2 ul#productListing{float:left;margin:0 0 0 10px}
+#category_landing_L2 .three_col ul#product3.productPoints{float:left;width:289px;margin:0;padding:0}
+#category_landing_L2 .three_col ul.productPoints div.divider,#category_landing_L2 .four_col ul.productPoints div.divider{border-bottom:1px dotted #bebebe;width:100%;height:1px;margin:0;padding:0}
+#category_landing_L2 .three_col ul.productPoints li.divider{border-bottom:1px dotted #bebebe;width:100%;list-style:none outside none;height:1px;margin:0;padding:0}
+#category_landing_L2 .four_col ul#product1.productPoints li.adPoints,#category_landing_L2 .three_col ul#product1.productPoints li.adPoints{font-family:Helvetica,Arial,serif;font-size:10px;line-height:150%;color:#666;list-style:disc outside;margin:0 0 0 25px;padding:6px 0}
+#category_landing_L2 .three_col ul.productPoints li.seeproducts{text-align:center;width:100%;float:left;padding:10px 0 20px}
+#category_landing_L2 .four_col ul.productPoints li.seeproducts a,#category_landing_L2 .three_col ul.productPoints li.seeproducts a{background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat 0 6px;font-size:14px;text-align:center;font-weight:700;padding:0 0 0 10px}
+#category_landing_L2 .four_col ul.productPoints li.seeproducts a:hover,#category_landing_L2 .three_col ul.productPoints li.seeproducts a:hover{background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat 0 -8px}
+#category_landing_L2 #consider .vertDivider,#category_landing_L2 #consider2 .vertDivider{float:left;width:1px;padding:60px 0 0}
+#category_landing_L2 #consider .vertDivider div,#category_landing_L2 #consider2 .vertDivider div{border-left:1px dotted #bebebe;height:75px}
+#category_landing_L2 #consider .product_copy,#category_landing_L2 #consider2 .product_copy{margin:10px 0 0;padding:0 15px 0 35px}
+#category_landing_L2 #consider .first_child .product_copy,#category_landing_L2 #consider2 .first_child .product_copy{background:url(/images/content/sixthSenseLogo.png) no-repeat 5px top transparent;padding:0 15px 0 60px}
+#category_landing_L2 ul#consider{margin:30px 0 0}
+#category_landing_L2.category_landing_cooklearning ul#consider2 li{height:80px}
+#category_landing_L2 #body_content{overflow:hidden;float:left}
+#category_landing_L2 #body_content ul{float:left;clear:left;margin:0;padding:0}
+#category_landing_L2 #body_content ul.product_image_list{width:900px;padding-left:40px}
+#category_landing_L2 #body_content>ul.product_image_list li{float:left;width:134px;text-align:center}
+#category_landing_L2 #body_content>ul.product_image_list li.vertDivider{width:1px;height:125px;border-right:1px dotted #bebebe;margin:35px 0 0}
+#category_landing_L2 #body_content ul.product_image_list li a{font-family:Helvetica,Arial,serif;width:124px;padding-top:165px;margin:0 auto}
+#category_landing_L2 #body_content ul.product_image_list.laundry li a{padding-top:0;width:auto}
+#category_landing_L2 #body_content ul li a{display:block;text-transform:uppercase;font-family:sans-serif;font-size:11px;font-weight:400;color:#09f;text-decoration:none}
+#WC_ContentAreaESpot_div_1_CATTEspot #L2_main_content ul.product_image_list li a p{color:#09f;display:block;font-size:11px;font-weight:400;text-decoration:none;text-transform:uppercase;text-align:center}
+#WC_ContentAreaESpot_div_1_CATTEspot #L2_main_content ul.product_image_list li a div{display:block;height:175px;overflow:hidden;position:relative;width:auto;float:none}
+#WC_ContentAreaESpot_div_1_CATTEspot #L2_main_content ul.product_image_list li a div img:hover{bottom:160px;position:relative}
+#WC_ContentAreaESpot_div_1_CATTEspot #L2_main_content ul.product_image_list li.product_2 a div img:hover{bottom:162px!important;position:relative}
+#page.product_detail_page #overview p.discl{color:#999;padding-top:10px}
+#page.product_detail_page #overview p.discl sup{font-size:9px!important}
+#product_showcase{position:relative;float:left;height:auto;margin-left:5px;width:935px;margin-top:40px;padding:0}
+#product_showcase ul li{display:inline;float:left;list-style:none;margin:0;padding:0}
+#product_showcase ul li.middle{border-right:1px dotted #e6e6e6;border-left:1px dotted #e6e6e6}
+#product_showcase ul{margin:8px 0 0}
+#product_showcase_segment{vertical-align:bottom;margin:0;padding:0}
+#product_showcase_segment ul{display:block;min-height:300px;text-align:center;vertical-align:middle;width:290px;margin:0;padding:0}
+#product_showcase_segment ul li{display:block;clear:left;width:310px;font-size:11px}
+#product_showcase_segment ul li a{text-transform:uppercase;text-decoration:none;color:#09f;line-height:15px;font-weight:400;font-family:Helvetica,Arial,serif;display:block;overflow:hidden}
+#category_landing_kitchen #product_showcase_segment.product_1 a.image{padding-top:210px;background:url(/images/content/kitchen/kitchen_landing_refrigeration.png) no-repeat scroll center 7px transparent}
+#category_landing_kitchen #product_showcase_segment.product_1 a.image:hover{background:url(/images/content/kitchen/kitchen_landing_refrigeration.png) no-repeat scroll center -264px transparent;color:#3cf}
+#category_landing_kitchen #product_showcase_segment.product_2 a.image{padding-top:210px;background:url(/images/content/kitchen/kitchen_landing_cooking.png) no-repeat scroll center -8px transparent}
+#category_landing_kitchen #product_showcase_segment.product_2 a.image:hover{background:url(/images/content/kitchen/kitchen_landing_cooking.png) no-repeat scroll center -279px transparent;color:#3cf}
+#category_landing_kitchen #product_showcase_segment.product_3 a.image{padding-top:210px;background:url(/images/content/kitchen/kitchen_landing_dishwashers.png) no-repeat scroll center -8px transparent}
+#category_landing_kitchen #product_showcase_segment.product_3 a.image:hover{background:url(/images/content/kitchen/kitchen_landing_dishwashers.png) no-repeat scroll center -279px transparent;color:#3cf}
+#category_landing_kitchen #product_showcase_segment.product_4 a.image{padding-top:240px;background:url(/images/content/kitchen/kitchen_landing_suites.png) no-repeat scroll center -11px transparent}
+#category_landing_kitchen #product_showcase_segment.product_4 a.image:hover{background:url(/images/content/kitchen/kitchen_landing_suites.png) no-repeat scroll center -282px transparent;color:#3cf}
+#product_showcase_segment ul li.cat_description{margin-left:10px 0 0;text-align:center;width:100%;line-height:165%;color:#666}
+#product_showcase_segment ul li h2{color:#09F;font-size:11px;text-transform:uppercase;margin-bottom:8px}
+#page.product_list_page .product_detail_set{margin:10px 0 0;padding:0 0 10px}
+#page.product_list_page div.rowEnd div.product_list_detail div.tbl_cell{border-right:none!important}
+#page.product_list_page div.product_list_detail div.tbl_cell{min-height:415px}
+div.product_showcase_divider{width:900px;border-top:1px dotted #e6e6e6;border-bottom:1px dotted #e6e6e6;height:1px;margin-bottom:20px;margin-top:55px}
+#hash_header h3.focus{font-family:Helvetica,Arial,serif;font-weight:400;font-style:normal;color:#62ac39;font-size:25px;margin-left:50px}
+#shopping_tip_border .shopping_tip #shopping_tip_selectors.green a:hover,#shopping_tip_border .shopping_tip #shopping_tip_selectors.green a.selected{background:url(/images/content/icon_lower_right_dot_green_selected.png) no-repeat}
+#shopping_tip_border .shopping_tip #shopping_tip_selectors.red a:hover,#shopping_tip_border .shopping_tip #shopping_tip_selectors.red a.selected{background:url(/images/content/icon_lower_right_dot_red_selected.png) no-repeat}
+#shopping_tip_border .shopping_tip #shopping_tip_1_div,#shopping_tip_border .shopping_tip #shopping_tip_2_div,#shopping_tip_border .shopping_tip #shopping_tip_3_div,#shopping_tip_border .shopping_tip #shopping_tip_4_div,#shopping_tip_border .shopping_tip #shopping_tip_5_div{background:0;height:0}
+#category_landing_laundry #product_showcase_segment ul li.description{margin-top:4px}
+#category_landing_kitchen .callout_holder_selected{background:url(/images/content/hash_header_red.png) #FFF}
+#category_landing_kitchen #sub_header h3.focus{font-family:Helvetica,Arial,serif;font-weight:400;font-style:normal;color:#b22c41;font-size:30px;margin:0;padding:0}
+#category_landing_wholehome_accessories_bg{background:url(/images/content/page_bg/whole_home_accessories.jpg) no-repeat center top}
+#category_landing_laundry_bg,#category_landing_accessories_bg,#category_landing_kitchen_bg,#category_landing_kitchen_accessories_bg,#category_landing_laundry_accessories_bg,#category_landing_WholeHome_bg,#category_landing_wholehome_accessories_bg{width:100%;height:750px;position:absolute;top:0;left:0;z-index:-1}
+#category_landing_wholehome_accessories #product_showcase_segment.product_1 a{background:url(/images/content/wholehomeaccessories/wha_product_1.png) no-repeat scroll center 0 transparent;width:285px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_1 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_1.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_2 a{background:url(/images/content/wholehomeaccessories/wha_product_2.png) no-repeat scroll center 0 transparent;width:285px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_2 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_2.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_3 a{background:url(/images/content/wholehomeaccessories/wha_product_3.png) no-repeat scroll center 0 transparent;width:285px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_3 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_3.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_4 a{background:url(/images/content/wholehomeaccessories/wha_product_4.png) no-repeat scroll center 0 transparent;width:285px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_4 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_4.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_5 a{background:url(/images/content/wholehomeaccessories/wha_product_5.png) no-repeat scroll center 0 transparent;width:318px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_5 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_5.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_6 a{background:url(/images/content/wholehomeaccessories/wha_product_6.png) no-repeat scroll center 0 transparent;width:285px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_6 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_6.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_wholehome_accessories #product_showcase_segment.product_7 a{background:url(/images/content/wholehomeaccessories/wha_product_7.png) no-repeat scroll center 0 transparent;width:318px}
+#category_landing_wholehome_accessories #product_showcase_segment.product_7 a:hover{background:url(/images/content/wholehomeaccessories/wha_product_7.png) no-repeat scroll center -290px transparent;color:#3cf}
+#category_landing_laundry_accessories #product_showcase,#category_landing_kitchen_accessories #product_showcase,#category_landing_wholehome_accessories #product_showcase,#category_landing_WholeHome #product_showcase{margin-top:0;margin-left:19px;width:900px}
+#category_landing_wholehome_accessories sup,#category_landing_filterlearning sup,#category_landing_kitchen_accessories sup,#category_landing_laundry_accessories sup{font-size:120%;vertical-align:0;font-weight:400}
+#category_landing_aircond sup{font-size:100%;vertical-align:0}
+#about #body_content p sup{font-size:120%;vertical-align:0}
+#legal_footer_content{float:left;clear:left;width:940px;font-family:Helvetica,Arial,serif;font-size:9px;color:#999;margin:10px auto}
+#legal_footer_content p{margin:0 35px}
+#page.glossary #glossary{width:900px;height:120px;padding-left:40px;padding-top:90px;margin-top:-1px}
+#page.glossary #glossary h1{color:#fff;font-size:40px;font-weight:700;margin-bottom:3px}
+#page.glossary #glossary div.description{color:#fff;font-family:helvetica,serif;font-size:18px;font-style:italic;font-weight:400}
+#header-wrap{z-index:30 !important}
+#header_main_nav li ul li ul li,#header_main_nav li.laundry ul li,#header_main_nav li.kitchen ul li ul li,#header_main_nav li.wholehome ul li ul li,#header_main_nav li.accessories ul li ul li,#header_main_nav li.ownercenter ul li ul li,#header_main_nav li.top ul li ul{border-color:#999}
+#header_main_nav ul li.laundry ul li.header{height:82px;margin-top: 25px;}
+#header_main_nav ul li.kitchen ul li.header{height:94px}
+#header_main_nav ul li.laundry ul li.header .header_container,#header_main_nav ul li.kitchen ul li.header .header_container{padding:5px}
+#header_main_nav ul li.laundry .header_container a:hover .header,#header_main_nav ul li.laundry .header_container a:focus .header,#header_main_nav ul li.laundry .header_container a:hover .learn_about,#header_main_nav ul li.laundry .header_container a:focus .learn_about{color:#999999;text-decoration:none}
+#header_main_nav ul li.laundry li{border:0;padding:0}
+#header_main_nav ul li.laundry>ul{width:233px;height:370px;padding:0;*height:395px}
+html[lang="fr"] #header_main_nav ul li.laundry>ul { width: 265px; }
+#header_main_nav ul li.laundry li ul#laundry_optns li{border-bottom:1px dotted #999;font-family:Helvetica,Arial,sans-serif;font-size:11px;padding:5px 0}
+#header_main_nav ul li.laundry li ul#laundry_optns li.last{border-bottom:0 none;padding-bottom:20px}
+html[lang="fr"] #header_main_nav ul li.laundry li ul#laundry_optns{width:250px;}
+#header_main_nav ul li ul li a.accessories_header:hover,#header_main_navul li ul li a.accessories_header:focus{color:#999}
+#header_main_nav ul.owners_callout_section li a{border-bottom:1px dotted #999}
+#header_main_nav ul li ul li.header .header_container{-moz-border-radius:0;border-radius:0;bottom:35px}
+#header_main_nav li.kitchen ul.suites li.header{height:122px}
+#header_main_nav ul li.kitchen ul.suites li.header .header_container{bottom:63px;width:152px}
+#header_main_nav ul.top li.top a.menu_button{font-size:12px;font-family:Helvetica,Arial,sans-serif;font-weight:normal;}
+#footer-wrap{margin-top:48px}
+#footer #footer-nav ul.wider{width:145px;margin-right:15px}
+#footer #footer-nav ul.footer_cooking,#footer #footer-nav ul.footer_additional_left{width:120px}
+#footer #footer-nav ul.footer_refrigeration,#footer #footer-nav ul.footer_corp{width:120px}
+#footer #footer-nav ul.footer_wholehome{width:115px}
+#footer #footer-nav ul.footer_brandcares,#footer #footer-nav ul.footer_corp,#footer #footer-nav ul.footer_additional{margin-top:-35px!important}
+#footer #footer-nav .footer_nolink_black,#footer #footer-nav .footer_nolink_blue{color:#666;font-size:9px;font-weight:700;text-transform:uppercase}
+#footer #footer-nav ul#additional .footer_nolink_black{color:#666;display:block;margin-bottom:3px;padding-bottom:3px;width:200px}
+#header_main_nav ul.top li.current_tab{background-position:50% -72px}
+/*#header_sub_nav_1{margin-right:205px}*/
+html[lang="fr"] #header_sub_nav_1 { margin-right: -34px; }
+#header_main_nav ul li ul li.header .learn_about{font-size:12px}
+#footer #footer-nav ul {
+display: block;
+width: 117px;
+float: left;
+margin: 0px 10px 0px 0px;
+margin-top: 0px;
+margin-right: 10px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0px;
+list-style: none;
+}
+#lastAddedItemList li div { color: #EEB111 !important;}
+#lastAddedItemList li div i{font-style: normal !important;}
+
+div#espot_image div#WC_ContentAreaESpot_div_1_PLBIEspot div{height:1000px}
+#footer #footer-nav ul#additional{display:block;width:260px;float:left;list-style:none;margin:0 0 20px 26px;padding:0}
+#footer #footer-nav ul#additional.connect{width:125px;margin-left:0;}
+#footer #footer-nav ul#additional.connect .footer_nolink_black{width:100px}
+#footer #footer-nav ul#additional.connect img{border:0;float:left}
+#header #header_main_nav li.accessories>ul{height:auto}
+#header #header_main_nav li.accessories ul ul#filter_finder{width:125px;padding:15px 20px}
+#header_main_nav .top .accessories ul#filter_finder li{border-bottom:1px #b7e5f0 dotted;padding:10px 0;margin:0}
+#header_main_nav .top .accessories ul#filter_finder li h2{font-size:22px;color:#eeb111;font-family:helvetica,"Times New Roman",Times,serif;margin:0;padding:0 0 5px}
+#header_main_nav .top .accessories #filter_finder li h3{color:#eeb111;font-family:helvetica,"Times New Roman",Times,serif;font-size:15px;font-style:italic;padding-bottom:5px;margin:0}
+#header_main_nav .top .accessories #filter_finder li p{color:#666;font-size:10px;margin:0;padding:2px 0 0}
+#header_main_nav .accessories li ul li.filter_finder{border-top:1px dotted #666;margin-top:5px;padding-top:10px!important}
+#header_main_nav .top .accessories #filter_finder li #filter_finder{padding:20px 0 15px}
+#header_main_nav .top.accessories #filter_finder li.last{border-bottom:0;padding:10px 0 0}
+#header_main_nav .accessories #filter_finder li.fleshflow_produce{border-bottom:0 none;font-family:helvetica,serif;font-size:12px;font-style:italic;padding:10px 0}
+#header_main_nav #filter_finder li.fleshflow_produce a{color:#eeb111;display:block;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;height:55px;line-height:19px;overflow:hidden;font-style:normal;padding:0}
+#header_main_nav .top.accessories #filter_finder li#offer h1{font-family:helvetica,"Times New Roman",Times,serif;font-size:17px;font-style:italic;font-weight:700;color:#eeb111;margin:0 0 2px}
+#header_main_nav .top.accessories #filter_finder li#offer h3{font-family:helvetica,"Times New Roman",Times,serif;font-size:12px;font-style:italic;font-weight:700;color:#eeb111;padding-left:2px}
+#header_main_nav .top.accessories #filter_finder li#offer p.require{font-size:7px;color:#ababab}
+#header_main_nav ul.top li.last.ownercenter ul{width:441px;height:255px;margin:0 0 0 -309px}
+html[lang="fr"] #header_main_nav ul.top li.last.ownercenter ul {}
+#header_main_nav ul.top li.last.ownercenter ul li ul.first{height:200px;margin:20px 0 0;padding-top:0;width:183px;border-right:1px dotted #999}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section{margin:0;padding:20px 12px 12px;width:178px}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li{border:0}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li.second{border-bottom:1px dotted #ffbc49;width:175px}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li.first{border-bottom:0;width:130px;padding:0 50px 0 0}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li.last.dots{border-bottom:1px dotted #999;margin-bottom:10px;padding-bottom:15px;}
+html[lang="fr"] #header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li.last.dots{width:200px}
+#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li a#sweepRules{background:url(/images/content/img_arrow_left_blue_mouseover.png) no-repeat scroll 0 6px transparent;color:#09f;font-family:helvetica,georgia;font-size:10px;font-weight:400;text-transform:none;border:medium none;display:inline;padding:3px 0 0 8px}
+#header_main_nav .third{display:inline;font-size:10px;font-style:normal;font-weight:400;width:180px}
+#footer-nav-level-two{float:left;margin-top:56px;*padding-bottom:20px}
+html[lang="fr"] #footer-nav-level-two { margin-top: 30px; }
+#homepage_wrap{position:relative;margin:0 auto}
+#homepage_wrap #main_content{width:940px;clear:right;margin-left:auto;margin-right:auto}
+#homepage_accordion{width:940px;height:163px;position:relative;background:url(/images/content/homepage_amp.png) center top no-repeat;margin-top:-210px;z-index:90}
+#accordion_1,#accordion_2{width:450px;position:absolute;top:0;overflow:hidden;height:145px}
+#accordion_1{z-index:1000;left:0}
+#accordion_2{z-index:1001;right:0;text-align:right}
+#homepage_wrap #laundry_comp_button ul li.text{position:relative;width:250px;padding-top:20px;text-align:left}
+#homepage_wrap #test ul li{display:inline;float:left;list-style:none;width:auto;padding-left:15px;padding-right:15px;background:url(/images/content/homepage_comp/div.png) no-repeat right 40px}
+#homepage_wrap #test ul li p a{font-size:9px;color:#999;text-decoration:none}
+ul.ui-tabs-nav,li.ui-tabs-nav-item{border:0;outline:0;line-height:1.3;text-decoration:none;list-style:none;float:left;font-size:10px;margin:0;padding:0}
+li.ui-tabs-nav-item{outline:1px dotted #bbb;margin-right:8px;text-decoration:none;border:1px dotted #bbb;cursor:pointer;padding:5px 8px}
+li.ui-tabs-selected{outline:1px dotted #fff;border:1px dotted #fff}
+#rotator.noflash .ui-tabs-panel{font-family:Arial,Helvetica,sans-serif;clear:left;color:#000;height:auto;text-transform:lowercase;width:100%;padding:0}
+#rotator.noflash #fragment-1,#rotator.noflash #fragment-2,#rotator.noflash #fragment-3,#rotator.noflash #fragment-4{position:absolute;left:0;top:0;width:100%;height:635px;z-index:0;padding-right:0;padding-top:0}
+#rotator.noflash #fragment-1{background:url(/images/content/duet.jpg) no-repeat scroll center top transparent}
+#rotator.noflash #fragment-2{background:url(/images/content/apples.jpg) no-repeat center top}
+#rotator.noflash #fragment-3{background:url(/images/content/cabrioPair.jpg) no-repeat center top}
+#rotator.noflash #fragment-4{background:url(/images/content/doubleOvenBG.jpg) no-repeat center top}
+#rotator.noflash #usercontrols #pauseButton,#rotator.noflash #usercontrols #playButton{color:#fff;cursor:pointer;display:none;font-family:Arial,Helvetica,sans-serif;font-size:9px;z-index:3;margin:0 0 5px}
+#rotator.noflash #usercontrols #pauseButton{background:url(/images/content/pauseIcon.png) no-repeat scroll right 2px transparent;width:38px}
+#rotator.noflash #usercontrols #playButton{background:url(/images/content/playIcon.png) no-repeat scroll right 2px transparent;width:34px}
+#rotator.noflash li.ui-tabs-nav-item{margin-right:8px;outline:1px dotted #c3c3c3;text-decoration:none;opacity:.4;filter:alpha(opacity=40);padding:3px 6px}
+#rotator.noflash #fragment-1 .seeItWork .ctaMain .ctaWork:hover,#rotator.noflash #fragment-2 .seeItWork .ctaMain .ctaWork:hover,#rotator.noflash #fragment-3 .seeItWork .ctaMain .ctaWork:hover,#rotator.noflash #fragment-4 .seeItWork .ctaMain .ctaWork:hover{background-position:center -22px}
+.seeItWork .ctaMain{background:url(/images/content/seeMoreBtnBG.png) no-repeat scroll left top transparent;height:55px;width:180px;position:absolute;top:345px;padding:12px 0 0}
+#rotator.noflash #fragment-1 .seeItWork .ctaMain{left:45px}
+#rotator.noflash #fragment-2 .seeItWork .ctaMain{left:70px}
+#rotator.noflash #fragment-3 .seeItWork .ctaMain{left:40px}
+#rotator.noflash #fragment-4 .seeItWork .ctaMain{left:115px}
+ul.ui-tabs-nav,li.ui-tabs-nav-item,li.ui-tabs-nav-item a:link,li.ui-tabs-nav-item a:visited{border:0;outline:0;line-height:1.3;text-decoration:none;list-style:none;float:left;font-size:10px;color:#fff;margin:0;padding:0}
+li.ui-tabs-nav-item a span,li.ui-tabs-nav-item a:visited{opacity:40%}
+#rotator .ui-tabs-nav-item a span{opacity:.4;color:#FFF}
+#rotator .ui-tabs-selected a span,#rotator .ui-tabs-selected a:visited,#rotator .ui-tabs-selected a:hover,#rotator .ui-tabs-selected a:active{color:#FFF;opacity:1}
+#rotator .ui-tabs-panel{font-family:Arial,Helvetica,sans-serif;clear:left;color:#000;height:800px;text-transform:lowercase;width:675px;padding:40px 265px 15px 0}
+#rotator #fragment-1{background:url(/images/content/masthead_bg_1.jpg) no-repeat scroll center top transparent;padding-right:340px;padding-top:146px;width:600px;height:317px}
+#rotator #fragment-1 p{margin-top:20px;width:415px;padding-right:140px}
+#rotator #fragment-2{background:url(/images/content/masthead_bg_2.jpg) no-repeat center top;padding-right:310px;padding-top:155px;width:630px;height:308px}
+#rotator #fragment-2 p{margin-top:20px;width:440px;padding-right:160px}
+#rotator #fragment-3{background:url(/images/content/masthead_bg_3.jpg) no-repeat center top;padding-right:340px;padding-top:146px;width:600px;height:317px}
+#rotator #fragment-3 p{margin-top:20px;width:410px;padding-right:150px}
+#rotator #fragment-4{background:url(/images/content/masthead_bg_4.jpg) no-repeat center top;padding-top:192px;height:270px}
+#rotator #fragment-4 p{margin-top:20px;width:440px;padding-right:0}
+.homepage #main-content-wrap{height:auto!important}
+#WC_ContentAreaESpot_div_1_HPLREspot.genericESpot{float:left;position:relative;width:960px}
+#homepage_wrap #homepage_accordion #accordion_1 #laundry_sub_nav ul{width:950px;margin:0}
+.pdotr_espot,.pdobr_espot{margin-bottom:27px;clear:left;float:left;padding-bottom:27px}
+.pdotr_espot{padding-top:3px;width:191px;background-color:#fffff;padding-bottom:27px}
+.pdotr_espot img{padding-right:15px;float:left}
+.pdotr_espot .text_description,.pdobr_espot .text_description{font-family:Arial;font-size:10px;font-weight:400;color:#8f8f8f;width:115px;float:left;margin:0}
+.accessoryBg{background:url(..//images/content/kitchen/ice_collection/content/masthead_bg/background_accessorys_PLBI.jpg)no-repeat scroll center top}
+.washerBg1{background:url(..//images/content/kitchen/ice_collection/content/masthead_bg/background_washer_PLBI_1.jpg)no-repeat scroll center top}
+.washerDishes{background:url(..//images/content/kitchen/ice_collection/content/masthead_bg/background_dishes_PLBI.jpg)no-repeat scroll center top}
+.plmhr_title{border-bottom:1px dotted #aad39a;font-family:helvetica,georgia;font-size:14px;font-style:italic;font-weight:700;margin-bottom:12px;padding-bottom:12px}
+#page.product_detail_page .column_wrap #overview_column_3 .product_detail{float:left;padding-top:0;margin-top:0}
+.waterheaters #callout_holder_one #callout_box h2,.waterheaters #callout_holder_one #callout_box p{font-weight:400;margin-left:100px;width:250px}
+.jumppage sup{font-size:90%}
+.winecooler #callout_holder_one{bottom:20px;position:absolute;right:27px}
+.winecooler #callout_holder_one #callout_box{background-color:#fff}
+.winecooler #callout_holder_one #callout_box h2,.winecooler #callout_holder_one #callout_box p{margin-left:140px;width:250px}
+.hvac .callout_holder{width:270px;height:145px;background:url(/images/content/hash_bg_purple.png) repeat scroll 0 0}
+.replacement #callout_holder_one #callout_box h2{margin:20px 0 10px 112px}
+#masthead_footer div.footer_text p{font-family:helvetica,"Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;line-height:30px;font-size:11px}
+.modalDialog .modal_closeTab .modal_closeTx{padding-top:30px}
+#page.product_detail_page #overview .product_detail a:hover{color:#6cf}
+.owner_center_body #main_content #center-sections h1.first{margin:0 0 20px}
+body#oc_product_help_unauth.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_auth.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_results.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_article.owner_center #content-wrap #content #page #oc_content{padding-top:165px;width:100%}
+body.owner_center #content-wrap #content #page #oc_content{width:100%}
+.owner_center_body p{font-size:11px;line-height:150%}
+.body_wrap.owner_center_body #main_content h1{color:#333333;font-family:helvetica;font-size:18px;padding:0}
+#schedule_footer{float:left;margin:150px 0 30px}
+.owner_center_body #schedule_footer{margin:30px 0}
+.owner_center_body #schedule_footer .footer_left,.owner_center_body #schedule_footer .footer_right{float:left;width:47%;margin:0 3% 0 0}
+.owner_center_body #schedule_footer .footer_left h3,.owner_center_body #schedule_footer .footer_right h3{color:#666;font-family:"Lucida Grande",Lucida,sans-serif;font-size:11px;font-weight:400;margin:0;padding:0 0 3px}
+.owner_center_body #schedule_footer .footer_left p,.owner_center_body #schedule_footer .footer_right p{color:#000;font-family:"Lucida Grande",Lucida,sans-serif;font-size:10px;margin:0;padding:0 0 10px}
+.owner_center_body #registration_subhead{color:#eeb111;float:left;width:960px}
+.owner_center_body #registration_subhead .welcome_text.registration_welcome{color:#666;border:medium none;float:left;font-size:11px;font-weight:700;width:100%;margin:20px 0 20px 0;padding-left:15px!important}
+.owner_center_body #registration_subhead h2{background:none repeat scroll 0 0 #eee;color:#666;font-family:helvetica;font-size:20px;font-style:normal;font-weight:normal;height:35px;line-height:34px;padding-left:15px}
+.owner_center_body #registration_subhead div{width:250px;float:left;font-size:15px;padding-right:35px;padding-left:35px;border-left:1px dotted #ddd;font-weight:700}
+.owner_center_body #registration_subhead div.first_col{padding-left:15px;border-left:none}
+.owner_center_body #registration_subhead div.last_col{padding-right:0}
+.owner_center_body #registration_subhead p{font-size:12px;padding-left:0;font-weight:400}
+.welcome_text.welcome_text_row1,#new_customer_guest{float:left;width:100%;line-height:175%;margin-bottom:30px}
+body.owner_center #content-wrap #content #page.oc_register .product_header{margin-bottom:0;margin-left:30px;margin-top:60px}
+#content-wrap div#content div.body_wrap div#main_content form#searchPage input#searchTerm2.search_box{margin-left:30px}
+.login_box .login_text_box .login_text{border:1px solid #ccc;float:left;height:265px;width:435px;margin:0 20px 0 0;padding:10px}
+.login_box #left_box{margin:10px 20px 0 0}
+.login_content{background:none repeat scroll 0 0 #fff;height:195px;width:365px;padding:35px}
+.body_wrap.owner_center_body #main_content .login_content h1{margin:0 0 5px}
+.body_wrap.owner_center_body #main_content .login_content p{width:400px;margin:0 0 10px;padding:0}
+.login_box #right_box{margin:10px 0 0;float:right}
+.login_box .login_text_box{margin:0 0 155px}
+.login_box .login_text_box .login_text #signin{background:url("/images/content/owner_center/signInBtn.png") no-repeat scroll 0 0 transparent;float:left;height:44px;margin:0 0 0 -5px;width:112px}
+.login_box .login_text_box .login_text #createaccount{background:url("/images/content/owner_center/createAccBtn.png") no-repeat scroll 0 0 transparent;float:left;height:46px;margin:0 0 0 -5px;width:186px}
+.login_box .login_text_box .login_text #proceedasguest{background:url("/images/content/owner_center/proccAGBtn.png") no-repeat scroll 0 0 transparent;float:left;height:46px;width:208px}
+body.owner_center #content-wrap #content #page.oc_schedule_repair .product_header{margin-top:150px}
+#L2_main_content .row_list li div.description{border-top:0;border-right:1px dotted #666;margin-top:0;padding-bottom:5px}
+body{height:auto;font-family:Helvetica,Arial,serif;color:#666;margin:0 auto}
+.body_wrap{width:960px;margin:0 auto}
+#modal{font-family:Helvetica,Arial,serif;font-size:11px;color:#666;position:relative;width:410px;margin:25px}
+.order_checkout div#TB_window{width:auto!important}
+.order_checkout div#TB_window div#TB_frame{overflow:hidden;width:625px;padding:15px}
+.order_checkout div#TB_window div#TB_frame div#TB_ajaxContent{width:auto!important;margin:0;padding:0!important}
+.order_checkout div#TB_window div#TB_frame div#TB_ajaxContent div.layer-popup{overflow:hidden;padding:35px 9px 0 27px}
+div#TB_window div#TB_frame div.layer-popup div{width:auto;margin:0;padding:0}
+div#TB_window div#TB_frame div#TB_ajaxContent div.layer-popup div#modal div#modal_table div.left_col{width:136px;margin:.5px 0}
+div#TB_window div#TB_frame div#TB_ajaxContent div.layer-popup div#modal div#modal_table div.right_col{width:190px;margin:.5px 0}
+.product_detail_page div#category_accessory_popup.dijitDialog div.sideBottom{width:568px}
+.product_detail_page div#category_accessory_popup.dijitDialog div.sideTop{width:473px!important}
+#modal h2{color:#eeb111;font-family:helvetica,Serif;font-style:italic;font-size:14px}
+#modal sup{font-size:125%;vertical-align:-2px}
+#modal div{font-weight:700;font-size:13px;margin-bottom:3px}
+#modal p{margin-top:0;margin-bottom:10px;width:390px}
+#modal a{color:#09f;text-decoration:none}
+#modal a:hover{color:#3cf}
+#main_content_wrapper #modal div#privacy_links a{background:url(/images/img_arrow_left_blue_2.png) no-repeat scroll left center transparent;padding-left:9px}
+#main_content_wrapper #modal div{font-size:10px;font-weight:400}
+#main_content_wrapper #modal p{width:395px}
+#modal .orange{color:#f2a116}
+#modal span{font-style:italic}
+#modal #modal_table div{font-size:10px;margin:.5px 0;padding:10px}
+#modal .left_col{width:136px;float:left;border-right:1px dotted}
+#modal .right_col{width:190px;float:left}
+#modal .odd_row{background:#e4e4e4}
+#modal .even_row{background:#ececec}
+#modal div #imageClose{background:#FFF;height:18px;width:98%;text-align:right;margin-bottom:0;padding-right:2%}
+.jumppage #masthead_footer{width:905px;color:#FFF;font-size:11px;font-family:Helvetica,Arial,serif;height:40px;position:relative;padding-left:35px;margin:0 auto 50px}
+body:first-of-type .jumppage #masthead_footer{width:905px}
+.jumppage #masthead_footer .footer_text{height:40px;padding-top:4px;position:relative;width:900px;line-height:30px}
+#page.ContentPage.generic #main_content_wrapper #content-wrap #content #body_wrap.jumppage.watersoftcoolers #masthead_footer .footer_text{font-size:10px;height:40px;padding-top:4px;position:relative;width:900px;line-height:1.5}
+.jumppage.airtreatment #masthead_footer .footer_text{height:40px;padding-top:6px;position:relative;width:900px;margin-left:-11px}
+.jumppage #callout_holder,.callout_holder{float:right;position:absolute;bottom:20px;right:25px;height:125px}
+.jumppage #callout_box{float:left;color:#666;width:100%;height:100%}
+.jumppage #callout_box h2{color:#62ac39;font-size:24px;font-family:helvetica,serif;margin-top:7px;font-style:italic}
+.jumppage #callout_box p{font-size:11px;font-family:Helvetica,Arial,serif;margin-right:20px}
+.jumppage .icon_arrow_right{position:absolute;bottom:22px;right:22px}
+.commlaundry #masthead_footer{background:url(/images/content/jump_commlaundry_masthead_footer.png) no-repeat}
+.commlaundry #callout_box{background:url(/images/content/jump_commlaundry_callout_bg.png)}
+.commlaundry #callout_box h2,.commlaundry #callout_box p{margin-left:145px}
+.replacement #masthead_footer{background:url(/images/content/jump_replacement_masthead_footer.png) no-repeat}
+.replacement #callout_box h2,.replacement #callout_box p{margin-left:112px}
+.hvac #masthead_footer{background:url(/images/content/jump_hvac_masthead_footer.png) no-repeat}
+#callout_mouseover_one,#callout_mouseover_two,#callout_mouseover_three,#callout_mouseover_four{position:absolute;left:0;top:0;color:#000;width:290px;height:165px;z-index:90}
+.hvac #callout_box img{margin-left:0;margin-top:5px;float:left}
+.hvac #callout_holder_one{position:absolute;left:20px;overflow:visible!important}
+.hvac #callout_holder_one #callout_box h2{margin-left:88px;width:170px}
+.hvac #callout_holder_one #callout_box p{margin-left:88px;width:150px}
+.hvac #callout_holder_two #callout_box h2,.hvac #callout_holder_two #callout_box p{float:left;margin-left:5px;margin-right:15px;width:151px}
+.hvac #callout_holder_three #callout_box h2,.hvac #callout_holder_three #callout_box p{width:155px;margin-left:80px}
+.hvac #callout_holder_three #callout_box h2,.hvac #callout_holder_two #callout_box h2,.hvac #callout_holder_one #callout_box h2{line-height:23px;margin-bottom:4px}
+.hvac #callout_holder_three #callout_box p sup{margin-left:-4px}
+.hvac #callout_holder_two{overflow:visible!important;position:absolute;left:325px}
+.hvac #callout_holder_three{overflow:visible!important;position:absolute;left:630px}
+.hvac #callout_box{overflow:hidden;background:#FFF}
+.hvac #masthead_footer .footer_text{height:40px;padding-top:4px;position:relative;width:645px!important;line-height:30px}
+.hvac #masthead_footer .footer_text p{line-height:1.4em!important}
+.hvac #masthead_footer .footer_text sup{line-height:15px}
+.airtreatment #masthead_footer{background:url(/images/content/jump_airtreatment_masthead_footer.jpg) no-repeat}
+.airtreatment #callout_mouseover_one,#callout_mouseover_two{left:0;top:0;color:#000;width:420px;height:165px}
+.airtreatment #callout_box img{margin-left:0;float:left;position:absolute;bottom:0;z-index:0}
+.airtreatment #callout_holder_one{overflow:visible!important;position:absolute;left:20px}
+.airtreatment #callout_holder_two{overflow:visible!important;position:absolute;left:485px}
+.waterfiltration #masthead_footer{background:url(/images/content/jump_waterfiltration_masthead_footer.gif) repeat;height:52px}
+.waterfiltration #callout_mouseover_one,#callout_mouseover_two,#callout_mouseover_three,#callout_mouseover_four{left:0;top:0;color:#000;width:440px;height:140px}
+.waterfiltration .callout_holder{width:420px;height:120px;background:url(/images/content/hash_bg_purple.png) #FFF\9}
+.waterfiltration #callout_holder_one #callout_box h2,.waterfiltration #callout_holder_one #callout_box p{margin-left:130px;width:270px}
+.waterfiltration #callout_holder_one #callout_box .right_align{font-size:14px;width:278px;margin-left:100px;padding-right:30px;background:url(/images/content/purple_circle_arrow.png) no-repeat right;height:21px;line-height:21px;display:none;text-align:right}
+.waterfiltration #callout_holder_three #callout_box h2,.waterfiltration #callout_holder_three #callout_box div{margin-left:100px;width:275px}
+.waterfiltration #callout_holder_one{overflow:visible!important;position:absolute;left:20px;bottom:195px}
+.waterfiltration #callout_holder_two{overflow:visible!important;position:absolute;left:485px;bottom:195px}
+.waterfiltration #callout_box a{display:block;margin-top:25px}
+.waterfiltration #masthead_footer .footer_text{line-height:15px;padding-left:20px;width:910px;margin-left:-35px}
+body:first-of-type .waterfiltration #masthead_footer{padding-left:0!important;padding-right:0;width:940px!important}
+.waterheaters #masthead_footer{background:url(/images/content/page_bg/jump_waterheaters_masthead_footer.png) no-repeat;height:56px}
+.waterheaters #masthead_footer div.footer_text{line-height:normal}
+.waterheaters .callout_holder{width:420px;height:140px;background:url(/images/content/hash_bg_purple.png) #fff/9}
+.waterheaters #masthead_footer .footer_text a{color:#FFF}
+.waterheaters #masthead_footer .footer_text a:hover{color:#fff}
+.watersoftcoolers #callout_mouseover_one,#callout_mouseover_two,#callout_mouseover_three,#callout_mouseover_four{left:0;top:0;color:#000;width:290px;height:140px}
+.watersoftcoolers #callout_holder_one #callout_box h2,.watersoftcoolers #callout_holder_one #callout_box p{margin-left:130px;width:265px}
+.watersoftener #masthead_footer{background:url(/images/content/jump_watersoftener_masthead_footer.jpg) no-repeat}
+.watersoftener #callout_holder_one #callout_box h2,.watersoftener #callout_holder_one #callout_box p,.watercoolers #callout_holder_one #callout_box h2,.watercoolers #callout_holder_one #callout_box p{margin-left:120px;width:265px}
+.watersoftener #callout_holder_one,.watercoolers #callout_holder_one{overflow:visible!important;float:right;bottom:25px}
+.watercoolers #masthead_footer{background:url(/images/content/jump_watercooler_masthead_footer.jpg) no-repeat}
+.winecoolers #callout_holder_one #callout_box h2,.winecoolers #callout_holder_one #callout_box p{margin-left:135px;margin-right:0;width:235px}
+#about ul li.link_column{width:185px;float:left;font-size:10px;color:#999;line-height:16px;padding-right:50px;margin-bottom:48px}
+#about ul li.link_column ul li p{padding-left:10px;margin-top:0;margin-bottom:12px;font-family:Helvetica,Arial,sans-serif;font-style:normal;font-size:10px}
+#about ul li.link_column ul li a{font-weight:700;text-decoration:none;text-transform:uppercase;color:#eeb111;padding-left:10px;background:url(/images/content/img_arrow_left_blue_2.png) no-repeat 0 3px;font-size:11px;font-family:Helvetica,Arial,sans-serif}
+#about ul li.link_column ul li a:hover{text-decoration:none;color:#eeb111}
+#about ul li.content{width:705px;float:right}
+#about ul li.content h3{margin-top:0;margin-left:0;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#eeb111;width:670px;text-transform:capitalize;padding:2px 15px}
+#about ul li.content>p{line-height:20px;padding-left:15px;padding-right:60px}
+#about ul li.content ul{float:left;margin-top:30px;padding-left:18px}
+#about ul li.content ul li{float:left;width:530px;font-family:sans-serif;font-size:10px;line-height:17px;color:#999}
+#about ul li.content ul li:first-child{width:80px}
+#about ul li.content ul li h4{font-size:13px;color:#666;margin-top:0;margin-bottom:0}
+#contact #contact_form input.text{width:280px;height:30px;font-size:12px;border:1px solid #CCC;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:10px 0 0 10px}
+#contact #contact_form .required{display:inline;color:#eeb111}
+.glossary #content_wrapper{width:940px;margin:118px auto 30px}
+.glossary .glossary_category_list{font-family:Helvetica,Arial,sans-serif;width:880px;overflow:auto;border-bottom:#09c 1px solid;text-align:center;margin:10px auto 30px;padding:0 30px 15px}
+.glossary .alpha_nav_bottom .glossary_category_list{border-bottom:medium none;border-top:1px solid #09c;margin-bottom:0;padding-top:15px;margin-top:0}
+.glossary .glossary_category_list a{border-right:1px solid #d4d4d4;text-decoration:none;width:20px;height:20px;font-size:20px;color:#eeb111;text-transform:lowercase;display:block;float:left;padding:5px}
+.glossary .glossary_category_list a#glossary_item_num{width:31px}
+.glossary .category_item li{margin-bottom:20px;width:630px}
+.glossary .category{clear:left;padding:30px 0}
+.glossary .category_title{float:left;width:103px;padding-left:85px;color:#eeb111;font-size:90px;font-family:Helvetica,Arial,sans-serif;text-transform:lowercase;margin:-25px auto 30px}
+.glossary .category_item{border-left:1px dotted #CCC;float:left;padding-left:50px}
+.glossary .category_item a{font-size:18px;color:#eeb111;font-family:Helvetica,Arial,sans-serif;margin-bottom:10px;clear:both}
+.glossary .glossary_content .copy{line-height:1.75;font-size:10px;margin-bottom:25px;margin-left:0;color:#404040;font-family:Helvetica,Arial,serif;width:630px}
+.glossary .back_to_top{clear:left;background:url(/images/content/hash_header_blue_2.png);font-size:10px;font-family:Helvetica,Arial,serif;color:#fff;margin-left:20px}
+#about_bg,#contact_bg,#glossary_bg,#search_results_bg,#productlist_Accessories_bg,#productlist_WaterFilters_bg,#productlist_LaundryPairs_bg{width:100%;height:750px;position:absolute;top:0;z-index:-1}
+#about_bg{background:url(/images/content/page_bg/masthead_about_whirlpool.jpg) no-repeat top center;left:-230px;position:absolute;width:1400px;top:-169px}
+#contact_form div.contactBox{padding-top:0}
+.contact_us_page .Placeholder{display:block;float:left;font-family:helvetica,"Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif}
+.contact_us_page .Placeholder #contact_info{width:940px;float:left;margin:auto}
+.contact_us_page .Placeholder #contact_info #top_title{border-top:4px solid #eeb111;height:56px;color:#FFF;width:870px;margin-bottom:30px;padding:40px 35px}
+.contact_us_page .Placeholder #contact_info #top_title h1{font-size:40px;color:#FFF;margin:0 0 5px;padding:0}
+.contact_us_page .Placeholder #contact_info #top_title p{font-size:15px;font-family:helvetica,"Times New Roman",Times,serif;font-style:italic;font-weight:700;padding:0}
+.contact_us_page .Placeholder #contact_info .title{background:url(..//images/content/kitchen/ice_collection/bg_blue_hash_tile.png) repeat;color:#eeb111;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:22px;margin-bottom:15px;padding:2px 10px}
+.contact_us_page .main_content_wrapper .Placeholder #contact_info div{width:455px;float:left;font-family:helvetica,"Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif}
+.contact_us_page .main_content_wrapper .Placeholder #contact_info #top_title+div{padding-right:25px}
+.contact_us_page .Placeholder #contact_info div p{font-size:12px;padding-left:15px;line-height:20px;margin:0}
+.contact_us_page .Placeholder #contact_info div a{font-size:11px;line-height:normal;color:#0096ff;text-decoration:none;outline:0}
+.contact_us_page .Placeholder #contact_info div a p{margin-bottom:20px;line-height:15px}
+.contact_us_page .Placeholder #contact_info div ul{list-style:none;margin:0 0 10px}
+.service .description{color:#666!important;margin-bottom:25px;margin-left:23px}
+.service .schedule_content .title{font-family:helvetica,serif;font-style:italic;margin-left:30px;margin-top:50px;color:#eeb111;font-size:18px}
+.service .phone_box .days{color:#666;font-weight:700}
+.service .phone_box .number{color:#666;font-weight:700!important}
+.service .bottom .left{float:left;margin-top:100px;width:470px;margin-left:-30px}
+.service .bottom .left span{color:#666!important;font-weight:700}
+.service .bottom .right{float:right;margin-bottom:35px;margin-top:100px;width:463px;margin-right:-10px}
+#page #oc_manuals_search_no_results .text-information-box.column_2 .search_again{margin-bottom:20px!important}
+#page #oc_manuals_search_no_results .text-information-box.column_2 .whirlpool_search_tips .whirlpool_search_tips_inner_wrapper{padding:25px 25px 25px 15px!important}
+#page #oc_manuals_search_no_results .text-information-box.column_2{margin-top:40px!important}
+.modalDialog .modal_closeTab .modal_closeTxt{padding:30px 5px 8px}
+#footer-nav-level-two sup{font-size:10px;vertical-align:2px}
+#category_landing_L2 .three_col ul#product3.productPoints li.last{height:82px!important}
+.serviceplan #callout_box h2{margin:28px 0 8px 112px}
+#page #waterfilter_pdotr{width:200px;margin:0;padding:0}
+#page #waterfilter_pdotr .border_hash{background:url(/images/content/hash_header_blue_2.png) repeat-x scroll 0 0 transparent;height:0;width:100%;margin:0;padding:0}
+#page #waterfilter_pdotr #promocode h1,#page #waterfilter_pdotr #promocode h2,#page #waterfilter_pdotr #promocode p{border:0;padding:0 10px 0 15px}
+#page #waterfilter_pdotr #promocode h1{font-family:helvetica,serif;font-weight:700;color:#eeb111;font-size:14px;font-style:italic}
+#page #waterfilter_pdotr #promocode h2{font-family:helvetica,serif;font-weight:400;color:#eeb111;font-size:11px;font-style:italic;margin-bottom:7px;padding:0 0 0 15px}
+#page #waterfilter_pdotr #promocode p{font-size:10px;color:#666;line-height:14px;margin:0}
+#footer #footer-nav .social-icons{width:120px;margin-right:0}
+#message_area #close{text-align:right;cursor:pointer}
+#page #product_list_masthead ul.tabs_ul{margin:76px 0 0}
+#content-wrap.press_bg{background:url(/images/press_bg.jpg) no-repeat top center}
+#press_media{width:940px;padding-top:210px;margin:0 auto}
+#press_media div{width:445px;padding-left:15px;float:right;margin-bottom:25px}
+#press_media div h1{font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#eeb111;margin:1px 0 10px}
+#press_media div p{font-size:11px;line-height:16px;margin-bottom:0;color:#666}
+#press_media div div.info_md{background:0;margin:0 0 25px}
+#press_media a.arrow{padding-left:10px;background:url(/images/link_blue_arrow.png) left no-repeat}
+.body #header-wrap #header #header_main_nav .top sup{font-size:114%;vertical-align:text-top;line-height:10px;padding-left:1px}
+#page #product_tabs .product_tab_section_middle .column_wrap #overview_column_3 .product_overview_blue_right_content_top #WC_ContentAreaESpot_div_1_PDOTREspot #waterglass{display:block;float:left;height:128px;width:80px;background:0;overflow:hidden;margin:0;padding:0}
+body #TB_frame{background:#fff}
+#header_main_nav li ul li ul#offer_section{background:url("/images/content/laundry_mobile_phones.png") no-repeat scroll center bottom transparent;width:150px;float:left;border-left:#eeb111 2px solid;margin-left:25px;border-right:0;*padding-top:26px}
+#header_main_nav li ul li ul li#laudry_menu_offer_section{background:url("/images/content/laundry_mobile_phones.png") no-repeat scroll center bottom transparent;border:0 none;height:345px;margin:0;padding-top:25px;width:183px}
+#header_main_nav li ul li ul li#laudry_menu_offer_section a{display:block;height:16px;line-height:16px;font-size:12px;font-weight:700;font-style:italic;font-family:helvetica,"Times New Roman",Times,sans-serif;width:130px;text-align:right;color:#62ac39;background:url(/images/content/link_green_arrow.gif) no-repeat left center;margin:0 auto 12px}
+#header_main_nav li li#laudry_menu_offer_section p{display:block;width:120px;font-size:10px;font-family:helvetica,"Times New Roman",Times,sans-serif;font-style:italic;line-height:13px;color:#999;letter-spacing:.5px;margin:0 auto}
+#black_friday_espot_menu #white{background:#FFF;height:60px;padding:22px 40px 0}
+#black_friday_espot_menu #white .black_friday_img{width:559px;height:46px;background-position:left bottom;float:left}
+#black_friday_espot_menu #white p{display:block;width:92px;font-size:10px;font-family:helvetica,"Times New Roman",Times,sans-serif;font-style:italic;line-height:13px;color:#999;letter-spacing:.5px;float:left;margin:15px 15px 00}
+#black_friday_espot_menu #white a{display:block;height:21px;line-height:21px;font-size:15px;font-weight:700;font-style:italic;font-family:helvetica,"Times New Roman",Times,sans-serif;width:165px;text-align:right;color:#b22c41;background:url(/images/content/red_link_arrow.gif) no-repeat scroll left center transparent;float:left;margin:15px 0 0}
+#black_friday_espot #white{background:#FFF;height:43px;padding:12px 32px}
+#black_friday_espot #white .black_friday_img{width:530px;height:44px;background-position:left -118px;float:left}
+#black_friday_espot #white p{display:block;width:95px;font-size:10px;font-family:helvetica,"Times New Roman",Times,sans-serif;font-style:italic;line-height:13px;color:#999;letter-spacing:.5px;float:left;margin:15px 0 0 8px}
+#black_friday_espot #white a{display:block;height:21px;line-height:21px;font-size:17px;font-weight:700;font-style:italic;font-family:helvetica,"Times New Roman",Times,sans-serif;width:190px;text-align:right;color:#09f;background:url(/images/content/ligth_blue_link_arrow.gif) no-repeat scroll left center transparent;float:left;margin:10px 0 0 25px}
+#black_friday_espot_square #white{background:#FFF;padding:13px 13px 8px}
+#black_friday_espot_square #white .black_friday_img{width:244px;height:45px;background-position:-289px -61px;float:none;margin:33px 0}
+#black_friday_espot_square #white p{display:block;width:255px;font-size:10px;font-family:helvetica,"Times New Roman",Times,sans-serif;font-style:italic;line-height:13px;text-align:right;color:#999;letter-spacing:.5px}
+#black_friday_espot_square #white a{display:block;height:21px;line-height:21px;font-size:17px;font-weight:700;font-style:italic;font-family:helvetica,"Times New Roman",Times,sans-serif;width:190px;text-align:right;color:#09f;margin-left:60px;background:url(/images/content/ligth_blue_link_arrow.gif) no-repeat scroll left center transparent}
+#shopping_tip_border .shopping_tip #black_friday_espot_red #white .black_friday_img{background:url(/images/content/cm_sprite.gif) no-repeat #FFF;width:502px;height:87px;background-position:left -162px;margin-bottom:40px}
+#black_friday_espot_red #white p{display:block;width:200px;font-size:10px;font-family:helvetica,"Times New Roman",Times,sans-serif;font-style:italic;line-height:21px;color:#999;letter-spacing:.5px;float:left!important;margin:15px 0 0 8px}
+#black_friday_espot_red #white a{display:block;height:21px;line-height:21px;font-size:13px;font-weight:700;font-style:italic;font-family:helvetica,"Times New Roman",Times,sans-serif;width:180px;padding-right:30px;text-align:right;color:#b22c41;background:url(/images/content/red_link_arrow.gif) no-repeat scroll right center transparent;float:right}
+#content-wrap #content #subnav ul,.replacement #masthead p span.noHover,#homepage_wrap #masthead_component_selector p{display:inline}
+#content-wrap #content #subnav ul li a,#about ul li.link_column ul li a.no_hover:hover{text-decoration:none;color:#999}
+#category_landing_kitchensuiteslearning #L2_main_content #masthead,#category_landing_aircond #L2_main_accordion #accordion_segment_3,#category_landing_kitchen .row2 #product_showcase_segment,.owner_center_body #sub_content #sub_content_column p.last,ul#agust_offer li.offer_module li+li{border-bottom:0}
+#masthead .blue-text,#L2_main_accordion.blue h1,#body_content.blue h3,#body_content.blue div.horizontal_header h2,#modal h2.blue{color:#eeb111}
+#category_landing_kitchen #masthead h1,#body_content .horizontal_header p,#category_landing_laundry #callout_box .top_p,.waterfiltration #callout_box h2{margin-top:10px}
+#category_landing_laundry #masthead h2,.owner_center_body #masthead img,#category_landing_aircond #accordion_segment_3 ul.product_instructions li img,#category_landing_aircond #accordion_segment_3>ul.product_instructions_2>img,#category_landing_filterlearning #accordion_segment_3>ul.product_instructions>li>img,#category_landing_filterlearning #accordion_segment_3>ul.product_instructions_2>img,#category_landing_kitchen #callout_box h2 span,#homepage_wrap #laundry_comp_button>*,#homepage_wrap #kitchen_comp_button>*,#L2_main_content #body_content div,.glossary .glossary_category_list li,#footer #footer-nav .social-icons li,#press_media div.left_md{float:left}
+#category_landing_accessories #masthead h2,.waterheaters #masthead p span.Hover,#body_content .horizontal_header h3,#accordion ul.product_instructions h2,#accordion ul.product_instructions_2 h2,#category_landing_kitchensuiteslearning #body_content div.horizontal_header,#product_showcase ul li.row2,#category_landing_accessories #product_showcase,div#WC_ContentAreaESpot_div_1_PLBIEspot.genericESpot div#espot_image,.owner_center_body h1.first,.waterheaters #callout_holder_one #callout_box h2,.waterheaters #callout_box h2,body#oc_product_help_auth div#page.oc_product_help div#oc_content div.bth_search a.search_tips{margin-top:0}
+.waterheaters #masthead h2,#category_landing_aircond #accordion_segment_3 ul.step_2 li.header,#category_landing_aircond #accordion_segment_3 ul.step_4 li.header,#product_showcase_segment ul li.header_bold{font-weight:700; color:#666;}
+.replacement #masthead p span.hover,.airtreatment #masthead p span.hover,.waterfiltration #masthead p span.hover,.waterheaters #masthead p span.hover,.watersoftcoolers #masthead p span.hover,.watersoftener #masthead p span.hover,.watercoolers #masthead p span.hover,.winecoolers #masthead p span.hover,.winecooler #masthead p span.hover,#category_landing_filterlearning #accordion_segment_2.ui-accordion-content ul li.callout div#callout_frame2,#homepage_wrap #laundry_accordion_subhead,#homepage_wrap #kitchen_accordion_subhead,#rotator .ui-tabs-hide,#sweeptakes,#cluetip-extra,.glossary #content_wrapper #glossary ul.open-close,#add_to_cart_popup_content_wrapper .extended_service_offering br,div#fDiv{display:none}
+.replacement #masthead h1,.replacement #masthead h2,#header_main_nav ul.top li.top a.orange{color:#eeb111}
+.hvac #masthead h1,.hvac #masthead h2,.airtreatment #masthead h1,.airtreatment #masthead h2{color:#fff;line-height:1.1}
+.hvac #masthead p,.airtreatment #masthead p,.waterfiltration #masthead p,.waterheaters #masthead p,.winecoolers #masthead p{margin-left:100px}
+.airtreatment #masthead h2.indent,.waterfiltration #masthead h2.indent,.waterheaters #masthead h2.indent,.watersoftcoolers #masthead h2.indent,.watersoftener #masthead h2.indent,.watercoolers #masthead h2.indent,.winecoolers #masthead h2.indent{margin-left:70px}
+.airtreatment #masthead p span.noHover,.watersoftcoolers #masthead p span.noHover,.watersoftener #masthead p span.noHover,.watercoolers #masthead p span.noHover,.winecoolers #masthead p span.noHover,#category_landing_aircond #accordion_segment_2 ul li.callout p a,#category_landing_filterlearning #accordion_segment_2>ul>li.callout p a,#homepage_wrap #test ul li p img,#rotator.noflash #usercontrols #pauseButton.active,#rotator.noflash #usercontrols #playButton.active,#rotator.noflash #productTitle span.active,#page #oc_manuals_search_no_results #top_results_summary,div#shopping_tip_border.red{display:block}
+.airtreatment #masthead h1.purple,.airtreatment #masthead h2.purple,.waterheaters #masthead h1.purple,.waterheaters #masthead h2.purple,.watersoftcoolers #masthead h1.purple,.watersoftcoolers #masthead h2.purple,.watersoftener #masthead h1.purple,.watersoftener #masthead h2.purple,.watercoolers #masthead h1.purple,.watercoolers #masthead h2.purple,#L2_main_accordion.purple h1,#body_content.purple h3,#body_content.purple div.horizontal_header h2,#header_main_nav ul.top li.top a.purple{color:#62086f}
+.waterfiltration #masthead h1,.waterfiltration #masthead h2,.waterheaters #masthead h1,.waterheaters #masthead h2,.watersoftcoolers #masthead h1,.watersoftcoolers #masthead h2,.watersoftener #masthead h1,.watersoftener #masthead h2,.watercoolers #masthead h1,.watercoolers #masthead h2{color:#62086f;line-height:1.1}
+.waterfiltration #masthead p span.hover h2,.waterheaters #masthead p span.hover h2,.watersoftcoolers #masthead p span.hover h2,.watersoftener #masthead p span.hover h2,.watercoolers #masthead p span.hover h2,.winecoolers #masthead p span.hover h2{text-align:right;font-size:14px;margin-top:18px}
+.waterfiltration #masthead p span.hover h2 img,.waterheaters #masthead p span.hover h2 img,.watersoftcoolers #masthead p span.hover h2 img,.watersoftener #masthead p span.hover h2 img,.watercoolers #masthead p span.hover h2 img,.winecoolers #masthead p span.hover h2 img{margin-left:7px;float:left;position:absolute;bottom:45px;z-index:0}
+.winecoolers #masthead h1.purple,.winecoolers #masthead h2.purple,#shopping_tip_border .shopping_tip h1.red,#rotator a.red,#L2_main_content .suites_gold #masthead_callout h2,.suites_essentials #masthead_callout h2,.suites_builtin #masthead_callout h2{color:#b22c41}
+#masthead.laundromats,#rotator #fragment-1,#rotator #fragment-2,#rotator #fragment-3,#rotator #fragment-4{position:relative}
+#about #masthead sup,#about #body_content h3 sup,#glossary div.description sup{font-size:60%;vertical-align:text-top}
+#L2_main_accordion.red h1,#body_content.red h3,#body_content.red div.horizontal_header h2,#rotator #fragment-2 p a,#rotator #fragment-4 p a{color:#b73b4e}
+#L2_main_accordion.purple h1:hover,#header_main_nav ul li ul li a.wholehome_header:hover,#header_main_nav a.wholehome_header:focus{color:#843092}
+#category_landing_L2 #accordion_segment_1>ul li div.laundry_header,#years_100,#page.product_detail_page .pdotr_espot p,#page.product_detail_page .pdobr_espot p,.plmh_espot h2,.plmh_espot p,.waterfiltration #callout_holder_one #callout_box a,.contact_us_page .Placeholder #contact_info div ul li,.service .owner_center_body #schedule_footer ul,#main_content_wrapper #modal.auto_replacement p.no_margin_modal{margin:0}
+#category_landing_L2 ul#consider2 li,#category_landing_L2 ul#consider li{width:234px}
+#category_landing_L2 #accordion_segment_2 ul li div.noborder,#category_landing_L2 #accordion_segment_3 ul li div.noborder,#category_landing_aircond #accordion_segment_3 ul.product_instructions li.noborder,#category_landing_filterlearning #accordion_segment_3>ul.product_instructions>li.noborder,#product_showcase_segment li.noborder,#product_showcase_segment ul.no_border,#category_landing_kitchen #product_showcase_segment ul.noborder,#category_landing_laundry #product_showcase_segment ul.noborder,#category_landing_accessories #product_showcase_segment ul.no_border,#header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li a,#cluetip-close img,.owner_center_body #sub_content h1.first,#page.manuals_search #searchPage input#search-literature.search_literature,#L2_main_content .row_list li:last-child img{border:0}
+#category_landing_L2 #accordion_segment_2 ul li,#category_landing_L2 #accordion_segment_3 ul li,#category_landing_filterlearning #accordion_segment_2>ul li,#homepage_wrap #masthead_component_selector ul li,#homepage_wrap #owner_center>ul>li,#homepage_wrap #component_buttons ul,#homepage_wrap #component_buttons ul li{display:inline;float:left}
+#accordion .ui-state-default,#category_landing_laundry #callout_box.active,#category_landing_kitchen #callout_box.active,#category_landing_kitchen .callout_box_selected,.jumppage #callout_box.active,.replacement #callout_box{background:#FFF}
+#category_landing_aircond #L2_main_accordion #accordion_segment_2,#category_landing_filterlearning #L2_main_accordion #accordion_segment_2{width:940px}
+#category_landing_aircond #accordion_segment_3 ul.step_4 li.right,#category_landing_L2 #body_content ul.product_image_list.laundry li.product_4{width:245px}
+#category_landing_aircond #accordion_segment_3 p.seeproducts a,#category_landing_aircond ul>li.main div.see_products a{background: url("/images/content/owner_center/icon_yellow_little_arrow.png") no-repeat scroll right center transparent;
+font-size: 14px;
+font-weight: inherit;
+margin: 0 auto;
+padding: 0 18px 0 0;
+width: 72px;}
+#category_landing_aircond #accordion_segment_3 ul.product_instructions li.first_col,#category_landing_filterlearning #accordion_segment_3>ul.product_instructions>li.first_col,#about #header_main_nav>a,img{margin-left:0}
+#category_landing_filterlearning #accordion_segment_2>ul>li.callout div div.switch_page a.selected,#category_landing_filterlearning #accordion_segment_2>ul>li.callout div div.switch_page a:hover{background:url(/images/content/icon_lower_right_dot_blue_selected.png) no-repeat scroll 0 0 transparent}
+#category_landing_aircond ul>li.main p,#category_landing_aircond ul>li.callout p,#category_landing_filterlearning ul>li.main p,#category_landing_filterlearning ul>li.callout p{font-family:Helvetica,Arial,serif;font-size:11px;color:#666;line-height:16px;margin-top:5px}
+#category_landing_aircond ul>li.main #product_title,#shopping_tip_border .shopping_tip div.shopping_tip_line{width:330px; height:80px;}
+#category_landing_aircond ul>li.main div.see_products a:hover,#category_landing_filterlearning #viewallfilters a:hover{background: url("/images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;
+color: #999999;}
+#category_landing_filterlearning #body_content ul li a:hover,#category_landing_L2 #body_content ul li a:hover,#WC_ContentAreaESpot_div_1_CATTEspot #L2_main_content ul.product_image_list li a p:hover,#product_showcase_segment ul li a:hover{color:#3cf}
+#category_landing_kitchensuiteslearning #body_product_wrap #last_col,#product_showcase_segment li,#product_showcase_segment ul.right_col,#L2_main_content #body_product_wrap #last_col{border-right:0}
+#category_landing_kitchensuiteslearning #body_product_wrap #box_content .box_link a:hover,a:hover,#header a:hover,#header a:focus,#header_main_nav li li a:hover,#header_main_nav li li a:focus,.owner_center_body #manuals_search_form a:hover,#L2_main_content #body_product_wrap #box_content .box_link a:hover{text-decoration:none}
+#category_landing_L2 .four_col ul#product2.productPoints li.adPoints,#category_landing_L2 .three_col ul#product2.productPoints li.adPoints,#category_landing_L2 .four_col ul#product3.productPoints li.adPoints,#category_landing_L2 .three_col ul#product3.productPoints li.adPoints,#category_landing_L2 .four_col ul#product4.productPoints li.adPoints,#category_landing_L2 .three_col ul#product4.productPoints li.adPoints{font-family:Helvetica,Arial,serif;font-size:10px;line-height:150%;color:#666;list-style:disc outside;margin:0 0 0 45px;padding:6px 0}
+#category_landing_L2.category_landing_cooklearning #body_content>ul.product_image_list li.product_3,#category_landing_L2.category_landing_cooklearning #body_content>ul.product_image_list li.product_5,#page #oc_manuals_search_no_results .text-information-box.column_2 .whirlpool_search_tips .whirlpool_search_tips_inner_wrapper .search_tips_header{width:205px}
+#category_landing_L2 #body_content>ul.product_image_list>li.last,#category_landing_L2 #body_content ul.product_image_list li.additional_products,#category_landing_L2 #body_content li.additional_products ul li,#category_landing_kitchen #product_showcase_segment.no_border,#category_landing_kitchen #product_showcase_segment ul li a.lead_link:hover,h1,#fragment-3.ui-tabs-panel .seeItWork .ctaMain,#rotator.noflash #fragment-3.ui-tabs-panel .seeItWork .ctaMain .ctaWork{background:0}
+#category_landing_filterlearning #viewallfilters p,#homepage_wrap #laundry_sub_nav ul li p,#homepage_wrap #kitchen_sub_nav ul li p,#homepage_wrap #test ul li p,#message_area #browser-upgrade-box p{text-align:center}
+#category_landing_WholeHome #product_showcase ul li.middle,ul i #category_landing_kitchen_accessories #product_showcase ul li.middle,#category_landing_wholehome_accessories #product_showcase ul li.middle,#category_landing_laundry_accessories #product_showcase ul li.middle,#category_landing_WholeHome #product_showcase_segment li,#category_landing_WholeHome div.product_showcase_divider,#category_landing_WholeHome #product_showcase_segment ul.single_row{border-color:#e6e6e6}
+#category_landing_kitchen #product_showcase_segment.product_2 ul,#category_landing_kitchen #product_showcase_segment.product_2 ul li,.middle #product_showcase_segment ul{width:318px}
+#category_landing_wholehome_accessories #product_showcase_segment,#category_landing_laundry_accessories #product_showcase_segment{min-height:300px}
+#fca ul li.right_col,#homepage_wrap #laundry_comp_button ul,.service .owner_center_body #schedule_footer li.last{margin-right:0}
+#category_landing_laundry #callout_holder_one,#category_landing_kitchen #callout_holder_one{position:absolute;left:14px}
+#category_landing_kitchen #callout_holder_four sup,#footer #footer-nav a,#footer #footer-nav a.header,.waterfiltration .footer_text{font-size:9px}
+#category_landing_kitchen #callout_box p span,#header_main_nav ul li.laundry .header_container a .learn_about,#modal.content p,#modal #modal_table div a{color:#333333;font-weight:normal;}
+#category_landing_wholehome_accessories #product_showcase_segment a,#category_landing_laundry_accessories #product_showcase_segment a{padding-top:267px}
+sup.small_sup,#category_landing_L2 sup{font-size:110%;vertical-align:0}
+#header_main_nav ul li.laundry .header_container a .header,#header_main_nav ul.top li.top a.green{color:#eeb111}
+#footer #footer-nav .footer_nolink_blue,#homepage_wrap #laundry_sub_nav ul li p a:hover,#homepage_wrap #kitchen_sub_nav ul li p a:hover,#homepage_wrap #test ul li p a:hover,#page.product_detail_page #overview .product_detail a,#press_media div a{color:#666}
+#header_sub_nav_1 ul li,#header_sub_nav_2 ul li,#main_content_wrapper #modal div.normal-title,#main_content_wrapper #modal div#privacy_links,#modal div .no_bold{font-weight:400}
+#header_main_nav ul.top li.ownercenter>ul,.page500{height:250px}
+#header_main_nav ul.top li.ownercenter>ul>li,#header_main_nav ul.top li.ownercenter>ul>li ul.last{height:100%}
+#header_main_nav ul.top li.last.ownercenter ul li,div#category_accessory_popup_sub_section div#modal.content p.desc{width:auto}
+#homepage_wrap #component_container>*,#about ul,#page #waterfilter_pdotr #promocode{margin:0;padding:0}
+#rotator.noflash #stopButton a,#rotator.noflash#playButton a,#rotator #stopButton a,#rotator #playButton a{width:50px;height:20px;font-size:10px;position:absolute;top:-21px;left:0;color:#FFF;opacity:.7;text-decoration:none}
+#rotator.noflash #fragment-1.current,#rotator.noflash #fragment-2.current,#rotator.noflash #fragment-3.current,#rotator.noflash #fragment-4.current,#header_main_nav ul li ul li.header img{z-index:2}
+#rotator.noflash li.ui-tabs-nav-item.current,#rotator.noflash li.ui-tabs-nav-item:hover{opacity:1;filter:alpha(opacity=100)}
+#rotator.noflash #fragment-1 .seeItWork .ctaMain .ctaWork,#rotator.noflash #fragment-3 .seeItWork .ctaMain .ctaWork{background:url(/images/content/seeitworkGreen.png) no-repeat scroll center top transparent;height:20px;width:160px;margin:3px 0 0}
+#rotator.noflash #fragment-2 .seeItWork .ctaMain .ctaWork,#rotator.noflash #fragment-4 .seeItWork .ctaMain .ctaWork{background:url(/images/content/seeitworkRed.png) no-repeat scroll center top transparent;height:20px;width:160px;margin:3px 0 0}
+#rotator_wrapper,#body_content{width:940px;margin:0 auto}
+.owner_center_body #schedule_footer ul,#about ul li{list-style:none}
+.login_box .login_text_box .login_text #signin:hover,.login_box .login_text_box .login_text #createaccount:hover,.login_box .login_text_box .login_text #proceedasguest:hover{background-position:0 -45px}
+div#TB_window div#TB_frame div#TB_ajaxContent div.layer-popup div#modal div#modal_table,#modal #modal_table{width:370px}
+.airtreatment .callout_holder,.watersoftcoolers .callout_holder,.watersoftener .callout_holder,.watercoolers .callout_holder{width:420px;height:120px;background:url(/images/content/hash_bg_purple.png) #FFF}
+.airtreatment #callout_box,.waterfiltration #callout_box,.watersoftcoolers #callout_box,.watersoftener #callout_box,.watercoolers #callout_box{background:#FFF;overflow:hidden}
+.airtreatment #callout_box .arrow,.waterfiltration #callout_box .arrow,.waterheaters #callout_box .arrow,.winecoolers #callout_box .arrow{margin-bottom:20px}
+.airtreatment #callout_holder_one #callout_box h2,.airtreatment #callout_holder_one #callout_box p,.airtreatment #callout_holder_two #callout_box h2,.airtreatment #callout_holder_two #callout_box p{margin-left:140px;padding-top:6px;width:250px}
+.waterfiltration #callout_box img,.watersoftcoolers #callout_box img,.watersoftener #callout_box img,.watercoolers #callout_box img{margin-left:7px;float:left;position:absolute;bottom:10px;z-index:0}
+.waterfiltration #callout_holder_two #callout_box h2,.waterfiltration #callout_holder_two #callout_box div,.waterfiltration #callout_holder_four #callout_box h2,.waterfiltration #callout_holder_four #callout_box div{margin-left:100px;width:265px}
+.waterfiltration #callout_holder_three,.watersoftcoolers #callout_holder_one{overflow:visible!important;position:absolute;left:20px;bottom:25px}
+.waterfiltration #callout_holder_four,.watersoftcoolers #callout_holder_two{overflow:visible!important;position:absolute;left:485px;bottom:25px}
+.waterheaters #callout_box,.winecoolers #callout_box{background:#FFF;overflow:hidden!important}
+.waterheaters #callout_box img,.winecoolers #callout_box img{margin-left:7px;float:left;position:absolute;bottom:0;z-index:0}
+.waterheaters #callout_holder_one,.winecoolers #callout_holder_one{overflow:visible!important;position:absolute;bottom:20px;right:30px}
+.watersoftcoolers #callout_box .arrow,.watersoftener #callout_box .arrow,.watercoolers #callout_box .arrow{margin-bottom:8px}
+.watersoftcoolers #callout_box h2,.watersoftener #callout_box h2,.watercoolers #callout_box h2{margin-top:20px}
+.jumppage.watersoftener #masthead_footer .footer_text,.service .bottom .left p,.service .bottom .right p,#page #oc_manuals_search_no_results .text-information-box.column_2 .whirlpool_search_tips .whirlpool_search_tips_inner_wrapper .search_tips_text{font-size:10px}
+.winecoolers #callout_box h2,.contact_us_page .Placeholder #contact_info .operation{margin-top:15px}
+.product_registration_page #page.product_registration_page div.note,#page #oc_manuals_search_no_results .text-information-box.column_2 .whirlpool_search_tips .whirlpool_search_tips_inner_wrapper .search_tips_header .search_tips_link{text-transform:lowercase}
+.service .bottom .left .title,.service .bottom .right .title{margin-bottom:0;color:#999!important}
+#header_main_nav .top.accessories #filter_finder li#offer .nav_promo_code{color:#eeb111;font-weight:bold;text-transform:uppercase}
+#header_main_nav li.laundry ul li,#header_main_nav li ul li ul li{width:auto}
+/*****Home Page Slideshow******/
+body {
+    color: #666666;
+    font-family: Helvetica,Arial,serif;
+    height: auto;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider .sliderText {
+    float: left;
+    height: 429px;
+    width: 940px;
+}
+#sliderGrapper, ul, li, ol, dd, dl, dt, p, div, a, img, table {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    border: 0 none;
+    float: left;
+}
+
+.sliderCaption_container {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 310px;
+    width: 720px;
+}
+.sliderCaption {
+    background: url("/images/content/caption_bg.png") repeat scroll 0 0 transparent;
+    border: 1px solid #EEB111;
+    float: left;
+    height: 100px;
+    margin: 0 15px;
+    padding: 14px 0 6px 30px;
+    position: relative;
+    width: 625px;
+}
+#sliderGrapper a {
+    outline: 0 none;
+    text-decoration: none;
+}
+.SlideCaptionLink {
+    background: url("/images/content/owner_center/icon_yellow_little_arrow.png") no-repeat scroll right center transparent;
+    color: #EEB111;
+    float: right;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-right: 17px;
+    position: relative;
+    width: 108px;
+    text-align: right;
+}
+
+.directionControl { cursor: hand; cursor: pointer; }
+
+.slideLeft {
+    background: url("/images/content/controlArrow_left.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 42px;
+    position: relative;
+    text-indent: 9999em;
+    top: 30px;
+    width: 16px;
+}
+.slideRight {
+    background: url("/images/content/controlArrow_right.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 42px;
+    position: relative;
+    text-indent: 9999em;
+    top: 30px;
+    width: 16px;
+}
+.slider .sliderText .titleSlide {
+    color: #333333;
+    font-size: 24px;
+    line-height: 25px;
+    margin: 0;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.linksSlide {
+    float: right;
+    position: absolute;
+    right: 25px;
+    top: 38px;
+    width: 76px;
+}
+html[lang=fr] .linksSlide{
+    top: 54px;
+}
+.linksSlide .modal_demo_kitchen{
+	display:none;
+}
+
+p {
+    font-size: 13px;
+}
+p {
+    color: #666666;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.slider .sliderText p {
+    font-size: 11px;
+    line-height: 15px;
+    width: 520px;
+}
+.selectorSlider {
+    background: url("/images/content/selector_bg.png") repeat scroll 0 0 transparent;
+    height: 12px;
+    margin: 0 auto;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    top: -12px;
+    width: 150px;
+    z-index: 6;
+}
+
+.selectorSlider li {
+    float: left;
+    height: 10px;
+    margin: 0 15px 0 0;
+    width: 10px;
+}
+.selectorSlider .sliderOn {
+    background: url("/images/content/bulletsOn.gif") no-repeat scroll 0 0 transparent;
+}
+.selectorSlider div {
+    height: 10px;
+    width: 10px;
+}
+#sliderGrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+    width: 940px;
+}
+
+html[lang="fr"] .sliderCaption_container { height: 122px; top: 307px; width: 775px; }
+html[lang="fr"] .sliderCaption { height: 100px; width: 680px; }
+html[lang="fr"] .SlideCaptionLink { width: 110px; }
+
+.sliderSubcontainer {
+    height: 429px;
+    position: absolute;
+    width: 5645px;
+}
+
+.slideRight:hover {
+    background: url("/images/content/controlArrow_right.png") repeat scroll 0 -43px transparent;
+}
+.slideLeft:hover {
+    background: url("/images/content/controlArrow_left.png") repeat scroll 0 -43px transparent;
+}
+.SlideCaptionLink:hover {
+    background: url("/images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;
+    color: #B4B4B4;
+    cursor: pointer;
+}
+
+.selectorSlider div:hover {
+    background: url("/images/content/bulletsOn.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
+
+.selectorSlider .sliderOff {
+    background: url("/images/content/bulletsOff.gif") no-repeat scroll 0 0 transparent;
+}
+/****Home Page Slideshow ENDS***/
+div#left_bottom_sec a:hover{color:#eeb100}
+#sections_container a{cursor:pointer}
+#bottom_sections a{cursor:pointer}
+#sections_container{width:960px;float:left;margin:0 auto;border-bottom:1px dotted #ccc;height:150px}
+.home_sections{width:305px;border-right:1px dotted #ccc;height:auto;float:left}
+.home_sections.last_section{border-right:0}
+.home_sections h1{float:left;padding-left:7px}
+.home_sections div{padding-left:30px;height:100px}
+.section_title{color:#333;font-size:18px; font-weight: normal;}
+.home_sections h1.section_title a,#bottom_sections h1.section_title a{color:#333;font-size:18px;background:url(/images/content/owner_center/icon_yellow_little_arrow.png) no-repeat right;padding-right:15px}
+.home_sections h1.section_title a:hover,#bottom_sections h1.section_title a:hover{color:#eeb111;font-size:18px;background:url(/images/content/homepage_comp/heading-arrow-hover.png) no-repeat right;padding-right:15px}
+.home_sections .s_a_s_links a,
+#bottom_sections #left_bottom_sec .s_a_s_links a, #bottom_sections #right_bottom_sec .s_a_s_links a { background:url(/images/content/owner_center/icon_yellow_little_arrow.png) no-repeat left;padding-left:15px; }
+.hp_section_info{width:319px;height:auto;float:left}
+.home_sections.last_section p{width: 170px;padding-top: 0px !important;}
+.hp_section_info p{padding-left:65px;width:150px}
+.hp_section_info.laundry{padding-left: 0;}
+.hp_section_info.laundry img{float:left;}
+.hp_section_info.laundry p{float:left;padding-left: 20px;padding-top: 5px;margin-bottom: 0;}
+.hp_section_info.laundry .s_a_s_links.firstLinks { padding-left: 20px; }
+.hp_section_info.kitchen {padding-left: 0px;/*padding-top: 26px;*/width: 274px;}
+.hp_section_info.kitchen img{float:left;}
+.hp_section_info.kitchen p{float: right;padding-left: 0px;padding-right: 10px;margin-bottom: 0;}
+/*.hp_section_info.kitchen{background:url("/images/data/en_CA/ES_Sustained_E.jpg") no-repeat scroll 0 0 transparent; padding-left: 45px;}*/
+/*html[lang=fr] .hp_section_info.kitchen{background:url("/images/data/en_CA/ES_Sustained_FR.jpg") no-repeat scroll 0 0 transparent; padding-left: 45px;}*/
+.hp_section_info.filters{background:url("/images/content/thumb_affresh.jpg") no-repeat scroll 0 0 transparent; padding-left: 65px; }
+/*html[lang=fr] .hp_section_info.filters{background:url("/images/data/fr_CA/thumb_affresh.jpg") no-repeat scroll 0 0 transparent;}*/
+.hp_section_info.filters .s_a_s_links.firstLinks { padding-left: 65px; }
+#bottom_sections{float:left;width:960px;height:160px}
+#left_bottom_sec{ background: url('/images/content/thumb_service.jpg') no-repeat scroll 0 0 transparent;border-right:1px dotted #ccc;float:left;height:100px;margin:30px 0 0 60px;padding:0 4px 4px 90px;width:340px}
+#left_bottom_sec h1{float:left}
+#left_bottom_sec p{clear:both}
+#right_bottom_sec{float:left;width:350px;padding:35px 0 0 60px}
+#right_bottom_sec p{width:220px;float:left}
+#right_bottom_sec img{float:left;padding:10px}
+
+.mobile{font-weight:bold}
+.s_a_s_links a{color:#666}
+.s_a_s_links a:hover{color:#666}
+.s_a_s_links{float:left;padding-top:10px}
+.s_a_s_links.firstLinks{width:175px}
+.s_a_s_links.firstLinks a{clear:both}
+.s_a_s_links.secondLinks{width:165px}
+.body.homepage p{font-family:helvetica,Arial,sans-serif;font-size:11px}
+.body.homepage p span{font-size:9px;display:block;padding-top:8px;}
+.body.homepage{background:none!important}
+#footer-nav-level-two{/*padding-left:155px*/}
+html[lang="fr"] #footer-nav-level-two { padding-left: 0; }
+.first.wider.footer_brandcares{padding-right:5px!important;width:100px!important}
+.footer_corp{width:75px!important}
+#landingKitchenContent{width:940px;height:auto;margin:0 auto}
+#landingKitchenContent .landingKitchenTop{width:940px;height:140px;padding-top:100px;background-image:url(/images/content/kitchen/slider-img-01.jpg)}
+#landingKitchenContent .landingKitchenTop .introText{width:385px;height:72px;background:url(/images/content/kitchen/bg_transparent.png);padding:20px}
+#landingKitchenContent ul#collectionsMenu{list-style:none;width:940px;height:220px;padding:0 0 30px 0;margin:20px 0;border-bottom:1px dashed #CCC}
+html[lang=fr] #landingKitchenContent ul#collectionsMenu{list-style:none;width:940px;height:220px;padding:0 0 30px 0;margin:20px 0;border-bottom:1px dashed #CCC}
+#landingKitchenContent ul#collectionsMenu li{float:left;width:312px;height:auto;border-right:1px dashed #CCC}
+#landingKitchenContent ul#collectionsMenu li img{display:block;margin:0 auto}
+#landingKitchenContent ul#subMenuProducts{list-style:none;width:940px;height:auto;clear:both;padding:0 0 40px 0;margin:0}
+#landingKitchenContent ul#subMenuProducts li{width:312px;height:430px;float:left;border-right:1px dashed #CCC}
+#landingKitchenContent ul#subMenuProducts li img{margin:0 auto;display:block}
+#landingKitchenContent .noborder{border-right:none!important}
+#landingKitchenContent ul#subMenuProducts li ul.linkList{list-style:none;padding:0;margin:0}
+#landingKitchenContent ul#subMenuProducts li ul.linkList li{width:312px;height:auto;clear:left;color:#666;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:13px;border:none!important;margin-bottom:5px}
+#landingKitchenContent ul#subMenuProducts li ul.linkList li a{color:#666;font-family:Arial,Helvetica,sans-serif;text-decoration:none}
+#landingKitchenContent ul#subMenuProducts li ul.linkList li a:hover{color:#aaa}
+p{color:#666;font-size:12px;font-family:Helvetica,Arial,sans-serif}
+ul#collectionsMenu p{color:#666;font-size:13px;text-align:center;font-family:Helvetica,Arial,sans-serif}
+p.subTitle{color:#eeb111;font-family:Helvetica,Arial,sans-serif;font-size:18px;text-decoration:none;font-weight:normal;margin:0 0 5px 0;text-align:center}
+p.subTitle a{color:#eeb111;font-family:Helvetica,Arial,sans-serif;font-size:18px;text-decoration:none;font-weight:normal}
+p.subTitle a:hover{color:#aaa}
+a{text-decoration:none;color:#eeb111}
+a.under:hover{color:#999}
+a.kitchen_collection_title{color:#333333;font-size:32px}
+a.kitchen_collection_title:hover{color:#333333;}
+h2{color:#eeb111;font-size:24px}
+.clear{clear:both;height:0}
+.bold{font-weight:bold}
+.fl-left{float:left}
+.fl-right{float:right}
+.paragraph{text-align:justify;margin:0 0 15px 0}
+.yellow{color:#eeb111}
+.white{color:#FFF!important}
+.block{display:block}
+.none{display:none}
+.h2{color:#eeb111;font-size:24px}
+.absolute{position:absolute}
+#wrap{width:940px;margin:0 auto;padding-top:120px}
+#topContent{font-size:11px;height:30px;margin:0;padding-top:20px;*padding-top:25px}
+#topContent a:hover{color:#eeb111}
+/*.contact{border-left:1px solid #ccc}*/
+ul#breadcrumb{display:block!important}
+ul#breadcrumb li{float:left;color:#999}
+ul#shareContact{float:right;display:block;list-style:none}
+ul#shareContact li{float:left;color:#999}
+ul#shareContact a{padding:0 10px;color:#999}
+ul#tabs{float:left;font-size:14px;margin:15px 0 0 15px}
+ul#tabs li{float:left}
+ul#tabs a:hover{color:#eeb111}
+#slider{position:absolute;width:1880px;height:375px}
+*{margin:0;padding:0}
+a.under:hover{color:#999!important}
+a img{border:0}
+.lastProd{border:none!important}
+.littelessImg{margin-top:38px!important}
+.subtitle{color:#333333;font-size:18px;display:block;padding:0 0 10px}
+.descriptionHeader{background:url(/images/header-description-bg.png) repeat;padding:25px;font-size:13px;width:273px}
+.descriptionHeaderFilterAccess{text-align:left;background:url(/images/header-description-bg.png) repeat;padding:25px;font-size:13px;width:310px}
+.descriptionHeaderKitAccess{text-align:left;background:url(/images/header-description-bg.png) repeat;padding:25px;font-size:13px;width:265px}
+html[lang=fr] .descriptionHeaderKitAccess{width:365px;text-align:left;} 
+.descriptionHeaderLaundryA{text-align:left;background:url("/images/header-description-bg.png") repeat scroll 0 0 transparent;font-size:13px;padding:35px 25px 40px 25px;width:377px}
+.productsFirstLine p,.productsMidLine p,.productsLastLine p{text-align:center}
+h2{color:#eeb111;font-size:24px}
+ul.productsFirstLine{border-bottom: 1px #CCC dashed;text-align:center;height:350px}
+ul.productsFirstLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsMidLine{border-bottom:1px #CCC dashed;border-top:1px #CCC dashed;text-align:center;height:392px;padding:20px 0 0;margin:1px 0}
+ul.productsMidLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine{border-top:1px #CCC dashed;text-align:center;min-height:400px;padding:20px 0 0}
+ul.productsLastLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine li.singleListItem{margin:0 auto;border-left:#CCC 1px dashed;margin:0 0 0 311px}
+#filter_landing_header{background:url(/images/content/filtersaccessories/static-header.jpg) no-repeat;height:180px;margin:0 0 40px;padding:75px 0 0}
+ul.fourProdLine{text-align:center;height:500px}
+ul.fourProdLine>li{float:left;width:234px;height:450px;border-right:1px #CCC dashed}
+ul.fourProdLine>li div a:hover{color:#eeb111}
+#laundry_acc_header{background:url("/images/content/laundry_accessories/static-header.jpg") no-repeat scroll 0 0 transparent;height:195px;margin:0 0 40px;padding:55px 0 0}
+ul.productsFirstLine{border-bottom: 1px #CCC dashed;text-align:center;height:395px}
+ul.productsFirstLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsMidLine{border-bottom:1px #CCC dashed;border-top:1px #CCC dashed;text-align:center;height:370px;padding:20px 0 0;margin:1px 0}
+ul.productsMidLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine{border-top:1px #CCC dashed;text-align:center;min-height:400px;padding:20px 0 0}
+ul.productsLastLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine li.singleListItem{margin:0 auto;border-left:#CCC 1px dashed;margin:0 0 0 311px}
+#kitchen_acc_header{background:url(/images/content/kitchen_accessories/static-header.jpg) no-repeat;height:180px;margin:0 0 40px;padding:75px 0 0}
+ul.productsFirstLine{border-bottom: 1px #CCC dashed;text-align:center;height:400px;padding-bottom:50px; width:940px;margin:1px 0;}
+ul.productsFirstLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 50px}
+ul.productsMidLine{border-bottom:1px #CCC dashed;border-top:1px #CCC dashed;text-align:center;height:392px;padding:35px 0 0;margin:1px 0; width: 940px; padding-bottom:20px ;}
+ul.productsMidLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine{border-top:1px #CCC dashed;text-align:center;min-height:400px;padding:6px 0 0}
+ul.productsLastLine li{float:left;width:310px;border-right:1px #CCC dashed;padding:20px 0 30px}
+ul.productsLastLine li.singleListItem{margin:0 auto;border-left:#CCC 1px dashed;margin:25px 0 0 295px}
+#topContent{font-size:11px;height:30px;margin:0;padding-top:20px;*padding-top:25px}
+#topContent a:hover{color:#eeb111}
+ul#breadcrumb li{float:left;color:#999}
+ul#breadcrumb a{padding:0 15px 0 0;margin:0 10px 0 0;background:url(/images/content/kitchen/stainless_collection/breadcrumb-arrow.png) no-repeat right;color:#999}
+ul#shareContact{float:right;display:block;list-style:none}
+ul#shareContact li{float:left;color:#999}
+ul#shareContact a{padding:0 10px;color:#999}
+/*.contact{border-left:#ccc solid 1px}*/
+ul#tabStlss{float:left;font-size:14px;margin:15px 0 0 15px}
+ul#tabStlss li{float:left}
+a.tabLinkOneStlss,a.tabLinkTwoStlss,a.tabLinkThreeStlss{color:#666}
+ul#tabStlss a:hover{color:#eeb111}
+.nextCollectionStlss{font-size:14px;margin:15px 0 22px;padding:0 15px 0 0;background:url(/images/content/kitchen/stainless_collection/icon_img.png) no-repeat right}
+.nextCollectionStlss:hover{background:url(/images/content/kitchen/cooking/heading-arrow-hover.png) no-repeat right}
+#sliderWrapperStlss{width:940px;height:375px;position:relative;overflow:hidden}
+div.slideOneStlss{background:url(/images/content/kitchen/stainless_collection/hero-01.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0;font-weight:bold}
+div.slideTwoStlss{background:url(/images/content/kitchen/stainless_collection/hero-02.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0}
+div.slideThreeStlss{background:url(/images/content/kitchen/stainless_collection/hero-03.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0}
+a.dotStlss{display:block;position:absolute;width:27px;height:27px;overflow:hidden;background:url(/images/content/kitchen/stainless_collection/hotspot_btn.png)}
+a.dotStlss:hover{background-position:0 -27px}
+#dotOneStlss{left:195px;top:125px}
+#dotTwoStlss{left:347px;top:300px}
+#dotThreeStlss{left:490px;top:190px}
+#dotFourStlss{left:530px;top:12px}
+#dotFiveStlss{left:755px;top:170px}
+#dotSixStlss{left:315px;top:110px}
+#dotSevenStlss{left:455px;top:240px}
+#dotEightStlss{left:560px;top:170px}
+#dotNineStlss{left:580px;top:20px}
+#dotTenStlss{left:720px;top:175px}
+#dotElevenStlss{left:130px;top:155px}
+#dotTwelveStlss{left:460px;top:255px}
+#dotThirteenStlss{left:750px;top:290px}
+#dotFourteenStlss{left:760px;top:75px}
+.ttStlss{display:none;text-align:center;position:absolute;line-height:65px;font-weight:bold;height:58px;padding-top:23px}
+a.ttStlss{color:#666;line-height:65px}
+.tt-1Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-01.png) no-repeat;width:154px;top:150px;left:132px}
+.tt-2Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-02.png) no-repeat;width:213px;top:323px;left:254px;font-size:11px!important}
+.tt-3Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-03.png) no-repeat;width:127px;top:216px;left:441px}
+.tt-4Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-04.png) no-repeat;width:157px;top:38px;left:466px}
+.tt-5Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-05.png) no-repeat;width:191px;top:194px;left:673px}
+.tt-6Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-06.png) no-repeat;width:154px;top:136px;left:251px}
+.tt-7Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-07.png) no-repeat;width:213px;top:265px;left:362px;font-size:11px!important}
+.tt-8Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-08.png) no-repeat;width:127px;top:195px;left:510px}
+.tt-9Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-09.png) no-repeat;width:157px;top:45px;left:515px}
+.tt-10Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-10.png) no-repeat;width:191px;top:199px;left:637px}
+.tt-11Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-11.png) no-repeat;width:191px;top:180px;left:47px}
+.tt-12Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-12.png) no-repeat;width:213px;top:280px;left:368px;font-size:11px!important}
+.tt-13Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-13.png) no-repeat;width:127px;top:313px;left:701px}
+.tt-14Stlss{background:url(/images/content/kitchen/stainless_collection/dot-hover-14.png) no-repeat;width:177px;top:103px;left:685px}
+#sliderWrapperStlss sup{font-size:11px;vertical-align:super}
+.closeFeatureBoxStlss{display:block;margin:0 0 5px 225px;height:13px;background:url(/images/content/kitchen/stainless_collection/close-feature.png) no-repeat}
+a.closeFeatureBoxStlss:hover{color:#eec111}
+.featureBoxStlss{display:none;border-left:#eeb317 4px solid;background:url(/images/content/kitchen/stainless_collection/overlay-cont-bg.png) repeat;padding:7px 7px 15px 17px;position:absolute;font-weight:100;width:240px}
+.featureOneStlss,.featureSixStlss{left:530px;top:25px}
+.featureTwoStlss,.featureSevenStlss{left:530px;top:5px}
+.featureThreeStlss,.featureEightStlss{left:40px;top:20px}
+.featureFourStlss,.featureNineStlss{left:70px;top:25px}
+.featureFiveStlss,.featureTenStlss{left:150px;top:40px}
+.featureElevenStlss{left:530px;top:20px}
+.featureTwelveStlss{left:530px;top:5px}
+.featureThirteenStlss{left:520px;top:5px}
+.featureFourteenStlss{left:60px;top:25px}
+.featureTitleStlss{font-size:16px!important;margin:0 0 5px}
+.featureBoxStlss p{font-size:11px;line-height:150%}
+.featureDetailsStlss{color:#eec111;font-size:12px;background:url(/images/content/kitchen/stainless_collection/icon_img.png) no-repeat right;padding:0 15px 0 0}
+a.featureDetailsStlss:hover{color:#eec111}
+.descRestrictionStlss{font-size:9px!important;position:relative;top:35px}
+div.featureDotsStlss{*height:20px!important;height:10px;margin:0 auto}
+div.fdx3Stlss{width:94px}
+div.fdx4Stlss{width:125px}
+.featureDotsStlss a{background:url(/images/content/kitchen/stainless_collection/feature-dot.png) no-repeat;display:block;width:10px;height:10px;margin:3px 9px 15px;float:left}
+.featureDotsStlss a:hover{background-position:0 -10px}
+.featureDotsStlss a.activeFeatureDotStlss{background-position:0 -10px}
+#morePhotosStlss{border-bottom:solid 1px #ccc;border-top:solid 2px #ccc;height:112px;margin:1px 0 40px}
+#morePhotosStlss span{font-size:13px;line-height:112px}
+ul.photoThumbsStlss{float:left}
+ul.photoThumbsStlss li{float:left}
+ul.photoThumbsStlss a{margin:7px 0 0 15px}
+a.photoThumbOneStlss{display:block;width:128px;height:98px;background:url(/images/content/kitchen/stainless_collection/btn_morephotos1.jpg) no-repeat}
+a.photoThumbTwoStlss{display:block;width:128px;height:98px;background:url(/images/content/kitchen/stainless_collection/btn_morephotos2.jpg) no-repeat}
+a.photoThumbThreeStlss{display:block;width:128px;height:98px;background:url(/images/content/kitchen/stainless_collection/btn_morephotos3.jpg) no-repeat}
+a.photoThumbOneStlss:hover{background-position:0 -98px}
+a.photoThumbTwoStlss:hover{background-position:0 -98px}
+a.photoThumbThreeStlss:hover{background-position:0 -98px}
+a.photoThumbOneStlss.active{background:url(/images/content/kitchen/stainless_collection/btn_morephotos1.jpg) 0 -98px}
+.boxTabsStlss span.h2{margin:0 0 15px;color:#eeb111}
+.boxTabsStlss span{line-height:150%}
+.boxTabsStlss ul li{float:left;margin:0 9px;cursor:pointer}
+.designLinkStlss{background:url(/images/content/kitchen/stainless_collection/bg_desing_subcategory.jpg) no-repeat;display:block;width:260px;height:87px;padding:100px 20px 0 15px}
+.innovationLinkStlss{background:url(/images/content/kitchen/stainless_collection/bg_innovations_subcategory.jpg) no-repeat;display:block;width:223px;height:87px;padding:100px 57px 0 15px}
+.innovationLinkStlss span{color:#FFF}
+.productsLinkStlss{background:url(/images/content/kitchen/stainless_collection/bg_products_subcategory.jpg) no-repeat;display:block;width:135px;height:121px;padding:66px 146px 0 15px}
+#product_box .left_box .product_price{font-size:11px;padding:0 0 10px}
+.iceSld1FridgeOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-fridge-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1Range{background:url(/images/content/kitchen/ice_collection/ice-sld1-range-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1Range:hover{background-position:top}
+.iceSld1Mhc1Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1Mhc2Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1Mhc3Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld1Mhc4Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2FridgeOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-fridge-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2Range{background:url(/images/content/kitchen/ice_collection/ice-sld1-range-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2Range:hover{background-position:top}
+.iceSld2Mhc1Off{background:url(/images/content/kitchen/ice_collection/ice-sld2-mhc1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2Mhc2Off{background:url(/images/content/kitchen/ice_collection/ice-sld2-mhc2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2Mhc3Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld2Mhc4Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Oven{background:url(/images/content/kitchen/ice_collection/ice-sld3-oven-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Oven:hover{background-position:top}
+.iceSld3Cook1Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-cook1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Cook2Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-cook2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Cook3Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-cook3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Hood2Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld3Hood3Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Oven{background:url(/images/content/kitchen/ice_collection/ice-sld3-oven-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Oven:hover{background-position:top}
+.iceSld4Cook1Off{background:url(/images/content/kitchen/ice_collection/ice-sld4-cook1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Cook2Off{background:url(/images/content/kitchen/ice_collection/ice-sld4-cook2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Cook3Off{background:url(/images/content/kitchen/ice_collection/ice-sld4-cook3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Cook4Off{background:url(/images/content/kitchen/ice_collection/ice-sld4-cook4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Hood2Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.iceSld4Hood3Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Oven{background:url(/images/content/kitchen/ice_collection/ice-sld3-oven-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Oven:hover{background-position:top}
+.stlssSld1Cook1Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Cook2Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Cook3Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Cook4Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Hood1Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-hood1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Hood2Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld1Hood3Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Oven{background:url(/images/content/kitchen/ice_collection/ice-sld3-oven-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Oven:hover{background-position:top}
+.stlssSld2Cook1Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Cook2Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Cook3Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Cook4Off{background:url(/images/content/kitchen/ice_collection/stlss-sld1-cook4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Hood1Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-hood1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Hood2Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld2Hood3Off{background:url(/images/content/kitchen/ice_collection/ice-sld3-hood3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3FridgeOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-fridge-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3DishOff{background:url(/images/content/kitchen/ice_collection/ice-sld1-dish-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3Range{background:url(/images/content/kitchen/ice_collection/ice-sld1-range-on.jpg) 0 -145px no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3Range:hover{background-position:top}
+.stlssSld3Mhc1Off{background:url(/images/content/kitchen/ice_collection/ice-sld2-mhc1-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3Mhc2Off{background:url(/images/content/kitchen/ice_collection/ice-sld2-mhc2-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3Mhc3Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc3-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.stlssSld3Mhc4Off{background:url(/images/content/kitchen/ice_collection/ice-sld1-mhc4-off.jpg) no-repeat;display:block;width:225px;height:145px;margin:0 0 15px}
+.fancybox-tmp iframe,.fancybox-tmp object{vertical-align:top;padding:0;margin:0}
+.fancybox-wrap{position:absolute;top:0;left:0;z-index:1002}
+.fancybox-outer{position:relative;padding:0;margin:0;background:#fff!important;display:block!important;color:#444;text-shadow:none;padding:45px 15px 15px 15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px!important;-webkit-box-shadow:0 10px 25px #969696;-moz-box-shadow:0 10px 25px #969696;box-shadow:0 10px 25px #969696!important;behavior:url(PIE.htc)!important}
+.fancybox-opened{z-index:1003}
+.fancybox-opened .fancybox-outer{-webkit-box-shadow:0 10px 25px #969696;-moz-box-shadow:0 10px 25px #969696;box-shadow:0 10px 25px #969696!important;behavior:url(PIE.htc)!important}
+.fancybox-inner{width:100%!important;height:100%;padding:0;margin:0;position:relative;outline:0;overflow:hidden!important;background:#fff!important}
+.fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:10px}
+.fancybox-image,.fancybox-iframe{display:block;width:100%;height:100%;border:0;padding:0;margin:0;vertical-align:top}
+.fancybox-image{max-width:100%;max-height:100%}
+#fancybox-loading,.fancybox-prev span,.fancybox-next span{background-image:url('/images/content/kitchen/ice_collection/fancybox_sprite.png')}
+#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:1010;display:none}
+#fancybox-loading div{width:44px;height:44px;background:url('/images/content/kitchen/ice_collection/fancybox_loading.gif') center center no-repeat}
+.fancybox-close{position:absolute;top:15px;right:15px;cursor:pointer;z-index:1004;background:url(/images/content/kitchen/ice_collection/close.png);width:19px;height:19px}
+.fancybox-tmp{position:absolute;top:-9999px;left:-9999px;padding:0;overflow:visible;visibility:hidden}
+#fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:1001;background:#FFF}
+.fancybox-title{visibility:hidden;font:normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;text-shadow:none;z-index:1005}
+.fancybox-opened .fancybox-title{visibility:visible}
+.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:1003;text-align:center}
+.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:transparent;background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;text-shadow:0 1px 2px #222;color:#FFF;font-weight:bold;line-height:24px;white-space:nowrap;behavior:url(PIE.htc)}
+.addthis_toolbox.addthis_default_style span{display:none}
+.border{border-bottom:1px solid #ccc;!important;margin-bottom:25px!important}
+ul#tabIce{float:left;font-size:14px;margin:15px 0 0 15px}
+ul#tabIce li{float:left}
+a.tabLinkOneIce,a.tabLinkTwoIce,a.tabLinkThreeIce{color:#333333}
+ul#tabIce a:hover{color:#666666}
+.nextCollectionIce{font-size:14px;margin:15px 0 22px;padding:0 20px 0 0;background:url(/images/content/kitchen/ice_collection/icon_img-2.png) no-repeat right 4px;color: #333333;}
+.nextCollectionIce:hover{background-position:right -12px}
+#sliderWrapperIce{width:940px;height:375px;position:relative;overflow:hidden}
+div.slideOneIce{background:url(/images/content/kitchen/ice_collection/hero-01.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0;font-weight:bold}
+div.slideTwoIce{background:url(/images/content/kitchen/ice_collection/hero-02.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0}
+div.slideThreeIce{background:url(/images/content/kitchen/ice_collection/hero-03.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0}
+div.slideFourIce{background:url(/images/content/kitchen/ice_collection/hero-04.jpg) no-repeat;width:940px;height:375px;position:absolute;top:0;left:0}
+a.dotIce{display:block;position:absolute;width:27px;height:27px;overflow:hidden;background:url(/images/content/kitchen/ice_collection/hotspot_btn.png)}
+a.dotIce:hover{background-position:0 -27px}
+#dotOneIce{left:210px;top:120px}
+#dotTwoIce{left:435px;top:270px}
+#dotThreeIce{left:635px;top:270px}
+#dotFourIce{left:660px;top:50px}
+#dotFiveIce{left:170px;top:140px}
+#dotSixIce{left:440px;top:245px}
+#dotSevenIce{left:680px;top:270px}
+#dotEightIce{left:695px;top:50px}
+#dotNineIce{left:200px;top:140px}
+#dotTenIce{left:330px;top:300px}
+#dotElevenIce{left:480px;top:200px}
+#dotTwelveIce{left:505px;top:20px}
+#dotThirteenIce{left:680px;top:180px}
+#dotFourteenIce{left:190px;top:110px}
+#dotFifteenIce{left:320px;top:295px}
+#dotSixteenIce{left:480px;top:200px}
+#dotSeventeenIce{left:500px;top:10px}
+#dotEighteenIce{left:680px;top:180px}
+.ttIce{display:none;text-align:center;position:absolute;line-height:65px!important;font-weight:bold;height:58px}
+.ttIce a{line-height:65px;color:#666}
+.tt-1Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-01.png) no-repeat;width:191px;top:142px;left:128px}
+.tt-2Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-02.png) no-repeat;width:213px;top:292px;left:342px;font-size:11px!important}
+.tt-3Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-03.png) no-repeat;width:107px;top:293px;left:595px}
+.tt-4Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-04.png) no-repeat;width:177px;top:73px;left:585px}
+.tt-5Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-05.png) no-repeat;width:191px;top:164px;left:88px}
+.tt-6Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-06.png) no-repeat;width:213px;top:270px;left:347px;font-size:11px!important}
+.tt-7Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-07.png) no-repeat;width:107px;top:293px;left:641px}
+.tt-8Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-08.png) no-repeat;width:177px;top:74px;left:620px}
+.tt-9Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-09.png) no-repeat;width:154px;top:163px;left:136px}
+.tt-10Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-10.png) no-repeat;width:213px;top:320px;left:237px;font-size:11px!important}
+.tt-11Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-11.png) no-repeat;width:137px;top:224px;left:426px}
+.tt-12Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-12.png) no-repeat;width:157px;top:45px;left:440px}
+.tt-13Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-13.png) no-repeat;width:191px;top:202px;left:598px}
+.tt-14Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-14.png) no-repeat;width:154px;top:135px;left:126px}
+.tt-15Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-15.png) no-repeat;width:213px;top:320px;left:227px;font-size:11px!important}
+.tt-16Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-16.png) no-repeat;width:137px;top:224px;left:426px}
+.tt-17Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-17.png) no-repeat;width:157px;top:35px;left:435px}
+.tt-18Ice{background:url(/images/content/kitchen/ice_collection/dot-hover-18.png) no-repeat;width:191px;top:203px;left:599px}
+#sliderWrapperIce sup{font-size:11px;vertical-align:super}
+.closeFeatureBoxIce{display:block;margin:0 0 5px 225px;height:13px;background:url(/images/content/kitchen/ice_collection/close-feature.png) no-repeat}
+a.closeFeatureBoxIce:hover{color:#eec111}
+.featureBoxIce{display:none;border-left:#eeb317 4px solid;background:url(/images/content/kitchen/ice_collection/overlay-cont-bg.png) repeat;padding:7px 7px 15px 17px;position:absolute;font-weight:100;width:240px}
+.featureOneIce{left:530px;top:25px}
+.featureTwoIce{left:530px;top:5px}
+.featureThreeIce{left:555px;top:10px}
+.featureFourIce{left:80px;top:20px}
+.featureFiveIce{left:530px;top:25px}
+.featureSixIce{left:530px;top:5px}
+.featureSevenIce{left:555px;top:10px}
+.featureEightIce{left:80px;top:20px}
+.featureNineIce{left:530px;top:25px}
+.featureTenIce{left:530px;top:5px}
+.featureElevenIce{left:40px;top:25px}
+.featureTwelveIce{left:50px;top:25px}
+.featureThirteenIce{left:140px;top:35px}
+.featureFourteenIce{left:530px;top:25px}
+.featureFifteenIce{left:530px;top:5px}
+.featureSixteenIce{left:40px;top:15px}
+.featureSeventeenIce{left:70px;top:25px}
+.featureEighteenIce{left:155px;top:30px}
+.featureTitleIce{font-size:16px!important;margin:0 0 5px}
+.featureBoxIce p{font-size:11px;line-height:150%}
+.featureDetailsIce{color:#eec111;font-size:12px;background:url(/images/content/kitchen/ice_collection/icon_img.png) no-repeat right;padding:0 15px 0 0}
+.descRestrictionIce{font-size:9px!important;position:relative;top:35px}
+div.featureDotsIce{*height:20px!important;height:10px;margin:0 auto}
+div.fdx3Ice{width:94px}
+div.fdx4Ice{width:125px}
+.featureDotsIce a{background:url(/images/content/kitchen/ice_collection/feature-dot.png) no-repeat;display:block;width:10px;height:10px;margin:3px 9px 15px;float:left}
+.featureDotsIce a:hover{background-position:0 -10px}
+.featureDotsIce a.activeFeatureDotIce{background-position:0 -10px}
+#morePhotosIce{border-bottom:solid 1px #ccc;border-top:solid 2px #ccc;height:112px;margin:1px 0 40px}
+#morePhotosIce span{font-size:13px;line-height:112px}
+ul.photoThumbsIce{float:left}
+ul.photoThumbsIce li{float:left}
+ul.photoThumbsIce a{margin:7px 0 0 15px}
+a.photoThumbOneIce{display:block;width:128px;height:98px;background:url(/images/content/kitchen/ice_collection/btn_morephotos1.jpg) no-repeat}
+a.photoThumbTwoIce{display:block;width:128px;height:98px;background:url(/images/content/kitchen/ice_collection/btn_morephotos2.jpg) no-repeat}
+a.photoThumbThreeIce{display:block;width:128px;height:98px;background:url(/images/content/kitchen/ice_collection/btn_morephotos3.jpg) no-repeat}
+a.photoThumbFourIce{display:block;width:128px;height:98px;background:url(/images/content/kitchen/ice_collection/btn_morephotos4.jpg) no-repeat}
+a.photoThumbOneIce:hover{background-position:0 -98px}
+a.photoThumbTwoIce:hover{background-position:0 -98px}
+a.photoThumbThreeIce:hover{background-position:0 -98px}
+a.photoThumbFourIce:hover{background-position:0 -98px}
+a.photoThumbOneIce.active{background:url(/images/content/kitchen/ice_collection/btn_morephotos1.jpg) 0 -98px}
+.boxTabsIce span.h2{margin:0 0 15px;color:#eeb111}
+.boxTabsIce span{line-height:150%}
+.boxTabsIce ul li{float:left;margin:0 9px;cursor:pointer}
+.designLinkIce{background:url(/images/content/kitchen/ice_collection/bg_desing_subcategory.jpg) no-repeat;display:block;width:260px;height:87px;padding:100px 20px 0 15px}
+.innovationLinkIce{background:url(/images/content/kitchen/ice_collection/bg_innovations_subcategory.jpg) no-repeat;display:block;width:223px;height:87px;padding:100px 57px 0 15px}
+.innovationLinkIce span{color:#FFF}
+.productsLinkIce{background:url(/images/content/kitchen/ice_collection/bg_products_subcategory.jpg) no-repeat;display:block;width:135px;height:121px;padding:66px 146px 0 15px}
+a.playImageIce{background:url(/images/content/kitchen/ice_collection/play_btn.png) no-repeat;display:block;width:56px;height:56px;float:left;position:relative}
+a.playImageIce:hover{background-position:0 -56px}
+.innovationOneIce a.playImageIce{top:-10px;left:10px}
+.innovationTwoIce a.playImageIce{top:30px;left:10px}
+.innovationThreeIce a.playImageIce{top:35px}
+.innovationFourIce a.playImageIce{top:35px;left:215px}
+.innovationFiveIce a.playImageIce{top:-10px;left:15px}
+.innovationSixIce a.playImageIce{top:-10px;left:20px}
+.innovationSevenIce a.playImageIce{top:30px;left:10px}
+ul.selectBoxColor{height:34px;margin:0 0 25px;display:none;}
+ul.selectBoxColor li{float:left;line-height:34px}
+a.topBoxSelected{color:#fff;display:block;height:34px;margin:0 7px;width:34px}
+a.topBoxUnselected{color:#fff;display:block;height:34px;margin:0 7px;width:34px}
+#top_products_box{height:348px;margin:0 auto;overflow:hidden;width:760px}
+.iceCollection .left_content,.iceCollection .right_content{float:left;height:348px;text-align:center;width:343px}
+.left_content a,.right_content a{background:url("/images/content/kitchen/stainless_collection/arrow-products.png") no-repeat scroll 0 -68px transparent;color:#666;display:inline-block;height:21px;padding:0 0 0 24px;text-decoration:none}
+#content_products{margin:25px 0 0;padding:0 10px}
+#product_box{border-bottom:1px dotted #d6d6d6;overflow:hidden;padding:20px 0;width:920px}
+#product_box .left_box{float:left;overflow:hidden;width:400px}
+#product_box .left_box .product_thumbnail{display:block;float:left}
+#product_box .left_box .description_left{border-right:1px dotted #d6d6d6;color:#404240;float:left;font-family:Helvetica,Arial,sans-serif;height:185px;margin:10px 0 0;overflow:hidden;padding:0 0 0 1px;width:169px}
+#product_box .right_box{float:left;padding:8px 0 0 23px;width:497px}
+.right_box .right_box_content{float:left;padding:0 57px 0 0;width:324px}
+.right_box .right_box_content h3{margin-bottom:0!important}
+.right_box h3{color:#eeb111;font-size:11px;padding:0 0 7px}
+.right_box .product_description{color:#454545;font-size:10px;padding-bottom:30px}
+.right_box .why_yl{color:#666;font-size:12px}
+.right_box .right_box_content p a{color:#4d4f4d;font-size:11px}
+.right_box .right_box_links{float:left;width:115px}
+.right_box .right_box_links a{padding:0!important}
+.right_box .right_box_links a{background:url("/images/content/kitchen/stainless_collection/sprite_products.gif") no-repeat scroll 0 -17px transparent;color:#666;display:block;font-size:13px;height:17px;line-height:17px;margin:0 0 10px;padding:0 0 0 20px;text-decoration:none}
+a.ui-button.small-btn.ui-icon-cart .ub-left{float:left;left:-3px;position:relative;width:19px}
+#cookingWrapper{width:940px;margin:0 auto;padding-top:120px}
+.cookingHero{width:940px;height:180px;background:url(/images/content/kitchen/cooking/hero-cooking.jpg) no-repeat;padding:70px 0 0}
+.headingOverlayCooking{text-align:left;background:url(/images/content/kitchen/cooking/heading-overlay-cooking.png) repeat;padding:25px;width:187px;font-size:13px}
+html[lang=fr] .headingOverlayCooking{text-align:left;background:url(/images/content/kitchen/cooking/heading-overlay-cooking.png) repeat;padding:25px;width:255px;font-size:13px}
+ul.productImgCooking li{width:235px;float:left;text-align:center;margin:35px 0 0}
+a.viewMoreCooking{background:url(/images/content/kitchen/cooking/arrrow-to-the-right.png) no-repeat right;padding:0 20px 2px 0;display:block;width:65px;color:#eeb111;margin:15px auto}
+p.prodNameDich{font-size:22px;text-align:center}
+ul.seeMoreCooking li{float:left;width:235px}
+ul.seeMoreCooking a{background:url(/images/content/kitchen/cooking/arrrow-to-the-right.png) no-repeat right;padding:0 20px 0 0;display:block;text-align:center;color:#333;width:90px;margin:15px auto 30px;font-size:14px}
+ul.seeMoreCooking a:hover{background:url(/images/content/kitchen/cooking/heading-arrow-hover.png) no-repeat right;color:#999}
+ul.cookingDetail{font-size:10px;border-top:#868686 1px dashed;min-height:80px; width:940px;}
+ul.cookingDetail li{text-align:left;padding:10px 15px 0 0;line-height:150%;float:left;width:170px;margin-left:50px;list-style:disc;*background:url(/images/content/bullet_icon.png) no-repeat 0 13px;*padding:10px 15px 0 10px;*margin-left:38px!important}
+ul.cookingDetail li.midDetCookingSec{padding-right:10px}
+li.lastDetailCooking{border:none!important}
+ul.addProdCooking li{float:left;text-align:center;width:185px}
+ul.addProdCooking a{color:#333;font-size:16px;display:block;height:151;margin:15px 0}
+ul.addProdCooking a:hover{color:#999}
+div.downloadBuyingCooking{width:400px;height:155px;padding:25px 25px 15px;background:#f1f1f1;line-height:300%;margin:25px 0 0;float:left}
+.downloadBuyingCookingHeading{font-size: 18px;line-height: 20px;margin-bottom: 8px;}
+div.downloadBuyingCooking a{color:#333333;background:url(/images/content/kitchen/dishwasher/arrrow-to-the-bottom.png) no-repeat scroll left 0;padding:0 0 0 25px;display:block;float:left;margin:12px 0 0;height:16px;font-size:14px}
+img.pdfIconCooking{display:block;float:left;margin:10px 0 0 5px}
+div.downloadBuyingCooking a:hover{color:#999999;background:url("/images/content/kitchen/dishwasher/arrrow-to-the-bottom.png") no-repeat scroll left -16px transparent}
+div.downloadBuyingDish a:hover{color:#999999;background:url("/images/content/kitchen/dishwasher/arrrow-to-the-bottom.png") no-repeat scroll left -16px transparent}
+#dishwasherWrapper{width:940px;margin:0 auto;padding-top:120px}
+.dishwasherHero{width:940px;height:180px;background:url(/images/content/kitchen/dishwasher/hero-dishwasher.jpg) no-repeat;padding:70px 0 0}
+html[lang=fr] .headingOverlayDishwasher{text-align:left;background:url(/images/content/kitchen/dishwasher/heading-overlay-dishwasher.png) repeat;padding:25px;width:340px;font-size:13px}
+ul.productImgDishwasher li{width:313px;float:left;text-align:center;margin:35px 0 0}
+a.viewMoreDish{background:url(/images/content/kitchen/dishwasher/arrrow-to-the-right.png) no-repeat right;padding:0 20px 2px 0;display:block;width:65px;color:#eeb111;margin:15px auto}
+ul.seeMoreDish li{float:left;width:272px;margin:0 0 0 30px}
+ul.seeMoreDish a{background:url(/images/content/kitchen/dishwasher/arrrow-to-the-right.png) no-repeat right;padding:0 20px 0 0;display:block;text-align:center;color:#333;width:90px;margin:15px auto 30px;font-size:14px}
+ul.seeMoreDish a:hover{background:url("/images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;color:#999}
+ul.dishDetail{font-size:10px;border-top:#868686 1px dashed;height:70px;width:100%;}
+ul.middleDetail{*height:100px}
+ul.dishDetail li{text-align:left;padding:10px 15px 0 0;line-height:150%;float:left;width:200px;list-style:disc;margin-left:84px;*background:url(/images/content/bullet_icon.png) no-repeat 0 13px;*padding:10px 15px 0 10px;*margin-left:40px!important}
+ul.dishDetail li.midDetDish{*margin:0 60px 0 100px!important}
+li.lastDetailDish{border:none!important}
+ul.addProdDish li{float:left;text-align:center;width:225px;padding:7px 0 2px}
+ul.addProdDish ul.addProdDish li{padding:0}
+ul.addProdDish a{color:#333;font-size:16px;display:block}
+ul.addProdDish a:hover{color:#999}
+div.downloadBuyingDish{width:400px;height:155px;padding:25px 25px 15px;background:#f1f1f1;line-height:300%;margin:25px 0 0;float:left}
+html[lang="fr"] div.downloadBuyingDish{padding:25px 25px 25px;}
+.downloadBuyingDishHeading{font-size:18px;line-height:20px;margin-bottom:8px}
+div.downloadBuyingDish a{color:#333333;background:url(/images/content/kitchen/dishwasher/arrrow-to-the-bottom.png) no-repeat scroll left 0;padding:0 0 0 25px;display:block;float:left;16px;margin:12px 0 10px;height:16px;font-size:14px}
+html[lang="fr"] div.downloadBuyingDish a.learn_more_link{margin-top: 0px;}
+html[lang="fr"] div.downloadBuyingDish p {width:405px;}
+img.pdfIconDish{display:block;float:left;margin:12px 0 0 5px}
+#refWrapper{width:940px;margin:0 auto;padding-top:120px}
+.refHero{width:940px;height:180px;background:url(/images/content/kitchen/refrigerator/hero-ref.jpg) no-repeat;padding:70px 0 0}
+.headingOverlayRef{text-align:left;background:url(/images/content/kitchen/refrigerator/heading-overlay-ref.png) repeat;padding:25px;width:290px;font-size:13px}
+ul.productImgRef li{width:235px;float:left;text-align:center;margin:35px 0 0}
+a.viewMoreRef:hover,a.viewMoreCooking:hover,a.viewMoreDish:hover,a.viewMoreLaundry:hover{color:#999;background:url("/images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent}
+a.viewMoreRef{background:url(/images/content/kitchen/refrigerator/arrrow-to-the-right.png) no-repeat right;padding:0 20px 2px 0;display:block;width:65px;color:#eeb111;margin:15px auto}
+ul.seeMoreRef li{float:left;width:235px;margin:0}
+ul.seeMoreRef a{background:url(/images/content/kitchen/refrigerator/arrrow-to-the-right.png) no-repeat right;padding:0 20px 0 0;display:block;text-align:center;color:#333;width:90px;margin:15px auto 30px;font-size:14px}
+ul.seeMoreRef a:hover{background:url(/images/content/kitchen/refrigerator/heading-arrow-hover.png) no-repeat right;color:#999}
+ul.refDetail{font-size:10px;border-top:#868686 1px dashed;min-height:75px;width: 940px;text-align:left;}
+ul.refDetail li{padding:10px 15px 0 0;line-height:150%;float:left;width:170px;list-style:disc;margin-left:50px;*background:url(/images/content/bullet_icon.png) no-repeat 0 13px;*padding:10px 15px 0 10px;*margin-left:38px!important}
+ul.refDetail li.midDetRefSec{padding-right:10px}
+li.lastDetailRef{border:none!important}
+img.fruitImage{float:left;margin:0 20px 0 0}
+.fruitBoxDetail{font-size:9px;margin-left: 110px;}
+ul.addProdRef li{float:left;text-align:center;width:185px;padding:0 10px}
+ul.addProdRef a{color:#333;font-size:16px;display:block;height:151;margin:15px 0}
+ul.addProdRef a:hover{color:#999;}
+div.downloadBuyingRef{width:400px;height:155px;padding:25px 15px 15px 15px;background:#f1f1f1;line-height:200%;float:left;margin:25px 45px 0 0}
+.downloadBuyingRefHeading{font-size:18px;line-height: 20px;margin-bottom: 8px;width:300px}
+div.downloadBuyingRef a{color:#333333;background:url(/images/content/kitchen/refrigerator/arrrow-to-the-right.png) no-repeat right;padding:0 15px 0 0;display:block;float:left;margin:12px 0 10px;height:19px;font-size:14px}
+.downloadBuyingRef a:hover{color:#999999;background:url(/images/content/kitchen/refrigerator/heading-arrow-hover.png) no-repeat right}
+.fruitBoxText{float:left;width:285px}
+div.downloadBuyingRefSec{width:400px;height:155px;padding:25px 25px 15px 15px;background:#f1f1f1;line-height:200%;margin:25px 0 0 0;float:left}
+div.downloadBuyingRefSec a{color:#333333;background:url(/images/content/kitchen/refrigerator/arrrow-to-the-bottom.png) no-repeat left;padding:0 0 0 20px;display:block;float:left;margin:12px 0 0;height:16px;font-size:14px}
+.downloadBuyingRefSec a:hover{color:#999999;background:url(/images/content/kitchen/refrigerator/arrrow-to-the-bottom-hover.png) no-repeat left}
+#laundryWrapper{width:940px;margin:120px auto 0 auto}
+.laundryMasthead{width:940px;height:180px;background:url(/images/content/laundry/laundry_masthead.jpg) no-repeat;padding:70px 0 0}
+.headingOverlayLaundry{text-align:left;background:url(/images/content/laundry/heading-overlay-dishwasher.png) repeat;padding:25px;width:290px;font-size:13px}
+ul.productImgLaundry li{width:313px;float:left;text-align:center;margin:35px 0 0}
+a.viewMoreRef,a.viewMoreCooking,a.viewMoreDish,a.viewMoreLaundry{background:url(/images/content/laundry/arrrow-to-the-right.png) no-repeat right;padding:0 15px 0 0;display:block;width:73px;color:#eeb111;margin:8px auto;font-size:14px}
+a.viewMoreLaundry:hover{color:#999;background:url(/images/content/homepage_comp/heading-arrow-hover.png) no-repeat right}
+p.prodNameLaundry{font-size:22px;text-align:center}
+div.divitionLaundry{border-bottom:dashed 1px #868686;width:873px;margin-right:30px;float:right}
+ul.seeMoreLaundry li{float:left;width:202px;margin:0 0 30px 30px;padding:0 0 0 70px}
+ul.seeMoreLaundry a{background:url(/images/content/laundry/arrrow-to-the-right.png) no-repeat right;padding:0 16px 0 0;display:block;color:#333;width:auto;margin:15px 10px 30px 0;font-size:14px;float:left}
+ul.seeMoreLaundry a:hover{color:#999;background:url(/images/content/homepage_comp/heading-arrow-hover.png) no-repeat right}
+ul.laundryDetail{text-align:left;margin:0 30px 0 35px;font-size:10px;border-bottom:#868686 1px dashed;height:60px}
+ul.laundryDetail li{padding:10px 15px 0 0;line-height:150%;float:left;width:208px;list-style:disc;margin-left:34px;*background:url(/images/content/bullet_icon.png) no-repeat 0 13px;*padding:10px 15px 0 10px;*margin-left:40px!important}
+ul.laundryDetail li.midDetLaundry{margin-left:76px;margin-right:43px}
+ul.addProdLaundry li{float:left;text-align:center;width:235px;height:280px;margin:0}
+ul.addProdLaundry li a img{clear:both;margin-bottom:15px}
+ul.addProdLaundry a{color:#333;font-size:18px;display:block}
+ul.addProdLaundry a:hover{color:#999;}
+p.prodAdditional{font-size:24px;margin:10px 0 25px 0;text-align:left;*margin:30px 0 10px 0}
+.borderLaundry{border-right:1px solid #ccc}
+.lastProdListItem{margin-bottom:25px}
+div.downloadBuyingLaundry{width:400px;padding:25px;background:#f1f1f1;line-height:300%;margin:25px 0 0;float:left;height:100px;}
+.downloadBuyingLaundryHeading{font-size:20px;margin-bottom:10px;*margin:10px 0 10px 0}
+div.downloadBuyingLaundry a{font-size:14px;color:#eeb111;background:url(/images/content/laundry/arrrow-to-the-bottom.png) no-repeat left 2px;padding:1px 0 0 20px;margin:15px 5px 0 0;display:block;float:left}
+div.downloadBuyingLaundry a:hover{background:url(/images/content/laundry/arrrow-to-the-bottom.png) no-repeat left -18px;color:#999}
+img.pdfIconLaundry{display:block;float:left;margin:0 0 0 25px;margin:15px 0 0}
+#footer #footer-nav ul.footer_cooking{padding:0 0 0 15px}
+#footer #footer-nav ul.footer_accessories{padding-right:9px;margin-right:34px;}
+.where_to_buy a.ui-button.large-btn .ub-center{color:#777;font-size:15px;line-height:33px;padding:0 5px;font-weight:bold}
+#page.product_detail_page .product_options_bar div.where_to_buy{height:50px!important;margin-top:10px!important;width:150px!important;margin-right:0!important}
+#page.product_detail_page .product_options_bar .add_to_options{width:155px!important;font-family:Helvetica,Arial,sans-serif}
+html[lang="fr"] #page.product_detail_page .product_options_bar .add_to_options{width:180px!important;font-family:Helvetica,Arial,sans-serif}
+#main_accessories a:hover{color:#eeb111}
+.placeholder_product_image:hover{color:#eeb111}
+#page.SC_Accessories #product_list_masthead #features_tab.tabdiv{left:20px!important;position:absolute!important;top:18px!important;padding: 0 0 0 30px !important;width:870px!important;margin:0 0 0 2px!important;}
+#page.SC_Accessories #product_list_masthead .tagline{color:#eeb111!important;font-family:helvetica!important;font-style:normal!important;font-size:21px!important; margin: 20px 0 0 0;}
+.headBg{display:block;height:490px!important;margin:5px auto;width:940px}
+#espot_image{margin:0!important}
+#page.SC_Accessories div.product_list_backboard{padding:0!important}
+#product_list_masthead #features_tab.tabdiv.selected{min-width:870px!important}
+#page.SC_Accessories .access_sidebar,#page.SC_Accessories .access_sidebarContent{background:none transparent!important}
+.accessoryBg{background:none!important}
+#espot_image_washer{background:url("/images/content/masthead_bg/head_bg_acc_washers.jpg") no-repeat scroll center top transparent}
+#espot_image_dryer{background:url("/images/content/masthead_bg/head_bg_acc_dryers.jpg") no-repeat scroll center top transparent}
+#espot_image_ref{background:url("/images/content/masthead_bg/head_bg_accrefrigerator.jpg") no-repeat scroll center top transparent}
+#espot_image_oven_range{background:url("/images/content/masthead_bg/head_bg_acc_oven-range.jpg") no-repeat scroll center top transparent}
+#espot_image_microwave{background:url("/images/content/masthead_bg/head_bg_acc_microwave.jpg") no-repeat scroll center top transparent}
+#espot_image_compactdisp{background:url("/images/content/masthead_bg/head_bg_acc_compactor-disposer.jpg") no-repeat scroll center top transparent}
+#espot_image_freezer{background:url("/images/content/masthead_bg/head_bg_acc_freezer.jpg") no-repeat scroll center top transparent}
+#espot_image_icemaker{background:url("/images/content/masthead_bg/head_bg_acc_icemaker.jpg") no-repeat scroll center top transparent}
+#espot_image_airconditioner{background:url("/images/content/masthead_bg/head_bg_acc_roomairconditioners.jpg") no-repeat scroll center top transparent}
+a.product-link{color:#eeb100;font-weight:bold}
+ul.paginator li{float:left!important}
+ul.paginator{height:30px!important}
+.suppTitleImg{display:block;width:auto;height:auto;padding-bottom:20px}
+#topContent a{color:#999}
+body#oc_product_help_unauth.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_auth.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_results.owner_center #content-wrap #content #page #oc_content,body#oc_product_help_article.owner_center #content-wrap #content #page #oc_content{padding-left:10px;padding-top:165px;width:100%}
+.lastDetail{border-bottom:1px dashed #868686}
+.demoSeeBtn{font-size:14px;width:70px!important;padding:0 20px 2px 0!important;margin:8px auto!important}
+p.prodNameLaundry:hover,p.prodNameDich:hover{color:#999;}
+.addthis_toolbox.addthis_default_style{float:left}
+#content ul.fourProdLine ul li a{color:#666}
+#content ul.fourProdLine ul li a:hover{color:#eeb111}
+.thirdSldSee{/*margin-top:-12px!important*/}
+.homeSolutions{background:url(/images/content/WholeHome/home-solutions-header.jpg) no-repeat!important;height:180px!important;margin-bottom:40px!important;padding:75px 0 0!important;z-index:10;}
+ul.seeMoreRef,ul.seeMoreLaundry,ul.seeMoreDish,ul.seeMoreCooking{padding:0!important; width: 940px;}
+#body_content.about{width:940px;margin:30px auto 0 auto}
+.removeMargin{margin:0!important}
+.removeMarginB{margin-bottom:0!important}
+#header_main_nav a.accessories_header ul li ul li.first.iefix a.accessories_header{*display:block;*background-position:84px 22px!important;*padding-right:0}
+p{font-size:13px}
+#freshFilterMonth{border:1px solid #ededed;display:block;float:left;height:180px;padding:18px;width:210px}
+a.ui-button.small-btn.ui-icon-cart .ub-left{float:left;left:-3px;position:relative;width:19px}
+.activeTabIce{color:#666666!important}
+h2{color:#eeb111;font-size:24px}
+#top_content_products{border-bottom:3px solid #ccc}
+p.prodNameLaundry a{color:#666;font-size:22px;text-align:center}
+{}
+p.prodNameLaundry a:hover{color:#999;}
+{}
+div.downloadBuyingDish a.pdfIconLink,div.downloadBuyingRefSec a.pdfIconLink,div.downloadBuyingCooking a.pdfIconLink,div.downloadBuyingLaundry a.pdfIconLink{background:none repeat scroll 0 50% transparent;display:block;float:left;margin:12px 0 0 5px;padding:0}
+a.topBoxSelected img,a.topBoxSelected img:hover{border:1px solid #eeb111!important;display:block;height:25px;width:25px}
+a.topBoxUnselected img{border:1px solid #ccc}
+a.topBoxUnselected img:hover{border:1px solid #eeb111!important;display:block;height:25px;width:25px}
+
+#header_sub_nav_1 li ul.popup.favorites{*left: 0px !important; margin-left: 0px; *margin-left: 0px !important; z-index: 9998;}
+#MiniWishList {position:absolute; left: -195px; top: -20px; *top:0px; *left: -265px !important;}
+#miniWishList_dndTarget {left: -195px;}
+
+.carousel a.next{background-image:url("/images/img_arrow_circle_orange.png")!important;padding:0 0 0 10px;right:-17px;}
+.carousel a.prev{background-image:url("/images/img_arrow_circle_orange_left.png")!important;left:0;padding:0 10px 0 0; left:-8px;}
+div.product_tooltip div .product_description a{color:#666!important}
+#landingKitchenContent .landingKitchenTop .introText p{margin-top:-10px;line-height:120%}
+#seeProdColOneLink{margin-left:74px}
+#seeProdColTwoLink{margin-left:85px}
+#seeProdColThreeLink{margin-left:105px}
+img[src="/images/content/laundry_accessories/prod-01.jpg"]{padding-top:11px}
+.view_demo_kitchen {
+    background: url("/images/content/kitchen/refrigerator/arrrow-to-the-right.png") no-repeat scroll right center transparent;
+    color: #EEB111;
+    display: block;
+    font-size: 14px;
+    height: 18px;
+    margin: 0 auto 15px;
+    padding: 0;
+    text-align: left;
+    width: 86px;
+}
+.view_demo_kitchen:hover {
+  background: url("/images/content/kitchen/refrigerator/heading-arrow-hover.png") no-repeat scroll right center transparent;
+  color: #666;
+}
+.where_to_buy a.ui-button.large-btn.ui-icon-shoppingcart .ub-left {background: url("/images/addToCartLeft.png") no-repeat scroll 0 0 transparent;display: block;float: left;height: 32px;width: 27px;}
+.where_to_buy a.ui-button.large-btn .ub-center {background: url("/images/addToCartCenter.png") repeat-x scroll 0 0 transparent;display: block;float: left;height: 32px;}
+.where_to_buy a.ui-button.large-btn .ub-right {background: url("/images/addToCartRight.png") no-repeat scroll 0 0 transparent;display: block;float: left;height: 32px;width: 4px;}
+.where_to_buy a.ui-button.large-btn:hover .ub-right,.where_to_buy a.ui-button.large-btn:hover .ub-left, .where_to_buy a.ui-button.large-btn:hover .ub-center{background-position: 0 -33px}
+li.right a {
+    color: #999;
+}
+body div#page.product_list_page.SC_Accessories div#espot_image.accessoryBg div#WC_ContentAreaESpot_div_1_PLBIEspot.genericESpot div#espot_image{display:none !important;}
+body div#page.product_list_list_page.SC_Accessories div#espot_image.accessoryBg div#WC_ContentAreaESpot_div_1_PLBIEspot.genericESpot div#espot_image{display:none !important;}
+#home_solution_acc_header{
+    background: url("/images/content/wholehomeaccessories/wholehomeaccessories_masthead2.jpg") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 290px;
+    width: 968px;
+    padding-bottom:50px;
+}
+
+#headerHomeSolAcc{
+    background: url("/images/header-description-bg.png") repeat scroll 0 0 transparent;
+    font-size: 13px;
+    margin: 90px 0;
+    padding: 25px;
+    width: 380px;
+height:79px;
+display:block;
+}
+
+
+a.viewMoreLaundry {
+	display:inline;
+	font-size: 14px;
+	width: 110px;
+}
+
+
+a.viewMoreLaundryLeft {
+	margin-right: 15px;
+}
+
+.laundryPairs {
+background: url('http://dev.whirlpool.com/images/content/laundry/whp_LaundryOverview_v7_s_03.jpg?skipCache=true') no-repeat top left #fff;
+float: right;
+height:102px;
+margin: 25px 0 0;
+padding: 25px 20px;
+width: 432px;
+}
+
+#laundryTitle {
+float:left;
+width:100px;
+margin:5px 0 0 105px;
+}
+
+#laundryTitle p {
+}
+
+#bigMoney {
+float:left;
+font-size:50px;
+color:#eeb111;
+font-family: impact,Times, serief;
+margin-top:-10px;
+}
+
+#laundryText {
+float:right;
+width:225px;
+font-size:11px;
+margin-top:25px
+}
+
+.laundryPairs a {
+background: url('/images/content/laundry/arrrow-to-the-right-black.png') no-repeat scroll right center transparent;
+color: #3d3d3d;
+float: right;
+font-size: 12px;
+margin: 10px 0 30px 140px;
+padding: 0 16px 0 0;
+width: 60px;
+}
+
+.laundryPairs a:hover {
+	background: url('/images/content/laundry/arrrow-to-the-right.png') no-repeat scroll right center transparent;
+	color: #EEB111;
+}
+
+.headingOverlayDishwasher {
+text-align:left;
+background: url(/images/content/kitchen/dishwasher/heading-overlay-dishwasher.png) repeat;
+padding: 25px;
+width: 310px;
+font-size: 13px;
+}
+#page.product_detail_page.caspers .main-column{float:left;width:740px}
+#page.product_detail_page.caspers .product-display{float:left;width:100%;margin:0 0 15px 0}
+#page.product_detail_page.caspers .product-display .product_img{float:left;width:390px;text-align:center}
+#page.product_detail_page.caspers .product-display .product-image-container{float:left;width:400px}
+#page.product_detail_page.caspers .product-display .product-image-container .product-image{text-align:center}
+#page.product_detail_page.caspers .product-display .product-image-container .product-image img{max-width:100%}
+#page.product_detail_page.caspers .product-display .product-image-container #product-carousel{width:100%}
+#page.product_detail_page.caspers .product-display .product-overview{float:left;font-size:120%;line-height:135%;padding:0 20px 0 10px;width:310px}
+#page.product_detail_page.caspers .product-display .product-overview .product-description{float:left;width:330px;margin:0 0 25px 0}
+#page.product_detail_page.caspers .product-display .product-overview h1{font-size:18px;color:#333;line-height:135%;font-weight:normal}
+#page.product_detail_page.caspers .product-display .product-overview p{font-size:11px}
+#page.product_detail_page.caspers .product-display .color.swatch{width:30px;height:30px}
+#page.product_detail_page.caspers .product-display .color.swatch.selected{border:1px solid #005abb}
+#page.product_detail_page.caspers .product-color-sku .product-color{font-size:10px}
+#page.product_detail_page.caspers .product-color-options .color-swatches{width:100%;float:left;margin:10px 0 2px 0}
+#page.product_detail_page.caspers .product-display .side-column{position:relative;width:200px;margin:0 0 0 20px}
+.carousel-controls{float:left;width:20px;height:70px;background:url(/images/global/scrollingArrows.png) no-repeat 0 0}
+.carousel-next.carousel-controls{background-position:-23px 30px}
+.carousel-next.carousel-controls.active{background-position:-23px -35px}
+#carousel-previous{background-position:0 25px}
+#carousel-next{background-position:-20px 25px}
+#carousel-next.carousel-controls.active{background-position:-20px -39px}
+#carousel-previous.carousel-controls.active{background-position:0 -39px}
+.carousel-previous.carousel-controls{background-position:3px 30px}
+.carousel-previous.carousel-controls.active{background-position:3px -35px}
+.carousel-visible-items{float:left;height:72px;width:340px;overflow:hidden;position:relative}
+.carousel-items{position:absolute;left:0}
+.carousel-items .carousel-item{padding:0;cursor:pointer;width:72px;height:72px;text-align:center;margin:0 auto;float:left}
+.module-item.carousel-item img{border:1px solid #fff}
+.module-item.carousel-item img:hover{border:1px solid #c00}
+.carousel-items .carousel-item img{font-size:50%;width:100%}
+#page.product_detail_page.caspers .side-column{position:relative;width:160px;margin:0 0 0 20px;float:left}
+#page.product_detail_page.caspers .inactive-product-details{width:100%}
+.inactive-product-text{font-size:110%;font-weight:bold}
+.inactive-product-links{float:left;margin:10px 0;padding:10px 0}
+#page.product_detail_page.caspers .inactive-product-links a{background:url(../images/grey-arrow-right.png) no-repeat 0 0;float:left;color:#333;font-size:11px;padding:3px 0 3px 20px}
+#page.product_detail_page.caspers .cta-options .submit-section{float:left;width:100%;margin:10px 0 30px 0}
+#page.product_detail_page.caspers #cta-content{float:left;border-left:1px solid #ddd;padding:0 0 0 10px}
+#page.product_detail_page.caspers #cta-content .shop_outlet,#page.product_detail_page #cta-content .where_to_buy{float:left;width:130px;height:33px;margin:0 0 5px 0;background:url(../images/medium-cta-btn.png) no-repeat top left;font-size:18px;padding:12px 0 0 40px}
+.module-container{display:none;position:absolute;top:0;left:0;width:100%;z-index:9999}
+.module-background{background:#fff;opacity:.6;filter:alpha(opacity=60);position:absolute;top:0;left:0;width:100%;z-index:4}
+#module-carousel{float:left;width:690px}
+.module-content{background:none repeat scroll 0 0 #fff;border:1px solid #bbb;box-shadow:0 0 15px #bbb;left:50%;margin:0 0 0 -350px;position:absolute;width:690px;padding:20px 15px;z-index:5;top:40px}
+#water-filters.module-container .module-content{width:640px}
+.module-close{cursor:pointer;float:right;height:10px;margin:-50px -15px 0 0;text-align:center;padding:10px 15px}
+.module-header{border-bottom:1px dotted #bbb;color:#666;font-size:12px;padding:20px 10px}
+.product-details-page .module-header{float:left;margin:0 0 10px;padding:10px 0;width:100%}
+.module-main-content{float:left;min-height:475px;max-height:535px;position:relative;text-align:center;width:100%;overflow:hidden}
+#water-filters.module-container .module-main-content{height:390px;min-height:0}
+.product-details-page.caspers .module-main-content{height:475px}
+.product-details-page.caspers .module-main-content #product img{width:100%}
+body.product_detail_page.caspers #page.SC_Kitchen.product_detail_page.product div.main_content_wrapper,body.product_detail_page.caspers #page.product_detail_page{width:940px}
+#page.product_detail_page.caspers .main_content_wrapper{width:940px;padding:30px 0 0 0;border-top:3px solid #ccc}
+#page.product_detail_page.caspers .main_content_wrapper #product_tabs ul#product_tabs_menu li{width:auto;padding:0 10px;height:40px}
+#page.product_detail_page.caspers .main_content_wrapper ul#product_tabs_menu li{background:#f0f0f0;border:1px solid #cdcdcd;margin:2px}
+#page.product_detail_page.caspers .main_content_wrapper ul#product_tabs_menu li a{font-size:13px;height:auto;line-height:100%;padding-top:9px!important}
+#page.product_detail_page.caspers .main_content_wrapper #product_tabs{float:left;width:740px}
+#page.product_detail_page.caspers .main_content_wrapper #product_tabs .product_tab_section{width:740px}
+#page.product_detail_page.caspers .main_content_wrapper #product_tabs .product_tab_section .product_tab_section_middle{background:#fff;border:1px solid #cdcdcd;width:703px}
+#page.product_detail_page.caspers .main_content_wrapper #product_tabs .product_tab_section .product_tab_section_top,#page.product_detail_page.caspers .main_content_wrapper #product_tabs .product_tab_section .product_tab_section_bottom{display:none}
+#page.product_detail_page.caspers #partsandaccessories #main_accessories,#page.product_detail_page.caspers #partsandaccessories #additional_accessories{width:450px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_image img{max-width:110px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_image{width:110px;height:50px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_code{width:80px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_name,#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_desc,#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions{margin-left:235px}
+#page.product_detail_page.caspers #partsandaccessories #replacement_parts{top:55px;right:15px}
+#page.product_detail_page.caspers #specifications .spec_section{width:380px}
+#page.product_detail_page.caspers #specifications .spec_section.callout{width:295px}
+#page.product_detail_page.caspers #specifications .spec_section h3{height:auto}
+#page.product_detail_page.caspers #specifications .spec_section .spec_contents .spec_contents_label{width:150px}
+#page.product_detail_page.caspers #specifications .spec_section .spec_contents .spec_contents_info{margin-left:150px}
+#page.product_detail_page.caspers #product_rating{display:none}
+#page.product_detail_page.caspers #BVRRSummaryContainer{margin-left:0;padding-top:12px}
+#page.product_detail_page.caspers .headerline{display:none}
+#page.product_detail_page.caspers #ins_text{margin:0 0 10px 0}
+#page.product_detail_page.caspers .search{margin:5px 0}
+#page.product_detail_page.caspers .search a#searchButtonId .ub-center{float:left;width:60px;height:33px;background:url("../images/small-cta-btn.png") no-repeat scroll left top transparent;font-size:16px;padding:4px 0 0 30px;color:#666;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:bold}
+#page.product_detail_page.caspers .search a#searchButtonId .ub-center:hover{color:#666}
+#page.product_detail_page.caspers .search #searchText{margin:5px 0 0 10px}
+#page.product_detail_page.caspers .page_number_part{float:left;width:100%;margin:0 0 15px 0}
+#page.product_detail_page.caspers .page_number_part>span{float:left;margin-right:15px;padding-right:15px;border-right:1px dotted #ccc}
+#page.product_detail_page.caspers .page_number_part span{color:#666}
+#page.product_detail_page.caspers .page_number_part ol{float:left;width:150px}
+#page.product_detail_page.caspers .page_number_part ol li{float:left;width:10px}
+#page.product_detail_page.caspers #show_result{margin-bottom:10px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions a.add_to_cart{float:left;height:15px;line-height:15px;margin-top:1px}
+#page.product_detail_page.caspers #cta-content .shop_outlet,#page.product_detail_page.caspers #cta-content .where_to_buy,#page.product_detail_page.caspers .inactive-product-text p,#page.product_detail_page.caspers .inactive-product-links a{color:#333}
+#page.product_detail_page.caspers #cta-content .shop_outlet:hover,#page.product_detail_page.caspers #cta-content .where_to_buy:hover{color:#666}
+#page.product_detail_page.caspers #right_point{margin-left:5px}
+#page.product_detail_page.caspers .inactive-product-text p,#page.product_detail_page.caspers .inactive-product-text p span a{font-weight:bold}
+#page.product_detail_page.caspers #manual_items .manual_item.top,#page.product_detail_page.caspers #manual_items .manual_item.bottom{width:330px!important}
+#page.product_detail_page.caspers #features #top_features .feature{width:193px}
+#page.product_detail_page.caspers #features #additional_features .feature:nth-child(2n),#page.product_detail_page.caspers #features #additional_features .feature:nth-child(2n+1),#page.product_detail_page.caspers #features #additional_features .feature{width:330px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions{padding-bottom:0;float:left}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions a.view_details{margin-bottom:5px}
+#page.product_detail_page.caspers ul#product_tabs_menu{height:auto!important;overflow:visible!important}
+#page.product_detail_page.caspers ul#product_tabs_menu li{margin:0 1px!important;position:relative;bottom:-7px;padding:0 14px!important}
+#page.product_detail_page.caspers ul#product_tabs_menu li a{display:block;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;height:48px;line-height:48px;text-align:center;text-decoration:none}
+#page.product_detail_page.caspers ul#product_tabs_menu li.selected,#page.product_detail_page.caspers ul#product_tabs_menu li:hover{background-color:#fff}
+#page.product_detail_page.caspers ul#product_tabs_menu li.selected{border-bottom:0;margin-bottom:0!important;top:1px;padding:5px 14px!important;z-index:999}
+#page.product_detail_page.caspers ul#product_tabs_menu #manualsandliterature_tab{margin-left:0!important}
+#page.product_detail_page.caspers #manualsandliterature_tab,#page.product_detail_page.caspers #partsandaccessories_tab,#page.product_detail_page.caspers #ratingsandreviews_tab{width:70px!important}
+#page.product_detail_page.caspers .inactive-product-links a:hover,#page.product_detail_page.caspers .inactive-product-text p span a:hover{text-decoration:underline!important}
+#page.product_detail_page.caspers #cta-content .where_to_buy{background:url('../images/whp-shop-outlet-with-hover.jpg') no-repeat;width:126px!important;height:32px!important;padding:0;margin:0;text-indent:100%;white-space:nowrap;overflow:hidden}
+#page.product_detail_page.caspers #cta-content .where_to_buy:hover{background-position:0 -32px}
+#page.product_detail_page.caspers #cta-content .shop_outlet{background:url('../images/whp-where-to-buy-with-hover.jpg') no-repeat;width:126px!important;height:32px!important;padding:0;margin:0 0 10px 0;text-indent:100%;white-space:nowrap;overflow:hidden}
+#page.product_detail_page.caspers #cta-content .shop_outlet:hover{background-position:0 -32px}
+.takeover-message-wrapper{position:fixed;top:0;bottom:0;width:100%;background:rgba(0,0,0,.85);z-index:10014}
+.takeover-message-content{position:fixed;top:25%;width:70%;left:15%;text-align:center}
+.takeover-message-content p{text-align:center;color:#fff;font-size:32px;line-height:150%;width:100%}
+.takeover-message-content img{margin:0 0 10px 0;text-align:center;width:30%}
+#page.product_detail_page.caspers .headerline{display:none}
+#page.product_detail_page.caspers #ins_text{margin:0 0 10px 0}
+#page.product_detail_page.caspers .search{margin:5px 0}
+#page.product_detail_page.caspers .search a#searchButtonId .ub-center{float:left;width:60px;height:33px;background:url("../../images/small-cta-btn.png") no-repeat scroll left top transparent;font-size:16px;padding:4px 0 0 30px;color:#666;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:bold}
+#page.product_detail_page.caspers .search a#searchButtonId .ub-center:hover{color:#666}
+#page.product_detail_page.caspers .search #searchText{margin:5px 0 0 10px}
+#page.product_detail_page.caspers .page_number_part{float:left;width:100%;margin:0 0 15px 0}
+#page.product_detail_page.caspers .page_number_part>span{float:left;margin-right:15px;padding-right:15px;border-right:1px dotted #ccc}
+#page.product_detail_page.caspers .page_number_part span{color:#666}
+#page.product_detail_page.caspers .page_number_part ol{float:left;width:150px}
+#page.product_detail_page.caspers .page_number_part ol li{float:left;width:10px}
+#page.product_detail_page.caspers #show_result{margin-bottom:10px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions a.add_to_cart{float:left;height:15px;line-height:15px;margin-top:1px}
+#page.product_detail_page.caspers #cta-content .shop_outlet,#page.product_detail_page.caspers #cta-content .where_to_buy,#page.product_detail_page.caspers .inactive-product-text p,#page.product_detail_page.caspers .inactive-product-links a{color:#333}
+#page.product_detail_page.caspers #cta-content .shop_outlet:hover,#page.product_detail_page.caspers #cta-content .where_to_buy:hover{color:#666}
+#page.product_detail_page.caspers #right_point{margin-left:5px}
+#page.product_detail_page.caspers .inactive-product-text p,#page.product_detail_page.caspers .inactive-product-text p span a{font-weight:bold;color:#505050}
+#page.product_detail_page.caspers #manual_items .manual_item.top,#page.product_detail_page.caspers #manual_items .manual_item.bottom{width:330px!important}
+#page.product_detail_page.caspers #features #top_features .feature{width:193px}
+#page.product_detail_page.caspers #features #additional_features .feature:nth-child(2n),#page.product_detail_page.caspers #features #additional_features .feature:nth-child(2n+1),#page.product_detail_page.caspers #features #additional_features .feature{width:330px}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions{padding:10px 20px;float:left}
+#page.product_detail_page.caspers #partsandaccessories .accessories_item .product_actions a.view_details{margin-bottom:5px}
+#page.product_detail_page.caspers ul#product_tabs_menu{height:auto!important;overflow:visible!important}
+#page.product_detail_page.caspers ul#product_tabs_menu li{margin:0 1px!important;position:relative;bottom:-7px;padding:0 14px!important}
+#page.product_detail_page.caspers ul#product_tabs_menu li a{display:block;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;height:48px;line-height:48px;text-align:center;text-decoration:none}
+#page.product_detail_page.caspers ul#product_tabs_menu li.selected,#page.product_detail_page.caspers ul#product_tabs_menu li:hover{background-color:#fff}
+#page.product_detail_page.caspers ul#product_tabs_menu li.selected{border-bottom:0;margin-bottom:0!important;top:1px;padding:5px 14px!important;z-index:999}
+#page.product_detail_page.caspers ul#product_tabs_menu #manualsandliterature_tab{margin-left:0!important}
+#page.product_detail_page.caspers #manualsandliterature_tab,#page.product_detail_page.caspers #partsandaccessories_tab,#page.product_detail_page.caspers #ratingsandreviews_tab{width:70px!important}
+#page.product_detail_page.caspers .inactive-product-links a:hover,#page.product_detail_page.caspers .inactive-product-text p span a:hover{text-decoration:underline!important}
+#page.product_detail_page.caspers #cta-content .where_to_buy{background:url('../../images/whp-where-to-buy-with-hover.jpg') no-repeat;width:126px!important;height:32px!important;padding:0;margin:0;text-indent:100%;white-space:nowrap;overflow:hidden}
+#page.product_detail_page.caspers #cta-content .where_to_buy:hover{background-position:0 -32px}
+#page.product_detail_page.caspers #cta-content .shop_outlet{background:url('../../images/whp-shop-outlet-with-hover.jpg') no-repeat;width:126px!important;height:32px!important;padding:0;margin:0 0 10px 0;text-indent:100%;white-space:nowrap;overflow:hidden}
+#page.product_detail_page.caspers #cta-content .shop_outlet:hover{background-position:0 -32px}
+#page.product_detail_page.caspers #partsandaccessories #replacement_parts{width:205px}
+#page.product_detail_page.caspers #partsandaccessories #replacement_parts .accessories_item{width:165px}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+html[lang="fr"] #page.product_detail_page.caspers #ratingsandreviews_tab{width: 90px !important;}
+html[lang="fr"] #page.product_detail_page.caspers #manualsandliterature_tab{width: 88px !important;}
+a {
+  color: #333;
+}

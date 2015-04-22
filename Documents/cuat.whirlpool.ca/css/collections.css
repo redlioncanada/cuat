@@ -1,0 +1,234 @@
+
+.collections h1{
+	font-size: 32px !important;
+	color: #333 !important;
+}
+.collections h3{
+	font-size: 20px;
+	color: #333;
+	line-height: 1.1;
+	margin-bottom: 6px;
+}
+.collections p{
+	font-size: 14px;
+	color: #666666;
+}
+.collections .show{
+	display: block !important;
+}
+.collections .innerContent{
+	padding-top: 30px;
+}
+.collections .tabControl, .tabContent{
+	clear: both;
+	display: block;
+}
+.collections .colGallery .tabControl ul li{
+	float: left;
+	font-size: 14px;
+}
+.collections .colGallery .tabControl a{
+	background: none;
+	color: #979797;
+	padding: 6px 25px;
+	border-right: 1px solid #999;
+	line-height: 30px;
+}
+.collections .colGallery .tabControl a:hover,
+.collections .colGallery .tabControl li.active a{
+	background: url(/images/content/kitchen/all_collections/bg_collection_gallery_tab_on.gif) repeat-x bottom left;
+	color: #3b3b3b;
+}
+.collections .thumbMask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(/images/content/kitchen/all_collections/img_collection_thumb_on.png) top right;
+	width: 132px;
+	height: 97px;
+	display: none;
+	z-index: 1;
+}
+.collections .subtabControl{
+	float: right;
+	width: 150px;
+	padding-left: 5px;
+}
+.collections .subtabControl h4{
+	font-size: 14px;
+	color: #333;
+}
+.collections .subtabControl ul{
+	margin: 5px 5px 5px 0;
+}
+.collections .subtabControl ul li{
+	position: relative;
+	width: 136px;
+	height: 101px;
+	margin: 10px 0;
+}
+.collections .subtabControl ul li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 2px solid #fff;
+}
+.collections .subtabControl ul li.active .thumbMask,
+.collections .subtabControl ul li a:hover .thumbMask{
+	display: inline-block;	
+	border: 2px solid #eeb111;
+}
+.collections .subtabContent{
+	float: left;
+	position: relative;
+	width: 770px;
+	height: 358px;
+	padding-right: 12px;
+	border-right: 1px solid #999;
+}
+.collections .subtabContent img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 770px;
+	margin-right: 9px;
+	border: 1px solid #ccc;
+	display: none;
+}
+.collections .tabInfo{
+	padding-top: 30px;
+	clear: both;
+}
+.collections .tabInfo .tabControl a{
+	float: left;
+	text-align: center;
+}
+.collections .tabInfo .tabControl span{
+	display: inline-block;
+	margin: 10px auto;
+	background: url(/images/content/kitchen/all_collections/btn_collection_subtab_arrow.png) 0 0 no-repeat;
+	padding-left: 30px;
+	font-size: 22px;
+	color: #333;
+}
+.collections .tabInfo .tabControl a:hover span,
+.collections .tabInfo .tabControl a.active span{
+	background-position: 0 -26px;
+
+}
+.collections .tabInfo .tabContent{
+	padding: 30px 0; 
+	border-top: 1px solid #ccc;
+}
+.collections .tabInfo .tabContent li{
+	padding: 15px 0;
+	display: block;
+}
+.collections .coldivider{
+	font-size: 1px;
+	line-height: 1px;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 30px;
+	clear: both;
+}
+.collections .colProThumb{
+	width: 240px;
+	display: table-cell;
+	vertical-align: top;
+}
+.collections .colProDetails{
+	display: table-cell;
+	width: 630px;
+	padding-right: 20px;
+	padding-left: 20px;
+	vertical-align: top;
+}
+.collections .colProDetails p{
+	margin: 10px 0 ;
+}
+.collections .colModule{
+	color: #999;
+	font-style: italic;
+}
+.collections .colcta a{
+	color: #f0b200;
+	font-size: 16px;
+	padding: 6px 10px 6px 5px;
+	margin: 20px 5px 20px 0;
+}
+.collections .commingup{
+	color: #f0b200;
+	font-size: 16px;
+	padding: 6px 10px 6px 0;
+	margin: 20px 5px 20px 0;
+}
+.collections .colcta a:hover{
+	color: #999;
+}
+.collections .subcontainer,
+.collections .infocontainer,
+.collections .infotabcontainer{
+	display: none;
+}
+
+#blackIceInfo .freestand{
+	background: url(/images/content/kitchen/all_collections/btnbg_black_ice_freestand_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 488px;
+	display: inline-block;
+}
+#blackIceInfo .freestand:hover,
+#blackIceInfo .freestand.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_black_ice_freestand_on.jpg) bottom left no-repeat;
+}
+#blackIceInfo .builtin{
+	background: url(/images/content/kitchen/all_collections/btnbg_black_ice_builtin_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 449px;
+	display: inline-block;
+}
+#blackIceInfo .builtin:hover,
+#blackIceInfo .builtin.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_black_ice_builtin_on.jpg) bottom left no-repeat;
+}
+#whiteIceInfo .freestand{
+	background: url(/images/content/kitchen/all_collections/btnbg_white_ice_freestand_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 488px;
+	display: inline-block;
+}
+#whiteIceInfo .freestand:hover,
+#whiteIceInfo .freestand.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_white_ice_freestand_on.jpg) bottom left no-repeat;
+}
+#whiteIceInfo .builtin{
+	background: url(/images/content/kitchen/all_collections/btnbg_white_ice_builtin_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 449px;
+	display: inline-block;
+}
+#whiteIceInfo .builtin:hover,
+#whiteIceInfo .builtin.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_white_ice_builtin_on.jpg) bottom left no-repeat;
+}
+#stainlessInfo .freestand{
+	background: url(/images/content/kitchen/all_collections/btnbg_stainless_freestand_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 488px;
+	display: inline-block;
+}
+#stainlessInfo .freestand:hover,
+#stainlessInfo .freestand.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_stainless_freestand_on.jpg) bottom left no-repeat;
+}
+#stainlessInfo .builtin{
+	background: url(/images/content/kitchen/all_collections/btnbg_stainless_builtin_off.jpg) bottom left no-repeat;
+	height: 270px;
+	width: 449px;
+	display: inline-block;
+}
+#stainlessInfo .builtin:hover,
+#stainlessInfo .builtin.active{
+	background: url(/images/content/kitchen/all_collections/btnbg_stainless_builtin_on.jpg) bottom left no-repeat;
+}

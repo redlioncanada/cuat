@@ -1,0 +1,2109 @@
+/*tabs*/
+
+#page.product_detail_page ul#product_tabs_menu {
+	width: 940px;
+	height: 48px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	clear: both;
+	/* background: transparent url(../images/bg_tabbed_section_top_derivative.png) no-repeat 0 0; */ 
+}
+
+#page.product_detail_page.derivative ul#product_tabs_menu {
+	background: transparent url(../images/bg_tabbed_section_top_derivative.png) no-repeat 0 bottom;
+}
+
+#page.product_detail_page ul#product_tabs_menu li {
+	width: 150px;
+	height: 48px;
+	line-height: 48px;
+	display: block;
+	float: left;
+	background: transparent url(../images/bg_tabbed_section_tabs.png) no-repeat 0 0;
+}
+
+#page.product_detail_page ul#product_tabs_menu li a, #page.product_detail_page ul#product_tabs_menu li a:hover {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #09f;
+	font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; 
+	font-weight:500;
+}
+
+#page.product_detail_page ul#product_tabs_menu li.selected a, #page.product_detail_page ul#product_tabs_menu li.selected a:hover {
+	color: #505050;
+}
+
+#page.product_detail_page ul#product_tabs_menu li.selected {
+	background: transparent url(../images/bg_tabbed_section_tabs.png) no-repeat 0 -48px;	
+}
+
+#page.product_detail_page .product_tab_section {
+	clear: both;
+	position: relative;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#overview_tab {
+	width: 119px;background-position: 0 0;
+}
+#page.product_detail_page ul#product_tabs_menu li#overview_tab.selected {
+	width: 119px;background-position: 0 -48px;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#features_tab {
+	width: 108px;background-position: -119px 0;
+}
+#page.product_detail_page ul#product_tabs_menu li#features_tab.selected {
+	background-position: -119px -48px;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#specifications_tab {
+	width: 148px;background-position: -227px 0;
+}
+#page.product_detail_page ul#product_tabs_menu li#specifications_tab.selected {
+	background-position: -227px  -48px;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#ratingsandreviews_tab {
+	width: 178px;background-position: -375px 0;
+}
+
+#page.product_detail_page.derivative ul#product_tabs_menu li#ratingsandreviews_tab {
+	display: none;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#ratingsandreviews_tab.selected {
+	background-position: -375px  -48px;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#manualsandliterature_tab {
+	width: 188px;background-position: -553px 0;
+}
+#page.product_detail_page ul#product_tabs_menu li#manualsandliterature_tab.selected {
+	background-position: -553px  -48px;
+}
+
+#page.product_detail_page ul#product_tabs_menu li#partsandaccessories_tab {
+	width: 199px;background-position: -741px 0;
+}
+#page.product_detail_page ul#product_tabs_menu li#partsandaccessories_tab.selected {
+	background-position: -741px  -48px;
+}
+
+#page.product_detail_page.accessory ul#product_tabs_menu {
+	display: none;
+} 
+
+#page.product_detail_page.accessory .product_tab_section {
+	display: none;
+} 
+
+#page.product_detail_page.accessory #overview.product_tab_section {
+	display: block;
+}
+
+
+#page.product_detail_page #product_tabs .product_tab_section {
+	display: none;
+	font-size: 11px;
+}
+
+#page.product_detail_page #product_tabs .product_tab_section.selected {
+	display: block;
+}
+
+
+#page.product_detail_page .product_tab_section_top {
+	width: 940px;
+	height: 1px;
+	background: transparent url(../images/bg_tabbed_section_middle.png) repeat-y 0 0;
+}
+
+#page.product_detail_page.accessory .product_tab_section_top {
+	width: 940px;
+	height: 1px;
+	margin-top: 20px;
+	background: #ddd;
+}
+
+#page.filters_acc .product_tab_section_top {
+	width: 940px;
+	height: 1px;
+	background: transparent url(../images/bg_tabbed_section_middle.png) repeat-y 0 0;
+	border-top:solid 1px #cccccc;
+}
+
+#page.product_detail_page .product_tab_section_middle {
+	width: 900px;
+	padding: 50px 20px 30px 20px;
+	background: transparent url(../images/bg_tabbed_section_middle.png) repeat-y 0 0;
+}
+
+#page.product_detail_page .product_tab_section_bottom {
+	width: 940px;
+	height: 1px;
+	background: #ddd;
+}
+
+#page.product_detail_page #overview .column_wrap {
+	overflow: hidden;
+}
+
+#page.product_detail_page.accessory #overview, #page.product_detail_page.accessory #overview {
+	font-size: 11px;
+}
+
+#page.product_detail_page #overview .column {
+	float: left;
+	padding: 0 20px 2000px 0;
+	margin:  0 20px -2000px 0;
+	border-right: 1px solid #ddd;
+	font-size: 11px;
+}
+
+
+#page.product_detail_page #overview #overview_column_1 {
+	width:336px;
+}
+
+#page.product_detail_page #overview #overview_column_2 {
+	width:275px; 
+}
+
+#page.product_detail_page #overview #overview_column_2 p.see_more {
+	padding: 10px 0 0 0;
+	margin: 0px 0 0 0;
+	border-top: 1px dotted #ddd;
+	clear:both;
+}
+
+#page.product_detail_page #overview #overview_column_2 p {
+	margin-bottom: 20px;
+	font-size: 11px;
+	margin-top:0px;
+}
+
+
+
+#page.product_detail_page #overview #overview_column_2 .product_rating{
+	padding-top:20px; 
+	margin-top:10px;
+	border-top: 1px dotted #ddd;
+	padding-bottom:5px;
+	width:275px;
+}
+
+
+#page.product_detail_page #overview #overview_column_2 .product_rating.first{
+	border-top: none;
+	padding-top:10px;
+}
+
+
+#page.product_detail_page #overview #overview_column_2 span.review-title {
+	font-family:Georgia,inherit;
+	font-style:italic;
+	padding-right:4px;
+	font-size:18px; 
+	font-weight:normal;
+	color:#999999;
+}
+
+#page.product_detail_page #overview #overview_column_2 span.dates {
+	text-transform:uppercase;
+}
+
+#page.filters_acc #overview #overview_column_2 {
+	width:204px; 
+}
+
+
+
+#page.product_detail_page.derivative #overview #overview_column_1 {
+	width:275px;
+}
+
+#page.product_detail_page.derivative #overview #overview_column_2 {
+	width:340px;
+}
+
+#page.product_detail_page.derivative #overview #overview_column_3 {
+	width:200px;
+}
+
+
+
+.accessory #page.product_detail_page #overview #overview_column_1 {
+	float: none;
+}
+
+.accessory #page.product_detail_page #overview #overview_column_2 {
+	display: none;
+}
+
+.accessory #page.filters_acc #overview #overview_column_2 {
+	width:204px; 
+}
+
+
+
+
+#page.product_detail_page #overview #overview_column_3 {
+	width:200px;
+	padding: 0 0 0 0;
+	margin:  0 0 0 0;
+	border: none;
+}
+
+#page.product_detail_page #overview .product_tab_section_middle h2 {
+	display:block;
+	color:#62AC39;
+	font-family:Georgia,inherit;
+	font-style:italic;
+	font-size:18px; 
+	font-weight:bold;
+}
+
+#page.product_detail_page.laundry #overview h2,
+#page.product_detail_page.SC_Laundry #overview h2 {
+	color: #62ac39;
+}
+#page.product_detail_page.kitchen #overview h2,
+#page.product_detail_page.SC_Kitchen #overview h2 {
+	color: #b22c41;
+}
+#page.product_detail_page.wholehome #overview h2,
+#page.product_detail_page.SC_Whole_Home #overview h2 {
+	color: #62086f;
+}
+#page.product_detail_page.accessories #overview h2,
+#page.product_detail_page.SC_Accessories #overview h2 {
+	color: #11a9cc;
+}
+
+
+
+#page.filters_acc #overview .product_tab_section_middle h2 {
+	color:#11a9cc;
+}
+
+#page.product_detail_page #overview .product_tab_section_middle h3 {
+	font-family: Georgia,inherit;
+	background: transparent url("../images/bg_row_magenta.png");
+	padding-top: 0 6px 0 4px;
+	height: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #d20f9b;
+	font-style: italic;
+}
+
+#page.product_detail_page #overview .product_tab_section_middle h3 span {
+	background: #fff;
+	height: 15px;
+	line-height: 15px;
+	margin-left: 15px;
+	padding: 0 5px;
+	text-transform: lowercase;
+	color: #d20f9b;
+}
+
+#page.product_detail_page #overview p {
+	margin-bottom: 20px;
+	font-size: 11px;
+}
+
+#page.product_detail_page #overview .overview_feature {
+	clear: both;
+}
+
+#page.product_detail_page #overview .overview_feature {
+	background: transparent url(../images/icon_leaf_green_small.png) no-repeat 0 0;
+	background-image: url(../images/icon_leaf_green_small.png);
+}
+
+#page.product_detail_page.laundry #overview .overview_feature.leaf, 
+#page.product_detail_page.SC_Laundry #overview .overview_feature.leaf {
+	background-image: url(../images/icon_leaf_green_small.png);
+} 
+
+#page.product_detail_page.kitchen #overview .overview_feature.leaf, 
+#page.product_detail_page.SC_Kitchen #overview .overview_feature.leaf {
+	background-image: url(../images/icon_leaf_red_small.png);
+} 
+
+#page.product_detail_page.wholehome #overview .overview_feature.leaf, 
+#page.product_detail_page.SC_Whole_Home #overview .overview_feature.leaf {
+	background-image: url(../images/icon_leaf_purple_small.png);
+} 
+
+#page.product_detail_page.accessories #overview .overview_feature.leaf, 
+#page.product_detail_page.SC_Accessories #overview .overview_feature.leaf{
+	background-image: url(../images/icon_leaf_blue_small.png);
+}
+
+#page.product_detail_page #overview .overview_feature.shirt {
+	background: transparent url(../images/icon_shirt_green_small.png) no-repeat 0 0;
+}
+
+#page.product_detail_page.laundry #overview .overview_feature.shirt, 
+#page.product_detail_page.SC_Laundry #overview .overview_feature.shirt {
+	background-image: url(../images/icon_shirt_green_small.png);
+} 
+
+#page.product_detail_page.kitchen #overview .overview_feature.shirt, 
+#page.product_detail_page.SC_Kitchen #overview .overview_feature.shirt {
+	background-image: url(../images/icon_shirt_red_small.png);
+} 
+
+#page.product_detail_page.wholehome #overview .overview_feature.shirt, 
+#page.product_detail_page.SC_Whole_Home #overview .overview_feature.shirt {
+	background-image: url(../images/icon_shirt_purple_small.png);
+} 
+
+#page.product_detail_page.accessories #overview .overview_feature.shirt, 
+#page.product_detail_page.SC_Accessories #overview .overview_feature.shirt{
+	background-image: url(../images/icon_shirt_blue_small.png);
+}
+
+
+#page.product_detail_page #overview .overview_feature.clock {
+	background: transparent url(../images/icon_clock_green_small.png) no-repeat 0 0;
+}
+
+#page.product_detail_page.laundry #overview .overview_feature.clock, 
+#page.product_detail_page.SC_Laundry #overview .overview_feature.clock {
+	background-image: url(../images/icon_clock_green_small.png);
+} 
+
+#page.product_detail_page.kitchen #overview .overview_feature.clock, 
+#page.product_detail_page.SC_Kitchen #overview .overview_feature.clock {
+	background-image: url(../images/icon_clock_red_small.png);
+} 
+
+#page.product_detail_page.wholehome #overview .overview_feature.clock, 
+#page.product_detail_page.SC_Whole_Home #overview .overview_feature.clock {
+	background-image: url(../images/icon_clock_purple_small.png);
+} 
+
+#page.product_detail_page.accessories #overview .overview_feature.clock, 
+#page.product_detail_page.SC_Accessories #overview .overview_feature.clock{
+	background-image: url(../images/icon_clock_blue_small.png);
+}
+
+
+
+#page.product_detail_page #overview .overview_feature img {
+	float: left;
+	clear: both;
+	padding-left: 10px;
+}
+
+#page.product_detail_page #overview .overview_feature h4 {
+	padding: 0 0 0 87px;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom:  0;
+}
+
+#page.product_detail_page #overview .overview_feature p {
+	padding: 0 0 0 87px;
+	color: #9b9b9b;
+	font-size: 11px;
+	line-height: 1.8em;
+	margin-bottom: 20px;
+}
+
+#page.product_detail_page #overview p.see_more {
+	padding: 10px 0 0 0;
+	margin: 20px 0 0 0;
+	border-top: 1px dotted #ddd;
+}
+
+#page.product_detail_page #overview .e_spot {
+	padding: 20px 0 0 0;
+	margin: 20px 0 0 0;
+	border-top: 1px dotted #ddd;
+}
+
+#page.product_detail_page #overview p.see_more a {
+	background: transparent url("../images/img_arrow_left_blue_2.png") no-repeat 0 center;
+	padding-left: 9px;
+}
+
+#page.product_detail_page #overview .product_detail {
+	font-size: 11px;
+	line-height: 1.6em;
+	border-top: 1px dotted #dddddd;
+	margin-top: 15px;
+	padding-top: 15px;
+}
+
+#page.product_detail_page #overview .product_detail.first {
+	font-size: 11px;
+	line-height: 1.6em;
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#page.product_detail_page #overview .product_detail .detail_image_link img {
+	float:left; 
+	margin:5px 13px 3px 0;
+}
+
+#page.product_detail_page #overview .product_detail h3 {
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	font-family: inherit;
+	background: transparent url();
+	color: inherit;
+	font-style: normal;
+}
+
+#page.product_detail_page #overview .product_detail a {
+	color: #666;
+	font-weight: bold;
+}
+
+#page.product_detail_page #features #top_features {
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	font-size: 11px;
+}
+
+#page.product_detail_page.derivative #overview .related_product {
+	
+}
+
+#page.product_detail_page.derivative #overview .related_product .product_image img {
+	float: left;
+}
+#page.product_detail_page.derivative #overview .related_product .product_code,
+#page.product_detail_page.derivative #overview .related_product .product_price,
+#page.product_detail_page.derivative #overview .related_product .product_name {
+	margin-left: -100px;
+}
+
+#page.product_detail_page.derivative #overview .related_product .product_code {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#page.product_detail_page.derivative #overview .related_product .product_price {
+	font-size: 11px;
+	padding-bottom: 5px;
+}
+
+#page.product_detail_page.derivative #overview .related_product .product_name a {
+	font-size: 11px;
+	color: #62ac39;
+	font-weight: bold;
+}
+
+#page.product_detail_page.derivative.laundry #overview .related_product .product_name a,
+#page.product_detail_page.derivative.laundry #overview .related_product .product_name a {
+	color: #62ac39;
+}
+
+#page.product_detail_page.derivative.laundry #overview .related_product .product_name a, 
+#page.product_detail_page.derivative.SC_Laundry #overview .related_product .product_name a {
+	color: #62ac39;
+} 
+
+#page.product_detail_page.derivative.kitchen #overview .related_product .product_name a, 
+#page.product_detail_page.derivative.SC_Kitchen #overview .related_product .product_name a {
+	color: #b22c41;
+} 
+
+#page.product_detail_page.derivative.wholehome #overview .related_product .product_name a, 
+#page.product_detail_page.derivative.SC_Whole_Home #overview .related_product .product_name a {
+	color: #62086f;
+} 
+
+#page.product_detail_page.derivative.accessories #overview .related_product .product_name a, 
+#page.product_detail_page.derivative.SC_Accessories #overview .related_product .product_name a{
+	color: #11a9cc;
+}
+
+#page.product_detail_page #features #top_features .feature {
+	float: left;
+	width: 250px;
+	margin:0 0 -2000px 0;
+	padding: 0 30px 2000px 30px;
+	border-right: 1px solid #dddddd;
+	background: transparent url() no-repeat 50% 0;
+}
+
+#page.product_detail_page.laundry #features #top_features .feature.leaf, 
+#page.product_detail_page.SC_Laundry #features #top_features .feature.leaf {
+	padding-top: 135px;
+	background-image: url(../images/icon_leaf_green.png);
+} 
+
+#page.product_detail_page.kitchen #features #top_features .feature.leaf, 
+#page.product_detail_page.SC_Kitchen #features #top_features .feature.leaf {
+	padding-top: 135px;
+	background-image: url(../images/icon_leaf_red.png);
+} 
+
+#page.product_detail_page.wholehome #features #top_features .feature.leaf, 
+#page.product_detail_page.SC_Whole_Home #features #top_features .feature.leaf {
+	padding-top: 135px;
+	background-image: url(../images/icon_leaf_purple.png);
+} 
+
+#page.product_detail_page.accessories #features #top_features .feature.leaf, 
+#page.product_detail_page.SC_Accessories #features #top_features .feature.leaf{
+	padding-top: 135px;
+	background-image: url(../images/icon_leaf_blue.png);
+}
+
+#page.product_detail_page.laundry #features #top_features .feature.shirt, 
+#page.product_detail_page.SC_Laundry #features #top_features .feature.shirt {
+	padding-top: 135px;
+	background-image: url(../images/icon_shirt_green.png);
+} 
+
+#page.product_detail_page.kitchen #features #top_features .feature.shirt, 
+#page.product_detail_page.SC_Kitchen #features #top_features .feature.shirt {
+	padding-top: 135px;
+	background-image: url(../images/icon_shirt_red.png);
+} 
+
+#page.product_detail_page.wholehome #features #top_features .feature.shirt, 
+#page.product_detail_page.SC_Whole_Home #features #top_features .feature.shirt {
+	padding-top: 135px;
+	background-image: url(../images/icon_shirt_purple.png);
+} 
+
+#page.product_detail_page.accessories #features #top_features .feature.shirt, 
+#page.product_detail_page.SC_Accessories #features #top_features .feature.shirt{
+	padding-top: 135px;
+	background-image: url(../images/icon_shirt_blue.png);
+}
+
+#page.product_detail_page.laundry #features #top_features .feature.clock, 
+#page.product_detail_page.SC_Laundry #features #top_features .feature.clock {
+	padding-top: 135px;
+	background-image: url(../images/icon_clock_green.png);
+} 
+
+#page.product_detail_page.kitchen #features #top_features .feature.clock, 
+#page.product_detail_page.SC_Kitchen #features #top_features .feature.clock {
+	padding-top: 135px;
+	background-image: url(../images/icon_clock_red.png);
+} 
+
+#page.product_detail_page.wholehome #features #top_features .feature.clock, 
+#page.product_detail_page.SC_Whole_Home #features #top_features .feature.clock {
+	padding-top: 135px;
+	background-image: url(../images/icon_clock_purple.png);
+} 
+
+#page.product_detail_page.accessories #features #top_features .feature.clock, 
+#page.product_detail_page.SC_Accessories #features #top_features .feature.clock{
+	padding-top: 135px;
+	background-image: url(../images/icon_clock_blue.png);
+}
+
+#page.product_detail_page #features #top_features .feature.first {
+	padding-left: 0;
+}
+
+#page.product_detail_page #features #top_features .feature.last {
+	padding-right: 0;
+	border: none;
+}
+
+
+
+#page.product_detail_page #features #top_features .feature img {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+#page.product_detail_page #features #top_features .feature img {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+#page.product_detail_page #features #top_features .feature h4 {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#page.product_detail_page #features #top_features .feature h4 .header_topic {
+	display: block;
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+}
+
+#page.product_detail_page #features #top_features .feature h4 .header_desc {
+	color: #62ac39;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 18px;
+	text-align: left;
+	margin:0;
+	padding: 0;
+	line-height: 1.2em;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+
+#page.product_detail_page #features #top_features .feature p {
+	font-size: 11px;
+}
+
+#page.product_detail_page.laundry #features #top_features .feature h4 .header_desc,
+#page.product_detail_page.SC_Laundry #features #top_features .feature h4 .header_desc {
+	color: #62ac39;
+}
+#page.product_detail_page.kitchen #features #top_features .feature h4 .header_desc,
+#page.product_detail_page.SC_Kitchen #features #top_features .feature h4 .header_desc {
+	color: #b22c41;
+}
+#page.product_detail_page.wholehome #features #top_features .feature h4 .header_desc,
+#page.product_detail_page.SC_Whole_Home #features #top_features .feature h4 .header_desc {
+	color: #62086f;
+}
+#page.product_detail_page.accessories #features #top_features .feature h4 .header_desc,
+#page.product_detail_page.SC_Accessories #features #top_features .feature h4 .header_desc {
+	color: #11a9cc;
+}
+
+#page.product_detail_page #features #additional_features {
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+#page.product_detail_page #features #additional_features h3 {
+	color: #62ac39;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 18px;
+	text-align: left;
+	margin: 10px 0 30px 0;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+
+#page.product_detail_page.laundry #features #additional_features h3,
+#page.product_detail_page.SC_Laundry #features #additional_features h3 {
+	color: #62ac39;
+}
+#page.product_detail_page.kitchen #features #additional_features h3,
+#page.product_detail_page.SC_Kitchen #features #additional_features h3 {
+	color: #b22c41;
+}
+#page.product_detail_page.wholehome #features #additional_features h3,
+#page.product_detail_page.SC_Whole_Home #features #additional_features h3 {
+	color: #62086f;
+}
+#page.product_detail_page.accessories #features #additional_features h3,
+#page.product_detail_page.SC_Accessories #features #additional_features h3 {
+	color: #11a9cc;
+}
+
+#page.product_detail_page #features #additional_features .feature {
+	padding: 10px 0 0 0;
+	margin: 10px 40px 0 0;
+	border-top: 1px dotted #ddd;
+	width: 410px;
+	float: left;
+}
+
+#page.product_detail_page #features #additional_features .feature:nth-child(odd) {
+	width: 430px;
+	margin-right: 0;
+}
+
+
+#page.product_detail_page #features #additional_features .feature:nth-child(even) {
+	width: 430px;
+}
+
+
+#page.product_detail_page #features #additional_features .feature.first {
+	padding-top: 0;
+	margin-top: 0;
+	border-top: none;
+}
+
+#page.product_detail_page #features #additional_features .feature h4 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+}
+
+#page.product_detail_page #features #additional_features .feature p {
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0 0 8px 0;
+	line-height: 1.8em;
+}
+
+#page.product_detail_page #specifications .product_tab_section_middle {
+	min-height:210px;
+	height: auto;
+}
+
+#page.product_detail_page #specifications .spec_section {
+	padding: 15px 0;
+	border-top: 1px solid #ddd;
+	width: 580px;	
+}
+
+#page.product_detail_page #specifications .spec_section.last {
+	border-bottom: 1px solid #ddd;
+}
+
+#page.product_detail_page #specifications .spec_section h3 {
+	color: #666;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 18px;
+	height: 21px;
+	line-height: 21px;
+	margin: 0;
+	padding:0 0 0 30px; 
+	text-transform:none; 
+	background:transparent url(../images/icon_arrow_green_right.png) no-repeat 0 0;
+	cursor: pointer;
+}
+
+
+
+#page.product_detail_page.laundry #specifications .spec_section h3, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section h3 {
+	background-image: url(../images/icon_arr_green_right.png);
+} 
+
+#page.product_detail_page.kitchen #specifications .spec_section h3, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section h3 {
+	background-image: url(../images/icon_arr_red_right.png);
+} 
+
+#page.product_detail_page.wholehome #specifications .spec_section h3, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section h3 {
+	background-image: url(../images/icon_arr_purple_right.png);
+} 
+
+#page.product_detail_page.accessories #specifications .spec_section h3, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section h3{
+	background-image: url(../images/icon_arr_blue_right.png);
+}
+
+
+#page.product_detail_page #specifications .spec_section h3.selected {
+	background:transparent url(../images/icon_arrow_green_down.png) no-repeat 0 0;
+}
+
+#page.product_detail_page.laundry #specifications .spec_section h3.selected, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section h3.selected {
+	background-image: url(../images/icon_arr_green_down.png);
+} 
+
+#page.product_detail_page.kitchen #specifications .spec_section h3.selected, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section h3.selected {
+	background-image: url(../images/icon_arr_red_down.png);
+} 
+
+#page.product_detail_page.wholehome #specifications .spec_section h3.selected, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section h3.selected {
+	background-image: url(../images/icon_arr_purple_down.png);
+} 
+
+#page.product_detail_page.accessories #specifications .spec_section h3.selected, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section h3.selected{
+	background-image: url(../images/icon_arr_blue_down.png);
+}
+
+
+#page.product_detail_page #specifications .spec_section .spec_contents {
+	display: none;
+	margin: 20px 30px 0 30px;
+	font-size: 11px;
+}
+
+#page.product_detail_page #specifications .spec_section .spec_contents.selected {
+	display: block;
+}
+
+#page.product_detail_page #specifications .spec_section .spec_contents .spec_contents_label {
+	width: 135px;
+	font-weight: bold;	
+	padding: 0 0 0 0;
+	line-height: 1.8em;
+}
+
+#page.product_detail_page #specifications .spec_section .spec_contents .spec_contents_label:after { 
+	content: ":"; 
+} 
+
+
+#page.product_detail_page #specifications .spec_section .spec_contents .spec_contents_info {
+	line-height: 1.8em;
+	margin-top: -1.8em;
+	margin-left: 135px;
+}
+
+#page.product_detail_page #specifications .spec_section.callout {
+	display: block;
+	background: transparent url(../images/bg_tab_partsinfo.png) 0 0;
+	width: 295px;
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#page.product_detail_page.laundry #specifications .spec_section.callout, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout {
+	background-image: url(../images/bg_tab_partsinfo.png);
+} 
+#page.product_detail_page.kitchen #specifications .spec_section.callout, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout {
+	background-image: url(../images/bg_tab_partsinfo_red.png);
+} 
+#page.product_detail_page.wholehome #specifications .spec_section.callout, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout {
+	background-image: url(../images/bg_tab_partsinfo_purple.png);	
+} 
+#page.product_detail_page.accessories #specifications .spec_section.callout, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout {
+	background-image: url(../images/bg_tab_partsinfo_blue.png);
+}
+   
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents {
+	display: block;
+	width: 235px;
+	margin: 11px;
+	padding: 10px 20px;
+	background: #f8fbf6;
+}
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents h3 {
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px dotted #acd397;
+	font-family: Georgia,inherit;
+	font-size: 14px;
+	line-height: 24px;
+	font-style: italic;
+	background: transparent url();
+	color: #666;
+}
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents h3, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents h3 {
+	border-bottom-color: #62ac39;
+} 
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents h3, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents h3 {
+	border-bottom-color: #b22c41;
+} 
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents h3, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents h3 {
+	border-bottom-color: #62086f;
+} 
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents h3, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents h3 {
+	border-bottom-color: #11a9cc;
+}
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .depth,
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .height,
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .width {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 25px;
+	border-bottom: 1px dotted #acd397;
+	font-size: 11px;
+}
+
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .depth,
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .height,
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .width {
+	border-bottom-color: #62ac39;
+} 
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .depth,
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .height,
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .width {
+	border-bottom-color: #b22c41;
+} 
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .depth,
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .height,
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .width {
+	border-bottom-color: #62086f;
+} 
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .depth,
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .height,
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .width{
+	border-bottom-color: #11a9cc;
+}
+
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .depth {
+	background: transparent url("../images/img_dimensions_d.png") no-repeat 0 0;
+}
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .width {
+	background: transparent url("../images/img_dimensions_w.png") no-repeat 0 0;
+}
+#page.product_detail_page #specifications .spec_section.callout .spec_contents .height {
+	background: transparent url("../images/img_dimensions_h.png") no-repeat 0 0;
+}
+
+
+
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .depth {
+	background-image: url(../images/icon_dim_d_green.png);
+} 
+
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .depth {
+	background-image: url(../images/icon_dim_d_red.png);
+} 
+
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .depth {
+	background-image: url(../images/icon_dim_d_purple.png);
+} 
+
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .depth, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .depth{
+	background-image: url(../images/icon_dim_d_blue.png);
+}
+
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .width {
+	background-image: url(../images/icon_dim_w_green.png);
+} 
+
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .width {
+	background-image: url(../images/icon_dim_w_red.png);
+} 
+
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .width {
+	background-image: url(../images/icon_dim_w_purple.png);
+} 
+
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .width, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .width{
+	background-image: url(../images/icon_dim_w_blue.png);
+}
+
+#page.product_detail_page.laundry #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Laundry #specifications .spec_section.callout .spec_contents .height {
+	background-image: url(../images/icon_dim_h_green.png);
+} 
+
+#page.product_detail_page.kitchen #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Kitchen #specifications .spec_section.callout .spec_contents .height {
+	background-image: url(../images/icon_dim_h_red.png);
+} 
+
+#page.product_detail_page.wholehome #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Whole_Home #specifications .spec_section.callout .spec_contents .height {
+	background-image: url(../images/icon_dim_h_purple.png);
+} 
+
+#page.product_detail_page.accessories #specifications .spec_section.callout .spec_contents .height, 
+#page.product_detail_page.SC_Accessories #specifications .spec_section.callout .spec_contents .height{
+	background-image: url(../images/icon_dim_h_blue.png);
+}
+
+#page.product_detail_page #specifications .spec_section.callout .spec_contents p {
+	padding-top: 5px;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature #manual_items {
+	overflow: hidden;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item {
+	width: 430px;
+	float: left;
+	padding: 0 0 10px 0;
+	margin: 0 20px 20px 0;
+	color: #666;
+	font-size: 11px;
+	text-align: left;
+	line-height: 1.2em;
+	border-bottom: 1px dotted #acd397;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item p {
+	font-size: 11px;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item.bottom {
+	padding-bottom: 0;
+	border-bottom: none;
+
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item.addendum {
+	width: 100%;
+	float: none;
+	clear: both;
+	border-top: 1px dotted #acd397;
+	border-bottom: 0;
+	padding: 20px 0 0 0;
+	margin-top: 20px;
+	font-size: 11px;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item.addendum p {
+	padding: 0 0 5px 0;
+	margin: 0;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item.addendum img.adobe {
+	float: left;
+	padding: 2px 10px 5px 0;
+}
+
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item h3 {
+	color: #62ac39;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 8px 0;
+	line-height: 1.2em;
+}
+
+#page.product_detail_page.laundry #product_tabs #manualsandliterature .manual_item h3,
+#page.product_detail_page.SC_Laundry #product_tabs #manualsandliterature .manual_item h3 {
+	color: #62ac39;
+}
+#page.product_detail_page.kitchen #product_tabs #manualsandliterature .manual_item h3,
+#page.product_detail_page.SC_Kitchen #product_tabs #manualsandliterature .manual_item h3 {
+	color: #b22c41;
+}
+#page.product_detail_page.wholehome #product_tabs #manualsandliterature .manual_item h3,
+#page.product_detail_page.SC_Whole_Home #product_tabs #manualsandliterature .manual_item h3 {
+	color: #62086f;
+}
+#page.product_detail_page.accessories #product_tabs #manualsandliterature .manual_item h3,
+#page.product_detail_page.SC_Accessories #product_tabs #manualsandliterature .manual_item h3 {
+	color: #11a9cc;
+}
+
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item a.pdf_manual {
+	background: transparent url(../images/icon_download_arrow_pdf.png) no-repeat 0 0;
+	padding: 0 0 0 60px;
+	height: 18px;
+	display: inline-block;
+	width: auto;
+}
+#page.product_detail_page #product_tabs #manualsandliterature .manual_item a.pdf_manual:hover {
+	background: transparent url(../images/icon_download_arrow_pdf.png) no-repeat 0 -31px;
+}
+
+#page.product_detail_page #product_tabs #partsandaccessories h3 {
+	
+}
+
+#page.product_detail_page #product_tabs #partsandaccessories .accessories_item {
+	
+}
+
+#page.product_detail_page #partsandaccessories h3 {
+	color: #62ac39;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 30px 0;
+	font-weight: bold;
+	border-bottom: 1px dotted #acd397;
+	padding: 0 0 10px 0;
+	text-transform: none;
+}
+
+
+#page.product_detail_page.laundry #partsandaccessories h3,
+#page.product_detail_page.SC_Laundry #partsandaccessories h3 {
+	color: #62ac39;
+}
+#page.product_detail_page.kitchen #partsandaccessories h3,
+#page.product_detail_page.SC_Kitchen #partsandaccessories h3 {
+	color: #b22c41;
+}
+#page.product_detail_page.wholehome #partsandaccessories h3,
+#page.product_detail_page.SC_Whole_Home #partsandaccessories h3 {
+	color: #62086f;
+}
+#page.product_detail_page.accessories #partsandaccessories h3,
+#page.product_detail_page.SC_Accessories #partsandaccessories h3 {
+	color: #11a9cc;
+}
+
+
+#page.product_detail_page #partsandaccessories #main_accessories,
+#page.product_detail_page #partsandaccessories #additional_accessories {
+	width: 580px;
+}
+
+#page.product_detail_page #partsandaccessories #main_accessories {
+	padding-bottom: 60px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item {
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px dotted #ddd;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item.last {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border-bottom: none;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_image {
+	float: left;
+	width: 160px;
+	margin: 0 10px 0 0;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_image img {
+	margin: 0 auto;
+	display: block;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_name,
+#page.product_detail_page #partsandaccessories .accessories_item .product_desc,
+#page.product_detail_page #partsandaccessories .accessories_item .product_actions  {
+	margin-left: 305px;
+	border-left: 1px dotted #acd397;
+	padding-left: 20px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_actions .accessory_dropdown {
+	margin-top: 10px;
+	height: 23px;
+	width: 200px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_name {
+	color: #62ac39;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-weight: normal;
+	padding-bottom: 5px;	
+}
+#page.product_detail_page.laundry #partsandaccessories .accessories_item .product_name, 
+#page.product_detail_page.SC_Laundry #partsandaccessories .accessories_item .product_name {
+	color:#62ac39;	
+} 
+#page.product_detail_page.kitchen #partsandaccessories .accessories_item .product_name, 
+#page.product_detail_page.SC_Kitchen #partsandaccessories .accessories_item .product_name {
+	color:#b22c41;	
+} 
+#page.product_detail_page.wholehome #partsandaccessories .accessories_item .product_name, 
+#page.product_detail_page.SC_Whole_Home #partsandaccessories .accessories_item .product_name {
+	color:#62086f;	
+} 
+#page.product_detail_page.accessories #partsandaccessories .accessories_item .product_name, 
+#page.product_detail_page.SC_Accessories #partsandaccessories .accessories_item .product_name {
+	color:#11a9cc;
+}
+
+	
+#page.product_detail_page #partsandaccessories .accessories_item .product_desc {
+	padding-bottom: 15px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_actions {
+	padding-bottom: 15px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_code {
+	color: #999999;
+	font-weight: bold;
+	color: #666666;
+	text-transform: none;
+	font-size: 14px;
+	float: left;
+	width: 115px;
+	margin: 0 10px 0 10px;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_price {
+	font-size: 11px;
+	float: left;
+	width: 215px;
+	margin: -5px 10px 0 0;
+	font-weight:normal;
+	visibility: hidden;
+}
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_code .term {
+	display: block;
+	color: #999999;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+
+#page.product_detail_page #partsandaccessories .accessories_item .product_actions a.view_details {
+	display: inline-block;
+	color: #0099ff;
+	padding-left: 20px;
+	background: transparent url(../images/img_plus.png) no-repeat 0 0;
+	height: 20px;
+	line-height: 15px;
+	font-size: 11px;
+	font-weight: bold;
+}
+#page.product_detail_page #partsandaccessories .accessories_item .product_actions a.add_to_cart {
+	display: inline-block;
+	color: #0099ff;
+	padding-left: 20px;
+	background: transparent url(../images/img_cart_circle_15.png) no-repeat 0 0;
+	height: 20px;
+	line-height: 15px;
+	font-size: 11px;
+	font-weight: bold;
+	
+}
+
+
+
+
+
+#page.product_detail_page #partsandaccessories #replacement_parts {
+	display: block;
+	background: transparent url(../images/bg_tab_partsinfo.png) 0 0;
+	width: 275px;
+	position: absolute;
+	top: 68px;
+	right: 20px;
+	padding: 10px;
+	margin: 0;
+	border: none;
+}
+#page.product_detail_page.laundry #partsandaccessories #replacement_parts, 
+#page.product_detail_page.SC_Laundry #partsandaccessories #replacement_parts {
+	background-image: url(../images/bg_tab_partsinfo.png);
+} 
+#page.product_detail_page.kitchen #partsandaccessories #replacement_parts, 
+#page.product_detail_page.SC_Kitchen #partsandaccessories #replacement_parts {
+	background-image: url(../images/bg_tab_partsinfo_red.png);
+} 
+#page.product_detail_page.wholehome #partsandaccessories #replacement_parts, 
+#page.product_detail_page.SC_Whole_Home #partsandaccessories #replacement_parts {
+	background-image: url(../images/bg_tab_partsinfo_purple.png);	
+} 
+#page.product_detail_page.accessories #partsandaccessories #replacement_parts, 
+#page.product_detail_page.SC_Accessories #partsandaccessories #replacement_parts {
+	background-image: url(../images/bg_tab_partsinfo_blue.png);
+}
+
+
+
+#page.product_detail_page #partsandaccessories #replacement_parts .accessories_item {
+	background: #f8fbf6 url();
+	width: 235px;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+#page.product_detail_page #partsandaccessories #replacement_parts h3,
+#page.product_detail_page #partsandaccessories #replacement_parts p {
+	display: block;
+	margin: 0;
+	padding: 0 0 10px 0;
+	background: #f8fbf6 url();
+	font-size: 11px;
+}
+
+#page.product_detail_page #partsandaccessories #replacement_parts  h3 {
+	border-bottom: 1px dotted #acd397;
+	font-family: Georgia,inherit;
+	font-size: 14px;
+	line-height: 24px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+#page.product_detail_page.laundry #partsandaccessories #replacement_parts h3, 
+#page.product_detail_page.SC_Laundry #partsandaccessories #replacement_parts h3 {
+	border-bottom-color: #62ac39;
+} 
+#page.product_detail_page.kitchen #partsandaccessories #replacement_parts h3, 
+#page.product_detail_page.SC_Kitchen #partsandaccessories #replacement_parts h3 {
+	border-bottom-color: #b22c41;
+} 
+#page.product_detail_page.wholehome #partsandaccessories #replacement_parts h3, 
+#page.product_detail_page.SC_Whole_Home #partsandaccessories #replacement_parts h3 {
+	border-bottom-color: #62086f;
+} 
+#page.product_detail_page.accessories #partsandaccessories #replacement_parts h3, 
+#page.product_detail_page.SC_Accessories #partsandaccessories #replacement_parts h3 {
+	border-bottom-color: #11a9cc;
+}
+
+
+#page.product_detail_page.accessory .product_tab_section_middle {
+	overflow: hidden;
+}
+
+#page.product_detail_page.accessory .product_tab_section_middle .product_description {
+	float: left;
+	width: 450px;
+	padding: 0 60px 0 40px;
+}
+
+#page.product_detail_page.accessory .callout {
+	display: block;
+	background: transparent url(../images/bg_tab_partsinfo.png) 0 0;
+	width: 325px;
+	float: left;
+	top: 50px;
+	right: 20px;
+	padding: 8px;
+	margin: 0;
+	border: none;
+}
+
+#page.product_detail_page.laundry.accessory .callout, 
+#page.product_detail_page.SC_Laundry.accessory .callout {
+	background-image: url(../images/bg_tab_partsinfo.png);
+} 
+#page.product_detail_page.kitchen.accessory .callout, 
+#page.product_detail_page.SC_Kitchen.accessory .callout {
+	background-image: url(../images/bg_tab_partsinfo_red.png);
+} 
+#page.product_detail_page.wholehome.accessory .callout, 
+#page.product_detail_page.SC_Whole_Home.accessory .callout {
+	background-image: url(../images/bg_tab_partsinfo_purple.png);	
+} 
+#page.product_detail_page.accessories.accessory .callout, 
+#page.product_detail_page.SC_Accessories.accessory .callout {
+	background-image: url(../images/bg_tab_partsinfo_blue.png);
+}
+
+#page.product_detail_page.accessory .callout .item {
+	background: #f8fbf6 url();
+	width: 285px;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+#page.product_detail_page.accessory .callout h3,
+#page.product_detail_page.accessory .callout p {
+	display: block;
+	margin: 0;
+	padding: 0 0 10px 0;
+	background: #f8fbf6 url();
+	font-size: 11px;
+}
+
+#page.product_detail_page.accessory #overview .callout h3 {
+	border-bottom: 1px dotted #acd397;
+	font-family: Georgia,inherit;
+	font-size: 14px;
+	line-height: 24px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	background: transparent url();
+
+}
+
+
+
+
+/* ################################ updated carousel CSS ################################ */
+
+
+/*CAROUSEL TABS*/
+
+#product_carousel_tabs_1, #product_carousel_tabs_2 {
+	display:block;
+}
+
+
+#product_carousel_tabs_1 {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+#product_carousel_tabs_1 ul {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#product_carousel_tabs_1 li {
+	display:block;
+	float:left;
+	height:46px;
+	margin:0;
+	padding:0;
+	line-height:46px;
+	text-align:center;
+}
+
+#product_carousel_tabs_1 li#recommend_carousel_tab {
+	width: 180px;
+	background:transparent url();
+	margin:0 0 0 0;
+}
+
+.derivative #product_carousel_tabs_1 li#recommend_carousel_tab,
+.accessory #product_carousel_tabs_1 li#recommend_carousel_tab {
+	width:195px;
+	background:transparent url();
+	margin:0 0 0 0;
+}
+
+#product_carousel_tabs_1 li#search_carousel_tab {
+	width:195px;
+	background:transparent url();
+}
+
+#product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	width: 180px;
+	background:transparent url(../images/bg_carousel_others.png) no-repeat -565px -210px;
+}
+
+#page.product_detail_page.laundry #product_carousel_tabs_1 li#recommend_carousel_tab.selected, 
+#page.product_detail_page.SC_Laundry #product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_green.png);	
+} 
+#page.product_detail_page.kitchen #product_carousel_tabs_1 li#recommend_carousel_tab.selected, 
+#page.product_detail_page.SC_Kitchen #product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_red.png);	
+} 
+#page.product_detail_page.wholehome #product_carousel_tabs_1 li#recommend_carousel_tab.selected, 
+#page.product_detail_page.SC_Whole_Home #product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_purple.png);	
+} 
+#page.product_detail_page.accessories #product_carousel_tabs_1 li#recommend_carousel_tab.selected, 
+#page.product_detail_page.SC_Accessories #product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_blue.png);	
+}
+
+
+
+.derivative #product_carousel_tabs_1 li#recommend_carousel_tab.selected,
+.accessory #product_carousel_tabs_1 li#recommend_carousel_tab.selected {
+	width:195px;
+	background-position:-745px 0px;
+}
+
+#product_carousel_tabs_1 li#search_carousel_tab.selected {
+	width:195px;
+	background:transparent url(../images/bg_carousel_others.png) no-repeat -745px 0px;
+}
+
+#page.product_detail_page.laundry #product_carousel_tabs_1 li#search_carousel_tab.selected, 
+#page.product_detail_page.SC_Laundry #product_carousel_tabs_1 li#search_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_green.png);	
+} 
+#page.product_detail_page.kitchen #product_carousel_tabs_1 li#search_carousel_tab.selected, 
+#page.product_detail_page.SC_Kitchen #product_carousel_tabs_1 li#search_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_red.png);	
+} 
+#page.product_detail_page.wholehome #product_carousel_tabs_1 li#search_carousel_tab.selected, 
+#page.product_detail_page.SC_Whole_Home #product_carousel_tabs_1 li#search_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_purple.png);	
+} 
+#page.product_detail_page.accessories #product_carousel_tabs_1 li#search_carousel_tab.selected, 
+#page.product_detail_page.SC_Accessories #product_carousel_tabs_1 li#search_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_others_blue.png);	
+}
+
+
+#product_carousel_tabs_1 li#recommend_carousel_tab a, #product_carousel_tabs_1 li#search_carousel_tab a { 
+	color: #ff9900;
+	font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; 
+	font-weight:700;
+	font-size: 14px;
+	padding:0 0 0 15px;
+	background: transparent url(../images/img_arrow_down_orange_2.png) no-repeat 0 8px;
+	z-index: -1;
+	text-transform:lowercase;
+	height:46px;
+	line-height:46px;
+}
+
+#product_carousel_tabs_1 li#recommend_carousel_tab.selected a, #product_carousel_tabs_1 li#search_carousel_tab.selected a {
+	background-image:url(../images/img_arr_x.png);
+}	
+
+#product_carousel_tabs_2 {
+	/*position:absolute;
+	top:0;
+	left:0;*/
+	float:left;
+}
+
+#product_carousel_tabs_2 ul {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#product_carousel_tabs_2 li {
+	display:block;
+	float:left;
+	height:59px;
+	margin:0;
+	padding:0;
+	line-height:59px;
+	text-align:center;
+}
+
+#product_carousel_tabs_2 li#photos_carousel_tab {
+	width: 170px;
+	background:transparent url();
+	margin:0 0 0 0;
+}
+
+#product_carousel_tabs_2 li#photos_carousel_tab.selected {
+	background:transparent url(../images/bg_carousel_photos.png) no-repeat left bottom;
+}
+
+#page.product_detail_page.laundry #product_carousel_tabs_2 li#photos_carousel_tab.selected, 
+#page.product_detail_page.SC_Laundry #product_carousel_tabs_2 li#photos_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_photos_green.png);	
+} 
+#page.product_detail_page.kitchen #product_carousel_tabs_2 li#photos_carousel_tab.selected, 
+#page.product_detail_page.SC_Kitchen #product_carousel_tabs_2 li#photos_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_photos_red.png);	
+} 
+#page.product_detail_page.wholehome #product_carousel_tabs_2 li#photos_carousel_tab.selected, 
+#page.product_detail_page.SC_Whole_Home #product_carousel_tabs_2 li#photos_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_photos_purple.png);	
+} 
+#page.product_detail_page.accessories #product_carousel_tabs_2 li#photos_carousel_tab.selected, 
+#page.product_detail_page.SC_Accessories #product_carousel_tabs_2 li#photos_carousel_tab.selected {
+	background-image: url(../images/bg_carousel_photos_blue.png);	
+}
+
+
+
+
+#product_carousel_tabs_2 li#photos_carousel_tab a { 
+	color: #09f;
+	font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; 
+	font-weight:700;
+	font-size: 14px;
+	padding:0 0 0 15px;
+	background: transparent url(../images/img_arrow_up_blue.png) no-repeat 0 8px;
+	z-index: -1;
+	text-transform:lowercase;
+	height:59px;
+	line-height:59px;
+}
+
+
+
+#product_carousel_tabs_2 li#photos_carousel_tab.selected a {
+	background: transparent url(../images/btn_close_blue.png) no-repeat 0 6px;
+}	
+
+
+
+
+
+/*PRODUCT OPTIONS BAR*/
+
+.product_options_bar {
+	position:relative;
+	/*padding-left:170px;*/
+}
+
+#page.product_detail_page.accessory .product_options_bar .where_to_buy {
+	display: none;
+}
+
+#page.product_detail_page.accessory .product_options_bar .add_to_compare {
+	display: none;
+}
+
+#page.product_detail_page.accessory .product_options_bar #color_selector .name {
+	display: none;
+}
+
+#page.product_detail_page.accessory .product_options_bar #color_selector img.swatch {	
+	display: none;
+}
+
+#page.product_detail_page.accessory .product_options_bar #color_selector p {
+	padding-top: 7px;
+}
+
+/*#page.product_detail_page.accessory .product_options_bar #color_selector p {
+	text-align: right;
+	margin:0; 
+	padding:7px 10px 0 10px; 
+	font-weight:bold; 
+	font-size:11px; 
+	float: none;
+	border-right: 1px dotted #999;
+	vertical-align: middle;
+}
+
+#page.product_detail_page.accessory .product_options_bar .add_to_options {
+	width: auto;	
+}*/
+
+#page.filters_acc .product_options_bar {
+	position:relative;
+}
+
+#page.product_detail_page.accessory .product_options_bar .add_to_list {
+	display: block;	
+}
+
+
+
+/*Outer Carousel Containers - diagonal background*/
+
+#product_carousels_1, #product_carousels_2 {
+	display:block;	
+	position:relative;
+}
+
+.product_carousels.loading {
+	position:absolute !important;
+	left:-9999em !important;
+	top:-9999em !important;
+	height:0 !important;
+}
+
+#product_carousels_1 {
+	width:900px;
+	height:122px;
+	padding:20px 20px 21px 20px;
+	background: transparent url(../images/bg_carousel_others.png) no-repeat 0 -46px;
+}
+
+
+#page.product_detail_page.laundry #product_carousels_1, 
+#page.product_detail_page.SC_Laundry #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_green.png);	
+} 
+#page.product_detail_page.kitchen #product_carousels_1, 
+#page.product_detail_page.SC_Kitchen #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_red.png);	
+} 
+#page.product_detail_page.wholehome #product_carousels_1, 
+#page.product_detail_page.SC_Whole_Home #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_purple.png);	
+} 
+#page.product_detail_page.accessories #product_carousels_1, 
+#page.product_detail_page.SC_Accessories #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_blue.png);	
+}
+
+#page.product_detail_page.accessory #product_carousels_1 {
+	width: 420px;
+	margin-left: 480px;
+	background: transparent url(../images/bg_carousel_others_accessory.png) no-repeat 0 -46px;
+	padding-bottom: 22px;
+	z-index: 999;
+	top: -1px;
+}
+
+#page.product_detail_page.laundry.accessory #product_carousels_1, 
+#page.product_detail_page.SC_Laundry.accessory #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_accessory_green.png);	
+} 
+#page.product_detail_page.kitchen.accessory #product_carousels_1, 
+#page.product_detail_page.SC_Kitchen.accessory #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_accessory_red.png);	
+} 
+#page.product_detail_page.wholehome.accessory #product_carousels_1, 
+#page.product_detail_page.SC_Whole_Home.accessory #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_accessory_purple.png);	
+} 
+#page.product_detail_page.accessories.accessory #product_carousels_1, 
+#page.product_detail_page.SC_Accessories.accessory #product_carousels_1 {
+	background-image: url(../images/bg_carousel_others_accessory_blue.png);	
+}
+
+
+
+
+#product_carousels_1.recommend {
+	background-position: 0 -256px;
+}
+
+.derivative #product_carousels_1.recommend,
+.accessory #product_carousels_1.recommend {
+	background-position: 0 -46px;
+}
+
+#product_carousels_2 {
+	width:920px;
+	height:101px;
+	padding:10px 10px 10px 10px;
+	background: transparent url(../images/bg_carousel_photos.png) no-repeat 0 0;
+}
+
+#page.product_detail_page.laundry #product_carousels_2, 
+#page.product_detail_page.SC_Laundry #product_carousels_2 {
+	background-image: url(../images/bg_carousel_photos_green.png);	
+} 
+#page.product_detail_page.kitchen #product_carousels_2, 
+#page.product_detail_page.SC_Kitchen #product_carousels_2 {
+	background-image: url(../images/bg_carousel_photos_red.png);	
+} 
+#page.product_detail_page.wholehome #product_carousels_2, 
+#page.product_detail_page.SC_Whole_Home #product_carousels_2 {
+	background-image: url(../images/bg_carousel_photos_purple.png);	
+} 
+#page.product_detail_page.accessories #product_carousels_2, 
+#page.product_detail_page.SC_Accessories #product_carousels_2 {
+	background-image: url(../images/bg_carousel_photos_blue.png);	
+}
+
+
+
+
+/*Inner carousels container - white with gray border*/
+
+
+#product_carousels_1 .carousel {
+	display:block;
+	background:#fff url(../images/bg_carousel_no_vertical.png) repeat-x 0 0;	
+	border:1px solid #ddd;
+	width:858px;
+	height:120px;
+	padding:0 20px;
+	position:relative;
+}
+
+#page.product_detail_page.accessory #product_carousels_1 .carousel {
+	width:378px;
+}
+
+
+.accessory #product_carousels_1 .carousel {
+	display:block;
+	background:#fff url(../images/bg_carousel_no_vertical.png) repeat-x 0 0;	
+	border:1px solid #ddd;
+	width:858px;
+	height:120px;
+	padding:0 20px;
+	position:relative;
+}
+
+#photo_carousel {
+	width:860px;
+}
+
+/*carousel headers*/
+
+#recommend_carousels #recommend_carousel_1_header, #recommend_carousels #recommend_carousel_2_header {
+	display:block;
+	float:left;
+	width:90px;
+	padding: 0;
+	margin:0;
+	height:120px;
+	position:relative;
+}
+
+#recommend_carousels #recommend_carousel_2_header {
+	margin-left:20px;
+}
+
+#recommend_carousels #recommend_carousel_1_header h3, #recommend_carousels #recommend_carousel_2_header h3 {
+	position:absolute;
+	bottom:40px;
+	right:20px;
+	text-align:right;
+	display: block;
+	color: #62ac39;
+	font-family: Georgia,inherit;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform:lowercase;
+}
+
+
+#page.product_detail_page.laundry #recommend_carousels h3, 
+#page.product_detail_page.SC_Laundry #recommend_carousels h3 {
+	color:#62ac39;
+} 
+
+#page.product_detail_page.kitchen #recommend_carousels h3, 
+#page.product_detail_page.SC_Kitchen #recommend_carousels h3 {
+	color:#b22c41;
+} 
+
+#page.product_detail_page.wholehome #recommend_carousels h3, 
+#page.product_detail_page.SC_Whole_Home #recommend_carousels h3 {
+	color:#62086f;
+} 
+
+#page.product_detail_page.accessories #recommend_carousels h3, 
+#page.product_detail_page.SC_Accessories #recommend_carousels h3{
+	color:#11a9cc;
+}
+
+#search_carousels #search_carousel_header {
+	display:block;
+	float:left;
+	width:160px;
+	padding: 0;
+	margin:0 0 0 -20px;
+	height:120px;
+	position:relative;
+	text-align:left;	
+}
+
+#search_carousels #search_carousel_header a {
+	position:absolute;
+	bottom:30px;
+	left:20px;
+	padding:0 0 0 10px; 
+	background:#fff url(../images/img_arrow_right_blue_2.png) no-repeat 0 5px;
+	font-size:11px;
+}
+
+
+/*carousel prev and next buttons */
+
+.carousel a.prev, .carousel a.next {
+	display:block;
+	width:15px;
+	height:120px;
+	background: transparent url() no-repeat 0 42px;
+	padding:0;
+	text-indent:-999em;
+	cursor:pointer;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:10;
+}
+
+.carousel a.prev {
+	background-image: url(../images/img_arrow_circle_blue_left.png);
+	padding:0 10px 0 0;
+	left:0;
+}
+
+.carousel a.next {
+	background-image: url(../images/img_arrow_circle_blue.png);
+	padding:0 0 0 10px;
+	right:0;
+}
+
+.carousel a.prev.disabled, .carousel a.next.disabled {
+	visibility:hidden;
+}
+
+#photo_carousel a.prev {
+	background-image: url(../images/img_arrow_circle_blue_left.png);
+	padding:0;
+}
+
+#photo_carousel a.next {
+	background-image: url(../images/img_arrow_circle_blue.png);
+	padding:0;
+}
+
+/*carousel lists*/
+
+
+#recommend_carousel_1, #recommend_carousel_2, #search_carousel {
+	padding:0 25px;
+	position:relative;
+	float:left;
+	width:auto;
+}
+
+#photo_carousel {
+	padding:0 25px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+#recommend_carousel_1 {
+	width:auto;
+	height:auto;
+	position:relative;
+}
+
+
+#recommend_carousel_items_1 {
+	width:auto;	
+	position:absolute;
+	top:0;
+	left:16px;
+}
+
+#recommend_carousel_group_1, #recommend_carousel_group_2, #search_carousel_group, #photo_carousel_group {
+	overflow: hidden;
+	display:block;
+	position: relative;
+	width:auto;
+	height:120px;
+	
+}
+
+
+.carousel ul {
+	margin:0; 
+	padding:0 10px;
+	overflow:hidden;
+	
+}
+
+#recommend_carousel_group_1 li, #recommend_carousel_group_2 li, #search_carousel_group li {
+	width:100px !important;
+	height:100px !important;
+	background:transparent url(../images/bg_carousel_img_divider.png) no-repeat 0 23px; 
+	padding:0 5px; 
+	margin:0;
+}
+	
+.carousel li img {
+	width:100px;
+	height:100px;
+	background:transparent;
+	padding:10px 0;
+}
+
+#photo_carousel_group li {
+	display:block;
+	list-style:none;
+	width:128px;
+	height:98px;
+	background:transparent url(../images/bg_gal_img_off.png) no-repeat 0 0; 
+	padding:4px 0; 
+	margin:0 4px 0 5px;
+}
+
+#photo_carousel_group li.selected, #photo_carousel_group li:hover {
+	background-image: url(../images/bg_gal_image_on.png);
+}
+
+#photo_carousel_group li img {
+	display:block;
+	background:transparent;
+	width:108px;
+	height:89px;
+	padding:0;
+	margin:0 auto;
+}
+
+#page.product_detail_page h2 span.product_name {
+	padding-bottom: 7px;
+}
+
+#page.product_detail_page.accessory h2 span.product_name {
+	padding-right: 15px;
+	margin-right: 10px;
+	border-right: 1px dotted #666;
+}
+
+#page.product_detail_page.laundry h2 span.product_name,
+#page.product_detail_page.SC_Laundry h2 span.product_name  {
+	border-right-color:#62ac39;
+	color:#62ac39;
+}
+
+#page.product_detail_page.kitchen h2 span.product_name,
+#page.product_detail_page.SC_Kitchen h2 span.product_name {
+	border-right-color:#b22c41;
+	color:#b22c41;
+}
+
+#page.product_detail_page.wholehome h2 span.product_name,
+#page.product_detail_page.SC_Whole_Home h2 span.product_name {
+	border-right-color:#62086f;
+	color:#62086f;
+}
+
+#page.product_detail_page.accessories h2 span.product_name,
+#page.product_detail_page.SC_Accessories h2 span.product_name {
+	border-right-color:#11a9cc;
+	color:#11a9cc;
+}
+
+
+#page.product_detail_page.accessory h2 span.part_number {
+	font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;
+	font-weight: bold;
+	color: #666;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+
+#page.product_detail_page #product_header {
+	overflow: hidden;
+	margin: 0 0 -10px 0;
+}
+
+/* Fix product_detail_page */
+body.product_detail_page #page.product_detail_page #specifications div.spec_section div.spec_contents_line{overflow:hidden;}
+body.product_detail_page #page.product_detail_page #specifications div.spec_section div.spec_contents .spec_contents_label{float:left;width:200px;font-weight:bold;}
+body.product_detail_page #page.product_detail_page #specifications div.spec_section div.spec_contents .spec_contents_info{float:left;color:#A2A2A2;}
+body.product_detail_page #page.product_detail_page #specifications div.spec_section div.spec_contents .spec_contents_info{margin-left:0px;margin-top:0px;}
+/* End Fix product_detail_page */
+
+/* resize images */
+body.product_detail_page #page.product_detail_page .product_carousels ul.carousel_group li.carousel_item img,
+body.product_detail_page #page.product_detail_page .carousel ul.carousel_group li.carousel_item img{max-width:120px;max-height:90px;width:auto;height:auto;}
+#page.product_detail_page #overview .overview_feature img{width:auto;height:auto;max-width:80px;max-height:70px;}
+#page.product_detail_page #features #top_features .feature img{width:auto;height:auto;max-width:160px;max-height:140px;}
+#page.product_detail_page #partsandaccessories .accessories_item .product_image img,
+#page.product_detail_page.derivative #overview .related_product .product_image img{width:auto;height:auto;max-width:130px;max-height:175px;}

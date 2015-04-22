@@ -1,0 +1,56 @@
+.product_detail_page,.product_detail_page #content-wrap,.product_detail_page #content,.product_detail_page .product_detail_page product,.product_detail_page .main_content_wrapper,.product_detail_page .product_placeholder{background:white!important;width:600px!important;padding:0!important;margin:0!important;font-size:12px!important}
+.product_detail_page{overflow:hidden!important}
+.product_detail_page #content-wrap{overflow:visible!important;padding-left:5px!important}
+.product_detail_page #header-wrap,.product_detail_page #compare_sub_body,.product_detail_page #product_tabs .product_tab_section,.product_detail_page #footer-wrap,.product_detail_page #product_options #product_colors #product_price span,.product_detail_page #product_tabs #features{display:inline!important}
+.product_detail_page #header_search,.product_detail_page #header_sub_nav_1,.product_detail_page #header_sub_nav_2,.product_detail_page #header_main_nav,.product_detail_page #breadcrumb-section,.product_detail_page .product-zoom-controller,.product_detail_page .product_placeholder.zoom-product a.thickbox,.product_detail_page #product_buttons,.product_detail_page #product_tabs_menu,.product_detail_page .product_options,.product_detail_page #product_carousels_1,.product_detail_page #product_carousels_2,.product_detail_page #product_carousel_tabs_1,.product_detail_page #product_carousel_tabs_2,.product_detail_page #overview .overview_feature img,.product_detail_page #tooltip_prod_code_1,.product_detail_page .product_detail,.product_detail_page #BVRRRatingSummaryLinkWriteFirstID,.product_detail_page .BVRRCount,.product_detail_page #specifications .spec_section.callout,.product_detail_page .column_wrap #overview_column_2 .e_spot,.product_detail_page .column_wrap #overview_column_3,.product_detail_page #product_tabs #features #top_features,.product_detail_page #product_tabs #ratingsandreviews,.product_detail_page #product_tabs #manualsandliterature,.product_detail_page #product_tabs #partsandaccessories,.product_detail_page #product_tabs #overview .product_tab_section_middle .column_wrap #overview_column_2 p.see_more,.product_detail_page #footer-menu,.product_detail_page #footer-nav,.product_detail_page #footer-legal-links{display:none!important}
+.product_detail_page #product_tabs .product_tab_section .product_tab_section_middle{margin:0!important;padding:0!important}
+.product_detail_page .column_wrap{float:left;width:100%!important}
+.product_detail_page .column_wrap #overview_column_1,.product_detail_page .column_wrap #overview_column_2{float:left;width:100%!important;border:none!important;margin:0!important;padding:0!important}
+.product_detail_page #logo,.product_detail_page #header-wrap,.product_detail_page #header{float:left!important;width:600px!important;height:auto!important;margin:0!important;padding:0!important;background:none!important}
+.product_detail_page #logo{position:static!important;padding:40px 0!important;border-top:3px solid #ddd!important;border-bottom:1px solid #ddd!important}
+.product_detail_page .product_detail_page .product_header{float:left!important;width:450px!important;height:100px!important;position:relative!important;top:0!important;left:150px!important;border:none!important;margin-bottom:20px!important}
+.product_detail_page .he_logo{position:relative!important;left:410px!important}
+.product_detail_page .he_logo img{padding-top:0!important}
+.product_detail_page h2.product_name{float:left!important;width:410px!important;margin-bottom:-20px!important;position:relative!important;top:-45px!important;left:0!important}
+.product_detail_page .zoom-product{float:left!important;width:200px!important;height:250px!important;display:inline!important;position:static!important;background:none!important;margin:0!important;padding:20px 0 0!important}
+.product_detail_page #main_product_image{float:left!important;width:200px!important;height:auto!important;display:inline!important;position:static!important;background:none!important;margin:0!important;padding:0!important}
+.product_detail_page .product_placeholder{border:none!important}
+.product_detail_page .product_placeholder.zoom-product a.placeholder_product_image,.product_detail_page.accessories .product_placeholder,#page.product_detail_page.SC_Accessories .product_placeholder{height:auto!important}
+.product_detail_page #BVRRSummaryContainer{width:100px!important}
+.product_detail_page .product_options_bar,.product_detail_page #color_selector{float:left!important;width:30px!important}
+.product_detail_page #color_selector a.color_1,.product_detail_page #color_selector a.color_2,.product_detail_page #color_selector a.color_3,.product_detail_page #color_selector a.color_4,.product_detail_page #color_selector a.color_5,.product_detail_page #color_selector a.color_6,.product_detail_page #color_selector a.color_7,.product_detail_page #color_selector a.color_8{float:left!important;width:25px!important;margin-bottom:30px!important;position:absolute!important}
+.product_detail_page #color_selector a.color_1{top:20px!important}
+.product_detail_page #color_selector a.color_2{top:80px!important}
+.product_detail_page #color_selector a.color_3{top:140px!important}
+.product_detail_page #color_selector a.color_4{top:200px!important}
+.product_detail_page #color_selector a.color_5{top:20px!important;left:170px!important}
+.product_detail_page #color_selector a.color_6{top:80px!important;left:170px!important}
+.product_detail_page #color_selector a.color_7{top:140px!important;left:170px!important}
+.product_detail_page #color_selector a.color_8{top:200px!important;left:170px!important}
+.product_detail_page #color_selector a img{border:1px solid #ddd!important;padding:1px!important}
+.product_detail_page #color_selector p.color_1,.product_detail_page #color_selector p.color_2,.product_detail_page #color_selector p.color_3,.product_detail_page #color_selector p.color_4,.product_detail_page #color_selector p.color_5,.product_detail_page #color_selector p.color_6,.product_detail_page #color_selector p.color_7,.product_detail_page #color_selector p.color_8{display:inline!important;float:left!important;width:100px!important;padding:0!important;margin:0!important;position:absolute!important}
+.product_detail_page .product_options_bar{border:none!important}
+.product_detail_page #color_selector p.color_1{top:20px!important;left:50px!important}
+.product_detail_page #color_selector p.color_2{top:80px!important;left:50px!important}
+.product_detail_page #color_selector p.color_3{top:140px!important;left:50px!important}
+.product_detail_page #color_selector p.color_4{top:200px!important;left:50px!important}
+.product_detail_page #color_selector p.color_5{top:20px!important;left:220px!important}
+.product_detail_page #color_selector p.color_6{top:80px!important;left:220px!important}
+.product_detail_page #color_selector p.color_7{top:140px!important;left:220px!important}
+.product_detail_page #color_selector p.color_8{top:200px!important;left:220px!important}
+.product_detail_page .column_wrap,.product_detail_page .product_tab_section_middle,.product_detail_page #overview,.product_detail_page #product_tabs,.product_detail_page #overview_column_1{float:left!important;width:600px!important;background:none!important}
+.product_detail_page #overview{border-top:2px solid #d0d0d0!important;padding-top:20px!important}
+.product_detail_page #overview #overview_column_2,.product_detail_page #overview #overview_column_2 p,.product_detail_page #overview #overview_column_2 h4,.product_detail_page #features #additional_features .feature h4,.product_detail_page #features #additional_features .feature p{float:left!important;width:600px!important;padding:0!important;margin:0 0 10px!important}
+.product_detail_page #features #additional_features .feature,.product_detail_page #overview #overview_column_2{float:none!important;display:inline-block!important;clear:both!important}
+.product_detail_page .spec_section{float:left!important;width:560px!important;border-bottom:2px dotted #d0d0d0!important}
+.product_detail_page .product_tab_section_middle .last,.product_detail_page .product_tab_section_middle .callout{border:none!important}
+.product_detail_page .spec_contents_line{float:left!important;width:560px!important}
+.product_detail_page #specifications .spec_contents_label{float:left!important;width:300px!important;font-weight:normal!important;color:#666!important}
+.product_detail_page #specifications .spec_section h3,.product_detail_page #specifications .spec_section .spec_contents{padding:0!important;margin:0!important}
+.product_detail_page #footer-wrap,.product_detail_page #footer,.product_detail_page #footer-legal{float:left!important;width:600px!important;padding:0!important;margin:0!important;border:none!important}
+.product_detail_page #product_detail_legal{display:none!important}
+.product_detail_page #footer-wrap{padding-left:5px!important}
+.product_detail_page #footer-trademark{float:left!important;width:600px!important;margin:0 0 5px!important;padding-top:20px!important;color:#666!important;border-top:3px solid #ddd!important}
+.product_detail_page.laundry #overview h2,#page.product_detail_page.SC_Laundry #overview h2,.product_detail_page #overview .product_tab_section_middle h3 span,.product_detail_page.laundry #features #additional_features h3,#page.product_detail_page.SC_Laundry #features #additional_features h3{float:left!important;width:600px!important;font-size:18px!important;color:#333!important;border-top:2px solid #d0d0d0!important;padding:20px 0!important}
+.product_detail_page #overview #overview_column_2 h4,.product_detail_page #features #additional_features .feature h4,.product_detail_page .laundry #specifications .spec_section h3,.product_detail_page .SC_Laundry #specifications .spec_section h3{color:#666!important;font-size:12px!important}
+.product_detail .product_tab_section,.product_detail .product-property-title,.product_detail .feature h4,.product_detail .feature p,.product_detail #product_tabs #specifications .spec_section h3{font-size:12px!important;color:#505050!important}

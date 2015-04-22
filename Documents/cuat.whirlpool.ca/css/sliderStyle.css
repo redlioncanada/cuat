@@ -1,0 +1,235 @@
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+#sliderWrapper {
+	margin-top: 0;
+	width: 960px;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+}
+#slideHero {
+	width: 960px;
+	height: 430px;
+	overflow: hidden;
+	/*background: red;*/
+}
+#slideHero ul li img {
+
+	width: 960px;
+	overflow: hidden;
+	/*background: red;*/
+}
+#slideHero ul li div.slideData, #slideHero ul li div.subslides, #slideHero ul.img li div.subslides p.leftPos {
+	display: none;
+}
+#slideHero ul li div.subslides {
+	height: 100%;
+	width: 300px;
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	/*left: 560px;*/
+	border-left: thin solid #333333;
+}
+div.subslide {
+	width: 100%;
+	height: 115px;
+	/*border: thin solid #333333;*/
+	background: #ffffff;
+}
+div.subslide p.subtitle {
+	color: #EEB111;
+	padding-top: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+div.subslide p.subcopy {
+	padding-top: 0;
+	margin-top: 0;
+	width: 313px;
+}
+
+.subslide a {
+	background: url("../images/content/owner_center/icon_yellow_little_arrow.png") no-repeat scroll right center transparent;
+	color: #333333;
+	float: none;
+	font-size: 12px;
+	margin-top: 5px;
+	padding-right: 17px;
+	position: relative;
+	width: 108px;
+	text-align: right;
+	text-decoration: none;
+}
+
+div.subslide a:hover {
+	background: url("../images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;
+	color: #B4B4B4;
+}
+
+div.subslide img {
+	padding-left: 25px;
+	padding-right: 25px;
+	float: left;
+}
+#slideHero ul.img li div.subslides div.pad {
+	height: 146px;
+	width: 100%;
+	/*background: #EEB111;*/
+	position: absolute;
+	left: 0;
+	top: 284px;
+}
+#slideHero ul {
+	list-style: none;
+}
+#slideCaption {
+	background: url("../images/content/caption_bg.png") repeat scroll 0 0 transparent;
+	border: 1px solid #EEB111;
+	/*border-bottom: none;*/
+	float: left;
+	height: 99px;
+	margin: 0 15px;
+	padding: 14px 30px;6px 30px;
+	position: absolute;
+	width: 595px;
+	display: block;
+	top: 301px;
+	left: 135px;
+	z-index: 6;
+}
+#slideRight {
+	background: url("../images/content/controlArrow_right.png") repeat scroll 0 0 transparent;
+	float: left;
+	height: 42px;
+	position: absolute;
+	text-indent: 9999em;
+	top: 340px;
+	width: 16px;
+	left: 817px;
+	z-index: 4;
+	cursor: pointer;
+}
+#slideLeft {
+	background: url("../images/content/controlArrow_left.png") repeat scroll 0 0 transparent;
+	float: left;
+	height: 42px;
+	position: absolute;
+	text-indent: 9999em;
+	top: 340px;
+	width: 16px;
+	left: 125px;
+	z-index: 5;
+	cursor: pointer;
+}
+#slideRight:hover {
+	background: url("../images/content/controlArrow_right.png") repeat scroll 0 -43px transparent;
+}
+#slideLeft:hover {
+	background: url("../images/content/controlArrow_left.png") repeat scroll 0 -43px transparent;
+}
+#captionTitle {
+
+	font-size: 23px;
+	line-height: 25px;
+	margin: 0;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+#captionTitle, #captionCopy {
+	color: #333333;
+	float: left;
+	width: 465px;
+}
+#captionLink {
+	float: right;
+	background: url("../images/content/owner_center/icon_yellow_little_arrow.png") no-repeat scroll right center transparent;
+	color: #333333;
+	float: right;
+	font-size: 12px;
+	margin-top: 5px;
+	padding-right: 17px;
+	position: relative;
+	width: 108px;
+	text-align: right;
+	text-decoration: none;
+}
+/*span.SlideFootN{
+ font-size: small;
+ }*/
+#captionLink:hover {
+	background: url("../images/content/homepage_comp/heading-arrow-hover.png") no-repeat scroll right center transparent;
+	color: #B4B4B4;
+}
+
+#slideSelect {
+
+	z-index: 7;
+	background: url("../images/content/selector_bg.png") repeat scroll 0 0 transparent;
+	height: 12px;
+	left: 405px;
+	padding: 3px 0 5px 5px;
+	position: absolute;
+	top: 410px;
+	width: 165px;
+	float: none;
+}
+#slideSelect ul {
+	padding: 0;
+	margin: 0;
+	z-index: 8;
+	display: inline;
+	height: 10px;
+	width: 133px;
+	top: 7px;
+	left: 19px;
+	position: absolute;
+}
+#slideSelect ul li img {
+	padding: 0;
+	margin: 0 auto;
+	/*background: url("../images/content/bulletsOn.gif") no-repeat left top transparent;*/
+	display: inline;
+	height: 10px;
+	width: 10px;
+}
+#slideSelect ul li {
+	padding: 0;
+	/*margin:0 10px;*/
+	z-index: 9;
+	display: inline;
+	height: 10px;
+	width: 100px;
+	cursor: pointer;
+}
+
+#sections_container {
+	margin-top: 35px;
+}
+#slide_overlay {
+	
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+}
+.yt_vid{
+	display:none;
+	/*margin: auto auto;*/
+	position: fixed;
+	z-index: 9100;
+	/*height: 480px;
+	width: 853px;*/	
+}
+body.overlay_open{
+	overflow: hidden !important;
+	
+	width: 100%;
+}

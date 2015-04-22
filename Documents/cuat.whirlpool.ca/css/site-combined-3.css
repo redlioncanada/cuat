@@ -1,0 +1,868 @@
+/* begin include: oc_schedule_repair.css *//* Styles for Service & Repair *//* -------------------- Common Styles -------------------------------*/body.owner_center{color:#666;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section{clear:both;margin-bottom:30px;overflow:hidden;margin-top:10px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .oc_service_info_item{width:100%;padding-left:10px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section #oc_service_info_left{float:left;width:48%;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section #oc_service_info_right{float:right;width:48%;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_required_field_message{width:100%;text-align:right;margin-bottom:10px;margin-top:-40px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content .oc_repair_header{margin:0;padding:0;margin-bottom:10px;color:#666;font-size:11pt;}
+body.owner_center .oc_scheule_repair #oc_content #oc_repair_tab_content .oc_repair-text{padding:0 0 0 15px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .oc_service_info_header{font-weight:500;margin:0;margin-top:15px;color:#999;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .oc_service_info_text{margin:0;padding:0;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .oc_service_info_text span{font-weight:700;color:#666;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper{height:42px;border-bottom:1px solid #999;margin:0;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_title_wrapper{float:left;font-weight:normal;font-size:19px;width:300px;font-family:Helvetica, Arial, sans-serif;margin:7px 0 0 45px;color:#666666;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_step_tabs{float:right;margin:0;padding:0;list-style-type:none;list-style-position:outside;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_step_tabs li{float:left;width:121px;height:34px;padding:2px;padding-bottom:4px;padding-top:4px;border:0 solid #FFF;border-bottom:0;font-family:Helvetica, Arial, sans-serif;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_step_tabs li p{color:#CCCCCC;margin:0;padding:0;font-size:10pt;height:24px;font-weight:bold;padding:10px 0 0 0;width:119px;text-align:center;border:1px solid #d1d1d1;background:#F0F0F0;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_step_tabs li.oc_repair_tab_selected{border:1px solid #999;width:119px;border-bottom:2px solid #FFF;padding-bottom:3px;height:36px;padding-top:2px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_title_and_tabs_wrapper #oc_repair_step_tabs li.oc_repair_tab_selected p{color:#333333;border:1px solid transparent;border-left:0;border-right:0;background:transparent;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper #oc_action_sub_wrapper{margin:0;padding:0;margin-left:-5px;padding-left:140px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper #oc_action_sub_wrapper a span.ub-center{}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content{clear:both;overflow:hidden;padding:60px 60px 20px;border:1px solid #999;border-top:0;margin:0;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content .oc_repair_text{padding:0 0 0 15px}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_header_question,
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_repair_header,
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_header_title{font-size:15px;color:#333333;font-weight:normal; padding:0 0 0 15px}
+/* -------------------- oc_schedule_repair --------------------------*/
+body#oc_schedule_repair #content-wrap #content #page #oc_content{padding-top:0;}
+body#oc_schedule_repair #content-wrap #content #page .product_header{margin-bottom:55px;}
+body#oc_schedule_repair #page #oc_content .oc_info_text{margin:0;margin-bottom:15px;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest{width:100%;margin:0;padding-top:15px;height:200px;margin-bottom:90px;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest #oc_service_left_column{float:left;height:200px;width:47%;padding:5px;background:transparent url(../images/bg_row_yellow.png) top left;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest #oc_service_left_inner{height:180px;margin:0;padding:5px;padding-top:15px;padding-left:15px;background:#FFF;overflow:hidden;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest #oc_service_right_column{float:right;height:200px;width:47%;padding:5px;background:transparent url(../images/bg_row_yellow.png) top left;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest #oc_service_right_inner{height:180px;margin:0;padding:5px;padding-top:15px;padding-left:15px;background:#FFF;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest #oc_service_right_column .owner_center_continue_link{display:none;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest .sign_in_header{margin:0;padding:0;margin-bottom:5px;font-size:12pt;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest .sign_in_sub_header{margin:0;padding:0;margin-bottom:20px;font-weight:400;}
+body#oc_schedule_repair #page #oc_content #oc_service_sign_or_guest .oc_service_action_button_wrapper a{padding-left:0;}
+/* -------------------- oc_schedule_repair_step1_unauth --------------------------*/body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content{}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field{clear:both;overflow:hidden;margin-bottom:15px;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_label{float:left;width:125px;text-align:right;margin-right:15px;font-weight:700;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input{float:left;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input input{width:270px;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_error{clear:both;margin-left:140px;padding-top:5px;color:red;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_caption{width:500px;text-align:right;font-weight:400;font-size:9pt;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link{}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link a{font-style:normal;margin-left:8px;}
+body#oc_schedule_repair_step1_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input textarea{width:500px;}
+/* -------------------- oc_schedule_repair_step1_auth --------------------------*/body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content{}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app{clear:both;overflow:hidden;margin-bottom:25px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_image_and_button_col{float:left;width:140px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_image_and_button_col img{width:90px;height:125px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_image_and_button_col .oc_button_wrapper{width:15px;height:100%;float:left;margin-right:10px;padding-top:50px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_image_and_button_col input{}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app a{color:#666;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app span{color:#666;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_info_col{margin-top:20px;width:300px;float:left;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_model_no{color:#999;font-weight:400;margin:0;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_model_no a{color:#999;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_product_name{color:#666666;font-style:normal;font-size:9pt;margin:0;font-family:Helvetica, Arial, sans-serif;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_purchase_date{margin:0;font-style:normal;font-size:8pt;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .other_row{margin:0 0 0 15px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .other_row .oc_image_and_button_col input{margin-top:0;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .other_row .oc_image_and_button_col span{padding-left:30px;font-size:11px;color:#666;font-weight:700;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field{clear:none;overflow:hidden;margin-bottom:15px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_label{float:left;width:125px;text-align:right;margin-right:15px;font-weight:700;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .oc_entry_field_input{float:left;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input input,
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input input,
+#stateDiv .oc_entry_field_input #state.registration_select_input,
+{width:270px;padding:5px;border-radius:5px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_error{clear:both;margin-left:140px;padding-top:5px;color:red;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_caption{width:100%;text-align:right;font-weight:400;font-size:9pt;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link{margin-left:10px;float:left;margin-top:5px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link a{font-style:normal;padding:0;margin:0;float:left;background:none;color:#666666}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input textarea{width:500px;border:1px solid #DDDDDD; border-radius:5px;}
+.oc_required_field{color:red;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_repair_header_title{display:none;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_repair_required_field_message{margin:-15px 0 15px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_text_after_step_header{margin-top:-15px;font-size:11px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product{padding-left:0;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li{display:block;clear:both;height:135px;margin:0 0 35px 15px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li h3{margin:0;font-weight:400;font-size:12px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li img{max-height:100px;max-width:100px;margin-left:10px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li input,body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li img,body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li h3,body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div{float:left;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li select{display:block;clear:both;margin:0 0 0 30px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li input{min-height:100px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li.other{height:20px;margin-top:20px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li.other input{min-height:inherit;margin-top:0;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div p{margin-top:2px;font-size:12px;color:#666;font-weight:700;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div p.font_color{clear:both;font-size:12px!important;font-weight:700;margin-bottom:0;width:300px;color:#666;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div p.font_color a{color:#666;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div p span{color:#666;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional{clear:both;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div{padding-top:35px;padding-left:30px;padding-top:0;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div h3{margin-top:15px;font-size:11px;font-weight:700;color:#999;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li div h3 a{color:#999;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional{width:400px;padding-left:45px;margin-top:50px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional div{padding-bottom:10px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional input{display:block;clear:both;width:310px;margin-top:5px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional label{font-size:12px;font-weight:700;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional label.tremname2{display:none;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product div.optional a{font-size:11px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat left 2px;padding-left:10px;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li input{margin-top:0;}
+body#oc_schedule_repair_step1_auth div#page.oc_schedule_repair div#oc_content div.product ul li.other h3{margin-top:5px;text-transform:capitalize;margin-left:10px;margin-bottom:10px;font-weight:700;margin-left:0;}
+/* -------------------- oc_schedule_repair_step2_unauth --------------------------*/body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content{}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content .oc_repair_header{display:none;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section{margin-left:20px;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field{clear:both;overflow:hidden;margin-bottom:15px;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_label{float:left;width:125px;text-align:right;margin-right:15px;font-weight:700;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input{float:left;width:275px;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_input input{width:100%;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_error{clear:both;margin-left:140px;padding-top:5px;color:red;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_caption{width:500px;margin-left:140px;text-align:right;font-weight:400;font-size:9pt;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link{margin-left:140px;margin-top:5px;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper{margin-left:20px;clear:both;width:100%;margin-bottom:20px;overflow:hidden;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper #oc_offer_check{width:127px;margin:0 12px 55px 0;text-align:right;float:left;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper #oc_offer_text{width:450px;float:left;}
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper{margin-left:20px;}
+/* -------------------- oc_schedule_repair_step2_auth --------------------------*/body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content{}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_repair_required_field_message{margin-bottom:10px;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_existing_fields_section{margin-bottom:30px;margin-top:20px;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_existing_fields_section .oc_repair_header{display:none;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section{margin-bottom:30px;margin-top:20px;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .oc_entry_field{clear:both;overflow:hidden;margin-bottom:25px;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .oc_entry_field_label{float:left;width:125px;text-align:right;margin-right:15px;font-weight:700;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .oc_entry_field_error{clear:both;margin-left:140px;padding-top:5px;color:red;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .oc_entry_field_caption{width:500px;margin-left:140px;text-align:right;font-weight:400;font-size:9pt;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content .owner_center_continue_link{margin-left:140px;margin-top:5px;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper{clear:both;width:100%;margin-bottom:20px;overflow:hidden;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper #oc_offer_check{width:135px;margin-right:5px;text-align:right;float:left;}
+body#oc_schedule_repair_step2_auth #page #oc_content #oc_repair_tab_content #oc_special_offers_wrapper #oc_offer_text{width:350px;float:left;}
+/* -------------------- oc_schedule_repair_step3_date --------------------------*/body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{margin-left:0;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_required_field_message{margin-bottom:10px;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table{width:80%;margin:0;padding:0;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table th{text-align:center;font-size:8pt;vertical-align:bottom;border-bottom:1px solid #DDD;font-weight:400;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table td{text-align:center;border:0;vertical-align:middle;height:15px;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table tr.oc_repair_top_row td{padding-top:15px;border-top:1px dotted #DDD;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table tbody{border-bottom:1px dotted #DDD;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table tr.oc_repair_bottom_row td{padding-bottom:15px;border-bottom:1px dotted #DDD;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table th.oc_provider_column{text-align:left;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table td.oc_provider_column{text-align:left;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table .oc_button_column{width:5%;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table .oc_date_column{width:20%;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table .oc_time_column{width:20%;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table .oc_rate_column{width:20%;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_times_table .oc_provider_column{width:35%;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper #oc_action_sub_wrapper{padding:0;}
+body#oc_schedule_repair_step3_date #page #oc_content #oc_repair_tab_content #oc_rate_explanation{width:80%;text-align:right;margin:0;padding:0;margin-top:5px;font-weight:400;}
+/* -------------------- oc_schedule_repair_step4_review --------------------------*/
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{margin-left:0;margin-right:15px;float:left;clear:none;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_required_field_message{margin-bottom:10px;visibility:hidden;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content .oc_repair_info_block{width:40%;margin:15px 0 0 15px;padding:15px 0 0 0;border-top:1px dotted #DDD;margin-top:15px;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content .oc_repair_first_info_block{padding-top:0;border:0;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_header{margin-bottom:15px;color:#666;font-style:normal;font-size:9pt;font-family:'Lucida Grande', 'Lucida Sans', inherit;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_line{margin:0;margin-bottom:5px;font-size:9pt;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_line span{color:#666;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper #oc_action_sub_wrapper{padding:0;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper{margin-top:20px;}
+/* -------------------- oc_schedule_repair_confirm --------------------------*/body#oc_schedule_repair_confirm #page #oc_content #oc_repair_title_and_tabs_wrapper{display:none;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content *{font-family:Helvetica, Arial, sans-serif;font-size:11px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #printConfirm p{margin:0 0 0 15px}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_required_field_message{display:none;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content{border:0;padding-right:0;padding-left:20px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_header_title{display:none;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_header_step{margin-top:0;font-size:11pt;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_print_link{text-align:right;width:100%;margin:0;margin-bottom:5px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_print_link img{display:none;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_print_link a{color:#666666; text-transform:capitalize; font-size:12px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .oc_repair_text{width:70%;margin-bottom:20px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .oc_repair_info_block{width:40%;margin:25px 0 25px;padding:0;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_header{margin:0 0 5px 15px;color:#666666;font-style:normal;font-family:Helvetica, Arial, sans-serif;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_line{margin:0;margin-bottom:5px;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .oc_repair_info_block .oc_repair_info_block_line span{}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_question_wrapper{width:70%;margin-top:15px;margin-bottom:15px;padding-top:15px;padding-bottom:15px;border-top:1px dotted #DDD;border-bottom:1px dotted #DDD;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_question_wrapper #oc_repair_question_header{font-size:9pt;font-weight:700;font-style:normal;margin-bottom:2px;color:#666;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content #oc_repair_question_wrapper .oc_repair_text{margin:0;width:100%;font-size:9pt;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .owner_center_continue_link{background:transparent url(../images/img_arrow_right_blue_2.png) left center no-repeat;}
+body#oc_schedule_repair_confirm #page #oc_content #oc_repair_tab_content .owner_center_continue_link a{font-style:normal;}
+/***OC schedule footer***/body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .serviceTime{width:100%;margin-top:15px;overflow:hidden;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .serviceTime span{font-weight:700;color:#666;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .serviceTime .normalTime{float:left;width:48%;}
+body.owner_center .oc_schedule_repair #oc_content #oc_service_info_section .serviceTime .weekend{float:right;width:48%;}
+body.owner_center .maytag{display:none!important;}
+/*******end footer******//* fixes from ccurry */div.oc_schedule_repair div.product_title h1{font-family:"HelveticaNeueW02 73 BdExt",sans-serif;font-size:20px;padding-top:20px;}
+span#errMsgDiv_Error{color:red;}
+body#oc_schedule_repair_step1_unauth.owner_center .owner_center_continue_link{background:none;}
+body#oc_register_auth .oc_register #oc_content div.information_field div.notify_me label{font-weight:400;}
+#printConfirm p b b{font-weight:400;}
+#printConfirm p.follow_up{border-top:1px solid #DDD;padding-top:20px;}
+#printConfirm p.contact{border-top:1px solid #DDD;padding-bottom:20px;}
+body#oc_schedule_repair_step1_auth div#oc_existing_apps_section{float:left;height:122px;width:184px;}
+body#oc_schedule_repair_step1_auth .oc_entry_field.description{clear:both;padding-top:20px;border-top:1px dotted #DDD;}
+body#oc_schedule_repair_step1_auth .oc_entry_field.description div.oc_entry_field_label{width:143px;}
+div.pur_date span.registration_field_subtext{font-weight:400!important;}
+/* end include: oc_schedule_repair.css *//* begin include: oc_search.css *//*========================oc_search_manuals_unauth.html================================*/
+body#oc_search_manuals_unauth div#content-wrap div.pathindicator{float:left;font-size:11px;padding-bottom:5px;padding-top:20px;clear:both;overflow:hidden;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search{clear:both;padding-top:10px;padding-bottom:20px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div#oc_content{min-height:796px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content{font-size:13px;float:left;width:589px;border-right:1px dotted #DDD;padding-right:32px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content p{margin:0;padding:0;font-size:10px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content #main_header h2.title{background:none repeat scroll 0 0 transparent;float:left;font-family:Helvetica, Arial,sans-serif;font-size:18px;font-weight:700;height:15px;padding:2px 6px 2px 4px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo{padding:35px 0 4px 20px;overflow:hidden;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .boldSigleLabel{font-weight:700;margin-bottom:10px;display:block;overflow:hidden;font-size:12px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .inputSection{display:block;overflow:0;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search{clear:right;overflow:hidden;display:block;float:left;margin-left:10px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search span.ub-left{display:block;float:left;height:40px;width:32px;background:url(../images/bg-btn-left-arrow40.png) no-repeat scroll left top transparent;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search span.ub-center.whirlpool{background:url(../images/bg-btn-center40.png) repeat-x scroll left top transparent;color:#09F;display:block;float:left;font-size:18px;height:40px;line-height:40px;width:auto;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search span.ub-right{display:block;float:left;height:40px;width:14px;background:url(../images/bg-btn-right40.png) no-repeat scroll left top transparent;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search:hover span{background-position:left bottom;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_btn_search:hover span.ub-center.whirlpool{background-position:left bottom;color:#FFF;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_box_search{background:transparent url(../images/iputbox_bg.png) no-repeat scroll 0 0;float:left;margin:4px 7px 10px 0;border-width:1px;-webkit-border-radius:5px;-moz-border-radius:5px;padding-bottom:7px;padding-top:8px;width:194px;padding-right:0;padding-left:0;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search .oc_search_content_moreInfo,body#oc_search_manuals_unauth div#content-wrap div#page.oc_search .oc_search_content_textInfo{padding-left:20px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.oc_search_content_moreInfo .oc_search_content_moreInfo_links a{margin-left:0px;font-size:10px;background:url(../images/img_arrow_left_blue_2.png) no-repeat left 50%;padding-left:10px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search #oc_content{position:relative;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search .rightAD{position:absolute;right:0;top:175px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightAD .parts{display:block;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightAD div.parts img.get_adobe_reader_img{float:left;display:block;width:40px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightAD div.parts .acrobat_text{display:block;float:left;width:225px;padding-left:8px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightNH{float:left;width:276px;padding-left:28px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightNH ul{margin-left:10px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search div.rightNH ul li{padding-left:7px;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search .maytag{display:none;}
+body#oc_search_manuals_unauth div#content-wrap div#page.oc_search #oc_content{padding-top:35px;}
+/*================End oc_search_manuals_unauth.html================================*//*========================oc_search_manuals_auth.html================================*/
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search #oc_content{position:relative;padding-top:35px!important;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search{clear:both;padding:0 0 20px 0;}
+body#oc_search_manuals_unauth #content-wrap #content #page.oc_search .owner_center_body #masthead,
+body#oc_search_manuals_results div#content-wrap #page.oc_search .owner_center_body  #masthead,
+body#oc_search_manuals_auth div#content-wrap #page.oc_search .owner_center_body #masthead{background:url("/images/content/title_img/manualsLit.jpg") no-repeat top left; height:32px; margin:30px 0 0 0;}
+html[lang=fr] body#oc_search_manuals_unauth #content-wrap #content #page.oc_search .owner_center_body #masthead,
+html[lang=fr] body#oc_search_manuals_results div#content-wrap #page.oc_search .owner_center_body  #masthead,
+html[lang=fr] body#oc_search_manuals_auth div#content-wrap #page.oc_search .owner_center_body #masthead{background:url("/images/data/fr_CA/manualsLit.jpg") no-repeat top left; height:32px; margin:30px 0 0 0;}
+
+div#content-wrap div#page.oc_register .owner_center_body #masthead.product_registration{background:url("/images/content/title_img/prodReg.jpg") no-repeat top left; height:50px; margin:30px 0 0 0;}
+html[lang=fr] div#content-wrap div#page.oc_register .owner_center_body #masthead.product_registration{background:url("/images/data/fr_CA/prodReg.jpg") no-repeat top left; height:50px; margin:30px 0 0 0;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search .oc_search_content_textInfo div.oc_search_content_greyBlock{height:auto;font-size:12px;padding-left:17px;vertical-align:middle;line-height:30px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search .oc_search_content_title{background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;color:#F3A826;font-style:italic;height:25px;margin-bottom:10px;padding-left:17px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search .oc_search_content_title h2.title{background:none repeat scroll 0 0 transparent;float:left;font-family:Georgia,inherit;font-size:18px;font-weight:700;height:15px;padding:2px 6px 2px 4px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo{padding-top:20px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo .oc_search_content_result_title{font-weight:700;padding-left:17px;font-size:14px;font-style:italic;color:#999;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list{margin-top:20px;border-bottom:2px solid #F3A826;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product,body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others{overflow:hidden;margin:15px 0;padding-left:30px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product .product_info_name a{color:#999;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product .product_info_description{width:200px;color:#505050;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product .product_info_description a{color:#505050;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product .greyDate span{color:#505050;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product div.product_radio{float:left;padding-top:48px;padding-right:8px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_radio{float:left;padding-right:8px;padding-top:4px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product div.product_image{height:110px;width:120px;float:left;font-size:12px;font-weight:700;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product div.product_image img{width:120px;height:110px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_image{font-size:12px;font-weight:700;width:50px;float:left;padding-left:8px;height:22px;line-height:22px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product div.product_info{float:left;padding-left:12px;padding-top:20px;font-size:12px;font-weight:700;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info{float:left;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info div.oc_search_content_moreInfo{padding-top:6px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info .inlineNormalLabel{float:left;font-size:12px;font-weight:700;padding-right:10px;line-height:35px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info input.oc_search_others{background:transparent url(../images/iputbox_bg.png) no-repeat scroll 0 0;float:left;margin:0;border-width:1px;-webkit-border-radius:5px;-moz-border-radius:5px;padding-bottom:10px;padding-top:8px;width:194px;padding-right:0;padding-left:0;margin-bottom:10px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info .oc_search_content_moreInfo{padding-left:95px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_list div.product_others div.product_info div.oc_search_content_moreInfo_links a{background:url(../images/img_arrow_left_blue_2.png) no-repeat left 50%;padding-left:10px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_btn{padding-left:55px;margin-top:50px;overflow:hidden;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content_formInfo div.oc_search_content_result_btn .oc_search_btn_go{width:100px;text-align:center;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.oc_search_content{font-size:13px;float:left;width:589px;border-right:1px dotted #DDD;padding-right:32px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search .rightAD{position:absolute;right:0;top:175px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightAD .parts{display:block;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightAD div.parts img.get_adobe_reader_img{float:left;display:block;width:40px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightAD div.parts .acrobat_text{display:block;float:left;width:225px;padding-left:8px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightNH{float:left;width:276px;padding-left:28px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightNH ul{margin-left:10px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search div.rightNH ul li{padding-left:7px;}
+body#oc_search_manuals_auth div#content-wrap div#page.oc_search .maytag{display:none;}
+/*====================End oc_search_manuals_auth.html================================*//*====================Start oc_search_manuals_results.html================================*/
+body#oc_search_manuals_results .oc_search{clear:both;/*min-height: 650px;*/padding-bottom:20px;padding-top:10px;font-size:14px;}
+body#oc_search_manuals_results .oc_search #main_top{float:left; width:100%; }
+body#oc_search_manuals_results .oc_search a{text-decoration:underline;}
+body#oc_search_manuals_results .oc_search .oc_search_results{font-size:14px;margin-bottom:20px;}
+body#oc_search_manuals_results .oc_search .oc_search_results .oc_search_results_for{font-weight:700;border-right:1px solid #000;padding-right:20px;}
+body#oc_search_manuals_results .oc_search .oc_search_results a{padding-left:15px;}
+body#oc_search_manuals_results .oc_search .oc_search_view{background-color:#e6e6e6;border:1px solid #bfbfbf;padding:5px 10px 5px 20px;overflow:hidden;margin-bottom:20px;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_box label{padding-right:20px;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_box select{width:150px;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_box{float:left;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_help{float:right;font-weight:700;font-size:12px;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_help a{text-decoration:none;}
+body#oc_search_manuals_results .oc_search .oc_search_view .oc_search_view_help a:hover{text-decoration:underline;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content{padding:0 15px;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content .oc_search_results_content_element{border-bottom:1px solid #bfbfbf;margin-bottom:20px;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content h3.oc_search_results_content_title{font-weight:700;padding-bottom:5px;border-bottom:1px dotted #bfbfbf;margin-bottom:10px;font-size:14px;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content .oc_search_results_content_list{margin:0 15px;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content .oc_search_results_content_list li{padding-bottom:10px;}
+body#oc_search_manuals_results .oc_search .oc_search_results_content .oc_search_results_content_element p{margin-bottom:10px;}
+/*====================End oc_search_manuals_results.html================================*//*start oc_search_manuals_auth.html */body#oc_search_manuals_auth div#page.oc_search div#main_header h4{padding-left:20px;margin:0!important;text-transform:lowercase;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content{padding:0!important;min-height:600px;margin:60px 30px 0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_top{padding:0 35px;clear:both;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid{padding:25px 0 0;width:635px;float:left;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar{padding:0 0 0 35px;border-left:dotted 1px #CCC;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .top_section_w h4{text-transform:lowercase;background:url(../images/bg_row_yellow.png) repeat left top;font-size:18px;height:25px;line-height:25px;margin:0 0 10px;padding-left:17px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .top_section_w span{display:block;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .top_section_m,body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_m{display:none;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_w{margin-top:30px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_w img,body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_w p{float:left;display:block;width:200px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_w img{width:40px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_mid_bar .bottom_section_w p{padding-left:8px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#main_bg_bottom{padding:0 35px 25px;clear:both;}
+body#oc_search_manuals_auth div#page.oc_search div.main_footer{border-bottom:1px solid #F3A826;padding:5px 0;margin-bottom:16px;clear:both;}
+body#oc_search_manuals_auth div#page.oc_search div.main_footer{/* margin-top:50px; */}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content{padding-left:5px;min-height:600px;margin:0 auto;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.your_account p{font-size:11px;margin:0;padding:0 0 0 15px;color:#666666;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content h3.which_appliance{padding:15px 0 25px 15px;font-family:Helvetica, Helvetica Neue, Arial, sans-serif;color:#666666;font-size:15px}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.product{padding-left:25px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.product div#btn span.ub-center{text-transform:lowercase;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.oc_search_content ul li{display:block;clear:both;margin:25px 0;width:100%; float:left;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li h3{margin:0;font-weight:400;font-size:12px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li img{max-width:100px;max-height:100px;margin:-25px 0 0 0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li input,body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li img,body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div{float:left;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li input{min-height:30px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other{height:20px!important;margin-top:20px;margin-bottom:0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other div{padding-top:0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other input{margin-bottom:10px;min-height:1px;height:16px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other h3,body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other .option{float:left;padding-top:0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other .option #term{float:none;height:16px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li.other .option a{display:block;background:url(../images/icon_arrow_right_nav.png) no-repeat 0 5px;padding-left:10px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div p{clear:both;font-weight:bold;font-size:11px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div p span{color:#505050;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div p span.colon{display:none;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional{clear:both;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div{padding:0 0 0 20px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content ul li div h3 span{font-size:9px; font-weight:bold; color#666666}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional{width:400px;padding-left:45px;margin-top:0;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional div{padding-bottom:10px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional input{display:block;float:right;width:310px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional label{font-size:16px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div.optional a{font-size:14px;margin-left:85px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content a#submit_go{display:inline-block;margin:20px 0 20px 20px;}
+body#oc_search_manuals_auth div#page.oc_search div#oc_content div#btn{margin-top:10px;margin-left:28px;margin-bottom:40px;min-height:31px;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row{margin:0 0 0 25px;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section {float:left;width:100%;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row .oc_image_and_button_col span{font-size:12px;font-weight:400;margin:0;display:inline-block;margin-left:25px;color:#666;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row .oc_image_and_button_col #term{float:none;margin-left:25px;margin-bottom:10px;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row .oc_image_and_button_col a.wModelNum{background:url(../images/icon_arrow_right_nav.png) no-repeat scroll 0 5px transparent;display:block;padding-left:10px;margin-left:115px;}
+/*end oc_search_manuals_auth.html *//*start oc_search_manuals_results.html */
+body#oc_search_manuals_results div#page.oc_search div#main_top_content{min-height:20px;margin-top:10px;border-top:#DDDDDD solid 3px;border-bottom:#DDDDDD solid 1px;padding:15px 0 15px 25px;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_left{float:left;margin-right:20px;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_right{float:left;padding-left:15px;border-left:#000 dotted 1px;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_right label{font-family:Georgia,inherit;font-style:italic;font-weight:700;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_right select{width:200px;margin-left:5px;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_left span{color:#666;font-size:12px;line-height:20px;}
+body#oc_search_manuals_results div#page.oc_search div#main_top_content_left span span{font-weight:700;}
+body#oc_search_manuals_results div#page.oc_search div#main_left{width:565px;padding:65px 0 0 30px;float:left;font-size:12px;}
+body#oc_search_manuals_results div#page.oc_search div#main_left h6{font-size:14px;margin-bottom:10px;}
+body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_list,body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_p{border-bottom:1px dotted #DDDDDD;padding-bottom:30px;margin-bottom:30px;}
+body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_p p span{color:#666;font-weight:700;}
+body#oc_search_manuals_results div#page.oc_search a{text-decoration:none;}
+body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_list ul{margin:0;}
+body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_list ul li{background:url(../images/icon_pdf.png) no-repeat top left;padding-left:45px;margin-bottom:10px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right{width:305px;float:right;padding:25px 0 0 20px;margin-top:40px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch{margin-bottom:20px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div input{float:left;width:160px;height:26px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div a{float:right;}
+/*body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div a.ui-button.ui-icon-arrow .ub-left{display:block; float:left;background:url("../images/bg-btn-left-arrow40.png") left top no-repeat;height:40px; width:32px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div a.ui-button.ui-icon-arrow .ub-center{display:block; float:left;background:url("../images/bg-btn-center40.png") left top repeat-x;height:40px; color:#0099FF;width:auto;line-height:40px;font-size:16px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div a.ui-button.ui-icon-arrow .ub-right{display:block; float:left;background:url("../images/bg-btn-right40.png") left top no-repeat; height:40px; width:14px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch div a.ui-button.ui-icon-arrow:hover span{background-position:left bottom;color:#ffffff;}
+ removed non-working button css- ccurry*/
+ body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.where_is_my_model_number{display:block;clear:both;float:left;margin-bottom:20px;margin-top:20px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.ui-button.ui-icon-arrow span.ub-center{text-indent:-9999px}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearchTips{background:url(../images/bg_row_F3A826.png) repeat scroll 0 0 transparent;padding:10px;margin-bottom:30px;float:left;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearchTips div{background-color:#EEEEEE;/*padding:20px;*/}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearchTips p{font-size:12px;margin-bottom:10px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH{float:left;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH .need_help{}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH ul{margin-left:25px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH ul li{font-size:12px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH div.main_rightNH_title{background:url(../images/bg_row_yellow.png) repeat scroll 0 0 transparent;padding-left:25px;font-size:18px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH p{background:url(../images/img_adobe_icon.png) no-repeat scroll 0 35px transparent;border-top:1px dotted #CCC;color:#CCC;font-size:12px;margin-top:20px;padding-left:57px;padding-top:35px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH a.get_adobe_acrobat_reader{display:none;}
+body#oc_search_manuals_results div#page.oc_search div#main_left div.main_left_list.main_left_list_last{border:none;}
+/*end oc_search_manuals_results.html *//* fixes ccurry */div.main_rightSearch a.more_info_link{clear:both;font-size:10px;}
+div.main_rightSearch div{float:left;padding-bottom:7px;}
+.oc_search_content_formInfo #errorDiv{clear:both;display:block;float:left;padding-bottom: 10px;}
+div.main_rightSearchTips div.infoBorder div.color-container{background-color:#FDE8C5;padding:20px;}
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightNH #need_help h1{width:277px;}
+div#page.oc_search div.oc_search_content_formInfo a span.ub-center{text-indent:-9999px;}
+div#oc_existing_apps_section div.oc_image_and_button_col input#oc_search_box{margin-left:8px;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row a.more_info_link.reg_apps{margin-left:100px;}
+/* end include: oc_search.css *//* begin include: oc_register.css *//* Styles for the Owner Center Register Appliance Section */body#oc_register_sign_in #content-wrap #content #page #oc_content{padding-top:0;}
+body#oc_register_sign_in #content-wrap #content #page .product_header{margin-bottom:55px;}
+/* oc_register_success_unauth */body#oc_register_success_unauth #content-wrap #content #page #oc_content #thank_you_main_line{font-family:Georgia, inherit;margin:0;padding:0;font-weight:700;font-style:italic;color:#aaa;padding-bottom:35px;}
+body#oc_register_success_unauth #content-wrap #content #page #oc_content #thank_you_sub_line{margin:0;padding:0;font-weight:300;margin-bottom:20px;color:#aaa;}
+body#oc_register_success_unauth.owner_center .owner_center_continue_link{margin-bottom:15px;}
+body#oc_register_success_unauth.owner_center .owner_center_continue_link a{font-style:normal;}
+body#oc_register_sign_in .oc_register .why_register{padding:0 10px;}
+body#oc_register_sign_in .oc_register .why_register h2{margin-bottom:0;padding-bottom:15px;color:#F3A826;font-family:Helvetica, Arial, sans-serif;font-style:italic;font-weight:700;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction{float:left;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction div{float:left;width:275px;padding-left:60px;border-right:1px dotted #ebebeb;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction div.first{padding-left:0;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction div.last{border-right:none;width:245px;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction div h4{color:#000;margin-bottom:0;padding-bottom:5px;}
+body#oc_register_sign_in .oc_register .why_register .reg_instruction div p{width:230px;}
+body#oc_register_sign_in .oc_register .why_register .text_instruction{float:left;width:850px;font-weight:700;font-size:12px;padding-top:20px;}
+body#oc_register_sign_in .oc_register .register_content{padding-top:20px;float:left;}
+body#oc_register_sign_in .oc_register .register_content .text{padding-left:30px;width:350px;font-weight:400;}
+body#oc_register_sign_in .oc_register .register_content>div{float:left;width:425px;}
+body#oc_register_sign_in .oc_register .register_content div.sign_in{background:url(../images/bg_row_yellow.png);height:250px;padding:10px;}
+body#oc_register_sign_in .oc_register .register_content div.sign_in h4{background-color:#fff;margin:0;padding:30px 0 10px 30px;}
+body#oc_register_sign_in .oc_register .register_content div.sign_in .sign_in_content{background-color:#fff;height:250px;}
+body#oc_register_sign_in .oc_register .register_content div.proceed_as_guest .proceed_as_guest_content{background-color:#fff;height:250px;}
+body#oc_register_sign_in .oc_register .register_content div.proceed_as_guest{background:url(../images/bg_row_yellow.png);margin-left:40px;padding:10px;height:250px;}
+body#oc_register_sign_in .oc_register .register_content div.proceed_as_guest h4{background-color:#fff;margin:0;padding:30px 0 10px 30px;}
+body#oc_register_sign_in .oc_register .register_content div.proceed_as_guest div{background-color:#fff;}
+body#oc_register_sign_in .oc_register .register_content .title{font-size:14px;font-weight:700;}
+body#oc_register_sign_in .oc_register .register_content .sign_in .btn{padding-top:30px;padding-left:20px;float:left;}
+body#oc_register_sign_in .oc_register .register_content .proceed_as_guest .btn{padding-top:40px;padding-left:20px;float:left;}
+body#oc_register_sign_in .oc_register .register_content .proceed_as_guest .btn input{float:right;margin-right:90px;}
+body.owner_center #content-wrap #content #page.oc_register #oc_content{min-height:800px;}
+body#oc_register_unauth .oc_register #oc_content{float:left;}
+body#oc_register_unauth .oc_register #oc_content .maytag{display:none;}
+body#oc_register_unauth .oc_register #oc_content span.whirlpool{color:#000;}
+body#oc_register_unauth .oc_register #right_part{display:none;}
+body#oc_register_unauth .oc_register #oc_content div{float:left;}
+body#oc_register_unauth .oc_register #oc_content div.follow_info{padding:5px 2px;margin-bottom:10px;}
+body#oc_register_unauth .oc_register #oc_content div.prod_info{width:800px;display:none;}
+body#oc_register_unauth .oc_register #oc_content div.information_field{padding-top:15px;width:940px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .title{background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;padding-left:20px;width:920px;font-style:italic;}
+body#oc_register_unauth .oc_register #oc_content div.information_field label,body#oc_register_unauth .oc_register #oc_content div.information_field select,body#oc_register_unauth .oc_register #oc_content div.information_field input{float:left;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div{float:left;width:900px;margin-top:25px;padding-left:40px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.state select{width:167px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.first_name{margin-top:30px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div{float:left;width:900px;margin-top:25px;padding-left:40px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.pur_price span.orange_star{display:inline;float:none;padding:0;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.model_num{margin-top:30px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field label{width:130px;text-align:right;padding-right:15px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.edit_add{padding-left:120px;font-size:10px;padding-bottom:5px;margin-top:5px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.location_field select{width:150px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div input{width:250px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.zip_code input{width:120px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.phone_num_format{font-size:10px;padding-left:115px;color:#ddd;margin-top:2px;font-style:italic;}
+body#oc_register_unauth .oc_register #oc_content div.notify_me{padding-left:156px;padding-top:27px;margin-bottom:20px;}
+body#oc_register_unauth .oc_register #oc_content div.notify_me .inForm input{float:left;}
+body#oc_register_unauth .oc_register #oc_content div.notify_me .inForm label{float:left;width:310px;vertical-align:bottom;padding-left:15px;text-align:left;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information label{width:130px;text-align:right;padding-right:15px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.model_number{font-size:10px;padding-left:10px;width:200px;margin-top:3px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll left 2px transparent;margin-left:10px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.model_num input{width:250px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.serial_num input{width:250px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.pur_date input{width:250px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.pur_price input{width:250px;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.pur_price span{padding:5px;float:left;display:none;}
+body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.pur_location select{width:254px;}
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select{padding-top:30px;width:450px;margin-left:70px;}
+body#oc_register_unauth .oc_register #oc_content div.selector{padding-left:20px;}
+/*body#oc_register_auth .oc_register #oc_content div.btn{margin:10px 0 0 50px; width:380px;padding-bottom:10px;padding-top:20px;border-top:1px dotted #DDD;}*/
+body#oc_register_auth .oc_register #oc_content div.btn{margin:10px 0 0 50px; width:380px;padding-bottom:10px;padding-top:20px;border:none !important;background: none !important;box-shadow: none;cursor: default;}
+
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select .text{width:380px;padding-bottom:10px;padding-top:20px;border-top:1px dotted #DDD;}
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select .selector .inForm div{float:left;width:180px;padding:3px;}
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select .selector .inForm div input{width:13px;height:13px;}
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select .selector .inForm div label{padding-left:10px;vertical-align:bottom;}
+body#oc_register_unauth .oc_register #oc_content div.btn{margin-left:30px;padding-top:25px;padding-bottom:94px;padding-bottom:0;}
+body#oc_register_unauth .oc_register #oc_content div.btn a.ui-button.ui-icon-arrow{margin-left:20px;float:left;}
+body#oc_register_unauth .oc_register #oc_content div.btn a{float:left;}
+body#oc_register_unauth .oc_register #oc_content div.btn div.cancel_btn{margin-right:20px;}
+a.ui-button.lock .ub-left{background:url(../images/bg-btn-left-lock.png) no-repeat scroll 0 0 transparent;width:40px;}
+a.ui-button.lock:hover .ub-left{background-position:left bottom;color:#fff;}
+body#oc_register_unauth .oc_register #oc_content div#orange_line{background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;width:940px;height:22px;margin-top:20px;}
+body#oc_register_unauth .oc_register .ui-button.gray .ub-left{background:url(../images/bg-btn-left-arrow_cancel_left.png) no-repeat scroll 0 0 transparent;width:40px;display:block;float:left;height:50px;}
+body#oc_register_unauth .oc_register .ui-button.gray:hover .ub-left{background-position:left bottom;}
+body#oc_register_unauth .oc_register span.orange_star{color:#F3A826;}
+body#oc_register_unauth .oc_register .indicates_ins{position:absolute;right:0;top:95px;}
+body#oc_register_unauth .oc_register .phone_num_format{display:none;}
+body#oc_register_unauth .oc_register .btn a:hover .ub-center{background-position:left bottom;color:#FFF;}
+body#oc_register_unauth .oc_register .btn a:hover .ub-left{background-position:left bottom;}
+body#oc_register_unauth .oc_register .btn a .ub-right{background:url(../images/bg-btn-right.png) no-repeat scroll 0 0 transparent;width:17px;height:50px;display:block;float:left;}
+body#oc_register_unauth .oc_register .btn a:hover .ub-right{background-position:left bottom;}
+body#oc_register_unauth .oc_register .btn a .ub-center{font-weight:400;background:url(../images/bg-btn-center.png) repeat-x scroll 0 0 transparent;height:50px;display:block;width:auto;float:left;color:#09F;font-size:18px;line-height:50px;text-transform:lowercase;}
+body#oc_register_unauth .oc_register .ui-button.ui-icon-arrow .ub-left{background:url(../images/bg-btn-left-arrow.png) no-repeat scroll 0 0 transparent;width:40px;height:50px;display:block;float:left;}
+/*start oc_register_success_auth.html */body#oc_register_success_auth div#page.oc_register div#main div#main_title{font-family:Georgia,inherit;font-size:1.8em;color:#aaa;font-style:italic;padding-bottom:20px;font-weight:700;clear:both;padding-top:31px;}
+body#oc_register_success_auth.owner_center .owner_center_continue_link{margin-bottom:15px;}
+body#oc_register_success_auth.owner_center .owner_center_continue_link a{font-size:12px; padding-left:18px; background:url("/images/content/owner_center/icon_yellow_little_arrow.png") no-repeat 0 1px;}
+/*err msg*/body#oc_register_unauth .oc_register #oc_content div.information_field .location .inForm div.oc_entry_field_error,body#oc_register_unauth .oc_register #oc_content div.information_field .information .inForm div.oc_entry_field_error,body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.oc_entry_field_error,body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.oc_entry_field_error{clear:both;color:red;margin-left:140px;padding-top:5px;padding-left:5px;margin-top:0;}
+body#oc_register_unauth .oc_register #oc_content div.purchasing_select .inForm div.oc_entry_field_error,body#oc_register_auth .oc_register #oc_content div.purchasing_select .inForm div.oc_entry_field_error{clear:both;color:red;margin-left:0;padding-top:5px;padding-left:0;margin-top:0;}
+/*end oc_register_success_auth.html *//*Fix oc_register_unauth*/body#oc_register_unauth.owner_center .oc_register #oc_content{padding-left:0;position:relative;}
+/*End Fix oc_register_unauth*//*oc_register_auth.html*/body#oc_register_auth .oc_register #oc_content{float:left;}
+body#oc_register_auth .oc_register #oc_content .maytag{display:none;}
+body#oc_register_auth .oc_register #oc_content span.whirlpool{color:#000;}
+body#oc_register_auth .oc_register #right_part{display:none;}
+body#oc_register_auth .oc_register #oc_content div{float:left;width:500px;}
+body#oc_register_auth .oc_register #oc_content div.location .infor{margin-top:20px;padding-left:20px;font-weight:400;float:left;}
+body#oc_register_auth .oc_register #oc_content div.follow_info{padding:5px 2px;margin-bottom:10px;}
+body#oc_register_auth .oc_register #oc_content div.prod_info{width:800px;display:none;}
+body#oc_register_auth .oc_register #oc_content div.information_field{width:940px;position:relative;float:none;clear:both;}
+body#oc_register_auth .oc_register #oc_content div.information_field label,body#oc_register_auth .oc_register #oc_content div.information_field select,body#oc_register_auth .oc_register #oc_content div.information_field input{float:left;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div{/*float:left;*/width:100%;padding:10px 0;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm{margin:0 0 0 125px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a span{background:none;height:15px;width:auto;line-height:1;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.whirlpool span.ub-left{background:url(../images/bg-btn-arrow-small.png) no-repeat scroll left top transparent!important;height:16px!important;width:20px!important;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a span.ub-center{padding-left:5px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont select{width:170px;}
+body#oc_register_auth .oc_register #oc_content div.information{margin-top:50px;}
+body#oc_register_auth .oc_register #oc_content div.location .orange_star{display:inline;padding-right:5px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.edit span.ub-left{background:url(../images/bg-btn-arrow-small.png) no-repeat scroll left top transparent;width:15px;display:block;float:left;height:16px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.edit:hover span.ub-left{background-position:left bottom;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button span{color:#333333;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.edit:hover span{color:#666666;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.addone span.ub-left{background:url(../images/bg-btn-sm-plus-icon.png) no-repeat scroll left top transparent;width:15px;display:block;float:left;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.addone:hover span.ub-left{background-position:left bottom;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a.ui-button.addone:hover span{color:#6CF;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a{margin-left:20px;float:left;margin-top:3px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a span.ub-center{text-transform:capitalize;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_cont a span.ub-center:hover,
+a span.ub-center:hover{color:#999999;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.state select{width:167px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.first_name{margin-top:30px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div{float:left;width:900px;margin-top:25px;padding-left:40px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_price span.orange_star{display:inline;float:none;padding:0;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.model_num{margin-top:50px;}
+body#oc_register_auth .oc_register #oc_content div.information_field label{width:100px;text-align:right;margin:0 15px 0 0;font-weight:bold;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.edit_add{padding-left:120px;font-size:10px;padding-bottom:5px;margin-top:5px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.location_field select{width:150px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div input{width:250px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.zip_code input{width:120px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.phone_num_format{font-size:10px;padding-left:115px;color:#ddd;margin-top:2px;font-style:italic;}
+body#oc_register_auth .oc_register #oc_content div.notify_me{padding-left:156px;padding-top:10px;margin-bottom:20px;}
+body#oc_register_auth .oc_register #oc_content div.notify_me .inForm input{float:left;}
+body#oc_register_auth .oc_register #oc_content div.notify_me .inForm label{float:left;width:310px;vertical-align:bottom;padding-left:15px;text-align:left;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information label{width:130px;text-align:right;padding-right:15px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.model_number{font-size:10px;padding-left:10px;width:200px;margin-top:3px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll left 2px transparent;margin-left:10px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.model_num input{width:250px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.serial_num input{width:250px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_date input{width:250px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_price input{width:250px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_price span{padding:5px;float:left;display:none;}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_location select{width:254px;}
+body#oc_register_auth .oc_register #oc_content div.purchasing_select{padding-top:30px;width:450px;margin-left:70px;}
+body#oc_register_auth .oc_register #oc_content div.selector{padding-left:20px;}
+body#oc_register_auth .oc_register #oc_content div.purchasing_select .text{width:380px;padding-bottom:10px;padding-top:20px;border-top:1px dotted #DDD;}
+body#oc_register_auth .oc_register #oc_content div.purchasing_select .selector .inForm div{float:left;width:180px;padding:3px;}
+body#oc_register_auth .oc_register #oc_content div.purchasing_select .selector .inForm div input{width:13px;height:13px;}
+body#oc_register_auth .oc_register #oc_content div.purchasing_select .selector .inForm div label{padding-left:10px;vertical-align:bottom;}
+body#oc_register_auth .oc_register #oc_content div.btn a.ui-button.ui-icon-arrow{margin-left:20px;float:left;}
+body#oc_register_auth .oc_register #oc_content div.btn a.ui-button.gray{float:left;}
+body#oc_register_auth .oc_register #oc_content div.btn div.cancel_btn{margin-right:20px;}
+body#oc_register_auth .oc_register span.orange_star{color:#F3A826;}
+body#oc_register_auth .oc_register .indicates_ins{position:relative;right:0;top:80px;}
+body#oc_register_auth .oc_register #oc_content div.indicates_ins{margin-left: 810px;width:125px;/*float:right;*/}
+body#oc_register_auth .oc_register .phone_num_format{display:none;}
+body#oc_register_auth .oc_register #oc_content{position:relative;}
+.oc_register a.more_info_link{background:none;padding-left:4px;}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.contentIn{color:#999;float:left;width:auto;display:inline-block;margin:0;padding:0;}
+/*endoc_register_auth.html*//*For*pop-up*/
+.modalHeader{font-family:Helvetica, Helvetica Neue, Arial, sans-serif;color:#ebb111;font-size:18px;text-transform:capitalize;}
+.modalContent{font-weight:normal;margin:3px 0 10px 0;padding-bottom:10px;color:#666666; font-size:10px;}
+div#submission_ok_popup{background:url(../images/bg_row_yellow.png) repeat scroll left top #FFF;padding:8px;}
+div#submission_ok_popup .dijitDialogPaneContent{background:#FFF;}
+#ADupdated{padding-top:12px;padding-left:13px;padding-right:9px;font-size:10px;}
+#ADupdated a{padding-bottom:5px;display:block;background:#FFF;}
+/***//* end include: oc_register.css *//* begin include: oc_product_help.css *//*start Buttons style */div#page.oc_product_help .whole-button{overflow:hidden;width:auto;}
+div#page.oc_product_help .whole-button{color:#09f;text-decoration:none;}
+div#page.oc_product_help .whole-button:hover{color:#fff;}
+div#page.oc_product_help .whole-button:hover .button-left,div#page.oc_product_help .whole-button:hover .button-right,div#page.oc_product_help .whole-button:hover .button-center{background-position:0 -50px;}
+/*end   Buttons style *//*start oc_product_help_auth.html */body#oc_product_help_auth div#page.oc_product_help div#main_header h4{font-size:16px;padding-top:5px;padding-bottom:5px;background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;padding-left:30px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content{padding-left:0;min-height:600px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content #top_area{float:left;}
+body#oc_product_help_auth div#page.oc_product_help div#main{float:left;background:url(../images/bg_oc_border_middle.png) repeat-y scroll 0 0 transparent;width:845px;height:auto;}
+body#oc_product_help_auth div#page.oc_product_help div#main-top{display:none;background:url(../images/bg_oc_border_top.png) no-repeat scroll left top transparent;width:845px;height:20px;}
+body#oc_product_help_auth div#page.oc_product_help div#main-bottom{background:url(../images/bg_oc_border_bottom.png) no-repeat scroll left bottom transparent;width:845px;height:20px;float:left;}
+body#oc_product_help_auth div#page.oc_product_help div#main span.prompt{width:73%;display:block;margin-bottom:5px;padding-left:30px;color:#666;}
+body#oc_product_help_auth div#page.oc_product_help div#main .tips{padding-left:30px;padding-bottom:5px;margin-bottom:30px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content p{font-size:12px!important;padding-left:20px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.and_or span{font-size:12px;font-weight:700;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content label{width:170px;padding-right:20px;font-size:12px;font-weight:700;text-align:right;float:left;color:#666;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content select{display:block;width:285px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content input.enter_search_term{display:block;width:280px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.search_by_product_type{margin-top:26px;width:100%;padding-left:30px;float:left;clear:both;padding-bottom:20px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.and_or{width:60px;text-align:right;padding-left:23px;float:left;color:#999;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.search_by_keyword{width:450px;padding-left:5px;float:left;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.search_by_keyword label{width:112px;color:#666;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.bth_search{float:left;margin-top:-13px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow:hover span{background-position:left bottom;color:#FFF;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.bth_search input{width:70px;}
+body#oc_product_help_auth div#page.oc_product_help div#oc_content div.bth_search a.search_tips{display:block;width:70px;padding-left:10px;margin-top:15px;position:relative;left:-316px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 38px transparent;margin-top:50px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 3px transparent;z-index:1;}
+body#oc_product_help_auth div#page.oc_product_help #result_part{float:left;}
+body#oc_product_help_auth div#page.oc_product_help .headerline{background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;padding-left:20px;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol{float:right;margin:0;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li{float:left;width:15px;height:15px;border:1px dotted #999;margin-left:5px;text-align:center;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li a{color:#999;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li#letf_point a,body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li.nouse a{cursor:default;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li#letf_point a:hover,body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li.nouse a:hover{text-decoration:none;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li#letf_point,body#oc_product_help_auth div#page.oc_product_help .page_number_part ol li#right_point{border:none;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part{padding-left:5px;padding-bottom:10px;border-bottom:1px dotted #f3a826;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part{border-bottom:1px dotted #f3a826;margin-bottom:10px;}
+body#oc_product_help_auth div#page.oc_product_help .page_number_part.bottom{border-top:1px dotted #f3a826;padding-top:20px;border-bottom:none;margin-bottom:72px;}
+body#oc_product_help_auth div#page.oc_product_help .maytag{display:none;}
+body#oc_product_help_auth div#page.oc_product_help span.result_title{padding-left:7px;background:url(../images/icon_arrow_right_nav.png) no-repeat scroll 0 3px transparent;color:#000;font-weight:700;}
+body#oc_product_help_auth div#page.oc_product_help .slant{display:none;}
+body#oc_product_help_auth div#page.oc_product_help span.result_title a{color:#000;font-size:12px;}
+body#oc_product_help_auth div#page.oc_product_help ol#show_result{margin:0;}
+body#oc_product_help_auth div#page.oc_product_help ol#show_result span.message_number{display:none;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result span.result_title{display:block!important;height:20px;width:800px;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result{zoom:1;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result span.result_title a{display:block!important;width:800px;height:15px;vertical-align:top;clear:both;}
+body#oc_product_help_auth div#page.oc_product_help ol#show_result li{margin-bottom:20px;/*position:relative;*/padding-bottom:20px;}
+body#oc_product_help_auth div#page.oc_product_help ol#show_result li p{padding-left:7px;margin:0;}
+body#oc_product_help_auth div#page.oc_product_help ol#show_result span.updatedate{position:absolute;bottom:3px;left:0;padding-left:7px;}
+/*end oc_product_help_auth.html *//*start oc_product_help_unauth.html */body#oc_product_help_unauth div#page.oc_product_help div#main_header h4{padding-left:20px;margin:0!important;font-size:16px;}
+body#oc_product_help_unauth div#page.oc_product_help div.main_footer{margin-top:35px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.your_account{width:900px;padding:5px;margin-bottom:30px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.your_account p.account.maytag{display:none;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.your_account p{font-size:11px;padding:25px 0 25px 15px; width:98%; float:left;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content h3.which_appliance{color:#ebb111;font-family:Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;padding:0 0 0 15px}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content h3.which_appliance2{display:none;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.product{padding-left:25px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li{display:block;clear:both;height:135px;margin-bottom:35px;}
+
+.oc_search_content_formInfo .formLine .inputSection a.ui-button.ui-icon-arrow,
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section #btn a,
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.ui-button.ui-icon-arrow,
+#searchButtonId{background:url("/images/btn_search_small.png") no-repeat top left; width:100px; height:32px; float:left; margin:0 0 15px 15px;}
+
+.oc_search_content_formInfo .formLine .inputSection a.ui-button.ui-icon-arrow:hover,
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section #btn a:hover,
+body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.ui-button.ui-icon-arrow:hover,
+#searchButtonId:hover{background-position:0 -31px;}
+
+html[lang='fr'] .oc_search_content_formInfo .formLine .inputSection a.ui-button.ui-icon-arrow,
+html[lang='fr'] body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section #btn a,
+html[lang='fr'] body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.ui-button.ui-icon-arrow,
+html[lang='fr'] #searchButtonId{background:url("/images/data/fr_CA/support_search_fr.png") no-repeat top left; width:100px; height:32px; float:left; margin:0 0 15px 15px;}
+
+html[lang='fr'] .oc_search_content_formInfo .formLine .inputSection a.ui-button.ui-icon-arrow:hover,
+html[lang='fr'] body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section #btn a:hover,
+html[lang='fr'] body#oc_search_manuals_results div#page.oc_search div#main_right div.main_rightSearch a.ui-button.ui-icon-arrow:hover,
+html[lang='fr'] #searchButtonId:hover{background-position:0 -31px;}
+
+#searchButtonId ub-center{text-indent:-9999px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li h3{margin:0;font-weight:400;font-size:12px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li img{/*width:135px; height:135px; */margin-left:10px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li input,body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li img,body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li h3,body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div{float:left;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li select{display:block;clear:both;margin:0 0 0 30px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li input{min-height:135px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li.other{height:20px;margin-top:20px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li.other input{min-height:inherit;margin-top:0;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div p{margin-top:2px;font-size:12px;color:#666;font-weight:700;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div p.font_color{clear:both;font-size:12px!important;font-weight:700;margin-bottom:0;width:210px;color:#666;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div p span{color:#666;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional{clear:both;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div{padding-top:35px;padding-left:30px;padding-top:0;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li div h3{margin-top:45px;font-size:11px;font-weight:700;color:#999;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional{width:400px;padding-left:45px;margin-top:50px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional div{padding-bottom:10px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional input{display:block;clear:both;width:310px;margin-top:5px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional label{font-size:12px;font-weight:700;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional label.tremname2{display:none;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.optional a{font-size:11px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat left 2px;padding-left:10px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content a#submit_go span.ub-left{background:url(../images/bg-btn-left-arrow.png) no-repeat left top;display:block;float:left;height:50px;width:40px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content a#submit_go span.ub-center{background:url(../images/bg-btn-center.png) repeat-x left top;float:left;display:block;width:auto;height:50px;line-height:50px;font-size:18px;color:#09F;text-transform:lowercase;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content a#submit_go span.ub-right{background:url(../images/bg-btn-right.png) no-repeat left top;display:block;float:left;height:50px;width:17px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content a#submit_go:hover span{background-position:left bottom;color:#FFF;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content a#submit_go{display:inline-block;margin:7px 0 40px 20px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li input{margin-top:57px;}
+body#oc_product_help_unauth div#page.oc_product_help div#oc_content ul li.other h3{margin-top:5px;text-transform:capitalize;margin-left:10px;margin-bottom:10px;font-weight:700;margin-left:0;}
+body#oc_product_help_unauth div#page.oc_product_help #oc_content #oc_existing_apps_section .other_row{margin-left:4em;}
+body#oc_product_help_unauth div#page.oc_product_help #oc_content #oc_existing_apps_section .other_row .oc_image_and_button_col span{font-weight:700;margin-bottom:10px;text-transform:capitalize;font-size:12px;color:#666;display:inline-block;margin-left:3px;}
+body#oc_product_help_unauth div#page.oc_product_help #oc_content #oc_existing_apps_section .other_row .oc_image_and_button_col select{margin-left:30px;}
+/*end oc_product_help_unauth.html *//*start oc_product_help_article.html */body#oc_product_help_article div#page.oc_product_help a:hover{color:#3CF;}
+body#oc_product_help_article div#page.oc_product_help div.print_email_this_page{width:100%;clear:both;border-bottom:#DDDDDD solid 3px;padding-bottom:10px;margin-bottom:15px;}
+body#oc_product_help_article div#page.oc_product_help div.print_email_this_page div{float:right;}
+body#oc_product_help_article div#page.oc_product_help div.print_email_this_page a{font-size:12px;color:#666666;font-style:normal;font-family:Helvetica, Arial, sans-serif;}
+body#oc_product_help_article div#page.oc_product_help div.print_email_this_page a.return_to_search_results{font-style:normal;font-family:Helvetica, Arial, sans-serif;background:url(../images/icon_arrow_left_nav.png) no-repeat left 2px;padding-left:10px;color:#ebb111;}
+body#oc_product_help_article div#page.oc_product_help div.print_email_this_page span{display:inline-block;width:20px;font-size:14px;text-align:center;color:#39F;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main{clear:both;min-height:540px;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main a.return_to_search_results{font-size:14px;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main div.faq{margin-top:15px;width:760px;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main div.faq h3{margin-bottom:7px;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main div.faq_header{display:none;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main h2.faq_h2{color:#ebb111;border-bottom:#DDDDDD solid 1px;padding-bottom:15px;font-family:Helvetica, Arial, sans-serif;font-weight:normal;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main div.faq_return_to{border-top:#DDDDDD solid 3px;padding-top:15px;margin-top:50px;font-size:12px;}
+body#oc_product_help_article div#page.oc_product_help .question_this_page{display:none;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main h4.faq_h4{font-weight:400;}
+body#oc_product_help_article div#page.oc_product_help div.faq_main div.faq_return_to a{background:url(../images/icon_arrow_left_nav.png) no-repeat scroll left 3px transparent;padding-left:10px;}
+/*end oc_product_help_article.html *//*start oc_product_help_results.html*/
+body#oc_product_help_results div#page.oc_product_help div#oc_content{padding-left:0;min-height:600px;}
+body#oc_product_help_results div#page.oc_product_help div#main{float:left;background:url(../images/bg_oc_border_middle.png) repeat-y scroll 0 0 transparent;width:845px;height:auto;}
+body#oc_product_help_results div#page.oc_product_help div#main-top{display:none;background:url(../images/bg_oc_border_top.png) no-repeat scroll left top transparent;width:845px;height:20px;}
+body#oc_product_help_results div#page.oc_product_help div#main-bottom{background:url(../images/bg_oc_border_bottom.png) no-repeat scroll left bottom transparent;width:845px;height:20px;float:left;}
+body#oc_product_help_results div#page.oc_product_help div#main span.prompt{width:73%;display:block;margin-bottom:5px;padding-left:30px;}
+body#oc_product_help_results div#page.oc_product_help div#main .tips{padding-left:30px;padding-bottom:5px;margin-bottom:30px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content p{font-size:12px!important;padding-left:20px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.and_or span{font-size:12px;font-weight:700;color:#666;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content label{color:#666;width:170px;padding-right:20px;font-size:12px;font-weight:700;text-align:right;float:left;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content select{display:block;width:285px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content input.enter_search_term{display:block;width:280px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.search_by_product_type{margin-top:26px;width:100%;padding-left:30px;float:left;clear:both;padding-bottom:20px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.and_or{width:60px;text-align:right;padding-left:23px;float:left;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.search_by_keyword{width:450px;padding-left:5px;float:left;position:relative;z-index:999;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.search_by_keyword label{width:112px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search{float:left;margin-top:-13px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search input{width:70px;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search a.search_tips{display:block;width:70px;padding-left:10px;margin-top:15px;position:relative;left:-316px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 38px transparent;margin-top:50px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 3px transparent;}
+body#oc_product_help_results div#page.oc_product_help #result_part{clear:both;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol{float:right;margin:0;margin-top:-30px;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li{float:left;width:15px;height:15px;border:1px dotted #999;margin-left:5px;text-align:center;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li a{color:#999;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#letf_point a,body#oc_product_help_results div#page.oc_product_help .page_number_part ol li.nouse a{cursor:default;color:#666;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#letf_point a:hover,body#oc_product_help_results div#page.oc_product_help .page_number_part ol li.nouse a:hover{text-decoration:none;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#letf_point,body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#right_point{border:none;color:#999;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#letf_point,body#oc_product_help_results div#page.oc_product_help .page_number_part ol li#right_point a{color:#999;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part{padding-left:5px;padding-bottom:10px;border-bottom:1px dotted #f3a826;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part{border-bottom:1px dotted #f3a826;margin-bottom:10px;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part span.result_number{font-weight:700;}
+body#oc_product_help_results div#page.oc_product_help .page_number_part.bottom{border-top:1px dotted #f3a826;padding-top:20px;border-bottom:none;margin-bottom:72px;}
+body#oc_product_help_results div#page.oc_product_help .maytag{display:none;}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-left{}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-center{}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-right{}
+body#oc_product_help_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow:hover span{}
+body#oc_product_help_results div#page.oc_product_help span.result_title{padding-left:10px;background:url(../images/icon_arrow_right_nav.png) no-repeat scroll 0 3px transparent;color:#000;font-weight:700;}
+body#oc_product_help_results div#page.oc_product_help .slant{display:none;}
+body#oc_product_help_results div#page.oc_product_help span.result_title a{color:#666;font-size:12px;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result{margin:0;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result span.message_number{display:none;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result li{margin-bottom:20px;/*position:relative; */padding-bottom:20px;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result li p{padding-left:10px;margin:0;width:73%;}
+body#oc_product_help_results div#page.oc_product_help ol#show_result span.updatedate{position:absolute;bottom:3px;left:0;padding-left:10px;}
+/*end oc_product_help_results.html*//*start oc_product_help_no_results.html */body#oc_product_help_no_results div#page.oc_product_help div#main_header h4{font-size:16px;padding-top:5px;padding-bottom:5px;background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;padding-left:30px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content{padding-left:0;min-height:600px;}
+body#oc_product_help_no_results div#page.oc_product_help div#main{float:left;background:url(../images/bg_oc_border_middle.png) repeat-y scroll 0 0 transparent;width:845px;height:auto;}
+body#oc_product_help_no_results div#page.oc_product_help div#main-top{display:none;background:url(../images/bg_oc_border_top.png) no-repeat scroll left top transparent;width:845px;height:20px;}
+body#oc_product_help_no_results div#page.oc_product_help div#main-bottom{background:url(../images/bg_oc_border_bottom.png) no-repeat scroll left bottom transparent;width:845px;height:20px;float:left;}
+body#oc_product_help_no_results div#page.oc_product_help div#main span.prompt{width:73%;display:block;margin-bottom:5px;padding-left:30px;}
+body#oc_product_help_no_results div#page.oc_product_help div#main .tips{padding-left:30px;padding-bottom:5px;margin-bottom:30px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content p{font-size:12px!important;padding-left:20px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.and_or span{font-size:12px;font-weight:700;color:#666;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content label{color:#666;width:170px;padding-right:20px;font-size:12px;font-weight:700;text-align:right;float:left;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content select{display:block;width:285px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content input.enter_search_term{display:block;width:280px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.search_by_product_type{margin-top:26px;width:100%;padding-left:30px;float:left;clear:both;padding-bottom:20px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.and_or{width:60px;text-align:right;padding-left:23px;float:left;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.search_by_keyword{width:450px;padding-left:5px;float:left;position:relative;z-index:999;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.search_by_keyword label{width:112px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search{float:left;margin-top:-13px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search input{width:70px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search a.search_tips{display:block;width:70px;padding-left:10px;margin-top:15px;position:relative;left:-316px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 38px transparent;margin-top:50px;background:url(../images/icon_arrow_blue_right_small.png) no-repeat scroll 0 3px transparent;}
+body#oc_product_help_no_results div#page.oc_product_help #result_part{clear:both;}
+body#oc_product_help_no_results div#page.oc_product_help .headerline{font-size:16px;padding-top:5px;padding-bottom:5px;background:url(../images/bg_row_yellow.png) repeat scroll left top transparent;padding-left:20px;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol{float:right;margin:0;margin-top:-30px;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li{float:left;width:15px;height:15px;border:1px dotted #999;margin-left:5px;text-align:center;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li a{color:#999;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#letf_point a,body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li.nouse a{cursor:default;color:#666;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#letf_point a:hover,body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li.nouse a:hover{text-decoration:none;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#letf_point,body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#right_point{border:none;color:#999;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#letf_point,body#oc_product_help_no_results div#page.oc_product_help .page_number_part ol li#right_point a{color:#999;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part{padding-left:5px;padding-bottom:10px;border-bottom:1px dotted #f3a826;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part{border-bottom:1px dotted #f3a826;margin-bottom:10px;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part span.result_number{font-weight:700;}
+body#oc_product_help_no_results div#page.oc_product_help .page_number_part.bottom{border-top:1px dotted #f3a826;padding-top:20px;border-bottom:none;margin-bottom:72px;}
+body#oc_product_help_no_results div#page.oc_product_help .maytag{display:none;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-left{background:url(../images/bg-btn-left-arrow.png) no-repeat left top;display:block;float:left;height:50px;width:40px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-center{background:url(../images/bg-btn-center.png) repeat-x left top;float:left;display:block;width:auto;height:50px;line-height:50px;font-size:18px;color:#09F;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow span.ub-right{background:url(../images/bg-btn-right.png) no-repeat left top;display:block;float:left;height:50px;width:17px;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.bth_search a.ui-button.ui-icon-arrow:hover span{background-position:left bottom;color:#FFF;}
+body#oc_product_help_no_results div#page.oc_product_help div#oc_content div.no_results{clear:both;padding-top:20px;}
+/*end oc_product_help_no_results.html *//*start oc_product_help_error.html */body#oc_product_help_error #content-wrap{background:none;}
+body#oc_product_help_error #content-wrap div#main h2{color:#11A9CC;font-family:Georgia,inherit;font-size:22px;font-style:italic;font-weight:400!important;}
+body#oc_product_help_error #content-wrap div#main{padding-left:6px;}
+body#oc_product_help_error #content-wrap div#main p{font-size:13px;color:#999;}
+/*end oc_product_help_error.html*//* misc fixes ccurry */form#productHelpSearchForm div#errorDiv{clear:both;width:300px;padding-left:220px;}
+form#productHelpSearchForm div#main_bg_mid div#errorDiv{clear:both;width:300px;padding-left:43px;padding-top:10px;}
+/*new fixed*/body#oc_product_help_unauth div#page.oc_product_help div#oc_content div.product ul li input,body#oc_schedule_repair_step1_auth #page.oc_schedule_repair div#oc_content div.product ul li input{margin-top:0;}
+body#oc_product_help_auth div#page.oc_product_help div#main,body#oc_product_help_results div#page.oc_product_help div#main{position:relative;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section .other_row a.more_info_link{display:block;margin-left:8px;margin-top:10px;}
+/*new fixed end*//* FIXED BY MICHAEL */div#page.oc_product_help div#oc_content div.bth_search a.search_tips{clear:both;/*z-index:-1*/ z-index:1000;}
+div#page.oc_product_help div#oc_content #product-help-search-tree{z-index:1000;}
+div#page.oc_product_help div#oc_content #contentsDisplayAreaIdRefreshArea,div#page.oc_product_help div#oc_content #contentsDisplayAreaIdRefreshArea #show_result,div#page.oc_product_help div#oc_content #retainSearchArea,div#page.oc_product_help div#oc_content #retainSearchArea #top_area,div#page.oc_product_help div#oc_content #retainSearchArea #main{width:100%;height:100%;}
+div#page.oc_product_help div#oc_content div.search_by_product_type,div#page.oc_product_help div#oc_content div.search_by_product_type #oc_entry_field_section,div#page.oc_product_help div#oc_content div.search_by_product_type #product-select-container,div#page.oc_product_help div#oc_content div.search_by_product_type .oc_entry_field_input,div#page.oc_product_help div#oc_content div.search_by_product_type .oc_entry_field{z-index:9999;}
+#print_page a#manuals_search_button{position:absolute;right:5px;top:5px;}
+div#page.oc_schedule_repair div#oc_content div.product ul li img{width:auto;height:auto;}
+.oc_entry_field .oc_entry_field_input{float:left;}
+.oc_entry_field_input #oc_entery_field_input.registration_select_input,
+#addressId{float:left;min-width:150px;padding:5px;border-radius:5px}
+div#page.oc_my_appliances #editAppliance .clearLine{width:100%;float:left; margin:10px 0;}
+div#page.oc_my_appliances #editAppliance .ui-button{float:left; text-transform:capitalize; margin:0 30px 0 0; width:auto}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#cancel,
+div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right{background:url("/images/btn_cancel_contact_small.png") top left no-repeat; width:90px; height:33px; margin:40px 0; text-indent:-9999px; padding:0;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#cancel:hover{background-position:0 -32px;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#sumit{
+background:url("/images/btn_schedule_small.png") top left no-repeat; width:190px; height:33px; margin:40px 0; text-indent:-9999px;padding:0;}
+div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right:hover,body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#sumit:hover{background-position:0 -32px}
+div#page.oc_my_appliances #editAppliance .ui-button.fork{background:url("/images/btn_save_small.png") top left no-repeat; width:90px; height:34px; margin:40px 0; text-indent:-9999px}
+div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right:hover,
+div#page.oc_my_appliances #editAppliance .ui-button.fork:hover{background-position:0 -32px;}
+A.blue_remove.blue.small-btn.ui-button .ub-left:hover{background-position:left -16px;}
+body#oc_schedule_repair_step1_auth div#oc_existing_apps_section{clear:left;height:auto;float:none;}
+body#oc_schedule_repair_step1_auth div#oc_entry_field_section{clear:both;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_label{width:160px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .other_row{margin-bottom:0;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_existing_apps_section .oc_existing_app .oc_existing_info_col{margin-top:0;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper #oc_action_sub_wrapper{padding-left:175px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .oc_entry_field_error{margin-left:175px;}
+body#oc_schedule_repair_step1_auth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .owner_center_continue_link{margin-left:10px;float:left;margin-top:5px;}
+body#oc_schedule_repair_step1_auth.owner_center .owner_center_continue_link{background:none;}
+div#page.oc_product_help div.select_appliance_img{padding-top:23px!important;}
+/* FIXED BY MICHAEL END *//* end include: oc_product_help.css */
+div.orderTotalInfoPcr176 {
+    background: #F5F4EA;
+    border: 1px solid #8F8F8F;
+    color: #000;
+    clear: both;
+    float: right;
+    marging: 10px 0px 10px 0;
+    padding: 5px;
+    width: 300px;
+}
+#oc_product_help_auth.owner_center #oc_entry_field_section .oc_entry_field #product-select-container {
+    z-index: 2 !important;
+}
+div#page.oc_product_help div#oc_content #product-help-search-tree{
+*top: 28px; *left: 0px;
+}
+
+/*REQ0275535 - NKB:Online Self Scheduler Canada - Change of confirmation email*/
+
+#oc_entry_field_section div#validate_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#validate_btn a
+{
+    /*background: url("../images/btn_verity_address_ser_repair_eng.jpg") no-repeat scroll left top transparent;*/
+	 background: url("../images/btn_verity_address_ser_repair.jpg") no-repeat scroll left top transparent;
+    float: left;
+    height: 24px;
+    margin: 0 0 20px 139px;
+    /*text-indent: -9999px;*/
+     width: 266px;
+    padding:8px 0 0 36px;
+    font:bold 13px arial;
+    color:#666;
+}
+}
+#oc_entry_field_section div#validate_btn a:hover {
+    background-position: 0 -31px;
+	color:#999;
+}
+
+#oc_entry_field_section div#edit_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#edit_btn a
+{
+     background: url("../images/btn_edit_address_bg.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 25px;
+    margin: 10px 0 20px 139px;
+    width: 162px;
+    font: bold 13px arial;
+    color:#666;
+    padding: 8px 0 0 36px;
+
+}
+
+#oc_entry_field_section div#edit_btn a:hover
+{
+	background-position: 0 -31px;
+	color:#999;
+}
+

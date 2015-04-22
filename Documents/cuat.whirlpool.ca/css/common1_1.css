@@ -1,0 +1,325 @@
+@charset "utf-8";#quick_cart_container{position:absolute!important;left:-10000px;z-index:10000;background:transparent url(../images/bg_mini_cart_top.png) no-repeat 0 0;overflow:visible!important;width:auto!important;display:block;margin-top:0;padding:13px 0 0 0;font-family:'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;font-size:10px;font-weight:700;font-style:normal;color:#999;outline:0}
+#quick_cart_container #quick_cart_bottom{background:transparent url(../images/bg_mini_cart_bottom_2.png) no-repeat 0 bottom;height:20px;width:280px;clear:both}
+#quick_cart #WC_MiniShopCartDisplay_div_1{display:block;width:286px;background:transparent url(../images/bg_mini_cart_middle.png) repeat-y 0 0;margin:0;padding:0;line-height:normal;float:none;clear:both;height:auto;overflow:hidden}
+#quick_cart_container iframe{display:none!important}
+#quick_cart .container .list{overflow:visible;padding-left:20px;outline:0}
+#quick_cart .container .list .product{float:left!important;width:160px!important;overflow:visible!auto;margin:0 0 10px 0!important;padding:0 65px 10px 0!important;border-bottom:1px solid #ccc;clear:left}
+#quick_cart .container .list .price{font-family:'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif!important;overflow:visible;float:left;width:65px;padding:0;text-align:right;float:left!important;margin:0 0 0 -65px!important;display:block;color:#999!important}
+#quick_cart .container .list table tr td{vertical-align:top}
+#quick_cart .container .list table tr td a.order_link{width:100px;display:block;overflow:hidden;clear:both}
+#quick_cart .container .list table tr td span.price{margin:0!important;width:auto!important}
+#quick_cart .container .list .product a{text-transform:capitalize;font-size:10px;line-height:14px!important;color:#999!important;font-weight:bold}
+#quick_cart .container .list .product a:hover,#quick_cart .container .list .product a:focus{text-decoration:none}
+#quick_cart .footer{background:transparent!important;background-image:url()!important;background-repeat:repeat-x;height:auto!important;text-align:right!important;padding-right:20px;border:none!important}
+#quick_cart .cart_shadow{background-image:url()!important;background-repeat:repeat-x!important;height:auto!important;background-color:transparent!important;width:auto!important}
+#quick_cart .container .message{margin:0!important;padding-left:15px!important;min-width:auto!important;background-color:transparent!important;border:none!important}
+#quick_cart .container .list .product_image{float:none!important;width:auto!important;padding:0!important;display:none}
+#quick_cart .container .list .details{float:none!important;padding:0!important}
+#quick_cart .container span.price{float:left}
+#quick_cart{width:auto!important}
+#quick_cart .quantity{display:none}
+#quick_cart .close_shopping_cart{display:none}
+#quick_cart #MiniShopCartProductsList{padding:10px 20px 0 10px}
+#placeHolder{position:absolute!important;left:-180px!important;*margin-top:15px}
+.nodisplay{display:none}
+body.my_account #page.personalInformationPage #WC_MyAccountDisplay_div_3_9 #MessageArea,
+body.my_account #page #WC_MyAccountDisplay_div_3_9 #MessageArea,
+#MessageArea { float: left; margin: 0; width: auto; padding: 0 16px; }
+html.dj_gecko body.order_checkout div#content-wrap div#content div#main-content-wrap div#main-content.center_frame div#page.shoppingCartPage div#content_wrapper_box div#MessageArea{float:none !important}
+html.dj_gecko body.order_checkout div#content-wrap div#content div#main-content-wrap div#main-content.center_frame div#page.shoppingCartPage div#content_wrapper_box div#MessageArea span{color:red !important}
+/*#WC_MyAccountDisplay_div_4 { float: left; }*/
+#MessageArea br{display:none}
+#MessageArea .error_msg{color:#f00}
+.floatLeftClassPlusShortMar{float:left;margin:0 20px 0 0}
+.floatLeftClassPlusWidth{float:left;width:100px}
+.leftColumnContent{float:left;width:400px}
+.bottomColumnContent{padding:10px 0 0 12px}
+.bottomLeftColumnContent{float:left;width:400px}
+.bottomColumnContenttwo{float:left;padding:0 0 0 98px}
+.bottomColumnContenttwoLeft{float:left;width:400px}
+.bottomColumnContenttwoRight{float:left}
+#tooltip_popup .popup_header_title{float:left;color:white;padding:5px 4px 0 15px;font-size:11px}
+#tooltip_popup .bodycontent_short{background-repeat:no-repeat;padding:12px 17px 12px 15px;margin:0 1px 0 1px}
+#store_availability_popup_main_div{display:none}
+.dijitTooltip{position:absolute;z-index:6000;display:block;left:50%;top:-10000px;overflow:visible}
+.dijitTooltipConnector{position:absolute}
+.dijit_a11y .dijitTooltipContainer{opacity:1!important;background-color:white!important}
+.dj_safari .tundra .dijitPopup{-webkit-box-shadow:0 5px 10px #adadad}
+.dijitTooltip,.dijitTooltipDialog{opacity:.95;background:transparent}
+.dijitTooltipBelow{padding-top:13px}
+.dijitTooltipAbove{padding-bottom:13px}
+.dijitTooltipConnector{border:0;z-index:2}
+.dijitTooltipABRight .dijitTooltipConnector{left:auto!important;right:3px}
+.dijitTooltipBelow .dijitTooltipConnector{top:0;left:3px;width:16px;height:14px}
+.dijitTooltipAbove .dijitTooltipConnector{bottom:0;left:3px;width:16px;height:14px}
+.dijitTooltipLeft{padding-right:13px}
+.dj_ie6 .dijitTooltipLeft{padding-right:15px}
+.dijitTooltipLeft .dijitTooltipConnector{right:0;bottom:7px;background:url("../images/tooltipConnectorRight.png") no-repeat top left;width:16px;height:14px}
+.dijitTooltipRight{padding-left:13px}
+.dijitTooltipRight .dijitTooltipConnector{left:0;bottom:7px;background:url("../images/tooltipConnectorLeft.png") no-repeat top left;width:16px;height:14px}
+.dj_ie .dijitRtl .dijitTooltipLeft{margin-right:0;margin-left:13px}
+.dj_ie .dijitRtl .dijitTooltipRight{margin-left:26px;margin-right:-13px}
+.dj_ie .dijitRtl .dijitTooltipDialog{zoom:1!important}
+.dijitCalendarContainer thead tr th,.dijitCalendarContainer thead tr td,.dijitCalendarContainer tbody tr td,.dijitCalendarContainer tfoot tr td{padding:0}
+.dijitCalendarNextYear{margin:0 0 0 .55em}
+.dijitCalendarPreviousYear{margin:0 .55em 0 0}
+.dijitCalendarIncrementControl{cursor:pointer;cursor:hand;width:1em}
+.dijitCalendarDisabledDate{color:gray!important}
+.dijitCalendarBodyContainer tbody tr td{cursor:pointer;cursor:hand}
+.dijitTooltipFocusNode{padding:2px 2px 2px 2px}
+.modalDialogUnderlay{background:#eee;opacity:.5;display:block;position:absolute;left:0;top:0;width:100%;height:100%;z-index:50}
+.dj_ie .modalDialogUnderlay{filter:alpha(opacity=50)}
+.modalDialog{position:absolute;z-index:10000;border:4px solid #d0d1d2;box-shadow: 0 0 10px 0 #666666;-webkit-box-shadow:0 0 10px 0 #666666; -moz-box-shadow:0 0 10px 0 #666666; border-radius:5px padding:1px;background-color:#fff}
+.modalDialog .dijitDialogPaneContent{background:#fff;border:0;overflow-x:hidden;overflow-y:auto;position:relative;z-index:106}
+.modalDialog:focus{outline:0}
+.modalDialog .modal_closeButton{display:none}
+.modalDialog .modal_closeTab{position:absolute;top:5px;right:5px;background:0;z-index:9999;}
+.modalDialog .modal_closeTab .modal_closeTxt{color:#FFFFFF;float:right;background:none;display:block;cursor:pointer;font-size:9px;font-weight:bold;text-transform:capitalize;font-family:Arial,Helvetica,sans-serif;line-height:8px}
+.modalDialog .modal_closeTab .modal_closeTxt img{padding-left:5px;vertical-align:top;margin-bottom:0;cursor:pointer}
+.modalDialog .modal_closeTab .border-right, .modalDialog .corner-topLeft,.modalDialog .corner-topRight,.modalDialog .corner-bottomLeft,.modalDialog .corner-bottomRight,.modalDialog .sideRight,.modalDialog .sideLeft,.modalDialog .sideBottom,.modalDialog .sideTop{display:none;}
+.modalDialog .dijitDialogTitle{display:none}
+.modalDialog .dijitDialogTitleBar{display:none}
+.tooltip_popup_price{font-family:arial,helvetica,sans-serif}
+#tooltip_popup{width:285px}
+#tooltip_popup .header{background-repeat:no-repeat;text-align:left;padding-left:15px;height:23px}
+#tooltip_popup .close{padding:5px 15px 2px 0;color:white}
+#tooltip_popup .close .icon{padding-top:2px;padding-left:4px;float:right}
+#tooltip_popup .bodyarea{background-repeat:repeat-y}
+#tooltip_popup .bodycontent{background-repeat:no-repeat;padding:12px 17px 12px 15px;margin:0 1px 0 1px}
+#tooltip_popup .footer{background-repeat:no-repeat;text-align:right;height:23px;width:285px}
+.warning{color:red}
+.generic_error_developers{font-weight:bold}
+.generic_error_container{margin-left:auto!important;margin-right:auto!important;margin-top:150px!important;min-height:200px!important;padding-left:40px;width:70%!important}
+.dijitDialogUnderlay{display:none}
+#progress_bar{position:absolute;z-index:9999;display:none}
+#progress_bar_dialog{position:absolute;z-index:9999;display:none}
+#loading_popup{width:59px}
+#loading_popup .top_left{background-repeat:no-repeat;background-position:top;height:7px;width:8px;float:left}
+#loading_popup .top_right{background-repeat:no-repeat;background-position:top right;height:7px;width:51px;float:left}
+#loading_popup .header{background-repeat:repeat-y;text-align:right;clear:left}
+#loading_popup .close{padding:5px 15px 2px 0;color:#666}
+#loading_popup .close .icon{padding-top:2px;padding-left:4px;float:right}
+#loading_popup .bodycontent{background-color:transparent;background-repeat:repeat-y;background-position:right;padding:0 5px 0 5px;margin:0}
+#loading_popup .bodycontent h2{font-size:14px;font-weight:bold}
+#loading_popup .bodycontent p{margin:3px 0 10px 2px}
+#loading_popup .bodycontent div.form_2column{padding:0}
+#loading_popup .bodycontent_short{padding:12px 17px 12px 15px;margin:0 1px 0 1px}
+#loading_popup .footer{text-align:right;height:20px;width:59px}
+#loading_popup .footer .bot_left{background-repeat:no-repeat;background-position:bottom;height:11px;width:8px;float:left}
+#loading_popup .footer .bot_right{background-repeat:no-repeat;background-position:bottom right;height:11px;width:51px;float:left}
+.dijitPopup{position:absolute;background-color:transparent;margin:0;border:0;padding:0}
+.dijitValidationIcon{display:none}
+.dijitValidationIconText{display:none}
+.dijitCalendarContainer thead tr th,.dijitCalendarContainer thead tr td,.dijitCalendarContainer tbody tr td,.dijitCalendarContainer tfoot tr td{padding:0}
+.dijitCalendarNextYear{margin:0 0 0 .55em}
+.dijitCalendarPreviousYear{margin:0 .55em 0 0}
+.dijitCalendarIncrementControl{cursor:pointer;cursor:hand;width:1em}
+.dijitCalendarDisabledDate{color:gray!important}
+.dijitCalendarBodyContainer tbody tr td{cursor:pointer;cursor:hand}
+.dijitCalendarPreviousMonthDisabled{cursor:default!important}
+.dijitCalendarCurrentMonthDisabled{cursor:default!important}
+.dijitCalendarNextMonthDisabled{cursor:default!important}
+.dijitCalendarDateTemplate{cursor:pointer}
+.dijitCalendarSelectedYear{cursor:pointer}
+.dijitCalendarNextYear,.dijitCalendarPreviousYear{cursor:pointer}
+.dijitCalendarMonthLabelSpacer{position:relative;height:1px;overflow:hidden;visibility:hidden}
+.dijitCalendarIncrementControl{width:16px;height:16px}
+.dj_ie6 .dijitCalendarIncrementControl{padding:.1em}
+.dijitCalendarIncreaseInner,.dijitCalendarDecreaseInner{visibility:hidden}
+.dijitCalendarWidth{width:250px!important;float:left;padding-left:18px}
+.dijitCalendarWidth input{width:132px}
+table.dijitCalendarContainer{font-size:100%;border-collapse:collapse;border-spacing:0;border:1px solid #ccc;margin:0}
+.dijitCalendarMonthContainer th{background:white repeat-x top;padding-top:.3em;padding-bottom:.1em;text-align:center}
+.dj_ie6 .dijitCalendarMonthContainer th{padding-top:.1em;padding-bottom:0}
+.dijitCalendarDayLabelTemplate{background:white repeat-x bottom;font-weight:normal;padding-top:.15em;padding-bottom:0;border-top:1px solid #eee;color:#293a4b;text-align:center}
+.dijitCalendarMonthLabel{color:#293a4b;font-size:.75em;font-weight:bold;text-align:center}
+.dj_ie7 .dijitCalendarDateTemplate,.dj_ie6 .dijitCalendarDateTemplate{font-size:.8em}
+.dijitCalendarDateTemplate{font-size:.9em;font-weight:bold;text-align:center;padding:.3em .3em .05em .3em;letter-spacing:1px}
+.dijitCalendarPreviousMonth,.dijitCalendarNextMonth{color:#999;background-color:#f8f8f8!important}
+.dijitCalendarPreviousMonthDisabled,.dijitCalendarNextMonthDisabled{background-color:#a4a5a6!important}
+.dijitCalendarCurrentMonth{background-color:white!important}
+.dijitCalendarCurrentMonthDisabled{background-color:#bbbbbc!important}
+.dijitCalendarDisabledDate{text-decoration:line-through!important;cursor:default!important}
+.dijitCalendarCurrentDate{text-decoration:underline;font-weight:bold}
+.dijitCalendarSelectedDate{background-color:#bbc4d0!important;color:black!important}
+.dijitCalendarYearContainer{background:white repeat-x bottom;border-top:1px solid #ccc}
+.dijitCalendarYearLabel{margin:0;padding:.4em 0 .25em 0;text-align:center}
+.dijitCalendarSelectedYear{color:black;padding:.2em;padding-bottom:.1em;background-color:#bbc4d0!important}
+.dijitCalendarNextYear,.dijitCalendarPreviousYear{color:black!important;font-weight:normal}
+.dijitCalendarMonthLabelSpacer{position:relative;height:1px;overflow:hidden;visibility:hidden}
+.dijitCalendarContainer thead tr th,.dijitCalendarContainer thead tr td,.dijitCalendarContainer tbody tr td,.dijitCalendarContainer tfoot tr td{padding:0}
+.dijitCalendarNextYear{margin:0 0 0 .55em}
+.dijitCalendarPreviousYear{margin:0 .55em 0 0}
+.dijitCalendarIncrementControl{cursor:pointer;cursor:hand;width:1em}
+.dijitCalendarDisabledDate{color:gray}
+.dijitCalendarBodyContainer tbody tr td{cursor:pointer;cursor:hand}
+.dijitTooltipFocusNode{padding:2px 2px 2px 2px}
+.tooltip_popup_price{font-family:arial,helvetica,sans-serif}
+#tooltip_popup{background:none repeat scroll 0 0 #fff;border:1px #000 solid;width:285px}
+#tooltip_popup .header{background-repeat:no-repeat;background-color:#FFF;text-align:left;padding-left:15px;height:23px}
+#tooltip_popup .close{padding:5px 15px 2px 0;color:white}
+#tooltip_popup .close .icon{padding-top:2px;padding-left:4px;float:right}
+#tooltip_popup .bodyarea{background-repeat:repeat-y}
+#tooltip_popup .bodycontent{background-repeat:no-repeat;padding:12px 17px 12px 15px;margin:0 1px 0 1px}
+#tooltip_popup .footer{background-repeat:no-repeat;text-align:right;height:23px;width:285px}
+.dijitTooltip{position:absolute;z-index:2000;display:block;left:50%;top:-10000px;overflow:visible}
+.dijitTooltipConnector{position:absolute}
+.dijit_a11y .dijitTooltipContainer{opacity:1;background-color:white}
+.dj_safari .tundra .dijitPopup{-webkit-box-shadow:0 5px 10px #adadad}
+.dijitTooltip,.dijitTooltipDialog{opacity:.95;background:transparent;z-index:10003}
+.dijitTooltipBelow{padding-top:13px}
+.dijitTooltipAbove{padding-bottom:13px}
+.dijitTooltipConnector{border:0;z-index:2}
+.dijitTooltipABRight .dijitTooltipConnector{left:auto;right:3px}
+.dijitTooltipBelow .dijitTooltipConnector{top:0;left:3px;background:no-repeat top left;width:16px;height:14px}
+.dijitTooltipAbove .dijitTooltipConnector{bottom:0;left:3px;background:no-repeat top left;width:16px;height:14px}
+.dijitTooltipLeft{padding-right:13px}
+.dijitTooltipLeft .dijitTooltipConnector{right:0;bottom:7px;background:url("../images/tooltipConnectorRight.png") no-repeat top left;width:16px;height:14px}
+.dijitTooltipRight{padding-left:13px}
+.dijitTooltipContainer{background-color:#fafafa;border:1px solid #b6c7d5;padding:.45em;border-radius:6px;-moz-border-radius:7px;-webkit-border-radius:6px;width:300px;font-size:small;z-index:2;color:#f00}
+.dijitTooltipRight .dijitTooltipConnector{left:0;bottom:7px;background:url("../images/tooltipConnectorLeft.png") no-repeat top left;width:16px;height:14px}
+.dj_ie .dijitRtl .dijitTooltipLeft{margin-right:0;margin-left:13px}
+.dj_ie .dijitRtl .dijitTooltipRight{margin-left:26px;margin-right:-13px}
+.dj_ie .dijitRtl .dijitTooltipDialog{zoom:1}
+div#page.shoppingCartPage div.promotion_input{position:relative}
+div#page.shoppingCartPage div.promotion_input div.dijitTooltip{position:absolute;top:-9px;left:200px;display:none}
+body.button_poc span.button_bottom{display:block;width:auto;height:50px;background-image:url(../images/bg_btn_right_slide_extended.png);background-repeat:no-repeat;background-position:right 0;padding-right:15px}
+body.button_poc span.button_bottom:hover{display:block;background-repeat:no-repeat;background-position:right -50px}
+body.button_poc span.button_bottom a{width:auto;display:block;line-height:50px;height:50px;padding-left:40px;font-family:'museo-slab-1','museo-slab-2','PMN Caecilia W01 85 Heavy','georgia';font-size:18px;background-position:top left;background-repeat:no-repeat;text-indent:0!important;color:#09f}
+body.button_poc span.button_bottom:hover a{background-position:left -50px;text-decoration:none;text-indent:0!important;color:#fff}
+body.button_poc a#guestShopperLogon{background-image:url(../images/bg_btn_left_arrow.png)}
+body.button_poc a#WC_AccountDisplay_links_3555{background-image:url(../images/bg-btn-left-lock.png)}
+body.button_poc div#WC_AccountDisplay_div_test{float:left}
+body.button_poc div#WC_AccountDisplay_div_1933{float:left}
+body.button_poc a#WC_AccountDisplay_links_3445{background-image:url(../images/bg-btn-left-print.png)}
+body.button_poc a#WC_AccountDisplay_links_4355{background-image:url(../images/bg-btn-left-arrow_cancel_left.png)}
+a.ui-button.small-btn.ui-icon-cart-lg .ub-left{background:transparent url(../images/bg-btn-shoppingcart-lg.png) no-repeat 0 0;width:25px;height:21px;display:block}
+a.ui-button.small-btn.ui-icon-cart-lg:hover .ub-left{background:transparent url(../images/bg-btn-shoppingcart-lg.png) no-repeat 0 -22px;width:25px;height:21px;display:block}
+a.ui-button{overflow:hidden;width:auto;color:#09f;font-family:Helvetica,Arial,sans-serif}
+a.ui-button:hover,a.ui-button{text-decoration:none}
+a.ui-button.large-btn{font-weight:700;font-size:18px}
+div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray .ub-left{background:transparent url(../images/bg-btn-left-shoppingcart-teal.png) no-repeat;width:36px}
+div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray .ub-center{background:transparent url(../images/bg-btn-center-add-to-cart.png) repeat-x 0 0;height:49px;float:left;line-height:50px;display:block}
+div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray .ub-right{background:transparent url(../images/bg-btn-right-add-to-cart.png) no-repeat;width:17px;height:50px;float:left;display:block}
+div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-left,div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-center,div.add_to_cart_filter_one_time a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-right{background-position:0 -50px;color:#fff}
+div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray .ub-left{background:transparent url(../images/bg-btn-left-shoppingcart-teal.png) no-repeat;width:36px}
+div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray .ub-center{background:transparent url(../images/bg-btn-center-add-to-cart.png) repeat-x 0 0;height:50px;float:left;line-height:50px;display:block}
+div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray .ub-right{background:transparent url(../images/bg-btn-right-add-to-cart.png) no-repeat;width:17px;height:50px;float:left;display:block}
+div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-left,div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-center,div.add_to_cart_filter_frequency a.ui-button.large-btn.ui-icon-arrow.gray:hover .ub-right{background-position:0 -50px;color:#fff}
+div#page.filters_acc a.ui-button.large-btn.ui-icon-arrow.gray{display:block;width:160px}
+div.add_to_cart_filter_one_time.selected{display:block}
+div.add_to_cart_filter_one_time{display:none}
+.ub-center{float:left;}
+body#oc_search_manuals_auth div#page.oc_search #oc_content #oc_existing_apps_section #btn a .ub-center,
+#searchButtonId .ub-center{
+	text-indent:-9999px;	
+}
+body.product_compare .ub-center {
+    /*padding-left: 18px !important;*/
+	float:none!important;padding:50px 21px 63px 21px!important;
+}
+a.ui-button.large-btn.ui-icon-shoppingcart .ub-left{width:40px}
+a.ui-button.large-btn.ui-icon-lock .ub-left{background:transparent url(../images/bg-btn-left-lock.png) no-repeat;width:40px}
+a.ui-button.large-btn.ui-icon-print .ub-left{background:transparent url(../images/bg-btn-left-print.png) no-repeat;width:40px}
+a.ui-button.large-btn.add-to-cart-teal .ub-center{color:#fff}
+a.ui-button.large-btn.add-to-cart-teal .ub-right{background:transparent url(../images/bg-btn-right-add-to-cart.png) no-repeat;width:17px;height:50px;float:left;display:block}
+a.ui-button.large-btn.add-to-cart-teal .ub-center{background:transparent url(../images/bg-btn-center-add-to-cart.png) repeat-x 0 0;height:50px;float:left;line-height:50px;display:block}
+a.ui-button.large-btn.add-to-cart-teal.ui-icon-shoppingcart .ub-left{background:transparent url(../images/bg-btn-left-shoppingcart-teal.png) no-repeat;width:36px}
+a.ui-button.large-btn.add-to-cart-teal:hover .ub-left,a.ui-button.large-btn.add-to-cart-teal:hover .ub-right,a.ui-button.large-btn.add-to-cart-teal:hover .ub-center{background-position:0 -50px;color:#fff}
+a.ui-button.large-btn:hover .ub-left,a.ui-button.large-btn:hover .ub-right,a.ui-button.large-btn:hover .ub-center{background-position:0 -50px;color:#fff}
+
+a.ui-button.medium-btn{font-weight:700;font-size:12px}
+#add_reg_an_app .add_btn{float:left;width:96%;}
+#add_reg_an_app a.ui-button.medium-btn{background:url("/images/btn_add_sel_appliance.png") no-repeat left top;width:196px; height:32px;float:right;}
+#add_reg_an_app a.ui-button.medium-btn:hover{background-position:0 -32px;}
+#add_reg_an_app a.ui-button.medium-btn .ub-center{text-indent:-9999px;float:left;}
+#add_reg_an_app .got_more_app_btn{float:left;width:96%;text-align:right;margin:10px 0 0 0;}
+#AddAppliance a.ui-button.medium-btn .ub-right {background:none;}
+#AddAppliance a.ui-button.medium-btn .ub-center {background:none; text-indent:-9999px}
+a.ui-button.medium-btn.gray .ub-center{color:#939393}
+a.ui-button.medium-btn.gray.ui-icon-close .ub-left{background:transparent url(../images/bg-btn-med-left-gray-close.png) no-repeat 0 0;width:28px;height:39px;float:left;display:block}
+a.ui-button.medium-btn.gray.ui-icon-arrow .ub-left{background:transparent url(../images/bg-btn-med-left-gray-arrow.png) no-repeat 0 0;width:28px;height:39px;float:left;display:block}
+a.ui-button.medium-btn.gray .ub-right{background:transparent url(../images/bg-btn-med-right-gray-close.png) no-repeat;width:17px;height:39px;float:left;display:block}
+a.ui-button.medium-btn.gray .ub-center{background:transparent url(../images/bg-btn-med-gray-center.png) repeat-x 0 0;height:39px;float:left;line-height:39px;display:block}
+a.ui-button.small-btn.lg-text{font-size:16px}
+a.ui-button.small-btn{height:auto;line-height:normal;color:#09f;width:100px;display:block}
+a.ui-button.small-btn .ub-left,a.ui-button.small-btn .ub-center,a.ui-button.small-btn .ub-right{float:left;background:0;height:auto;line-height:normal;color:#666;font-weight:bold}
+a.ui-button.small-btn:hover .ub-center{color:#666}
+a.ui-button.small-btn.gray .ub-center{color:#939393}
+a.ui-button.small-btn.ui-icon-arrow .ub-center{height:16px;line-height:16px;color:#ebb111;text-transform:capitalize}
+a.ui-button.small-btn.ui-icon-arrow .ub-right{height:16px;line-height:16px}
+a.ui-button.small-btn.ui-icon-arrow .ub-left{background:transparent url(../images/bg-btn-arrow-small.png) no-repeat left top;width:20px;height:16px}
+a.ui-button.small-btn.ui-icon-arrow:hover .ub-left{background-position:left bottom}
+a.ui-button.small-btn.ui-icon-cart .ub-center{height:16px;line-height:16px;padding-left:5px}
+a.ui-button.small-btn.ui-icon-cart .ub-left{background:transparent url(../images/bg-btn-cart-small.png) no-repeat left top;width:20px;height:16px}
+a.ui-button.small-btn.ui-icon-cart:hover .ub-left{background-position:left bottom}
+a.ui-button.small-btn.ui-icon-compare-add .ub-left{background:url(../images/learnPlusCircle.png) no-repeat scroll left -15px transparent;width:15px;height:15px;padding-right:9px}
+a.ui-button.small-btn.ui-icon-compare-add:hover .ub-left{background-position:left bottom}
+a.ui-button.small-btn.ui-icon-compare-add-modal .ub-left{background:url("/images/btn_plus_sign.png") no-repeat 0 1px;width:20px;height:20px}
+a.ui-button.small-btn.ui-icon-compare-now{display:none}
+a.ui-button.small-btn.ui-icon-compare-now .ub-left{background:transparent url(../images/bg-btn-yellow-check-icon.png) no-repeat left top;width:20px;height:17px;padding-right:4px}
+a.ui-button.small-btn.ui-icon-compare-now .ub-center{color:#fcba48}
+a.ui-button.small-btn.ui-icon-close .ub-left{background:transparent url(../images/bg-btn-sm-close.png) no-repeat left top;width:20px;height:16px}
+a.ui-button.small-btn.ui-icon-close:hover .ub-left{background-position:left bottom}
+a.ui-button.small-btn.gray.ui-icon-close .ub-left{background:transparent url(../images/bg-btn-sm-close-gray.png) no-repeat left top;width:20px;height:16px}
+a.ui-button.small-btn.gray.ui-icon-close:hover .ub-left{background-position:left bottom}
+a.ui-button.small-btn.gray.ui-icon-cart .ub-left{background:transparent url(../images/bg-btn-sm-cart-gray.png) no-repeat left top;width:20px;height:16px}
+div#page.accessories_filters a.ui-button.small-btn.ui-icon-cart.yellow{width:130px}
+body.my_account #page #WC_MyAccountDisplay_div_3_9{overflow:hidden}
+/*body.my_account #page #WC_MyAccountDisplay_div_3_9 #MessageArea{margin-top:40px}*/
+body.my_account #page.quick-checkout-address-page #WC_MyAccountDisplay_div_3_9 #MessageArea,body.my_account #page.MyWishList #WC_MyAccountDisplay_div_3_9 #MessageArea,body.my_account #page.myorders #WC_MyAccountDisplay_div_3_9 #MessageArea{/*margin-left:30px*/ margin-bottom: 1px;}
+span.add_btn_container a.ui-button.ui-button.small-btn.ui-icon-cart.yellow span.ub-center{color:#666;font-weight:bold!important;padding-left:5px}
+a.ui-button.small-btn .nmalFntCompWhrBuy{font-weight:normal}
+
+/*Remove product pop-up from compare page*/
+.product_compare_remove_main_box{background:none repeat scroll 0 0 white;border:4px solid #ccc;border-radius:3px 3px 3px 3px;box-shadow:0 0 20px #ccc;float:left;left:30%;padding:25px;position:fixed;top:30%;width:485px;z-index:10001}
+.product_compare_remove_main_box h2{margin:0 0 10px 0;padding:0;font:bold 21px helvetica,arial;color:#eeb111!important}
+.product_compare_remove_main_box p{margin:0;padding:0 0 15px 0;border-bottom:1px solid #ccc;font:bold 12px helvetica,arial;color:#666}
+.product_compare_remove_main_box .bottom_box{float:right;margin:15px 0 0 0;width:215px}
+.product_compare_remove_main_box .bottom_box .first{float:left;padding:0 0 0 15px;margin:0 15px 0 0;background:url(/images/content/owner_center/icon_yellow_little_arrow.png) 0 1px no-repeat}
+.product_compare_remove_main_box .bottom_box .first a{color:#eeb111;font:bold 13px helvetica,arial;text-decoration:none}
+.product_compare_remove_main_box .bottom_box .second{float:left;padding:0 0 0 15px;background:url(/images/content/owner_center/icon_yellow_little_arrow.png) 0 1px no-repeat}
+.product_compare_remove_main_box .bottom_box .second a{color:#eeb111;font:bold 13px helvetica,arial;text-decoration:none}
+#compare_product_remove_underlay{background:none repeat scroll 0 0 white;bottom:0;height:100%;left:0;opacity:.5;position:fixed;top:0;width:100%;z-index:10000;filter:alpha(opacity=50)}
+
+/*Style for Fancy Checkbox for Compare page - Add product pop up starts*/
+
+.endeca_textOpt{
+	font-size:10px; /*11px*/
+	color: #696868;
+	float:left;
+	/*width:100%;*/
+}
+.endeca_textOpt.inactive_listItem {
+    color: #989898;
+}
+.endeca_textOpt.inline{
+    height: 30px;
+    width: 200px;
+    float: left;
+    position: relative;
+    margin-bottom:10px;
+}
+div.colorChooserWrap div.endeca_textOpt img{
+	position:relative;
+	float:left;
+}
+
+.label_check {
+    float: left;
+    height: 13px;
+    /*margin-left: 4px;*/
+    position: relative;
+    margin:10px 5px;
+    width:13px;
+    cursor:pointer;
+    /*padding-bottom: 8px;*/
+}
+.label_radio { background: url(radio-off.png) no-repeat; }
+.label_check { background: url('/images/content/endeca/check-off.png') no-repeat; }
+ label.c_on { background: url('/images/content/endeca/check-on.png') no-repeat; }
+ label.r_on { background: url(radio-on.png) no-repeat; }
+.label_check input, .label_radio input { position: absolute; left: -9999px; }
+ label.c_inactive { background: url('/images/content/endeca/check-inactive.png') no-repeat; cursor:default;}
+
+/*Style for Fancy Checkbox for Compare page - Add product pop up Ends*/

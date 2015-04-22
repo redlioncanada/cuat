@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Water Filters</title>
+<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+
+<!-- BEGIN: Floodlight javascript function :: Dart/Google tag -->
+<script type="text/javascript">
+	function fireFloodlight(src,type,cat) {
+		var axel = Math.random() + "";
+		var a = Math.floor(axel * 1000000000);
+		document.getElementById("fDiv").innerHTML = '<iframe id="fFrame" name="fFrame" src="" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+		document.getElementById('fFrame').src = "http://fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";ord=" + a + "?";
+	}
+
+	function fireFloodlight2(src,type,cat,qty,cost,orderId) {
+
+		document.getElementById("fDiv").innerHTML = '<iframe id="fFrame" name="fFrame" src="" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+		document.getElementById('fFrame').src = "http://fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";qty=" + qty + ";cost=" + cost + ";ord=" + orderId + "?";
+	}
+</script>
+<!-- END: Floodlight javascript function :: Dart/Google tag --><!-- END WHRORNCommonJSToInclude.jspf --><!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20467592-7']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>a
+<link href="/css/common1_1.css" rel="stylesheet" type="text/css" />
+<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="/css/site.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="/css/content/content.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/landing_page.css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header-wrap">
+	<div id="header">
+		<div id="logo">
+					<a href="/" title="Logo"><img src="/wcs/images/img_logo.png" alt="Logo" /></a>
+		</div>
+<script type="text/javascript">
+function clearText(thefield){
+	if (thefield.defaultValue==thefield.value) thefield.value = "";
+}
+
+function fieldGrabberX(){
+	var myTextField = document.getElementById('search-text');
+	dcsMultiTrack('DCS.dcsuri','on_release_global_' + myTextField.value,'WT.ti','on_release_global_' + myTextField.value);
+}
+
+
+function confirmMessage(){
+			if ($('#single-pack').is(':checked')){$('#MessageText').html('<p>A Single Pack of filters has been added to your cart.</p>');}
+			else if ($('#double-pack').is(':checked')){$('#MessageText').html('<p>A Double Pack of filters has been added to your cart.</p>');}
+			else if ($('#triple-pack').is(':checked')){$('#MessageText').html('<p>A Triple Pack of filters has been added to your cart.</p>');}
+			else {$('#MessageText').html('<p>A Subscription of filters has been added to your cart.</p>');}	
+			}
+
+			
+function singleFilterSwap(product) {
+	var productNumber = $('#entitledItem_'+product).attr('class');
+	var productAmount = $('#entitledItem_'+product).attr('title');
+	var clickEvent = "alert(productNumber)";
+$('.single-filter-add').attr({
+  href: "javascript:setCurrentId('productPageAdd2Cart'); categoryDisplayJS.Add2ShopCartAjax('entitledItem_"+product+"',document.getElementById('quantity_"+product+"').value, false);popup_callGetPlantCodeByZip();fireFloodlight('2625291','whirl781','whpwa896');dcsMultiTrack('DCS.dcsuri','on_release_add_to_cart_"+productNumber+"','WT.cg_n','add_to_cart','WT.cg_s','Filters_"+productAmount+"_"+productNumber+"')"});
+  $('.single-filter-add').removeAttr('onclick').click(function() {clickEvent});
+
+	$('.single-filter-add').css('display','block');
+	$('#schedule-filter-add').css('display','none');
+	$("#filter-subscription input").removeAttr('checked');
+}
+
+function subscriptionSwap(schedule) {
+	var subscriptionProductId = $('#subscription-product-id').attr('class');
+	var subscriptionPartNumber = $('#subscription-product-id').attr('title');
+	$('#schedule-amount').attr('value',schedule);
+	$('.single-filter-add').css('display','none');
+	$('#schedule-filter-add').css('display','block');
+	$('#schedule-filter-add').attr("href","javascript:fireFloodlight('2625291','whirl781','whpwa896');dcsMultiTrack('DCS.dcsuri','on_release_add_subscription_"+subscriptionProductId+"','WT.cg_n','add_to_cart','WT.cg_s','Filters_"+schedule+"Month_"+subscriptionProductId+"');setCurrentId('productPageAdd2Cart'); categoryDisplayJS.replacementprogramAddToCartClick('"+subscriptionPartNumber+"','productdetail');popup_callGetPlantCodeByZip();");
+	$("#filter-selection input").removeAttr('checked');
+	
+}
+
+function hideMessage(){
+	$('#MessageArea').css({'display':'none'});	
+}
+
+	var productAmount = $('#MiniCartFocusReceiver1 .price').length;	
+	$('#miniShopCartBody .text').html('('+ productAmount +')');
+</script>
+<div id="header_search">
+	<form name="CatalogSearchForm" action="/webapp/wcs/stores/servlet/WHRORNAjaxCatalogSearchView" method="get" id="CatalogSearchForm">
+	  	<input type="hidden" name="storeId" value='10211' id="WC_CachedHeaderDisplay_FormInput_storeId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="catalogId" value='10561' id="WC_CachedHeaderDisplay_FormInput_catalogId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="langId" value='-1' id="WC_CachedHeaderDisplay_FormInput_langId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="beginIndex" value="0" id="WC_CachedHeaderDisplay_FormInput_beginIndex_In_CatalogSearchForm_1"/>
+		<input value='search whirlpool.com ' id="search-text" name="searchTerm" class="search-textbox" type="text" onfocus="clearText(this);" />
+		<button onclick="fireFloodlight('2625291','whirl781','whp-s520');dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Search_Go','WT.ti','on_release_global_WHP_Search_Go');fieldGrabberX();" id="search-submit" type="submit">Search</button>
+	</form>
+</div>
+<script type="text/javascript">
+</script>
+<div id="header_sub_nav_1" class="wp_top_nav_1"> 
+			<ul>
+				
+
+		<li class="first">
+			<a class="first" href="/webapp/wcs/stores/servlet/LogonForm?catalogId=10561&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10211" onclick="fireFloodlight('2625291','whirl781','whp-l552');dcsMultiTrack('DCS.dcsuri','on_release_global_sign_in','WT.ti','on_release_global_sign_in')">SIGN IN</a>
+			OR
+			<a href="/webapp/wcs/stores/servlet/LogonForm?catalogId=10561&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10211" onclick="fireFloodlight('2625291','whirl781','whp-m953');dcsMultiTrack('DCS.dcsuri','on_release_global_register','WT.ti','on_release_global_sign_in')">REGISTER</a>
+		</li>
+	<!-- /* R2 WishList functionality starts March 03 2011 */ --><!--  <li class="first"></li> -->
+				<li><a id="wishListHeaderAnchor" href="/webapp/wcs/stores/servlet/InterestItemDisplay?catalogId=10561&listId=.&langId=-1&storeId=10211" onmouseover="refreshMiniWishListDropdown();">FAVORITES</a>					
+					<div id="outerMiniWishListContainer" style="display:block;">
+						<div dojoType="dojo.dnd.Target" jsId="miniWishList_dndTarget" id="miniWishList_dndTarget" accept="item, product, package, bundle" >
+							<div dojoType="wc.widget.RefreshArea" id="MiniWishList" widgetId="MiniWishList" controllerId="MiniWishListController">								
+							
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- <script type="text/javascript">
+					document.getElementById('wishListHeaderAnchor').innerHTML = 'FAVORITES' + " (" + dojo.cookie('userWishListCount') + ")";
+				</script>-->
+								
+				<!-- /* R2 WishList functionality ends March 03 2011 */ -->
+				<li class="last">
+					
+						<div id="outerCartContainer" >
+							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
+								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');" role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Apr 23 10:56:27 EDT 2012] -->
+
+<!-- If we get here from a generic error this service will fail so we need to catch the exception -->
+
+<a href="/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10561&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10211&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="dcsMultiTrack('DCS.dcsuri','on_release_global_my_cart_view_cart','WT.ti','on_release_global_my_cart_view_cart');showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+		<span id="miniShopCartLeftCorner" class="left_corner"><img border="0" class="shopping-cart-img" src="/wcsstore/NARStorefrontAssetStore/images/shopping-cart.jpg" alt="CART"/></span>
+		<span id="miniShopCartBody" class="body">
+			<span class="text">
+					 (0)
+			</span> 
+		</span>
+		<span id="miniShopCartRightCorner" class="right_corner"></span>	
+</a>
+
+
+<!-- Mark the position..will show our dialog here -->
+<div id="placeHolder"></div>
+<!--Added for PCR 175 : Increase in mini cart appearance time -->
+<input type="hidden" id="timeOutMiniCartDisplay" value= "10000" ></input>	
+<div id="quick_cart_container">
+	<div id="quick_cart">
+		<div class="container" id="WC_MiniShopCartDisplay_div_1">
+			<!-- Contains 3 div..PlaceHolder div, DropDownContents div and the recently added Product div -->
+			<div id ="MiniShopCartProductsList" style="display:none">
+				
+						<div class="list" id="MiniCartFocusReceiver2" tabindex="0" onkeydown="javaScript:determineFocus(event);">
+							Your order is empty.
+						</div>
+						<div class="footer" id="WC_MiniShopCartDisplay_div_7"></div>
+					
+				<span tabindex="0" onfocus="javaScript: focusSetter();"></span>
+				<span tabindex="0"></span>
+				<div class="cart_shadow" id="WC_MiniShopCartDisplay_div_8"></div>
+			</div>
+
+			<div id = "MiniShopCartProductAdded" style="display:none">
+				
+			</div>
+		</div>
+	</div>
+	<div id="quick_cart_bottom"></div>
+	<!--[if lte IE 6.5]><iframe id="dropDownIFrame" scrolling="no" frameborder="0" src="/wcsstore/NARStorefrontAssetStore/images/empty.gif"></iframe><![endif]-->
+</div>
+
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			</ul>
+		</div>	
+	<div id="header_sub_nav_2" class="wp_top_nav_2"> 
+		<ul> 
+			<li class="first"><a href="http://whirlpool.custhelp.com/app/chat/chat_launch" target="new window">Chat</a></li> 
+			<li><a href="/support_where-to-buy_where-to-buy.content.html">Find a Retailer</a></li> 
+			<li><a href="http://outlet.whirlpool.com" target="_blank">Outlet Store</a></li> 
+			<li class="last"><a href="http://repair.whirlpool.com/" target="new window">Recall Info</a></li> 
+		</ul> 
+	</div>
+<div id="header_main_nav">
+  <ul class="top">
+    <li class="first laundry top">
+      <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry','WT.ti','on_release_global_WHP_Navigation_Laundry');" id="laundry_btn" name="laundry_btn" class="menu_button" href="/Laundry-1/102110045/">Laundry</a>
+      <ul>
+      	<li>
+      	<ul class="last" id="laundry_optns">
+	        <li class="header" onclick="window.location='/Laundry-1/102110045/'">
+	          <img alt="Laundry" src="/images/content/img_learn3_new.png"> 
+	          
+	          <span class="header_container"><a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_Learn_About','WT.ti','on_release_global_WHP_Navigation_Laundry_Learn_About');" href="/Laundry-1/102110045/" title="Learn About Laundry"><span class="learn_about">Laundry</span></a></span>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_HE_Front_Load_Washers','WT.ti','on_release_global_WHP_Navigation_HE_Front_Load_Washers');" href="/Laundry-1/Laundry_Laundry_Washers-3/102110047+4294966820/">High-Efficiency Front Load Washers</a>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_HE_Top_Load_Washers','WT.ti','on_release_global_WHP_Navigation_HE_Top_Load_Washers');" href="/Laundry-1/Laundry_Laundry_Washers-3/102110047+4294966805/">High-Efficiency Top Load Washers</a>
+	        </li>
+	        <li>
+	          <a href="/Laundry-1/Laundry_Laundry_Dryers-3/102110052+4294966130/">High-Efficiency Dryers</a>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Traditional_Top_Load_Washers','WT.ti','on_release_global_WHP_Navigation_Traditional_Top_Load_Washers');" href="/Laundry-1/Laundry_Laundry_Washers-3/102110047+4294966806/">Traditional Top Load Washers</a>
+	        </li>
+	        <li>
+	          <a href="/Laundry-1/Laundry_Laundry_Dryers-3/102110052+4294966131/">Traditional Dryers</a>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_Pairs','WT.ti','on_release_global_WHP_Navigation_Laundry_Pairs');" href="/Laundry-1/Laundry_Laundry_Laundry_Pairs-3/102110056/">Laundry Pairs</a>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Washer_Dryer_Combos','WT.ti','on_release_global_WHP_Navigation_Washer_Dryer_Combos');" href="/Laundry-1/Laundry_Laundry_Washers-3/102110047+4294966937/">Washer/Dryer Combination</a>
+	        </li>
+	        <li>
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_1_2_3_Organizers','WT.ti','on_release_global_WHP_Navigation_Laundry_1_2_3_Organizers');" href="/Laundry-1/Laundry_Laundry_Laundry_123_Organizers-3/102110061/">Laundry 1-2-3<sup>&trade;</sup> Organizers</a>
+	        </li>
+	        <li class="last">
+	          <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Outlet_Store','WT.ti','on_release_global_WHP_Navigation_Outlet_Store');" target="_blank" href="http://outlet.whirlpool.com/laundry-1/102010022/
+	">Outlet Store</a>
+	        </li>
+	  	</ul>
+	  	</li>
+      </ul>
+    </li>
+    <li class="kitchen top">
+      <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen','WT.ti','on_release_global_WHP_Navigation_Kitchen');" name="kitchen_btn" class="menu_button" id="kitchen_btn" href="/Kitchen-1/102110001/">Kitchen</a>
+      <ul>
+        <li>
+<ul class="first">
+            <li style="height: auto;text-align:center;" class="">
+				<a title="Learn About Refrigerators" href="/kitchen-collections_kitchen-ice-collection.content.html" onmousedown="dcsMultiTrack('DCS.dcsuri', 'on_release_global_WHP_Navigation_Ice_Collection', 'WT.ti', 'on_release_global_WHP_Navigation_Ice_Collection');">
+              <img src="/images/kitchen_ice.png" alt="Refrigerators"></a>
+			  <span style="top: 5px; left: 0;" class="header_container"><a title="Learn About Refrigerators" href="/kitchen-collections_kitchen-ice-collection.content.html" onmousedown="dcsMultiTrack('DCS.dcsuri', 'on_release_global_WHP_Navigation_Ice_Collection', 'WT.ti', 'on_release_global_WHP_Navigation_Ice_Collection');"><span class="learn_about">Ice Collection</span></a></span>
+            </li>
+            <li style="height: auto;text-align:center; padding-top: 30px; border-bottom: 0pt none;" class="">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri', 'on_release_global_WHP_Navigation_Stainless_Collection', 'WT.ti', 'on_release_global_WHP_Navigation_Stainless_Collection');" href="/kitchen-collections_kitchen-stainless-collection.content.html " title="Learn About Refrigerators">
+			  <img alt="Refrigerators" src="/images/kitchen_stainless.png"> </a>
+			  <span style="top: 5px; left: 0;" class="header_container">
+			  <a onmousedown="dcsMultiTrack('DCS.dcsuri', 'on_release_global_WHP_Navigation_Stainless_Collection', 'WT.ti', 'on_release_global_WHP_Navigation_Stainless_Collection');" href="/kitchen-collections_kitchen-stainless-collection.content.html " title="Learn About Refrigerators"><span class="learn_about">Stainless Collection</span></a></span>
+            </li>
+          </ul>
+          <ul class="refrigerators">
+            <li class="header" onclick="window.location='/Kitchen-1/Kitchen_Refrigeration-2/102110022/'">
+              <img alt="Refrigerators" src="/images/img_learn_about_refrigerators.png"> <span class="header_container"><a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Refrigerators_Learn_About','WT.ti','on_release_global_WHP_Navigation_Refrigerators_Learn_About');" href="/Kitchen-1/Kitchen_Refrigeration-2/102110022/" title="Learn About Refrigerators"><span class="learn_about">Refrigerators</span></a></span>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_French_Door','WT.ti','on_release_global_WHP_Navigation_French_Door');" href="/Kitchen-1/Kitchen_Refrigeration_Refrigerators-3/102110023+4294966991/">French Door</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Side_By_Side','WT.ti','on_release_global_WHP_Navigation_Side_By_Side');" href="/Kitchen-1/Kitchen_Refrigeration_Refrigerators-3/102110023+4294967042/">Side-By-Side</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Bottom_Freezer','WT.ti','on_release_global_WHP_Navigation_Bottom_Freezer');" href="/Kitchen-1/Kitchen_Refrigeration_Refrigerators-3/102110023+4294967049/">Bottom-Freezer</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Top_Freezer','WT.ti','on_release_global_WHP_Navigation_Top_Freezer');" href="/Kitchen-1/Kitchen_Refrigeration_Refrigerators-3/102110023+4294967032/">Top-Freezer</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Freezers','WT.ti','on_release_global_WHP_Navigation_Freezers');" href="/Kitchen-1/Kitchen_Refrigeration_Freezers-3/102110030/">Freezers</a>
+            </li>
+            <li>
+              <a href="/Kitchen-1/Kitchen_Refrigeration_Refrigerators-3/102110023+4294966989/">Ice Makers</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Outlet_Store','WT.ti','on_release_global_WHP_Navigation_Outlet_Store');" target="_blank" href="http://outlet.whirlpool.com/refrigeration-1/102010001/">Outlet Store</a>
+            </li>
+          </ul>
+          <ul class="cooking">
+            <li class="header" onclick="window.location='/Kitchen-1/Kitchen_Cooking-2/102110002/'">
+              <img alt="Cooking" src="/images/img_learn_about_cooking.png"> <span class="header_container"><a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Cooking_Learn_About','WT.ti','on_release_global_WHP_Navigation_Cooking_Learn_About');" href="/Kitchen-1/Kitchen_Cooking-2/102110002/" title="Learn About Cooking"><span class="learn_about">Cooking</span></a></span>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Ranges','WT.ti','on_release_global_WHP_Navigation_Ranges');" href="/Kitchen-1/Kitchen_Cooking_Ranges-3/102110003/">Ranges</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Wall_Ovens','WT.ti','on_release_global_WHP_Navigation_Wall_Ovens');" href="/Kitchen-1/Kitchen_Cooking_Wall_Ovens-3/102110007/">Wall Ovens</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Cooktops','WT.ti','on_release_global_WHP_Navigation_Cooktops');" href="/Kitchen-1/Kitchen_Cooking_Cooktops-3/102110011/">Cooktops</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Hoods','WT.ti','on_release_global_WHP_Navigation_Hoods');" href="/Kitchen-1/Kitchen_Cooking_Hoods-3/102110014/">Hoods</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Microwaves','WT.ti','on_release_global_WHP_Navigation_Microwaves');" href="/Kitchen-1/Kitchen_Cooking_Microwaves-3/102110018/">Microwaves</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Outlet_Store','WT.ti','on_release_global_WHP_Navigation_Outlet_Store');" target="_blank" href="http://outlet.whirlpool.com/cooking-products-1/102010010/">Outlet Store</a>
+            </li>
+          </ul>
+          <ul class="dishwashers last">
+			<li class="header" onclick="window.location='/Kitchen-1/Kitchen_Dishwasher__Cleaning-2/102110033/'">
+				<img src="/images/img_learn_dishwashers.png" alt="Dishwashers">
+				<span class="header_container">
+					<a title="Learn About Dishwashers &amp; Cleaners" href="/Kitchen-1/Kitchen_Dishwasher__Cleaning-2/102110033/" onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Dishwasher_Cleaning_Learn_About','WT.ti','on_release_global_WHP_Navigation_Dishwasher_Cleaning_Learn_About');">
+						<span class="learn_about" style="background-position: 79px 3px; display: block;">Dishwashers<br>&amp; Cleaning</span>
+					</a>
+				</span>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Dishwashers','WT.ti','on_release_global_WHP_Navigation_Dishwashers');" href="/Kitchen-1/Kitchen_Dishwasher__Cleaning_Dishwashers-3/102110034/">Dishwashers</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Compactors','WT.ti','on_release_global_WHP_Navigation_Compactors');" href="/Kitchen-1/Kitchen_Dishwasher__Cleaning_Compactors-3/102110038/">Compactors</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Disposers','WT.ti','on_release_global_WHP_Navigation_Disposers');" href="/Kitchen-1/Kitchen_Dishwasher__Cleaning_Disposers-3/102110039/">Disposers</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Outlet_Store','WT.ti','on_release_global_WHP_Navigation_Outlet_Store');" target="_blank" href="http://outlet.whirlpool.com/dishwashers-1/102010017/">Outlet Store</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="wholehome top">
+      <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Whole_Home','WT.ti','on_release_global_WHP_Navigation_Whole_Home');" name="wholehome_btn" class="menu_button" id="wholehome_btn" href="/Whole_Home-1/102110065/">Home Solutions</a>
+      <ul>
+        <li>
+          <ul class="products first">
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Water_Heaters','WT.ti','on_release_global_WHP_Navigation_Water_Heaters');" href="/jump-pages_water-heaters.content.html">Water Heaters</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Water_Softeners','WT.ti','on_release_global_WHP_Navigation_Water_Softeners');" href="/jump-pages_water-softeners.content.html">Water Softeners</a>
+            </li>
+            <li>
+              <a href="/jump-pages_water-filtration-systems.content.html">Water Filtration Systems</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Room_Air_Conditioners','WT.ti','on_release_global_WHP_Navigation_Room_Air_Conditioners');" href="/Whole_Home-1/Whole_Home_Room_Air_Conditioners-2/102110066/">Room Air Conditioners</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Central_Heating_Air_Conditioning','WT.ti','on_release_global_WHP_Navigation_Central_Heating_Air_Conditioning');" href="/jump-pages_hvac.content.html">Central Heating &amp; Air Conditioning</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Central_Dehumidifiers','WT.ti','on_release_global_WHP_Navigation_Central_Dehumidifiers');" href="/jump-pages_hvac.content.html">Central Dehumidifiers</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Air_Purifiers_Filters','WT.ti','on_release_global_WHP_Navigation_Air_Purifiers_Filters');" href="/jump-pages_air-treatment.content.html">Air Purifiers &amp; Filters</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="accessories top">
+      <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Filters_Accessories','WT.ti','on_release_global_WHP_Navigation_Filters_Accessories');" name="accessories_btn" class="menu_button" id="accessories_btn" href="/Accessories-1/102110078/">Filters &amp; Accessories</a>
+      <ul>
+        <li>
+          <ul class="first">
+            <li class="first">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_Accessories','WT.ti','on_release_global_WHP_Navigation_Laundry_Accessories');" class="accessories_header" href="/Accessories-1/Accessories_Laundry_Accessories-2/102110132/">laundry<br/>accessories</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_Accessories_Washer','WT.ti','on_release_global_WHP_Navigation_Laundry_Accessories_Washer');" href="/Accessories-1/Accessories_Laundry_Accessories_Washer-3/102110141/">Washer</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Laundry_Accessories_Dryer','WT.ti','on_release_global_WHP_Navigation_Laundry_Accessories_Dryer');" href="/Accessories-1/Accessories_Laundry_Accessories_Dryer-3/102110133/">Dryer</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="first">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories');" class="accessories_header" href="/Accessories-1/Accessories_Kitchen_Accessories-2/102110079/">kitchen<br/>accessories</a>
+            </li>
+            <li style="*margin-left:12px;">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Refrigerator','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Refrigerator');" href="/Accessories-1/Accessories_Kitchen_Accessories_Refrigerator-3/102110119/">Refrigerator</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Oven_Range','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Oven_Range');" href="/Accessories-1/Accessories_Kitchen_Accessories_Oven__Range-3/102110109/">Wall Ovens &amp; Ranges</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Dishwasher','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Dishwasher');" href="/Accessories-1/Accessories_Kitchen_Accessories_Dishwasher-3/102110087/">Dishwasher</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Microwave','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Microwave');" href="/Accessories-1/Accessories_Kitchen_Accessories_Microwave-3/102110104/">Microwave</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Compactor_Disposer','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Compactor_Disposer');" href="/Accessories-1/Accessories_Kitchen_Accessories_Compactor__Disposer-3/102110080/">Compactor &amp; Disposer</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Freezer','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Freezer');" href="/Accessories-1/Accessories_Kitchen_Accessories_Freezer-3/102110093/">Freezer</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Kitchen_Accessories_Ice_Maker','WT.ti','on_release_global_WHP_Navigation_Kitchen_Accessories_Ice_Maker');" href="/Accessories-1/Accessories_Kitchen_Accessories_Ice_Maker-3/102110100/">Ice Maker</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="first">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Whole_Home_Accessories','WT.ti','on_release_global_WHP_Navigation_Whole_Home_Accessories');" class="accessories_header" href="/Accessories-1/Accessories_Whole_Home_Accessories-3/102110149/">Home Solutions<br/>Accessories</a>
+            </li>
+            <li style="*margin-left:12px;">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Whole_Home_Accessories_Air_Conditioner','WT.ti','on_release_global_WHP_Navigation_Whole_Home_Accessories_Air_Conditioner');" href="/Accessories-1/Accessories_Whole_Home_Accessories_Air_Conditioner-3/102110150/">Air Conditioner</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Whole_Home_Accessories_Cleaners','WT.ti','on_release_global_WHP_Navigation_Whole_Home_Accessories_Cleaners');" href="/Accessories-1/Accessories_Whole_Home_Accessories_Cleaners-3/102110160/">Cleaners</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Whole_Home_Accessories_Water_Treatment','WT.ti','on_release_global_WHP_Navigation_Whole_Home_Accessories_Water_Treatment');" href="/Accessories-1/Accessories_Whole_Home_Accessories_Water_Treatment-3/102110155/">Water Treatment</a>
+            </li>
+          </ul>
+          <ul class="last">
+            <li class="first iefix">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Water_Filters','WT.ti','on_release_global_WHP_Navigation_Water_Filters');" class="accessories_header" href="/water-filters/">refrigerator<br>water filters</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_filter_finder_french_door','WT.ti','on_release_global_WHP_Navigation_filter_finder_french_door');" href="/filter-finder/french-door-1/102110184/">French Door Water Filters</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_filter_finder_side_by_side','WT.ti','on_release_global_WHP_Navigation_filter_finder_side_by_side');" href="/filter-finder/side-by-side-1/102110195/">Side-by-Side Water Filters</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_filter_finder_bottom_freezer','WT.ti','on_release_global_WHP_Navigation_filter_finder_bottom_freezer');" href="/filter-finder/bottom-freezer-1/102110173/">Bottom-Freezer Water Filters</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_filter_finder_top_freezer','WT.ti','on_release_global_WHP_Navigation_filter_finder_top_freezer');" href="/filter-finder/top-freezer-1/102110166/">Top-Freezer Water Filters</a>
+            </li>
+			<li class="filter_finder">Need help searching? Try our
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_filter_finder','WT.ti','on_release_global_WHP_Navigation_filter_finder');" href="/filter-finder/102110165/">FILTER FINDER</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="last ownercenter top">
+      <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_Owner_Center','WT.ti','on_release_global_WHP_Navigation_Owner_Center');" name="ownercenter_btn" class="menu_button" id="ownercenter_btn" href="/owner_center">Service &amp; Support</a>
+      <ul>
+        <li>
+          <ul class="first">
+            <li class="first">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_My_Appliances','WT.ti','on_release_global_WHP_Navigation_OC_My_Appliances');" href="/my_appliances">My Appliances</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Product_Registration','WT.ti','on_release_global_WHP_Navigation_OC_Product_Registration');" href="/product_registration">Product Registration</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Schedule_Repair','WT.ti','on_release_global_WHP_Navigation_OC_Schedule_Repair');" href="/schedule_repair">Service &amp; Repair</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Manuals_Literature','WT.ti','on_release_global_WHP_Navigation_OC_Manuals_Literature');" href="/manuals">Manuals &amp; Literature</a>
+            </li>
+			<li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Product_Help','WT.ti','on_release_global_WHP_Navigation_OC_Product_Help');" href="/product_help">Product Help</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Service_Plan','WT.ti','on_release_global_WHP_Navigation_OC_Service_Plan');" class="shop_link" href="/jump-pages_service-plan.content.html">Extended Service Plans</a>
+            </li>
+            <li>
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Product_Recalls','WT.ti','on_release_global_WHP_Navigation_OC_Product_Recalls');" target="_blank" href="http://repair.whirlpool.com/">Recall Information</a>
+            </li>
+            <li class="last">
+              <a onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Replacement_Parts','WT.ti','on_release_global_WHP_Navigation_OC_Replacement_Parts');" href="/jump-pages_replacement-parts.content.html">Replacement Parts</a>
+            </li>
+          </ul>
+<ul class="owners_callout_section last">
+            <li class="last">
+              <a href="/manuals" style="width: 136px;">Manuals &amp; Literature</a>
+            </li>
+<li class="last dots">Get specifications and other<br>information about your appliance.
+            </li>
+            <li class="last">
+              <a href="/product_registration" onmousedown="dcsMultiTrack('DCS.dcsuri','on_release_global_WHP_Navigation_OC_Register_your_appliance','WT.ti','on_release_global_WHP_Navigation_OC_Register_your_appliance');" style="width:152px">Register your appliance</a>
+            </li>
+            <li>Get Warranty service and safety notifications.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+		<div id="zip_code_popup" dojoType="whr.ShadowDialog" class="modalDialog" style="display: none;"
+		     title="Please Enter Your ZIP Code" closable="false">
+			<script type="text/javascript">
+				function popup_callGetPlantCodeByZip() {
+					var myZipcode = document.getElementById('popup_zipcodeTxt');
+					dcsMultiTrack('DCS.dcsuri','on_release', 'WT.zipcode', myZipcode.value);
+					setCurrentId('popup_zipcodeTxt');
+					EndecaHelperJS.setAbsStoresWebPath(window.location.protocol+'//www.whirlpool.com/webapp/wcs/stores/servlet');
+					EndecaHelperJS.setStoreCountry('US');
+					EndecaHelperJS.getPlantCodeByZip(true);
+				}
+			</script>
+			<form method="post" action="javascript:popup_callGetPlantCodeByZip();">
+				<div class="cl-zip-code-search">
+					<div class="zipcode-container">
+						<input class="zipcode-text" type="text" id="popup_zipcodeTxt" value="60601" maxlength="5" />
+						<input class="zipcode-button" type="submit" id="popup_zipcodeBtn" value=""/>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript">
+			dojo.addOnLoad(function() {
+				parseWidget("zip_code_popup");
+				dojo.mixin(dijit.byId("zip_code_popup"), { onZipCodeSelected: function(zipCode) {} });
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Jurisdiction code could not be determined.");
+				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability zip code cannot be validated now. Try again later.");
+			});
+		</script>
+	</div>
+</div><!--ends #header-->
+ <div id="contentWrapper">
+			<div id="landingFilterNav" class="trackNavigation">
+				<p><a class="hoverYellow" href="http://www.whirlpool.com">home</a> &nbsp; &gt; &nbsp; <a class="hoverYellow" href="http://www.whirlpool.com/Accessories-1/102110078/">filters &amp; accessories</a> &nbsp; &gt;
+					&nbsp; refrigerator water filters</p>
+			</div>
+			<div class="shareContact">
+			<div class="addthis_toolbox addthis_default_style"><a class="addthis_button_compact at300m" href="#"><span class="at300bs at15nc at15t_compact"></span> &nbsp;share</a><div class="atclear"></div></div>			
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4da726c313109360"></script>
+			<script type="text/javascript">
+function adjustPos(evt) {
+   setTimeout(function(){
+$("#at15s").css({
+      top : parseInt($(".shareContact").offset().top + 20) + "px" ,
+      left : parseInt($(".shareContact").offset().left) + "px" 
+   });
+   },10);   
+}
+$(".shareContact .addthis_button_compact").mouseenter(adjustPos);
+</script>
+
+			&nbsp;|&nbsp;&nbsp;<a href="http://www.whirlpool.com/contact-us/">contact</a></div>
+	
+      <!--ends #trackNavigation-->
+        
+      <div class="clear">&nbsp;</div>
+			<div class="sliderContainer">
+				<div class="sliderSubcontainer">
+					<div class="slider on first sliderOn">
+						<div class="sliderText">
+							<h2>
+								Are you drinking from<br />the periodic table?
+							</h2>
+							<p>
+								Whirlpool<sup class="reg">&reg;</sup> refrigerator water filters reduce harmful <br />contaminants*
+								so your whole family can enjoy fresh clean water conveniently at
+								their fingertips.
+							</p>
+							<p class="disclaimer">*The substances removed or reduced by these filters may not be<br/>present in everyone's water.</p>
+						</div>	
+						<div id="thumbnail" class="mainResource video" onclick="dcsMultiTrack('WT.cg_n','video','WT.cg_s','Filters_Home_Pay_It_Foward');">
+                         	
+						</div>
+					</div>
+					<div class="slider off second sliderOff">
+						<div class="sliderText">
+							<h2>
+								Fresh water shouldn't drain your wallet.
+							</h2>
+							<p>
+								Save over $600* a year, compared to buying the same amount of bottled water, just by changing your Whirlpool<sup class="reg">&reg;</sup> refrigerator water filter every 6 months.
+							</p>
+							<p class="disclaimer">*Based on average use of two 6-month, 200 gal water filters verses purchasing the same amount of leading brand bottled water.</p>
+						</div>			
+						<div class="mainResource">
+							<img src="images/landing_page/2slider.png" alt="" width="535px" height="301px"/>
+						</div>
+					</div>
+					<div class="slider off last third sliderOff">
+						<div class="sliderText">
+							<h2>
+								Filtered water does a<br />world of good.
+							</h2>
+							<p>
+								Prevent up to 3,000* plastic bottles from being thrown into landfills and reduce air pollution and ozone layer depletion every year all just by switching to Whirlpool<sup class="reg">&reg;</sup> refrigerator water filters. 
+							</p>
+							<p class="disclaimer">*Based on average two 6-month, 200 gal water filters verses purchasing the same amount of leading brand bottled water.</p>
+						</div>			
+						<div class="mainResource">
+							<img src="images/landing_page/3slider.png" alt="" width="535px" height="301px"/>
+						</div>
+					</div>							
+				</div>
+                <ul class="selector">
+                    <li><div class="first sliderOn"></div></li>
+                    <li><div class="second sliderOff"></div></li>
+                    <li><div class="third sliderOff"></div></li>
+                </ul>
+			</div>
+			<div class="clear">&nbsp;</div>		
+      <!--ends .slider-->
+			<div id="content" class="landingWF">
+				<div id="styler">
+					<div id="list">
+						<div id="text">
+							<h2 id="title">Find your filter fast</h2>
+							<div>
+								<p id="subtitleLeft">Select your refrigerator type below or
+									search by model number.</p>
+								<a href="../filter-finder/102110165/" id="subtitleRight" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','SearchByModel');">Search by model number</a>
+							</div>
+						</div>
+						<ul id="styleChooser">
+							<li class="pic"><a href="../filter-finder/bottom-freezer-1/102110173/" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','BottomFreezer');"> <img
+									src="images/landing_page/stylesChooser1.jpg" alt="" />
+									<p class="styleChooserLabel">Bottom-Freezer</p> </a></li>
+							<li class="pic"><a href="../filter-finder/french-door-1/102110184/" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','FrenchDoor');"> <img
+									src="images/landing_page/stylesChooser2.jpg" alt="" />
+									<p class="styleChooserLabel">French Door</p> </a></li>
+							<li class="pic"><a href="../filter-finder/side-by-side-1/102110195/" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','SideBySide');"> <img
+									src="images/landing_page/stylesChooser3.jpg" alt="" />
+									<p class="styleChooserLabel">Side-By-Side</p> </a></li>
+							<li class="pic"><a href="../filter-finder/top-freezer-1/102110166/" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','TopFreezer');"> <img
+									src="images/landing_page/stylesChooser4.jpg" alt="" />
+									<p class="styleChooserLabel">Top Freezer</p> </a></li>
+							<li class="pic"><a href="../filter-finder/under-counter-1/102110210/" onclick="fireFloodlight('2625291','whirl781','whpwf430');dcsMultiTrack('WT.cg_n','Filters_FilterFinder','WT.cg_s','UnderCounter');"> <img
+									src="images/landing_page/stylesChooser5.jpg" alt="" />
+									<p class="styleChooserLabel">Under Counter</p> </a></li>
+						</ul>
+					</div>
+					<div id="coupon">
+		                <p class="title">Free Shipping</p>
+		                <p class="paragraph">Use promo code <strong>FILTERSHIP</strong> at checkout <br>and get free shipping on your refrigerator<br>water filter purchase.</p>
+		                <div class="leftYellowBorder">
+		                	<p class="subtitle">Need a little help?</p>
+		                    <p><a class="hoverYellow" href="help_page.html" onclick="dcsMultiTrack('WT.cg_n','Filters_CustomerService','WT.cg_s','Help');">Click here</a> for instructions, videos and more,</p><p> or call 1-866-698-2538</p>
+		                </div><!--ends .leftYellowBorder-->
+					</div>
+				</div>
+
+				<div id="productGrid">
+					<h2>Browse Water Filters by image, color or part number</h2>
+					<div class="productChooser">
+						<div><a href="w10295370.html"> <img src="images/landing_page/product1.jpg" alt="" />
+								<p id="filter1" class="styleChooserLabel"><font class="filterTile">Filter 1</font><br/>W10295370</p>	
+							</a>
+						</div>
+						<div class="middleFilter"><a href="w10413645a.html"> <img
+								src="images/landing_page/product2.jpg" alt="" />
+								<p id="filter2" class="styleChooserLabel"><font class="filterTile">Filter 2</font><br/>W10413645A</p>
+							</a>
+						</div>
+						<div class="last"><a href="landing_detail1.html" class="productPopup fancybox.ajax"> <img
+								src="images/landing_page/product3.jpg" alt="" />
+								<p id="filter3" class="styleChooserLabel"><font class="filterTile">Filter 3</font><br/>4396841<span class="code_spacer">|</span>4396710</p>
+							</a>
+						</div>
+					</div>
+					<div class="productChooser">
+						<div><a href="4396395.html"> <img
+								src="images/landing_page/product4.jpg" alt="" />
+								<p id="filter4" class="styleChooserLabel"><font class="filterTile">Filter 4</font><br/>4396395</p>
+							</a>
+						</div>
+						<div class="middleFilter"><a href="landing_detail2.html" class="productPopup fancybox.ajax"> <img
+								src="images/landing_page/product5.jpg" alt="" />
+								<p id="filter5" class="styleChooserLabel"><font class="filterTile">Filter 5</font><br/>4396508<span class="code_spacer">|</span>4396510</p>
+							</a>
+						</div>
+						<div class="last"><a href="4396701.html"> <img
+								src="images/landing_page/product6.jpg" alt="" />
+								<p id="filter6" class="styleChooserLabel"><font class="filterTile">Filter 6</font><br/>4396701</p>
+							</a>
+						</div>
+					</div>
+					<div class="productChooser">
+						<div class="thirdRow"><a href="ukf7003.html"> <img
+								src="images/landing_page/product7.jpg" alt="" />
+								<p id="filter7" class="styleChooserLabel"><font class="filterTile">Filter 7</font><br/>UKF7003</p>
+							</a>
+						</div>
+						<div class="thirdRow middleFilter"><a href="8171413.html"> <img
+								src="images/landing_page/product8.jpg" alt="" />
+								<p id="filter8" class="styleChooserLabel"><font class="filterTile">Filter 8</font><br/>8171413</p>
+							</a>
+						</div>
+						<div class="thirdRow last"><a href="wf401s.html"> <img
+								src="images/landing_page/product9.jpg" alt="" />
+								<p id="filter9" class="styleChooserLabel"><font class="filterTile">Filter 9</font><br/>WF401S</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+      <!--ensd #content-->
+  </div><!--ends #contentWrapper-->
+    
+<!--START FOOTER-->
+<div id="footer-wrap">&nbsp;</div><!--ends #footerWrapper-->
+</div><!--ends #wrapper-->
+</body>
+<script type="text/javascript" src="../nav/navigationLoader.js"></script>
+<script type="text/javascript">
+function clearText(thefield){
+	if (thefield.defaultValue==thefield.value) thefield.value = "";
+}
+
+function fieldGrabberX(){
+	var myTextField = document.getElementById('search-text');
+	dcsMultiTrack('DCS.dcsuri','on_release_global_' + myTextField.value,'WT.ti','on_release_global_' + myTextField.value);
+}
+</script>
+
+<!-- Scripts to complete Add to Cart process -->
+<!-- Change full path name to sever -->
+<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-us' "></script>
+<script type="text/javascript">
+var absoluteURL = "http://dev.whirlpool.com/webapp/wcs/stores/servlet/";
+var imageDirectoryPath = "/wcsstore/NARStorefrontAssetStore/";
+var styleDirectoryPath = "images/colors/color2/";
+function getAbsoluteURL()
+{
+	if (absoluteURL != "") {
+		var currentURL = document.URL;
+		var currentProtocol = "";
+	
+		if (currentURL.indexOf("://") != -1) {
+			currentProtocol = currentURL.substring(0, currentURL.indexOf("://"));
+		}
+		
+		var savedProtocol = "";
+		if (absoluteURL.indexOf("://") != -1) {
+			savedProtocol = absoluteURL.substring(0, absoluteURL.indexOf("://"));
+		}
+		
+		if (currentProtocol != savedProtocol) {
+			absoluteURL = currentProtocol + absoluteURL.substring(absoluteURL.indexOf("://"));
+		}
+	}
+	return absoluteURL;
+}
+function getImageDirectoryPath()
+{
+	return imageDirectoryPath;
+}
+
+function getStyleDirectoryPath()
+{
+	return styleDirectoryPath;
+}
+</script>
+
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesEventMapping.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CommonContextsDeclarations.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CommonControllersDeclaration.js"></script>
+<script type="text/javascript">
+  dojo.addOnLoad(function() {
+		CommonContextsJS.setCommonParameters('-1','10211','10561');
+		CommonControllersDeclarationJS.setCommonParameters('-1','10211','10561');
+		CommonControllersDeclarationJS.setControllerURL('MiniShoppingCartController', getAbsoluteURL()+'AjaxQuickCartDisplay?storeId=10211&catalogId=10561&langId=-1');
+		CommonControllersDeclarationJS.setControllerURL('HeaderGreetingsController', getAbsoluteURL()+'AjaxWHRHeaderGreetingsDisplay?storeId=10211&catalogId=10561&langId=-1');
+	});
+</script>
+<script src="js/jquery.easing.1.3.js"		        type="text/javascript"></script>
+<script src="js/jquery.fancybox.js"                 type="text/javascript"></script>
+<script src="js/landingPage.js"                     type="text/javascript"></script>
+<script src="js/products.js"                        type="text/javascript"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="js/PIE.js"></script><![endif]--><!---->
+<script src="/javascript/jquery.query-2.1.7.js"		type="text/javascript"></script>
+<script src="/javascript/jquery.cookie.js"			type="text/javascript"></script>
+<script src="/javascript/jquery.highlight-3.js"		type="text/javascript"></script>
+<script src="/javascript/combined.js"				type="text/javascript"></script>
+<script src="/javascript/content/content.js" type="text/javascript"></script>
+<script src="/javascript/jquery-ui-1.8.10.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var tb_branch = "/";
+</script>
+<script type="text/javascript" src="//nexus.ensighten.com/whirlpool/Bootstrap.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CompareProduct.js"></script>
+<script type="text/javascript">
+		dojo.require("dojo.cookie");
+		dojo.addOnLoad(function() {		
+			MessageHelper.setMessage("ERROR_RETRIEVE_PRICE", "The store has encountered a problem processing the last request. Please try again. If the problem persists, contact us for assistance.");
+			MessageHelper.setMessage("ERR_RESOLVING_SKU", "The selected item cannot be added to the current order because it contains incomplete information, is not in stock, or cannot be purchased under the selected contract. Ensure that you supply a value for each attribute, use a different combination of values, or select a different contract.");
+			MessageHelper.setMessage("QUANTITY_INPUT_ERROR", "The value in the Quantity field is invalid. Ensure the value is a positive integer and try again.");
+			MessageHelper.setMessage("SHOPCART_ADDED", "<h1>Thank you!</h1>");
+			MessageHelper.setMessage("ERROR_MESSAGE_TYPE", "Error: ");
+			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
+			categoryDisplayJS.setCommonParameters('-1','10211','10561');
+			ServicesDeclarationJS.setCommonParameters('-1','10211','10561');
+			compareProductJS.setCommonParameters('-1','10211','10561');
+			compareProductJS.initializePDPCompareNow('1001092');
+			categoryDisplayJS.setStoreFlow('ORN');
+			ServicesDeclarationJS.setStoreFlow('ORN');
+		});
+</script>
+<script type="text/javascript" src="http://static.ecorebates.com/whirlpool/whirlpool.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/StoreCommonUtilities.js"></script>
+<script type="text/javascript">dojo.addOnLoad(function() { parseWidget("progress_bar_dialog"); } );</script>
+<script type="text/javascript">
+	if (typeof categoryDisplayJS != "undefined") {
+		categoryDisplayJS.allowAccessoryDialog = true;
+		categoryDisplayJS.allowZipCodeDialog = true;
+		categoryDisplayJS.allowAccessoryDialogRemove = false;
+	}
+</script>
+<div id="fDiv"></div>
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		if('false' == "true"){
+			showHeaderLinksInTwoLines();
+		}else{
+			showLinksInOneLine();
+		}
+		parseWidget("outerCartContainer");
+		if (typeof categoryDisplayJS != "undefined") {
+			categoryDisplayJS.userType = 'G';
+			categoryDisplayJS.allowAccessoryDialog = true;
+			categoryDisplayJS.allowZipCodeDialog = true;
+		}
+	});
+	var storeId = '10211';
+	var langId = '-1';
+	var catalogId = '10561';
+
+	if('' == "true")
+		var showProductCompare = false;
+	else
+		var showProductCompare = true;
+	dojo.addOnLoad(initShopcartTarget);
+	dojo.addOnLoad(showDropDownMenu);
+</script>
+<noscript id="no_script_alert">
+	<div>
+		<p>Your browser does not support JavaScript! Please enable Javascript to run in your browser and reload this page.</p>
+	</div>
+</noscript>
+<script type="text/javascript">
+				function popup_callGetPlantCodeByZip() {
+					var myZipcode = document.getElementById('popup_zipcodeTxt');
+					dcsMultiTrack('DCS.dcsuri','on_release', 'WT.zipcode', myZipcode.value);
+					setCurrentId('popup_zipcodeTxt');
+					EndecaHelperJS.setAbsStoresWebPath(window.location.protocol+'//dev.whirlpool.com/webapp/wcs/stores/servlet');
+					EndecaHelperJS.setStoreCountry('US');
+					EndecaHelperJS.getPlantCodeByZip(true);
+				}
+			</script>
+            		<script type="text/javascript">
+			dojo.addOnLoad(function() {
+				parseWidget("zip_code_popup");
+				dojo.mixin(dijit.byId("zip_code_popup"), { onZipCodeSelected: function(zipCode) {} });
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Jurisdiction code could not be determined.");
+				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability zip code cannot be validated now. Try again later.");
+			});
+		</script>
+<script src="/javascript/addthis_widget.js" type="text/javascript"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CheckoutArea/CheckoutHelper.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/ProductDisplay.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
+<script type="text/javascript" src="//whirlpool.ugc.bazaarvoice.com/static/8805-en_us/bvapi.js"></script>
+<script type="text/javascript" src="/javascript/jquery.wpc.wresize.js"></script>
+<script type="text/javascript">
+	$BV.configure("global", {
+		displayCode: "8805-en_us",
+		submissionReturnUrl: document.URL,
+		submissionContainerUrl: "http://dev.whirlpool.com/webapp/wcs/stores/servlet/ReviewerNavigation?catalogId=10561&langId=-1&storeId=10211" + "&URL=" + "http://dev.whirlpool.com/webapp/wcs/stores/servlet/WHRORNBVRatingSubmissionView?catalogId=10561&langId=-1&productId=1001092&storeId=10211"
+	});
+</script>
+ <script src="/javascript/addthis_widget.js" type="text/javascript"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CheckoutArea/CheckoutHelper.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/ProductDisplay.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
+<script type="text/javascript" src="//whirlpool.ugc.bazaarvoice.com/static/8805-en_us/bvapi.js"></script>
+<script type="text/javascript" src="/javascript/jquery.wpc.wresize.js"></script>
+<script type="text/javascript">
+	$BV.configure("global", {
+		displayCode: "8805-en_us",
+		submissionReturnUrl: document.URL,
+		submissionContainerUrl: "http://stage.whirlpool.com/webapp/wcs/stores/servlet/ReviewerNavigation?catalogId=10561&langId=-1&storeId=10211" + "&URL=" + "http://stage.whirlpool.com/webapp/wcs/stores/servlet/WHRORNBVRatingSubmissionView?catalogId=10561&langId=-1&productId=1001175&storeId=10211"
+	});
+</script>
+<script src="/javascript/webtrends.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//-->
+</script>
+<script type="text/javascript">
+<!--
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//-->
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://statse.webtrendslive.com/dcs8maisiqljwpx4jia3u30hg_3d8m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.3.0&amp;WT.dcssip=stage.whirlpool.com"/></div>
+</noscript>
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		//Make sure page is loaded at this point
+		//Set requestedSubmitted to false
+		requestSubmitted = false;
+	}); 	
+</script>  
+</html>

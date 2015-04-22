@@ -1,0 +1,679 @@
+ /* Reset
+-------------------------------------------------------------- */
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td{
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	line-height:1.4;
+	font-family:Helvetica;
+	vertical-align:baseline;
+}
+a img,:link img,:visited img{border:0; margin-bottom: 20px;}
+a{outline:none;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+q:before,q:after, blockquote:before,blockquote:after{content:"";}
+input{vertical-align:middle;}
+.clear{clear: both;}
+html{*overflow-x: hidden;}
+
+/* Base
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6{font-weight:bold;}
+h1{font-size:2em;line-height:1;margin-bottom:0.5em;}
+h2{font-size:1.8em;line-height:1;margin-bottom:0.75em;}
+h3{font-size:1.4em;line-height:1;margin-bottom:1em;}
+h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5{font-size:1em;margin-bottom:1.5em;}
+h6{font-size:1em;}
+
+p{ font-size:0.9em; margin:0 0 1.25em; }
+ul,ol{margin:0 1.5em 1.5em 1.5em;}
+ul{list-style-type:square;}
+ol{list-style-type:decimal;}
+dl{margin:0 0 1.5em 0;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:1.5em;}
+abbr,acronym{border-bottom:1px dotted #000;}
+address{margin-top:1.5em;font-style:italic;}
+del{color:#000;}
+a{/*color:#eeb111;*/text-decoration:none;}
+blockquote{margin:1.5em;}
+strong{font-weight:bold;}
+em,dfn{font-style:italic;}
+dfn{font-weight:bold;}
+pre,code{margin:1.5em 0;white-space:pre;}
+pre,code,tt{font:1em monospace;line-height:1.5;}
+tt{display:block;margin:1.5em 0;line-height:1.5;}
+span { color: #666666;}
+
+table{margin-bottom:1.4em;}
+th{border-bottom:2px solid #ddd;font-weight:bold;}
+td{border-bottom:1px solid #ddd;}
+th,td{padding:4px 10px 4px 0;}
+tfoot{font-style:italic;}
+caption{background:#ffc;}
+
+table.paginator{border-spacing: 5pt 10pt;}
+td.paginator{border: none;}
+td.pairs{padding: 4px 5px 4px 5px;}
+
+/* Some default classes
+-------------------------------------------------------------- */
+sup{font-size:70%;vertical-align:text-top;}
+.small{font-size:1em;margin-bottom:1.875em;line-height:1.875em;}
+.large{font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.quiet{color:#999;}
+.hide{display:none;}
+.highlight{background:#ffc;}
+.top{margin-top:0;padding-top:0;}
+.bottom{margin-bottom:0;padding-bottom:0;}
+
+/* Basic Widths and Alignment
+-------------------------------------------------------------- */
+#page {text-align:left;}
+/*#page * {display: block;}*/
+body {text-align: center; /* required */}
+#wrap, #page {width: 940px;margin: 0 auto;}
+
+/* Typography
+-------------------------------------------------------------- */
+body{font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif; color:#505050; font-size:11px; }
+p{text-align:left;}
+a{/*color: #0099ff;*/ text-decoration:none;  }
+
+#page h1 {font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500; font-size: 15px;}
+#page.laundry h1, 
+#page h1, #page.laundry h2,
+#page.laundry h1, #page.SC_Laundry h2 {color:#666; font-family:helvetica; font-weight:normal; width: auto;} /*green*/
+#page.kitchen h1, #page.kitchen h2,
+#page.kitchen h1, #page.SC_Kitchen h2 {color:#EEB111; font-family:Helvetica, Arial; font-weight:500;} /*red*/
+#page.laundry h1, #page.wholehome h2,
+#page.laundry h1, #page.SC_Whole_Home h2 {color:#62086f; font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500;} /*purple*/
+#page.kitchen h1, #page.accessories h2,
+#page.kitchen h1, #page.SC_Accessories h2 {color:#11a9cc; font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500;} /*blue*/
+#page.kitchen h1, #page.ownercenter h2,
+#page.kitchen h1, #page.SC_Services h2,
+#page.kitchen h1, #page.SC_Services h2 {color:#f2a012; font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500;} /*orange*/
+
+#page.filters_acc h1, #page.filters_acc h2, #page.filters_acc h2.product_name {color:#11a9cc; font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500;} /*blue*/
+.product_header h2.product_name{margin-bottom:40px}
+#page.filters_acc h2.product_name {float:left; color:#11a9cc; margin-right:10px; padding-right:10px; border-right:dotted 1px #666666; }
+#page.filters_acc h3 { font-size:12px; float:left; padding-left:5px; margin-top:5px;}
+#page.filters_acc h4 { font-size:12px; float:left; margin-bottom:10px; margin-top:-3px;}
+
+#page.product_detail_page #product_overview_blue h2{font-style:italic; font-weight:bold;}
+#page.product_detail_page #product_overview_blue h2.content_title{font-style:italic; font-weight:bold; color: #666; font-size:13px; border-bottom: dotted 1px #666; margin-bottom:10px; padding:10px 0; background-color:#f3fbfc;}
+
+/*fix for IE my appliances*/
+.oc_my_appliances{min-height:300px;height:auto !important;height:300px;}
+
+/* Backgrounds
+-------------------------------------------------------------- */
+img.first_crimg{width: 145px;	height:111px;float:left;padding: 5px 5px 5px 0;}
+img.crimg{width: 100px;height: 100px;}
+img.crarrow{margin-top:0px;margin-right: 10px;margin-left: 10px;}
+
+/*START washer_detail_page by Troy*/
+washer_detail_page a img,:link img,:visited img{border:0; margin-bottom: 20px;}
+/*END washer_detail_page by Troy*/
+
+/* Generic popup dialog */
+.generic_popup.dijitDialog {position: absolute;z-index: 999;background: #fff;border: 1px solid #7eabcd;left:0;
+/*
+filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=5, OffY=5, Color='#adadad', Positive='true');
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, ShadowOpacity=.30), progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5', MakeShadow='true', ShadowOpacity='0.50');
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#666666', ShadowOpacity=.30, Direction=135, Strength=3);
+*/
+padding: 0px; -webkit-box-shadow: 0px 5px 10px #adadad;}
+
+/* END popup dialog style */
+
+/* Chase silencing the annoying unused pop up that appears in the top left of every page, much to our chagrin */
+
+div#second_level_category_popup { display:none; }
+.dijitCalendarWidth{width:auto !important;padding-left:0px;float:none;}
+#page h1.breadcrumb_current{font-family: Georgia,inherit;}
+
+#page.sign-in-page *{list-style:none outside none}
+div.simple_register{clear:both;float:left;font-size:10px;margin:5px;width:125%}
+div.simple_register{clear:both;float:left;font-size:12px;margin:5px!important;width:85%}
+div.simple_register div{float:left}
+div.simple_register input{float:right;width:50%}
+div.simple_register input{float:right;width:50%}
+div.simple_register select{float:right;height:20px;width:52%}
+input,select{background-color:#fff;border:1px solid #aab2bc;font-family:Verdana;font-size:11px;margin:0;padding:2px}
+.screen_name_confirmation{border:0 solid red;font-size:100%;font-weight:bold;padding:0 5px}
+#page.sign-in-page input.checkbox{border:medium none!important}
+#page.sign-in-page *{list-style:none outside none}
+input#WC_UserRegistrationAddForm_FormInput_rememberMe_In_Register_1,input#WC_UserRegistrationAddForm_FormInput_siteAgreement_In_Register_1,input#WC_UserRegistrationAddForm_FormInput_sendMeEmail_In_Register_1{height:13px;margin-left:2px;padding:0;width:13px}
+#WC_UserRegistrationAddForm_FormInput_rememberMe_In_Register_1{float:left;width:20px}
+div.checkbox_label_registration{font-size:10px;padding:0 0 17px 17px!important;vertical-align:middle}
+div.input_label{clear:both;float:left;margin:0;padding:0 10px;width:90%}
+#page.sign-in-page .input_label{margin-bottom:10px}
+.checkbox{margin-right:4px;margin-top:1px;padding-bottom:3px;vertical-align:middle}
+span.error_msg{color:red;}
+
+/**** Start New Changes for QC120 - Kitchen Interactive Tool *****/
+
+.MyWishList span.productHeader {
+	border: 2px solid #8C8B8B;
+	width:97%;
+	}
+
+	div#page.MyWishList div#box .productWrapper .product-containerRight {
+    float: right;
+    padding-left: 24px;
+    width: 298px;
+	border-left: 1px dashed #CCCCCC;
+   }
+	div#page.MyWishList a.remove, div#page.MyWishList a.remove:hover {
+    background: url("https://www.whirlpool.com/images/btn_remove_item.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 25px;
+    /*margin-right: 58px;*/ /* New Changed */
+    text-indent: -9999em;
+    width: 100px;
+	border-top: 1px dashed #CCC;/* New Add */
+	margin-top:10px;/* New Add */
+}
+
+.myKitchens_header_text {
+    float: left;
+	/*border: 2px solid #8C8B8B;*/
+	width:97%;
+    text-transform: capitalize;
+	background: none repeat scroll 0 0 #EEEEEE;
+	padding: 3px 0 3px 15px;
+	color: #666666;
+    font-family: 'Helvetica',Helvetica Neue,Arial,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.myKitchensCont {
+	width:99.5%;
+	/*height:400px;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;*/
+	border-bottom:1px solid #CCC;
+	padding-bottom:20px;
+}
+
+div#page.my-account-page div#Box.my_account_wishlist #my_Kitchen_collection{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+div#page.MyWishList div#Box.my_account_wishlist #my_Kitchen_collection .productcollection {
+    width: 310px;
+	position: absolute;
+	border-bottom: 1px solid #CCC;
+}
+div#page.MyWishList .myKitchensCont .productcollection .contentLeft {
+    float: left;
+    width: 130px;
+	height: 130px;
+	padding-left: 5px;
+	padding-top:5px;
+}
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle {
+    padding-left: 10px;
+	padding-top:5px;
+    float: left;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    text-align: left;
+    width: 300px;
+	/*border:1px solid red;*/
+}
+div#page.MyWishList .myKitchensCont .productcollection .contentRight {
+    padding-right: 10px;
+	padding-top:5px;
+    float: right;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    text-align: left;
+    width: 200px;
+	/*border:1px solid green;*/
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle .stock_icon {
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle .product_price {
+    padding-bottom: 5px;
+    visibility: visible;
+	margin-left: 0px;
+	font-weight: bold;
+	font-size:15px;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle ul li {
+	font-weight: bold;
+	font-size:16px;
+	color:#EBB111;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle ul li span{
+	font-weight: bold;
+	font-size:13px;
+	color: #CCC;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentMiddle a.removeColl, div#page.MyWishList .myKitchensCont .productcollection .contentMiddle a.removeColl:hover {
+    background: url("https://www.whirlpool.com/images/btn_remove_item.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 25px;
+    margin-top: 10px;
+    text-indent: -9999em;
+    width: 100px;
+}
+div#page.MyWishList .myKitchensCont .productcollection .contentRight ul li {
+	font-weight: normal;
+	font-size:12px;
+	color:#666;
+	width:150px;
+	/*background-color: #4DA4FA;*/
+	height:25px;
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 5px;
+	float: right;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentRight a.email {
+    background-position: 0 3px;
+    cursor: pointer;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentRight a {
+    background: url("../images/kit/base/icon-sm-sprite.png") no-repeat scroll 100px 100px transparent;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 8px 0 3px 6px;
+    padding-left: 27px;
+    width: 100px;
+}
+
+div#page.MyWishList .myKitchensCont .productcollection .contentRight a.print {
+    background-position: 0 -20px;
+}
+
+.btn {
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #BBBBBB #BBBBBB #A2A2A2;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 0;
+    padding: 4px 4px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.btn, .btn span {
+    color: #666666;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+
+.default-btn-arrow {
+    background: url("../images/kit/base/arrow-sm-sprite.png") no-repeat scroll 0 -156px transparent;
+    padding-left: 20px;
+}
+
+
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+    background-color: #E6E6E6;
+    color: #333333;
+}
+.btn:active, .btn.active {
+}
+.btn:first-child {
+}
+.btn:hover {
+    -moz-transition: background-position 0.1s linear 0s;
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    color: #333333;
+    text-decoration: none;
+}
+.btn:focus {
+    outline: thin dotted #333333;
+    outline-offset: -2px;
+}
+.btn.active, .btn:active {
+    background-color: #E6E6E6;
+    background-image: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    outline: 0 none;
+}
+.btn.disabled, .btn[disabled] {
+    background-color: #E6E6E6;
+    background-image: none;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.65;
+}
+.oc_search_content_moreInfo_links
+{
+    float: left;
+    margin-top: -26px;
+}
+
+
+/**** END New Changes for QC120 - Kitchen Interactive Tool *****/
+
+.thickbox.more_info_link{
+    margin:0px !important;
+}
+.productImgLaundry, .productImgRef, .productImgCooking, .productImgDishwasher{width:940px;}
+
+
+#header_sub_nav_1 div.item span.price {
+display: block !important;
+float: left !important;
+width: 51px !important;
+text-align: right !important;
+font-weight: 400 !important;
+margin-left: 0px !important;
+}
+
+/*extra fix for share buttons*/
+.share, .addthis_button_compact{display: none !important;}
+
+/*fix for first review*/
+#BVRRSummaryContainer{float:left !important;height: 140px;overflow: hidden;margin-top: -6px;}
+
+.bv-action-bar {display: none !important;}
+
+/*Global header css fixes*/
+html[lang=fr] #header_main_nav li ul li.filter_finder a{overflow: visible;height:32px;}
+
+#header_main_nav ul li.laundry li ul#laundry_optns {
+    width: 220px;
+}
+html[lang="fr"] #header_main_nav ul.top li.last.ownercenter ul {
+    padding-bottom: 15px;
+}
+
+html[lang="fr"] #header_main_nav ul.top li.last.ownercenter ul.owners_callout_section li.last.dots {
+    width: 200px;
+}
+
+/*Global footer css fixes*/
+
+#footer-nav-level-two {
+    padding-left: 0 !important;
+    margin-top:56px !important;
+    
+}
+
+#footer #footer-nav ul.footer_additional_left {
+	margin-right:10px !important;
+    width: 120px !important;
+}
+
+#footer #footer-nav ul.footer_additional_right {
+	margin-right:10px !important;
+}
+
+#footer #footer-nav ul#additional {
+	width:260px !important;
+}
+
+/*fr shopping cart layout fix*/
+html[lang=fr] #MiniShoppingCart{margin-top:5px;}
+ul.first li a img{margin-bottom: 0px;}
+
+/* hide links in video model window */
+iframe.fancybox-iframe #button-links{display: none !important}
+
+/*expired session link fix*/
+html.dj_gecko body div#page div#content_wrapper_border div#box.my_account div#errorPage div#WC_UserTimeoutView_5.content div#WC_UserTimeoutView_6.info span#WC_AjaxAddressBookForm_div_19.primary_button span.button_container span.button_bg span.button_top span.button_bottom a{
+	padding-left:10px;
+}
+
+/* Overlay Box */
+#quickViewBlackOut,
+#OverlayLangBlackOut{
+	background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1002;
+}
+#OverlayLangConfirm{
+	background: none repeat scroll 0 0 #FBFBFB;
+    display: none;
+    left: 15%;
+    margin-left: 20%;
+    padding: 25px;
+    position: fixed;
+    top: 30%;
+    width: 510px;
+    z-index: 1003;
+}
+#OverlayLangConfirm .MessageBlock{
+	background: none repeat scroll 0 0 #F3F4EE;
+    padding: 10px;
+    text-align: left;
+}
+#OverlayLangConfirm .MessageBlock p{
+	font-size: 12px;
+}
+#OverlayLangConfirm .ButtonOk{
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    height: 28px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 54px;
+    margin-right:-5px;
+}
+#OverlayLangConfirm .ButtonOk .ok-left
+{
+    background-image: url("/images/content/owner_center/icon_yellow_little_arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    height: 12px;
+    float: left;
+    line-height: 12px;
+    display: block;
+    width: 18px;
+}
+#OverlayLangConfirm .ButtonOk .ok-center
+{
+    background:none;
+    height: 20px;
+    float: left;
+    line-height: 12px;
+    display: block;
+    color: #333;
+    padding-bottom: 3px;
+}
+#OverlayLangConfirm .ButtonOk .ok-right
+{
+    background:none;
+    width: 12px;
+    height: 20px;
+    float: left;
+    display: block;
+}
+#OverlayLangConfirm .ButtonCancel{
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 28px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 102px;
+}
+html[lang=fr] #OverlayLangConfirm .ButtonCancel{
+    width: 110px;
+}
+
+#OverlayLangConfirm .ButtonCancel .can-left
+{
+    background-image: url("/images/content/owner_center/icon_yellow_little_arrow.png");
+    background-repeat:no-repeat;
+    background-position-x:0;
+    background-position-y:0;
+    height: 12px;
+    float: left;
+    line-height: 12px;
+    display: block;
+    width: 18px;
+}
+#OverlayLangConfirm .ButtonCancel .can-center
+{
+    background:none;
+    height: 20px;
+    float: left;
+    line-height: 12px;
+    display: block;
+    color: #333;
+    padding-bottom: 3px;
+}
+#OverlayLangConfirm .ButtonCancel .can-right
+{
+    background:none;  
+    width: 12px;
+    height: 20px;
+    float: left;
+    display: block;
+}
+
+/*link colour fixes*/
+
+a{color:#333;}
+a:hover{color:#666;}
+
+/* Press and Media */
+#press_and_media a.pressArrow{font-weight:bold}
+#press_and_media a.pressArrow:hover{color:#333;cursor:pointer}
+#press_and_media a.pressArrow div.pressLinkArrow{float:left;width:10px;height:15px;background:url("/images/content/press/pressLinkArrow.png") no-repeat scroll left 5px transparent}
+#press_and_media a.pressArrow div.pressLinkText{color:#333;float:left;width:345px}
+#press_and_media a.pressArrow:hover div.pressLinkArrow{cursor:pointer}
+#press_and_media a.pressArrow:hover div.pressLinkText{cursor:pointer}
+#press_and_media #viewPressReleases{background:url("/images/content/laundry/arrrow-to-the-right.png") no-repeat scroll right 2px transparent;display:block;margin:12px 0 0 16px;padding:0 10px 0 0;height:15px;width:214px;*width:213px;*height:15px;width:211px\9;height:18px\9;background-position:right 3px\9;*background-position:right 2px}
+#press_and_media #viewPressReleases{color:#333}
+html[lang=fr] #press_and_media #viewPressReleases{width:260px;}
+#press_and_media div.title_press{background:url("/images/content/title_img/pressMediaTitle.png") no-repeat scroll left top transparent;height:32px;margin:30px 0 25px 10px}
+html[lang=fr] #press_and_media div.title_press{background:url("/images/data/fr_CA/pressMediaTitle.png") no-repeat scroll left top transparent;height:32px;margin:30px 0 25px 10px}
+#press_and_media div.press_and_media_left{float:left;margin-bottom:100px;*margin-bottom:50px;width:48%;}
+#press_and_media div.press_and_media_right{float:right;margin-bottom:100px;*margin-bottom:50px;width:48%;}
+#press_and_media p,#press_and_media a{font-size:11px}
+#press_and_media h1{font-size:18px;color:#666;background-color:#eee;padding:7px 0 7px 16px;width:440px}
+#press_and_media h1.titleDigitalLibrary{color:#333}
+#press_and_media h1.titlePressReleases{margin-top:30px}
+#press_and_media p{line-height:16px;margin-left:16px}
+#press_and_media p.paraDigitalLibrary{margin-bottom:6px;color:#333}
+#press_and_media div.informed{margin:20px 0 0 16px}
+#press_and_media div.informed p{line-height:20px;margin-left:0}
+#press_and_media div.informed p a{font-weight:bold}
+#press_and_media div.informed p a:hover{color:#333}
+#press_and_media a.digitalLibrary{line-height:26px;margin-left:16px;background:url("/images/content/press/pressLinkArrow.png") no-repeat scroll left 5px transparent;padding-left:10px}
+
+/* PDOM espot */
+.pdomBox{
+margin:14px;
+}
+.pdomBox h3{
+padding:16px 0 5px;
+font-size:110%;
+}
+#page.product_detail_page #overview .pdomBox .footnote{
+font-size:85%;
+}
+
+.promoBanner{
+background:#f1f1f1;
+padding:20px 25px 13px;
+margin-bottom:40px;
+}
+.promoBanner img{
+float:left;
+display:block;
+}
+.promoBanner .promoContents{
+float:left;
+width:35%;
+margin:0 10px 0 30px;
+text-align:left;
+}
+.promoBanner .footnote{
+font-size:85%;margin:10px 0 5px;
+}
+.promoBanner .promoProCTAs{
+text-align:left;
+display:block;
+margin:0 0 0 57%;
+}
+.promoBanner .promoProCTAs a{
+color:#EEB111;
+}
+.promoBanner .promoProCTAs p{
+margin-bottom:3px;
+}
+
+/*badges fixes*/
+
+img.wpBadge{padding-bottom:10px; width:68%; height:auto;}
+h3.wpBadge{font-size:110%;}
+img.eighteenyearsAbsolute{display:block; width:130px; top:60px; position:absolute;}
+

@@ -1,0 +1,180 @@
+/* ------- Saved Products.html begin -------- */
+body.washer_selection_page div#proudctBox .productWrapper{ width:704px; float:left; }
+body.washer_selection_page div#proudctBox .productWrapper .product-container.top{ width:337px; padding-left:10px; float:left;}
+body.washer_selection_page div#proudctBox .productWrapper .product-container.right.top{ width:324px; float:left; border-left:1px dotted #999; padding-left:25px;}
+body.washer_selection_page .productContent .contentLeft,
+body.washer_selection_page .productContent_print .contentLeft_print{width:130px; float:left;}
+body.washer_selection_page .productContent .contentRight,
+body.washer_selection_page .productContent_print .contentRight_print{width:165px;text-align:left; float:left;font-size:10px;margin: 0; margin: 20px 10px 0;
+padding: 0;font-family:'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;}
+body.washer_selection_page .price_text{ width:190px; margin-top:10px;}
+body.washer_selection_page .product_price{ font-weight:bold;}
+body.washer_selection_page .stock_icon{ font-weight:bold;}
+body.washer_selection_page .product_action a.view_details,
+body.washer_selection_page a.product_title:link{ font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Sans Regular', Verdana, sans-serif; color:#EEB111; font-weight:bold; text-decoration: none; font-size:12px;}
+body.washer_selection_page a.product_title{ color: #EEB111 !important;text-decoration: none;font-weight:bold;}
+body.washer_selection_page a.product_title:visited{ color: #0099FF;text-decoration: none;}
+body.washer_selection_page #h2_text_print{color:#EEB111; font-weight:normal; float:left; padding:23px 18px 18px 18px; font-size:26px;}
+body.washer_selection_page td{border:none}
+body.washer_selection_page h2{
+    font-size: 1.8em;
+    line-height: 1;
+    margin-bottom: 0em;
+}
+body.washer_selection_page #button_print{float:right;}
+body.washer_selection_page #img_green_bar_1px_rule{margin-bottom:35px; width:704px;clear:both;overflow:hidden; border:none !important; outline:none !important;}
+body.washer_selection_page #img_green_bar_3px_rule_bottom{margin-top:20px; margin-bottom:40px; width:704px; overflow:hidden}
+body.washer_selection_page ul{list-style-type:none;}
+body.washer_selection_page .autoh{padding-bottom: 25px;}
+body.washer_selection_page #blue_bar_top{width:704px; clear:both; overflow:hidden; padding-top: 50px;}
+/* ------- Saved Products.html end -------- */
+body.washer_selection_page div#proudctBox .productWrapper .product-container.top.no_border_bottom { border-bottom:none;}
+body.washer_selection_page div#proudctBox .productWrapper .product-container.top.no_border_bottom .autoh{ margin-top:35px;}
+body.washer_selection_page h2 a { float:left;}
+.contentRight ul { margin-right:0px;}
+.table_print {margin-left: 30px; float: left;}
+.contentRight ul { margin-left:10px; margin-bottom:20px; width:140px;}
+.contentRight ul li { color:#333; line-height:16px; width:150px;}
+.productContent { padding-bottom:18px;width: 330px;}
+.right .productContent { padding-bottom:18px;}
+.no_border_bottom .productContent { padding-bottom:22px;}
+h2.logo a img { margin-bottom:15px;}
+#button_print a img { margin-bottom:19px;}
+
+
+/* -------start print_saved_products.html -------- */
+div#page.myproducts div#page_print h2.logo div#logo{ margin-top:15px;}
+
+div#page.myproducts div#page_print,
+div#page.myproducts div#results_grid_view_print{ width:704px;}
+div#page.myproducts div.productWrapper .product-container.top{ width:337px !important; padding-left:10px; float:left; border-top:1px dotted #999; min-height:272px;}
+div#page.myproducts .autoh{ width:337px !important; margin-bottom:0px !important;}
+div#page.myproducts div.productWrapper{ height:auto !important;}
+body.washer_selection_page .productWrapper .no_border_bottom { border-bottom:none !important;}
+body.washer_selection_page .productWrapper .no_border_bottom .autoh{margin-top: 35px;}
+div#page.myproducts div.productWrapper .product-container.right.top{ padding-left:25px !important;}
+body.washer_selection_page #button_print{clear: both;float: right;left: 619px;position: absolute;top: 10px;}
+div#page.print_saved_products_page{width:737px !important; float:left !important; margin-left:30px !important; padding-top:8px;}
+div#page.print_saved_products_page .productContent .contentRight,
+div#page.print_saved_products_page .productContent_print .contentRight_print{padding-left:20px;}
+div#page.print_saved_products_page .stock_icon_print,
+div#page.print_saved_products_page div#main_product_action_print,
+div#page.print_saved_products_page div#main_remove .remove_print{ display:none;}
+div#page.print_saved_products_page div#main_remove .price_text_print{ margin-top:20px;}
+div#page.print_saved_products_page div#main_remove{ display:block !important;}
+
+div#page.print_saved_products_page div.productContent_print span{color: #333333 !important; line-height: 16px;}
+div#page.print_saved_products_page  .autoh a{font-size: 12px !important; }
+.productContent_print {
+    padding-bottom: 20px;
+}
+.features_logo{
+    display:none;
+}
+
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container a.add-to-cart,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container a.where_to_buy,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container a.remove,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container div.contentRight a.details,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container div.contentRight p.price_text .product_taxes,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container div.contentRight span.stock_icon,
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container div.contentRight div.special-offers,
+body.washer_selection_page table.table_print div#box div.page_header { display:none}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper { width:100%; clear:both; overflow:hidden;border-top:1px dotted #999999; padding-top:20px; word-wrap:break-word;}
+body.washer_selection_page table.table_print div#box div#results_grid_view > div.productWrapper { border-top:none}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.productContent { margin-top:10px;}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container {width:340px; float:left; padding-right:10px;}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container.right { width:340px; padding-left:10px;padding-right:0;}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container.top.right { border-left:1px dotted #999999; padding-bottom:2000px; margin-bottom:-2000px;}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container a.product_title:link{ font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Sans Regular', Verdana, sans-serif; color:#0099CC; font-weight:bold; text-decoration: none; font-size:12px;}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container a.product_title:hover { text-decoration:underline}
+body.washer_selection_page table.table_print div#box div#results_grid_view div.productWrapper div.product-container .contentLeft img { width:130px;}
+/* -------end print_saved_products.html -------- */
+
+/*fix issue */
+body.washer_selection_page table.table_print .main_header, 
+body.washer_selection_page table.table_print .page_header, 
+body.washer_selection_page table.table_print .where_to_buy, 
+body.washer_selection_page table.table_print .add-to-cart, 
+body.washer_selection_page table.table_print .remove,
+body.washer_selection_page table.table_print .stock_icon,
+body.washer_selection_page table.table_print .product_taxes,
+body.washer_selection_page table.table_print a.details{display:none;}
+body.washer_selection_page table.table_print .product-container {float: left;width: 350px;min-height:220px;border-top:dotted 1px #CCC;border-right:none;}
+body.washer_selection_page table.table_print .productWrapper:first-child > .product-container{border-top:none;}
+body.washer_selection_page .productContent .thumbnail{width:100%;text-align:center;display:inline;}
+body.washer_selection_page .productContent .thumbnail img{margin-top:20px;}
+body.washer_selection_page .productWrapper{clear:both;}
+body.washer_selection_page div#print_saved_product_footer{width:702px; margin-left:25px;}
+
+/* Fix issue about page - save product */
+body.washer_selection_page table.table_print div.productWrapper{overflow:hidden;border-top:dotted 1px #CCC;}
+body.washer_selection_page table.table_print div.productWrapper:first-child{border-top:none;}
+body.washer_selection_page table.table_print .product-container.top{border-right:dotted 1px #CCC;}
+body.washer_selection_page table.table_print .product-container{border-top:none;border-bottom:dotted 1px #CCC;border-right:none;width:330px;padding:10px;margin-bottom:-10000px;padding-bottom:10000px;}
+body.washer_selection_page table.table_print .product-container.right{border-right:none;}
+body.washer_selection_page table.table_print .price_text{margin-left:10px; font-weight:bold;}
+
+/* resize the images */
+body.washer_selection_page table.table_print div.my_account_wishlist div.product-container div.thumbnail img{width:auto;height:auto;max-width:130px;max-height:175px;}
+
+/* print button */
+#button_print a img {
+    visibility: hidden;
+}
+#button_print a:hover {
+    background-position: 0 -48px;
+}
+#button_print a {
+    background: url("/images/btn_print_page.png") repeat scroll 0 0 transparent;
+    height: 48px;
+    left: 620px;
+    display:block;
+    width: 148px;
+    overflow: hidden;
+    position: static;
+}
+#page.product_list_page a:hover {
+    color: #666 !important;
+}
+body.print_product_list a.underlined_link {
+    color: #666666 !important;
+    cursor: default !important;
+    font-size: 8pt !important;
+    text-decoration: none !important;
+}
+/*IE hack*/
+body.washer_selection_page .productContent .contentRight, body.washer_selection_page .productContent_print .contentRight_print{
+    *float:left !important;
+    *padding:none !important;
+    *position:relative;
+    *margin-top:-180px;
+    *display:block;
+    *margin-left:140px !important;
+    *width: 165px;
+}
+body.washer_selection_page table.table_print .price_text{*margin-left:20px !important;*width: 100px !important;}
+.contentRight ul li { *margin-left:10px;*font-weight:bold !important;}
+*:first-child+html body.washer_selection_page table.table_print div.productWrapper{*border-top:none !important;}
+body.washer_selection_page table.table_print .product-container.top{*border-right:dotted 1px #CCC !important;}
+body.washer_selection_page table.table_print .product-container.right{*border-right:none !important;}
+body.washer_selection_page .productContent_print .contentRight_print{
+*width:165px !important;
+}
+body.print_product_list td.product_list_table_desc_cell{
+    *padding-left: 0 !important;
+}
+body.print_product_list td.product_list_table_id_cell{
+    *padding-left: 160px !important;
+    *z-index: 1;
+}
+body.print_product_list td.product_list_table_img_cell.product_list_table_row{
+    *z-index: 2;
+}
+body.print_product_list .main_tabs_wrapper div#filters-container{
+    border-bottom: 0 !important;
+}
+body.print_product_list div.product_image_link{
+    *width:160px !important;
+    *background-color: #FFF;
+}

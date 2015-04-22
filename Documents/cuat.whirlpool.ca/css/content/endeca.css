@@ -1,0 +1,1537 @@
+#header-wrap {
+    float: left;
+    position: relative;
+}
+.endeca_header {
+    padding-top: 15px;
+}
+input{
+    border: 0px !important;
+    padding: 0px !important;
+}
+body .endeca_container{
+    width:950px;
+    height:auto;
+    position: relative;
+    margin:0 auto;
+}
+body.endeca_pages{
+    font-family: Helvetica, Arial;
+}
+.endeca_rightContainer{
+    position: relative;
+    float: left;
+    width: 685px;
+    height: auto;
+}
+.dj_ie .endeca_rightContainer, .dj_ie.dj_ie7 .endeca_rightContainer{top:-3px;}
+
+#endeca_leftNavContainer{
+    float:left;
+    position:relative;
+    width:233px;
+    height:auto;
+    padding: 8px 20px 20px 0;
+}
+#leftNav_topBorder{
+    background: url("/images/content/endeca/filter_list_top.png") no-repeat 0 0 transparent;
+    width:239px;
+    height:12px;
+    float:left;
+    position:relative;
+    *overflow: hidden;
+}
+#btn_narrowBy{
+    background-color: #E4E4E4;
+    float: left;
+    height: 45px;
+    padding: 0 20px;
+    position: relative;
+    width: 193px;
+}
+#leftNav_bottomBorder{
+    width:239px;
+    background: url("/images/content/endeca/filter_list_bottom.png") no-repeat 0 0 transparent;
+    height:12px;
+    float:left;
+    position:relative;
+    *overflow: hidden;
+}
+.leftNav_content{
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    float: left;
+    height: auto;
+    position: relative;
+    width: 231px;
+}
+div.nav_sections.first div.dotted_line{
+    border-top: none;
+}
+.nav_sections{
+    float:left;
+    position:relative;
+    width: 233px;
+    height: auto;
+}
+.nav_sections .tag_img{
+    width:41px;
+    float:left;
+    position:relative;
+    height:auto;
+    vertical-align:middle;
+    display: table-cell;
+}
+.nav_sections div.tag_img img{
+    vertical-align:middle;
+}
+.nav_sections.first .opt_list_container{
+    padding-left: 0;
+}
+.nav_sections.first{
+    padding-top:5px;
+}
+.dotted_line{
+    border-top: 1px solid #C9C4C4;
+    height: 1px;
+    margin: 0 auto;
+    position: relative;
+    width: 205px;
+}
+.opt_list_container{
+    float: left;
+    height: auto;
+    margin: 0 0 0 15px;
+    padding: 0 0 15px;
+    position: relative;
+    width: 210px;
+}
+.opt_list_container h4{
+    float: left;
+    height: 13px;
+    line-height: 16px;
+    padding-left: 5px;
+    text-transform: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    font-size: 12px;
+}
+.opt_list_container h4.endeca_opt_subtitle{
+    color: #696868;
+    font-size: 9px;
+    margin: 11px 0 0;
+    padding-left: 23px;
+    text-transform: none;
+    width:100%;
+}
+.endeca_optWrap.colorChooserWrap{
+    float: left;
+    height: auto;
+    padding: 0 0 10px 5px;
+    width: 100%;
+}
+.endeca_textOpt{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 11px;
+    float:left;
+    width:100%;
+}
+.endeca_textOpt:hover *{
+    color: #EEB111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.endeca_textOpt:hover {
+    color: #EEB111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.endeca_textOpt.inactive_listItem {
+    color: #989898;
+    cursor: default;
+    text-decoration: none;
+}
+.endeca_textOpt.inline{
+    height: 30px;
+    width: 200px;
+    float: left;
+    position: relative;
+    margin-bottom:10px;
+}
+div.colorChooserWrap div.endeca_textOpt img{
+    position:relative;
+    float:left;
+}
+div.colorChooserWrap div.endeca_textOpt label.label_check{
+    float: left;
+    left: 12px;
+    margin: 0;
+    padding-left: 17px;
+    position: relative;
+    top: -4px;
+    width: 0;
+    z-index: 1;
+}
+.c_name{
+    float: left;
+    height: 18px;
+    padding-left: 5px;
+    padding-top: 11px;
+    position: relative;
+    width: 160px;
+}
+.endeca_colorCheckbox{
+    left: 12px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -4px;
+}
+/*Header*/
+#endeca_refigeratorsHeader{
+    background: url("/images/content/endeca/bg_header.png") no-repeat scroll 0 bottom transparent;
+}
+.endeca_headers{
+    float: left;
+    height: 103px;
+    position: relative;
+    width: 707px;           
+}
+#refrigerator_text{
+    background: url("/images/content/endeca/mayRefHead.png") no-repeat scroll 25px 60% transparent;
+    height: 90px;
+    padding: 10px 20px 0 0;
+    width: 345px;
+}
+.endeca_headers_text{
+    position: relative;
+    float: left;
+}
+#refrigerator_applinceImg{
+    background: url("/images/content/endeca/refriHead.png") no-repeat 0 0 transparent;
+    width:257px;
+    height: 103px;
+}
+.endeca_headers_applianceImg{
+    position: relative;
+    float: left;
+}
+/*END - Header*/
+/*SortView Bar*/
+.endeca_sortViewDisplayBar_bottom{
+    float: left;
+    height: 51px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 707px;
+}
+.endeca_sortViewDisplayBar_top{
+    float: left;
+    position: relative;
+    width: 685px;
+    height: 50px;
+}
+
+.endeca_sortViewDisplayBar_top.sticky{
+    position: fixed;
+    top: -4px;
+    z-index: 100;
+}
+
+.sortView_content{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #999999;
+    border-top: 3px solid #999999;
+    float: left;
+    height: 25px;
+    margin-top: 1px;
+    padding: 12px 0 9px 0;
+    position: relative;
+    width: 685px;
+}
+.sortView_borderLeft{
+    background: url("/images/content/endeca/sortByNav_borderLeft.png") no-repeat 0 0 transparent;
+}
+.sortView_borderRight{
+    background: url("/images/content/endeca/sortByNav_borderRight.png") no-repeat 0 0 transparent;
+}
+.sortView_general{
+    float: left;
+    position: relative;
+    height: 42px;
+    width: 8px;
+}
+.bar_compare_btn{
+    float: right;
+    height: 15px;
+    padding: 5px 9px;
+    position: relative;
+    text-transform: capitalize;
+    width: 54px;
+    line-height:12px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 12px;
+
+}
+.bar_compare_btn:hover {
+    color:#EEB111;
+    text-decoration: underline;
+}
+.bar_compare_btn.active:hover {
+    background-position: 0 -23px;
+    /*color: #EEB100;*/
+}
+.bar_compare_btn.active{
+    background: url("/images/content/endeca/compareBox.png") no-repeat scroll 0 0 transparent;
+    font-weight: bold;
+    height: 14px;
+    margin-right: 10px;
+    width: 56px;
+    cursor:pointer;
+}
+#compare-tray-container.plp {
+    position:relative;  
+}
+
+#compare-tray-container.plp #compare-tray {
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 268px;
+}
+
+#compare-tray-container.plp.sticky{
+    position: fixed !important;
+    width: 685px;
+    top: -25px;
+    z-index: 500;
+}
+
+#compare-tray-container.plp #compare-tray .compare-text {
+    color: #000;
+    float: left;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: right;
+    width: 60px;
+}
+
+#compare-tray-container.plp #compare-tray-button {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    float: right;
+    font-size: 11px;
+    margin: 5px 0 0 3px;
+    padding: 4px 8px;
+}
+
+#compare-tray-container.plp #compare-tray li {
+    background-color: #fff;
+    float: left;
+    height: 34px;
+    margin: 0 0 0 2px;
+    width: 30px;
+    position:relative;
+}
+
+#compare-tray-container.plp #compare-tray li img {
+    width:100%;
+    height:auto;    
+}
+
+#compare-tray-container.plp #compare-tray li.empty {
+    border: 1px solid #000;
+}
+#compare-tray-container.plp #compare-tray li img.delete { position:absolute; right:0; top:-6px; width:12px;  }
+#compare-tray-container.plp #compare-tray li.empty img.delete { display:none; }
+ul.sortBy_sections{
+    float: left;
+    height: 22px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 595px;
+}
+ul.sortBy_sections li{
+    float: left;
+    font-size: 12px;
+    height: 17px;
+    padding: 2px 3px 0 0;
+    position: relative;
+   
+}
+ul.sortBy_sections li.first{
+    
+}
+ul.sortBy_sections li div#sortBy_text{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 13px;
+    padding: 0px 2px 0 0;
+    position: relative;
+    width: 47px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+}
+ul.sortBy_sections li a{
+    background: url("/images/content/endeca/sortBy.png") no-repeat scroll 0 -17px transparent;
+    color: #333;
+    float: left;
+    height: 15px;
+    padding: 2px 0 0 20px;
+    position: relative;
+    text-decoration: none;
+    font-size:9px;
+}
+
+ul.sortBy_sections li a:hover{
+    color:#EEB111;
+    text-decoration: underline;
+}
+.dj_ie.dj_ie7 ul.sortBy_sections li a, .dj_ie ul.sortBy_sections li a{
+    
+}
+ul.sortBy_sections li a.active{
+    background-position: 0 0px;
+    color: #333;
+}
+
+ul.sortBy_sections li a.active:hover{
+color:#EEB111;
+    text-decoration: underline;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.active{
+    color: #EEB100;
+    margin-top:3px;
+}
+
+ul.endecaProdCompare > li.prodCompare > label {
+margin-top: 1px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.readyCompare:hover, #compare-tray-container.plp #compare-tray-button.active:hover, #compare-tray-container.pdp #compare-tray-button.active:hover {
+    background-position: -23px -24px;
+    /*color: #EEB100;*/
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.readyCompare, #compare-tray-container.plp #compare-tray-button.active, #compare-tray-container.pdp #compare-tray-button.active {
+    background: url("/images/content/endeca/compare_active.png") no-repeat scroll -23px 0 transparent;
+    color: #666666;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-right: 10px;
+    width: 60px;    
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;  
+}
+
+#compare-tray-container.plp #compare-tray-button.active {
+    width: 48px;
+    margin: 5px 0 0 3px;
+    font-weight: bold;
+}
+
+.dj_ie.dj_ie7 div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.readyCompare, .#compare-tray-container.plp #compare-tray-button.active {
+    line-height: 22px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare.dotted a{
+    padding-right: 5px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare.dotted{
+    border-bottom: 1px dotted #999999;
+    height: 34px;
+    width: 140px;
+}
+div.endeca_displayingViewAllIndicators ul.pageIndicator_conteiner{
+    float:right;
+    position:relative;
+    width:auto;
+    height:22px;
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+div.endeca_displayingViewAllIndicators ul.pageIndicator_conteiner li{
+    float:left;
+    position:relative;
+    width:auto;
+    padding: 0 0 0 5px;
+}
+
+div.endeca_displayingViewAllIndicators ul.pageIndicator_conteiner_2{
+    float:right;
+    position:relative;
+    width:auto;
+    height:22px;
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+div.endeca_displayingViewAllIndicators ul.pageIndicator_conteiner_2 li{
+    float:left;
+    position:relative;
+    width:auto;
+    padding: 0 0 0 5px;
+}
+
+ul.pageIndicator_conteiner li a{
+    color: #696868;
+    float: left;
+    padding-top: 7px;
+    position: relative;
+    text-decoration: none;
+}
+
+ul.pageIndicator_conteiner li.elipsis a {
+    padding-top: 0;
+    font-weight: bold;
+}
+
+ul.pageIndicator_conteiner li a.pageIndicator_pageNumber{
+    color: #999;
+    float: left;
+    height: 10px;
+    padding: 4px 10px;
+    position: relative;
+    width: 10px;
+    line-height:10px;
+}
+ul.pageIndicator_conteiner li a.pageIndicator_pageNumber.activePage{
+    color: #666;
+    font-weight:bold;
+}
+ul.pageIndicator_conteiner li a.pageIndicator_leftArrow{
+    background: url("/images/content/endeca/leftarrow.png") no-repeat scroll 0 3px transparent;
+    float: left;
+    height: 16px;
+    padding-top: 5px;
+    position: relative;
+    width: 8px;
+}
+ul.pageIndicator_conteiner li a.pageIndicator_righArrow{
+    background: url("/images/content/endeca/rightarrow.png") no-repeat scroll 0 3px transparent;
+    float: left;
+    height: 16px;
+    padding: 5px 0 0 10px;
+    position: relative;
+    width: 8px;
+}
+div.endeca_displayingViewAllIndicators{
+    float: right;
+    height: 22px;
+    position: relative;
+    width: 685px;
+}
+div.endeca_displayingViewAllIndicators.bottom{
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+div.endeca_displayingViewAllIndicators ul{
+    color: #999;
+    float: left;
+    font-size: 9px;
+    height: 22px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 5px;
+    position: relative;
+    width: 320px;
+}
+div.endeca_displayingViewAllIndicators ul li{
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: relative;
+    width: auto;
+}
+#CategoryDisplay_Widget > div.endeca_rightContainer > div > ul > li{
+    font-family: Helvetica, Arial, sans-serif;
+color: #666;
+font-size: 12px;
+}
+
+div.endeca_displayingViewAllIndicators ul li.endeca_displayedItems, div.endeca_displayingViewAllIndicators ul li.endeca_totalItems{
+    font-size: 11px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 21px;
+    padding-top: 0;
+    width: auto;
+}
+div.endeca_displayingViewAllIndicators ul li a{
+    text-decoration: none;
+    color: #333;
+    
+}
+div.endeca_displayingViewAllIndicators ul li a:hover {
+color:#EEB111;
+    text-decoration: underline;
+}
+div.endeca_displayingViewAllIndicators ul li.endeca_viewAll_btn{
+    float: right;
+    height: 13px;
+    line-height: 13px;
+    padding: 3px 12px 0;
+    width: auto;
+}
+div.endeca_displayingViewAllIndicators ul li.endeca_viewAll_btn a{
+    padding:0;
+}
+div.endeca_displayingViewAllIndicators ul li.outOf_text{
+    width:auto;
+}
+/*END - SortView Bar*/
+/*Content*/
+.endeca_content{
+    position:relative;
+    float:left;
+    width:68px;
+    height: auto;
+}
+div.endeca_content ul.endeca_aplliancesList{
+    float:left;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 685px;
+    list-style: none;
+}
+div.endeca_content ul.endeca_aplliancesList li{
+    float: left;
+    position: relative;
+    width:655px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div{
+    float:left;
+    position:relative;
+}
+li.applince div.endeca_applinceReviews{
+    border-right: 1px dotted #C9C4C4;
+    height: 142px;
+    *height:157px;
+    height: 157px\0/;
+    width: 104px;
+}
+li.applince div.endeca_applinceReviews h3.msrp_text{
+    color: #B0B0B0;
+    font-size: 0.53em;
+    padding-bottom: 3px;
+}
+li.applince div.endeca_applinceReviews h3.price{
+    font-size: 1.2em;
+}
+li.applince div.endeca_applinceReviews h3.model{
+    font-size: 0.78em;
+    color: #B0B0B0;
+    padding-bottom: 20px;
+}
+li.applince div.endeca_applinceReviews h3.reviews{
+    color: #4773F2;
+    font-size: 0.6em;
+}
+li.applince{
+    border-top: dotted 1px #C9C4C4;
+    padding: 0 0 0 30px;
+}
+li.applince div{
+    padding: 40px 0;
+    min-height: 0px;
+}
+li.applince.first{
+    border-top: none !important;
+}
+li.applince h3{
+    padding:0;
+    margin:0;
+    float:right;
+    position:relative;
+}
+.floated_right{
+    float:right !important;
+}
+div.msrp_price{
+    border-bottom: 1px dotted #C9C4C4;
+    float: right !important;
+    height: 35px;
+    padding-right: 20px;
+    padding-top: 6px;
+    width: 84px;
+}
+div.code_reviews{
+    padding: 5px 20px 0 0;
+    width: 84px;
+    float:right !important;
+}
+div.endeca_compare_btn{
+    background: url("/images/content/endeca/bg_ckeck_compare.png") no-repeat scroll 0 0 transparent;
+    color: #696868;
+    float: right !important;
+    font-size: 9px;
+    height: 17px;
+    margin-top: 10px;
+    padding: 6px 0px 0 7px;
+    position: relative;
+    text-transform: uppercase;
+    width: 71px;
+}
+div.endeca_applianceImg{
+    height: 175px;
+    padding: 0;
+    width: 130px;
+    margin:40px 0;
+    padding:0 !important;
+}
+.dj_ie div.endeca_applianceImg, .dj_ie.dj_ie7 div.endeca_applianceImg{
+    height: 130px;
+}
+a.endeca_quickView img{
+    border:none;
+}
+a.endeca_quickView{
+    float: left;
+    left: 0;
+    position: relative;
+    top: -86px;
+    display:none;
+    text-decoration: none;
+}
+div.endeca_applinceInfo{
+    float:left;
+    position:relative;
+    width:358px;
+    height:175px;
+}
+
+.dj_ie div.endeca_applinceInfo{width:10px;}
+
+.dj_ie.dj_ie7 div.endeca_applinceInfo{width:358px;}
+
+div.endeca_applinceInfo ul{
+    position:relative;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+div.endeca_applinceInfo ul li{
+    font-size: 12px;
+}
+div.endeca_applinceInfo ul li.applinceInfo_title{
+    color: #EEB111;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 6px 25px 5px;
+    width: 305px;
+}
+div.endeca_applinceInfo ul li.applinceInfo_title a{
+    color: #EEB111;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.endeca_applinceInfo ul li.applinceInfo_title a:hover{
+    color: #EEB111;
+    text-decoration: none;
+}
+div.endeca_applinceInfo ul li.whatsInside{
+    border-bottom: 1px dotted #C9C4C4;
+    border-right: 1px dotted #C9C4C4;
+    width:100px;
+    height: 20px;
+    padding: 10px 20px 0 25px;
+    text-transform: uppercase;
+}
+div.endeca_applinceInfo ul li.whatsInside div{
+    background-color: #F7F7F7;
+    border: 2px solid #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 18px;
+    left: -25px;
+    padding: 8px 0 0 25px;
+    position: relative;
+    top: -10px;
+    width: 116px;
+}
+
+div.endeca_applinceInfo ul li.insideList ul{
+    margin:0;
+    width: inherit;
+    height: inherit;
+    padding:0;
+}
+div.endeca_applinceInfo ul li.insideList{
+    width:320px;
+    height:auto;
+    padding-top:10px;
+}
+div.endeca_applinceInfo ul li.insideList ul li{
+    list-style: disc outside none;
+    margin-left: 40px;
+    padding: 5px 0 0;
+}
+.dj_ie.dj_ie7 div.endeca_applinceInfo ul li.insideList ul li{
+    float:none;
+}
+div.endeca_applinceInfo ul li.insideList ul li a{color:#646464;text-decoration:underline;}
+
+div.endeca_applinceInfo ul li.insideList ul li a.productPopup{
+    color: #4473F2;
+}
+div.endeca_viewBuy_btns{
+    padding-top: 7px;
+    float:left;
+    position:relative;
+    width:110px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns ul.endecaProdCompare li{
+    float: right;
+    margin-right: 7px;
+    width: 125px;
+    font-family: Helvetica, Arial, sans-serif;
+color: #666;
+font-size: 12px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns ul.endecaProdCompare li.water-filter-price{
+    display: none;
+}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons{
+    list-style: none;
+    margin:0;
+    padding:0 0 0 5px;
+    font-size:11px;
+}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_whereTobuy{
+    color: #4773F2;
+    padding-left: 18px;
+}
+div.endeca_viewBuy_btns ul.endeca_buy_buttons a.endeca_viewProduct{
+    color: #6F6F6F;
+    float: left;
+    padding: 10px 0 0 40px;
+    background:none;
+}
+
+/*END - Content*/
+/*checkboxes*/
+.has-js .label_check,
+.has-js .label_radio {
+    float: left;
+    height: 13px;
+    margin-left: 4px;
+    position: relative;
+    margin:0 5px 0;
+    width:13px;
+    cursor:pointer;
+    padding-bottom: 8px;
+}
+.has-js .label_radio { background: url(radio-off.png) no-repeat; }
+.has-js .label_check { background: url('/images/content/endeca/check-off.png') no-repeat; }
+.has-js label.c_on { background: url('/images/content/endeca/check-on.png') no-repeat; }
+.has-js label.r_on { background: url(radio-on.png) no-repeat; }
+.has-js .label_check input,
+.has-js .label_radio input { position: absolute; left: -9999px; }
+.has-js label.c_inactive { background: url('/images/content/endeca/check-inactive.png') no-repeat; cursor:default;}
+/*end -checkboxes*/
+/*Tooltip*/
+h2.tooltip_subtitle{
+    font-size:12px;
+    padding: 0;
+    margin: 0;
+}
+p.tooltip_content{
+    font-size:12px;
+    padding: 10px 0;
+    margin: 0;
+    color: #969696;
+}
+h4{
+    margin:20px 0 15px;
+    color:#666;
+    line-height:9px;
+}
+#page .endeca_container .endeca_header h1 {
+    color: #EEB100;
+    font-size: 29px;
+    font-weight: normal;
+    padding-left: 16px;
+}
+/*END - Tooltip*/
+/*mariano*/
+div.endeca_applinceInfo ul li.prodModel{
+    color: #666;
+    font-size: 12px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    width: 270px;
+}
+
+div.endeca_applinceInfo ul li.insideList ul li.applinceInfo_listTile{
+    color: #666666;
+    font-size: 13px;
+    font-weight: bold;
+    list-style: none outside none;
+    margin: 0 0 5px 25px;
+    text-decoration: none;
+}
+
+.endeca_viewBuy_btns .endeca_buy_buttons{color: #6F6F6F;}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns {
+    float: right;
+    height: 175px;
+    margin: 15px 0;
+    padding: 35px 12px 45px 0;
+    text-align: right;
+    width: 155px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns.first_gray, div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns.second_gray{
+    background-color: #F1F1F1;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns.first_gray{
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns.second_gray{
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .prodprice{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    width:110px;
+}
+
+div.endeca_viewBuy_btns ul.endecaAddToCart a, div.endeca_viewBuy_btns ul .whereToBuy a{
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.endeca_viewBuy_btns ul.endecaAddToCart {
+    font-size: 11px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare{list-style:none;}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare{text-decoration:none;}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateStars{
+    display: block;
+    float: right;
+    height: 15px;
+    margin: 15px 0 5px;
+    width: 90px;
+    cursor:pointer;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateReviews a{
+    color: #666;
+    float: right;
+    font-size: 11px;
+    margin: 0 33px 0 0;
+    width: 60px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodViewDemo a:hover {
+    background-position: 0 -31px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodViewDemo a{
+    background: url("/images/content/endeca/viewDemoBtn.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 32px;
+    margin: 30px 0 0 3px;
+    text-align: left;
+    text-indent: -9999px;
+    width: 108px;
+}
+
+.endeca_applianceImg a.prodViewDemo:hover{
+    background-position: 0 -15px;
+}
+
+.endeca_applianceImg a.prodViewDemo {
+    background: url("/images/content/endeca/right_arrow.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 13px;
+    height: 15px;
+    line-height: 16px;
+    margin: 10px 20px;
+    padding: 0 0 0 20px;
+    position: relative;
+    width: 70px;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare{
+    height: 24px;
+    margin: 60px 8px 0;
+    width: auto;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare{
+    color: #333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    margin: 3px 0 0 0;
+    padding: 0;
+    text-decoration: none;
+    width: 53px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare:hover{
+    color: #EEB111;
+    text-decoration: underline;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.addCompare{
+    background: url("/images/content/endeca/addCompare.png") no-repeat scroll 0 -17px transparent;
+    color: #CFCFCF;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 17px;
+    margin: 4px 4px 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 17px;
+}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.addCompare.active{
+    background-position: 0 0;
+}
+div.endeca_viewBuy_btns ul .addToCartBtn:hover {
+    background-position: 0 -32px;
+}
+div.endeca_viewBuy_btns ul .addToCartBtn {
+    background: url("/images/content/endeca/addToCart.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 15px;
+    margin: 13px 0 0;
+    position: relative;
+    right: 10px;
+    width: 125px;
+}
+
+html[lang="fr"] div.endeca_viewBuy_btns ul .addToCartBtn {
+    background: url("/images/content/endeca/addToCartFR.png") no-repeat scroll 0 0 transparent;
+    width:166px;
+    right:50px;
+}
+
+html[lang="fr"] div.endeca_viewBuy_btns ul .addToCartBtn:hover {
+    background-position: 0 -32px;
+}
+
+div.endeca_viewBuy_btns ul .whereToBuy a:hover {
+    background-position: 0 -32px;
+}
+div.endeca_viewBuy_btns ul .whereToBuy a {
+    background: url("/images/content/endeca/whereToBuy_btn.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    display: block;
+    height: 32px;
+    line-height: 15px;
+    margin: 15px 0 0;
+    width: 125px;
+}
+
+html[lang="fr"] div.endeca_viewBuy_btns ul .whereToBuy a {
+    background: url("/images/content/endeca/whereToBuyFR_btn.png") no-repeat scroll 0 0 transparent;
+}
+
+html[lang="fr"] div.endeca_viewBuy_btns ul .whereToBuy a:hover {
+    background-position: 0 -32px;
+}
+
+.dj_ie.dj_ie7 div.endeca_viewBuy_btns ul .whereToBuy a, .dj_ie div.endeca_viewBuy_btns ul .whereToBuy a{
+    width:125px;
+    margin-left: 4px;
+}
+.hidden{
+    display:none;
+}
+.invisible{
+    visibility: hidden;
+}
+.colorBox{
+    cursor:pointer;
+    width:25px;
+    height:25px;
+    border: 1px solid #ddd;
+    float:left;
+    padding:2px;
+}
+.question_mark{
+    background: url("/images/content/endeca/question_mark.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 13px;
+    margin: 21px 0 0 5px;
+    text-indent: -999px;
+    width: 14px;
+}
+.question_mark:hover {
+    background-position: 0 -13px;
+}
+.colorBox.active, .colorBox:hover{
+    border-color: #EEB100;
+}
+.colorBox.c_inactive:hover {
+    border-color: #999;
+}
+.colorBox.c_inactive {
+    cursor: default;
+}
+.color_1{
+    background-position: 0 0;
+}
+.color_2{
+    background-position: 0 -30px;
+}
+.color_3{
+    background-position: 0 -60px;
+}
+.color_4{
+    background-position: 0 -90px;
+}
+.color_5{
+    background-position: 0 -120px;
+}
+.color_6{
+    background-position: 0 -150px;
+}
+.color_7{
+    background-position: 0 -180px;
+}
+.color_8{
+    background-position: 0 -210px;
+}
+
+/****** whptooltip style definition ********/
+/******************************************/
+#whptooltip_outer{
+    border:1px solid #EEB61B;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 8px 0 #ccc;
+    -moz-border-radius: 3px;
+    box-shadow: 0 0 8px 0 #CCCCCC;
+    border-radius: 3px;
+    behavior:url(/PIE.htc)
+}
+.whptooltip_title{
+    float: left;
+    font-size: 12pt;
+    margin: 15px 0 0 15px;
+    position: relative;
+    width: 83%;
+    line-height:20px;
+}
+.whptooltip_title sup{
+    font-size:5pt;
+}
+
+#whptooltip_outer > h4{
+    font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: normal;
+color: #666;
+text-transform: capitalize; 
+}
+.whpTooltip_close {
+    background: url("/images/content/endeca/close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 19px;
+    line-height: 20px;
+    margin: 10px 10px 0 0;
+    position: relative;
+    text-align: center;
+    width: 19px;
+}
+.dj_ie.dj_ie7 sup.tradeMark{
+    text-decoration:none;
+    border-bottom:1px solid #646464;
+    padding-bottom:6px;
+}
+.dj_ie.dj_ie7 label.c_name sup.tradeMark{
+    border-bottom:0px;
+}
+.whptooltip_content{
+    float: left;
+    padding: 15px;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+color: #666;
+font-size: 12px;
+
+}
+.whptooltip_downarrow{
+    background: url("/images/content/endeca/down_arrow.png") no-repeat scroll 0 0 transparent;
+    bottom: -10px;
+    height: 10px;
+    left: 20px;
+    position: absolute;
+    width: 24px;
+}
+div.endeca_applinceInfo ul li.insideList ul li{
+    width:275px;
+}
+li.applince div.endeca_viewBuy_btns ul li{
+    width: 75px;
+}
+
+/****** modal window style definition ******/
+/******************************************/
+.tooltip_details{
+    font-family: helvetica;
+    list-style: none outside none;
+}
+.tooltip_details li{
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    width: 500px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    font-size: 12px;
+}
+.tooltip_details li b{
+    float: left;
+    height: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    text-transform: capitalize; 
+}
+.endeca_tooltip_content{
+    overflow: auto; height: 100%; float: left; position: relative; padding: 0 0 0 40px; width:551px;*width:570px;
+}
+
+#breadcrumb-section{
+    width:930px !important;
+    margin-right:20px !important;
+}
+
+.elipsis {
+    font-weight: bold;
+    line-height: 20px;
+}
+
+/*! fancyBox v2.0.5 fancyapps.com | fancyapps.com/fancybox/#license */.fancybox-tmp iframe,.fancybox-tmp object{vertical-align:top;padding:0;margin:0}
+.fancybox-wrap{position:absolute;top:0;left:0;z-index:2002}
+.fancybox-outer{position:relative;padding:0;margin:0;background:#fff!important;border:4px solid #ddd;display:block!important;color:#444;text-shadow:none;padding:30px 5px 5px 5px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px!important;-webkit-box-shadow:0 10px 25px #969696;-moz-box-shadow:0 10px 25px #969696;box-shadow:0 10px 25px #969696!important;behavior:url(PIE.htc)!important}
+.fancybox-opened{z-index: 10003 !important;}
+.fancybox-opened .fancybox-outer{-webkit-box-shadow:0 10px 25px #969696;-moz-box-shadow:0 10px 25px #969696;box-shadow:0 10px 25px #969696!important;behavior:url(PIE.htc)!important}
+.fancybox-inner{width:100%!important;height:100%;padding:0;margin:0;position:relative;outline:0;overflow:hidden!important;background:#fff!important}
+.fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:10px}
+.fancybox-image,.fancybox-iframe{display:block;width:100%;height:100%;border:0;padding:0;margin:0;vertical-align:top}
+.fancybox-image{max-width:100%;max-height:100%}
+#fancybox-loading,.fancybox-prev span,.fancybox-next span{background-image:url('/images/fancybox_sprite.png')}
+#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:2010;display:none}
+#fancybox-loading div{width:44px;height:44px;background:url('/images/fancybox_loading.gif') center center no-repeat}
+.fancybox-close{position:absolute;top:5px;right:5px;cursor:pointer;z-index:2004;background:url("/images/content/endeca/close.png");width:19px;height:19px}
+.fancybox-nav{position:absolute;top:0;width:40%;height:100%;cursor:pointer;background:transparent url('/images/blank.gif');z-index:2003}
+.fancybox-prev{left:0}
+.fancybox-next{right:0}
+.fancybox-nav span{position:absolute;top:50%;width:36px;height:36px;margin-top:-18px;cursor:pointer;z-index:2003;visibility:hidden}
+.fancybox-prev span{left:20px;background-position:0 -36px}
+.fancybox-next span{right:20px;background-position:0 -72px}
+.fancybox-nav:hover span{visibility:visible}
+.fancybox-tmp{position:absolute;top:-9999px;left:-9999px;padding:0;overflow:visible;visibility:hidden}
+#fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index: 10002 !important;background:#FFF}
+.fancybox-title{visibility:hidden;font:normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;text-shadow:none;z-index:2005}
+.fancybox-opened .fancybox-title{visibility:visible}
+.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:2003;text-align:center}
+.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:transparent;background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;text-shadow:0 1px 2px #222;color:#FFF;font-weight:bold;line-height:24px;white-space:nowrap;behavior:url(/PIE.htc)}
+.fancybox-title-outside-wrap{position:relative;margin-top:10px;color:#fff}
+.fancybox-title-inside-wrap{position:absolute;top:20px}
+.fancybox-title-over-wrap{position:absolute;bottom:0;left:0;color:#fff;padding:10px;background:#000;background:rgba(0,0,0,.8);behavior:url(/PIE.htc)}
+
+
+#page #main_content_wrapper{*width:230px;*float:left}
+.c_inactive{opacity: 0.25; filter: alpha(opacity=25);cursor:default;behavior:url(/PIE.htc);}
+.labelInactive{color:#ccc;}
+
+/*Changes by Alexander Moya, http://jira.digitas.com/browse/WHIRLPOOL-230 */
+#endeca_leftNavContainer_print{ 
+float:left; 
+position:relative; 
+width:233px; 
+height:auto; 
+padding: 8px 20px 20px 0; 
+                display:none; 
+} 
+
+div.endeca_applinceInfo ul li.applinceInfo_title a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.endeca_applinceInfo ul li.applinceInfo_title a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+#page.search_result_page .main_content_wrapper div.sub_header h1 {
+    font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: normal;
+color: #666;
+text-transform: capitalize; 
+}
+
+#page .endeca_container .endeca_header h1 {
+    font-family: Helvetica, Arial, Serif;
+font-size: 30px;
+font-weight: normal;
+color: #666;
+margin-top: 20px;
+margin-bottom: 30px;
+line-height: 130%;
+}
+
+#btn_narrowBy > h4{
+ font-family: Helvetica, Arial, Serif;
+font-size: 18px;
+font-weight: normal;
+color: #666;
+margin-top: 20px;
+margin-bottom: 30px;
+line-height: 130%;   
+}
+
+div.endeca_applinceInfo ul li.applinceInfo_title a {
+    font-family: Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 15px;
+}
+
+div.endeca_applinceInfo ul li.applinceInfo_title a:hover {
+    color: #EEB111;
+    text-decoration: underline;
+}
+
+.endeca_applianceImg a.prodViewDemo {
+    background: url("/images/content/endeca/right_arrow.png") no-repeat scroll 0 0 transparent;
+    color: #333333;
+    float: left;
+    font-size: 13px;
+    height: 15px;
+    line-height: 16px;
+    margin: 10px 20px;
+    padding: 0 0 0 20px;
+    position: relative;
+    width: 70px;
+}
+
+.endeca_applianceImg a.prodViewDemo:hover{color:#999;}
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.active {color:#333;}
+
+/*========================= WashSquad eSpot ==================================*/
+div.WashSquadeSpotEndeca{
+    width:233px;
+    float:left;
+    margin-top:14px;
+    display:block;
+}
+div.WashSquadeSpotEndeca a{
+    display:block;
+    height:137px;
+    width:218px;
+    padding:50px 0 0 15px;
+    background:url('/images/content/endeca/washSquadApp.png') no-repeat 0 0;
+}
+div.WashSquadeSpotEndeca a:hover{
+    background-position:0 -187px;
+}
+div.WashSquadeSpotEndeca a span.WashSquadeSpotEndecaLinkTitle{
+    font:700 18px Helvetica;
+    color:#555; 
+}
+div.WashSquadeSpotEndeca a span.WashSquadeSpotEndecaDescription{
+    font:400 14px Helvetica;
+    color:#555;
+}
+div.WashSquadeSpotEndeca a span.WashSquadeSpotEndecaTxtBold {
+    font-weight: 700;
+    color:#555;
+}
+/*========================= WashSquad eSpot End ==================================*/
+
+/*========================= forOwners eSpot ==================================*/
+.forOwnersSpotEndeca{
+    border-top:8px solid #edb112;
+    float:left;
+    font-family:Helvetica;
+    margin-top:25px;
+    width:233px;
+}
+.forOwnersSpotEndeca h4{
+    color:#333;
+    font-size:13px;
+    margin:16px 0 10px 0;
+    padding-left:16px;
+    text-transform:none;
+}
+.forOwnersSpotEndeca ul{
+    clear:both;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.forOwnersSpotEndeca ul li{
+    margin-bottom:6px;
+}
+.forOwnersSpotEndeca ul li a, .forOwnersSpotEndeca ul li a:hover{
+    background:url('/images/content/endeca/arrow_circle.png') no-repeat 15px 1px;
+    color:#333;
+    font-size:13px;
+    padding-left:40px;
+    text-decoration:none;
+}
+html[lang=fr] .forOwnersSpotEndeca ul li a, .forOwnersSpotEndeca ul li a:hover{
+    background:url('/images/content/endeca/arrow_circle.png') no-repeat 15px 1px;
+    color:#333;
+    font-size:13px;
+    padding-left:35px;
+    text-decoration:none;
+}
+html[lang=fr] .forOwnersSpotEndeca ul li a:hover{
+    background:url('/images/content/endeca/arrow_circle.png') no-repeat 15px -13px;
+    color:#666;
+}
+.forOwnersSpotEndeca ul li a:hover{
+    background:url('/images/content/endeca/arrow_circle.png') no-repeat 15px -13px;
+    color:#666;
+}
+/*========================= forOwners eSpot End ==================================*/
+
+/*========================= word "reviews" Starts ==================================*/
+
+ul.endecaProdCompare{
+    overflow: hidden;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateStars{
+    width: 155px !important;
+    height: auto !important;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateStars div:first-child{
+    min-height: inherit !important;
+    padding:0 !important;
+    float: right !important;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare{
+    margin: 10px 8px 0 6px !important;
+}
+
+/*========================= word "reviews" Ends ==================================*/
+/*=========================shop outlet button starts==============================*/
+
+div.endeca_viewBuy_btns ul .btn_shop_outlet a{
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.endeca_viewBuy_btns ul .btn_shop_outlet a:hover {
+    background-position: 0 -32px;
+}
+div.endeca_viewBuy_btns ul .btn_shop_outlet a {
+    background: url("/images/content/endeca/btn_shop_outlet.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    display: block;
+    height: 32px;
+    line-height: 15px;
+    margin: 15px 0 0;
+    width: 125px;
+}
+.dj_ie.dj_ie7 div.endeca_viewBuy_btns ul .btn_shop_outlet a, .dj_ie div.endeca_viewBuy_btns ul .btn_shop_outlet a{
+    width:125px;
+    margin-left: 4px;
+}
+
+/*=========================shop outlet button ends==============================*/
+
+
+.highestRated{
+text-transform: capitalize;
+}
+div.endeca_viewBuy_btns ul.endecaAddToCart a.water-filters-atc, div.endeca_viewBuy_btns ul .whereToBuy a.water-filters-atc{
+    display:none;
+}
+div.endeca_applinceInfo ul div.companion-item.plp{
+    padding: 9px 10px 0 25px;
+}
+.companion-item .companion-item-title, .companion-item .companion-item-model{
+    color: #666666;
+    font-weight:bold;
+    padding: 0px;
+}
+.companion-item .companion-item-title{  
+    font-size:14px;
+    width: inherit; 
+}
+.companion-item .companion-item-model{
+    color: inherit !important;
+    padding-right: 20px;
+    width: 90px;
+    font-size:12px;
+}
+.companion-item .companion-item-cta{padding:0px;}
+.companion-item .companion-item-cta a{
+    padding: 2px;
+    text-decoration: none;
+}
+.companion-item .companion-item-cta a:hover{
+    color: #EEB111;
+    text-decoration: underline;
+}
+.companion-item.pdp{
+    padding:9px 0px;
+}
+.companion-item.pdp .companion-item-model{
+    /*float:left;*/
+}
+
+.companion-item.plp .companion-item-title{  
+    width: 275px;
+    font-size: 13px;
+}

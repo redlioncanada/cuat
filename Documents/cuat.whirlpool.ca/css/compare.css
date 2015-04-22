@@ -1,0 +1,304 @@
+.counter{
+    float:left;
+}
+.displayNone{
+    display:none;
+}
+.bottom_box
+{
+float:right;
+}
+#compare_product_error h2{
+    color:#666666;
+    float:left;
+}
+.highlight{
+    background:url('../images/content/compare/btn-highlight.png') no-repeat 0 0;
+    width:119px;
+    height:42px;
+     margin-top: 250px;
+     cursor:pointer;
+}
+html[lang=fr] .highlight{
+    background:url('../images/content/compare/btn-highlight_fr.png') no-repeat 0 0;
+    width: 128px;
+}
+.highlight_active{
+    background:url('../images/content/compare/btn-highlight.png') no-repeat 0 -43px;
+        width:119px;
+    height:42px;
+     margin-top: 250px;
+     cursor:pointer;
+}
+html[lang=fr] .highlight_active{
+    background:url('../images/content/compare/btn-highlight_fr.png') no-repeat 0 -43px;
+    width: 128px;
+}
+
+tr.row_highlight
+{
+    background: none repeat scroll 0 0 #878787!important;
+    color: #ffffff!important;
+}
+.row_highlight td
+{
+    background: none repeat scroll 0 0 #878787!important;
+    color: #ffffff!important;
+    border: 1px solid #ffffff !important;
+}
+
+.expanded_all{
+    background: url("../images/content/compare/plus-expand.jpg") no-repeat scroll 0 2px transparent;
+    color: #666666;
+    font-size: 11pt;
+    padding-left: 22px;
+    position: relative;
+    top: 55px;
+	left: 785px;
+    cursor:pointer;
+    margin-right: 20px;
+}
+
+.collapsed_all{
+    background: url("../images/content/compare/minus-collapse.jpg") no-repeat scroll 0 2px transparent;
+    color: #666666;
+    font-size: 11pt;
+    padding-left: 22px;
+    position: relative;
+    top: 55px;
+    left: 785px;
+    cursor:pointer;
+}
+
+#compare_body table tr td {
+    float:none !important;
+    padding: 10px 1% !important;
+    padding: 10px 3% 10px 3px\9 !important;
+    width:17%\9 !important;
+}
+
+#compare_body .main_link {
+    background-position: 0 8px !important;
+}
+
+.btns a.where-to-buy {
+    background: url("../images/content/compare/btn-where-to-buy.png") no-repeat scroll left center transparent;
+    width:125px;
+    height:31px;
+    display:inline-block;
+     margin-bottom: 10px;
+    margin-top: 5px;
+}
+html[lang=fr] .btns a.where-to-buy {
+    background: url("../images/content/compare/btn-where-to-buy_fr.png") no-repeat scroll left center transparent;
+}
+
+.compare_action_links {
+    border-bottom: none;
+    padding: 0 7px;
+}
+
+.compare_action_links div.saved_to_favorites_checked {
+    color: #333333 !important;
+    font-size: 9pt !important;
+}
+
+#page.product_detail_page div.compare_action_links a.save_to_favorites {
+    font-size: 9pt;
+}
+
+.product_compare_error_main_box {
+    padding: 5px 5px 25px 25px;
+}
+
+#compare_product_underlay {
+                position:fixed;
+                top:0;
+                left:0;
+                background:#fff;
+                opacity:0.5;
+                z-index:998;
+                height:100%;
+                width:100%;}
+
+.rating {
+    border-top: 1px dotted #DDDDDD;
+    margin: 10px 7%;
+    padding-top: 10px;
+}
+.rating .reviews{
+    display: inline-block;
+}
+.ub-center {
+    float: none;
+}
+
+.remove_link a {
+    color: #919191;
+    font-weight: 700;
+}
+
+.comments a
+{
+    color:#333333;
+}
+.comments a:hover
+{
+    color:#333333;
+    text-decoration:underline;
+}
+
+ul.tabs li a {
+    color: #aaaaaa;
+    background: none repeat scroll 0 0 #F0F0F0;
+}
+
+.compare_tabs_content_carousels {
+    float: left;
+}
+.carousels_panels
+{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    max-height:500px;
+    width: 100%;
+}
+
+
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare_active {
+    color:#000000;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare {
+    margin: 0;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodCompare a.compare.readyCompare {
+    margin-top: -5px;
+}
+
+.product_detail_page,.product_detail_page #content-wrap,.product_detail_page #content,.product_detail_page .product_detail_page product,.product_detail_page .main_content_wrapper,.product_detail_page .product_placeholder{
+    width:940px!important;
+}
+
+#content-wrap #breadcrumb-section {
+    display: block;
+}
+
+div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateReviews a {
+    color: #666666;
+    float: right;
+    font-size: 12px;
+    margin: 0 -4px 0 0;
+    text-align: right;
+    width: 70px;
+}
+html[lang=fr] div.endeca_content ul.endeca_aplliancesList li.applince div.endeca_viewBuy_btns .endecaProdCompare .prodRateReviews a{
+    width: 90px;
+    margin-right: -6px;
+}
+
+#page.product_detail_page .main_content_wrapper div.product_title h1
+{
+    font-size:30px;
+	margin-top: 0.5em;
+}
+
+.compare_tabs_content_carousels .specs_header a
+{
+    text-transform:capitalize;
+}
+
+.carousels_panels div.disclaimer_compare
+{
+    float:left;
+    border-top:3px solid #aaaaaa;
+}
+.carousels_panels div.disclaimer_compare div.text_disclaimer
+{
+    font-size:9pt;
+    color:#666666;
+    width:90%;
+    margin-left:5%;
+     margin-top: 25px;
+}
+
+.carousels_panels div.disclaimer_compare a.back_top,
+.carousels_panels div.disclaimer_compare a.back_top:hover
+{
+    font-size:13pt;
+    font-weight:bold;
+    color: #666666;
+}
+
+.carousels_panels div.disclaimer_compare div.btn_back
+{
+    text-align:center;
+    margin-top:15px;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols_add_product .add_product_con
+{
+    background:none #F0F0F0;
+    height: 62px;
+    padding: 73px 0 25px;
+    width: 125px;
+     margin: 14px auto;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols_add_product .add_product_con a,
+#compare_body #compare_sub_body .compare_product_list .cols_add_product .add_product_con span{
+    color:#aaaaaa;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols_add_product,
+#compare_body #compare_sub_body .compare_product_list .cols .cols_con_whirlpool,
+#compare_body #compare_sub_body .compare_product_list .cols,
+#compare_body #compare_sub_body #compare_top_carousels .grey_split,
+#compare_body #compare_sub_body .compare_product_list .cols_add_product  {
+    min-height:430px;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols_add_product  {
+    min-height: 430px;
+    margin: 11px 0 0;
+}
+
+#compare_body #compare_sub_body .compare_product_list .cols_add_product,
+#compare_body #compare_sub_body .compare_product_list .cols_first
+{
+    height:430px;
+}
+
+html[lang=fr] #compare_top_carousels .back_button a img{
+    display: none;
+}
+html[lang=fr] #compare_top_carousels .back_button a{
+    background: url(/images/btn-back-products_fr.png) no-repeat top left;
+    width: 136px;
+    height: 24px;
+    display: inline-block;
+}
+
+#compare_body #compare_sub_body .compare_product_list .compare_action_links .left{
+text-align:left;
+}
+#compare_body #compare_sub_body .compare_product_list .compare_types .col_1 {
+    margin: 0 3px 0 7%;
+    font-size:10.5px;
+}
+
+
+#compare_body #compare_sub_body .compare_product_list .compare_types .col_2 {
+    padding: 0 0 0 3px;
+    font-size:10.5px;
+}
+
+#compare_body #compare_sub_body #compare_top_carousels .product_image_wrapper img {
+    width: 135px;
+}
+.endeca_content .applince .endeca_applianceImg .img_appliance {
+    height: 135px;
+    width: 135px;
+}

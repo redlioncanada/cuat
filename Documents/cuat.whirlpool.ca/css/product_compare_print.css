@@ -1,0 +1,31 @@
+.product_compare,.product_compare #content-wrap,.product_compare #content,.product_compare .product_detail product,.product_compare .main_content_wrapper{background:white!important;width:600px!important;padding:0!important;margin:0!important;font-size:12px!important}
+.product_compare{overflow:hidden!important}
+.product_compare #content-wrap{overflow:visible!important}
+.product_compare #compare_body #compare_sub_body #compare_top_carousels .grey_split{border:none!important}
+.product_compare #header-wrap,.product_compare #compare_sub_body .product_compare #footer-wrap{display:inline!important}
+.product_compare #header_search,.product_compare #header_sub_nav_1,.product_compare #header_sub_nav_2,.product_compare #header_main_nav,.product_compare #breadcrumb-section,.product_compare #compare_top_tabs,.product_compare .tabsFooter,.product_compare .info_counts,.product_compare .compare_action_links,.product_compare .space_x,.product_compare .compare_action .btns,.product_compare .cols_space,.product_compare .product_detail_list_review_count,.product_compare .reviews,.product_compare .ub-left,.product_compare .ub-center,.product_compare .ub-right,.product_compare .grey_line_clear,.product_compare #compare_sub_footer,.product_compare #footer-menu,.product_compare #footer-nav,.product_compare #footer-legal-links{display:none!important}
+.product_compare #logo,.product_compare #header-wrap,.product_compare #header{float:left!important;width:600px!important;height:auto!important;margin:0!important;padding:0!important;background:none!important}
+.product_compare #logo{padding:15px 0!important;border-top:3px solid #ddd!important}
+.product_compare .product_detail_page .product_header{position:relative!important;top:0!important;left:135px!important;border:none!important;padding-top:45px!important}
+.product_compare .product_title h1{color:#333!important}
+.product_compare #header-wrap{border-top:none!important;margin-top:-40px!important}
+.product_compare #compare_body{border-top:2px solid #ddd!important;padding-top:20px!important}
+.product_compare #compare_sub_body{width:600px!important}
+.product_compare #compare_top_carousels .compare_product_list .cols_first,.product_compare #compare_top_carousels .compare_product_list .cols,.product_compare #compare_top_carousels .compare_product_list .cols_add_product,.product_compare .compare_types,.product_compare .compare_types .col_l,.product_compare .compare_types .col_2,.product_compare .comments,.product_compare .rating_line{float:left!important;width:110px!important;padding:0!important;margin:0!important}
+.product_compare .compare_types .col_l a{color:#333!important}
+.product_compare .compare_types,.product_compare .compare_types .col_l,.product_compare .comments,.product_compare .compare_appliances_body #compare_sub_body a.quick_view_hover,.product_compare #compare_top_carousels,.product_compare #compare_top_carousels .compare_product_list .cols .cols_con{height:auto!important}
+.product_compare .compare_types{margin-bottom:50px!important}
+.product_compare #page.product_detail_page #compare_sub_body div.grey_split .cols_con_whirlpool .quick_view_hover img{max-width:110px!important;max-height:130px!important}
+.product_compare .product_image_wrapper,.product_compare .rating,.product_compare .compare_types .col_1,.product_compare .compare_types{text-align:left!important;padding:0!important;margin:5px 0!important}
+.product_compare .comments{float:left!important;width:110px!important;color:#666!important;padding:0!important;margin:0!important;min-height:auto!important;border:none!important}
+.product_compare #compare_body #compare_sub_body #compare_top_carousels .grey_split{float:left!important;width:480px!important;padding-left:120px!important}
+.product_compare #compare_top_carousels .compare_product_list .cols_first,.product_compare #compare_top_carousels .compare_product_list .cols,.product_compare #compare_top_carousels .compare_product_list .cols_add_product{height:auto!important;padding:20px 5px 30px!important;overflow:hidden!important;margin-top:-20px!important}
+.product_compare #compare_top_carousels .compare_product_list .cols_first{width:95px!important}
+.product_compare .specs_header{padding:0!important;margin:0!important;clear:both!important}
+.product_compare .product_detail_page .main_link{font-size:16px!important;color:#333!important;font-weight:bold!important}
+.product_compare #compare_body table tr{border:1px dotted #ddd!important;border-right:none!important;border-left:none!important}
+.product_compare #compare_body table tr td{float:left!important;width:110px!important;height:50px!important;padding:10px 5px!important;color:#666!important;vertical-align:middle!important}
+.product_compare #compare_body table tr td.table_first_col{border-left:none!important}
+.product_compare .compare_tabs_content_carousels{display:inline-block!important;margin:10px 0 0!important;padding:10px 0 0!important;border-top:2px solid #ddd!important;border-bottom:none!important}
+.product_compare #footer-wrap,.product_compare #footer,.product_compare #footer-legal{display:inline-block!important;width:600px!important;padding:0!important;margin:0!important;border:none!important}
+.product_compare #footer-trademark{display:inline-block!important;width:600px!important;margin:0 0 5px!important;padding-top:20px!important;color:#666!important;border-top:3px solid #ddd!important}

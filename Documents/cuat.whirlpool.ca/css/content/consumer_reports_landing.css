@@ -1,0 +1,299 @@
+/* ==========================================================================
+ Consumer Reports Landing Page styles
+ ========================================================================== */
+
+#cr_wrapper p, #cr_wrapper h1, #cr_wrapper h2, #cr_wrapper h3, #cr_wrapper h5, #cr_wrapper a, #cr_wrapper ul, #cr_wrapper li {
+	font-family: Helvetica, Arial, "Lucida Grande", Verdana, "Lucida Sans Unicode", sans-serif;
+}
+#cr_wrapper a {
+	text-decoration: none;
+	color: inherit;
+}
+.cr_white {
+	color: white;
+}
+.thousand_forty {
+	width: 1040px;
+	margin: 0 auto;
+}
+.cr_blue {
+	color: #23396a;
+}
+.cr_grey {
+	color: #666666;
+}
+.cr_yellow {
+	color: #EEB111;
+}
+
+/* ==========================================================================
+ wrapper styles
+ ========================================================================== */
+#wrap, #page {
+    	margin: 0 auto;
+    	width: 1080px !important;
+}
+#page #main_content_wrapper {
+	
+	width: 1080px !important;
+}
+
+#cr_wrapper {
+	min-height: 800px;
+	width: 1080px;
+	margin-top: 130px !important;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#cr_wrapper .breadWrap{
+	height: 10px;
+   	padding-bottom: 25px;
+    	padding-left: 28px;
+    	padding-top: 10px;
+    	width: 200px;
+}
+/* ==========================================================================
+ hero area styles
+ ========================================================================== */
+
+.cr_hero {
+	height: 130px;
+	border-top: thin solid #888fa0;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+p.cr_heroText {
+	padding: 0px;
+	font-size: 13px;
+}
+h1.cr_heroTitle {
+	
+	font-size: 32px !important;
+	font-weight: 100 !important;
+}
+
+/* ==========================================================================
+ hero menu styles
+ ========================================================================== */
+
+div.cr_heroMenu {
+	margin-top: 24px;
+	height: 33px;
+	width: 100%;
+}
+ul.cr_heroMenu {
+	list-style-image: url('/images/data/en_CA/consumer_reports/cr_dot.png');
+	margin: 0px;
+	padding: 0px;
+}
+ul.cr_heroMenu li {
+	list-style-image: url('/images/data/en_CA/consumer_reports/cr_dot.png');
+}
+ul.cr_heroMenu li {
+	float: left;
+	margin: 10px 10px;
+	font-weight: bold;
+	font-size: 13px;
+}
+html[lang="fr"] ul.cr_heroMenu li {
+	margin: 10px 9px;
+}
+ul.cr_heroMenu li a {
+	display: block;
+	text-decoration: none !important;
+	color: #000000;
+}
+li.cr_choose {
+	list-style-image: none !important;
+	list-style: none;
+	margin-left: 0 !important;
+}
+html[lang="fr"] li.cr_choose {
+	margin-right: 28px !important;
+}
+
+/* ==========================================================================
+ SKU area styles
+ ========================================================================== */
+
+div.cr_category {
+	height: 30px;
+	margin: 40px auto;
+	background: #dddddd;
+}
+div.cr_category p {
+	padding-left: 15px;
+	padding-top: 4px;
+	margin: 0;
+	font-size: 17px;
+}
+.cr_category p {
+	float: left;
+}
+.cr_back {
+	float: right;
+	padding-right: 15px;
+	padding-top: 4px;
+	font-size: 17px;
+}
+.cr_SKUs {
+	margin-bottom: 10px;
+}
+/* ==========================================================================
+ SKU Card styles
+ ========================================================================== */
+
+div.cr_SKUCard {
+	height: 340px;
+	border-bottom: thin solid #EEB111;
+	margin-bottom: 30px;
+}
+div.cr_SKUCard:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+div.cr_SKUCard div {
+	float: left;
+}
+/* ==========================================================================
+ SKU area styles
+ ========================================================================== */
+
+div.cr_imgCon {
+	margin: 0 15px;
+	width: 250px;
+	text-align: center;
+}
+.cr_img {
+	width: 250px;
+}
+.cr_title {
+	padding-left: 15px;
+	padding-bottom: 10px;
+	font-size: 17px;
+	margin: 0;
+}
+
+/* ==========================================================================
+ SKU details area styles
+ ========================================================================== */
+div.cr_details {
+	width: 405px;
+	margin-right: 20px;
+	height: 267px;
+	position: relative;
+}
+div.cr_details p {
+	font-size: 11px;
+	margin-top: 0;
+}
+.cr_detail_one {
+	height: 85px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.cr_details h3, div.cr_review h3 {
+	margin: 3px 0 10px;
+	font-size: 19px;
+	font-weight: 100;
+}
+div.cr_details h5, div.cr_review h5 {
+	margin: 3px 0 5px;
+	font-size: 13px;
+}
+img.cr_badge {
+	width: 85px;
+	height: 85px;
+	margin-top: 6px;
+	float: left;
+	background: #23396a;
+	margin-right: 10px;
+}
+img.cr_badge[src="#"] {
+	display: none;
+}
+
+/* ==========================================================================
+ SKU review area styles
+ ==========================================================================cr_ */
+
+div.cr_review {
+	width: 320px;
+	height: 267px;
+	position: relative;
+}
+
+div.cr_review p.cr_revCopy {
+	line-height: 20px;
+	font-size: 16px !important;
+}
+p.cr_revCopy span {
+	font-size: 12px;
+}
+
+.cr_reviewCon {
+	width: 100%;
+	height: 38px;
+	margin-bottom: 10px;
+}
+.cr_reviewCon div {
+}
+.cr_rating {
+	font-size: 26px;
+	line-height: 20px !important;
+	margin: 2px 0 0 0;
+}
+html[lang="fr"] .cr_rating {
+	margin: 0;
+	line-height: 23px !important;
+}
+.cr_revNum {
+	font-weight: normal;
+	font-size: 12px;
+}
+.cr_rateCon {
+	padding-left: 10px;
+}
+/* ==========================================================================
+ SKU button styles
+ ========================================================================== */
+
+a.cr_btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+a.cr_btn div {
+	height: 32px;
+}
+a.cr_btn div * {
+}
+a.cr_btn div p {
+	font-size: 10px;
+	margin-top: 4px;
+	font-weight: bold;
+}
+a.cr_rev div {
+	width: 157px;
+}
+a.cr_prod div {
+	width: 125px;
+}
+a.cr_revNew div {
+	width: 128px;
+}
+html[lang="fr"] a.cr_rev div {
+	width: 157px;
+}
+html[lang="fr"] a.cr_prod div {
+	width: 125px;
+}
+html[lang="fr"] a.cr_revNew div {
+	width: 187px;
+}
+.cr_legal {
+	padding-left: 40px;
+}

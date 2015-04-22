@@ -1,0 +1,63 @@
+/*--------------------------- CSS Declarations for Print Product List Pages - Whirlpool  ------------------------------------- */
+
+/*START print pages edits*/
+body{width: 940px; float:none; padding-top: 20px; margin: 0 auto; }
+.product_detail_list_group_heading { display: none; }
+
+#header-wrap { display: none; }
+#content-wrap { padding: 0px; } 
+#content-wrap #breadcrumb-section { display: none; }
+
+#print_header { width: 100%; padding-top: 0px; }
+#print_header #print_button { width: 100%; padding-bottom: 20px; text-align: right; border-bottom: 3px solid #62AC39; }
+#print_header #logo { width: 230px; float: left; text-align: center; margin-top: 10px; }
+#print_header #print_title { float: left; color: #62AC39; font-size: 24pt; margin-top: 10px; font-family: "museo-slab-1","museo-slab-2",serif; }
+#print_header #print_title #sub_header { display: none; }
+
+#page .main_content_wrapper #Product_List_Masthead { display: none; }
+#page .main_content_wrapper .displaying_count { display: none; }
+#page .main_content_wrapper .sort_view_display_bar { display: none; }
+
+#legal-content-wrap { display: none; }
+#footer-nav { display: none; }
+#footer-legal-links { display: none; }
+#footer-wrap { margin: 0px; padding: 0px; border: 0px; background: #FFFFFF; margin-bottom: 15px; }
+#footer-wrap #footer { margin: 0px; padding: 0px; border: 0px; background: #FFFFFF; }
+#footer-wrap #footer #footer-legal { margin: 0px; padding: 0px; border: 0px; background: #FFFFFF; }
+#footer-wrap #footer #footer-legal #footer-trademark { margin: 0px; padding: 0px; border: 0px; background: #FFFFFF; overflow: visible; margin-bottom: 15px; width: 700px; }
+
+#page .main_content_wrapper .product_list_detail .row_cell { display: none; }
+#page .main_content_wrapper .product_list_detail .tbl_cell { display: none; }
+
+#product_list_view_table { border-bottom: 3px solid #62AC39; width: 100%; }
+#product_list_view_table td { border: 0px; width: 100%; border-top: 1px solid #62AC39; }
+
+.selection_criteria_wrapper { margin-top: 10px; clear: both; padding-bottom: 15px; overflow: hidden; border-top: 1px solid #62AC39; padding-top: 30px; }
+.selection_criteria_wrapper .criteria_title_wrapper { width: 130px; padding-left: 0px; padding-right: 100px; float: left; color:#D20F9B; font-style:italic; font-family:Georgia,inherit; font-size:1.8em; font-weight:700; text-align: left; }
+.selection_criteria_wrapper .criteria_detail_wrapper { float: left; padding-left: 0px; text-align: left; }
+.selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_1 { margin: 0px; line-height: 2.0; }
+.selection_criteria_wrapper .criteria_detail_wrapper .criteria_column_2 { margin: 0px; line-height: 2.0; }
+.selection_criteria_wrapper .criteria_detail_wrapper .criteria_detail_label { font-weight:700; }
+
+#page .tbl_cell_print { width: 100%; margin-top: 15px; margin-bottom: 15px; overflow: hidden; padding-bottom: 10px; }
+#page .tbl_cell_print .product_list_item_image_wrapper { float: left; width: 230px; margin: 0px; text-align: center;  }
+#page .tbl_cell_print .product_list_item_image_wrapper .product_list_item_main_image { }
+#page .tbl_cell_print .product_list_item_image_wrapper .product_list_item_image_color_selection { width: 100%; text-align: center; padding-bottom: 10px; }
+#page .tbl_cell_print .product_list_item_image_wrapper .color_selection_with_image { display: none; }
+
+#page .tbl_cell_print .product_list_item_detail_wrapper { float: left; width: 445px; margin: 0px; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_header_wrapper_top { margin-bottom: 15px; height: 12px; border-bottom: 1px dotted #DDDDDD; padding-bottom: 15px; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_bottom { display: none; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_top { float: left; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_top .detail_serial_top { font-size:12px; font-weight:700; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .serial_and_price_top .detail_price_top { font-size:9px; color:#666666; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_top { float: right; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_bottom { display: none; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .detail_rating_top img { width: 11px; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_detail_title { clear: both; }
+
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_description { margin: 0px; padding: 0px; margin-top: 15px; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_feature_title { margin-top: 15px; margin-bottom: 5px; color:#D20F9B; font-style:italic; font-size:11px; font-family:Georgia,inherit; font-weight:bold; }
+#page .tbl_cell_print .product_list_item_detail_wrapper .product_list_item_features { margin: 0px; padding: 0px; }
+
+#footer_wrapper { margin-left: 8px; border-top: 0px; }

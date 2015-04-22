@@ -1,0 +1,107 @@
+/*--------------------------- START CSS Declarations for Print_Saved_Products - Whirlpool  ------------------------------------- */
+
+
+#remove_for_printpage {display: none;}
+#main_printpage_wrap {position: relative; float: left; margin-top: 50px;}
+#print_btn_wrap {position: relative; width: 700px; height: 47px; border: none; margin: 20px 0 40px 0;}
+#print_btn {position: relative; width: 144px; height: 47px; float: right; background-image: url(../images/whp_ownerscenter_print_page.png);}
+#logo_wrap {position: relative; width: 130px; height: 50px; background-image: url(../images/img_logo.png); top:10px;}
+#product_name { width: 440px; color: #0099FF; font-family: Georgia; Lucida Grande: 17pt; font-style: normal; font-weight: normal; }
+#logo_product_wrap {position: relative; border-top: solid 2px #0099ff; border-bottom: solid 1px #0099ff; margin-top: 5px; margin-bottom: 45px; height: 70px;}
+
+div#page.myorders div#proudctBox .productWrapper {
+    margin: 0 40px 0;
+    width: 670px;
+	
+}
+
+div#page.myorders div#proudctBox .productWrapper .product-container.right.top {
+    border-left: 1px dotted #999999;
+    float: right;
+    padding-left: 24px;
+    width: 320px;
+}
+
+div#page.myorders div#proudctBox .productWrapper .product-container.top {
+    border-bottom: 1px dashed #999999;
+    float: left;
+    width: 320px;
+}
+
+div#page.myorders div.main-content-wrapper-bottom {
+    clear: both;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+
+#bottom_print_div {position: absolute; top: 748px; border-top: solid 2px #0099ff; width: 690px; height: 1px; left: 30px;}
+
+div#page.myorders div#main_content_wrapper div#WC_OrderStatusCommonPage_div_2.main_header {
+    display: block;
+    font-size: 18pt;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+div#page.myorders {
+    color: #666666;
+    font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;
+    font-size: 10pt;
+    line-height: 16pt;
+    margin: 20px auto 0 auto;
+    min-height: 640px;
+    width: 100%;
+    z-index: 100;
+}
+
+div#page.myproducts div#content_text{ min-height:260px; }
+div#page.myproducts div#content_text li,div#page.myproducts div#content_text2 li{ font-size:10px; font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif; line-height:16px; color:#454545; text-align:left !important; }
+div#page.myproducts div#content_text2{ min-height:290px;}
+div#page.myproducts div#price_left{ padding:0px; margin:0px; text-align:left; width:250px;}
+div#page.myproducts div#price_left .price{font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif; font-weight:bold; font-size:11px; color:#404240;}
+div#page.myproducts div#price_left .repertory{ display:none;}
+div#page.myproducts div#logoWrap{ width:940px; height:70px; border-top:3px solid #11a9cc; padding-bottom:15px; border-bottom:1px solid #11a9cc; margin-top:30px !important;}
+div#page.myproducts div#logo_wrap{ float:left; width:130px;}
+div#page.myproducts div#h2_wrap{ float:left; width:400px; color:#11a9cc;}
+div#page.myproducts div#h2_wrap h2{ padding-top:23px; margin-left:20px; font-family:"museo-slab-1","museo-slab-2","PMN Caecilia W01 85 Heavy","sans-serif"; font-weight:500;}
+div#page.myproducts div#wishlist{height:190px; width:940px; padding-top:20px;}
+div#page.myproducts div.bottomline{ border-top:3px solid #11a9cc; width:940px; height:200px; margin-top:10px;}
+div#page.myproducts div#MyAccountCenterLinkDisplay_Widget div#right_nav div#wishlist div#print_btn_wrap{ margin-top:20px !important;}
+div#page.myproducts div#content_text li, div#page.myproducts div#content_text2 li{+list-style-position: outside !important;}
+/*-------------------------------- END Declarations for Print_Saved_Products - Whirlpool  ------------------------------------- */
+
+
+body.washer_selection_page table.table_print td.item .product-container .contentLeft {float: left; margin: 10px 10px 0 0; width: 130px;}
+body.washer_selection_page table.table_print td.item .product-container .contentRight {float: left; font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif; font-size: 10px; text-align: left; width: 180px;}
+body.washer_selection_page table.table_print td.item .product-container .productContent { padding-top:20px;}
+body.washer_selection_page table.table_print td.item .product-container a.product_title {color: #11A9CC;font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;font-size: 14px;font-weight: bold;text-decoration: none;}
+body.washer_selection_page table.table_print td.item .product-container a.product_title:hover { text-decoration:underline}
+body.washer_selection_page table.table_print td.item .product-container a.view_details,
+body.washer_selection_page table.table_print td.item .product-container a.add-to-cart,
+body.washer_selection_page table.table_print td.item .product-container a.where_to_buy,
+body.washer_selection_page table.table_print td.item .product-container a.remove,
+body.washer_selection_page table.table_print td.item .product-container a.details,
+body.washer_selection_page table.table_print td.item .product-container .product_taxes,
+body.washer_selection_page table.table_print td.item .product-container .stock_icon,
+body.washer_selection_page table.table_print td .contentgrad_header,
+body.washer_selection_page table.table_print td .main_header { display:none}
+
+body.washer_selection_page table.table_print td.item { overflow:hidden}
+body.washer_selection_page table.table_print td.item .product-container { border-top:1px dotted #999999; border-right:1px dotted #999999; padding-top:10px;}
+body.washer_selection_page table.table_print td.item .product-container.top { border-top:none; padding-bottom:1700px; margin-bottom:-1700px;}
+body.washer_selection_page table.table_print td.item .product-container.right { border-right:none; padding-left:20px; }
+
+/* Fix issue about page - save product(guest) */
+body.washer_selection_page table.table_print tr.item_container td.divider_line{border-top:dotted 1px #CCC;}
+body.washer_selection_page table.table_print tr.item_container{border-right:solid 1px #FFF;}
+body.washer_selection_page table.table_print tr.item_container:first-child td.divider_line,
+body.washer_selection_page table.table_print tr.item_container td#WC_WishListResultDisplay_td_1a{border-top:none;}
+body.washer_selection_page table.table_print tr.item_container td.item{border-right:dotted 1px #CCC;vertical-align:top;}
+body.washer_selection_page table.table_print tr.item_container td.item div.product-container.top{padding-bottom:0px;margin-bottom:0px;border-bottom:none;}
+body.washer_selection_page table.table_print td.item .product-container{border-right:none;}
+/* End Fix issue about page - save product(guest) */
+
+/* resize the images */
+body.washer_selection_page table#four-grid td.item div.product-container div.thumbnail img{width:auto;height:auto;max-width:130px;max-height:175px;}
