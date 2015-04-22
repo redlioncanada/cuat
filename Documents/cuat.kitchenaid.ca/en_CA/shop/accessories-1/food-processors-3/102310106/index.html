@@ -27,7 +27,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17646/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17646/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
 	
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -189,7 +199,7 @@ var currentprotocol = document.location.protocol;
 			MessageHelper.setMessage("ERROR_EMPTY_NUM", "Page number cannot be empty");
 			MessageHelper.setMessage("ERROR_PAGE_NUM", "Enter a valid page number");
 			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
-			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 			MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			categoryDisplayJS.setCommonParameters('-300','10231','10581');
 			categoryDisplayJS.initHistory("CategoryDisplay_Widget", 'http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNCategoryOnlyResultsDisplayView?pageView=&catalogId=10581&beginIndex=&categoryId=102310106&langId=-300&SRC_sortById=&storeId=10231');
@@ -217,23 +227,18 @@ var currentprotocol = document.location.protocol;
 
 	<script src="/javascript/swatches.js" type="text/javascript"></script>
 	<!-- REQ0165238: Color Swatches on Kitchenaid.ca END-->
-
-<script type="text/javascript" src="http://display-stg.ugc.bazaarvoice.com/static/kitchenaid-canada/en_CA/bvapi.js"></script>
-
-
-
 </head>
 
 
 <body >
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Tue Apr 21 11:27:47 EDT 2015] -->
+	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Wed Apr 22 11:05:20 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -272,7 +277,7 @@ var currentprotocol = document.location.protocol;
 		    //compareProductJS.initializeCompareNow();
 			// Go to top of page
 			//window.scrollTo(0,0);
-			
+			refreshSearchPR($("#prPLPArray").val());
 			initListing();
 			}
 		});
@@ -345,11 +350,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 11:18:55 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:56:14 EDT 2015] -->
   
 
 
@@ -372,7 +377,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -389,7 +394,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13462121");
+			var contextUserId = parseInt("13467116");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -506,7 +511,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 11:27:47 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 11:05:20 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -755,7 +760,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -854,7 +859,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	EndecaHelperJS.setPageSize('12');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Tue Apr 21 11:27:47 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Wed Apr 22 11:05:20 EDT 2015] --> 
 <!--Added to fix countertop accessory color filter issue  -->
 <div id="main-container" class="product-listing">	
 <div id="product_list_masthead" class="side-column">
@@ -885,7 +890,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
    </div>
 </div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Tue Apr 21 11:27:47 EDT 2015] --> 	
+<!-- END: [WHRORNProductListFilterOptions, Wed Apr 22 11:05:20 EDT 2015] --> 	
 	<div class="main-column">
 	    <div class="espot-listing-bottom-container">
           	<div class="espot-listing-bottom-content">
@@ -972,12 +977,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104383">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104392','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104392','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFPL13FT">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews">
+		<div class="pr-snippet-KFPL13FT"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104392','PLP');">
@@ -1062,10 +1071,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104392','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104392','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFPL13FT">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFPL13FT]-2104383/KFPL13FT/#ratingsandreviews">
+		<div class="pr-snippet-KFPL13FT"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1127,6 +1139,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1174,12 +1187,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100684">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102523','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102523','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13WBOB">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews">
+		<div class="pr-snippet-KFP13WBOB"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102523','PLP');">
@@ -1264,10 +1281,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102523','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102523','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13WBOB">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13WBOB]-2100684/KFP13WBOB/#ratingsandreviews">
+		<div class="pr-snippet-KFP13WBOB"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1329,6 +1349,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1376,12 +1397,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104308">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104318','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104318','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13CR">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews">
+		<div class="pr-snippet-KFP13CR"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104318','PLP');">
@@ -1466,10 +1491,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104318','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104318','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13CR">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13CR]-2104308/KFP13CR/#ratingsandreviews">
+		<div class="pr-snippet-KFP13CR"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1531,6 +1559,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1578,12 +1607,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100683">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102522','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102522','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13SC">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews">
+		<div class="pr-snippet-KFP13SC"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102522','PLP');">
@@ -1668,10 +1701,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102522','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102522','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13SC">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13SC]-2100683/KFP13SC/#ratingsandreviews">
+		<div class="pr-snippet-KFP13SC"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1733,6 +1769,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1780,12 +1817,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104304">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104314','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104314','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP07ASL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews">
+		<div class="pr-snippet-KFP07ASL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104314','PLP');">
@@ -1870,10 +1911,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104314','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104314','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP07ASL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07ASL]-2104304/KFP07ASL/#ratingsandreviews">
+		<div class="pr-snippet-KFP07ASL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1935,6 +1979,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1982,12 +2027,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2103874">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103890','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103890','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP09WBOB">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews">
+		<div class="pr-snippet-KFP09WBOB"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103890','PLP');">
@@ -2072,10 +2121,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103890','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103890','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP09WBOB">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09WBOB]-2103874/KFP09WBOB/#ratingsandreviews">
+		<div class="pr-snippet-KFP09WBOB"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2137,6 +2189,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2184,12 +2237,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2103869">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103885','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103885','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP09ASL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews">
+		<div class="pr-snippet-KFP09ASL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103885','PLP');">
@@ -2274,10 +2331,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103885','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2103885','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP09ASL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09ASL]-2103869/KFP09ASL/#ratingsandreviews">
+		<div class="pr-snippet-KFP09ASL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2339,6 +2399,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2386,12 +2447,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100675">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102514','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102514','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13ESL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews">
+		<div class="pr-snippet-KFP13ESL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102514','PLP');">
@@ -2476,10 +2541,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102514','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102514','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13ESL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13ESL]-2100675/KFP13ESL/#ratingsandreviews">
+		<div class="pr-snippet-KFP13ESL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2541,6 +2609,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2588,12 +2657,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100672">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102511','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102511','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP13BL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102511','PLP');">
@@ -2678,10 +2751,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102511','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102511','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BL]-2100672/KFP13BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP13BL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2743,6 +2819,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2790,12 +2867,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104305">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104315','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104315','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP07BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP07BL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104315','PLP');">
@@ -2880,10 +2961,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104315','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104315','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP07BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP07BL]-2104305/KFP07BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP07BL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2945,6 +3029,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2992,12 +3077,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104380">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104389','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104389','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP09BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP09BL"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104389','PLP');">
@@ -3082,10 +3171,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104389','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104389','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP09BL">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP09BL]-2104380/KFP09BL/#ratingsandreviews">
+		<div class="pr-snippet-KFP09BL"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3147,6 +3239,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3194,12 +3287,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100673">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102512','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102512','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KFP13BM">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews">
+		<div class="pr-snippet-KFP13BM"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102512','PLP');">
@@ -3284,10 +3381,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102512','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102512','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KFP13BM">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/accessories-1/countertop-appliance-accessories-2/food-processors-3/-[KFP13BM]-2100673/KFP13BM/#ratingsandreviews">
+		<div class="pr-snippet-KFP13BM"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3349,6 +3449,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3465,14 +3566,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	   </div>			 
 	</div>
 
-
-<script type="text/javascript">
-	var BVprodArr = "";
-	$BV.ui('rr','inline_ratings',{
-		productIds : BVprodArr.split(","),
-		containerPrefix: 'BVRRInlineRating'
-	});
-</script>
+<input type="hidden" id="prPLPArray" value=",KFPL13FT,KFP13WBOB,KFP13CR,KFP13SC,KFP07ASL,KFP09WBOB,KFP09ASL,KFP13ESL,KFP13BL,KFP07BL,KFP09BL,KFP13BM"/>
 		
 				</div>
 			</div>
@@ -3480,7 +3574,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     </div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 11:18:57 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:56:16 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">
@@ -3627,6 +3721,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <script type="text/javascript">
 	dojo.addOnLoad(function() { 
 		parseWidget("CategoryDisplay_Widget");
+		refreshSearchPR($("#prPLPArray").val());
 	}); 
 </script>
 

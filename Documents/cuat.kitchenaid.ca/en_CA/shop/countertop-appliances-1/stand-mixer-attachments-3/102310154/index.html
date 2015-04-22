@@ -27,7 +27,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17646/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17646/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
 	
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -189,7 +199,7 @@ var currentprotocol = document.location.protocol;
 			MessageHelper.setMessage("ERROR_EMPTY_NUM", "Page number cannot be empty");
 			MessageHelper.setMessage("ERROR_PAGE_NUM", "Enter a valid page number");
 			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
-			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 			MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			categoryDisplayJS.setCommonParameters('-300','10231','10581');
 			categoryDisplayJS.initHistory("CategoryDisplay_Widget", 'http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNCategoryOnlyResultsDisplayView?pageView=&catalogId=10581&beginIndex=&categoryId=102310154&langId=-300&SRC_sortById=&storeId=10231');
@@ -217,23 +227,18 @@ var currentprotocol = document.location.protocol;
 
 	<script src="/javascript/swatches.js" type="text/javascript"></script>
 	<!-- REQ0165238: Color Swatches on Kitchenaid.ca END-->
-
-<script type="text/javascript" src="http://display-stg.ugc.bazaarvoice.com/static/kitchenaid-canada/en_CA/bvapi.js"></script>
-
-
-
 </head>
 
 
 <body >
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Tue Apr 21 11:43:57 EDT 2015] -->
+	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Wed Apr 22 11:16:01 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -272,7 +277,7 @@ var currentprotocol = document.location.protocol;
 		    //compareProductJS.initializeCompareNow();
 			// Go to top of page
 			//window.scrollTo(0,0);
-			
+			refreshSearchPR($("#prPLPArray").val());
 			initListing();
 			}
 		});
@@ -345,11 +350,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 11:18:55 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:56:14 EDT 2015] -->
   
 
 
@@ -372,7 +377,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -389,7 +394,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13462121");
+			var contextUserId = parseInt("13467116");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -506,7 +511,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 11:43:57 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 11:16:01 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -755,7 +760,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -854,7 +859,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	EndecaHelperJS.setPageSize('12');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Tue Apr 21 11:43:57 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Wed Apr 22 11:16:01 EDT 2015] --> 
 <!--Added to fix countertop accessory color filter issue  -->
 <div id="main-container" class="product-listing">	
 <div id="product_list_masthead" class="side-column">
@@ -885,7 +890,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
    </div>
 </div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Tue Apr 21 11:43:57 EDT 2015] --> 	
+<!-- END: [WHRORNProductListFilterOptions, Wed Apr 22 11:16:01 EDT 2015] --> 	
 	<div class="main-column">
 	    <div class="espot-listing-bottom-container">
           	<div class="espot-listing-bottom-content">
@@ -981,12 +986,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2101060">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102955','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102955','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KPEX">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews">
+		<div class="pr-snippet-KPEX"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102955','PLP');">
@@ -1071,10 +1080,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102955','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102955','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KPEX">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEX]-2101060/KPEX/#ratingsandreviews">
+		<div class="pr-snippet-KPEX"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1158,6 +1170,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1205,6 +1218,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104667">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
 					
@@ -1313,6 +1327,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1360,12 +1375,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104327">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104343','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104343','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KSM2FPA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews">
+		<div class="pr-snippet-KSM2FPA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104343','PLP');">
@@ -1450,10 +1469,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104343','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104343','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KSM2FPA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM2FPA]-2104327/KSM2FPA/#ratingsandreviews">
+		<div class="pr-snippet-KSM2FPA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1537,6 +1559,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1584,12 +1607,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100180">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101951','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101951','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-FPPA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews">
+		<div class="pr-snippet-FPPA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101951','PLP');">
@@ -1674,10 +1701,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101951','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101951','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-FPPA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FPPA]-2100180/FPPA/#ratingsandreviews">
+		<div class="pr-snippet-FPPA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1761,6 +1791,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1808,12 +1839,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104310">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104320','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104320','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KSM1JA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews">
+		<div class="pr-snippet-KSM1JA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104320','PLP');">
@@ -1898,10 +1933,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104320','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104320','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KSM1JA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KSM1JA]-2104310/KSM1JA/#ratingsandreviews">
+		<div class="pr-snippet-KSM1JA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1985,6 +2023,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2032,12 +2071,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2101063">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102958','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102958','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KPRA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews">
+		<div class="pr-snippet-KPRA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102958','PLP');">
@@ -2122,10 +2165,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102958','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102958','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KPRA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPRA]-2101063/KPRA/#ratingsandreviews">
+		<div class="pr-snippet-KPRA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2209,6 +2255,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2256,12 +2303,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2101061">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102956','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102956','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KPEXTA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews">
+		<div class="pr-snippet-KPEXTA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102956','PLP');">
@@ -2346,10 +2397,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102956','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102956','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KPEXTA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KPEXTA]-2101061/KPEXTA/#ratingsandreviews">
+		<div class="pr-snippet-KPEXTA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2433,6 +2487,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2480,12 +2535,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2101069">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102964','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102964','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KRAV">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews">
+		<div class="pr-snippet-KRAV"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102964','PLP');">
@@ -2570,10 +2629,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102964','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102964','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KRAV">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KRAV]-2101069/KRAV/#ratingsandreviews">
+		<div class="pr-snippet-KRAV"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2657,6 +2719,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2704,12 +2767,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100841">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102690','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102690','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGSSA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews">
+		<div class="pr-snippet-KGSSA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102690','PLP');">
@@ -2794,10 +2861,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102690','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102690','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGSSA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGSSA]-2100841/KGSSA/#ratingsandreviews">
+		<div class="pr-snippet-KGSSA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2881,6 +2951,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2928,12 +2999,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100805">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102650','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102650','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGM">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews">
+		<div class="pr-snippet-KGM"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102650','PLP');">
@@ -3018,10 +3093,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102650','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102650','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGM">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KGM]-2100805/KGM/#ratingsandreviews">
+		<div class="pr-snippet-KGM"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3094,6 +3172,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3141,12 +3220,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100182">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101953','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101953','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-FVSFGA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews">
+		<div class="pr-snippet-FVSFGA"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101953','PLP');">
@@ -3231,10 +3314,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101953','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2101953','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-FVSFGA">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[FVSFGA]-2100182/FVSFGA/#ratingsandreviews">
+		<div class="pr-snippet-FVSFGA"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3318,6 +3404,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3365,12 +3452,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100960">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102837','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102837','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KICA0WH">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews">
+		<div class="pr-snippet-KICA0WH"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102837','PLP');">
@@ -3455,10 +3546,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102837','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102837','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KICA0WH">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/countertop-appliances-1/countertop-appliances-2/stand-mixer-attachments-3/-[KICA0WH]-2100960/KICA0WH/#ratingsandreviews">
+		<div class="pr-snippet-KICA0WH"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3542,6 +3636,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3667,14 +3762,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	   </div>			 
 	</div>
 
-
-<script type="text/javascript">
-	var BVprodArr = "";
-	$BV.ui('rr','inline_ratings',{
-		productIds : BVprodArr.split(","),
-		containerPrefix: 'BVRRInlineRating'
-	});
-</script>
+<input type="hidden" id="prPLPArray" value=",KPEX,KSM2FPA,FPPA,KSM1JA,KPRA,KPEXTA,KRAV,KGSSA,KGM,FVSFGA,KICA0WH"/>
 		
 				</div>
 			</div>
@@ -3682,7 +3770,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     </div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 11:18:57 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:56:16 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">
@@ -3829,6 +3917,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <script type="text/javascript">
 	dojo.addOnLoad(function() { 
 		parseWidget("CategoryDisplay_Widget");
+		refreshSearchPR($("#prPLPArray").val());
 	}); 
 </script>
 

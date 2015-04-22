@@ -33,8 +33,8 @@
 <!--
 org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/CatalogSection/CatalogEntrySubsection/WHRREDProductDisplay.jsp(72,1) '${product.entitledItems}' Error reading 'entitledItems' on type com.whirlpool.commerce.catalog.beans.WHRProductDataBean
 	at org.apache.jasper.el.JspValueExpression.getValue(JspValueExpression.java:106)
-	at com.ibm._jsp._WHRREDProductDisplay._jspx_meth_c_forEach_0(_WHRREDProductDisplay.java:6724)
-	at com.ibm._jsp._WHRREDProductDisplay._jspService(_WHRREDProductDisplay.java:1040)
+	at com.ibm._jsp._WHRREDProductDisplay._jspx_meth_c_forEach_0(_WHRREDProductDisplay.java:6751)
+	at com.ibm._jsp._WHRREDProductDisplay._jspService(_WHRREDProductDisplay.java:1046)
 	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:99)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:831)
 	at com.ibm.ws.cache.servlet.ServletWrapper.serviceProxied(ServletWrapper.java:307)
@@ -90,9 +90,8 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:965)
 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:508)
 	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:181)
-	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:3994)
-	at com.ibm.ws.webcontainer.webapp.WebGroup.handleRequest(WebGroup.java:276)
-	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:945)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:91)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:878)
 	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1592)
 	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:191)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:454)
@@ -109,7 +108,7 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1662)
 Caused by: com.ibm.commerce.exception.ECApplicationException: Product "2101208" is not viewable.
 	at com.whirlpool.commerce.catalog.beans.WHRProductDataBean.getEntitledItems(WHRProductDataBean.java:667)
-	at sun.reflect.GeneratedMethodAccessor3315.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor603.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
 	at java.lang.reflect.Method.invoke(Method.java:611)
 	at javax.el.BeanELResolver.getValue(BeanELResolver.java:65)
@@ -117,7 +116,7 @@ Caused by: com.ibm.commerce.exception.ECApplicationException: Product "2101208" 
 	at org.apache.el.parser.AstValue.getValue(AstValue.java:102)
 	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:263)
 	at org.apache.jasper.el.JspValueExpression.getValue(JspValueExpression.java:100)
-	... 74 more
+	... 73 more
 -->
 
 

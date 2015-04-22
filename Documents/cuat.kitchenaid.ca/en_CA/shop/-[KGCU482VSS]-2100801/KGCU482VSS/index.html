@@ -27,7 +27,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17646/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17646/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
     <script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
 
@@ -199,7 +209,7 @@ var currentprotocol = document.location.protocol;
 
 
 <body id="small-appliances" class="product-details-page" onLoad="">
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -272,11 +282,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 11:18:55 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:56:14 EDT 2015] -->
   
 
 
@@ -299,7 +309,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -316,7 +326,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13462121");
+			var contextUserId = parseInt("13467116");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -433,7 +443,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 12:36:40 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 11:34:34 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -682,7 +692,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -783,21 +793,10 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CheckoutArea/CheckoutHelper.js"></script>
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/ProductDisplay.js"></script>
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
-
-
-<script type="text/javascript" src="http://display-stg.ugc.bazaarvoice.com/static/kitchenaid-canada/en_CA/bvapi.js"></script>
-
-
-
+<!-- Removed include of WHRORNBazaarVoiceInclude.jspf -->
 <script type="text/javascript" src="/javascript/jquery.wpc.wresize.js"></script>
 
-
-			<script type="text/javascript">
-				$BV.configure("global", {
-					productId: 'KGCU482VSS-NAR'
-				});
-			</script>
-		
+<!-- Removed include of BazaarVoice SEO container--><!-- Removed BV api call -->
 <script text="text/javascript">
 	function changeFunc() {
 		var dropdown = document.getElementById("choose-color");
@@ -902,8 +901,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 		    <!-- Canada Badge Class WM-1782 -->
 			<h1 class="product-title">KitchenAid® 48-Inch 6-Burner with Grill, Gas Rangetop, Commercial-Style</h1>
 			
-				<div id="BVRRSummaryContainer"></div>
-			
+
+<div id="pr-pdp-snippet-KGCU482VSS" class="pr-pdp">
+	<script type="text/javascript">
+	POWERREVIEWS.display.snippet(document, {
+	    pr_page_id:"KGCU482VSS",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KGCU482VSS&storeId=10231",
+	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
+	</script>
+</div>
 			<div class="product-description">
 				<p>This 48-inch rangetop offers commercial styling and restaurant-quality performance. The six-burner cooking surface includes two Ultra Power™ Dual-Flame Burners that can reach a maximum output of 20,000 BTUs. For additional versatility, the Even-Heat™ Gas Grill lets you enjoy the taste of outdoor grilling throughout the year.</p>
 			</div>
@@ -934,7 +940,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<span class="product-part-number">KGCU482VSS</span>
 			</div>
 		</div>
-	</div>
+	</div><!-- Start tab New change -->
 		<div id="product-tabs">
 			<ul class="product-tabs-menu">
 				
@@ -1456,25 +1462,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							
 							<div id="ratingsandreviews" class="product-content ">
 								
-	
 <div class="product_tab_section_top"></div>
 <div class="product_tab_section_middle">	
-	<div style="review_general_options">
-			
-	</div>
-	
-			<script type="text/javascript">
-				$BV.ui("rr", "show_reviews", {
-					doShowContent: function() {
-						$('#ratingsandreviews_tab').click();
-					},				
-				});
-				$(document).ready(function(){
-					$("#BVRRContainer").appendTo("#ratingsandreviews .product_tab_section_middle");
-					console.log("go");
-				});
-			</script>	
-				
+
+
+<div id="pr-pdp-tab-KGCU482VSS" class="pr-pdp-tab">
+	<script type="text/javascript">
+	POWERREVIEWS.display.engine(document,{
+	    pr_page_id:"KGCU482VSS",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KGCU482VSS&storeId=10231"});
+	</script>
+</div>		
 </div>
 <div class="product_tab_section_bottom"></div>
 
@@ -1671,55 +1669,57 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 	<div id="cta-content">
 		<div class="cta-options">
-			<form class="product-detail-options-form">
-				
-						<div class="product-detail-price">
-							<p class="offer-price">
-								<span class="offer-price-amount">
-								$4,649.99  
-								</span>
-							</p>
-							
-						</div>
+			
+					<form class="product-detail-options-form">
 						
-						<div class="product-detail-option-select">
-							<div class="product-form-option">
-								<label class="product-options-select-label">
-									Choose A Color
-								</label>
-								<div class="text-select">
-									<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
+									<div class="product-detail-price">
+										<p class="offer-price">
+											<span class="offer-price-amount">
+											$4,649.99  
+											</span>
+										</p>
 										
-																<option selected="selected" value="Stainless Steel"
-																	id="KGCU482VSS"
-																	title="$4,649.99">Stainless Steel</option>
-																
-									</select>
+									</div>
+								
+								<div class="product-detail-option-select">
+									<div class="product-form-option">
+										<label class="product-options-select-label">
+											Choose A Color
+										</label>
+										<div class="text-select">
+											<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
+												
+																		<option selected="selected" value="Stainless Steel"
+																			id="KGCU482VSS"
+																			title="$4,649.99">Stainless Steel</option>
+																	
+											</select>
+										</div>
+									</div>
+									
+										<div class="product-form-option">
+											<label class="product-options-select-label">Quantity:</label>
+											<div class="number-select">
+												<input type="text" class="txt-quantity" name="quantity_2100801" id="quantity_2100801" size="3" value="1">
+											</div>
+										</div>
+									
 								</div>
-							</div>
 							
-							<div class="product-form-option">
-								<label class="product-options-select-label">Quantity:</label>
-								<div class="number-select">
-									<input type="text" class="txt-quantity" name="quantity_2100801" id="quantity_2100801" size="3" value="1">
+						<div class="submit-section" id="submit-section">
+						
+								<div class="where_to_buy">
+									<a id="wheretoBuyCid" onclick="trackWhereToBuy('ProductPage');"
+										href="/en_CA/find-a-store/?sku=kgcu482vss" class="red-button">
+										<span class="ub-left"></span>
+										<span class="ub-center">Where to Buy</span>
+										<span class="ub-right"></span> 
+									</a>
 								</div>
-							</div>
 							
 						</div>
-					
-				<div class="submit-section" id="submit-section">
+					</form>
 				
-						<div class="where_to_buy">
-							<a id="wheretoBuyCid" onclick="trackWhereToBuy('ProductPage');"
-								href="/en_CA/find-a-store/?sku=kgcu482vss" class="red-button">
-								<span class="ub-left"></span>
-								<span class="ub-center">Where to Buy</span>
-								<span class="ub-right"></span> 
-							</a>
-						</div>
-					
-				</div>
-			</form>
 		</div>
 	</div>
 	<div class="side-column-espot espot">
@@ -1803,38 +1803,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 		</div>
 	</div>
 </div>
-<!-- MODULE FRAGMENT ENDS -->
-<div id="BVRRContainer">
-<ul id="BVSEOSDK" style="display:none;">
-	<li id="vn">bvseo-2.1.0.1</li>
-	<li id="en">bvseo-true</li>
-	<li id="sl">bvseo-j</li>
-	<li id="mt">bvseo-CLOUD</li>
-	<li id="et">bvseo-182ms</li>
-	<li id="ct">bvseo-REVIEWS</li>
-	<li id="st">bvseo-PRODUCT</li>
-	<li id="pn">bvseo-1</li>
-	<li id="am">bvseo-getAggregateRating</li>
-	<li id="ms">bvseo-msg: The resource to the URL or file is currently unavailable.;</li>
-</ul>
-
-
-<ul id="BVSEOSDK" style="display:none;">
-	<li id="vn">bvseo-2.1.0.1</li>
-	<li id="en">bvseo-true</li>
-	<li id="sl">bvseo-j</li>
-	<li id="mt">bvseo-CLOUD</li>
-	<li id="et">bvseo-0ms</li>
-	<li id="ct">bvseo-REVIEWS</li>
-	<li id="st">bvseo-PRODUCT</li>
-	<li id="pn">bvseo-1</li>
-	<li id="am">bvseo-getReviews</li>
-	<li id="ms">bvseo-msg: The resource to the URL or file is currently unavailable.;</li>
-</ul>
-
-</div>
-
-
+<!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
 <script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KGCU482VSS', 'KitchenAid® 48-Inch 6-Burner with Grill, Gas Rangetop, Commercial-Style', 'Cooktops', 'KitchenAid', 'Stainless Steel', '$4,649.99', 'PDP', '1');</script>
 <script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KGCU482VSS', 'KitchenAid® 48-Inch 6-Burner with Grill, Gas Rangetop, Commercial-Style', 'Cooktops', 'KitchenAid', 'Stainless Steel', '$4,649.99');</script>
 <script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102646', 'KGCU482VSS', 'KitchenAid® 48-Inch 6-Burner with Grill, Gas Rangetop, Commercial-Style', 'Cooktops', 'KitchenAid', 'Stainless Steel', '$4,649.99');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
@@ -1846,7 +1815,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5k60&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
 <!-- Twitter tag Code for Key Page Views - Product Page ends --><!-- End WHRORNCachedProductOnlyDisplay -->
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 11:18:57 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:56:16 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

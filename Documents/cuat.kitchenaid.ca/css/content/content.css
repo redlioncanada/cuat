@@ -10581,3 +10581,41 @@ a.discontinuedProductSearchLinkLabel{font-size:1.2em;font-weight:bold}
 #unregistered_form div#WC_billingAddressCreateEditForm_div_30_4 {width: 250px !important;}
 #unregistered_form div#WC_billingAddressCreateEditForm_div_30_3 {width: 30px !important;}
 a#WC_UnregisteredCheckout_links_3{background: #BBB; color: #FFF; border: medium none; cursor: pointer; font-size: 110%; padding: 6px 10px 5px; text-transform: uppercase; float: left;}
+
+/*REQ0275535 - NKB:Online Self Scheduler Canada - Change of confirmation email*/
+
+#oc_entry_field_section div#validate_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#validate_btn a
+{
+   background: none repeat scroll 0 0 #cc0000;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-size: 110%;
+    margin: 0 0 20px 156px;
+    padding: 6px 10px 5px;
+    text-transform: uppercase;
+}
+
+#oc_entry_field_section div#edit_btn 
+{ 
+ float:left;
+
+}
+#oc_entry_field_section div#edit_btn a
+{
+    background: none repeat scroll 0 0 #cc0000;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-size: 110%;
+    margin: 0 0 20px 156px;
+    padding: 6px 10px 5px;
+    text-transform: uppercase;
+}

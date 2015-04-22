@@ -27,7 +27,17 @@
 
 <!-- end standard css include block -->
  		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 	  
+                
+<script type="text/javascript" src="https://cdn.powerreviews.com/repos/17646/pr/pwr/engine/js/full.js"/>
+
+<script type="text/javascript">
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17646/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+</script>
+
+
 	
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -189,7 +199,7 @@ var currentprotocol = document.location.protocol;
 			MessageHelper.setMessage("ERROR_EMPTY_NUM", "Page number cannot be empty");
 			MessageHelper.setMessage("ERROR_PAGE_NUM", "Enter a valid page number");
 			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
-			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 			MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			categoryDisplayJS.setCommonParameters('-300','10231','10581');
 			categoryDisplayJS.initHistory("CategoryDisplay_Widget", 'http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNCategoryOnlyResultsDisplayView?pageView=&catalogId=10581&beginIndex=&categoryId=102310008&langId=-300&SRC_sortById=&storeId=10231');
@@ -217,23 +227,18 @@ var currentprotocol = document.location.protocol;
 
 	<script src="/javascript/swatches.js" type="text/javascript"></script>
 	<!-- REQ0165238: Color Swatches on Kitchenaid.ca END-->
-
-<script type="text/javascript" src="http://display-stg.ugc.bazaarvoice.com/static/kitchenaid-canada/en_CA/bvapi.js"></script>
-
-
-
 </head>
 
 
 <body >
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager --><!-- End Google Tag Manager --><!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Tue Apr 21 11:25:24 EDT 2015] -->
+	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Wed Apr 22 09:06:32 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -272,7 +277,7 @@ var currentprotocol = document.location.protocol;
 		    //compareProductJS.initializeCompareNow();
 			// Go to top of page
 			//window.scrollTo(0,0);
-			
+			refreshSearchPR($("#prPLPArray").val());
 			initListing();
 			}
 		});
@@ -345,11 +350,11 @@ var currentprotocol = document.location.protocol;
         }
     });
 </script>
-
+ 
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue Apr 21 11:18:55 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Apr 22 07:56:14 EDT 2015] -->
   
 
 
@@ -372,7 +377,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -389,7 +394,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13462121");
+			var contextUserId = parseInt("13467116");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -506,7 +511,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue Apr 21 13:30:56 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Apr 22 11:53:38 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -755,7 +760,7 @@ dojo.addOnLoad(function() {
 		        parseWidget("sap_unavailable_popup");
 				// these messages are needed for the zip code popup on all pages where it might appear
 				
-				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "You have entered an invalid postal code or the tax Jurisdiction code could not be determined. Please try again.");
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
 				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
 			});
 		</script>
@@ -854,7 +859,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	EndecaHelperJS.setPageSize('12');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Tue Apr 21 11:25:24 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Wed Apr 22 09:06:34 EDT 2015] --> 
 <!--Added to fix countertop accessory color filter issue  -->
 <div id="main-container" class="product-listing">	
 <div id="product_list_masthead" class="side-column">
@@ -1014,7 +1019,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
    </div>
 </div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Tue Apr 21 11:25:25 EDT 2015] --> 	
+<!-- END: [WHRORNProductListFilterOptions, Wed Apr 22 09:06:36 EDT 2015] --> 	
 	<div class="main-column">
 	    <div class="espot-listing-bottom-container">
           	<div class="espot-listing-bottom-content">
@@ -1114,12 +1119,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100803">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102648','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102648','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCU484VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU484VSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102648','PLP');">
@@ -1208,10 +1217,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102648','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102648','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCU484VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU484VSS]-2100803/KGCU484VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU484VSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1295,6 +1307,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1340,12 +1353,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100801">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102646','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102646','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCU482VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU482VSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102646','PLP');">
@@ -1434,10 +1451,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102646','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102646','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCU482VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU482VSS]-2100801/KGCU482VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU482VSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1521,6 +1541,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1566,12 +1587,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100800">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102645','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102645','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCU467VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU467VSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102645','PLP');">
@@ -1660,10 +1685,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102645','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102645','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCU467VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU467VSS]-2100800/KGCU467VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU467VSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1747,6 +1775,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -1792,12 +1821,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100798">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102643','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102643','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCU462VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU462VSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102643','PLP');">
@@ -1886,10 +1919,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102643','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102643','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCU462VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU462VSS]-2100798/KGCU462VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU462VSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -1973,6 +2009,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2018,12 +2055,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100797">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102642','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102642','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCU407VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU407VSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102642','PLP');">
@@ -2112,10 +2153,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102642','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102642','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCU407VSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCU407VSS]-2100797/KGCU407VSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCU407VSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2199,6 +2243,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2244,12 +2289,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100976">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102856','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102856','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KICU569XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU569XSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102856','PLP');">
@@ -2340,10 +2389,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102856','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102856','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KICU569XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU569XSS]-2100976/KICU569XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU569XSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2429,6 +2481,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2474,12 +2527,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100972">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102851','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102851','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KICU509XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU509XSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102851','PLP');">
@@ -2570,10 +2627,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102851','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102851','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KICU509XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU509XSS]-2100972/KICU509XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU509XSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2659,6 +2719,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2704,12 +2765,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100970">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102848','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102848','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KICU500XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU500XSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102848','PLP');">
@@ -2800,10 +2865,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102848','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102848','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KICU500XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU500XSS]-2100970/KICU500XSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU500XSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -2889,6 +2957,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -2934,12 +3003,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100973">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102852','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102852','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KICU540BSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU540BSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102852','PLP');">
@@ -3028,10 +3101,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102852','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102852','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KICU540BSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KICU540BSS]-2100973/KICU540BSS/#ratingsandreviews">
+		<div class="pr-snippet-KICU540BSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3115,6 +3191,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3160,12 +3237,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100576">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102379','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102379','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KECD867XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews">
+		<div class="pr-snippet-KECD867XSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102379','PLP');">
@@ -3254,10 +3335,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102379','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102379','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KECD867XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KECD867XSS]-2100576/KECD867XSS/#ratingsandreviews">
+		<div class="pr-snippet-KECD867XSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3341,6 +3425,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3386,12 +3471,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2104326">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104341','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104341','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KCGS956ESS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews">
+		<div class="pr-snippet-KCGS956ESS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104341','PLP');">
@@ -3480,10 +3569,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104341','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104341','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KCGS956ESS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KCGS956ESS]-2104326/KCGS956ESS/#ratingsandreviews">
+		<div class="pr-snippet-KCGS956ESS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3567,6 +3659,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3612,12 +3705,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_detail_set">
 	<div class="product_list_detail_2100780">
 		<div class="tbl_cell">
+			
 			<div class="content_container">
 				<div class="ratings_container">
-					
-						<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102625','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-						<div class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102625','PLP');">0 reviews</a></div>
-					
+					<div class="pr-category" id="pr-category-KGCD807XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCD807XSS"></div>
+	</a>
+</div>
+
+
 				</div>
 				<div class="product_image_link">
 			        <a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102625','PLP');">
@@ -3706,10 +3803,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								</tr>
 								<tr>
 									<td class="no_border_bottom">
-										
-											<a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews" class="rating_point product-link" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102625','PLP');"><img src="/images/ratings/rating-0.gif" alt="rating images"/></a>
-											<span class="product_detail_list_review_count"><font class="product_review_count"><a class="product-link" href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2102625','PLP');">0 reviews</a></font></span>
-										
+										<div class="pr-category" id="pr-category-KGCD807XSS">  
+    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/cooktops-2/cooktops-3/-[KGCD807XSS]-2100780/KGCD807XSS/#ratingsandreviews">
+		<div class="pr-snippet-KGCD807XSS"></div>
+	</a>
+</div>
+
+
 									</td>
 								</tr>
 								<tr>
@@ -3793,6 +3893,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						
 					</td>
 					<td class="product_list_table_action_cell">
+						
 						<table cellspacing="5">
 							<tbody>
 								<tr>
@@ -3920,14 +4021,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	   </div>			 
 	</div>
 
-
-<script type="text/javascript">
-	var BVprodArr = "";
-	$BV.ui('rr','inline_ratings',{
-		productIds : BVprodArr.split(","),
-		containerPrefix: 'BVRRInlineRating'
-	});
-</script>
+<input type="hidden" id="prPLPArray" value=",KGCU484VSS,KGCU482VSS,KGCU467VSS,KGCU462VSS,KGCU407VSS,KICU569XSS,KICU509XSS,KICU500XSS,KICU540BSS,KECD867XSS,KCGS956ESS,KGCD807XSS"/>
 		
 				</div>
 			</div>
@@ -3935,7 +4029,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     </div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue Apr 21 11:18:57 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Apr 22 07:56:16 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">
@@ -4082,6 +4176,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <script type="text/javascript">
 	dojo.addOnLoad(function() { 
 		parseWidget("CategoryDisplay_Widget");
+		refreshSearchPR($("#prPLPArray").val());
 	}); 
 </script>
 
