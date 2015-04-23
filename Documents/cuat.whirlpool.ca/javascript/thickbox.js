@@ -353,9 +353,11 @@ function tb_showIframe(){
 	$("#TB_load").remove();
 	$("#TB_window").css({display:"block"});
 	var iFrameSrc = $("#TB_iframeContent").attr('src');
-	if (iFrameHack == 'true' || iFrameURL == ''){
+	if (iFrameHack == 'true'){
 		$("#TB_iframeContent").attr('src',iFrameURL);
-		iFrameHack="false";
+		setTimeout(function() {
+			iFrameHack="false";
+		}, 200);
 	}
 }
 /***********************/

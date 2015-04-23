@@ -779,11 +779,11 @@ div#page.oc_schedule_repair div#oc_content div.product ul li img{width:auto;heig
 div#page.oc_my_appliances #editAppliance .clearLine{width:100%;float:left; margin:10px 0;}
 div#page.oc_my_appliances #editAppliance .ui-button{float:left; text-transform:capitalize; margin:0 30px 0 0; width:auto}
 body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#cancel,
-div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right{background:url("/images/btn_cancel_contact_small.png") top left no-repeat; width:90px; height:33px; margin:40px 0; text-indent:-9999px; padding:0;}
-body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#cancel:hover{background-position:0 -32px;}
+div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right{background:url("/images/btn_cancel_contact_small.jpg") top left no-repeat; width:64px; height:25px; margin:40px 0; padding:7px 0 0 31px;font:bold 12px arial; color:#666;}
+body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#cancel:hover{background-position:0 -32px; color:#999;}
 body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#sumit{
-background:url("/images/btn_schedule_small.png") top left no-repeat; width:190px; height:33px; margin:40px 0; text-indent:-9999px;padding:0;}
-div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right:hover,body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#sumit:hover{background-position:0 -32px}
+background:url("/images/btn_schedule_small.jpg") top left no-repeat; width:151px; height:26px; margin:40px 0; padding:6px 0 0 34px; font:bold 12px arial; color:#666;}
+div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right:hover,body#oc_schedule_repair_step4_review #page #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a#sumit:hover{background-position:0 -32px;color:#999;}
 div#page.oc_my_appliances #editAppliance .ui-button.fork{background:url("/images/btn_save_small.png") top left no-repeat; width:90px; height:34px; margin:40px 0; text-indent:-9999px}
 div#page.oc_my_appliances #editAppliance .ui-button.ui-icon-arrow-right:hover,
 div#page.oc_my_appliances #editAppliance .ui-button.fork:hover{background-position:0 -32px;}

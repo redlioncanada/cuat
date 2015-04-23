@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!--<link href="http://vjs.zencdn.net/4.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../maytag-man/css/vjs-maytag-skin.css">
+    <script src="http://vjs.zencdn.net/4.0/video.js"></script>
+    -->
+</head>
+<body style="margin: 0;">
+    <div id="ytplayer"></div>
+
+    <script>
+      // Load the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "//www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // Replace the 'ytplayer' element with an <iframe> and
+      // YouTube player after the API code downloads.
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('ytplayer', {
+          height: '445',
+          width: '791',
+          videoId: 'sJB7l_7Kswo',
+          playerVars: {
+               playsinline: 1
+            },
+          events: {
+                'onReady': onPlayerReady
+            }
+        });
+      }
+      function onPlayerReady(event){
+        event.target.playVideo();
+      }
+    </script>
+
+<!-- <div class="main-container modal dish">
+    <video id="video-dishwashers" class="video-js vjs-default-skin"
+           controls preload="auto" width="791" height="445" autoplay="autoplay"
+           poster="poster-image_two-ovens-in-1.jpg"
+           data-setup='{"example_option":true}'> -->
+
+<!--         <source src="http://dev.demos.maytag.com/maytag-man/videos/home_videos/Speed_Cool.webm" type="video/webm">
+        <source src="http://dev.demos.maytag.com/maytag-man/videos/home_videos/Speed_Cool.mp4" type="video/mp4">
+        <source src="http://dev.demos.maytag.com/maytag-man/videos/home_videos/Speed_Cool.ogv" type="video/ogg"> -->
+
+        <!-- <source src="http://dev.demos.maytag.com/maytag-man/videos/refrigerator-running/RefrigeratorRunnin_30.webm" type="video/webm">
+        <source src="http://dev.demos.maytag.com/maytag-man/videos/refrigerator-running/RefrigeratorRunnin_30.mp4" type="video/mp4">
+        <source src="http://dev.demos.maytag.com/maytag-man/videos/refrigerator-running/RefrigeratorRunnin_30.ogv" type="video/ogg">
+        Your browser does not support the HTML5 video tag.
+    </video>
+</div> -->
+</body>
+</html>
