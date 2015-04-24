@@ -1,0 +1,51 @@
+.cftc-image {
+	position: relative;
+	height: 498px;
+	width: 1022px;
+	margin: 0 0 20px -39px;
+}
+.cftc-image a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	display: inline-block;
+	width: 190px;
+	background: white;
+	font-size: 15px;
+	padding: 8px 0;
+	color: #de4295;
+	margin: 0 20px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 8px;
+}
+.cftc-image a:hover {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: white;
+	background: #de4295;
+}
+.cftc-image div {
+	position: absolute;
+}
+#cftc-share-links {
+	right: 24px;
+	bottom: 130px;
+}
+#cftc-showdown-links {
+	left: 43px;
+	bottom: 75px;
+}
+#cftc-party-links {
+	right: 20px;
+	bottom: 132px;
+}
+#cftc-pink-links {
+	left: 41px;
+	bottom: 85px;
+}

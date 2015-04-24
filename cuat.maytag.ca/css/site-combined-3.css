@@ -3582,3 +3582,5 @@ div.orderTotalInfoPcr176 {
 	color:#fff;
 	padding:3px 0 0 7px;
 }
+/*Below line added*/
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .error_text {clear:both;color:green;margin-left:133px;padding-top:5px;}

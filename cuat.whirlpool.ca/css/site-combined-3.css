@@ -865,4 +865,5 @@ div#page.oc_product_help div#oc_content #product-help-search-tree{
 	background-position: 0 -31px;
 	color:#999;
 }
-
+/*Below line added*/
+body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .error_text {clear:both;color:green;margin-left:141px;padding-top:5px;}

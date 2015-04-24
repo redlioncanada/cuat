@@ -1534,6 +1534,33 @@ $(document).ready(function() {
 		var a = axel * 10000000000000;
 		document.getElementById("fDiv").innerHTML = '<iframe src="//2625291.fls.doubleclick.net/activityi;src=2625291;type=mayta650;cat=all-r944;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
 	});
+	
+	if($("#page").hasClass("casper")){
+	$(".pr-pdp").html('');
+	var pr_page = $("#breadcrumb-list-1.last").text();
+	var pr_war_url = "/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10561&langId=-1&storeId=10229&partNumber="+pr_page;
+
+	POWERREVIEWS.display.snippet({ 
+		write : function(content) {
+			$('.pr-pdp').append(content); 
+			}
+		}, 
+		{ 
+			pr_page_id: pr_page, 
+			pr_write_review:pr_war_url,
+			pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"
+	});
+	$(".pr-pdp").prepend('<script type="text/javascript" src="//static.powerreviews.com/widgets/v1/widget.js"></script><link rel="stylesheet" href="https://cdn.powerreviews.com/repos/17612/pr/pwr/engine/pr_styles_review.css" type="text/css" id="prBaseStylesheet"><link rel="stylesheet" href="/css/powerreviews/pr_style_sheet.css" type="text/css" id="prMerchantOverrideStylesheet">');
+
+	$(".pr-pdp-tab").html('');
+	POWERREVIEWS.display.engine({ 
+		write : function(content) {
+			$('.pr-pdp-tab').append(content); 
+			}
+		},{
+			pr_page_id:pr_page,
+			pr_write_review:pr_war_url});
+}
 });
 function addChatTag() {
 	var axel = Math.random() + "";
