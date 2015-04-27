@@ -3140,4 +3140,5465 @@ width:273px;
 
 #socialSectiion .addthis_button_facebook_follow .at16nc.at16t_facebook{background:url(/images/content/socialIcons2.png) 0 0 no-repeat;height:22px;width:23px;display:block;float:left;margin:0 2px;}
 #socialSectiion .addthis_button_facebook_follow .at16nc.at16t_facebook:hover{background-position:0 -22px;}
-#socialSectiion .addthis_button_twitter_follow .
+#socialSectiion .addthis_button_twitter_follow .at16nc.at16t_twitter{background:url(/images/content/socialIcons2.png) -46px 0 no-repeat;height:22px;width:28px;display:block;float:left;margin:0 2px;}
+#socialSectiion .addthis_button_twitter_follow .at16nc.at16t_twitter:hover{background-position:-46px -22px;}
+#socialSectiion .addthis_button_youtube_follow .at15t_youtube{background:url(/images/content/socialIcons2.png) -23px 0 no-repeat;height:22px;width:23px;display:block;float:left;margin:0 2px;}
+#socialSectiion .addthis_button_youtube_follow .at15t_youtube:hover{background-position:-23px -22px;}
+
+.addthis_toolbox span.addthis_follow_label{display:none;}
+#socialSectiion .addthis_toolbox{margin: 18px 0 0;}
+.at_a11y{width:1px;height:1px;position:absolute;top:auto;overflow:hidden;}
+#content.about_us #aboutManthem img{padding:20px 0;}
+
+.trade_information{
+width:550px
+}
+
+.trade_information h4{
+font-weight:bold;
+}
+
+.trade_information p.footnote{
+font-size:90%
+}
+
+.trade_information p{
+line-height:150%
+}
+
+.trade_information hr{
+background:#FFF;
+background-color:#fff;
+border:1px dotted #505050;
+border-style:none none dotted;
+margin-top:30px;
+margin-bottom:30px;
+width:550px
+}
+
+.trade_information a{
+color:#09f
+}
+
+.trade_information a:hover{
+color:#005abb
+}
+
+ul.trade_left_col li{
+font-weight:bold;
+}
+
+ul.trade_right_col{
+font-weight:bold;
+}
+
+#main_content.jumppage{
+height:500px;
+margin-top:10px;
+position:relative;
+width:960px
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage{
+background: none repeat scroll 0 center #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 0 0 5px 5px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 0 40px 40px;
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #content-boxes{
+overflow:hidden;
+padding:40px 0 0
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #content-boxes p{
+color:#505050;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:11px;
+padding-bottom:25px
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-left{
+float:left;
+width:440px
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-left ul li{
+padding-bottom:25px
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-left ul li p.first{
+color:#878787
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-left ul li p{
+padding-bottom:7px
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-left ul li p a{
+color:#005abb
+}
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-right{
+float:left;
+width:440px
+}
+
+/*#body_wrap.press_and_media_page div#main_content.jumppage #box-right ul{
+border-left:1px dotted #8c8c8c
+}*/
+
+/*#body_wrap.press_and_media_page div#main_content.jumppage #box-right ul li{
+padding:0 0 40px 50px
+}*/
+
+/*#body_wrap.press_and_media_page div#main_content.jumppage #box-right ul li+li{
+padding-top:35px;
+border-top:1px dotted #8c8c8c
+}*/
+
+#body_wrap.press_and_media_page div#main_content.jumppage #box-right ul li p{
+padding-bottom:20px
+}
+#body_wrap.press_and_media_page #pressReleaseList a {
+    color: #505050;
+}
+#body_wrap.press_and_media_page div#main_content.jumppage #box-right ul li p a{
+font-size:11px;
+font-weight:600;
+cursor:pointer;
+height:7px;
+padding:0 0 0 15px;
+background:url("/images/content/jumppage/bullet_press_and_media_l.jpg") no-repeat scroll 0 center transparent
+}
+
+
+
+.list_A{
+left:480px;
+position:absolute;
+top:90px;
+width:355px
+}
+
+.list_A li{
+float:left;
+width:100%
+}
+
+.list_A p{
+font-size:80%
+}
+
+.xtra_padding{
+margin-top:20px
+}
+
+.move_left{
+margin-left:-150px
+}
+
+.move_left li a.blue_arrow_link{
+margin-bottom:8px
+}
+
+.inner_list{
+margin:0!important;
+width:500px
+}
+
+.inner_list li{
+border-top:medium none;
+float:left;
+padding-right:20px;
+width:200px
+}
+
+.inner_list li.vertical_line{
+border-left:1px dotted #505050;
+height:82px;
+margin:0;
+padding:10px 20px 0 0;
+width:3px
+}
+
+.blue_arrow_link{
+background:url("../../images/content/owner_center/oc_blue_right_arrow.png") no-repeat scroll 0 4px transparent;
+color:#005abb;
+display:block;
+font-size:80%;
+padding-left:10px
+}
+
+.replacement_parts .list_A .jumppage_cta{
+padding-top:25px
+}
+
+.jumppage_cta{
+padding-bottom:30px;
+padding-left:15px;
+padding-top:58px
+}
+
+.jumppage_cta a{
+background:url("../../images/content/owner_center/oc_blue_right_arrow.png") no-repeat scroll 0 4px transparent;
+color:#005abb;
+display:block;
+font-size:80%;
+padding-left:10px
+}
+
+.commercial_laundry{
+background:url("../../images/content/jumppage/commercial_laundry.jpg") no-repeat scroll 0 0 transparent
+}
+
+.outlet_stores{
+background:url("../../images/content/jumppage/outlet_store.jpg") no-repeat scroll 0 0 transparent
+}
+
+.whole_home{
+background:url("../../images/content/jumppage/whole_home.jpg") no-repeat scroll 0 0 transparent
+}
+
+.replacement_parts{
+background:url("../../images/content/jumppage/replacement_parts.jpg") no-repeat scroll 0 0 transparent
+}
+
+.whole_home .list_A{
+width:500px
+}
+
+.whole_home .list_A>li{
+border-top:1px dotted #505050;
+padding-bottom:10px;
+padding-top:13px
+}
+
+.whole_home .list_A h4{
+margin:0;
+padding:0
+}
+
+#suites_container{
+margin-bottom:20px;
+position:relative
+}
+
+#suites_tabs li{
+float:left;
+list-style:none outside none
+}
+
+#suite1,#suite2,#suite3,#suite4,#suite5{
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+background:url("../../images/content/kitchen_suites/kitchen_suites_bg.jpg") repeat-x scroll 0 0 transparent;
+height:600px;
+margin:45px 0 0;
+padding:0;
+width:960px
+}
+
+#suite1>ul,#suite2>ul,#suite3>ul,#suite4>ul,#suite5>ul{
+clear:left;
+float:left;
+list-style:none outside none;
+margin:0;
+padding:0
+}
+
+#suite1>ul>li,#suite2>ul>li,#suite3>ul>li,#suite4>ul>li,#suite5>ul>li{
+float:left;
+text-align:center
+}
+
+#suite_background{
+height:600px;
+position:absolute;
+width:100%
+}
+
+.background_1{
+background:url("../../images/content/kitchen_suites/kitchen_suites_bg_1.png") no-repeat scroll 18px 18px transparent
+}
+
+.background_2{
+background:url("../../images/content/kitchen_suites/kitchen_suites_bg_2.png") no-repeat scroll 18px 18px transparent
+}
+
+.background_3{
+background:url("../../images/content/kitchen_suites/kitchen_suites_bg_3.png") no-repeat scroll 18px 18px transparent
+}
+
+.background_4{
+background:url("../../images/content/kitchen_suites/kitchen_suites_bg_4.png") no-repeat scroll 18px 18px transparent
+}
+
+#suite_background>ul{
+bottom:10px;
+position:absolute
+}
+
+#suite_background>ul>li{
+float:left;
+height:395px;
+padding-bottom:10px;
+position:relative
+}
+
+.product_listingA{
+margin-bottom:30px;
+margin-top:50px;
+width:155px
+}
+
+.bump_right{
+padding-left:10px
+}
+
+.product_listingB{
+margin-bottom:30px;
+margin-top:50px;
+width:190px
+}
+
+.product_listingA li,.product_listingB li{
+color:#005abb;
+font-size:90%;
+list-style:none outside none;
+text-align:center
+}
+
+.product_listingA>li:first-child .product_listingB>li:first-child{
+margin-bottom:20px
+}
+
+.blue_button{
+background:url("../../images/content/kitchen_suites/blue_btn_bg.png") no-repeat scroll center top transparent;
+bottom:0;
+color:#fff;
+font-size:85%;
+padding:6px 13px;
+position:absolute;
+text-align:center;
+width:80%
+}
+
+.suite_callout{
+color:#fff;
+float:left;
+margin-left:50px;
+margin-top:50px;
+width:400px
+}
+
+.suite_callout em{
+font-style:normal;
+font-weight:bold;
+}
+
+.suite_callout p{
+margin-top:10px
+}
+
+#suite_colors ul{
+border-left:1px dotted #fff;
+color:#fff;
+float:right;
+line-height:1.3em;
+list-style:none outside none;
+margin:0;
+padding:50px 20px 0 12px
+}
+
+.promo_codes p{
+margin-bottom:25px
+}
+
+.promo_codes table{
+outline:1px solid gray;
+width:550px
+}
+
+.promo_codes table th{
+border-bottom:1px dotted #505050;
+font-weight:bold;
+padding-bottom:5px;
+text-align:left;
+text-transform:uppercase
+}
+
+.promo_codes table th:first-child{
+width:100px
+}
+
+.promo_codes tr td{
+padding-bottom:3px;
+padding-top:3px
+}
+
+.promo_codes tr td:first-child{
+text-transform:uppercase
+}
+
+#body_wrap.filter_replacement_program{
+width:465px
+}
+
+.filter_replacement_program hr{
+background-color:#fff;
+border-color:#505050;
+border-style:none none dotted;
+border-width:1px;
+color:#fff;
+display:block;
+margin-bottom:15px;
+margin-top:15px
+}
+
+.filter_replacement_program p{
+line-height:1.8em
+}
+
+#replacement_program_inset{
+background:url("/images/replacement_program_bg.jpg") no-repeat scroll 0 0 transparent;
+height:300px;
+margin-top:20px;
+padding:20px 20px 0 30px;
+width:420px
+}
+
+#replacement_program_inset ul{
+margin-top:20px
+}
+
+#replacement_program_inset ul li{
+font-size:90%;
+line-height:1.8em;
+list-style:disc inside none
+}
+
+#body_wrap.esp_modal{
+width:600px
+}
+
+.esp_modal hr{
+background-color:#fff;
+border-color:#505050;
+border-style:none none dotted;
+border-width:1px;
+color:#fff;
+display:block;
+margin-bottom:15px;
+margin-top:15px
+}
+
+#esp_modal_inset{
+-moz-border-radius:6px 6px 6px 6px;
+background:none repeat scroll 0 0 #dfebf9;
+margin-top:10px;
+padding:20px
+}
+
+#esp_modal_inset p{
+margin-top:10px
+}
+
+#esp_modal_inset p a.blue_arrow{
+background:url("/images/content/owner_center/oc_arrow_blue_right_small.png") no-repeat scroll 0 4px transparent;
+color:#0052ab;
+padding-left:10px;
+padding-right:20px;
+font-weight:bold;
+}
+
+#page.product_list_page .product_detail_set{
+min-height:440px
+}
+
+#homepage_fca{
+position:absolute;
+bottom:0;
+z-index:510;
+width:995px;
+height:160px
+}
+
+#homepage_fca ul{
+float:right
+}
+
+#homepage_fca ul li{
+list-style:none;
+float:left;
+display:inline;
+margin-right:12px
+}
+
+#homepage_fca #sweeps{
+width:411px;
+height:87px;
+background:url("/images/content/homepage_laundry_pair.png") no-repeat scroll 0 0 transparent;
+margin-top:40px;
+text-indent:-999px;
+display:none
+}
+
+#homepage_fca #sweeps a{
+display:block;
+height:100%;
+width:100%
+}
+#homepage_fca #recall p{
+float:right;
+margin-top:10px
+}
+
+#homepage_fca #recall p a{
+background:url(/images/content/global_nav_arrow_yellow.png) no-repeat left center;
+padding-left:10px;
+text-decoration:none;
+color:#000
+}
+
+#homepage_fca .fca_closed{
+z-index:515;
+width:257px;
+height:87px;
+cursor:pointer;
+margin-top:40px
+}
+
+#homepage_fca .fca_closed.maytag_tide{
+background:url(/images/content/homepage_fca_maytagTide_closed.png) no-repeat
+}
+
+#homepage_fca .fca_closed.maytag_tide_over{
+background:url(/images/content/homepage_fca_maytagTide_closed_over.png) no-repeat
+}
+
+#homepage_fca .fca_closed.laundry{
+background:url(/images/content/homepage_fca_laundry_closed.png) no-repeat
+}
+
+#homepage_fca .fca_closed.kitchen{
+background:url(/images/content/homepage_fca_kitchens_closed.png) no-repeat
+}
+
+#homepage_fca .fca_open{
+z-index:511;
+width:257px;
+height:159px;
+background:url(/images/content/homepage_fca_kitchens_open.png) no-repeat;
+margin-top:-127px
+}
+
+#homepage_fca .fca_open.laundry{
+background:url(/images/content/homepage_fca_laundry_open_bg.png) no-repeat
+}
+
+#homepage_fca .maytag_tide ul{
+margin:0;
+padding:0;
+display:block;
+width:30px;
+height:30px;
+padding-left:20px;
+padding-top:60px;
+float:left
+}
+
+#homepage_fca .maytag_tide ul li{
+display:block;
+float:none;
+color:#fff
+}
+
+#homepage_fca .maytag_tide ul li a{
+font-size:80%;
+background:url(/images/content/nav_arrow_yellow.png) no-repeat 5px 6px;
+text-decoration:none;
+color:#FFF;
+height:auto;
+padding:3px 3px 3px 15px;
+display:block;
+width:90px;
+font-weight:bold;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#homepage_fca .fca_open ul li a:hover{
+background-color:#00356f
+}
+
+#homepage_fca .fca_open ul{
+margin:0;
+padding:0;
+display:block;
+width:170px;
+height:150px;
+padding-left:15px;
+padding-top:15px;
+float:left
+}
+
+#homepage_fca .fca_open ul li{
+display:block;
+float:none;
+color:#fff
+}
+
+#homepage_fca .fca_open ul li a{
+font-size:75%;
+background:url(/images/content/global_nav_arrow_yellow.png) no-repeat 5px 6px;
+text-decoration:none;
+color:#FFF;
+height:auto;
+padding:3px 3px 3px 15px;
+display:block;
+width:90px;
+font-weight:bold;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#homepage_fca .fca_open ul li a:hover{
+background-color:#00356f
+}
+
+#homepage_fca .fca_open ul li.header{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:150%;
+line-height:100%;
+margin-bottom:10px;
+font-weight:700
+}
+
+#homepage_fca .fca_open ul li.cat_header{
+color:#fbca34;
+font-size:75%;
+margin-bottom:3px
+}
+
+#mainnav_laundry_subcontent{
+display:none;
+position:absolute;
+width:170px;
+height:242px;
+right:1px;
+top:30px;
+padding-left:20px;
+background:url(/images/content/bg_mainnav_laundry_2_bravos.png) no-repeat -5px 75px
+}
+
+#mainnav_laundry_subcontent img{
+float:left;
+margin-left:-20px;
+margin-right:8px;
+padding:0
+}
+
+#mainnav_laundry_subcontent a.tide_link{
+background:0
+}
+
+#mainnav_laundry_subcontent a.tide_link:hover{
+background:0;
+color:#fecd34
+}
+#mainnav_laundry_subcontent p{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:9px;
+color:#b3ceea;
+line-height:17px;
+text-transform:uppercase;
+margin-top:10px;
+*margin-top:4px;
+margin-bottom:4px
+}
+
+#header_main_nav li.laundry ul{
+width:192px;
+background:url(/images/bg_mainnav_laundry.png) no-repeat top left;
+*margin-top:0px;
+*margin-left:-114px
+}
+html[lang=fr] #header_main_nav li.laundry ul{
+width:208px;
+background:url(/images/bg_mainnav_laundry_FR.png) no-repeat top left;
+*margin-top:0px;
+*margin-left:-114px;
+height:352px;
+}
+
+#header_main_nav li.kitchen ul{
+*top:-5px;
+*margin-top:48px;
+*margin-left:-262px
+}
+
+#header_main_nav li.kitchen ul>li,#header_main_nav li.accessories ul>li{
+*margin-top:-35px
+}
+
+#header_main_nav li.accessories ul li{
+width:776px
+}
+
+#header_main_nav li.accessories ul{
+*top: -5px;
+*margin-top:48px;
+*margin-left:-504px
+}
+#header_main_nav li.solution ul{background:url(/images/bg_mainnav_solution.png) no-repeat top left;width:172px;height:168px;*margin: 0 0 0 -85px;}/*margin: 0 0 0 -85px;*/
+
+#header_main_nav li.ownercenter ul#leftPromos{
+float:left;
+position:relative;
+width:auto
+}
+
+#header_main_nav li.ownercenter ul#rightPromos{
+float:left;
+position:relative;
+width:auto
+}
+
+#header_main_nav li li a.filter_finder{
+width:172px;
+height:119px;
+float:left;
+padding:6px 0 0 0;
+background:url(/images/content/global_nav_filter_finder.png) no-repeat 0 0;
+font-size:22px !important;
+}
+html[lang=fr] #header_main_nav li li a.filter_finder{
+padding: 0;
+background-position: 0 16px;
+height: 140px;
+}
+/*
+
+#header_main_nav li li a.main_nav_headline_textA{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-weight:bold;
+font-size:140%;
+text-transform:none;
+letter-spacing:-1px;
+line-height:100%
+}
+
+#header_main_nav li li a.main_nav_headline_textA:hover{
+color:#fecd34
+}
+
+#header_main_nav li li a.main_nav_headline_textB{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-weight:bold;
+font-size:140%;
+text-transform:none;
+letter-spacing:-1px;
+line-height:100%
+}
+
+#header_main_nav li li a.main_nav_headline_textB:hover{
+color:#fecd34
+}
+*/
+
+#header_main_nav li li a.hidden{
+display:none
+}
+
+#header_main_nav li li a.oc_manuals.display,#header_main_nav li li a.oc_registration.display,#header_main_nav li li a.oc_service.display,#header_main_nav li li a.oc_filters.display{
+display:block
+}
+
+#header_main_nav li li a.oc_manuals{
+*margin-top:-200px
+}
+
+#header_main_nav li li a.oc_service{
+width:170px;
+height:126px;
+float:right;
+background:url(/images/content/global_nav_menu_4_image_3.png) no-repeat;
+margin-top:-190px;
+*margin-top:-200px;
+margin-right:5px;
+padding-top:7px
+}
+
+#header_main_nav li li a.oc_registration{
+width:170px;
+height:126px;
+float:right;
+background:url(/images/content/global_nav_menu_4_image_2.png) no-repeat;
+margin-top:-55px;
+*margin-top:-65px;
+margin-right:5px;
+padding-top:7px
+}
+
+#header_main_nav li li a.oc_filters{
+width:170px;
+height:126px;
+float:right;
+background:url(/images/content/global_nav_menu_4_image_4.png) no-repeat;
+margin-top:-55px;
+*margin-top:-65px;
+margin-right:5px;
+padding-top:7px
+}
+
+#header_main_nav li li a.oc_manuals_logged_in{
+width:170px;
+height:126px;
+float:right;
+background:url(/images/content/global_nav_menu_4_image_1b.png) no-repeat;
+margin-top:-190px;
+*margin-top:-200px;
+margin-right:5px;
+padding-top:7px
+}
+
+#header_main_nav li li a.oc_registration_logged_in{
+width:170px;
+height:126px;
+float:right;
+background:url(/images/content/global_nav_menu_4_image_2b.png) no-repeat;
+margin-top:-55px;
+*margin-top:-65px;
+margin-right:5px;
+padding-top:7px
+}
+
+#header_main_nav ul.top li.top a#kitchen_btn{
+cursor:default
+}
+
+#header_main_nav ul li.top ul li.header{
+border-bottom:1px solid #535353;
+bottom:0;
+color:#FFF;
+display:block;
+font-size:12px;
+font-weight:bold;
+height:34px;
+line-height:12px;
+padding-top:10px;
+position:relative;
+text-transform:uppercase;
+vertical-align:bottom;
+width:160px
+}
+
+#header_main_nav ul li.top ul li.header.singleline{
+height:18px;
+padding-top:17px;
+cursor:default
+}
+
+#header_main_nav ul li.top ul li.header{
+height:28px;
+padding-top:7px;
+cursor:default
+}
+
+#header_main_nav ul li.top ul li.segment_list_after_item{
+border-bottom:1px solid #3088d2;
+padding-bottom:8px;
+margin-bottom:8px;
+width:160px
+}
+
+#header_main_nav ul.top li.top{
+color:#fff;
+text-transform:uppercase;
+text-shadow:1px 1px 0 #333;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-weight:bold!important;
+cursor:default;
+position:relative;
+}
+
+#header_main_nav ul.top li.top:hover{
+color:#002e5f;
+text-shadow:none;
+}
+
+#header_sub_nav_1 ul li a,#header_sub_nav_2 ul li a{
+background:url(/images/content/global_nav_li_border.jpg) no-repeat middle right;
+color:#d0d0d0;
+margin-right:8px;
+padding-right:10px;
+font-size: 10px;
+}
+
+#miniShopCartLeftCorner {
+	font-size: 10px;
+}
+
+#miniShopCartBody span.text {
+	font-size: 10px;
+}
+
+#header_main_nav li li a:active{
+text-decoration:none;
+background-color:none
+}
+
+#footer li.no_link{
+font-weight:bold;
+padding: 3px 10px;
+font-size: 9px;
+}
+
+#footer-menu li a{
+line-height:110%;
+padding:3px 10px 3px
+}
+
+#footer-menu ul li a:hover{
+color:#FFF;
+text-decoration:none
+}
+
+#product_list_masthead .masthead-tagline{
+width:700px;
+letter-spacing:-0.8px;
+*font-size:17px
+}
+
+#product_list_masthead .masthead-title{
+margin-bottom:5px
+}
+
+#product_list_masthead .masthead-disclaimer-threelines,
+#product_list_masthead .masthead-disclaimer{
+    font-size: 9px;
+    left: 380px;
+    position: absolute;
+    top: 150px;
+}
+
+#header a:hover,#header a:focus{
+text-decoration:none
+}
+
+dl dd{
+margin-left:0
+}
+
+.big_one{
+font-size:15px
+}
+
+.big_one.top{
+vertical-align:40%
+}
+
+.tm{
+font-size:15px;
+margin-left:-5px;
+vertical-align:0
+}
+
+.sup_main_headline{
+font-size:50%!important;
+*vertical-align:top;
+font-weight:normal!important
+}
+
+.sup_sub_headline{
+font-size:60%!important;
+*vertical-align:top;
+font-weight:normal!important
+}
+
+.sup_text{
+font-size:80%;
+vertical-align:30%;
+*vertical-align:top;
+font-weight:normal
+}
+
+#page.product_detail #product_tabs #overview .product_description sup{
+font-size:80%;
+vertical-align:30%;
+*vertical-align:top;
+font-weight:normal
+}
+
+.tm_sub_headline{
+font-weight:normal;
+font-size:60%;
+vertical-align:20%;
+*vertical-align:top
+}
+
+.tm_main_headline{
+font-weight:normal!important;
+font-size:60%!important;
+*vertical-align:top
+}
+
+#modal{
+
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:11px;
+position:relative;
+width:960px
+}
+
+#modal td.privacyPolicyText strong{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#modal sup{
+font-size:125%;
+vertical-align:-2px
+}
+
+#modal div{
+margin-bottom:0;
+font-size:13px;
+margin-bottom:3px
+}
+
+#modal p{
+margin-top:0;
+margin-bottom:10px;
+width:390px
+}
+
+#modal a{
+color:#005abb;
+text-decoration:none
+}
+
+#modal a:hover{
+text-decoration:underline
+}
+
+#main_content_wrapper #modal div#privacy_links a{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#main_content_wrapper #modal div{
+font-size:10px
+}
+
+#main_content_wrapper #modal div.normal-title{
+font-weight:normal
+}
+
+#main_content_wrapper #modal p{
+width:450px
+}
+
+#main_content_wrapper #modal .privacyPolicyText{
+width:450px
+}
+
+#main_content_wrapper #modal div#privacy_links{
+font-weight:normal
+}
+
+#modal .orange{
+color:#f2a116
+}
+
+#modal span{
+font-style:italic
+}
+
+#modal #modal_table{
+width:370px
+}
+
+#modal #modal_table div{
+padding:10px;
+font-size:10px;
+margin:.5px 0
+}
+
+#modal #modal_table div a{
+color:#666
+}
+
+#modal .left_col{
+width:136px;
+float:left;
+border-right:1px dotted
+}
+
+#modal .right_col{
+width:190px;
+float:left
+}
+
+#modal .odd_row{
+background:#e4e4e4
+}
+
+#modal .even_row{
+background:#ececec
+}
+
+#modal div .no_bold{
+font-weight:normal
+}
+
+#modalImageHolder{
+background:#CCC;
+width:140px;
+height:137px;
+border:1px solid;
+position:absolute;
+top:0;
+left:0;
+overflow:hidden;
+display:none
+}
+
+#modal div #imageClose{
+background:#FFF;
+height:18px;
+width:98%;
+text-align:right;
+margin-bottom:0;
+padding-right:2%
+}
+
+#page.contact_us_page .Placeholder #left_module .chat_box p{
+width:170px
+}
+
+.landing_page .tabbed_right_col #espot_offer div {padding: 15px 0 0 35px;margin-top: 15px;}
+
+.SC_Accessories #overview_column_3 #espot_offer{
+bottom:90px;
+position:absolute;
+right:315px
+}
+
+.SC_Accessories #overview_column_3 #espot_offer.new_position{
+bottom:60px;
+position:absolute;
+right:350px!important
+}
+
+.landing_page .tabbed_right_col #espot_offer div p,.landing_page .tabbed_right_col #espot_offer.new_position div p{
+font-size:10px;
+color:#505050;
+padding-bottom:12px;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.landing_page .tabbed_right_col #espot_offer{
+margin-left:O
+}
+
+.landing_page .tabbed_right_col #espot_offer div+div p,.SC_Accessories #overview_column_3 #espot_offer div+div p{
+padding-bottom:0;
+border-bottom:0
+}
+
+body #header_main_nav li.accessories ul{
+background:url(/images/bg_mainnav_filtes.png) 0 0 no-repeat;
+height:195px;
+text-transform:none;
+border-radius:0 0 5px 5px;
+-moz-border-radius:0 0 5px 5px;
+-webkit-border-radius:0 0 5px 5px;
+/*behavior: url(/PIE.htc);*/
+}
+html[lang=fr] body #header_main_nav li.accessories ul{
+background:url(/images/bg_mainnav_filtes_FR.png) 0 0 no-repeat;
+height: 279px;
+}
+html[lang=fr] body #header_main_nav li.accessories ul li ul{
+background: none;
+}
+
+.top .filter_finder #espot_offer div{
+text-transform:none;
+width:171px
+}
+
+
+
+.top .filter_finder #espot_offer div h2{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:12px;
+font-weight:normal;
+color:#FFF;
+padding:0;
+font-weight:bold;
+text-shadow:-1px 0 1px #000
+}
+
+.top .filter_finder #espot_offer div p{
+font-size:10px;
+color:#b3cdea;
+padding-bottom:15px;
+border-bottom:1px solid #2475c3;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+
+.top .filter_finder #espot_offer+li a{
+display:block;
+margin-top:10px;
+font-size:150%;
+height:230px
+}
+
+.top .filter_finder #espot_offer a{
+background:0
+}
+
+.top .filter_finder #espot_offer a:hover{
+background:0
+}
+
+#body_wrap.nonflash{
+width:100%;
+position:relative
+}
+
+.nonflash #mainContent{
+width:100%;
+position:relative;
+height:625px
+}
+
+.nonflash #homepage_fca{
+position:absolute;
+bottom:0;
+left:11%;
+z-index:510
+}
+
+.nonflash #mainContent .mainPromo{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:1
+}
+
+.nonflash #mainContent .mainPromo.current{
+z-index:3
+}
+
+.nonflash #mainContent .mainPromo.previous{
+z-index:2
+}
+
+.nonflash #mainContent .mainPromo.bravos{
+background:url("../../images/content/frame2.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo.gemini{
+background:url("../../images/content/frame3.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo.ice20{
+background:url("../../images/content/frame4.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo.jetclean{
+background:url("../../images/content/frame5.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo.maxima{
+background:url("../../images/content/frame6.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo.dependability{
+background:url("../../images/content/frame1.jpg") no-repeat scroll center top transparent
+}
+
+.nonflash #mainContent .mainPromo#frame1 .linkOut:hover{
+background-position:0 -41px
+}
+
+.nonflash #mainContent .mainPromo#frame1 .linkOut{
+background:url("../../images/content/viewProduct.png") no-repeat scroll left 0 transparent;
+bottom:180px;
+cursor:pointer;
+height:39px;
+left:50%;
+margin:0 0 0 115px;
+position:absolute;
+width:167px
+}
+
+.nonflash #mainContent .mainPromo#frame2 .linkOut:hover{
+background-position:0 -41px
+}
+
+.nonflash #mainContent .mainPromo#frame2 .linkOut{
+background:url("../../images/content/viewProduct.png") no-repeat scroll left 0 transparent;
+bottom:211px;
+height:39px;
+left:50%;
+margin:0 0 0 115px;
+position:absolute;
+width:135px;
+cursor:pointer
+}
+
+.nonflash #mainContent .mainPromo#frame3 .linkOut:hover{
+background-position:0 -40px
+}
+
+.nonflash #mainContent .mainPromo#frame3 .linkOut{
+background:url("../../images/content/viewDemo.png") no-repeat scroll left 0 transparent;
+bottom:190px;
+cursor:pointer;
+height:39px;
+left:50%;
+margin:0 0 0 115px;
+position:absolute;
+width:135px
+}
+
+.nonflash #mainContent .mainPromo#frame4 .linkOut:hover{
+background-position:0 -40px
+}
+
+.nonflash #mainContent .mainPromo#frame4 .linkOut{
+background:url("../../images/content/viewDemo.png") no-repeat scroll left 0 transparent;
+bottom:211px;
+height:39px;
+left:50%;
+margin:0 0 0 115px;
+position:absolute;
+width:135px;
+cursor:pointer
+}
+
+.nonflash #mainContent .mainPromo#frame5 .linkOut:hover{
+background-position:0 -38px
+}
+
+.nonflash #mainContent .mainPromo#frame5 .linkOut{
+background:url("../../images/content/experienceMaxima.png") no-repeat scroll left 0 transparent;
+bottom:211px;
+height:39px;
+left:50%;
+margin:0 0 0 115px;
+position:absolute;
+width:215px;
+cursor:pointer
+}
+
+.nonflash #mainContent .mainPromo#frame6 .linkOut:hover{
+background-position:0 -46px
+}
+
+.nonflash #mainContent #frame6.mainPromo .linkOut{
+background:url("../../images/content/visitFacebook.png") no-repeat scroll left -6px transparent;
+bottom:210px;
+cursor:pointer;
+height:35px;
+left:50%;
+margin:0 0 20px 70px;
+position:absolute;
+width:320px
+}
+
+.nonflash #usercontrols{
+height:100px;
+left:130px;
+position:absolute;
+top:20px;
+width:256px;
+z-index:4
+}
+
+.nonflash #usercontrols ul{
+float:left;
+margin:3px 0 0 5px
+}
+
+.nonflash #usercontrols ul li{
+background:none repeat scroll 0 0 #ededed;
+border:2px solid #000;
+cursor:pointer;
+float:left;
+height:7px;
+margin:0 3px 0 0;
+width:16px;
+opacity:.5;
+filter:alpha(opacity=50)
+}
+
+.nonflash #usercontrols ul li.current,.nonflash #usercontrols ul li:hover{
+opacity:1;
+filter:alpha(opacity=100)
+}
+
+.nonflash #usercontrols #playButton{
+background:url("../../images/content/playBtn.png") no-repeat scroll right 3px transparent
+}
+
+.nonflash #usercontrols #pauseButton{
+background:url("../../images/content/pauseBtn.png") no-repeat scroll right 3px transparent
+}
+
+.nonflash #usercontrols #pauseButton,.nonflash #usercontrols #playButton{
+color:#000;
+cursor:pointer;
+display:none;
+font-size:10px;
+font-weight:bold;
+left:0;
+padding:1px 15px 0 0;
+position:absolute;
+top:0;
+opacity:1;
+filter:alpha(opacity=100)
+}
+
+.nonflash #usercontrols #pauseButton:hover,.nonflash #usercontrols #playButton:hover{
+opacity:.4;
+filter:alpha(opacity=40)
+}
+
+.nonflash #usercontrols #scrolling{
+position:absolute;
+top:15px;
+width:200px
+}
+
+.nonflash #usercontrols #scrollLeft,.nonflash #usercontrols #scrollRight{
+float:left;
+cursor:pointer
+}
+
+.nonflash #usercontrols #pauseButton.active,.nonflash #usercontrols #playButton.active{
+display:block
+}
+
+.nonflash #usercontrols #scrolling #title{
+color:#fff;
+font-family:inherit;
+font-weight:bold;
+left:170px;
+position:absolute;
+width:100px
+}
+
+.nonflash #usercontrols #scrolling #title span{
+position:absolute;
+top:0;
+left:0;
+display:none
+}
+
+.nonflash #usercontrols #scrolling #title span.current{
+display:block
+}
+
+#water_filter_suscrip{
+position:relative;
+display: none;
+}
+
+#water_filter_suscrip div.section{
+margin-bottom:10px
+}
+
+#water_filter_suscrip div.section h2{
+font-size:14px
+}
+
+#water_filter_suscrip div.section p{
+color:#8c8c8c
+}
+
+#water_filter_suscrip div.section a{
+color:#5e5e60;
+padding-left:9px;
+background:url("/images/img_bg_left_arrow_blue.png") no-repeat scroll left 3px transparent
+}
+
+.month_maytag{
+position:absolute;
+bottom:20px;
+right:300px;
+width:260px
+}
+
+.month_maytag img{
+float:left
+}
+
+
+.month_maytag p{
+color:#8c8c8c
+}
+
+#page.product_detail div.column_wrap div#overview_column_2{
+margin-right:30px;
+}
+
+.tabbed_right_col a.link{
+background:url("/images/content/owner_center/oc_blue_right_arrow.png") no-repeat scroll 0 3px transparent;
+color:#505050;
+display:block;
+font-size:75%;
+font-weight:bold;
+margin-top:15px;
+padding-left:10px;
+text-decoration:none;
+text-transform:uppercase
+}
+
+#header_main_nav ul.top .last.ownercenter.top .oc_service{
+background:url("/images/content/global_nav_menu_4_image_1.png") no-repeat scroll 0 0 transparent;
+float:right;
+height:126px;
+margin-right:18px;
+margin-top:-190px;
+padding-top:7px;
+width:170px
+}
+
+#header_main_nav ul.top .oc_filters{
+background:url("/images/content/global_nav_menu_4_image_2.png") no-repeat scroll 0 0 transparent;
+float:right;
+height:126px;
+margin-right:18px;
+margin-top:-70px;
+padding-top:10px;
+width:170px
+}
+
+#header_main_nav li.ownercenter ul{
+margin-left:0;
+position:absolute;
+width:384px;
+*right:-219px;
+*top:43px;
+padding-top:0
+}
+
+#header_main_nav ul.top li.last ul li{
+margin-left:5px;
+overflow:hidden
+}
+
+#header_main_nav ul.top li.last ul li ul li.overview{
+margin-bottom:10px
+}
+
+#header_main_nav ul.top li.last ul li ul{
+background:none repeat scroll 0 0 transparent;
+float:left;
+height:auto;
+left:0;
+overflow:hidden;
+padding:10px 0 0 10px;
+position:relative;
+right:0;
+*right:0;
+top:0;
+*top:0;
+width:181px;
+*margin:0px !important;
+}
+
+#header_main_nav ul.top li.last ul.right-box{
+padding:10px 0 0 18px;
+width:175px;
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li{
+width:100%;
+padding:7px 0;
+border-bottom:1px solid #3088d2
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li.right-box-last{
+border:0
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box a.oc_registration.main_nav_headline_textA{
+clear:both;
+margin:0;
+padding-top:10px;
+width:100%;
+*margin-top:0
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box a.oc_registration.main_nav_headline_textB{
+clear:both;
+margin:0;
+padding-top:10px;
+width:100%;
+*margin-top:0
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li a{
+background:none repeat scroll 0 0 transparent;
+font-size:16px;
+height:auto;
+margin:0;
+padding:0 0 10px;
+width:auto
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li a.offer_text{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:16px;
+font-weight:normal;
+color:#FFF;
+margin-left:0;
+font-weight:bold;
+text-shadow:-1px 0 1px #000
+}
+
+#header_main_nav ul.top li.last ul li a sup{
+line-height:5px
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li a.thickbox{
+font-size:8px;
+display:inline;
+font-weight:normal
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li a.thickbox:hover{
+color:#fecd34
+}
+
+#header_main_nav ul.top li.last ul li ul.right-box li{
+	border-bottom: none;
+}
+
+#header_main_nav ul.top li.last ul li ul li span{
+color:#fff;
+display:block;
+font-size:8px;
+font-weight:normal;
+padding:0 40px 8px 0
+}
+
+body.iframe #sweepstakes{
+padding:0 0 0 18px
+}
+
+#sweepstakes{
+margin:0 auto;
+padding:100px;
+0 0 18px;
+width:555px
+}
+
+#sweepstakes h2{
+color:#505050;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:18px;
+padding:15px 0 20px
+}
+
+#sweepstakes p{
+padding:0 0 20px
+}
+
+#sweepstakes ol,#sweepstakes ol li{
+list-style:decimal outside none
+}
+
+#sweepstakes ol li p{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:12px;
+margin:10px 0;
+text-align:justify
+}
+
+.sweep_definition{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-weight:bold;
+font-size:14px
+}
+
+a.sweep_link{
+text-decoration:none;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#product_list_masthead #needs_tab.tabdiv .text-bullet{
+width:330px
+}
+
+#middleContent.middleContent{
+*width:960px;
+*margin:0 auto
+}
+
+/*.first_right_box{
+display:none!important
+}*/
+
+#header_main_nav li.ownercenter ul{
+background:url("/images/bg_mainnav_ownercenter1.png") no-repeat scroll 0 0 transparent
+}
+/* OWNER CENTER CSS */
+
+#main_content{
+height:auto;
+float:left;
+}
+.owner_center_home a{
+color:#005abb
+}
+a.tbd {
+    background: url("../../images/content/owner_center/oc_blue_right_arrow.png") no-repeat scroll 0 6px rgba(0, 0, 0, 0);
+    color: #646464;
+    display: inline-block;
+    padding: 2px 0 2px 10px;
+}
+.owner_center_home a:hover{
+color:#09f
+}
+
+#page.product_registration_page div.text-information-box.column_2{
+margin-left:66px!important
+}
+
+#page.product_registration_page div.text-information-box.column_2 #sidebar{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#page.product_registration_page div.text-information-box.column_2 #sidebar p{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:10px;
+line-height:15px!important
+}
+
+#content_container.owner_center{
+background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 46px 0 20px 50px;
+    width: 908px;
+}
+
+#content_container.owner_center a.print_cta{
+background:url(/images/content/print_icon.png) no-repeat 0 0;
+padding-left:18px
+}
+
+#content_container.owner_center p.welcome{
+font-size:10px;
+color:#505050;
+margin:30px 95px 0 30px
+}
+
+#content_container.owner_center p.welcome_line2{
+margin-top:10px;
+margin-bottom:20px
+}
+
+#content_container.owner_center p.welcome_top_margin{
+margin-top:42px
+}
+
+#content_container.owner_center p{
+color:#505050;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:11px;
+line-height:140%
+}
+
+#content_container.owner_center p.appt_top{
+padding:20px 150px 20px 0;
+border-top:1px dotted #505050;
+border-bottom:1px dotted #505050;
+margin-top:10px
+}
+#page.oc_search #main_content.owner-center{
+height:auto
+}
+#search_again_form{
+margin-top:10px
+}
+
+#need_help{
+width:180px;
+margin-top:-6px
+}
+
+#need_help h2{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size:220%
+}
+
+#need_help p{
+margin-top:15px
+}
+
+#need_help hr{
+color:#fff;
+background-color:#fff;
+border:1px dotted #505050;
+border-style:none none dotted;
+margin-top:20px;
+margin-bottom:20px
+}
+
+.owner_center_home #backdrop{
+    float: left;
+    width: 100%;
+}
+.owner_center_home li>a,.owner_center_home li>p{
+font-size:10px
+}
+.owner_center_home ul.left{
+border-right: 1px dotted #505050;
+    float: left;
+    margin-right: 40px;
+    padding-right: 60px;
+    width: 360px;
+}
+.owner_center_home .product_registration_land ul.left{border:none;}
+.owner_center_home ul.left li{
+padding:15px 0 18px 63px;
+border-top:1px dotted #505050
+}
+
+.owner_center_home ul.left li.first{
+padding-top:0;
+border-top:0;
+margin-bottom:3px
+}
+
+.owner_center_home ul.left li a{
+padding-left:8px;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 3px;
+color:#646464;
+display:block;
+margin-top:5px
+}
+
+.owner_center_home ul.left li a:hover{
+color:#09f;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 3px
+}
+
+.owner_center_cta{
+padding-left:10px;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 5px
+}
+
+.block_style_a.owner_center_cta{
+padding-left:10px;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 5px;
+color:#005abb
+}
+
+.owner_center_home ul.right{
+   float: left;
+    margin: 0 0 0 25px;
+    width: 375px;
+}
+
+.owner_center_home ul.right li {
+    background: url("../../images/content/owner_center/oc_large_gray_circle_right.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    margin-top: 0px;
+    padding: 3px 0 20px 60px;
+}
+
+.owner_center_home ul.right a{
+color: #505050;
+}
+
+.owner_center_home ul.right a:hover{
+color:#09f
+}
+
+.owner_center_home ul.right a img{
+margin-top:12px;
+}
+
+.owner_center_home ul.right li:first-child{
+ border-bottom: medium none;
+}
+
+.owner_center_home .left li.first,.owner_center_home .left li{
+background:url("/images/content/owner_center/oc_large_gray_circle_right.png") no-repeat 0 0
+}
+
+.owner_center_home .left li{
+background-position:0 16px
+}
+
+.owner_center_home #bottom_links{
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 0 0 30px;
+    width: 928px;
+}
+
+.owner_center_home #bottom_links>ul>li{
+border-left:1px dotted #848484;
+float:left;
+height:120px;
+margin:20px 0;
+padding:0 30px;
+position:relative;
+width:350px
+}
+
+.owner_center_home .product_registration_land #bottom_links>ul>li{width:215px;}
+
+.owner_center_home #bottom_links>ul>li.first{
+border:0
+}
+
+.owner_center_home #bottom_links > ul > li:first-child {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    margin-left: 0;
+}
+
+.owner_center_home #bottom_links > ul > li.first > h4 {
+    background-position: 0 -160px;
+}
+.owner_center_home #bottom_links > ul > li > h4 {
+	background: none;
+    height: 20px;
+    margin-bottom: 10px;
+    text-indent: 0;
+    width: 184px;
+}
+[lang=fr] .owner_center_home #bottom_links > ul > li > h4 {
+    text-indent: 0;
+	background: none;
+	width: 380px;
+}
+.owner_center_home #bottom_links .bottom_links_row2{
+margin-top:10px
+}
+
+.owner_center_home #bottom_links>ul>li>a{
+display:block;
+padding:2px 0 2px 10px;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 6px;
+cursor:pointer
+}
+
+.owner_center_home #bottom_links>ul>li>a:hover{
+color:#09f;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 6px
+}
+
+.owner_center_home .alast{
+margin-bottom:10px
+}
+
+.owner_center_home .settlement{
+padding-top:10px;
+border-top:1px dotted #505050
+}
+
+.owner_center_home .a_callout_last{
+    background: url("../../images/content/owner_center/oc_blue_right_arrow.png") no-repeat scroll 0 6px rgba(0, 0, 0, 0);
+    bottom: 2px;
+    color: #646464;
+    padding: 2px 0 2px 10px;
+    position: absolute;
+}
+
+.owner_center_other .left li.first,.owner_center_other .left li,.owner_center_other ul.right li{
+background:0;
+padding:0
+}
+
+.owner_center_other ul.left li.first span{
+width:80px;
+float:left;
+font-size:10px;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+display:inline;
+margin-top:4px;
+text-align:right;
+margin-right:8px;
+color:#505050
+}
+
+.owner_center_other ul.left li.first span.remember{
+clear:none
+}
+
+.owner_center_other ul li p.forgot_password a{
+padding-left:8px;
+background:url(../../images/content/owner_center/oc_blue_right_arrow.png) no-repeat 0 3px;
+color:#505050;
+display:block;
+margin-top:5px;
+float:left;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+.owner_center_other ul li p.forgot_password a:hover{
+color:#005abb
+}
+
+.owner_center_other #backdrop {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+}
+
+.owner_center_other #backdrop form{
+margin-top:20px
+}
+
+.owner_center_other #backdrop form input[type=text]{
+width:175px;
+margin-bottom:7px
+}
+
+.owner_center_other #backdrop form input[type=checkbox]{
+float:left
+}
+
+.owner_center_other ul li img{
+border:0;
+margin-top:18px;
+margin-left:-4px
+}
+
+.owner_center_other #content_container.owner_center{
+float: left;
+padding: 0 0 20px 50px;
+}
+.owner_center_other #content_container.owner_center h3 {
+    text-indent: inherit;
+}
+.owner_center_other ul.left{
+float:left;
+margin-right:20px;
+width:300px
+}
+
+.owner_center_other #backdrop>ul{
+margin-top: 30px;
+padding: 0 30px;
+}
+
+.owner_center_other #backdrop>ul.registration{
+padding:25px 30px 0 30px
+}
+
+.owner_center_other #vertical_rule{
+border-right:1px dotted #505050;
+float:left;
+height:125px;
+margin-top:60px;
+width:5px
+}
+
+.owner_center_other #backdrop.registration #vertical_rule{
+border-right:1px dotted #505050;
+float:left;
+height:172px;
+margin-top:30px;
+width:5px
+}
+
+.owner_center_other ul.right{
+float:left;
+margin:0;
+width:330px;
+margin-left:30px
+}
+
+.owner_center_other ul.left li{
+padding:30px 0 0 0
+}
+
+.owner_center_home ul.left li.first{
+padding-bottom:20px;
+padding-top: 1px;
+}
+
+.owner_center_other ul.left li a{
+padding-left:0;
+background:0;
+color:#005abb;
+display:inline-block;
+margin-top:0
+}
+
+.owner_center_other ul.left li a:hover{
+background:0
+}
+
+.owner_center_other #bottom_links{
+background:0;
+height:auto;
+margin-top:30px;
+padding:0;
+width:870px;
+float:none
+}
+
+.owner_center_other #bottom_links>ul>li{
+height:auto;
+margin-bottom:7px
+}
+
+.owner_center_other #bottom_links h2{
+font-family:"Verdana", Geneva, sans-serif;
+font-size:22px;
+margin-left:29px;
+padding-top:15px
+}
+
+#content_container.owner_center p.bottom_margin{
+margin-bottom:8px
+}
+
+#content_container.owner_center p.hours_phone{
+font-weight:bold;
+line-height:17px
+}
+
+.owner_center_other #service_footer{
+width:100%;
+margin:0 auto
+}
+
+.owner_center_register_product #main_content{
+height:auto
+}
+
+.owner_center_register_product #content_container{
+height:550px;
+color:#505050
+}
+
+.owner_center_register_product #intro{
+display:inline;
+float:left;
+margin-top:45px;
+margin-left:60px;
+width:470px;
+height:185px;
+padding:35px 30px 0 55px;
+background:url(../../images/content/owner_center/oc_register_product_oval_bg.png) no-repeat
+}
+
+.owner_center_register_product #intro a,.owner_center_register_product .block_style_a{
+display:block;
+color:#005abb;
+padding-left:13px;
+background:url(../../images/content/owner_center/oc_arrow_blue_right_small.png) no-repeat 0 5px;
+margin-top:10px
+}
+
+.owner_center_register_product #intro p{
+margin-bottom:20px
+}
+
+.owner_center_register_product #sidebar{
+position:absolute;
+width:200px
+}
+
+.owner_center_register_product #sidebar h2{
+font-size:185%
+}
+
+.owner_center_register_product #sidebar h5{
+margin-top:20px;
+font-weight:bold;
+font-size:90%
+}
+
+.owner_center_register_product #sidebar p{
+font-size:90%
+}
+
+.owner_center_register_product #form_area{
+display:inline;
+float:left;
+margin-top:45px;
+margin-left:60px;
+width:570px;
+height:100%
+}
+
+.owner_center_register_product #form_area #top{
+float:left;
+width:100%;
+height:10px;
+background:url(../../images/content/owner_center/oc_product_registration_oval_top.png) no-repeat
+}
+
+.owner_center_register_product #form_area #main_form{
+float:left;
+width:100%;
+height:auto;
+background:url(../../images/content/owner_center/oc_product_registration_oval_mid.png) repeat-y;
+padding-left:50px
+}
+
+.owner_center_register_product #form_area #bottom{
+float:left;
+width:100%;
+height:10px;
+background:url(../../images/content/owner_center/oc_product_registration_oval_bottom.png) no-repeat
+}
+
+.owner_center_schedule_service #main_content{
+height:auto
+}
+
+#service_footer {
+    height: 160px;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 960px;
+}
+
+
+#service_footer #left_border{
+width:17px;
+height:100%;
+float:left;
+display:inline;
+background:url(../../images/content/owner_center/oc_service_footer_left_bg.png) no-repeat;
+position:relative;
+left:17px;
+}
+
+#service_footer #right_border{
+width:17px;
+height:100%;
+float:left;
+display:inline;
+}
+
+#service_footer > ul {
+    border-top: 0px dotted #616161;
+    float: left;
+    height: auto;
+    width: 878px;
+}
+
+#service_footer > ul > li {
+    background: url("../../images/content/owner_center/oc_service_footer_vertical_div.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Tahoma,Verdana,sans-serif;
+    font-size: 10px;
+    height: 135px;
+    padding: 25px;
+    width: 290px;
+}
+
+
+#service_footer .left_most_column {
+    background: none repeat scroll 0 50% transparent;
+    padding: 25px 15px 0 25px;
+    width: 300px;
+}
+
+#service_footer .right_most_column {
+    height: 200px;
+    padding: 25px 0 0 25px;
+    width: 245px;
+}
+.oc_schedule_repair #service_footer h3 {
+    font-family: arial,sans;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.oc_schedule_repair #service_footer > ul > li {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    height: auto;
+}
+.oc_schedule_repair #service_footer .left_most_column {
+    padding: 25px;
+    width: 290px;
+}
+#service_footer p.hours{
+margin-top:15px
+}
+
+#vertical_rule{
+width:5px;
+height:345px;
+*height:325px;
+margin-top:35px;
+float:left;
+border-right:1px dotted #505050
+}
+
+#page.owner_center #oc_content{
+margin-top:0
+}
+
+#modal_window_search_tips{
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode",Verdana,sans-serif;
+font-size:10px;
+font-weight:normal;
+height:100%;
+overflow:hidden
+}
+
+
+#modal_window_search_tips h2{
+font-weight:bold;
+font-size:21px;
+margin-bottom:10px
+}
+
+#modal_window_search_tips h5{
+font-size:10px;
+font-weight:bold;
+}
+
+#main_content_wrapper #modal_window_search_tips{
+height:100%;
+overflow:hidden;
+width:580px;
+}
+
+#modal_window_search_tips #left_column p.second-p{
+width:325px
+}
+
+#modal_window_search_tips #right_column h5{
+padding-bottom:18px
+}
+
+#modal_window_search_tips #right_column p{
+width:175px
+}
+
+#modal_window_search_tips p{
+text-align:left;
+margin-bottom:25px
+}
+
+#left_column{
+border-right:1px dotted;
+border-top:1px dotted;
+float:left;
+width:360px;
+padding:30px 20px 0 0;
+height:100%
+}
+
+#right_column{
+border-top:1px dotted;
+float:left;
+width:200px;
+padding:30px 0 0 20px
+}
+
+#page .main_content_wrapper #oc_manuals_search_no_results .column_1 #column_results_summary h4.results-text-title{
+font-family:"Verdana", Geneva, sans-serif;
+}
+
+#page .main_content_wrapper #oc_manuals_search_no_results .column_1 #column_results_summary h4.results-text-title,#page #oc_manuals_search_no_results .column_2 .search_again h4.search_again_heading,div #need_help h2{
+margin-bottom:0;
+font-family:"Verdana", Geneva, sans-serif;
+font-size:22px
+}
+
+#page #oc_manuals_search_no_results div.column_2{
+width:345px;
+margin:75px 0 0;
+padding:0
+}
+
+#page #oc_manuals_search_no_results .column_2 div.search_again,#page #oc_manuals_search_no_results .column_2 div.maytag_need_help{
+margin:0 auto 55px;
+width:185px
+}
+
+#page #oc_manuals_search_no_results .column_2 div.maytag_need_help div{
+font-weight:bold;
+}
+
+#searchTerm2{
+width:125px
+}
+
+#page .main_content_wrapper #oc_manuals_search_no_results .column_1 #column_results_summary p.results-text-information{
+padding:20px 0
+}
+
+#page.manuals_search #oc_manuals_search .column_2 div.international_manual_header{
+font-family:"Verdana", Geneva, sans-serif;
+font-weight:normal;
+font-size:20pt!important
+}
+
+#oc_modal{
+font-size:10px;
+color:#505050;
+width:500px
+}
+
+
+#oc_modal.service_contracts div{
+margin-top:15px;
+font-weight:bold;
+}
+
+#oc_modal.service_contracts p.bottom_line{
+border-bottom:1px dotted #505050;
+padding-bottom:20px
+}
+
+#oc_needhelp_fai{
+width:160px
+}
+
+
+#oc_needhelp_fai p{
+margin-top:10px
+}
+
+#page.ContentPage.generic #main_content_wrapper #body_wrap.owner_center_home.owner_center_other #main_content #backdrop.registration{
+margin-bottom:0!important
+}
+
+#page.ContentPage.generic{
+overflow:hidden!important
+}
+
+#service-disclaimer{
+border-top:1px dotted #505050;
+margin:10px 0;
+padding:10px 0
+}
+
+#service-return-oc{
+background:url("/images/content/owner_center/oc_blue_button_arrow_left.png") no-repeat scroll left 0 transparent;
+height:25px;
+padding:2px 0 0 25px;
+margin-top:30px 0 -40px
+}
+
+#service-return-oc a{
+color:#0078fa;
+font-weight:bold;
+}
+
+#service-contact-phone{
+margin:15px 0
+}
+/* SEARCH CSS */
+
+body.iframe{
+background-image:none;
+background-color:#fff;
+color:#505050
+}
+
+div#page div.main-content-wrapper-top{
+margin:0!important;
+padding:0!important;
+height:0!important;
+width:0!important
+}
+
+.locate_model_selector{
+background-color:#FFF;
+color:#2d2d2d;
+height:20px;
+font-weight:bold;
+border:1px solid #c7c7c7
+}
+
+.locate_model_selector>option{
+padding-top:5px;
+padding-bottom:5px
+}
+
+.locate_model_selector>option:hover{
+background-color:#1c6abf
+}
+
+div#find_model_number{
+width:600px
+}
+
+div#content_container{
+padding-top:30px
+}
+
+div#manual_search_box{
+background:url(../../images/content/search/search_results_bottom_corners.png) no-repeat left bottom;
+padding-bottom:10px;
+width:554px;
+float:left;
+margin-left:50px
+}
+
+div#sidebar{
+font-family:"Verdana", Geneva, sans-serif;
+width:193px
+}
+
+#manual_search_box div.top_corners{
+background:url(../../images/content/search/search_results_top_corners.png) no-repeat left top;
+padding-top:10px
+}
+
+#manual_search_box div.inner{
+background:url(../../images/content/search/search_results_mid_borders.png) repeat-y;
+padding-left:60px;
+min-height:200px;
+padding-top:36px
+}
+
+#manual_search_box form{
+margin:18px 0
+}
+
+#manual_search_box h2{
+margin-top:36px
+}
+.select_image{
+background-color:#FFF;
+border:0;
+outline:0;
+width:73px;
+height:28px
+}
+
+#sidebar h5{
+font-weight:bold;
+margin-top:10px;
+font-family:"Verdana", Geneva, sans-serif;
+}
+
+#sidebar p{
+line-height:16px;
+font-family:"Verdana", Geneva, sans-serif;
+padding-top:5px;
+}
+
+#find_model_number form{
+border-top:1px dotted #666;
+border-bottom:1px dotted #666;
+padding:18px 0;
+height:20px
+}
+
+#find_model_number form label{
+font-weight:bold;
+margin-right:6px;
+margin-left:3px
+}
+
+div.appliance{
+width:600px;
+margin-top:15px;
+display:none
+}
+
+div.appliance.display{
+display:block
+}
+
+#model_number_selector #locate_model_selector{
+float:left
+}
+
+#model_number_selector #selectBtn{
+float:left;
+margin:-5px 0 0 10px
+}
+
+#appliance_list div.hidden{
+display:none
+}
+
+div.appliance div.where_to_look{
+float:left;
+width:258px
+}
+
+div.where_to_look strong{
+display:block;
+margin-bottom:12px;
+font-family: "Verdana",Geneva,sans-serif,
+}
+
+.appliance ol{
+list-style:inherit;
+list-style-type:decimal;
+margin-top:30px;
+list-style-position:inside;
+height:180px
+}
+
+.appliance ol li{
+line-height:18px;
+margin:0 auto 10px;
+list-style:decimal inside none!important;
+width:215px;
+display:list-item
+}
+
+#cooktop.appliance ol li{
+width:183px
+}
+html[lang=fr] #cooktop.appliance ol li{
+width:230px;
+}
+
+#disposer.appliance ol li{
+width:125px
+}
+html[lang=fr] #disposer.appliance ol li{
+width:155px;
+}
+
+#dryer.appliance ol li{
+width:285px
+}
+html[lang=fr] #dryer.appliance ol li{
+width:308px;
+}
+
+#microwave.appliance ol li{
+width:264px
+}
+html[lang=fr] #microwave.appliance ol li{
+width:276px;
+}
+
+#refrigerator.appliance ol li{
+width:292px
+}
+
+#wall_oven.appliance ol li{
+width:255px
+}
+html[lang=fr] #wall_oven.appliance ol li{
+width:308px;
+}
+
+#washer.appliance ol li{
+width:265px
+}
+html[lang=fr] #washer.appliance ol li{
+width:296px
+}
+
+#washer_combo.appliance ol li{
+width:312px
+}
+
+.appliance ol,div.serial_number{
+float:left;
+width:342px!important;
+margin-left:0
+}
+
+.appliance ol{
+margin-top:65px
+}
+
+.appliance ol li{
+list-style:decimal
+}
+
+.appliance div.serial_number{
+background:url(../../images/content/model_numbers/model_number_img.png) no-repeat center top;
+padding-top:98px;
+font-size:9px;
+width:342px;
+text-align:center
+}
+
+#simplemodal-container{
+width:700px!important;
+height:614px!important;
+overflow:none;
+background-image:url(../../images/content/model_numbers/model_number_modal_bg.png)
+}
+
+a.modalClose{
+padding-right:12px;
+position:relative;
+left:610px;
+top:35px;
+color:#505050;
+font-size:12px;
+line-height:18px;
+text-transform:uppercase
+}
+
+div.simplemodal-data{
+margin:40px auto 0;
+width:630px
+}
+
+div.simplemodal-data iframe{
+width:630px;
+height:510px
+}
+
+
+body#oc_my_apps_noregapps .oc_my_appliances #oc_content h2.reg_app_title {padding: 35px 0 5px 20px !important}
+#unregistered_form h1{font-size:14px}
+
+/* POSSIBLE REMOVAL */
+
+/* H2 */
+/*#masthead h2,
+#promo_area #common_filters h2,
+li.tabbed_col .configuration_info h2,
+.tabbed_content h2,
+.tabbed_content h2.tab2,
+.tabbed_content_box h2,
+.tabbed_content.laundry li.tabbed_col .configuration_info h2 em,
+#main_content.kitchen_accessories>ul>li.replacement_parts h2,
+#main_content.laundry_accessories h2,
+.trade_information h2,
+#body_wrap.press_and_media_page div#main_content.jumppage #content-boxes h2,
+.whole_home h2,
+#modal h2,
+t_offer div h2,.SC_Accessories #overview_column_3 #espot_offer div h2,.SC_Accessories #overview_column_3 #espot_offer.new_position div h2
+{
+font-family:"Verdana", Geneva, sans-serif;	
+
+}
+
+*/
+
+/*.whole_home h1{
+font-size:180%;
+ padding:80px 0 0 100px
+}*/
+
+/* H1 */
+/*#content_container.owner_center h1,
+#main_content h1,
+#sweepstakes h1,
+#water_filter_suscrip div.section h1+h1,
+.top .filter_finder #espot_offer div h1,
+.landing_page .tabbed_right_col #espot_offer div h1,.SC_Accessories #overview_column_3 #espot_offer div h1,.SC_Accessories #overview_column_3 #espot_offer.new_position div h1,
+#add_to_cart_popup_content_wrapper .extended_service_offering .esp_modal #esp_modal_inset h1,
+#body_wrap.press_and_media_page #jumppage_header h1,
+#page.manuals_search .main_content_wrapper #main_content h1,
+#add_to_cart_popup_content_wrapper h1.popup_header,
+#content_wrapper #glossary h1,
+#content_container.about_us>h1,
+#homepage_fca #recall h1,
+#jumppage_header h1,
+#content.about_us h1,
+.esp_modal h1,
+.promo_codes h1,
+.filter_replacement_program h1 {
+color:#FFFFFF	
+
+}
+
+*/
+
+/* .clearfix:after{
+clear:both;
+content:".";
+display:block;
+height:0;
+line-height:0;
+visibility:hidden
+}
+
+.clearfix{
+display:inline-block
+}
+
+html[xmlns] .clearfix{
+display:block
+}
+
+* html .clearfix{
+height:1%
+}
+
+.clear{
+clear:both!important;
+float:none!important;
+height:1px!important;
+visibility:hidden!important;
+width:99%!important
+}
+
+*/
+/*#masthead h2{
+	font-size:235%;
+	line-height:1;
+	padding:0 0 0 35px;
+	width:600px;
+ 
+	text-align:left;
+	letter-spacing:-1px*/
+	
+/*
+#masthead.laundry_accessories h1,
+#masthead.kitchen_accessories h1,
+#endeca_filter_section h1,
+#filter_content.refrigerator_accessories h1,
+#main_content h1,
+#sweepstakes h1,
+.top .filter_finder #espot_offer div h1,
+#body_wrap.press_and_media_page #jumppage_header h1,
+#page #service_main_wrapp #title h1{
+	font-weight:bold;	
+}
+.categorylanding_WaterFilters .tabbed_content h2{
+	font-size:18px;
+	font-weight:bold;
+	margin:0 0 20px 0;
+	font-family:"AkzidenzGroteskPro","Arial Black","Arial",sans-serif	
+}
+.tabbed_box_3_boxes .tabs li #col_1,.tabbed_box_3_boxes .tabs li #col_2,.tabbed_box_3_boxes .tabs li #col_3,.tabbed_box_3_boxes .tabs li #col_1.active,.tabbed_box_3_boxes .tabs li #col_2.active,.tabbed_box_3_boxes .tabs li #col_3.active{
+text-decoration:none
+}
+.tabbed_content ul{
+overflow:hidden
+}
+
+.tabbed_content li.tabbed_col a:hover{
+	text-decoration:none	
+}
+
+/*
+#masthead.contact_us h2{
+	font-family:"AkzidenzGroteskPro","Arial Black","Arial",sans-serif;
+	padding:25px 0 0 52px;
+}
+
+*/
+/*
+#masthead.refrigerator_accessories h2{
+	margin:10px 0 0 0	
+}
+
+#view_demo_cta.laundry1{
+left:24px;
+top:119px
+}
+
+#view_demo_cta.laundry2{
+top:119px;
+left:28px
+}
+
+#view_demo_cta.refrigeration1{
+top:123px;
+left:41px
+}
+
+#view_demo_cta.refrigeration2{
+top:123px;
+left:44px
+}
+
+#view_demo_cta.cooking1{
+top:113px;
+left:37px
+}
+
+#view_demo_cta.cooking2{
+top:116px;
+left:39px
+}
+
+.tabbed_content.laundry ul li{
+	width:235px;
+	padding:15px 41px 0 41px;
+}
+
+#view_demo_cta.cooking3{
+top:116px;
+left:13px
+}
+.tabbed_box_3_boxes.cooking .tabs li #col_1.active{
+	background:url(../../images/content/categorylanding/Cooking_tab1_on.png) no-repeat;	
+}
+
+.tabbed_box_3_boxes.refrigerators .tabs li #col_1.active{
+	background:url(../../images/content/categorylanding/Refrigerators_tab1_on.png) no-repeat;	
+}
+
+	
+.tabbed_box_3_boxes.cooking .tabs li #col_1{
+	width:238px;
+	padding-left:85px;
+	background:url(../../images/content/categorylanding/Cooking_tab1_off.png) no-repeat;
+	*width:243px;
+	*padding-left:80px	
+}
+.tabbed_box_3_boxes.laundry .tabs li #col_1{
+	width:245px;
+	padding-left:80px;
+	background:url(/images/content/categorylanding/Cleaning_tab1_off.png) no-repeat	
+}
+
+	
+.tabbed_box_3_boxes.refrigerators .tabs li #col_1{
+	padding-left:75px;
+	width:275px;
+	background:url(/images/content/categorylanding/Refrigerators_tab1_off.png) no-repeat	
+}
+
+	
+.tabbed_box_3_boxes.cleaning .tabs li #col_1{
+	width:245px;
+	padding-left:80px;
+	background:url(../../images/content/categorylanding/Cleaning_tab1_off.png) no-repeat	
+}
+.tabbed_box_3_boxes.laundry .tabs li #col_1.active{
+	background:url(/images/content/categorylanding/Laundry_tab1_on.png) no-repeat;
+	color:#000	
+}
+
+		
+.tabbed_box_3_boxes.cleaning .tabs li #col_1.active{
+	background:url(../../images/content/categorylanding/Cleaning_tab1_on.png) no-repeat;
+	color:#000	
+}
+
+	
+.tabbed_box_3_boxes.cleaning .tabs li #col_2{
+	width:305px;
+	padding-left:50px;
+	background:url(../../images/content/categorylanding/Cleaning_tab2_off.png) no-repeat	
+}
+.tabbed_box_3_boxes.cleaning .tabs li #col_2.active{
+	background:url(../../images/content/categorylanding/Cleaning_tab2_on.png) no-repeat;
+	color:#000;
+	padding-left:50px	
+}
+.tabbed_box_3_boxes.cooking .tabs li #col_2{
+	width:252px;
+	padding-left:55px;
+	background:url(../../images/content/categorylanding/Cooking_tab2_off.png) no-repeat;
+	*width:257px;
+	*padding-left:50px	
+}
+
+.tabbed_box_3_boxes.cooking .tabs li #col_3{
+	width:260px;
+	background:url(../../images/content/categorylanding/Cooking_tab3_off.png) no-repeat;
+	text-align:left;
+	padding-left:45px;
+	margin-left:-2px;
+	*margin-left:0;
+	padding-top:9px;
+	*padding-top:10px	
+}
+
+.tabbed_box_3_boxes.cooking .tabs li #col_2.active{
+	background:url(../../images/content/categorylanding/Cooking_tab2_on.png) no-repeat;
+	color:#000 	
+}
+
+.tabbed_box_3_boxes.cooking .tabs li #col_3.active{
+	background:url(../../images/content/categorylanding/Cooking_tab3_on.png) no-repeat;
+	color:#000 	
+}
+.tabbed_box_3_boxes.refrigerators .tabs li #col_2{
+	padding-left:40px;
+	*padding-left:35px;
+	width:329px;
+	background:url(../../images/content/categorylanding/Refrigerators_tab2_off.png) no-repeat;
+	margin-left:-3px;
+	*margin-left:0	
+}
+
+.tabbed_box_3_boxes.refrigerators .tabs li #col_2.active{
+	background:url(../../images/content/categorylanding/Refrigerators_tab2_on.png) no-repeat;
+	color:#000 
+
+}
+.tabbed_box_3_boxes.laundry .tabs li #col_2{
+	width:305px;
+	padding-left:50px;
+	background:url(/images/content/categorylanding/Cleaning_tab2_off.png) no-repeat
+}
+.tabbed_box_3_boxes.laundry .tabs li #col_2.active{
+	background:url(/images/content/categorylanding/Laundry_tab2_on.png) no-repeat;
+	color:#000	
+}
+
+	
+	.tabbed_box_3_boxes.water_filters .tabs li #col_1{
+	padding-left:70px;
+	width:253px;
+	background:url(../../images/content/categorylanding/WaterFilters_tab1_off.png) no-repeat
+}
+.tabbed_box_3_boxes.water_filters .tabs li #col_2{
+	padding-left:45px;
+	width:262px;
+	background:url(../../images/content/categorylanding/WaterFilters_tab2_off.png) no-repeat
+}
+.tabbed_box_3_boxes.water_filters .tabs li #col_3{
+	padding-left:45px;
+	width:285px;
+	background:url(../../images/content/categorylanding/WaterFilters_tab3_off.png) no-repeat
+}
+.tabbed_box_3_boxes.water_filters .tabs li #col_1.active{
+	background:url(../../images/content/categorylanding/WaterFilters_tab1_on.png) no-repeat;
+	color:#000	
+}
+.tabbed_box_3_boxes.water_filters .tabs li #col_2.active{
+	background:url(../../images/content/categorylanding/WaterFilters_tab2_on.png) no-repeat;
+	color:#000	
+}
+.tabbed_box_3_boxes.water_filters .tabs li #col_3.active{
+	background:url(../../images/content/categorylanding/WaterFilters_tab3_on.png) no-repeat;
+	color:#000	
+}
+
+#masthead.cooking{
+background:url(../../images/content/categorylanding/Cooking_masthead.jpg) no-repeat
+}
+
+#masthead.cleaning{
+background:url(../../images/content/categorylanding/Cleaning_masthead.jpg) no-repeat;
+}
+
+#masthead.refrigerators{
+background:url(/images/content/categorylanding/Refrigerators_masthead.jpg) no-repeat;
+}
+
+#masthead.laundry{
+background:url(/images/content/categorylanding/laundry/maytag_laundry_masthead.jpg) no-repeat;
+}
+
+#masthead.kitchen_accessories{
+background:url(../../images/content/laundry_accessories/laundry_accessories_masthead_bg.jpg) no-repeat;
+position:relative;
+ margin:10px 0 0 0;
+ height:170px;
+ padding:40px 0 0 35px;
+}
+
+#masthead.laundry_accessories{
+background:url(/images/content/laundry_accessories/laundry_accessories_masthead_bg.jpg) no-repeat;
+position:relative;
+ margin:10px 0 0 0;
+ height:170px;
+ padding:40px 0 0 35px;
+}
+
+#masthead.water_filters{
+background:url(/images/content/categorylanding/WaterFilters_masthead.jpg) no-repeat;
+padding:40px 0 0 35px;
+}
+
+#masthead.laundry_accessories h1,
+#masthead.kitchen_accessories h1,
+
+
+.endeca_cooking #masthead h1,
+.endeca_dishwashers #masthead h1,
+.laundry_pairs #masthead h1,
+.endeca_laundry #masthead h1,
+.endeca_washers #masthead h1,
+.endeca_laundry_accessories #masthead h1
+.endeca_microwave #masthead h1,
+.endeca_refrigerators #masthead h1{
+		font-size:210%;
+}
+
+#masthead.refrigerators h2,
+#masthead.water_filters h1,
+#masthead.laundry_accessories h1,
+#masthead.kitchen_accessories h1{
+	font-size:270%;
+	margin:0;	
+}
+
+.endeca_microwave #masthead h1,
+.endeca_refrigerators #masthead h1,
+.endeca_cooking #masthead h1,
+.endeca_dishwashers #masthead h1{
+	margin:15px 0 0 0
+
+}
+
+.endeca_microwave #masthead h1,
+.endeca_refrigerators #masthead h1,
+.endeca_cooking #masthead h1,
+.endeca_dishwashers #masthead h1{
+	line-height:100%;	
+}
+	
+#masthead h2{
+	font-size:235%;
+	padding:0 0 0 35px;
+}
+
+#masthead.water_filters h2,
+#masthead.kitchen_accessories h2,
+#masthead.laundry_accessories h2{
+	padding:0;
+	font-size:270%;
+}
+
+.endeca_washers #masthead h2,
+.laundry_pairs #masthead h2,
+.endeca_laundry_accessories #masthead h2,
+.endeca_laundry #masthead h2{
+	font-size:100%;
+	line-height:150%;
+	padding:0;	
+}
+
+#masthead h3{
+font-size:14px;
+padding:45px 0 0 35px;
+width:450px;
+font-family:"Verdana", Geneva, sans-serif;
+text-align:left;
+line-height:1.5em
+}
+
+#masthead h3.water_filters{
+padding:0 0 0 52px
+}
+
+#masthead.refrigerator_accessories>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(/images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.categorylanding_WaterFilters #masthead h3{
+font-size:16px;
+line-height:120%;
+padding:0;
+margin-top:10px;
+width:500px;
+font-family:"Verdana", Geneva, sans-serif;
+}
+
+.laundry_pairs #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.endeca_washers #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.endeca_laundry #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.endeca_dishwashers #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.endeca_cooking #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:30px;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+.endeca_laundry_accessories #masthead>h3{
+position:absolute;
+bottom:0;
+width:210px;
+height:36px;
+padding-top:10px;
+padding-left:0;
+color:#000;
+font-size:150%;
+background:url(../../images/content/refrigerator_accessories/refrigerator_accessories_tab.png) no-repeat
+}
+
+
+.categorylanding_WaterFilters #masthead h4 a{
+font-size:60%;
+font-family:sans-serif;
+font-weight:bold;
+background:url('/images/content/categorylanding/WaterFilters_arrow.png') no-repeat 0 4px;
+padding-left:10px;
+color:#505050;
+text-decoration:none
+}
+
+.categorylanding_WaterFilters #masthead h4 a:hover{
+text-decoration:none;
+color:#005abb
+}
+
+
+.categorylanding_WaterFilters #masthead h5{
+color:#505050;
+font-size:11px;
+font-family:sans-serif;
+font-weight:bold;
+margin-bottom:7px
+}
+
+
+#masthead.laundry_accessories>p{
+width:450px;
+font-size:125%;
+margin-top:15px;
+font-family:"Verdana", Geneva, sans-serif;
+}
+
+#masthead.laundry p{
+position:absolute;
+width:230px;
+font-size:9px;
+left:730px;
+bottom:10px
+}
+
+#masthead.refrigerator_accessories>p{
+width:400px;
+font-size:110%
+}
+
+#masthead.kitchen_accessories>p{
+width:450px;
+font-size:120%;
+margin-top:15px;
+font-family:"Verdana", Geneva, sans-serif;
+font-weight:100
+}
+
+.categorylanding_WaterFilters #masthead p{
+margin-bottom:7px
+}
+
+.endeca_laundry_accessories #masthead p, .endeca_refrigerators #masthead p, .endeca_microwave #masthead p, .endeca_cooking #masthead p, .endeca_dishwashers #masthead p, .endeca_laundry #masthead>p, .laundry_pairs #masthead>p, .endeca_washers #masthead>p{
+width:400px;
+font-size:110%
+}
+
+.laundry_pairs #masthead{
+height:146px;
+background:url(../../images/content/laundry_pairs/laundry_pairs_masthead_bg.jpg) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+.endeca_refrigerators #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Refrigerators_endeca_masthead.png) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+.endeca_cooking #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Cooking_endeca_masthead.jpg) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+.endeca_microwave #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Microwave_endeca_masthead.jpg) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+.endeca_dishwashers #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Dishwashing_endeca_masthead.jpg) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+.endeca_laundry_accessories #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Microwave_endeca_masthead.jpg) no-repeat top left;
+padding:30px 0 0 20px;
+margin:10px 0 0 0;
+}
+
+.endeca_laundry #masthead{
+height:146px;
+background:url(../../images/content/endeca_headers/Laundry_endeca_masthead.jpg) no-repeat top left;
+padding:30px 0 0 20px;
+margin:10px 0 0 0;
+}
+
+.endeca_washers #masthead{
+height:146px;
+background:url(../../images/content/laundry_pairs/laundry_pairs_masthead_bg.jpg) no-repeat top left;
+padding:25px 0 0 35px;
+margin:10px 0 0 0;
+}
+
+#masthead.kitchen_accessories #masthead_hero_main{
+position:absolute;
+width:400px;
+height:210px;
+top:0;
+right:65px;
+background:url(../../images/content/kitchen_accessories/kitchen_accessories_hero_1b.png) no-repeat top right
+}
+
+#masthead.kitchen_accessories #masthead_hero_sub{
+position:absolute;
+width:400px;
+height:9px;
+top:-9px;
+right:65px;
+background:url(../../images/content/kitchen_accessories/kitchen_accessories_hero_1a.png) no-repeat top right
+}
+#masthead.laundry_accessories #masthead_hero_main{
+position:absolute;
+width:346px;
+height:210px;
+top:0;
+right:100px;
+background:url(../../images/content/laundry_accessories/laundry_accessories_hero_1b.png) no-repeat top right
+}
+
+#masthead.laundry_accessories #masthead_hero_sub{
+position:absolute;
+width:346px;
+height:24px;
+top:-24px;
+right:100px;
+background:url(../../images/content/laundry_accessories/laundry_accessories_hero_1a.png) no-repeat scroll 2px top transparent
+}
+#masthead.refrigerator_accessories #masthead_hero_main{
+position:absolute;
+width:400px;
+height:210px;
+top:0;
+right:65px;
+background:url(/images/content/refrigerator_accessories/refrigerator_accessories_hero_1b.png) no-repeat top right
+}
+
+#masthead.refrigerator_accessories #masthead_hero_sub{
+position:absolute;
+width:400px;
+height:23px;
+top:-23px;
+right:65px;
+background:url(/images/content/refrigerator_accessories/refrigerator_accessories_hero_1a.png) no-repeat top right
+}
+.laundry_pairs #masthead_hero_main{
+position:absolute;
+width:400px;
+height:210px;
+top:0;
+right:30px;
+background:url(../../images/content/laundry_pairs/laundry_pairs_hero_1b.png) no-repeat top right
+}
+
+.laundry_pairs #masthead_hero_sub{
+position:absolute;
+width:400px;
+height:23px;
+top:-23px;
+right:30px;
+background:url(../../images/content/laundry_pairs/laundry_pairs_hero_1a.png) no-repeat top right
+}
+.endeca_washers #masthead_hero_main{
+position:absolute;
+width:400px;
+height:210px;
+top:0;
+right:30px;
+background:url(../../images/content/laundry_pairs/washers_hero_1b.png) no-repeat top right
+}
+
+.endeca_washers #masthead_hero_sub{
+position:absolute;
+width:400px;
+height:23px;
+top:-23px;
+right:30px;
+background:url(../../images/content/laundry_pairs/washers_hero_1a.png) no-repeat top right
+}
+.endeca_laundry #masthead_hero_main{
+position:absolute;
+width:267px;
+height:172px;
+top:0;
+right:90px;
+background:url(../../images/content/endeca_headers/Laundry_endeca_hero_1b.png) no-repeat top right
+}
+
+.endeca_laundry #masthead_hero_sub{
+position:absolute;
+width:267px;
+height:18px;
+top:-18px;
+right:90px;
+background:url(../../images/content/endeca_headers/Laundry_endeca_hero_1a.png) no-repeat top right
+}
+.endeca_laundry_accessories #masthead_hero_main{
+position:absolute;
+width:351px;
+height:171px;
+top:0;
+right:50px;
+background:url(../../images/content/endeca_headers/LaundryAccessories_endeca_hero_1b.png) no-repeat top right
+}
+
+.endeca_laundry_accessories #masthead_hero_sub{
+position:absolute;
+width:351px;
+height:29px;
+top:-29px;
+right:50px;
+background:url(../../images/content/endeca_headers/LaundryAccessories_endeca_hero_1a.png) no-repeat top right
+}
+.endeca_dishwashers #masthead_hero_main{
+position:absolute;
+width:410px;
+height:172px;
+top:0;
+right:30px;
+background:url(../../images/content/endeca_headers/Dishwashing_hero_b.png) no-repeat top right
+}
+
+.endeca_dishwashers #masthead_hero_sub{
+position:absolute;
+width:398px;
+height:21px;
+top:-21px;
+right:42px;
+background:url(../../images/content/endeca_headers/Dishwashing_hero_a.png) no-repeat top right
+}
+.endeca_microwave #masthead_hero_main{
+position:absolute;
+width:312px;
+height:171px;
+top:0;
+right:90px;
+background:url(../../images/content/endeca_headers/Microwave_endeca_hero_1b.png) no-repeat top right
+}
+
+.endeca_microwave #masthead_hero_sub{
+position:absolute;
+width:312px;
+height:15px;
+top:-15px;
+right:90px;
+background:url(../../images/content/endeca_headers/Microwave_endeca_hero_1a.png) no-repeat top right
+}
+.endeca_cooking #masthead_hero_main{
+position:absolute;
+width:318px;
+height:171px;
+top:0;
+right:30px;
+background:url(../../images/content/endeca_headers/Cooking_endeca_hero_1b.png) no-repeat top right
+}
+
+.endeca_cooking #masthead_hero_sub{
+position:absolute;
+width:318px;
+height:23px;
+top:-23px;
+right:30px;
+background:url(../../images/content/endeca_headers/Cooking_endeca_hero_1a.png) no-repeat top right
+}
+.endeca_refrigerators #masthead_hero_main{
+position:absolute;
+width:169px;
+height:172px;
+top:0;
+right:90px;
+background:url(../../images/content/endeca_headers/Refrigerators_endeca_hero_1b.png) no-repeat top right
+}
+
+.endeca_refrigerators #masthead_hero_sub{
+position:absolute;
+width:169px;
+height:20px;
+top:-20px;
+right:90px;
+background:url(../../images/content/endeca_headers/Refrigerators_endeca_hero_1a.png) no-repeat top right
+}
+
+
+.categorylanding_WaterFilters #masthead #video_player{
+color:#000;
+position:absolute;
+height:446px;
+width:595px;
+padding:60px;
+background:url(../../images/content/categorylanding/WaterFilters_video_player.png) no-repeat;
+z-index:9000
+}
+*/
+
+.filter_finder last_child #espot_offer{padding-left:10px;}
+#header-wrap .filter_finder.last_child #espot_offer{padding-left:10px;padding-top: 3px;display:none;}
+
+#body_wrap .tabbed_box_3_boxes .subtitletab {
+    float: right;
+    font-size: 14px;
+    padding-bottom: 40px;
+    width: 960px;
+    text-align: center;
+}
+
+#main_content.jumppage.whole_home h1 img{padding:60px}
+
+
+/*******************************COLD CAN CLEAN STYLES DO NOT DELETE******************************************/
+
+
+* {margin:0px;padding:0px;}
+ul,li {list-style-type:none;}
+
+
+#ccc_pageContainer{
+	width:960px;
+	margin:20px auto;
+}
+#ccc_contents{
+	float:left;
+	position:relative;
+	width:884px;
+	height:464px;
+	background-image:url('/images/coldcanclean/background.png');
+}
+.ccc_content{
+	float:left;
+	position:relative;
+	width:884px;
+	height:464px;
+}
+/*
+ Header
+ */
+#header_coldcanclean{
+	float:left;
+	position:relative;
+	width:824px;
+	height:176px;
+	padding:20px 0 0 60px;
+	background-image: url('/images/coldcanclean/header.png');
+}
+#ccc_headline{
+	float:left;
+	position:relative;
+}
+#ccc_logo{
+	float:left;
+	position:relative;
+	top:-42px;
+}
+#share{
+	float:right;
+	position:relative;
+	top:-134px;
+	width:77px;
+	height:50px;
+	padding-left:0px;
+	background-image:url('/images/coldcanclean/share_bg.png');
+}
+#FBConnectButton{
+    cursor: pointer;
+    display: block;
+    height: 19px;
+    margin-top: 25px;
+    overflow: hidden;
+    width: 17px;
+    background-image: url("");
+}
+#FBConnectButton_Small{
+    cursor: pointer;
+    display: block;
+    height: 19px;
+    margin-top: 25px;
+    overflow: hidden;
+    width: 17px;
+    background-image: url("");
+}
+#FBConnectButton{
+    background-image: url("");
+}
+#FBConnectButton_Small{
+    background-image: url("");
+}
+.shareBtn_container{
+	float:left;
+	padding-left: 19px; 
+	*padding-left: 20px; 
+}
+#share_link1{
+	background-image:url('/images/coldcanclean/shareButton1.png');
+}
+#share_link2{
+	background-image:url('/images/coldcanclean/shareButton2.png');
+}
+#share_link3{
+	background-image:url('/images/coldcanclean/shareButton3.png');
+}
+#share_link4{
+	background-image:url('/images/coldcanclean/shareButton4.png');
+}
+.share_link{
+	margin-top: 25px;
+	background-repeat:no-repeat;
+	float: left;
+	position: relative;
+	width: 15px;
+	height: 20px;
+	padding-left: 10px;
+}
+/*
+ End Header
+ */
+
+/*
+ Demo content
+ */
+#contentLeft{
+	float:left;
+	position:relative;
+	width:356px;
+	height:464px;
+}
+#bottle{
+	float:left;
+	position:absolute;
+	top:20px;
+	left:141px;
+}
+#machine{
+	float:left;
+	position:relative;
+}
+#contentRight{
+	float:left;
+	position:relative;
+	padding-left:17px;
+	width:511px;
+}
+#infoText{
+	float:left;
+	position:relative;
+	width:487px;
+	padding: 20px 0 0 5px;
+}
+#videoContainer{
+	float:left;
+	position:relative;
+	width:482px;
+	height:294px;
+	padding: 12px 0 0 12px;
+	top:-9px;
+	background-image:url('/images/coldcanclean/MT_video_border1.png');
+}
+.border{
+	float:left;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+/*
+ End Demo content
+ */
+
+/*
+ Reviews content
+ */
+#reviews_imageMachine{
+	
+}
+#reviews_textareasInfo{
+	float:left;
+	position:relative;
+	padding-left:0px;
+	width:883px;
+}
+#review_wahser{
+	background-image:url('/images/coldcanclean/MT_washer_reviews.png')
+}
+#review_tilde{
+	background-image:url('/images/coldcanclean/MT_tide_reviews.png');
+}
+.review_area{
+	float:left;
+	position;relative;
+	padding-top:42px;
+	margin-left:40px;
+	width:375px;
+	background-image:url('/images/coldcanclean/MT_tide_reviews.png');
+	background-repeat:no-repeat;
+}
+.review_area textarea{
+	width: 373px;
+	height:200px;
+}
+#review_machine{
+	float:left;
+	position:relative;
+	top:25px;
+	left:80px;
+	*top:28px; /* IE6 e IE7 */
+}
+#review_tildeBottle{
+	float:right;
+	position:relative;
+	right:190px;
+	*top:4px; /* IE6 e IE7 */
+}
+#reviews_btns{
+	float:left;
+	position:relative;
+	padding-top: 20px;
+}
+#review_viewProduct_btn{
+	padding-left:50px;
+}
+#review_buyNow_btn{
+	padding-left:50px;
+}
+.btn{
+	position:relative;
+	float:left;
+	z-index: 2;
+}
+.btn img{
+	border:0px;
+}
+
+/*
+ End Reviews content
+ */
+
+/*
+ FAQ Content
+ */
+#shadow{
+	float:left;
+	position:absolute;
+	top:0px;
+	width: 360px;
+	height: 178px;
+	z-index:5;
+	background-image:url('/images/coldcanclean/MT_shadow_slide.png');
+}
+#faq_contentLeft{
+	float:left;
+	position:relative;
+	width:335px;
+	height:464px;
+}
+#faq_contentRight{
+	float:left;
+	position:relative;
+	padding-left:0px;
+	width:511px;
+}
+#MT_faq_info{
+	float:left;
+	position:relative;
+	width:548px;
+	padding-top:40px;
+}
+#MT_faq_coldHardfacts{
+	float: left;
+	position:relative;
+	padding-top:20px;
+}
+#MT_faq_InfoMachine{
+	float: left;
+	position:relative;
+	margin-left:15px;
+	width:360px;
+	height:178px;
+	overflow:hidden;
+	background-image:url('/images/coldcanclean/MT_faq_waterMoneyEnv_bg.png');
+}
+#MT_faq_faqsBrochu{
+	float:left;
+	position:relative;
+	width:548px;
+	padding-top:15px;
+}
+#MT_faq_faqs{
+	float:left;
+	position:relative;
+	padding-top:54px;
+	width:361px;
+	background-image:url('/images/coldcanclean/MT_faq.png');
+	background-repeat:no-repeat;
+}
+#MT_faq_brochu{
+	float:right;
+	position:relative;
+	top:115px;
+	right:20px;
+}
+#MT_faq_brochu img{
+	border:0px;
+}
+/*
+ End FAQ Content
+ */
+
+/*
+ Navigation
+ */
+#navMenu{
+	float:left;
+	position:relative;
+	top:-50px;
+}
+/*
+ End Navigation
+ */
+#footer_review{
+	padding-top:40px;
+}
+.footer{
+	float:left;
+	position:relative;
+	width:884px;
+	padding: 15px 0 0 25px;
+}
+
+.box{
+    float:left;
+	position:relative;
+	padding: 10px 30px 0 10px;
+	width:320px;
+	height:140px;
+	/*background-image:url('/images/coldcanclean/MT_textarea_bg.png');
+	*background-color:#FFF; /* IE6 IE7 */
+	/*background-image:url(''); /* IE6 IE7 */
+	overflow-x: hidden;
+	overflow-y: scroll;
+	color: #666;
+	font-family: "Verdana",Geneva,sans-serif;
+}
+.boxContetHeight{
+	float:left;
+	position:relative;
+	height:300px;
+}
+.box2{
+      float:left;
+	position:relative;
+	padding: 10px 30px 0 10px;
+	width:335px;
+	height:190px;
+	/*background-image:url('/images/coldcanclean/MT_textarea_reviews_bg.png');
+	*background-color:#FFF; /* IE6 IE7 */
+	/*background-image:url(''); /* IE6 IE7 */
+	overflow-x: hidden;
+	overflow-y: scroll;
+	color: #666;
+	font-family: "Verdana",Geneva,sans-serif;
+}
+.box_bg{
+	width:350px;
+	height:150px;
+	background-image:url('/images/coldcanclean/MT_textarea_bg.png');
+}
+.box2_bg{
+	width:365px;
+	height:200px;
+	background-image:url('/images/coldcanclean/MT_textarea_reviews_bg.png');
+}
+/* slotMachineEffect */
+.slider-vertical {
+	padding: 0;
+}
+.slider-vertical h3  {
+	margin-bottom: 10px;
+}
+.slider-vertical img {
+	float: left;
+}
+.slider-vertical .vinculo-especial2 {
+	margin-right: 32px;
+}
+.contenedor-slider {
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	background: #f1f1f1 url(/images/coldcanclean/fondo.jpg) repeat-x 0 0;
+	border-left: 1px solid #bbb;
+}
+.bloque-slider {
+	position: relative;
+	top: 0;
+
+}
+.modulo-slider {
+	position: relative;
+	margin: 0 40px 0 0;
+}
+.modulo-slider h4 {
+	margin-top: 0;
+}
+.mover-slider-vertical {
+	position: absolute;
+	width: 40px;
+	right: 0;
+	top: 0;
+	margin: 0;
+	/*background: #fff url(/images/coldcanclean/slider-vertical-bg.jpg) no-repeat 0 4px;*/
+}
+.mover-slider-vertical a {
+	display: block;
+	width: 21px;
+	height: 21px;
+	margin: 10px 0 40px 10px;
+	text-indent: -9999em;
+	outline: none;
+	/*background-image: url(/images/coldcanclean/boton.gif);*/
+	background-repeat: no-repeat;
+	cursor: pointer;
+	line-height: 0;
+	font-size: 0;
+}
+.mover-slider-vertical a:hover {
+	/*background-color: #F1F0DE;*/
+}
+.subir-slider {
+	background-position: 0 0;
+}
+.subir-slider:hover {
+	background-position: 0 -21px;
+}
+.subir-slider:active {
+	background-position: 0 0;
+}
+.bajar-slider {
+	background-position: -21px 0;
+}
+
+.bajar-slider:hover {
+	background-position: -21px -21px;
+}
+
+.bajar-slider:active {
+	background-position: -21px 0;
+} 
+/* end slotMachineEffect */
+
+
+.wrapper {width:474px; margin:auto; padding-top:22px; z-index: 20; margin-left: 40px;}
+
+/*.menuholder {background:url(/images/coldcanclean/MT_nav_sprite.png) #dd0069; height:36px}*/
+.menuholder li {
+	float:left
+}
+.menuholder a {
+	background:url(/images/coldcanclean/MT_nav_sprite.png);
+	display:block;
+	text-indent:-9000%;
+	height:40px;
+}
+
+.nav_demo a { 
+	width:158px; 
+}
+.nav_reviews a { 
+	width:158px;
+	background-position:-158px 0px;
+}
+.nav_facts a { 
+	width:158px; 
+	background-position:-316px 0px;
+}
+
+.nav_demo a:hover {
+	background-position:0px -40px;
+}
+.nav_reviews a:hover{
+	background-position:-158px -40px;
+}
+.nav_facts a:hover {
+	background-position:-316px -40px;
+}
+
+.nav_demo a.active  {
+	background-position:0px -40px;
+}
+.nav_reviews a.active {
+	background-position:-158px -40px;
+}
+.nav_facts a.active {
+	background-position:-316px -40px;
+}
+
+
+.footer h6{
+    font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color:#666;
+}
+
+span.copy{padding-left:20px;}
+sup.trade{font-size:10px;}
+#reviews_btns a, #reviews_btns font{float:left}
+#reviews_btns font{padding:9px 0 0 5px;font-size:10px;font-family:verdana;font-weight: bold;}
+
+/*
+ End Nav Style
+ */
+/*Reviews Box Styles*/
+.box2 h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box2 p{
+	font-size: 0.9em;
+	font-style: inherit;
+    font-weight: inherit;
+    padding-bottom: 15px;
+}
+#stars5{
+	background-image:url('/images/coldcanclean/5S_rating.gif');
+}
+#stars4{
+	background-image:url('/images/coldcanclean/4S_rating.gif');
+}
+.stars{
+	display:block;
+	overflow: hidden;
+	background-repeat:no-repeat;
+	float:left;
+	position:relative;
+	width:100%;
+	height:15px;
+}
+.person{
+	float:left;
+	position:relative;
+	width:95%;
+	text-decoration:underline;
+}
+.spacer{
+	padding-right:1px;
+	float:left;
+	position:relative;
+}
+/*End Reviews Box Styles*/
+
+/*FAQ Text Style in the Box*/
+
+.h2{
+    font-weight: bold;
+}
+
+.gray{
+	font-size: 14px;
+	padding-bottom:20px;
+}
+
+.orange{
+	color: #F37022;
+	padding-bottom:10px;
+	font-size: 14px;
+}
+
+.box p{
+	font-size: 0.9em;
+	font-style: inherit;
+    font-weight: inherit;
+    padding-bottom: 15px;
+}
+.cleaning_subtitle{font-weight: normal;}
+/*End FAQ TExt Style*/
+
+#page #main_content_wrapper{margin:0 auto;width:960px;}
+
+/*******************************COLD CAN CLEAN STYLES DO NOT DELETE ENDS*************************************/
+
+#schedule_now, #phone_support{float:left;height:180px;width:400px;}
+.vertical_divider{height: 200px;float: left;border-right:1px dotted #505050;}
+.snr_info_title{color:#015bbb;font-size:14px;font-weight:bold;}
+.serviceNrepairIntro{color:#505050;font-size:12px !important;font-weight: bold;padding-top:20px;}
+.snr_info_text{font-size:10px;font-weight:normal;padding-top: 0 !important;}
+#content #phone_support #ps_Number {font-size: 18px;font-weight: bold;}
+#content #phone_support #ps_Schedule{font-size:14px;font-weight: bold;padding:1px 0 0;}
+#phone_support{padding-left: 100px}
+.introlastline{padding-bottom: 30px}
+
+/*******************************dishwasher april*************************************/
+#espot_image .dishwashAcc{padding: 10px 0 0;margin: 10px 0 0;}
+.kitchSeeAll{position:relative;top:-50px}
+html[lang=fr] .kitchSeeAll{position:relative;top:-120px}
+.titleBanner{font-size: 25px;font-weight: normal !important;}
+.bannerSpan{font-size: 24px;font-style: normal;font-weight: bold;}
+.last_content_box a{float: left;padding-top: 10px;width:200px;}
+.last_content_box a img{margin-right:10px;}
+/*******************************dishwasher april ends*************************************/
+
+
+/***************************************BIG SAVINGS STARTS***************************************/
+#big_save_nav {
+    background: url("/images/content/big_savings_nav.png") no-repeat scroll 0 0 transparent !important;
+    height: 246px !important;
+    width: 157px !important;
+}
+
+#header_main_nav li.ownercenter ul {
+    background: url("/images/content/owner_center_navbg.png") no-repeat scroll 0 0 transparent;
+    width:396px;
+}
+
+#big_save_retailer {
+   background: url("/images/content/big_savings_retailer.png") no-repeat scroll 0 0 transparent;
+    display: block;
+width:480px;
+height:108px;
+float:left;
+}
+
+#homepage_fca #maytag_tide #big_save_home {
+    background: url("/images/content/big_savings_home.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 169px;
+    margin: 5px -20px 0 0;
+    width: 365px;
+}
+
+#homepage_fca #maytag_tide #big_save_home:hover {
+    background-position: 0px -174px ;
+}
+
+
+
+/***************************************BIG SAVINGS ENDS***************************************/
+
+
+
+/************* WATER FILTERS STARTS **************/
+
+
+/*general statments*/
+a.hoverBlue:hover{color:#2268c6;text-decoration:underline}
+h1{font-family:"Lucida Grande", Verdana, "Lucida Sans Unicode", sans-serif;font-size:18px;color:#005abb;font-weight:bold}
+/*declare useful classes*/
+.clear{clear:both;height:0}
+.right{float:right}
+.left{float:left}
+.bold{font-weight:bold}
+.italic{font-style:italic}
+.blue{color:#005abb}
+.title{color:#005abb;font-size:26px;margin:0 0 12px 0}
+.subtitle{font-size:12px;font-weight:bold;margin:0 0 3px 0}
+.moreImages{font-size:11px;color:#8f8f8f;padding:0 15px 0 0;background:url(/water-filters/images/more-prod-arrow.png) no-repeat right 5px}
+.descriptionCode{font-size:10px;padding:2px 0 0 13px;margin:5px 0 10px 0}
+.hr{border-bottom:#e1e1e1 solid 1px;height:0;margin:28px 0}
+html[lang=fr] .hr{margin:0 0 20px 0}
+.paragraph{margin:0 0 15px 0}
+a.videoThumb{display:block;width:194px;height:128px}
+.marginBottom{margin:25px 0 0 0}
+.empty{font-size:0px;text-indent:-99999px}
+.fontInc{font-size:12px}
+.letterSpacing{letter-spacing:0.1em}
+/*content*/
+.trackNavigation{height:35px;line-height:53px;padding-top:25px;color:#999999;float:left}
+.trackNavigation a, .trackNavigation span{background:url(/water-filters/images/track-nav-arrow.png) no-repeat right;padding:0 15px 0 0}
+ul.contentBoxes li a.modal, .doubleColRight a.modal{display: block !important;}
+
+#mainContent{width:960px;margin:0 auto}
+/*leftCol*/
+#leftColProductModel{width:220px;float:left;border-top:#c7c7c7 solid 1px;padding:35px 0 0}
+#leftColProductModel a.productImage{display:block;width:146px;height:274px;margin:0 auto}
+#leftColProductModel .moreImages{margin:0 0 0 60px;background:url(/water-filters/images/more-prod-arrow.png) no-repeat left;padding:2px 0 0 8px}
+/*midCol*/
+#midColProductModel{width:442px;float:left;margin:0 28px 0 0;border-top:#c7c7c7 solid 1px;padding:35px 0 0}
+#midColProductModel p.paragraph{text-align:justify;margin:0 0 25px 0}
+.doubleColLeft{float:left;width:218px;border-right:1px solid #e1e1e1}
+.doubleColLeft .doubleColInt{width:107px;float:left;margin:25px 0 0 0}
+.doubleColLeft .doubleColInt li:first-child{font-size:13px;margin:0 0 10px 0}
+.doubleColRight{float:right;width:196px;padding:0 0 0 22px}
+ul.listPDF li{background:url(/water-filters/images/pdf-icon.png) no-repeat;font-size:10px}
+ul.listPDF li a{padding:0 0 0 40px;display:block;height:20px;line-height:20px;margin:13px 0 0 0}
+a.videoThumb{background:url(/water-filters/images/video-product-hover.png) no-repeat}
+/*rightCol*/
+.grayBG{background:#EEE}
+.grayBG2{background:#EEE}
+#rightColProductModel{float:left;width:250px}
+#rightColProductModel form{border:#eee solid 1px}
+#rightColProductModel form p.subtitle{padding:12px 0 0 15px}
+#rightColProductModel form span.learnMore{font-size:10px;font-weight:normal;background:url(/water-filters/images/more-prod-arrow.png) no-repeat left 1px; padding:0px 0px 0px 8px!important;  height:10px; width:auto;}
+#rightColProductModel form ul{padding:0 12px 15px}
+#rightColProductModel form li{margin:10px 0 15px 0; height:30px;}
+#rightColProductModel form ul span.subtitle{margin:0 70px 0 0; float:right;}
+#rightColProductModel form ul span.subtitle{*margin:0 0 0 36px; *float:none;}
+#rightColProductModel form ul span.blockquote{margin:0px; float:right;font-weight: bold;}
+#rightColProductModel div p{padding:0 0 0 16px}
+#rightColProductModel .blockquoteSecTwo{padding:0 0 0 17px}
+#rightColProductModel .blockquoteSecTwo{*padding:0 0 0 25px !important}
+#rightColProductModel a.addToCart{display:block;width:116px;height:21px;margin:13px 0 0 13px;padding:0 0 13px;background:url(/water-filters/images/add-to-cart-button.png) 0 0px no-repeat;}
+#rightColProductModel a.addToCart:hover{background:url(/water-filters/images/add-to-cart-button.png) 0 -33px no-repeat;}
+html[lang=fr] #rightColProductModel a.addToCart{width:108px;height:27px;margin:13px 0 0 0;padding:0;background:url(/images/data/fr_CA/btn_add_to_cart_tab.png) 0 0px no-repeat;}
+html[lang=fr] #rightColProductModel a.addToCart:hover{background:url(/images/data/fr_CA/btn_add_to_cart_tab.png) 0 -26px no-repeat;}
+#rightColProductModel #freshFilterMonth{border-right:#efefef solid 1px;border-left:#efefef solid 1px;padding:20px 13px}
+#rightColProductModel #freshFilterMonth .leftYellowBorder{border-left:solid 3px #eeb111;padding:0 0 0 7px}
+#rightColProductModel label, #rightColProductModel label{vertical-align:top}
+.bottomForm{background:url(/water-filters/images/form-bottom-border-radius.png) no-repeat;height:7px}
+.topForm{background:#eee url(/water-filters/images/form-top-border-radius.png) no-repeat;height:5px}
+.topFormWhite{background:url(/water-filters/images/form-top-white-border-radius.png) no-repeat;height:7px;margin:35px 0 0}
+.filterBoundless{background:#eee;margin:20px 0 0}
+.filterBoundless p.subtitle{padding-top:20px !important}
+.filterBoundless img{margin:20px 20px 0}
+.filterBoundless .moreImages{margin:20px 0 0 16px;padding:0 0 20px 8px;background-position:0 4px;display:block}
+.prodFormSecTwo2{ height:270px;}
+
+/*content HELP  page*/
+.leftColHelp{ width:710px; height:auto;   float:left;}
+.rightColHelp{ width: 250px; height:400px; float:left;}
+     
+ul.contentBoxes{ list-style:none; overflow:hidden; margin:10px 0 20px 0;}
+html[lang=fr] ul.contentBoxes li{margin: 0 20px 40px 0}
+ul.contentBoxes li{ float:left; width:201px; height:210px; margin:0 20px 20px 0; display:block;}
+ul.contentBoxes li img{ width:201px; height:auto; margin:0 0 10px 0; clear:both;}
+p.introTextHelp{ margin:14px 0 25px 0; line-height:20px;font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif;font-size: 11px;}
+p.nameProductList{ font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#666; margin:0 0 8px 0;}
+p.decriptionCode1{ background:url(/water-filters/images/help_page/bullet_filter_1.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode2{ background:url(/water-filters/images/help_page/bullet_filter_2.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode3{ background:url(/water-filters/images/help_page/bullet_filter_3.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode4{ background:url(/water-filters/images/help_page/bullet_filter_4.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode5{ background:url(/water-filters/images/help_page/bullet_filter_5.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode6{ background:url(/water-filters/images/help_page/bullet_filter_6.png) no-repeat left; padding:2px 0 0 12px;}
+.customerServiceBox{ width:249px;}
+.customerServiceBoxWrapTop{ width:249px; height:11px; float:left;background:url(/water-filters/images/help_page/wrap_customer_top.png) top;}
+.customerServiceBoxContent{ width:219px;  float:left; padding:15px; background:url(/water-filters/images/help_page/bg_customer_box.png) repeat-y ; }
+.customerServiceBoxWrapBottom{width:249px; height:6px; float:left; background:url(/water-filters/images/help_page/wrap_customer_bottom.png) top;}
+
+
+p.customerServiceBoxTitle{ color:#005abb; font-size:15px; margin:0 0 10px 0;}
+p.customerServiceBoxSubtitle{ font-size:13px; margin:6px 0 6px 0;}
+p.customerServiceBoxText{ margin-bottom:6px;}
+p.customerServiceBoxAdvice{ font-weight:bold; font-size:11px; line-height:13px; margin-bottom:10px;}
+
+a.maytagFilterBtn{ width:100px; height:23px; display:block; background:url(/water-filters/images/filter_finder_btn.png) top no-repeat; text-indent:-9999px; margin-bottom:10px;}
+a.maytagFilterBtn:hover{ background: url(/water-filters/images/filter_finder_btn.png) bottom;}
+a.maytagChatBtn{ width:100px; height:23px; display:block; background:url(/water-filters/images/live_chat_btn.png) top no-repeat; text-indent:-9999px; margin-bottom:15px;}
+a.maytagChatBtn:hover{ background: url(/water-filters/images/live_chat_btn.png) bottom;}
+a.blueLinkSidebar{   margin:0 8px 10px 0; padding:0 0 0 10px; background:url(/water-filters/images/more-prod-arrow.png) no-repeat left;}
+a.blueLinkSidebar:hover{ text-decoration:underline;}
+
+a span.thumbHover{ width:201px; height:135px; display:bloack;  background: url(/water-filters/images/thumb_hover.png) top; position:absolute; z-index:1000;}
+a span.thumbHover:hover{ width:201px; height:135px; display:block;  background: url(/water-filters/images/thumb_hover.png) bottom; position:absolute; z-index:1000;}
+
+/************************** WATER FILTERS ENDS *****************************/
+
+/********************* WATER FILTER fancy box starts *************************/
+/*! fancyBox v2.0.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-tmp iframe, .fancybox-tmp object {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+}
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1002;
+}
+.fancybox-outer {
+	
+	position: relative;
+	padding: 0;
+	margin: 0;
+	background: #FFFFFF;
+	color: #444;
+	text-shadow: none;
+	padding:20px 15px 15px 15px!important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 10px 25px #969696;
+	-moz-box-shadow: 0 10px 25px #969696;
+	box-shadow: 0 10px 25px #969696;
+	behavior: url(PIE.htc);
+}
+.fancybox-opened {
+	z-index: 1003;
+}
+.fancybox-opened .fancybox-outer {
+	-webkit-box-shadow: 0 10px 25px #969696;
+	-moz-box-shadow: 0 10px 25px #969696;
+	box-shadow: 0 10px 25px #969696;
+	behavior: url(PIE.htc);
+}
+.fancybox-inner {
+	width: 100%!important;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	outline: none;
+	overflow: hidden!important;
+}
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 10px;
+}
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+#fancybox-loading, .fancybox-prev span, .fancybox-next span {
+	background-image: url('/water-filters/images/fancybox_sprite.png');
+}
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: -1010;
+}
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('/water-filters/images/fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-close {
+	position: absolute;
+	top: -22px;
+	right: -6px;
+	cursor: pointer;
+	z-index: 1004;
+	background:url(/water-filters/images/maytag_close_btn.png);
+	width:90px;
+	height:26px;
+}
+html[lang=fr] .fancybox-close{
+	background:url(/water-filters/images/maytag_close_btn_FR.png)
+}
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	background: transparent url('/water-filters/images/blank.gif'); /* helps IE */
+	z-index: 1003;
+}
+.fancybox-prev {
+	left: 0;
+}
+.fancybox-next {
+	right: 0;
+}
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 36px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 1003;
+	visibility: hidden;
+}
+.fancybox-prev span {
+	left: 20px;
+	background-position: 0 -36px;
+}
+.fancybox-next span {
+	right: 20px;
+	background-position: 0 -72px;
+}
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+.fancybox-tmp {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	padding: 0;
+	overflow: visible;
+	visibility: hidden;
+}
+/* Overlay helper */
+
+#fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 1001;
+	background: #000;
+}
+/* Title helper */
+
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 1005;
+}
+.fancybox-opened .fancybox-title {
+	visibility: visible;
+}
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 1003;
+	text-align: center;
+}
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+	behavior: url(PIE.htc);
+}
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+.fancybox-title-inside-wrap {
+	position: absolute;
+	top: 20px;
+}
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: black;
+	background: rgba(0, 0, 0, 0.2);
+	behavior: url(PIE.htc);
+}
+
+
+/********************* WATER FILTER fancy box ends *************************/
+
+/******water filters*******/
+
+.blue{color:#005abb}
+.title{color:#005abb;font-size:26px;margin:0 0 12px 0}
+.subtitle{font-size:12px;font-weight:bold;margin:0 0 3px 0}
+.moreImages{font-size:11px;color:#8f8f8f;padding:0 15px 0 0;background:url(/water-filters/images/more-prod-arrow.png) no-repeat right 5px}
+.descriptionCode{font-size:10px;padding:2px 0 0 13px;background:url(/water-filters/images/bg-description-code.png) no-repeat left;margin:5px 0 10px 0}
+.hr{border-bottom:#e1e1e1 solid 1px;height:0;margin:28px 0}
+.paragraph{margin:0 0 15px 0}
+a.videoThumb{display:block;width:194px;height:128px}
+.marginBottom{margin:25px 0 0 0}
+.empty{font-size:0px;text-indent:-99999px}
+.fontInc{font-size:12px}
+.letterSpacing{letter-spacing:0.1em}
+
+/*content*/
+#content{width:960px;margin:0 auto}
+.trackNavigation{height:53px;line-height:53px;color:#999999;float:left}
+.trackNavigation a, .trackNavigation span{background:url(/water-filters/images/track-nav-arrow.png) no-repeat right;padding:0 15px 0 0}
+#productGrid .productChooser a{display:block;height:205px;}
+#mainContent{width:960px;margin:0 auto}
+/*leftCol*/
+#leftColProductModel{width:220px;float:left;border-top:#c7c7c7 solid 1px;padding:35px 0 0}
+#leftColProductModel a.productImage{display:block;width:146px;height:274px;margin:0 auto}
+#leftColProductModel .moreImages{margin:0 0 0 60px;background:url(/water-filters/images/more-prod-arrow.png) no-repeat left;padding:2px 0 0 8px}
+/*midCol*/
+#midColProductModel{width:442px;float:left;margin:0 28px 0 0;border-top:#c7c7c7 solid 1px;padding:35px 0 0}
+#midColProductModel p.paragraph{text-align:left;margin:0 0 25px 0}
+.doubleColLeft{float:left;width:218px;border-right:1px solid #e1e1e1}
+.doubleColLeft .doubleColInt{width:107px;float:left;margin:25px 0 0 0}
+.doubleColLeft .doubleColInt li:first-child{font-size:13px;margin:0 0 10px 0}
+.doubleColRight{float:right;width:196px;padding:0 0 0 22px}
+ul.listPDF li{background:url(/water-filters/images/pdf-icon.png) no-repeat;font-size:10px}
+ul.listPDF li a{padding:0 0 0 40px;display:block;height:20px;line-height:20px;margin:13px 0 0 0}
+a.videoThumb{background:url(/water-filters/images/video-product-hover.png) no-repeat}
+/*rightCol*/
+.grayBG{background:#EEE}
+.grayBG2{background:#EEE}
+#rightColProductModel{float:left;width:250px}
+#rightColProductModel form{border:#eee solid 1px}
+#rightColProductModel form p.subtitle{padding:12px 0 0 15px}
+#rightColProductModel form span.learnMore{font-size:10px;font-weight:normal;background:url(/water-filters/images/more-prod-arrow.png) no-repeat left 1px; padding:0px 0px 0px 8px!important;  height:10px; width:auto;}
+#rightColProductModel form ul{padding:0 12px 15px}
+#rightColProductModel form li{margin:10px 0 15px 0; height:30px;text-align:left;}
+#rightColProductModel form ul span.subtitle{margin:0 70px 0 0; float:right;}
+body:nth-of-type(1) #rightColProductModel form ul span.subtitle{
+    margin: 0 0px 0 0;
+    float: none;
+    position: absolute;
+    left: 115px;
+}
+html[lang=fr] body:nth-of-type(1) #rightColProductModel form ul span.subtitle{
+    left: 165px;
+}
+#rightColProductModel form ul span.subtitle{*margin:0 0 0 36px; *float:none;}
+#rightColProductModel form ul span.blockquote{margin:0 0  0px; float:right;}
+#rightColProductModel div p{padding:0 0 0 6px}
+#rightColProductModel .blockquoteSecTwo{padding:0 0 0 17px}
+#rightColProductModel .blockquoteSecTwo{*padding:0 0 0 25px !important}
+#rightColProductModel a.addToCart{display:block;width:116px;height:21px;margin:13px 0 0 13px;padding:0 0 13px;background:url(/water-filters/images/add-to-cart-button.png) 0 0px no-repeat;}
+#rightColProductModel a.addToCart:hover{background:url(/water-filters/images/add-to-cart-button.png) 0 -33px no-repeat;}
+#rightColProductModel #freshFilterMonth{border-right:#efefef solid 1px;border-left:#efefef solid 1px;padding:20px 13px}
+#rightColProductModel #freshFilterMonth .leftYellowBorder{border-left:solid 3px #eeb111;padding:0 0 0 7px}
+#rightColProductModel label, #rightColProductModel label{vertical-align:top}
+.bottomForm{background:url(/water-filters/images/form-bottom-border-radius.png) no-repeat;height:7px}
+.topForm{background:#eee url(/water-filters/images/form-top-border-radius.png) no-repeat;height:5px}
+.topFormWhite{background:url(/water-filters/images/form-top-white-border-radius.png) no-repeat;height:7px;margin:35px 0 0}
+.filterBoundless{background:#eee;margin:20px 0 0}
+.filterBoundless p.subtitle{padding-top:20px !important}
+.filterBoundless img{margin:20px 20px 0}
+.filterBoundless .moreImages{margin:20px 0 0 16px;padding:0 0 20px 8px;background-position:0 4px;display:block}
+.prodFormSecTwo2{ height:270px;}
+
+/*content HELP  page*/
+.leftColHelp{padding-right: 20px;
+    width: 690px;height:auto;   float:left;}
+.rightColHelp{ width: 250px; height:400px; float:left;}
+     
+ul.contentBoxes{ list-style:none; overflow:hidden; margin:10px 0 20px 0;}
+ul.contentBoxes li{ float:left; width:201px; height:210px; margin:0 20px 20px 0; display:block;}
+ul.contentBoxes li img{ width:201px; height:auto; margin:0 0 10px 0; clear:both;}
+p.introTextHelp{ margin:14px 0 25px 0; line-height:20px;}
+p.nameProductList{ font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#666; margin:0 0 8px 0;}
+p.decriptionCode1{ background:url(/water-filters/images/help_page/bullet_filter_1.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode2{ background:url(/water-filters/images/help_page/bullet_filter_2.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode3{ background:url(/water-filters/images/help_page/bullet_filter_3.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode4{ background:url(/water-filters/images/help_page/bullet_filter_4.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode5{ background:url(/water-filters/images/help_page/bullet_filter_5.png) no-repeat left; padding:2px 0 0 12px;}
+p.decriptionCode6{ background:url(/water-filters/images/help_page/bullet_filter_6.png) no-repeat left; padding:2px 0 0 12px;}
+.customerServiceBox{ width:249px;}
+.customerServiceBoxWrapTop{ width:249px; height:11px; float:left;background:url(/water-filters/images/help_page/wrap_customer_top.png) top;}
+.customerServiceBoxContent{ width:219px;  float:left; padding:15px; background:url(/water-filters/images/help_page/bg_customer_box.png) repeat-y ; }
+.customerServiceBoxWrapBottom{width:249px; height:6px; float:left; background:url(/water-filters/images/help_page/wrap_customer_bottom.png) top;}
+
+
+p.customerServiceBoxTitle{ color:#005abb; font-size:15px; margin:0 0 10px 0;}
+p.customerServiceBoxSubtitle{ font-size:13px; margin:6px 0 6px 0;}
+p.customerServiceBoxText{ margin-bottom:6px;}
+p.customerServiceBoxAdvice{ font-weight:bold; font-size:11px; line-height:13px; margin-bottom:10px;}
+
+a.maytagFilterBtn{ width:100px; height:23px; display:block; background:url(/water-filters/images/filter_finder_btn.png) top no-repeat; text-indent:-9999px; margin-bottom:10px;}
+a.maytagFilterBtn:hover{ background: url(/water-filters/images/filter_finder_btn.png) bottom;}
+a.maytagChatBtn{ width:100px; height:23px; display:block; background:url(/water-filters/images/live_chat_btn.png) top no-repeat; text-indent:-9999px; margin-bottom:15px;}
+a.maytagChatBtn:hover{ background: url(/water-filters/images/live_chat_btn.png) bottom;}
+a.blueLinkSidebar{   margin:0 8px 10px 0; padding:0 0 0 10px; background:url(/water-filters/images/more-prod-arrow.png) no-repeat left;}
+a.blueLinkSidebar:hover{ text-decoration:underline;}
+
+a span.thumbHover{ width:201px; height:135px; display:bloack;  background: url(/water-filters/images/thumb_hover.png) top; position:absolute; z-index:1000;}
+a span.thumbHover:hover{ width:201px; height:135px; display:block;  background: url(/water-filters/images/thumb_hover.png) bottom; position:absolute; z-index:1000;}
+
+.subtitle .learnMore a{display:inline!important ;}
+/*******water filters*****/
+
+#fitSystemContainer{float:left;position:relative;}
+#fitSystemContainer p{color:#505050;padding-bottom:5px;}
+#fitSystemContainer a{text-decoration:none;color:#005abb;}
+#fitLogo{display:block;padding-bottom:10px;clear:both;}
+
+#header-wrap #header #header_main_nav .top .ownercenter #manlNav,#header_main_nav ul.top li.last ul li ul.right-box li a#manlNav{
+    background: url("/images/content/manualsanlitNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 118px;
+    width: 167px;
+}
+#header-wrap #header #header_main_nav .top .ownercenter #prodRegNav,#header_main_nav ul.top li.last ul li ul.right-box li a#prodRegNav{
+    background: url("/images/content/prodRegNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 113px;
+    width: 156px;
+}
+
+#header_main_nav ul.top li.first ul{*margin-left:110px;}
+#header_main_nav ul.top li.first ul li ul.right-box{*margin-left:180px;}
+
+/*Home Solutions*/
+div#home_solutions_header.hs_header{
+	width: 100%; background: url(/images/content/jumppage/home_solutions/hs_header.jpg) no-repeat scroll 0pt 21px transparent; height: 231px;
+}
+div#home_solutions_content.hs_content{
+	width: 100%; height: 760px; background: url(/images/content/jumppage/home_solutions/homeSolutions_bg.png) no-repeat scroll 0pt 0pt transparent; padding-bottom: 60px;margin-bottom: 40px;
+}
+div.hs_content div.appliances_hs{
+	float: left; position: relative; height: auto; border-bottom: 1px solid rgb(153, 153, 153); padding: 25px 0pt; width: 860px; margin: 0pt 50px;
+}
+div.hs_content div.appliances_hs.second{padding-bottom: 15px;}
+div.hs_content div.under_appliances_text{
+	position: relative; float: left; margin: 0pt 50px; padding: 8px 0pt; width: 860px; height: auto;
+}
+.appliance_hs {
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    float: left;
+    height: 110px;
+    padding: 203px 10px 20px;
+    position: relative;
+    text-align: center;
+    width: 264px;
+}
+.appliance_hs a {
+    float: left;
+    font-size: 11px;
+    position: relative;
+    width: 263px;
+}
+.infoText.water_heaters h2, .infoText.water_heaters p {
+    padding-bottom: 5px;
+    text-align: center;
+}
+.infoText.first {
+    border-left: medium none;
+    border-right: medium none;
+    display:none; /* -> block*/
+}
+.infoText.last {
+    border-right: medium none;
+}
+.infoText.last div.rounded_bg {
+    background: url("/images/content/jumppage/home_solutions/rounded_bg.png") no-repeat scroll 0 0 transparent;
+    font-family: helvetica;
+    font-size: 8pt;
+    height: 15px;
+    margin: 0 14px;
+    padding: 12px 0 10px 10px;
+    width: 672px;
+}
+.infoText p.phone_number {
+    font-size: 14px;
+    font-weight: bold;
+}
+.infoText {
+    border-left: 0 solid #999999;
+    border-right: 1px solid #999999;
+    float: left;
+    height: 37px;
+    padding: 10px 10px 0 75px;
+    position: relative;
+    width: 687px;
+}
+#home_solutions_content h2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+	font-family:helvetica;
+}
+.air_filter h2 {
+    padding-top: 23px;
+}
+.air_purifier h2 {
+    padding-top: 23px;
+}
+.appliance_hs.first {
+    border-left: medium none;
+    border-right: medium none;
+}
+.appliance_hs.last {
+    border-left: medium none;
+    border-right: medium none;
+}
+a.see_all {
+    background: url("/images/content/jumppage/home_solutions/btn_see_all.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 34px;
+    margin: 15px 90px 0;
+    position: relative;
+    width: 85px;
+}
+.air_filter {
+    background: url("/images/content/jumppage/home_solutions/air_filter.png") no-repeat scroll 10px 0 transparent;
+}
+.central_heating {
+    background: url("/images/content/jumppage/home_solutions/central_heading_cooling.png") no-repeat scroll 0 0 transparent;
+}
+.air_purifier {
+    background: url("/images/content/jumppage/home_solutions/air_purifiers.png") no-repeat scroll 15px 0 transparent;
+}
+.iron {
+    background: url("/images/content/jumppage/home_solutions/iron.png") no-repeat scroll 58px -40px transparent;
+    border-left: medium none !important;
+	padding-bottom: 0px;
+}
+#main_content.home_solutions {
+    height: auto;
+    margin-top: 0px;
+    position: relative;
+    width: 960px;
+}
+/*END - Home Solutions*/
+#header_main_nav ul li.top ul li ul.right-box{
+	*left:0 !important;
+}
+div.product_list_page.SC_Accessories > div#espot_image {
+    padding-top: 25px;
+}
+#content{
+	width: 960px !important;
+}
+
+/*allways last style
+.dj_ff3 #content{width:100% !important;}*/
+body.water-filters #content {
+    width: 960px !important;
+}
+
+
+#sweeptakesContainer{width:940px;margin:0 auto;padding:20px 0;}
+#sweeptakesContainer h1{font-size:2em !important;}
+.sweepTitles{text-align: center;color:inherit;}
+#sweeptakesContainer ol, #sweeptakesContainer li{list-style-type: decimal !important;padding-top:10px;}
+.noSweepListText{padding-top:5px;}
+.sweepLink{color:#0099FF;}
+.sweepConditionOrder{font-weight: bold;}
+
+#pressReleaseList{width:390px;font-family:verdana, sans-serif;font-size:11px;height:175px;overflow:hidden}
+#pressReleaseList li.titlePressRelease{width:300px;float:left}
+#pressReleaseList li.datePressRelease{width:90px;float:right;text-align:right;color:#505050}
+#pressReleaseList a{background:url(/images/content/lf-arrow.png) no-repeat 0 3px;color:#005ABB;text-align:left;padding:0 0 0 10px;display:block;margin:0 0 20px}
+a#showHideCont{background:url(/images/content/bttm-arrow.png) no-repeat 0 5px;font-family:verdana, sans-serif;font-size:11px;color:#505050;display:block;padding:0 0 0 10px;margin:0 0 15px; font-weight:bold;}
+#header_main_nav ul.top li.top a.touchFix {
+    color: #FFFFFF;
+    height: 43px;
+    line-height: 43px;
+    cursor: default;
+}
+#useCareContainer{border-top:2px solid #D0D0D0;width:200px;height:140px;display:block;float:left;}
+#useCareGuideTitle{padding-top:20px}
+#useCareGuideInfo{font-weight:normal;font-size:10px;color:#505050;padding: 8px 0;}
+#useCareGuidePdf{background: url("/images/icon_pdf_logo.png") no-repeat scroll 0 0 transparent;color: #005abb;display: block;margin-bottom: 30px;margin-top: 5px;padding-left: 20px;font-weight:normal;}
+
+#breadcrumb-section ul#breadcrumb-list li#SecondArrow{float: left;margin:0;padding: 0;width: 4px;*margin-top:18px;}
+#breadcrumb-section ul#breadcrumb-list li#SecondArrow img{display: block;float: left;height: 7px;margin-top: 21px;width: 4px;}
+#breadcrumb-section ul#breadcrumb-list li{*margin-top:18px;}
+@media print{
+body.product_list_accessories_page #page{background-image:none;width:/*\**/960px !important;display:/*\**/block;}
+#content-wrap{width:960px;width:/*\**/960px !important;display:/*\**/block;}
+#header-wrap{width:/*\**/960px !important;display:/*\**/block;}
+}
+
+/*Home Solutions landing pages*/
+.hs_landing_container{background: url(/images/homeSolutions/hs_landing_bg.jpg) 0 0 no-repeat;height:234px;width:960px;display:block;padding-left: 45px;padding-top: 48px;margin: 20px 0 120px;}
+.hs_landing_seeProd_link{background: url(/images/homeSolutions/hs_link_btn.png) 0 0 no-repeat;height:33px;width:125px;display:block;line-height: 31px;font-weight:bold;text-transform:uppercase;font-size:9px;padding-left:12px;}
+.hs_info_container{display:block;float:left;}
+.hs_landing_info{font-size:16px;margin:15px 0;}
+#hs_air_purifiers .hs_image_container{background: url(/images/homeSolutions/airPurifier_prod.png) 0 0 no-repeat;height:271px;width:222px;display:block;float:left;margin-left: 150px;}
+#hs_air_filters .hs_image_container{background: url(/images/homeSolutions/airFilter_prod.png) 0 0 no-repeat;height:271px;width:222px;display:block;float:left;margin-left: 150px;}
+#hs_heating_cooling .hs_image_container{background: url(/images/homeSolutions/centralHC_prod.png) 0 0 no-repeat;height:271px;width:350px;display:block;float:left;}
+#hs_irons .hs_image_container{background: url(/images/homeSolutions/iron_prod.png) 0 0 no-repeat;height:350px;width:350px;display:block;float:left;margin-left:20px;position:relative;bottom:50px;}
+
+a.altTooltip:hover {text-decoration:none;}
+a.altTooltip .altSpan, #header_main_nav ul.top li.last ul li ul li a.altTooltip .altSpan {display:none;margin:0 0 0 10px;padding:5px 5px;*margin: 0 0 0 -65px;}
+a.altTooltip:hover .altSpan{display:block;position:absolute;border:1px solid #ccc;background:#fff;color:#666;width:160px;font-size:11px;margin-top:2px;*margin-top:20px;z-index:10px;*margin-left:-80px;}
+#header_main_nav ul.top li.last ul li ul li a.altTooltip:hover .altSpan{display:block;position:absolute;border:1px solid #ccc;background:#fff;color:#666;width:160px;margin-top:2px;*margin-top:20px;z-index:10px;*margin-left:-70px !important;font-size:11px;font-weight:bold;}
+#header_main_nav ul li.top ul li.header {height: 18px;}
+#header_main_nav ul li.top ul li.header.singleline {height: 8px;}
+#header_main_nav ul li.top ul li#kitchenSeriesTitle{height:16px;padding-top:9px;}
+#header_main_nav ul.top li.last ul li ul.left-box li#service&supportTitle a{height:20px !important;overflow:visible !important;}
+#header_main_nav ul li.top ul.refrigerators li.singleline .altTooltip .altSpan, #header_main_nav ul li.top ul.dishwashers li.header .altTooltip .altSpan{*margin-left:-120px !important}
+
+.tabbed_content ul .tabbed_col a.viewDemo_cta {
+    background: url("/images/data/en_CA/content/categorylanding/view_demo_cta.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 33px;
+    position: relative;
+    text-decoration: none;
+    width: 120px;
+	top: -85px;
+	margin: 0 auto;
+}
+html[lang=fr] tabbed_content ul .tabbed_col a.viewDemo_cta {background: url("/images/data/fr_CA/content/categorylanding/view_demo_cta_2.png") no-repeat scroll left top transparent}
+
+.tabbed_content ul .tabbed_col a.viewDemo_cta:hover {
+    background-position: 0 -34px;
+}
+#view_demo_cta.refrigeration1 {
+    padding-top: 5px;
+}
+.dj_ie.dj_ie7 #view_demo_cta.refrigeration, .dj_ie #view_demo_cta.refrigeration{
+	height:11px;
+}
+.tabbed_content ul .tabbed_col .laundry1 a.viewDemo_cta {
+    left: -4px;
+}
+.tabbed_content.cooking ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide a {
+    background: url("/images/data/en_CA/content/categorylanding/view_demo_cta_2.png") no-repeat scroll left top transparent;
+    float: left;
+    position: relative;
+    top: -105px;
+}
+
+
+.tabbed_content.cooking ul .tabbed_col #category_landing_demo_image #view_demo_cta a:hover, 
+.tabbed_content.cooking ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide a:hover {
+    background-position: 0 -34px;
+}
+.tabbed_content.cooking ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide {
+    margin: 0 auto;
+    width: 125px;
+}
+
+.tabbed_content.cleaning ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide a {
+    background: url("/images/content/categorylanding/view_demo_cta_2.png") no-repeat scroll left top transparent;
+    float: left;
+    position: relative;
+    top: -105px;
+}
+.tabbed_content.cleaning ul .tabbed_col #category_landing_demo_image #view_demo_cta a:hover, 
+.tabbed_content.cleaning ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide a:hover {
+    background-position: 0 -34px;
+}
+.tabbed_content.cleaning ul .tabbed_col #category_landing_demo_image #view_demo_cta.wide {
+    margin: 0 auto;
+    width: 125px;
+}
+#content_container.owner_center p.repair{
+	font-family: Verdana,sans-serif;
+	font-size:12px;
+	line-height:17px;
+	font-weight:bold;
+	padding:20px 0px;
+}
+#content_container.owner_center p.repair{
+	font-family: Verdana,sans-serif;
+	font-size:12px;
+	line-height:17px;
+	font-weight:bold;
+	padding:20px 0px;
+	display:block;
+	float:left;
+	clear:both;
+	margin:5px 0 0 30px;
+	width:600px;
+}
+#content_container.owner_center.oc_rep_content{
+	padding-left:10px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left{
+	margin-top:215px;
+	width:670px;
+	float:left;
+	padding:0 0 0 15px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left h2{
+	font-family: Verdana,sans-serif;
+	font-size:18px;
+	line-height:30px;
+	text-transform:capitalize;
+	font-weight:bold;
+	margin-bottom:0;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left h3{
+	font-size:14px;
+	line-height:17px;
+	font-weight:bold;
+	text-transform:capitalize;
+	margin-top:25px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p{
+	font-size:10px;
+	line-height:17px;
+	padding:7px 0;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p.fix{
+	*line-height:10px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p{
+	*line-height:17px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p a{
+	color:#005abb;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p span.blue{
+	color:#005abb;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_left p a:hover{
+	color:#0078FA;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_right{
+	margin:215px 40px 0 0;
+	width:190px;
+	float:right;
+	border:1px solid #005abb;
+	padding:15px;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_right p.first{
+	font-size:11px;
+	line-height:15px;
+	padding:7px 0;
+	font-weight:bold;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_right p.second{
+	font-size:10px;
+	line-height:15px;
+	padding:7px 0;
+	font-weight:bold;
+}
+#content_container.owner_center.oc_rep_content div.oc_rep_content_right p.call{
+	font-size:14px;
+	line-height:19px;
+	color:#005abb;
+	padding:7px 0;
+	font-weight:bold;
+}
+#service_footer.extended{
+	float:left;
+	width:950px;
+	height:190px;
+	margin-top:50px;
+}
+#service_footer.extended.extended2{
+	margin-top:-20px;
+}
+#service_footer.extended #left_border {
+	left:15px;
+}
+#service_footer.extended > ul {
+	margin-left:0;
+	width:908px;
+}
+#service_footer.extended > ul > li {
+	width:197px;
+	padding:10px 15px 15px 15px;
+}
+#service_footer.extended > ul > li h4 {
+	font-size:10px;
+	line-height:15px;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+#service_footer.extended > ul > li p {
+	font-size:9px;
+	line-height:15px;
+}
+#ncpEspot{
+	float:left;
+	clear:both;
+	width:493px;
+	height:106px;
+	background: url("/images/content/categorylanding/laundry/bg_ncp_espot.png") 0 0 transparent;
+}
+
+#ncpEspot img.ncpEspotImgLaundy{
+	margin:10px 0 0 5px;
+	float:left;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+#ncpEspot span.ncpEspotTextReceive{
+	font-family:"Verdana",Geneva,sans-serif;
+	font-size:10px;
+	line-heigth:9px;
+	color:#ffffff;
+	position:relative;
+	top:19px;
+	float:left;
+}
+
+#ncpEspot img.ncpEspotImgPrice{
+	float:left;
+	left:-90px;
+	position:relative;
+	top:34px;
+}
+
+#WC_ContentAreaESpot_div_1_CATBEspot #ncpEspot a.ncpEspotTextLink{
+	background:url('/images/content/categorylanding/laundry/ncp_espot_arrow.png') no-repeat scroll 5px 2px transparent;
+	font-family:'Lucida Grande',Lucida Sans,Lucida Sans Unicode,Lucida Sans Regular,Tahoma,Verdana,sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	top:80px;
+	left:-192px;
+	padding-left:13px;
+	height:20px;
+	float:left;
+	line-height:1.3 !important;
+}
+#WC_ContentAreaESpot_div_1_CATBEspot #ncpEspot a.ncpEspotTextLink:hover{
+	background:url('/images/content/categorylanding/laundry/ncp_espot_arrow-hover.png') no-repeat scroll 5px 2px transparent;
+}
+
+#ncpEspot span.ncpEspotTextHeader{
+	font-family:"Verdana",Geneva,sans-serif;
+	font-size:11px;
+	line-heigth:11px;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	top:-4px;
+	left:100px;
+	width: 255px;
+	height:15px;
+	float:left;
+}
+
+#ncpEspot span.ncpEspotTextInfo{
+	font-family:"Verdana",Geneva,sans-serif;
+	font-size:11px;
+	line-heigth:11px;
+	color:#ffffff;
+	position:relative;
+	top:-4px;
+	left:100px;
+	width: 275px;
+	height:30px;
+	float:left;
+}
+
+#errorPage .contentgrad_header .left{
+	float: none;
+}
+
+.enOnly{margin-top:10px;}
+
+iframe[name="google_conversion_frame"] { display: none; }
+
+#WC_ContentAreaESpot_div_1_PDOTREspot #fitSystemContainer{padding-bottom:50px;float:none;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer{display:block;clear:both;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer .imgMan{float:left;margin-left:-6px;margin-right:6px;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer .manText{padding-top:18px;margin-right:-10px;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer #manInfo{font-size:90%;padding:5px 0;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer a:hover #manInfo{color:#505050;}
+#WC_ContentAreaESpot_div_1_PDOBREspot #manContainer #manUrl{font-size:90%;color:#005abb;}
+html[lang=fr] #WC_ContentAreaESpot_div_1_PDOBREspot #manContainer #manUrl{font-size:84%;}
+
+/* ========== Social Icons footer fix for Chrome ============ */
+
+.product_list .product_image_wrapper  .quick_view_hover img {
+    width: 135px;
+}
+.masthd {
+    background: url("/images/content/owner_center/main_bg_support.jpg") no-repeat scroll right 0;
+    height: 170px;
+    padding: 60px 0 0 55px;
+}
+html[lang=fr] .masthd {
+	padding: 10px 0 0 40px;
+}
+.owner_center_home .masthd h1 {
+    background: url("/images/content/owner_center/hl_main.png") no-repeat scroll 0 0;
+    height: 32px;
+    text-indent: -9999px;
+    width: 800px;
+}
+html[lang=fr] .owner_center_home .masthd h1 {
+	background: url("/images/data/fr_CA/content/owner_center/hl_main.png") no-repeat scroll 0 0;
+	height: 81px;
+}
+.owner_center_other .masthd h1 {
+    background: url("/images/content/owner_center/hl_myappliaces.png") no-repeat scroll 0 0;
+}
+html[lang=fr] .owner_center_other .masthd h1 {
+	background: url("/images/data/fr_CA/content/owner_center/hl_myappliaces.png") no-repeat scroll 0 0;
+	height: 55px;
+}
+.owner_center_home p.welcome {
+    font-size: 10px;
+    text-align: justify;
+    width: 340px;
+}
+html[lang=fr] .owner_center_home p.welcome {
+	width: 400px;
+}
+body#oc_register_auth .oc_register #oc_content {
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 0 0 5px 5px;
+    float: left;
+    margin-bottom: 20px;
+    width: 958px;
+}
+body#oc_register_auth .oc_register #oc_content #sidebar p {
+    font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Lucida Sans Regular',Verdana,sans-serif;
+    font-size: 10px;
+}
+body#oc_register_auth .product_header {
+    background: url("/images/content/owner_center/main_bg_support.jpg") no-repeat scroll right 0;
+    height: 170px;
+    margin-left: 0 !important;
+    padding: 60px 0 0 55px !important;
+}
+#oc_register .product_header {
+    background: url("/images/content/owner_center/main_bg_support.jpg") no-repeat scroll right 0;
+    height: 170px;
+    margin-left: 0 !important;
+    padding: 60px 0 0 55px !important;
+}
+body#oc_register_auth .product_header .product_title h1 {
+    background: url("/images/content/owner_center/hl_product_registration.png") no-repeat scroll 0 0;
+    color: #646464;
+    font-family: Arial,sans;
+    font-size: 28px;
+    height: 32px;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    width: 380px;
+}
+html[lang=fr] body#oc_register_auth .product_header .product_title h1 {
+    background: url("/images/data/fr_CA/content/owner_center/hl_product_registration.png") no-repeat scroll 0 0;
+    height: 82px;
+}
+body#oc_register_auth .oc_register #oc_content #sidebar h2 {
+    font-family: Arial,sans;
+    font-size: 16px;
+}
+body#oc_register_auth .oc_register #oc_content #sidebar h5 {
+    font-family: Arial,sans;
+    font-size: 12px;
+}
+
+#content_container.owner_center h3.hma {
+    background: url("/images/content/owner_center/h3_h4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#content_container.owner_center h3.hml {
+    background: url("/images/content/owner_center/h3_h4.png") no-repeat scroll 0 -20px rgba(0, 0, 0, 0);
+}
+#content_container.owner_center h3.hrp {
+    background: url("/images/content/owner_center/h3_h4.png") no-repeat scroll 0 -60px rgba(0, 0, 0, 0);
+}
+#content_container.owner_center h3 a.hryp {
+    background: url("/images/content/owner_center/h3_h4.png") no-repeat scroll 0 -100px rgba(0, 0, 0, 0);
+    display: block;
+    height: 20px;
+    width: 184px;
+}
+body#oc_my_apps_noregapps.owner_center .oc_my_appliances .product_header {
+    background: url("/images/content/owner_center/main_bg_support.jpg") no-repeat scroll right 0;
+    height: 170px;
+    margin-left: 0 !important;
+    padding: 60px 0 0 55px !important;
+}
+.owner_center_home .product_registration_land .product_header{
+	background: url(/images/content/owner_center/main_bg_support.jpg) no-repeat top right;
+	height: 170px;
+	padding: 60px 0 0 55px;
+}
+.owner_center_home .product_registration_land .product_header h1{
+	background: url(/images/content/owner_center/hl_product_registration.png) no-repeat top left;
+	height: 32px;
+	text-indent: -9999px;
+}
+html[lang=fr] .owner_center_home .product_registration_land .product_header h1{
+	background: url(/images/data/fr_CA/content/owner_center/hl_product_registration.png) no-repeat top left;
+	height: 82px;
+	text-indent: -9999px;
+}
+#guarantee{
+	margin-bottom:15px;
+}
+.wp_badge, .wp_text{
+	margin-bottom: 10px;
+}
+
+.mt_aqualift {
+	margin-bottom: 25px;
+}
+
+/**Casper PDP**/
+#page.product_detail.casper .headerline {
+	display: none;
+}
+#page.product_detail.casper #ins_text {
+	margin: 0 0 10px 0;
+}
+#page.product_detail.casper .search {
+	float: left;
+	width: 100%;
+	margin: 5px 0;
+}
+#page.product_detail.casper .search #searchText {
+	margin: 5px 0 0 10px
+}
+#page.product_detail.casper .search .show_result {
+	float: left;
+	padding-top: 7px;
+}
+#page.product_detail.casper .search #productHelpSearchForm {
+	float: left;
+}
+#page.product_detail.casper .search #productHelpSearchForm > label {
+	float: right;
+	margin-left: 5px;
+}
+#page.product_detail.casper .page_number_part {
+	float: left;
+	width: 100%;
+	margin: 0 0 15px 0;
+}
+#page.product_detail.casper .page_number_part > span {
+	float: left;
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px dotted #ccc;
+}
+#page.product_detail.casper .page_number_part span {
+	color: #666;
+}
+#page.product_detail.casper .page_number_part ol {
+	float: left;
+	width: 150px;
+}
+#page.product_detail.casper .page_number_part ol li {
+	float: left;
+	width: 10px;
+}
+#page.product_detail.casper #show_result {
+	margin-bottom: 10px;
+}
+#page.product_detail.casper .inactive-product-links a {
+	font-weight: bold;
+}
+#page.product_detail.casper .inactive-product-text a {
+	color: #005ABB;
+	font-weight: bold;
+}
+
+
+/* Product Registration */
+body#oc_register_auth .oc_register #oc_content div#left_part #mid_part {
+height:auto;
+overflow:visible;
+}
+body#oc_register_auth .oc_register #oc_content div.information_field label {
+width:130px;
+}
+body#oc_register_auth .oc_register #oc_content div.information_field .location .inForm div.oc_entry_field_error, body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.oc_entry_field_error {
+margin-left:140px;
+}
+body#oc_register_auth .oc_register #oc_content div.information_field .information .inForm div.pur_price span {
+padding:0;
+}
+body#oc_register_auth .oc_register #oc_content div.pur_location {
+clear:both;
+padding-top:10px;
+}
+
+/*PDP compare tray styles START*/
+#compare-tray-container.pdp {
+	position:relative;	
+}
+#compare-tray-container.pdp #compare-tray {
+	height: 75px;
+    width: 188px;
+	background: none repeat scroll 0 0 #f3f3f3;
+	border: 2px solid #ddd;
+	padding: 10px;
+	margin-bottom: 9px;
+}
+
+#compare-tray-container.pdp #compare-tray .compare-text {
+    color: #000;
+    float: left;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0 0 15px;
+    text-align: left;
+    width: 70px;
+}
+html[lang=fr] #compare-tray-container.pdp #compare-tray .compare-text {
+    color: #000;
+    float: left;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0 0 15px;
+    text-align: left;
+    width: 95px;
+}
+
+#compare-tray-container.pdp #compare-tray-button {
+    cursor: pointer;
+    float: right;
+    margin: 5px 0 0 3px;
+    padding: 4px 8px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #707070;
+	font-weight: bold;
+	font-size: 11pt;
+	border-radius: 5px;
+}
+html[lang=fr] #compare-tray-container.pdp #compare-tray-button {
+    cursor: pointer;
+    float: right;
+    /*margin: 5px 0 0 3px;*/
+    padding: 3px 6px;
+    position: absolute;
+    right: -3px;
+    top: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #707070;
+	font-weight: bold;
+	font-size: 11pt;
+	border-radius: 5px;
+}
+html[lang=fr] #compare-tray-container.pdp #compare-tray-button.active {
+	background-color: #005abb;
+	color: #FFF;
+	border-color: transparent;
+}
+
+#compare-tray-container.pdp #compare-tray ul {
+    clear: both;
+}
+
+#compare-tray-container.pdp #compare-tray li {
+    background-color: #fff;
+    float: left;
+    height: 34px;
+    margin: 0 0 0 6px;
+    width: 30px;
+	position:relative;
+}
+
+#compare-tray-container.pdp #compare-tray li img {
+	width:100%;
+	height:auto;	
+}
+
+#compare-tray-container.pdp #compare-tray li.empty {
+	border: 1px solid #000;
+}
+#compare-tray-container.pdp #compare-tray-button.active {
+	background-color: #005abb;
+	color: #FFF;
+	border-color: transparent;
+}
+#compare-tray-container.pdp #compare-tray-button.active:hover {
+	background-color: #002c5f;
+}
+#compare-tray-container.pdp #compare-tray li img.delete { position:absolute; right:0; top:-6px; width:12px;  }
+#compare-tray-container.pdp #compare-tray li.empty img.delete { display:none; }
+#compare-tray-container.pdp #compare-tray .compare-text #compare-items{margin-left:-1px;}
+
+
+#cta-content #pdp-cta-compare  .label_check.c_off{
+	background: url("/images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 1px 3px transparent;
+	padding: 1px 8px;
+	margin-right: 5px;
+}
+#cta-content #pdp-cta-compare  .label_check.c_on{
+	background: url("/images/content/jumppage/endeca_pages/checkbox_compare.png") no-repeat scroll 1px -14px transparent;
+	padding: 1px 8px;
+	margin-right: 5px;
+}
+#cta-content #pdp-cta-compare .label_check input{
+	position: relative;
+	left: -9999px;
+}
+a.compare{
+color:#002E5F;
+text-decoration:none
+}
+
+a.compare:hover{
+color:#005ABB;
+text-decoration:none
+}
+
+#cta-content #pdp-cta-compare{
+	margin-top: 10px;
+}
+/*PDP compare tray styles END*/
