@@ -116,9 +116,10 @@ function vblLeftArrowClick() {
 	}});
 }
 //pane 1 scroller, right arrow click
-$('.vbl-right-arrow').click(function() {
+$('.vbl-right-arrow').click(vblRightArrowClick);
+function vblRightArrowClick() {
 	clearInterval(vblGalleryInterval);
-	var a = $('.vbl-panel-active'), b = $('.vbl-panel-right'), c = $('.vbl-panel-left'), w = $(a).width(), p = $(this).parent();
+	var a = $('.vbl-panel-active'), b = $('.vbl-panel-right'), c = $('.vbl-panel-left'), w = $(a).width(), p = $('.vbl-right-arrow').parent();
 	if (parseInt($(a).css('left')) / w != 0) return;
 	var d = $(b).prev('li').length ? $(b).prev('li') : $(this).parent().find('.vbl-panel').last();
 	$(b).css('left',-$(c).width()).removeClass('vbl-panel-right').addClass('vbl-panel-left');
@@ -127,7 +128,7 @@ $('.vbl-right-arrow').click(function() {
 	$(a).removeClass('vbl-panel-active'), $(d).addClass('vbl-panel-active');
 	$(p).find('.vbl-panel').velocity({'left':'+='+w},{duration:500});
 	resetVblGalleryInterval();
-});
+}
 
 //pane 2: image fading and text animations
 var lastVblHover = '', force = false;
