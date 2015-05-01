@@ -29,6 +29,12 @@ $(document).ready(function() {
 	if ($("body").hasClass("product_detail")) {
 		initPDP();
 	}
+	if($("#compare_body").length>0){
+		$(".cols").each(function(){
+			var x = this;
+			$(x).find('.pr-snippet').wrap('<a href="'+$(x).find('.quick_view_hover').attr('href')+'#ratingsandreviews">');
+		});
+	}
 });
 function initPDP() {
 	window.onscroll = function() {

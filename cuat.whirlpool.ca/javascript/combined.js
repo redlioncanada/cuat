@@ -8,6 +8,12 @@ $(document).ready(function() {
 	$("ul.results-view li div a").click(linkSelect);
 	globalNav_set_activeTab();
 	prodLastCol();
+	if($("#compare_body").length>0){
+		$(".cols").each(function(){
+			var x = this;
+			$(x).find('.pr-snippet').wrap('<a href="'+$(x).find('.quick_view_hover').attr('href')+'#ratingsandreviews">');
+		});
+	}
 });
 function initPDP() {
 	window.onscroll = function() {
