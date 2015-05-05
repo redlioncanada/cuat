@@ -3539,8 +3539,6 @@ div.orderTotalInfoPcr176 {
     color: #005ABB !important;
 }
 
-/*REQ0275535 - NKB:Online Self Scheduler Canada - Change of confirmation email*/
-
 #oc_entry_field_section div#validate_btn 
 { 
  float:left;
@@ -3559,7 +3557,7 @@ div.orderTotalInfoPcr176 {
 	font: bold 12px "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Lucida Sans Regular",Verdana,sans-serif;
 	color:#fff;
     width: 270px;
-	padding: 4px 0 0 16px;
+	padding: 2px 0 0 16px;
 }
 
 #oc_entry_field_section div#edit_btn 
@@ -3580,7 +3578,7 @@ div.orderTotalInfoPcr176 {
     width: 157px;
 	font: bold 12px "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Lucida Sans Regular",Verdana,sans-serif;
 	color:#fff;
-	padding:3px 0 0 7px;
+	padding:4px 0 0 16px;
 }
 /*Below line added*/
 body#oc_schedule_repair_step2_unauth #page #oc_content #oc_repair_tab_content #oc_entry_field_section .error_text {clear:both;color:green;margin-left:133px;padding-top:5px;}

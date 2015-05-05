@@ -1,4 +1,4 @@
-﻿@charset UTF-8;
+@charset UTF-8;
 /* begin include: add_to_cart_popup.css *//* CSS Document */
 #add_to_cart_popup{display:none;}
 body{text-align:left;background:#FFF;margin-left:5px;}
@@ -351,8 +351,8 @@ html[lang="fr"] div#page.OrderShippingBillingView div#WC_UnregisteredCheckout_di
     background-position:0 -46px !important;
     }
 
-body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{background:url(../images/btn_next_step_small.png) no-repeat scroll left 0 transparent;float:left;height:32px;width:155px;}
-body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a:hover{background-position:0 -32px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{background:url(../images/btn_edit_address_bg.jpg) no-repeat scroll left 0 transparent; float:left; height:26px; width:162px; font: bold 13px arial; padding: 6px 0 0 39px;}
+body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a:hover{background-position:0 -32px; color:#999;}
 div#page.OrderShippingBillingView .unregistered .secondary_button a{background:url(../images/icon_arrow_left_nav.png) no-repeat left center;padding-left:10px;height:49px;line-height:49px;display:block;float:left;}
 div#page.OrderShippingBillingView div#edit_btn{height:49px;margin-bottom:15px;margin-left:168px;margin-top:0;}
 div#page.OrderShippingBillingView iframe#payment_frame{height:250px;width: 380px;}
@@ -1741,7 +1741,7 @@ div#page.AddressBook div#WC_MyAccountDisplay_div_3_9 div#MessageArea {margin:0 !
 /* ------- subscriptions_cancel_confirmation.html end -------- *//* ------- subscriptions_cancel.html -------- *//* Task#: 1834 *//*div#page.myorders div#WC_OrderStatusCommonPage_div_1.my_account div#WC_OrderStatusCommonPage_div_6 div#OrderStatusTableDisplay_div_1 div#ProcessedOrdersStatusDisplay{ display:none; }*//* ------- subscriptions_cancel.html end -------- *//* ------- start quick_checkout_profile.html -------*/div#page.quick-checkout-address-page{min-height:640px;z-index:100;}
 div#page.quick-checkout-address-page .nodisplay{display:none;}
 div#page.quick-checkout-address-page div#main_content_wrapper{border:0;border-radius:5px;}
-›div#page.quick-checkout-address-page{min-height:640px;z-index:100;}
+�div#page.quick-checkout-address-page{min-height:640px;z-index:100;}
 div#page.quick-checkout-address-page div#main_content_wrapper{border:0;border-radius:5px;}
 div#page.quick-checkout-address-page div#main_content_wrapper div#WC_OrderStatusCommonPage_div_2.main_header{margin-top:40px;margin-left:30px;display:block;font-size:18pt;}
 div#page.quick-checkout-address-page div.main-content-wrapper-bottom{clear:both;margin-bottom:0;height:48px;line-height:48px;}
@@ -2454,21 +2454,5 @@ div#page.AddressBook #WC_AjaxAddressBookForm_div_16a {margin:0 0 0 150px;}
 }
 html[lang=fr] .thickbox.more_info_link{font-size: 12px;
 line-height: 2;}
-
-body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{background:url(../images/btn_next_step_small.png) no-repeat scroll
-left 0 transparent;float:left;height:32px;width:155px;}
-
-body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a{
-background:url(../images/btn_edit_address_bg.jpg) no-repeat scroll
-left 0 transparent;
-float:left;
-height:26px;
-/*text-indent:-9999px;*/
-width:162px;
-font: bold 13px arial;
-padding: 6px 0 0 39px;
-}
-
-body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper a:hover{background-position:0 -32px; color:#999;}
 body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper span { color:#666 !important;}
 body.owner_center .oc_schedule_repair #oc_content #oc_repair_tab_content #oc_repair_action_wrapper span:hover { color:#999 !important;}

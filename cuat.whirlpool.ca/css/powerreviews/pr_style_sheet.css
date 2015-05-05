@@ -1,4 +1,5 @@
-﻿/*SNIPPET - GLOBAL*/
+﻿/* 05.04.2015 - 13:35:00 */
+/*SNIPPET - GLOBAL*/
 .pr-snippet,
 .pr-snippet-wrapper {
 	background: none;
@@ -169,8 +170,20 @@ li.applince div.pr-snippet {
 }
 
 @media screen and (max-width: 600px) {
-	.pr-snippet-wrapper {
+	.pr-pdp .pr-snippet-wrapper {
 		padding: 0 18px;
+	}
+
+	.pr_category .pr-snippet-wrapper,
+	.rating .pr-snippet-wrapper {
+		padding: 5px 0 0 0 !important;
+	}
+
+	.pr-category .pr-snippet-review-count,
+	.rating .pr-snippet-review-count {
+		font-size: 12px;
+		line-height: 18px;
+		text-align: left;
 	}
 }
 
@@ -1950,4 +1963,13 @@ h3.input_label {
 
 .pr-star {
 	display: none;
+}
+
+/*TEMP OVERRIDES FOR MOBILE*/
+body.mobile .pr-snippet-write-review {
+	display: none;
+}
+
+body.mobile .pr-snippet-read-reviews {
+	border: 0;
 }
