@@ -13,8 +13,8 @@
 }
 .wf_con {
 	width: 422px;
-	height: 312px;
-	padding: 79px 0 0 529px;
+	height: 363px;
+	padding: 57px 0 0 529px;
 	background: url('/images/data/en_CA/wp_wf_hero.jpg');
 }
 html[lang="fr"] .wf_con {
@@ -26,9 +26,16 @@ html[lang="fr"] .wf_con {
 html[lang="fr"] .wf_con h2 {
 	font-size: 23px;
 }
+.wf_con h2 {
+	color: #80c0d9;
+	font-weight: 300;
+	margin-bottom: 10px;
+	font-size: 23px;
+}
 .wf_con h3 {
 	font-size: 14px;
 	font-weight: normal;
+	margin-bottom: 38px;
 }
 .wf_con ul li {
 	list-style: disc outside none;
@@ -36,9 +43,30 @@ html[lang="fr"] .wf_con h2 {
 html[lang="fr"] .wf_con ul, .wf_con a {
 	/*margin: 0 0 35px 20px;*/
 }
-.wf_con ul, .wf_con a {
+.wf_con ul {
 	display: block;
-	margin: 22px 0 10px 20px;
+	margin: 16px 0 10px 20px;
+}
+#wf_btn {
+	width: 153px;
+	height: 40px;
+	background-color: #24a5df;
+	margin: 30px 8px 10px;
+}
+#wf_btn * {
+	color: white;
+	width: inherit;
+	height: 40px;
+}
+#wf_btn a {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+}
+#wf_btn span {
+	line-height: 39px;
+	font-size: 15px;
 }
 .wf-con a span {
 	color: #005ABB;
