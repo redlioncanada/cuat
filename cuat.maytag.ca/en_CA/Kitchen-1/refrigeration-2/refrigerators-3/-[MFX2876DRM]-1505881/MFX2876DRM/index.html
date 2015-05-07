@@ -33,8 +33,8 @@
 <!--
 org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/CatalogSection/CatalogEntrySubsection/WHRGRNProductDisplay.jsp(74,1) '${product.entitledItems}' Error reading 'entitledItems' on type com.whirlpool.commerce.catalog.beans.WHRProductDataBean
 	at org.apache.jasper.el.JspValueExpression.getValue(JspValueExpression.java:106)
-	at com.ibm._jsp._WHRGRNProductDisplay._jspx_meth_c_forEach_0(_WHRGRNProductDisplay.java:6636)
-	at com.ibm._jsp._WHRGRNProductDisplay._jspService(_WHRGRNProductDisplay.java:1036)
+	at com.ibm._jsp._WHRGRNProductDisplay._jspx_meth_c_forEach_0(_WHRGRNProductDisplay.java:6788)
+	at com.ibm._jsp._WHRGRNProductDisplay._jspService(_WHRGRNProductDisplay.java:1054)
 	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:99)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:831)
 	at com.ibm.ws.cache.servlet.ServletWrapper.serviceProxied(ServletWrapper.java:307)
@@ -51,6 +51,7 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:181)
 	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:121)
 	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:262)
+	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionProcessor.handleRequest(AbstractJSPExtensionProcessor.java:353)
 	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:374)
 	at org.apache.struts.action.RequestProcessor.doForward(RequestProcessor.java:1085)
 	at org.apache.struts.action.RequestProcessor.processForwardConfig(RequestProcessor.java:398)
@@ -90,8 +91,9 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:965)
 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:508)
 	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:181)
-	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:91)
-	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:878)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:3994)
+	at com.ibm.ws.webcontainer.webapp.WebGroup.handleRequest(WebGroup.java:276)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:945)
 	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1592)
 	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:191)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:454)
@@ -108,7 +110,7 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1662)
 Caused by: com.ibm.commerce.exception.ECApplicationException: Product "1505881" is not viewable.
 	at com.whirlpool.commerce.catalog.beans.WHRProductDataBean.getEntitledItems(WHRProductDataBean.java:667)
-	at sun.reflect.GeneratedMethodAccessor782.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2069.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
 	at java.lang.reflect.Method.invoke(Method.java:611)
 	at javax.el.BeanELResolver.getValue(BeanELResolver.java:65)
@@ -116,7 +118,7 @@ Caused by: com.ibm.commerce.exception.ECApplicationException: Product "1505881" 
 	at org.apache.el.parser.AstValue.getValue(AstValue.java:102)
 	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:263)
 	at org.apache.jasper.el.JspValueExpression.getValue(JspValueExpression.java:100)
-	... 73 more
+	... 75 more
 -->
 
 

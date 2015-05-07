@@ -20,8 +20,9 @@
 		 <link href="/css/common1_1.css" rel="stylesheet" type="text/css" />
 		 <link href="/css/layout.css" rel="stylesheet" type="text/css" />
 		 <link href="/css/site.css" rel="stylesheet" type="text/css"/>
-		 <link href="/css/content/content.css" type="text/css" rel="stylesheet" />
 		 
+		 		<link href="/css/content/content.css" type="text/css" rel="stylesheet" />
+		 	
 		 	<link href="/css/content/content/endeca_pages.css" type="text/css" rel="stylesheet" />
 		 	<link href="/css/content/content/endeca_fancybox.css" type="text/css" rel="stylesheet">
 		 <!-- End changes for  QC109 -->
@@ -31,8 +32,8 @@
 <!--[if IE 8]> <link rel="stylesheet" href="/css/ie8.css" type="text/css"/> <![endif]-->  
 
 <!-- end standard css include block -->
- 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	
+ 				<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+ 			 
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
 		
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
@@ -154,7 +155,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- END CommonJSToInclude.jspf -->
+	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf -->
 	
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 		
@@ -247,7 +248,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- Header Nav Start --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue May 05 07:28:12 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 07 11:17:19 EDT 2015] -->
   
 
 
@@ -287,7 +288,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13480168");
+			var contextUserId = parseInt("13462121");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -404,7 +405,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue May 05 11:53:08 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 07 11:29:32 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -699,14 +700,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <p>From June 11 to July 2, 2015, receive a BONUS GIFT when you buy a new 11 Cup or 14 Cup Food Processor from an authorized Canadian KitchenAid&reg; small appliance dealer. Submission deadline is August 2, 2015.</p>
 </div>
 <a>See offer details</a></div>
-<!--
-<div class="ka_promoCon" style="margin-right:0px;" mce_style="margin-right:0px;">
+<div class="ka_promoCon" style="margin-right:0px;">
 <div class="ka_promoCopy">
-<h1>Ultra Power Plus Stand Mixer Gift With Purchase</h1>
-<p>From March 13 to March 26, receive a BONUS GIFT when you buy an Ultra Power Plus&trade; Stand Mixer from an authorized Canadian KitchenAid&reg; small appliance dealer. Submission deadline is April 26.</p>
+<h1>Summer Beverage Mail-in Rebate Offer</h1>
+<p>From June 4 - July 2, 2015 receive up to $80 mail-in/online rebate on select KitchenAid&reg; Small Appliances. Submission deadline is August 2, 2015.</p>
 </div>
-<a href="https://www.therebatecompany.com/Secure/KA_589/threesteps.aspx?lang=EN" mce_href="https://www.therebatecompany.com/Secure/KA_589/threesteps.aspx?lang=EN">See offer details</a></div>
--->
+<a>See offer details</a></div>
 <p class="disclaimer" style="clear:both;">Only one promotion code can be used per order. &nbsp; Promotions cannot be combined. &nbsp; KitchenAid reserves the right to cancel any promotion at any time.</p>
 </div>
 </div>
@@ -715,7 +714,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 		<div class="main-content-wrapper-bottom"></div>
 	</div>
 	
-	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue May 05 07:28:14 EDT 2015] -->
+	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 07 11:17:21 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

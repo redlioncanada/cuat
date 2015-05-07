@@ -33,8 +33,8 @@
 <!--[if IE 8]> <link rel="stylesheet" href="/css/ie8.css" type="text/css"/> <![endif]-->  
 
 <!-- end standard css include block -->
- 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	  
+ 				<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+ 			   
                 
 <script type="text/javascript" src="https://cdn.powerreviews.com/repos/17647/pr/pwr/engine/js/full.js"></script>
 
@@ -170,7 +170,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- END CommonJSToInclude.jspf --><!-- Start changes for QC110 -->
+	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf --><!-- Start changes for QC110 -->
  		<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/WHRHomePageCombined.js"></script>
  		<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
  	<!-- End changes for QC110 -->
@@ -279,7 +279,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue May 05 07:37:12 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 07 09:51:54 EDT 2015] -->
   
 
 
@@ -319,7 +319,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13480169");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -436,7 +436,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue May 05 09:29:24 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 07 09:51:54 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1021,7 +1021,7 @@ document.write('<iframe src="http://2625291.fls.doubleclick.net/activityi;src=26
 			<div class="product-color-options">
 				<p class="product-options-label">AVAILABLE COLOR OPTIONS</p>
 				<div id="color-swatches">
-					<!-- Entered into first for each  --><!-- attribute.attributeIdentifier.uniqueID}_${allowedValue.value :: 131069062_Other --><!-- !empty skuAttrsDefaultPartNumbers[temppartnumberkey] :: true -->
+					
 											<img id="swatch_color_1" class="color swatch selected" alt="Other" title="Other" src="/digitalassets/ColorBars/NC-WP.png" 
 											    name="8212638RC|Other|/digitalassets/8212638RC/Standalone_1175X1290.jpg|$32.99|$32.99"									
 												onclick="javascript:whereToBuy('8212638RC');categoryDisplayJS.setSelectedAttribute('Color','Other');javascript:categoryDisplayJS.setCartDisplay('Color_Other','1300175');" />
@@ -1383,7 +1383,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 			</div>
 			
 		</div>	
-	</div><!-- End content-wrap --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue May 05 07:36:39 EDT 2015] -->
+	</div><!-- End content-wrap --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 07 09:51:50 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">
@@ -1782,6 +1782,11 @@ function () { overTooltip = false; }
 // -->
 </script>
 <script type="text/javascript">
+
+    var pr_locale = "en_CA";
+    var pr_zip_location = "https://cdn.powerreviews.com/repos/17647/pr";
+    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
+
     $(document).ready(function () {
         function fireFloodlightOnLoadAllPages(cat) {
             var axel = Math.random() + "";

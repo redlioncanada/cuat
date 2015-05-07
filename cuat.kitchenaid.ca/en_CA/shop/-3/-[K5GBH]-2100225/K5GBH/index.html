@@ -15,8 +15,9 @@
 		 <link href="/css/common1_1.css" rel="stylesheet" type="text/css" />
 		 <link href="/css/layout.css" rel="stylesheet" type="text/css" />
 		 <link href="/css/site.css" rel="stylesheet" type="text/css"/>
-		 <link href="/css/content/content.css" type="text/css" rel="stylesheet" />
 		 
+		 		<link href="/css/content/content.css" type="text/css" rel="stylesheet" />
+		 	
 		 	<link href="/css/content/content/endeca_pages.css" type="text/css" rel="stylesheet" />
 		 	<link href="/css/content/content/endeca_fancybox.css" type="text/css" rel="stylesheet">
 		 <!-- End changes for  QC109 -->
@@ -26,8 +27,8 @@
 <!--[if IE 8]> <link rel="stylesheet" href="/css/ie8.css" type="text/css"/> <![endif]-->  
 
 <!-- end standard css include block -->
- 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
- 	  
+ 				<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+ 			   
                 
 <script type="text/javascript" src="https://cdn.powerreviews.com/repos/17646/pr/pwr/engine/js/full.js"></script>
 
@@ -158,7 +159,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- END CommonJSToInclude.jspf -->  
+	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf -->  
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
@@ -275,7 +276,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Tue May 05 07:28:12 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 07 11:17:19 EDT 2015] -->
   
 
 
@@ -315,7 +316,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13480168");
+			var contextUserId = parseInt("13462121");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -432,7 +433,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Tue May 05 12:38:01 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 07 12:01:04 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -780,7 +781,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <!-- Removed include of WHRORNBazaarVoiceInclude.jspf -->
 <script type="text/javascript" src="/javascript/jquery.wpc.wresize.js"></script>
 
-<!-- Removed include of BazaarVoice SEO container--><!-- Removed BV api call -->
+<!-- KAD EMS PASE II Start Changes to remove Bazaarvoice --><!-- KADEMS PHASE II End --><!-- Removed BV api call -->
 <script text="text/javascript">
 	function changeFunc() {
 		var dropdown = document.getElementById("choose-color");
@@ -833,8 +834,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 
 			<script id="overrideZipCode_2101997" type="text/template"></script>  
 		
-<
-
 
 <div id="entitledItem_2100225" style="display: none;">
 	[ 
@@ -909,11 +908,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			</div>
 
 			<div class="product-color-options">
-				
+			<!-- KAD EMS Phase II Start Chnges added to display the content in 2 languages -->
 	                 <p class="product-options-available-color">
 			AVAILABLE COLOR OPTIONS
 		 </p>
-	                 
+	                 <!-- KAD EMS Phase II End -->
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="Other" title="Other" src="/digitalassets/ColorBars/NC-off.gif" 
@@ -1124,8 +1123,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 
 <div class="side-column">
 	<div id="global-utilities">
-		 
-		<a href="#" class="print">Print <img src="/images/global/icons/print.jpg" alt="Print" /></a>
+		
+			<a href="#" class="print">Print <img src="/images/global/icons/print.jpg" alt="Print" /></a>
+		
 	</div>
 	<div id="cta-content">
 		<div class="cta-options">
@@ -1240,7 +1240,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="module-container">
 	<div class="module-background"></div>
 	<div class="module-content">
-		<div class="module-close red-button">CLOSE X</div>
+		<div class="module-close red-button">
+		CLOSE X
+		</div>
 		<div class="module-main-content"></div>
 		
 		<!-- PDP MODULE CAROUSEL BEGINS -->
@@ -1283,7 +1285,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Tue May 05 07:28:14 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 07 11:17:21 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

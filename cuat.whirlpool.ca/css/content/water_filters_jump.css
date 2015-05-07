@@ -14,11 +14,11 @@
 .wf_con {
 	width: 422px;
 	height: 363px;
-	padding: 57px 0 0 529px;
+	padding: 76px 0 0 529px;
 	background: url('/images/data/en_CA/wp_wf_hero.jpg');
 }
 html[lang="fr"] .wf_con {
-	padding: 81px 0 0 527px;
+	padding: 57px 0 0 527px;
 }
 .wf_con div {
 	width: 365px;
@@ -30,12 +30,13 @@ html[lang="fr"] .wf_con h2 {
 	color: #80c0d9;
 	font-weight: 300;
 	margin-bottom: 10px;
-	font-size: 23px;
+	font-size: 19px;
+	width: 340px;
 }
 .wf_con h3 {
 	font-size: 14px;
 	font-weight: normal;
-	margin-bottom: 38px;
+	margin-bottom: 31px;
 }
 .wf_con ul li {
 	list-style: disc outside none;

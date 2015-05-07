@@ -1,4 +1,4 @@
-﻿/* 05.04.2015 - 13:35:00 */
+﻿/* 05.05.2015 - 15:10:00 */
 /*SNIPPET - GLOBAL*/
 .pr-snippet,
 .pr-snippet-wrapper {
@@ -1986,10 +1986,16 @@ h3.input_label {
 }
 
 /*TEMP OVERRIDES FOR MOBILE*/
-body.mobile .pr-snippet-write-review {
+body.mobile .pr-snippet-write-review,
+body.mobile .pr-snippet-write-first-review {
 	display: none;
 }
 
 body.mobile .pr-snippet-read-reviews {
 	border: 0;
+}
+
+body.mobile .pr-snapshot-write-review,
+body.mobile .pr-snapshot-no-ratings {
+	display: none;
 }
