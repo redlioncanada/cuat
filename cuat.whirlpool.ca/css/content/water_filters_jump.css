@@ -18,13 +18,11 @@
 	background: url('/images/data/en_CA/wp_wf_hero.jpg');
 }
 html[lang="fr"] .wf_con {
-	padding: 57px 0 0 527px;
+	padding: 76px 0 0 527px;
+	height: 323px;
 }
 .wf_con div {
 	width: 365px;
-}
-html[lang="fr"] .wf_con h2 {
-	font-size: 23px;
 }
 .wf_con h2 {
 	color: #80c0d9;

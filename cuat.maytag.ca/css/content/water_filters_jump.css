@@ -13,8 +13,8 @@
 }
 .wf_con {
 	width: 422px;
-	height: 402px;
-	padding: 85px 0 0 529px;
+	height: 388px;
+	padding: 99px 0 0 529px;
 	background: url('/images/content/jumppage/mt_wf_hero.jpg');
 }
 html[lang="fr"] .wf_con {
@@ -36,7 +36,7 @@ html[lang="fr"] .wf_con h2 {
 .wf_con h3 {
 	font-size: 14px;
 	font-weight: normal;
-	margin-bottom: 52px;
+	margin-bottom: 38px;
 }
 .wf_con ul li {
 	list-style: disc outside none;

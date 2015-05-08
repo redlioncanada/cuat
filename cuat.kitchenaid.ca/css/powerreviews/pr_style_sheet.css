@@ -1,4 +1,4 @@
-﻿/* 05.05.2015 - 15:10:00 */
+﻿/* 05.07.2015 - 11:50:00 */
 /*SNIPPET - GLOBAL*/
 .pr-snippet,
 .pr-snippet-wrapper {
@@ -99,11 +99,13 @@ li.applince div.pr-snippet {
 	margin-bottom: 5px;
 }
 
-.pr-category .pr-snippet-stars .pr-snippet-rating-decimal {
+.pr-category .pr-snippet-stars .pr-snippet-rating-decimal,
+#related-products-carousel .pr-snippet-rating-decimal {
 	display: none;
 }
 
-.pr-category .pr-snippet-review-count {
+.pr-category .pr-snippet-review-count,
+#related-products-carousel .pr-snippet-review-count {
 	color: #333333;
 	display: block !important;
 	font-size: 10px;
@@ -112,8 +114,13 @@ li.applince div.pr-snippet {
 	text-decoration: none;
 }
 
-.pr-category .pr-snippet-read-write {
-	width: auto;
+#related-products-carousel .pr-snippet-review-count {
+	text-align: left;
+}
+
+.pr-category .pr-snippet-read-write,
+#related-products-carousel .pr-snippet-read-write {
+	display: none !important;
 }
 
 .pr-category .pr-snippet-read-reviews {
@@ -380,6 +387,7 @@ p.pr-fb-follow-modal-header {
 	position: relative;
 	left: -320px;
 	top: 60px;
+	z-index: 1 !important;
 }
 
 #pr-snapshot-histogram-wrapper {
@@ -638,18 +646,13 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	margin: 11px 0 0 11px; 
 }
 
-.pr-review-sort-box{ 
-	position: relative; 
-	left:4px; 
-	top: 10px;  
+.pr-review-sort-box { 
+	padding: 10px 10px 0 10px;
 }
 
 .pr-review-sort-box p.pr-review-sort-by { 
-	position: relative; 
-	left:8px; 
-	top:-2px; 
 	font-size: 11px; 
-	margin:0; 
+	margin: 0 5px 0 0; 
 	vertical-align: auto; 
 }
 
@@ -657,14 +660,18 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	content: "▾"; 
 	font-size: 11px; 
 	position: relative; 
-	left: 46px; 
-	top: -1px; 
+	left: 82px; 
 }
 
 .pr-review-sort-box select { 
-	width: 70px; 
+	background: #ffffff;
+	border-radius: 2px;
 	color: #666;
 	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	padding: 5px 22px 5px 5px !important;
+	width: auto !important;
 }
 
 @media screen and (max-width: 805px) {
@@ -716,8 +723,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	border: 1px solid red !important; 
 }
 
-.pr-page-nav-wrapper{ 
-	width: 16%; 
+.pr-page-nav-wrapper { 
+	text-align: right;
+	width: auto; 
 }
 
 .pr-page-nav span:hover{ 
@@ -890,7 +898,7 @@ ul.pr-other-attributes-list {
 }
 
 .pr-stars-small-subrating {
-	background: url('http://cpt.kitchenaid.com/images/powerreviews/kitchenaid_bar_subrating.gif');
+	background: url('http://www.kitchenaid.com/images/powerreviews/kitchenaid_bar_subrating.gif');
 	width: 142px;
 } 
 
@@ -1509,7 +1517,7 @@ ul.tabs li {
 
 /*REVIEW FORM - SUBRATINGS*/
 div.prStars.prStarsSubrating {
-	background-image: url('http://cpt.kitchenaid.com/images/powerreviews/kitchenaid_bar_subrating.gif') !important;
+	background-image: url('http://www.kitchenaid.com/images/powerreviews/kitchenaid_bar_subrating.gif') !important;
 	margin: 0;
 	width: 142px;
 }
