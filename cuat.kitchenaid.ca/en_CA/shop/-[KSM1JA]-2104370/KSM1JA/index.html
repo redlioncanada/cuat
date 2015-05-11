@@ -113,14 +113,12 @@ javax.ejb.ObjectNotFoundException
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:454)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:516)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:307)
-	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:84)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.ready(HttpInboundLink.java:278)
+	at com.ibm.ws.tcp.channel.impl.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:214)
+	at com.ibm.ws.tcp.channel.impl.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:113)
 	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
 	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
-	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
-	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
-	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
-	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
-	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.io.async.AsyncChannelFuture$1.run(AsyncChannelFuture.java:205)
 	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1662)
 -->
 

@@ -276,7 +276,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri May 08 08:16:27 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon May 11 11:08:36 EDT 2015] -->
   
 
 
@@ -316,7 +316,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13485115");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -433,7 +433,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri May 08 12:06:06 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon May 11 11:14:22 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -771,131 +771,1401 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 </div>
 <!-- ||||||||||||||||||||||||||||||||||| End Breadcrumb ||||||||||||||||||||||||||||||||||||| --><!-- END JSP File Name:  WHRORNBreadCrumbTrailDisplay.jsp --><!-- END JSP File Name:  WHRORNBreadCrumbTrailDisplay.jspf -->
 		      <div id="main-container" class="small-appliances-details">
-		        <!--  
-//********************************************************************
-//*-------------------------------------------------------------------
-//* The sample contained herein is provided to you "AS IS".
-//*
-//* It is furnished by IBM as a simple example and has not been thoroughly tested
-//* under all conditions.  IBM, therefore, cannot guarantee its reliability, 
-//* serviceability or functionality.  
-//*
-//* This sample may include the names of individuals, companies, brands and products 
-//* in order to illustrate concepts as completely as possible.  All of these names
-//* are fictitious and any similarity to the names and addresses used by actual persons 
-//* or business enterprises is entirely coincidental.
-//*--------------------------------------------------------------------------------------
-//*
--->
+		        
+<div id="inline-seo-pr" style="display:none;">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+</div>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CheckoutArea/CheckoutHelper.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/ProductDisplay.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
+<!-- Removed include of WHRORNBazaarVoiceInclude.jspf -->
+<script type="text/javascript" src="/javascript/jquery.wpc.wresize.js"></script>
 
-<html lang="en">
-<head>
-	<title>
-		Generic Application Error Test JSP (Item)
-	</title>
-</head>
-<body>
+<!-- Removed include of BazaarVoice SEO container--><!-- Removed BV api call -->
+<script text="text/javascript">
+	function changeFunc() {
+		var dropdown = document.getElementById("choose-color");
+		var dropdownValue = dropdown.options[dropdown.selectedIndex].value;
+		//alert("in changeFunc selected value is " + dropdownValue);
+		categoryDisplayJS.setSelectedAttribute('Color', dropdownValue);
+	}
+</script>
+<script text="text/javascript">
+	function whereToBuy(partnum) {
+		var a= document.getElementById('wheretoBuyCid');
+		if(a != null && a != undefined) {
+			a.href='/en_CA/find-a-store/?sku='+partnum.toLowerCase();
+		}
+	}
+</script>	
+<script text="text/javascript">
+	function confirmMessage(){
+		if ($('#single-pack').is(':checked')){$('#MessageText').html('<p>A Single Pack of filters has been added to your cart.</p>');}
+		else if ($('#double-pack').is(':checked')){$('#MessageText').html('<p>A Double Pack of filters has been added to your cart.</p>');}
+		else if ($('#triple-pack').is(':checked')){$('#MessageText').html('<p>A Triple Pack of filters has been added to your cart.</p>');}
+		else {$('#MessageText').html('<p>A Subscription of filters has been added to your cart.</p>');}	
+	}
 
-<br/>
-<h3>The store has encountered a problem processing the last request. Try again later. If the problem persists, contact your site administrator.</h3>
-<br/>
-<br/>
+	function singleFilterSwap(product) {
+		var productNumber = $('#entitledItem_'+product).attr('class');
+		var productAmount = $('#entitledItem_'+product).attr('title');
+		//var clickEvent = "alert(productNumber)";
+		$('#productPageAdd2Cart').attr({
+	  	href: "javascript:setCurrentId('productPageAdd2Cart'); categoryDisplayJS.Add2ShopCartAjax('entitledItem_"+product+"',document.getElementById('quantity_"+product+"').value, false);popup_callGetPlantCodeByZip();"});
+	  	$('.single-filter-add').removeAttr('onclick').click(function() {clickEvent});
+		$('.single-filter-add').css('display','block');
+		$('#schedule-filter-add').css('visibility','hidden');
+		$('#productPageAdd2Cart').css('visibility','visible');
+		//$("#product-detail-options-form input").removeAttr('checked');
+	}
+	function subscriptionSwap(schedule) {
+		var subscriptionProductId = $('#subscription-product-id').attr('class');
+		var subscriptionPartNumber = $('#subscription-product-id').attr('title');		
+		$('#schedule-amount').attr('value',schedule);
+		$('.single-filter-add').css('visibility','visible');
+		$('#productPageAdd2Cart').css('visibility','hidden');
+		$('#schedule-filter-add').css('visibility','visible');
+		$('#schedule-filter-add').attr("href","javascript:setCurrentId('productPageAdd2Cart'); categoryDisplayJS.replacementprogramAddToCartClick('"+subscriptionPartNumber+"','productdetail');popup_callGetPlantCodeByZip();");
+		//$("#product-detail-options-form input").removeAttr('checked');
+	}
+	
+</script>
 
-<!--
-com.ibm.ws.jsp.translator.JspTranslationException: JSPG0048E: Page failed to validate using taglib validator for http://java.sun.com/jsp/jstl/core : <p>File [/NARStorefrontAssetStore/Snippets/Catalog/CatalogEntryDisplay/WHRREDCachedProductOnlyDisplay.jsp] Line [878] Column [8] Illegal text inside "c:choose" tag: "<!--KAD...".</p><p>File [/NARStorefrontAssetStore/Snippets/Catalog/CatalogEntryDisplay/WHRREDCachedProductOnlyDisplay.jsp] Line [881] Column [9] Illegal text inside "c:choose" tag: "<!--KAD...".</p>
-	at com.ibm.ws.jsp.translator.visitor.validator.ValidateVisitor.validateTagLib(ValidateVisitor.java:1146)
-	at com.ibm.ws.jsp.translator.visitor.validator.ValidateVisitor.visitJspRootStart(ValidateVisitor.java:493)
-	at com.ibm.ws.jsp.translator.visitor.JspVisitor.processJspElement(JspVisitor.java:233)
-	at com.ibm.ws.jsp.translator.visitor.JspVisitor.visit(JspVisitor.java:216)
-	at com.ibm.ws.jsp.translator.JspTranslator.processVisitors(JspTranslator.java:127)
-	at com.ibm.ws.jsp.translator.utils.JspTranslatorUtil.translateJsp(JspTranslatorUtil.java:263)
-	at com.ibm.ws.jsp.translator.utils.JspTranslatorUtil.translateJspAndCompile(JspTranslatorUtil.java:123)
-	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.translateJsp(AbstractJSPExtensionServletWrapper.java:565)
-	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper._checkForTranslation(AbstractJSPExtensionServletWrapper.java:487)
-	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.checkForTranslation(AbstractJSPExtensionServletWrapper.java:340)
-	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:156)
-	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:732)
-	at org.apache.taglibs.standard.tag.common.core.ImportSupport.acquireString(ImportSupport.java:384)
-	at org.apache.taglibs.standard.tag.common.core.ImportSupport.doEndTag(ImportSupport.java:220)
-	at com.ibm._jsp._WHRREDProductDisplay._jspx_meth_c_import_11(_WHRREDProductDisplay.java:20586)
-	at com.ibm._jsp._WHRREDProductDisplay._jspService(_WHRREDProductDisplay.java:2140)
-	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:99)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:831)
-	at com.ibm.ws.cache.servlet.ServletWrapper.serviceProxied(ServletWrapper.java:307)
-	at com.ibm.ws.cache.servlet.CacheHook.handleFragment(CacheHook.java:576)
-	at com.ibm.ws.cache.servlet.CacheHook.handleServlet(CacheHook.java:250)
-	at com.ibm.ws.cache.servlet.ServletWrapper.service(ServletWrapper.java:259)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1694)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1635)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:113)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain._doFilter(WebAppFilterChain.java:80)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:908)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:965)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:508)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:181)
-	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:121)
-	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:262)
-	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:374)
-	at org.apache.struts.action.RequestProcessor.doForward(RequestProcessor.java:1085)
-	at org.apache.struts.action.RequestProcessor.processForwardConfig(RequestProcessor.java:398)
-	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:241)
-	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
-	at com.ibm.commerce.struts.ECActionServlet.processRequest(ECActionServlet.java:225)
-	at com.ibm.commerce.struts.ECActionServlet.doGet(ECActionServlet.java:166)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:718)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:831)
-	at com.ibm.ws.cache.servlet.ServletWrapper.serviceProxied(ServletWrapper.java:307)
-	at com.ibm.ws.cache.servlet.CacheHook.handleCacheMiss(CacheHook.java:944)
-	at com.ibm.ws.cache.servlet.CacheHook.handleCacheableFragment(CacheHook.java:790)
-	at com.ibm.ws.cache.servlet.CacheHook.handleFragment(CacheHook.java:559)
-	at com.ibm.ws.cache.servlet.CacheHook.handleServlet(CacheHook.java:250)
-	at com.ibm.ws.cache.servlet.ServletWrapper.service(ServletWrapper.java:259)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1694)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1635)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:149)
-	at com.ibm.commerce.campaigns.filter.CampaignsFilter.doFilter(CampaignsFilter.java:148)
-	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:190)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:125)
-	at com.ibm.commerce.likeminds.filter.LikeMindsFilter.doFilter(LikeMindsFilter.java:183)
-	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:190)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:125)
-	at com.ibm.commerce.dynacache.filter.CacheFilter$1.run(CacheFilter.java:390)
-	at com.ibm.commerce.dynacache.filter.CacheFilter.doFilter(CacheFilter.java:553)
-	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:190)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:125)
-	at com.ibm.commerce.webcontroller.RuntimeServletFilter.doFilterAction(RuntimeServletFilter.java:735)
-	at com.ibm.commerce.webcontroller.RuntimeServletFilter.access$0(RuntimeServletFilter.java:545)
-	at com.ibm.commerce.webcontroller.RuntimeServletFilter$1.run(RuntimeServletFilter.java:486)
-	at com.ibm.commerce.webcontroller.RuntimeServletFilter.doFilter(RuntimeServletFilter.java:511)
-	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:190)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:125)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterChain._doFilter(WebAppFilterChain.java:80)
-	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:908)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:965)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:508)
-	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:181)
-	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:91)
-	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:878)
-	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1592)
-	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:191)
-	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:454)
-	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:516)
-	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:307)
-	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:84)
-	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
-	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
-	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
-	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
-	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
-	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
-	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
-	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1662)
--->
 
+
+<div id="entitledItem_2101426" style="display: none;">
+	[ 
+	  
+			{ 
+				"catentry_id" : "2103405",
+				"buyable" : "false",
+				"Attributes1" :	
+				
+						"Color_Stainless Steel",
+							
+				"Attributes" :	{
+				
+						"Color_Stainless Steel":"1"
+						
+				}
+			}
+			 
+	]
+</div>
+
+
+
+<div class="main-column">
+	<div class="product-display">
+		<div class="product-image-container">
+			<div class="product-image">
+				<img src="/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg" title="KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" name="/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" />
+			</div>
+			<!-- PDP CAROUSEL BEGINS -->
+			<div id="product-carousel">
+				<div id="carousel-previous" class="carousel-controls active">&nbsp;</div>
+				<div class="carousel-visible-items">
+					<ul class="carousel-items">
+						
+						<li class="carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/AB-Thumbnail_100X100_HO.jpg" name="/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/AB-Thumbnail_100X100_HO.jpg" />
+						</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P080332_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P080332_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P080332_1z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Feature_100X100_p100712_1z.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_p100712_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Feature_100X100_p100712_1z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_4.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_4.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_4.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_3z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_3z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_3z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0836z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0836z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0836z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0837z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0837z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0837z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Feature_100X100_P100712_1.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_P100712_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Feature_100X100_P100712_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0082z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0082z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0082z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100712_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100712_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100712_10.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130713_20.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130713_20.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130713_20.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Feature_100X100_P090039_9z.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_P090039_9z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Feature_100X100_P090039_9z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P060460_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P060460_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P060460_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0112z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0112z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0112z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_12.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_12.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_12.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_p100712_10z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_p100712_10z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_p100712_10z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0111z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0111z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0111z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_12.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_12.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130044_12.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_1z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0857z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0857z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0857z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0851z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0851z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0851z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_2z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_2z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_2z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_15.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_15.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_15.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0109z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0109z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0109z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0854z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0854z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0854z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0113z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0113z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0113z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_2.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_2.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_2.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0852z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0852z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0852z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0116z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0116z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kls0116z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_3.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_3.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_3.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130044_10.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100220_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100220_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100220_1z.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P120649_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P120649_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P120649_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0855z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0855z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_kmp0855z_1.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_4.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_4.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130044_4.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_11.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_11.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_11.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_6.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_6.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_6.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_2.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_2.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P100157_2.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_13.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_13.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_13.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_7.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_7.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_7.jpg" />
+							</li>
+						
+							<li class="carousel-item photo">
+								<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module" alt="/KUCS03FTSS/Set_100X100_P130767_10.jpg" />
+							</li>
+						<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->    
+					
+						
+					</ul>
+				</div>
+				<div id="carousel-next" class="carousel-controls">&nbsp;</div>
+			</div>
+			<!-- PDP CAROUSEL ENDS -->
+		</div>
+
+		<div class="product-overview">
+		    <!-- Canada Badge Class WM-1782 -->
+			<h1 class="product-title">KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II</h1>
+			
+
+<div id="pr-pdp-snippet-KUCS03FTSS" class="pr-pdp">
+	<script type="text/javascript">
+	POWERREVIEWS.display.snippet(document, {
+	    pr_page_id:"KUCS03FTSS",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KUCS03FTSS&storeId=10231",
+	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
+	</script>
+</div>
+			<div class="product-description">
+				<p>Simplify your trash collecting and recycling efforts with this built-in trash compactor.  Selecting the Solid Pack™ Control allows you to reduce trash volume by up to 80%.  Not only will you use fewer bags, but with the odor management system, the trash compactor helps keep your kitchen odor free.  The Architect® Series design includes a fully integrated front panel.</p>
+			</div>
+
+			<div class="product-color-options">
+			<!-- KAD EMS Phase II Start Chnges added to display the content in 2 languages -->
+	                 <p class="product-options-available-color">
+			AVAILABLE COLOR OPTIONS
+		 </p>
+	                 <!-- KAD EMS Phase II End -->
+				<div id="color-swatches">
+					
+											<img id="swatch_color_1" class="color swatch selected" alt="Stainless Steel" title="Stainless Steel" src="/digitalassets/ColorBars/SS-off.gif" 
+											    name="KUCS03FTSS|Stainless Steel|/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg|$1,299.99|$1,299.99"									
+												onclick="javascript:whereToBuy('KUCS03FTSS');categoryDisplayJS.setSelectedAttribute('Color','Stainless Steel');javascript:categoryDisplayJS.setCartDisplay('Color_Stainless Steel','2101426');" />
+											
+										<script type="text/javascript">
+											dojo.addOnLoad(function() { 
+												categoryDisplayJS.setSelectedAttribute("Color","Stainless Steel");
+											});
+										</script>
+									
+				</div>
+			</div>
+			<div class="product-color-sku">
+				<span class="product-color">Stainless Steel</span>
+				&nbsp;-&nbsp; 
+				<span class="product-part-number">KUCS03FTSS</span>
+			</div>
+		</div>
+	</div><!-- Start tab New change -->
+		<div id="product-tabs">
+			<ul class="product-tabs-menu">
+				
+		
+						<li id="features_tab" class="product-tab-option selected">
+							Features
+						</li>
+						
+		
+						<li id="specifications_tab" class="product-tab-option ">
+							Specifications
+						</li>
+						
+		
+						<li id="ratingsandreviews_tab" class="product-tab-option ">
+							Ratings & Reviews
+						</li>
+						
+		
+						<li id="manualsandliterature_tab" class="product-tab-option ">
+							Manuals & Warranty
+						</li>
+						
+			</ul>
+	
+			<div class="product-tab-selection">
+				
+							<div id="features" class="product-content active">
+								
+
+<div class="product_tab_section_top"></div>
+<div class="product_tab_section_middle">
+	
+	
+	<div id="top_features">
+	
+			<div class="feature first">
+				 			
+				<h4>
+					<span class="header_topic"></span>
+					<span class="header_desc">Solid Pack™ Control</span>
+				</h4>
+				<p>Reduces waste volume by allowing the compactor to condense the amount of garbage that would fill five trash bags into one bag.</p>
+			</div> 
+			<div class="feature ">
+				 			
+				<h4>
+					<span class="header_topic"></span>
+					<span class="header_desc">5:1 Compaction Ratio</span>
+				</h4>
+				<p>Reduces trash volume by up to 80%.</p>
+			</div> 
+			<div class="feature last">
+				 			
+				<h4>
+					<span class="header_topic"></span>
+					<span class="header_desc">Whisper Quiet® Plus</span>
+				</h4>
+				<p>Helps to maintain a quiet home environment while the compactor is running.</p>
+			</div> 
+	</div> <!-- End top features div -->
+		<div id="additional_features">
+			<h3>Additional Features</h3>
+			
+						<div id="left-col">
+						<div class="feature first">	
+							<h4>Odour Management System</h4>
+							<p>To minimize unpleasant odours, this compactor features the combination of a fan and charcoal filter to help trap odours.</p>
+						</div>	
+						
+							</div>
+						
+		</div> 
+</div>
+<div class="product_tab_section_bottom"></div>
+
+							</div>
+							
+							<div id="specifications" class="product-content ">
+								
+
+
+
+<div class="product_tab_section_top"></div>
+<div class="product_tab_section_middle">
+	
+		<div class="spec_section  ">
+			<h3 onclick="" id="spec_header_1" class="selected">Configuration and Overview</h3>
+			<div id="spec_1" class="spec_contents selected">
+				
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Compactor Type
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Built-In
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Motor Horsepower
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									1/3 HP
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Air Filter Fan On/Off
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Solid Pack On/Off
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Tilt Switch
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+			</div>
+		</div>	
+	
+		<div class="spec_section  ">
+			<h3 onclick="" id="spec_header_2" class="">Compactor Features</h3>
+			<div id="spec_2" class="spec_contents ">
+				
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Bag Retainer Buttons
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Odor Management System with Scent
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Fan with Charcoal Filter
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Sound Package
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Whisper Quiet&#174;
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Tilt-Away Trash Basket
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Solid Pack
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Oui
+								</div>
+								
+								
+						</div>
+					
+			</div>
+		</div>	
+	
+		<div class="spec_section  ">
+			<h3 onclick="" id="spec_header_3" class="">Controls</h3>
+			<div id="spec_3" class="spec_contents ">
+				
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Handle
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Towel Bar
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Key
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Hidden Removable - Knob
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Toe Bar Drawer Opener
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Side Release Bin
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Oui
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Compaction Ratio
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									5 to 1
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Construction
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									All Welded
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Front Levelers Rear Rollers
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+			</div>
+		</div>	
+	
+		<div class="spec_section last ">
+			<h3 onclick="" id="spec_header_4" class="">Dimensions</h3>
+			<div id="spec_4" class="spec_contents ">
+				
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Depth
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									24
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Height
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									34 1/8
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Width
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									15
+								</div>
+								
+								
+						</div>
+					
+			</div>
+		</div>	
+	
+		<div class="spec_section callout">
+			<div class="spec_contents">
+				<h3>Product Dimensions</h3>
+				<ul>
+					
+						<li class="depth">24</li>
+					
+						<li class="height">34 1/8</li>
+					
+						<li class="width">15</li>
+					
+				</ul>
+				<p>
+					Dimensions are for planning purposes only.<br/>
+					For complete information, visit owner center.
+				</p>
+			</div>
+		</div>
+	
+</div>
+<div class="product_tab_section_bottom"></div>
+
+<!--END div information_specifications-->
+							</div>
+							
+							<div id="ratingsandreviews" class="product-content ">
+								
+<div class="product_tab_section_top"></div>
+<div class="product_tab_section_middle">	
+
+
+<div id="pr-pdp-tab-KUCS03FTSS" class="pr-pdp-tab">
+	<script type="text/javascript">
+	POWERREVIEWS.display.engine(document,{
+	    pr_page_id:"KUCS03FTSS",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KUCS03FTSS&storeId=10231"});
+	</script>
+</div>		
+</div>
+<div class="product_tab_section_bottom"></div>
+
+							</div>
+							
+							<div id="manualsandliterature" class="product-content ">
+								
+<div class="product_tab_section_top"></div>
+<div class="product_tab_section_middle">
+      <div id="manual_items">
+            
+                                            <div class="manual_item top">
+                                      
+                        
+                        <h3>Warranty Information</h3>
+                        <p>A complete description of your warranty coverage, and contact information for service and support.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KUCS03FTSS/Warranty_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item top">
+                                      
+                        
+                        <h3>Dimension Guide</h3>
+                        <p>Detailed dimensions of your new appliance with space requirements for the area surrounding it.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KUCS03FTSS/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item bottom">
+                                      
+                        
+                        <h3>Use & Care Guide</h3>
+                        <p>Comprehensive information about your new appliance - from getting started to cleaning and maintenance.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KUCS03FTSS/Use and Care_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                  		</div>
+                  
+            <div class="manual_item bottom">
+            	  
+                 
+                  <p>
+                  In order to read a PDF file, you most have Adobe Acrobat reader installed on your computer. You can <a href=http://get.adobe.com/reader/ class=download-adobe >download</a> the latest version  at the Adobe website.
+                  </p>
+            </div>
+      </div>
+</div>
+<div class="product_tab_section_bottom"></div>
+
+							</div>
+							
+			</div>
+		</div>
+	 
+	
+	<div id="product-detail-legal">
+		<ul>
+			
+		</ul>  
+	</div>
+	
+	
+	<div class="recently_products" sku="sku19">
+        <h2>Recently Viewed</h2>
+        <ul class="recently_products_bottom_ul">
+          
+			 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE104DBL]-2103977/KDFE104DBL/"><img class="image_product_bootom" src="/digitalassets/KDFE104DBL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 24'' 6-Cycle/5-Option Dishwasher, Pocket Handle" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE104DBL]-2103977/KDFE104DBL/">KitchenAid® 24'' 6-Cycle/5-Option Dishwasher, Pocket Handle</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® 24'' 6-Cycle/5-Option Dishwasher, Pocket Handle</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				$999.99 to $1,099.99
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">inc. taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE104DBL]-2103977/KDFE104DBL/">View product details</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE204EBL]-2104798/KDFE204EBL/"><img class="image_product_bootom" src="/digitalassets/KDFE204EBL/AB-Thumbnail_100X100_HO.jpg" alt="KichenAid® 46 dBA Dishwasher with ProScrub™ Option" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE204EBL]-2104798/KDFE204EBL/">KichenAid® 46 dBA Dishwasher with ProScrub™ Option</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KichenAid® 46 dBA Dishwasher with ProScrub™ Option</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+							<li>
+                  				<p class="recently_crossed_price">
+									$1,299.99
+								</p>
+							</li>	
+						
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				$1,199.99
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">inc. taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDFE204EBL]-2104798/KDFE204EBL/">View product details</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE334DWH]-2104599/KDTE334DWH/"><img class="image_product_bootom" src="/digitalassets/KDTE334DWH/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 24'' 6-Cycle/6-Option Dishwasher, Architect® Series II" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE334DWH]-2104599/KDTE334DWH/">KitchenAid® 24'' 6-Cycle/6-Option Dishwasher, Architect® Series II</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® 24'' 6-Cycle/6-Option Dishwasher, Architect® Series II</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				$1,299.99
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">inc. taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE334DWH]-2104599/KDTE334DWH/">View product details</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product last" sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE104EBL]-2104801/KDTE104EBL/"><img class="image_product_bootom" src="/digitalassets/KDTE104EBL/AB-Thumbnail_100X100_HO.jpg" alt="KichenAid® 46 dBA Dishwasher with ProWash™ Cycle" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE104EBL]-2104801/KDTE104EBL/">KichenAid® 46 dBA Dishwasher with ProWash™ Cycle</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KichenAid® 46 dBA Dishwasher with ProWash™ Cycle</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				$1,299.99
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">inc. taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KDTE104EBL]-2104801/KDTE104EBL/">View product details</a> </p>
+	             </li>
+	
+	   	</ul>
+    	<div class="closerBottom"></div>
+	</div><!--END div recently_products-->
+</div>
+
+<div class="side-column">
+	<div id="global-utilities">
+		
+			<a href="#" class="print">Print <img src="/images/global/icons/print.jpg" alt="Print" /></a>
+		
+	</div>
+	<div id="cta-content">
+		<div class="cta-options">
+			
+					<form class="product-detail-options-form">
+						
+									<div class="product-detail-price">
+										<p class="offer-price">
+											<span class="offer-price-amount">
+											$1,299.99  
+											</span>
+										</p>
+										
+									</div>
+								
+								<div class="product-detail-option-select">
+									<div class="product-form-option">
+										<label class="product-options-select-label">
+											Choose A Color
+										</label>
+										<div class="text-select">
+											<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
+												
+																		<option selected="selected" value="Stainless Steel"
+																			id="KUCS03FTSS"
+																			title="$1,299.99">Stainless Steel</option>
+																	
+											</select>
+										</div>
+									</div>
+									
+										<div class="product-form-option">
+											<label class="product-options-select-label">Quantity:</label>
+											<div class="number-select">
+												<input type="text" class="txt-quantity" name="quantity_2101426" id="quantity_2101426" size="3" value="1">
+											</div>
+										</div>
+									
+								</div>
+							
+						<div class="submit-section" id="submit-section">
+						
+								<div class="where_to_buy">
+									<a id="wheretoBuyCid" onclick="trackWhereToBuy('ProductPage');"
+										href="/en_CA/find-a-store/?sku=kucs03ftss" class="red-button">
+										<span class="ub-left"></span>
+										<span class="ub-center">Where to Buy</span>
+										<span class="ub-right"></span> 
+									</a>
+								</div>
+							
+						</div>
+					</form>
+				
+		</div>
+	</div>
+	<div class="side-column-espot espot">
+		<div class="side-column-espot-content">
+			<!-- Start ContentAreaESpot.jsp -->
+    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PDREspot">
+    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PDREspot">
+    	
+    		[PDREspot]
+  		
+  		</div>
+<span class="category-share"> <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:userid="KitchenAid"></a> <a class="addthis_button_facebook" style="cursor:pointer"></a> <a class="addthis_button_twitter" style="cursor:pointer"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_button_email" style="cursor:pointer"></a></div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e2ec58951cdfb8c" type="text/javascript"></script>
+<!-- AddThis Button END --> </span><!--  emsName: PDREspot, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/PDR/SC_Major_Appliances_Disposers_and_Compactors_Disposers_and_Compactors_Fully_Integrated.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PDR/default.xml, displayed=true, error=] }-->
+			  	  	
+			  	  
+
+</div>
+<!-- End ContentAreaESpot.jsp -->
+		</div>
+	</div>
+	<div class="side-column-espot espot">
+		<div class="">
+			<!-- Start ContentAreaESpot.jsp -->
+    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PDOBPEspot">
+    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PDOBPEspot">
+    	
+    		[PDOBPEspot]
+  		
+  		</div>
+<!--  emsName: PDOBPEspot, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/PDOBP/KUCS03FTSS-NAR.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PDOBP/default.xml, displayed=false, error=class java.io.FileNotFoundException] }-->
+			  	  	
+			  	  
+
+</div>
+<!-- End ContentAreaESpot.jsp -->
+		</div>
+	</div>
+	<div class="side-column-espot espot">
+		<div class="">
+			<!-- Start ContentAreaESpot.jsp -->
+    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PDLREspot">
+    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PDLREspot">
+    	
+    		[PDLREspot]
+  		
+  		</div>
+<!--  emsName: PDLREspot, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/PDLR/SC_Major_Appliances_Disposers_and_Compactors_Disposers_and_Compactors_Fully_Integrated.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PDLR/default.xml, displayed=false, error=class java.io.FileNotFoundException] }-->
+			  	  	
+			  	  
+
+</div>
+<!-- End ContentAreaESpot.jsp -->
+		</div>
+	</div>
+	
+</div>
+
+<!-- MODULE FRAGMENT BEGINS -->
+<div class="module-container">
+	<div class="module-background"></div>
+	<div class="module-content">
+		<div class="module-close red-button">
+		CLOSE X
+		</div>
+		<div class="module-main-content"></div>
+		
+		<!-- PDP MODULE CAROUSEL BEGINS -->
+		<div id="module-carousel">
+			<div class="module-header">KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II</div>
+			<div id="carousel-previous" class="carousel-controls active">&nbsp;</div>
+			<div class="carousel-visible-items">
+				<ul class="carousel-items">
+					<li class="module-item carousel-item photo">
+						<img src="/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg" name="/digitalassets/KUCS03FTSS/Standalone_1175X1290.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Standalone_1175X1290.jpg"/>
+					</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P080332_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P080332_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P080332_1z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Feature_100X100_p100712_1z.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_p100712_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Feature_100X100_p100712_1z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_4.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_4.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_4.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_3z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_3z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_3z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0836z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0836z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0836z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0837z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0837z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0837z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Feature_100X100_P100712_1.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_P100712_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Feature_100X100_P100712_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0082z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0082z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0082z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100712_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100712_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100712_10.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130713_20.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130713_20.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130713_20.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Feature_100X100_P090039_9z.jpg" name="/digitalassets/KUCS03FTSS/Feature_1175X1290_P090039_9z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Feature_100X100_P090039_9z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P060460_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P060460_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P060460_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0112z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0112z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0112z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_12.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_12.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_12.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_p100712_10z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_p100712_10z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_p100712_10z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0111z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0111z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0111z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_12.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_12.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130044_12.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_1z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0857z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0857z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0857z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0851z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0851z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0851z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_2z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_2z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_2z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_15.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_15.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_15.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0109z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0109z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0109z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0854z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0854z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0854z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0113z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0113z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0113z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_2.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_2.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_2.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0852z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0852z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0852z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kls0116z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kls0116z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kls0116z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_3.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_3.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_3.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130044_10.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100220_1z.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100220_1z.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100220_1z.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P120649_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P120649_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P120649_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_kmp0855z_1.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_kmp0855z_1.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_kmp0855z_1.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130044_4.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130044_4.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130044_4.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_11.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_11.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_11.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_6.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_6.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_6.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P100157_2.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P100157_2.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P100157_2.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_13.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_13.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_13.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_7.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_7.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_7.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/KUCS03FTSS/Set_100X100_P130767_10.jpg" name="/digitalassets/KUCS03FTSS/Set_1175X1290_P130767_10.jpg|KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II" class="open-module photo-module" alt="/KUCS03FTSS/Set_100X100_P130767_10.jpg" />
+						</li>
+					<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->    
+					
+				</ul>
+			</div>
+			<div id="carousel-next" class="carousel-controls">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KUCS03FTSS', 'KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II', 'Disposers and Compactors', 'KitchenAid', 'Stainless Steel', '$1,299.99', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KUCS03FTSS', 'KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II', 'Disposers and Compactors', 'KitchenAid', 'Stainless Steel', '$1,299.99');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2103405', 'KUCS03FTSS', 'KitchenAid® 1.4 Cu. Ft. Built-In Trash Compactor, Architect® Series II', 'Disposers and Compactors', 'KitchenAid', 'Stainless Steel', '$1,299.99');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5k60&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5k60&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
+<!-- Twitter tag Code for Key Page Views - Product Page ends --><!-- End WHRORNCachedProductOnlyDisplay -->
+<div id="inline-seo-pr" style="display:none;">
+
+</div>
+		      </div>
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon May 11 11:08:38 EDT 2015] -->
+<!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
+<div id="footer-container">
+	<div class="footer-header">
+	</div>
+	<!-- FOOTER FRAGMENT BEGINS -->
+	<div id="footer-nav">
+		<div id="footer-nav-level-one">
+			<ul>
+				<li class="header"><a href="/en_CA/major-appliances/">MAJOR APPLIANCES</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/cooktops-3/102310008/">Cooktops</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/dishwashers-3/102310014/">Dishwashers</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/disposers-and-compactors-3/102310299/">Disposers & Compactors</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/hoods-and-vents-3/102310029/">Hoods & Vents</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/microwaves-3/102310037/">Microwaves</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/ranges-3/102310042/">Ranges</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/refrigerators-3/102310048/">Refrigerators</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/wall-ovens-3/102310003/">Wall Ovens</a></li>
+					<li><a href="/en_CA/shop/major-appliances-1/warming-drawers-3/102310057/">Warming Drawers</a></li>
+				</ul>
+				<ul>
+					<li class="header"><a href="/en_CA/countertop-appliances/">COUNTERTOP APPLIANCES</a></li>
+					<li><a href="/en_CA/countertop-appliances/pro-line/">Pro Line Series</a></li>
+					<li><a href="/en_CA/2_1_2_30_209/brand_small-appliances_Beverage-Maker_overview.content.html">Beverage Products</a></li>
+					<li><a href="/en_CA/countertop-appliances/blenders/">Blenders</a></li>
+					<li><a href="/en_CA/countertop-appliances/coffee-products/">Coffee Products</a></li>
+					<li><a href="/en_CA/countertop-appliances/commercial-products/">Commercial Products</a></li>
+					<li><a href="/en_CA/countertop-appliances/countertop-ovens/">Countertop Ovens</a></li>
+					<li><a href="/en_CA/countertop-appliances/kettles/">Electric Kettles</a></li>
+					<li><a href="/en_CA/countertop-appliances/food-processors/">Food Processors</a></li>
+					<li><a href="/en_CA/countertop-appliances/hand-blenders/">Hand Blenders</a></li>
+					<li><a href="/en_CA/countertop-appliances/hand-mixers/">Hand Mixers</a></li>
+					<li><a href="/en_CA/shop/countertop-appliances-1/juicers-3/102310341/">Juicers</a></li>
+					<li><a href="/en_CA/countertop-appliances/slow-cookers/">Slow Cookers</a></li>
+					<li><a href="/en_CA/shop/-%5B4KSS1121ER%5D-2104367/4KSS1121ER/">Sparkling Beverage Maker</a></li>
+					<li><a href="/en_CA/countertop-appliances/stand-mixer-attachments/">Stand Mixer Attachments</a></li>
+					<li><a href="/en_CA/countertop-appliances/stand-mixers/">Stand Mixers</a></li>
+					<li><a href="/en_CA/countertop-appliances/toasters/">Toasters</a></li>
+					<li><a href="/en_CA/countertop-appliances/waffle-makers/">Waffle Makers</a></li>
+				</ul>
+				<ul>
+					<li class="header"><a href="/en_CA/kitchenware/">KITCHENWARE</a></li>
+					 <li><a href="/en_CA/shop/kitchenware-1/bakeware-3/102310174/">Bakeware</a></li>
+					 <li><a href="/en_CA/shop/kitchenware-1/cookware-3/102310335/">Cookware</a></li>
+					 <li><a href="/en_CA/shop/kitchenware-1/kettles-3/102310218/">Tea Kettles</a></li>
+				</ul>
+				<ul>
+					<li class="header"><a href="/en_CA/customer-service/">Service &amp; Support</a></li>
+					<!--li><a href="/en_CA/customer-service/faqs/">FAQs</a></li-->
+					<li><a href="/en_CA/customer-service/manuals/">Manuals & Literature</a></li>
+					<li><a href="/en_CA/customer-service/my-appliances/">My Appliances</a></li>
+					<li><a href="/en_CA/customer-service/register-products/">Register Products</a></li>
+					<li><a href="/en_CA/customer-service/replacement-parts/">Replacement Parts</a></li>
+					<li><a href="/en_CA/customer-service/schedule-service/">Schedule Service</a></li>
+					<li><a href="/en_CA/2_2_91/global_certified-care.content.html">Certified Care</a></li>
+					<li><a href="/en_CA/contact-us/">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li class="header"><a href="/en_CA/culinary-inspiration/">CULINARY INSPIRATION</a></li>
+					<li><a href="http://blog.kitchenaid.ca">Blog: United We Create</a></li>
+					<li><a href="/en_CA/culinary-inspiration/kitchen-gallery/">Kitchen Gallery</a></li>
+					<li><a href="/en_CA/culinary-inspiration/partners-and-events/">Partners and Events</a></li>
+					<li><a href="/en_CA/2_2_762/global_stand-mixer-buying-guide.content.html">Find Your Stand Mixer</a></li>
+					<li class="header">Connect With Us</li>
+					<li>
+						<div class="footer-social-channels">
+							<div class="ka_smHolder">
+								<div class="ka_iconCon">
+									<a class="ka_smLink" href="https://www.facebook.com/KitchenAidCanada" target="_blank">
+										<img class="ka_smIcon" alt="Connect with us on facebook" src="/images/facebook-link.png" />
+									</a>
+								</div>
+								<div class="ka_iconCon">
+									<a class="ka_smLink" href="https://twitter.com/kitchenaid_ca " target="_blank">
+										<img class="ka_smIcon" alt="Connect with us on twitter" src="/images/twitter-link.png" />
+									</a>
+								</div>
+								<div class="ka_iconCon">
+									<a class="ka_smLink" href="http://www.youtube.com/kitchenaidca" target="_blank">
+										<img class="ka_smIcon" alt="Connect with us on you tube" src="/images/youtube-logo.png" />
+									</a>
+								</div>
+								<div class="ka_iconCon">
+									<a class="ka_smLink" href="http://www.pinterest.com/kitchenaidca/" target="_blank">
+										<img class="ka_smIcon" alt="Connect with us on pinterest" src="/images/pinterest-link.png" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="header">ADDITIONAL RESOURCES</li>
+					<li><a href="/en_CA/2_2_101/about-kitchenaid/">About KitchenAid</a></li>
+					<li><a href="http://www.whirlpoolcareers.com/" target="_blank">Careers</a></li>
+					<!--li><a href="/en_CA/shop/cart/">Cart</a></li-->
+					<!--li><a href="/en_CA/contact-us/">Contact Us</a></li-->
+					<!--li><a href="/en_CA/experience-retail-center/">Experience Retail Center</a></li-->
+					<!--li><a href="/en_CA/webapp/wcs/stores/servlet/LogonForm?catalogId=10552&myAcctMain=1&langId=-1&storeId=10202">My Account</a></li-->
+					<li><a href="/en_CA/press-room/">Press Room</a></li>
+					<li><a href=" http://www.whirlpoolcorp.com/privacy/canada.aspx">Privacy Policy</a></li>
+					<!--li><a href="/en_CA/sign-up-for-email/">Sign Up for Email</a></li-->
+					<li><a href="/en_CA/site-map/">Site Map</a></li>
+					<li><a href="/en_CA/terms-of-use/">Terms of Use</a></li>
+					<li class="footer-language">Canada | <a href="http://international.kitchenaid.com" target="_blank">Change</a></li>
+				</ul>							 
+			</div>
+			<!-- FOOTER FRAGMENT ENDS -->
+			<p class="footer-legal">
+				®/™ ©<script type="text/javascript">var date = new Date();document.write(date.getFullYear());</script> KitchenAid. All rights reserved. Used under license in Canada. The design of the stand mixer is a trademark in the U.S. and elsewhere
+			</p>
+		</div>
+	</div>
+<link rel="stylesheet" href="https://cdn.powerreviews.com/repos/17711/pr/pwr/engine/pr_styles_review.css" id="prBaseStylesheet"/>
+<link rel="stylesheet" href="/css/powerreviews/pr_style_sheet.css" type="text/css" id="prMerchantOverrideStylesheet"/><!--  contentName: footer, displayType: standard, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/footer.xml, displayed=true, error=] }-->
+
+		  	  	
+			  	  	<!-- Gladiator Phase 2 END 12/18 --><!-- Gladiator Phase 2 END 12/26 --><!-- END FooterDisplay.jspf -->
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		//Make sure page is loaded at this point
+		//Set requestedSubmitted to false
+		requestSubmitted = false;
+	}); 	
+</script>
+<!--  AddThis code --><!-- END LayoutContainerBottom.jspf -->
+	<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.sendInitial();</script>
 
 
 </body>
 </html>
-
