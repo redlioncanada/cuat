@@ -276,7 +276,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon May 11 12:32:53 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed May 13 11:52:09 EDT 2015] -->
   
 
 
@@ -433,7 +433,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon May 11 14:10:07 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed May 13 12:36:15 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -824,7 +824,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	  
 			{ 
 				"catentry_id" : "2103778",
-				"buyable" : "false",
+				"buyable" : "true",
 				"Attributes1" :	
 				
 						"Color_Acier Inoxydable",
@@ -900,15 +900,22 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 
 <div id="pr-pdp-snippet-UXB0600DYS" class="pr-pdp">
-	<script type="text/javascript">
-	POWERREVIEWS.display.snippet(document, {
-	    pr_page_id:"UXB0600DYS",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=UXB0600DYS&storeId=10231",
-	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
-	</script>
+
+		<script type="text/javascript">
+		function activateTab () {
+	        $('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');
+	    };
+	
+		
+		POWERREVIEWS.display.snippet(document, {
+		    pr_page_id:"UXB0600DYS",
+		    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=UXB0600DYS&storeId=10231",
+		    pr_read_review:'javascript:(activateTab())'});
+		</script>
+	
 </div>
 			<div class="product-description">
-				<p>Ce ventilateur interne de 600 pi3/min assure une performance fiable pour satisfaire aux exigences des brûleurs à gaz haute puissance. Conçu pour fonctionner avec les revêtements de hotte commerciaux et les hottes de cuisine de style commercial.</p>
+				<p></p>
 			</div>
 
 			<div class="product-color-options">
@@ -1187,15 +1194,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KEK1522CA]-2100586/KEK1522CA/"><img class="image_product_bootom" src="/digitalassets/KEK1522CA/AB-Thumbnail_100X100_HO.jpg" alt="Bouilloire électrique série Pro-Line®" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KEK1522CA]-2100586/KEK1522CA/"><img class="image_product_bootom" src="/digitalassets/KEK1522CA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Bouilloire électrique série Pro-Line®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KEK1522CA]-2100586/KEK1522CA/">Bouilloire électrique série Pro-Line®</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KEK1522CA]-2100586/KEK1522CA/">KitchenAid® Bouilloire électrique série Pro-Line®</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">Bouilloire électrique série Pro-Line®</p>
+	                	<p class="recently_product_id">KitchenAid® Bouilloire électrique série Pro-Line®</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1214,15 +1221,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT2203CA]-2100994/KMT2203CA/"><img class="image_product_bootom" src="/digitalassets/KMT2203CA/AB-Thumbnail_100X100_HO.jpg" alt="Grille-pain série Pro Line® 2 fentes" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT2203CA]-2100994/KMT2203CA/"><img class="image_product_bootom" src="/digitalassets/KMT2203CA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Grille-pain série Pro Line® 2 fentes" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT2203CA]-2100994/KMT2203CA/">Grille-pain série Pro Line® 2 fentes</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT2203CA]-2100994/KMT2203CA/">KitchenAid® Grille-pain série Pro Line® 2 fentes</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">Grille-pain série Pro Line® 2 fentes</p>
+	                	<p class="recently_product_id">KitchenAid® Grille-pain série Pro Line® 2 fentes</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1241,15 +1248,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT4203CA]-2101008/KMT4203CA/"><img class="image_product_bootom" src="/digitalassets/KMT4203CA/AB-Thumbnail_100X100_HO.jpg" alt="Grille-pain série Pro Line® 4 fentes" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT4203CA]-2101008/KMT4203CA/"><img class="image_product_bootom" src="/digitalassets/KMT4203CA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Grille-pain série Pro Line® 4 fentes" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT4203CA]-2101008/KMT4203CA/">Grille-pain série Pro Line® 4 fentes</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KMT4203CA]-2101008/KMT4203CA/">KitchenAid® Grille-pain série Pro Line® 4 fentes</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">Grille-pain série Pro Line® 4 fentes</p>
+	                	<p class="recently_product_id">KitchenAid® Grille-pain série Pro Line® 4 fentes</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1268,15 +1275,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	 
 		
 				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/"><img class="image_product_bootom" src="/digitalassets/KSM7586PCA/AB-Thumbnail_100X100_HO.jpg" alt="Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/"><img class="image_product_bootom" src="/digitalassets/KSM7586PCA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/">Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/">KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</p>
+	                	<p class="recently_product_id">KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1485,7 +1492,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon May 11 12:32:59 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed May 13 11:52:10 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

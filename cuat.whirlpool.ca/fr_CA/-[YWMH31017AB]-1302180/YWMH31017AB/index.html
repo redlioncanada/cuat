@@ -277,7 +277,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon May 11 09:27:50 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed May 13 09:54:01 EDT 2015] -->
   
 
 
@@ -434,7 +434,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon May 11 09:27:41 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed May 13 09:53:51 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1068,12 +1068,19 @@ document.write('<iframe src="http://2625291.fls.doubleclick.net/activityi;src=26
 				
 
 <div id="pr-pdp-snippet-YWMH31017AB" class="pr-pdp">
-	<script type="text/javascript">
-	POWERREVIEWS.display.snippet(document, {
-	    pr_page_id:"YWMH31017AB",
-	    pr_write_review:"http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10578&langId=-301&partNumber=YWMH31017AB&storeId=10228",
-	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
-	</script>
+
+		<script type="text/javascript">
+		function activateTab () {
+	        $('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');
+	    };
+	
+		
+		POWERREVIEWS.display.snippet(document, {
+		    pr_page_id:"YWMH31017AB",
+		    pr_write_review:"http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10578&langId=-301&partNumber=YWMH31017AB&storeId=10228",
+		    pr_read_review:'javascript:(activateTab())'});
+		</script>
+	
 </div>
 			<div class="product-description">
 				<p>Préparer vos plats favoris puis nettoyer ensuite est facile grâce à ce four à micro-ondes à hotte intégrée de 1,7 pi cu. Une puissance de cuisson allant jusqu'à 1000 watts procure la flexibilité de cuisinier toute sorte d'aliments. Une sortie d'air dissimulée sur ce four à micro-ondes à hotte intégrée épure l'apparence extérieure du four et simplifie aussi le nettoyage. En plus, vous pouvez choisir l'intensité de ventilation dont vous avez besoin grâce aux deux réglages de vitesse disponibles sur votre four à micro-ondes à hotte intégrée.</p>
@@ -1917,7 +1924,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 			</div>
 			
 		</div>	
-	</div><!-- End content-wrap --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon May 11 09:27:44 EDT 2015] -->
+	</div><!-- End content-wrap --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed May 13 09:53:54 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">

@@ -67,7 +67,7 @@ var slideSelect, images, lastElem, target, overstate, $callOver, $overlay, timin
             
         target=$('#slideSelect ul li.selected').index();
         setDetails(target);
-        setFade();
+        //setFade();    
         
         $callOver.click(function() {
         	console.log('hit');

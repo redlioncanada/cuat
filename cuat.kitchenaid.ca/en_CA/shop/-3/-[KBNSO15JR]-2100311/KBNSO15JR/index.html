@@ -276,7 +276,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon May 11 11:08:36 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed May 13 08:32:18 EDT 2015] -->
   
 
 
@@ -316,7 +316,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("-1002");
+			var contextUserId = parseInt("13488125");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -433,7 +433,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon May 11 12:14:13 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed May 13 11:44:03 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -840,7 +840,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	  
 			{ 
 				"catentry_id" : "2102090",
-				"buyable" : "false",
+				"buyable" : "true",
 				"Attributes1" :	
 				
 						"Color_Other",
@@ -900,15 +900,22 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 
 <div id="pr-pdp-snippet-KBNSO15JR" class="pr-pdp">
-	<script type="text/javascript">
-	POWERREVIEWS.display.snippet(document, {
-	    pr_page_id:"KBNSO15JR",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KBNSO15JR&storeId=10231",
-	    pr_read_review:"javascript:$('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');"});
-	</script>
+
+		<script type="text/javascript">
+		function activateTab () {
+	        $('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');
+	    };
+	
+		
+		POWERREVIEWS.display.snippet(document, {
+		    pr_page_id:"KBNSO15JR",
+		    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KBNSO15JR&storeId=10231",
+		    pr_read_review:'javascript:(activateTab())'});
+		</script>
+	
 </div>
 			<div class="product-description">
-				<p>This shallow rectangular pan is designed to bake a thin layer cake that can be covered with filling then rolled for a special occasion treat. The nonstick coating is ideal for preparing jelly rolls, yule logs, pumpkin rolls, or sheet cakes without sticking problems and ensures easy cleaning.</p>
+				<p></p>
 			</div>
 
 			<div class="product-color-options">
@@ -1197,10 +1204,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Bake 12 regular sized muffins, cupcakes, or cheesecake cups with this set of two, 6-cavity pans. The nonstick coating releases contents easily for effortless cleaning.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $39.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSS06MF]-2100312/KBNSS06MF/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2102091_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2102091',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1223,10 +1232,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Our largest cookie sheet is ideal when making cookies, croissants, or biscuits for family gatherings or special events. The nonstick coating releases contents easily for effortless cleaning.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $34.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSOLGCK]-2104236/KBNSOLGCK/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2104261_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2104261',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1249,10 +1260,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">With slightly flared sides and flat bottom, this deep, rectangular pan is designed to bake yeast breads, quick breads, and pound cakes. The nonstick coating ensures easy removal and cleanup.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $24.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO9X5Q]-2104637/KBNSO9X5Q/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2104702_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2104702',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1275,10 +1288,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Skip takeout and make delicious thin crust pizza at home with our 12” thin crust pizza pan. The nonstick coating makes pizza easy to remove.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $24.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO12TZ]-2104235/KBNSO12TZ/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2104260_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2104260',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1301,10 +1316,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Bake thick, artisan pizzas or restaurant-style cheesy garlic bread with this 12” deep dish pizza pan. Perfect when entertaining large gatherings. The nonstick coating makes pizza easy to remove.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $34.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO12DZ]-2100310/KBNSO12DZ/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2102089_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2102089',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1327,10 +1344,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Satisfy a larger crowd with this slightly larger version of our 8"x8"x2" Square Pan. Perfect for baking a variety of cakes, brownies, and cobblers. The nonstick coating ensures contents release easily from the pan.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $29.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO09SQ]-2104234/KBNSO09SQ/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2104259_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2104259',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1353,10 +1372,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">This round, deep pan features a special detachable side section that won't disturb delicate recipe contents including cheesecake, ice cream cake, and Tiramisu.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $39.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO09SG]-2100309/KBNSO09SG/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2102088_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2102088',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1379,10 +1400,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Bake layer cakes or focaccia bread with this slightly larger version of our  8"x2" round pan with nonstick coating. Perfect for birthdays, graduations, and holidays.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $24.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO09RD]-2104233/KBNSO09RD/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2104258_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2104258',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1405,10 +1428,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>
 					</div>
 					
-					<div class="product_desc">Make crowd-pleasing mini desserts with our mini angel food cake pan. With six cavities, this compact tube pan is ideal for treating guests at parties and potlucks. The nonstick coating ensures cakes don’t stick, for easy release and cleaning.</div>			
+					<div class="product_desc"></div>			
 					<div class="product_price">MSRP: $39.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KBNSO06AG]-2100307/KBNSO06AG/" class="view_details">VIEW DETAILS</a>
+						
+						    <a href="javascript:setCurrentId('WC_CatalogEntryDBThumbnailDisplayJSPF_2102086_links_1'); categoryDisplayJS.AddItem2ShopCartAjax('2102086',1)" class="add_to_cart">Add to Cart</a>
 						
 					</div>
 					</div>
@@ -1706,7 +1731,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon May 11 11:08:38 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed May 13 08:32:20 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

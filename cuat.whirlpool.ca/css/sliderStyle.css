@@ -97,12 +97,13 @@ div.subslide img {
 	padding: 14px 30px;6px 30px;
 	position: absolute;
 	width: 595px;
-	display: block;
+	display: none !important;
 	top: 301px;
 	left: 135px;
 	z-index: 6;
 }
 #slideRight {
+	display: none !important;
 	background: url("../images/content/controlArrow_right.png") repeat scroll 0 0 transparent;
 	float: left;
 	height: 42px;
@@ -115,6 +116,7 @@ div.subslide img {
 	cursor: pointer;
 }
 #slideLeft {
+	display: none !important;
 	background: url("../images/content/controlArrow_left.png") repeat scroll 0 0 transparent;
 	float: left;
 	height: 42px;
