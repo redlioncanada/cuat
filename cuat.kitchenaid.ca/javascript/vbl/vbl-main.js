@@ -42,7 +42,7 @@ var vblImages = {
 
 //pane 1 scroller, trigger a scroll every 10 seconds
 var vblGalleryInterval;
-function resetVblGalleryInterval() {clearInterval(vblGalleryInterval); vblGalleryInterval = setInterval(vblLeftArrowClick,10000);}
+function resetVblGalleryInterval() {/*clearInterval(vblGalleryInterval); vblGalleryInterval = setInterval(vblRightArrowClick,10000);*/}
 resetVblGalleryInterval();
 
 //init resize
