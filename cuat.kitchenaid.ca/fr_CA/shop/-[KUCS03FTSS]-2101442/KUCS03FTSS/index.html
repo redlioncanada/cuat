@@ -150,7 +150,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf -->
+	<!-- END CommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
@@ -264,7 +264,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 21 16:39:19 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 01 12:36:12 EDT 2015] -->
   
 
 
@@ -287,7 +287,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -304,7 +304,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("-1002");
+			var contextUserId = parseInt("13496113");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -421,7 +421,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 21 16:54:37 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 01 16:19:13 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -882,28 +882,19 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                             <div class="manual_item top">
                                       
                         
-                        <h3>Guide des dimensions</h3>
-                        <p>Dimensions détaillées de votre nouvel appareil y compris du dégagement nécessaire pour l'installation.</p>
-			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KUDC20CVBL/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
-                  		</div>
-                  
-                                            <div class="manual_item top">
-                                      
-                        
                         <h3>Guide énergétique</h3>
                         <p>Renseignements concernant l'efficacité énergétique de votre appareil, y compris la consommation d'énergie et les coûts annuels.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/KUDC20CVBL/Energy Guide_FR.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
-                                            <div class="manual_item">
+                                            <div class="manual_item top">
                                       
                         
-                        <h3>Manuel d'utilisation et d'entretien</h3>
-                        <p>Renseignements complets relatifs à votre nouvel appareil.</p>
+                        <h3>Guide des dimensions</h3>
+                        <p>Dimensions détaillées de votre nouvel appareil y compris du dégagement nécessaire pour l'installation.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KUDC20CVBL/Use and Care_FR.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
+                        <p><a href="/digitalassets/KUDC20CVBL/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
                                             <div class="manual_item">
@@ -915,13 +906,22 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                         <p><a href="/digitalassets/KUDC20CVBL/Warranty_FR.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
-                                            <div class="manual_item bottom">
+                                            <div class="manual_item">
                                       
                         
                         <h3>Manuel d'installation</h3>
                         <p>Directives concernant le déballage et l'installation de votre appareil, les normes électriques à respecter et les outils requis.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/KUDC20CVBL/Installation Instruction_FR.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item bottom">
+                                      
+                        
+                        <h3>Manuel d'utilisation et d'entretien</h3>
+                        <p>Renseignements complets relatifs à votre nouvel appareil.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KUDC20CVBL/Use and Care_FR.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
             <div class="manual_item bottom">
@@ -950,9 +950,9 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Le détecteur de lavage optimum règle le programme de lavage selon les conditions de l'eau pour assurer une efficacité et une performance de lavage maximales.</span>
+					<span class="header_desc">Quatre bras gicleurs en acier inoxydable arrosent 10 endroits inclinés avec précision, assurant une couverture maximale et résistant à l'usure.</span>
 				</h4>
-				<p>Le détecteur de lavage optimum règle le programme de lavage selon les conditions de l'eau pour assurer une efficacité et une performance de lavage maximales.</p>
+				<p>Quatre bras gicleurs en acier inoxydable arrosent 10 endroits inclinés avec précision, assurant une couverture maximale et résistant à l'usure.</p>
 			</div> 
 			<div class="feature ">
 				 			
@@ -966,9 +966,9 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">La console entièrement visible permet d'accéder facilement aux commandes, tout en mettant en valeur la conception et la poignée de la série II Architect®.</span>
+					<span class="header_desc">Le broyeur d'aliments intégré élimine le besoin de prérincer la vaisselle en broyant silencieusement les particules d'aliments et en les chassant.</span>
 				</h4>
-				<p>La console entièrement visible permet d'accéder facilement aux commandes, tout en mettant en valeur la conception et la poignée de la série II Architect®.</p>
+				<p>Le broyeur d'aliments intégré élimine le besoin de prérincer la vaisselle en broyant silencieusement les particules d'aliments et en les chassant.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -976,30 +976,30 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4>L'option de séchage avec chaleur comprenant un élément de séchage  spécialisé chauffe la cuve à la fin du programme pour assurer  une vaisselle bien sèche à chaque fois.</h4>
-							<p>L'option de séchage avec chaleur comprenant un élément de séchage  spécialisé chauffe la cuve à la fin du programme pour assurer  une vaisselle bien sèche à chaque fois.</p>
+							<h4>Le détecteur de lavage optimum règle le programme de lavage selon les conditions de l'eau pour assurer une efficacité et une performance de lavage maximales.</h4>
+							<p>Le détecteur de lavage optimum règle le programme de lavage selon les conditions de l'eau pour assurer une efficacité et une performance de lavage maximales.</p>
 						</div>	
 						
 						<div class="feature">	
-							<h4>Lave-vaisselle homologué ENERGY STAR®.</h4>
-							<p>Did you know that using an energy-efficient dishwasher is less expensive than washing your dishes by hand? In fact, an ENERGY STAR® qualified dishwasher costs less to operate than the amount of a single postage stamp.<br><br> KitchenAid® ENERGY STAR® qualified dishwashers help conserve energy while also helping to save you money. By reducing energy consumption by at least 25% over federal minimum efficiency standards, ENERGY STAR® qualified dishwashers translate to a significant saving for your budget as well as for the environment.<br><br> How do I find an ENERGY STAR® qualified dishwasher? Just look for the ENERGY STAR® logo located on the yellow Energy Guide label. The Energy Guide label states the energy-efficiency of the dishwasher and provides you with the estimated cost to run the dishwasher over a year<br><br> Whirlpool® ENERGY STAR® qualified dishwashers:<br> - Reduce energy consumption by at least 25%<br> - Costs less than washing dishes by hand<br> - Help save you money while contributing to resource conservation</p>
+							<h4>Le système d'insonorisation Whisper Quiet® de la série EQ (54 dBA*) est plus silencieux qu'une conversation moyenne – *Selon les normes de la CEI, programme normal.</h4>
+							<p>Le système d'insonorisation Whisper Quiet® de la série EQ (54 dBA*) est plus silencieux qu'une conversation moyenne – *Selon les normes de la CEI, programme normal.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>L'option de séchage avec chaleur comprenant un élément de séchage  spécialisé chauffe la cuve à la fin du programme pour assurer  une vaisselle bien sèche à chaque fois.</h4>
+							<p>L'option de séchage avec chaleur comprenant un élément de séchage  spécialisé chauffe la cuve à la fin du programme pour assurer  une vaisselle bien sèche à chaque fois.</p>
 						</div>
 					
 						<div class="feature">	
 							<h4>L'intérieur en acier inoxydable retient la chaleur pour assurer une meilleure performance de séchage et résiste à l'usure.</h4>
 							<p>L'intérieur en acier inoxydable retient la chaleur pour assurer une meilleure performance de séchage et résiste à l'usure.</p>
 						</div>
-					
-						<div class="feature">	
-							<h4>Le broyeur d'aliments intégré élimine le besoin de prérincer la vaisselle en broyant silencieusement les particules d'aliments et en les chassant.</h4>
-							<p>Le broyeur d'aliments intégré élimine le besoin de prérincer la vaisselle en broyant silencieusement les particules d'aliments et en les chassant.</p>
-						</div>
 						</div>												
 					
 						<div id="right-col">
 						<div class="feature first">	
-							<h4>Quatre bras gicleurs en acier inoxydable arrosent 10 endroits inclinés avec précision, assurant une couverture maximale et résistant à l'usure.</h4>
-							<p>Quatre bras gicleurs en acier inoxydable arrosent 10 endroits inclinés avec précision, assurant une couverture maximale et résistant à l'usure.</p>
+							<h4>La console entièrement visible permet d'accéder facilement aux commandes, tout en mettant en valeur la conception et la poignée de la série II Architect®.</h4>
+							<p>La console entièrement visible permet d'accéder facilement aux commandes, tout en mettant en valeur la conception et la poignée de la série II Architect®.</p>
 						</div>	
 						
 						<div class="feature">	
@@ -1008,8 +1008,8 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						</div>
 					
 						<div class="feature">	
-							<h4>Le système d'insonorisation Whisper Quiet® de la série EQ (54 dBA*) est plus silencieux qu'une conversation moyenne ? *Selon les normes de la CEI, programme normal.</h4>
-							<p>Le système d'insonorisation Whisper Quiet® de la série EQ (54 dBA*) est plus silencieux qu'une conversation moyenne ? *Selon les normes de la CEI, programme normal.</p>
+							<h4>Lave-vaisselle homologué ENERGY STAR®.</h4>
+							<p>Did you know that using an energy-efficient dishwasher is less expensive than washing your dishes by hand? In fact, an ENERGY STAR® qualified dishwasher costs less to operate than the amount of a single postage stamp.<br><br> KitchenAid® ENERGY STAR® qualified dishwashers help conserve energy while also helping to save you money. By reducing energy consumption by at least 25% over federal minimum efficiency standards, ENERGY STAR® qualified dishwashers translate to a significant saving for your budget as well as for the environment.<br><br> How do I find an ENERGY STAR® qualified dishwasher? Just look for the ENERGY STAR® logo located on the yellow Energy Guide label. The Energy Guide label states the energy-efficiency of the dishwasher and provides you with the estimated cost to run the dishwasher over a year<br><br> Whirlpool® ENERGY STAR® qualified dishwashers:<br> - Reduce energy consumption by at least 25%<br> - Costs less than washing dishes by hand<br> - Help save you money while contributing to resource conservation</p>
 						</div>	
 						</div>									
 					
@@ -1034,40 +1034,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Mise en marche différée
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Oui
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Système de filtration d'eau
 									
 							</div>
 							
 								<div class="spec_contents_info">
 									Hard Food Disposer
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Homologué ENERGY STAR®
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Oui
 								</div>
 								
 								
@@ -1104,12 +1076,40 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
+										Mise en marche différée
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Oui
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Homologué ENERGY STAR®
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Oui
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
 										Sélection d 'options
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									4 Hour Delay, Heated Dry, Hi Temp Scrub, Lockout, Sani Rinse®
+									4 Hour Delay, Heated Dry, Hi Temp Scrub, Lockout, Sani Rinse&#174;
 								</div>
 								
 								
@@ -1125,12 +1125,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										support matériel
+										Capacité
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Nylon
+									14.00 Couverts
 								</div>
 								
 								
@@ -1139,12 +1139,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Matériau de la cuve
+										support matériel
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Acier inoxydable
+									Nylon
 								</div>
 								
 								
@@ -1167,12 +1167,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Capacité
+										Matériau de la cuve
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									14.00 Couverts
+									Acier inoxydable
 								</div>
 								
 								
@@ -1188,12 +1188,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										niveau de décibel
+										support matériel
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									54
+									Nylon
 								</div>
 								
 								
@@ -1202,12 +1202,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										support matériel
+										niveau de décibel
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Nylon
+									54
 								</div>
 								
 								
@@ -1235,7 +1235,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							</div>
 							
 								<div class="spec_contents_info">
-									2 tablettes d'appoint avec tiges intégrées pour verres sur pied, 2 pinces pour articles légers
+									2 tablettes d'appoint avec tiges int&#233;gr&#233;es pour verres sur pied, 2 pinces pour articles l&#233;gers
 								</div>
 								
 								
@@ -1265,6 +1265,20 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
+										Hauteur minimum
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									33 7/8
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
 										Largeur du produit
 									
 							</div>
@@ -1276,7 +1290,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Hauteur du produit
@@ -1285,20 +1299,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									34 1/2
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Hauteur minimum
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									33 7/8
 								</div>
 								
 								
@@ -1408,7 +1408,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	</div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 21 16:39:22 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 01 12:36:13 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

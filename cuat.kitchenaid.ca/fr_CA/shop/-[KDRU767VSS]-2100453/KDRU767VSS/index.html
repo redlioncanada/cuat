@@ -150,7 +150,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf -->
+	<!-- END CommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
@@ -264,7 +264,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 21 16:39:19 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 01 12:36:12 EDT 2015] -->
   
 
 
@@ -287,7 +287,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -304,7 +304,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("-1002");
+			var contextUserId = parseInt("13496113");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -421,7 +421,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 21 16:43:35 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 01 16:02:44 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -811,7 +811,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 </div>
 		    
 		    <div class="product-description">
-	                <p>The ideal addition to any kitchen, this sleekly designed built-in oven features our EasyConvect? conversion system. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion, offering you professional, even results every time.</p>
+	                <p>The ideal addition to any kitchen, this sleekly designed built-in oven features our EasyConvect™ conversion system. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion, offering you professional, even results every time.</p>
 	           </div>
 	           	  
 			<div id="product-color-options" style="display:none">
@@ -882,19 +882,28 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                             <div class="manual_item top">
                                       
                         
-                        <h3>Manuel d'installation</h3>
-                        <p>Directives concernant le déballage et l'installation de votre appareil, les normes électriques à respecter et les outils requis.</p>
+                        <h3>Guide des dimensions</h3>
+                        <p>Dimensions détaillées de votre nouvel appareil y compris du dégagement nécessaire pour l'installation.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KEBC107KBU/Installation Instruction_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
+                        <p><a href="/digitalassets/KEBC107KBU/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
                                             <div class="manual_item top">
                                       
                         
-                        <h3>Guide des dimensions</h3>
-                        <p>Dimensions détaillées de votre nouvel appareil y compris du dégagement nécessaire pour l'installation.</p>
+                        <h3>Renseignements sur la garantie</h3>
+                        <p>Description complète de la garantie et coordonnées du service à la clientèle.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KEBC107KBU/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
+                        <p><a href="/digitalassets/KEBC107KBU/Warranty_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item bottom">
+                                      
+                        
+                        <h3>Manuel d'installation</h3>
+                        <p>Directives concernant le déballage et l'installation de votre appareil, les normes électriques à respecter et les outils requis.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KEBC107KBU/Installation Instruction_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
                                             <div class="manual_item bottom">
@@ -904,15 +913,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                         <p>Renseignements complets relatifs à votre nouvel appareil.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/KEBC107KBU/Use and Care_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
-                  		</div>
-                  
-                                            <div class="manual_item bottom">
-                                      
-                        
-                        <h3>Renseignements sur la garantie</h3>
-                        <p>Description complète de la garantie et coordonnées du service à la clientèle.</p>
-			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KEBC107KBU/Warranty_EN.pdf" class="pdf_manual" onclick="">Télécharger</a></p>
                   		</div>
                   
             <div class="manual_item bottom">
@@ -941,25 +941,25 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Le grillage thermique avec porte fermée et réglages          « Maxi » et « Econo » permet de régler la performance de grillage à haute vitesse pour les grandes ou petites quantités.</span>
+					<span class="header_desc">Le système autonettoyant avec réglage de la durée nettoie automatiquement le four et élimine le récurage et les émanations. De plus, un dispositif verrouille automatiquement la porte pendant le programme d'autonettoyage.</span>
 				</h4>
-				<p>Le grillage thermique avec porte fermée et réglages          « Maxi » et « Econo » permet de régler la performance de grillage à haute vitesse pour les grandes ou petites quantités.</p>
+				<p>Le système autonettoyant avec réglage de la durée nettoie automatiquement le four et élimine le récurage et les émanations. De plus, un dispositif verrouille automatiquement la porte pendant le programme d'autonettoyage.</p>
 			</div> 
 			<div class="feature ">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Le système autonettoyant avec réglage de la durée nettoie automatiquement le four et élimine le récurage et les émanations. De plus, un dispositif verrouille automatiquement la porte pendant le programme d'autonettoyage.</span>
+					<span class="header_desc"></span>
 				</h4>
-				<p>Le système autonettoyant avec réglage de la durée nettoie automatiquement le four et élimine le récurage et les émanations. De plus, un dispositif verrouille automatiquement la porte pendant le programme d'autonettoyage.</p>
+				<p>L'élément dissimulé CleanBake assure une répartition équilibrée de la chaleur pour une meilleure performance de cuisson. L'élément de cuisson est protégé contre les liquides renversés puisque la cavité du four en porcelaine le « dissimule » hors de la vue.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">The True Convection cooking system with a Third Hidden Element (T.H.E.?) utilizes both a rear element and a rear fan to circulate preheated air around the oven cavity for faster and more even cooking results than conventional cooking.</span>
+					<span class="header_desc">Le système de TRUNCATED</span>
 				</h4>
-				<p>The True Convection cooking system with a Third Hidden Element (T.H.E.?) utilizes both a rear element and a rear fan to circulate preheated air around the oven cavity for faster and more even cooking results than conventional cooking.</p>
+				<p>The True Convection cooking system with a Third Hidden Element (T.H.E.™) utilizes both a rear element and a rear fan to circulate preheated air around the oven cavity for faster and more even cooking results than conventional cooking.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -967,35 +967,25 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4></h4>
-							<p>Le mode Sabbat permet d'utiliser la cuisinière durant la journée du Sabbat et d'autres fêtes religieuses sans qu'il ne soit nécessaire de l'allumer. Les tonalités, les voyants et les messages d'erreur sont interrompus, et il est possible de maintenir une température préréglée pendant des périodes prolongées.</p>
+							<h4>Our EasyConvect™ Conversion System offers you professional, even results every time. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion.</h4>
+							<p>Our EasyConvect™ Conversion System offers you professional, even results every time. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion.</p>
 						</div>	
 						
 						<div class="feature">	
-							<h4>The CleanBake Hidden Element provides evenly balanced heat distribution resulting in better baking performance.  Because it is ?hidden? from view by the porcelain oven cavity, the baking element is protected from spills.</h4>
-							<p>The CleanBake Hidden Element provides evenly balanced heat distribution resulting in better baking performance.  Because it is ?hidden? from view by the porcelain oven cavity, the baking element is protected from spills.</p>
-						</div>
-					
-						<div class="feature">	
-							<h4></h4>
-							<p>The Sabbath mode feature makes it possible to use the range on the Sabbath and other religious holidays without having to turn it on. Tones, lights and error messages are over-ridden, and a set temperature can be maintained for extended periods of time.</p>
+							<h4>Le grillage thermique avec porte fermée et réglages          « Maxi » et « Econo » permet de régler la performance de grillage à haute vitesse pour les grandes ou petites quantités.</h4>
+							<p>Le grillage thermique avec porte fermée et réglages          « Maxi » et « Econo » permet de régler la performance de grillage à haute vitesse pour les grandes ou petites quantités.</p>
 						</div>
 						</div>												
 					
 						<div id="right-col">
 						<div class="feature first">	
-							<h4>Our EasyConvect? Conversion System offers you professional, even results every time. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion.</h4>
-							<p>Our EasyConvect? Conversion System offers you professional, even results every time. You simply enter your conventional cooking time and temperature, and the oven makes the precise conversion.</p>
+							<h4></h4>
+							<p>Le mode Sabbat permet d'utiliser la cuisinière durant la journée du Sabbat et d'autres fêtes religieuses sans qu'il ne soit nécessaire de l'allumer. Les tonalités, les voyants et les messages d'erreur sont interrompus, et il est possible de maintenir une température préréglée pendant des périodes prolongées.</p>
 						</div>	
 						
 						<div class="feature">	
 							<h4></h4>
 							<p>La sonde thermique du four à convection permet d'obtenir facilement un rôti parfait, à chaque fois. Réglez la température interne des aliments et insérez la sonde thermique électronique. Lorsque la température souhaitée est atteinte, le four s'éteint.</p>
-						</div>
-					
-						<div class="feature">	
-							<h4></h4>
-							<p>L'élément dissimulé CleanBake assure une répartition équilibrée de la chaleur pour une meilleure performance de cuisson. L'élément de cuisson est protégé contre les liquides renversés puisque la cavité du four en porcelaine le « dissimule » hors de la vue.</p>
 						</div>	
 						</div>									
 					
@@ -1041,34 +1031,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Hauteur
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									29
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Hauteur de la niche
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									27 3/4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
 										Largeur
 									
 							</div>
@@ -1083,12 +1045,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Profondeur
+										Profondeur de la niche
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									23
+									23 1/4
 								</div>
 								
 								
@@ -1097,7 +1059,21 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Largeur de la découpe
+										Hauteur
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									29
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Largeur de la niche
 									
 							</div>
 							
@@ -1108,15 +1084,29 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Profondeur de la niche
+										Hauteur de la niche
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									23 1/4
+									27 3/4
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Profondeur
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									23
 								</div>
 								
 								
@@ -1226,7 +1216,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	</div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 21 16:39:22 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 01 12:36:13 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

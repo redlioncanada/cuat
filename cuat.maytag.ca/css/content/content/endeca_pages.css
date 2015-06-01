@@ -494,3 +494,5 @@ html[lang=fr] .endeca_sortViewDisplayBar_top {
 height: 35px;
 }
 /*end compare tray css*/
+
+.companion-item{display:none !important;}

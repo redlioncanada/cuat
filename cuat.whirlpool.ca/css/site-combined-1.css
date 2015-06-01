@@ -681,7 +681,7 @@ html[lang="fr"] #page.SC_Accessories .afo_seeResults a,html[lang="fr"] #page.SC_
 /*MODALS POPUPS*/.footer_modal{display:none;}
 #terms_of_use_popup_content_wrapper,#privacy_popup_content_wrapper{padding-right:30px;}
 /* end include: global_footer.css *//* begin include: global_nav.css *//*Header*/.homepage #header-wrap{background: url("../images/header_bg.jpg") repeat scroll 0 0 transparent;}
-#header-wrap{background: url("../images/header_bg.jpg") repeat scroll 0 0 transparent;border-bottom: 1px solid #DDDDDD; repeat-x 50% 0;width:100%;height:117px;margin:0;padding:0;text-align:left;position:absolute;top:0;left:0;z-index:9999;}
+#header-wrap{background: url("../images/header_bg.jpg") repeat scroll 0 0 transparent;border-bottom: 1px solid #DDDDDD; repeat-x 50% 0;width:100%;height:117px;margin:0;padding:0;text-align:left;position:relative;top:0;left:0;z-index:9999;}
 #header{background:url("") repeat scroll 0 0 transparent;width:940px!important;height:117px;margin:0 auto;padding:0;position:relative;color:#999;font-family:Helvetica, Helvetica Neue, Arial,sans-serif;}
 #header a{color:#999;text-decoration:none;}
 #header a:hover,#header a:focus{color:#666;}

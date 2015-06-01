@@ -150,7 +150,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- KAD EMS PHASE II Start Changes added to remove Bootstrap.js from the PHASE II sites --><!-- KAD EMS PHASE II End --><!-- END CommonJSToInclude.jspf -->
+	<!-- END CommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
@@ -264,7 +264,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Thu May 21 15:42:28 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 01 08:32:54 EDT 2015] -->
   
 
 
@@ -287,7 +287,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('' == "true")
+	if('true' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -304,7 +304,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13489113");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -421,7 +421,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Thu May 21 15:53:58 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 01 15:11:40 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -896,28 +896,19 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                             <div class="manual_item top">
                                       
                         
-                        <h3>Dimension Guide</h3>
-                        <p>Detailed dimensions of your new appliance with space requirements for the area surrounding it.</p>
-			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KUDC20CVBL/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
-                  		</div>
-                  
-                                            <div class="manual_item top">
-                                      
-                        
                         <h3>Energy Guide</h3>
                         <p>Information about the efficiency of your appliance, including energy consumption and annual costs to operate.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/KUDC20CVBL/Energy Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
-                                            <div class="manual_item">
+                                            <div class="manual_item top">
                                       
                         
-                        <h3>Use & Care Guide</h3>
-                        <p>Comprehensive information about your new appliance - from getting started to cleaning and maintenance.</p>
+                        <h3>Dimension Guide</h3>
+                        <p>Detailed dimensions of your new appliance with space requirements for the area surrounding it.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/KUDC20CVBL/Use and Care_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                        <p><a href="/digitalassets/KUDC20CVBL/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
                                             <div class="manual_item">
@@ -929,13 +920,22 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                         <p><a href="/digitalassets/KUDC20CVBL/Warranty_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
-                                            <div class="manual_item bottom">
+                                            <div class="manual_item">
                                       
                         
                         <h3>Installation Guide</h3>
                         <p>Instructions for unpacking and installing your appliance, including electrical requirements and necessary tools.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/KUDC20CVBL/Installation Instruction_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item bottom">
+                                      
+                        
+                        <h3>Use & Care Guide</h3>
+                        <p>Comprehensive information about your new appliance - from getting started to cleaning and maintenance.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/KUDC20CVBL/Use and Care_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
             <div class="manual_item bottom">
@@ -964,25 +964,25 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">NSF® Certification</span>
+					<span class="header_desc">Four stainless steel wash arms spray water to ten precisely angled locations, providing maximum coverage and resisting wear</span>
 				</h4>
-				<p>NSF® Certification</p>
+				<p>Four stainless steel wash arms spray water to ten precisely angled locations, providing maximum coverage and resisting wear</p>
 			</div> 
 			<div class="feature ">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">The Fully Visible Console Design makes the controls easily accessible while showcasing our Architect® Series II design and handle</span>
+					<span class="header_desc">Adjustable upper rack can be raised or lowered two inches, providing flexibility in cleaning various-sized dishes.</span>
 				</h4>
-				<p>The Fully Visible Console Design makes the controls easily accessible while showcasing our Architect® Series II design and handle</p>
+				<p>Adjustable upper rack can be raised or lowered two inches, providing flexibility in cleaning various-sized dishes.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">ENERGY STAR® Qualified Dishwasher</span>
+					<span class="header_desc">Built-in hard food disposer eliminates the need for pre-rinsing by quietly grinding up food particles and washing them away</span>
 				</h4>
-				<p>Did you know that using an energy-efficient dishwasher is less expensive than washing your dishes by hand? In fact, an ENERGY STAR® qualified dishwasher costs less to operate than the amount of a single postage stamp.<br><br> KitchenAid® ENERGY STAR® qualified dishwashers help conserve energy while also helping to save you money. By reducing energy consumption by at least 25% over federal minimum efficiency standards, ENERGY STAR® qualified dishwashers translate to a significant saving for your budget as well as for the environment.<br><br> How do I find an ENERGY STAR® qualified dishwasher? Just look for the ENERGY STAR® logo located on the yellow Energy Guide label. The Energy Guide label states the energy-efficiency of the dishwasher and provides you with the estimated cost to run the dishwasher over a year<br><br> Whirlpool® ENERGY STAR® qualified dishwashers:<br> - Reduce energy consumption by at least 25%<br> - Costs less than washing dishes by hand<br> - Help save you money while contributing to resource conservation</p>
+				<p>Built-in hard food disposer eliminates the need for pre-rinsing by quietly grinding up food particles and washing them away</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -990,40 +990,40 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4>Four stainless steel wash arms spray water to ten precisely angled locations, providing maximum coverage and resisting wear</h4>
-							<p>Four stainless steel wash arms spray water to ten precisely angled locations, providing maximum coverage and resisting wear</p>
+							<h4>Optimum wash sensor adjusts the wash cycle to specific water conditions for maximum cleaning efficiency and performance</h4>
+							<p>Optimum wash sensor adjusts the wash cycle to specific water conditions for maximum cleaning efficiency and performance</p>
 						</div>	
 						
 						<div class="feature">	
-							<h4>Built-in hard food disposer eliminates the need for pre-rinsing by quietly grinding up food particles and washing them away</h4>
-							<p>Built-in hard food disposer eliminates the need for pre-rinsing by quietly grinding up food particles and washing them away</p>
-						</div>
-					
-						<div class="feature">	
-							<h4>Optimum wash sensor adjusts the wash cycle to specific water conditions for maximum cleaning efficiency and performance</h4>
-							<p>Optimum wash sensor adjusts the wash cycle to specific water conditions for maximum cleaning efficiency and performance</p>
+							<h4>Whisper Quiet® Sound Insulation System (54 dBA*) is quieter than the average conversation - *Per IEC standards, Normal cycle</h4>
+							<p>Whisper Quiet® Sound Insulation System (54 dBA*) is quieter than the average conversation - *Per IEC standards, Normal cycle</p>
 						</div>
 					
 						<div class="feature">	
 							<h4>The Heat Dry option with a dedicated drying element heats the tub at the end of the cycle to ensure dishes are dry every time</h4>
 							<p>The Heat Dry option with a dedicated drying element heats the tub at the end of the cycle to ensure dishes are dry every time</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
-							<h4>Adjustable upper rack can be raised or lowered two inches, providing flexibility in cleaning various-sized dishes.</h4>
-							<p>Adjustable upper rack can be raised or lowered two inches, providing flexibility in cleaning various-sized dishes.</p>
-						</div>	
-						
 						<div class="feature">	
 							<h4>Stainless steel interior retains heat for better drying performance while resisting wear over time</h4>
 							<p>Stainless steel interior retains heat for better drying performance while resisting wear over time</p>
 						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
+							<h4>The Fully Visible Console Design makes the controls easily accessible while showcasing our Architect® Series II design and handle</h4>
+							<p>The Fully Visible Console Design makes the controls easily accessible while showcasing our Architect® Series II design and handle</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>NSF® Certification</h4>
+							<p>NSF® Certification</p>
+						</div>
 					
 						<div class="feature">	
-							<h4>Whisper Quiet® Sound Insulation System (54 dBA*) is quieter than the average conversation - *Per IEC standards, Normal cycle</h4>
-							<p>Whisper Quiet® Sound Insulation System (54 dBA*) is quieter than the average conversation - *Per IEC standards, Normal cycle</p>
+							<h4>ENERGY STAR® Qualified Dishwasher</h4>
+							<p>Did you know that using an energy-efficient dishwasher is less expensive than washing your dishes by hand? In fact, an ENERGY STAR® qualified dishwasher costs less to operate than the amount of a single postage stamp.<br><br> KitchenAid® ENERGY STAR® qualified dishwashers help conserve energy while also helping to save you money. By reducing energy consumption by at least 25% over federal minimum efficiency standards, ENERGY STAR® qualified dishwashers translate to a significant saving for your budget as well as for the environment.<br><br> How do I find an ENERGY STAR® qualified dishwasher? Just look for the ENERGY STAR® logo located on the yellow Energy Guide label. The Energy Guide label states the energy-efficiency of the dishwasher and provides you with the estimated cost to run the dishwasher over a year<br><br> Whirlpool® ENERGY STAR® qualified dishwashers:<br> - Reduce energy consumption by at least 25%<br> - Costs less than washing dishes by hand<br> - Help save you money while contributing to resource conservation</p>
 						</div>	
 						</div>									
 					
@@ -1048,6 +1048,20 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
+										Cycle Selections
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Heavy, Light/China, Normal, Rinse Only
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
 										Delay Wash
 									
 							</div>
@@ -1059,21 +1073,21 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Water Filtration System
+										Option Selections
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Hard Food Disposer
+									4 Hour Delay, Heated Dry, Hi Temp Scrub, Lockout, Sani Rinse&#174;
 								</div>
 								
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Energy Star® Qualified
@@ -1087,21 +1101,21 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Cycle Selections
+										Water Filtration System
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Heavy, Light/China, Normal, Rinse Only
+									Hard Food Disposer
 								</div>
 								
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Number of Wash Cycles
@@ -1110,20 +1124,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Option Selections
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									4 Hour Delay, Heated Dry, Hi Temp Scrub, Lockout, Sani Rinse®
 								</div>
 								
 								
@@ -1139,12 +1139,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Rack Material
+										Capacity
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Nylon
+									14.00 Place Settings
 								</div>
 								
 								
@@ -1167,12 +1167,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Number of Racks
+										Rack Material
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									2
+									Nylon
 								</div>
 								
 								
@@ -1181,12 +1181,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Capacity
+										Number of Racks
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									14.00 Place Settings
+									2
 								</div>
 								
 								
@@ -1202,6 +1202,20 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
+										Tub Material
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Stainless Steel
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
 										Decibel Level
 									
 							</div>
@@ -1213,7 +1227,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Rack Material
@@ -1222,20 +1236,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									Nylon
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Tub Material
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Stainless Steel
 								</div>
 								
 								
@@ -1279,12 +1279,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Product Width
+										Product Height
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									23 7/8
+									34 1/2
 								</div>
 								
 								
@@ -1293,12 +1293,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Product Height
+										Product Width
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									34 1/2
+									23 7/8
 								</div>
 								
 								
@@ -1423,7 +1423,7 @@ Please visit our <a href="http://cuat.kitchenaid.ca/en_CA/shop/Major-Appliances-
 	</div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Thu May 21 15:42:30 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 01 08:32:56 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">
