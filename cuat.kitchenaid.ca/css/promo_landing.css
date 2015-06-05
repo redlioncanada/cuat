@@ -1,3 +1,6 @@
+.row li {
+	float: none !important;
+}
 .landing-page * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -1,16 +1,12 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- /MTG_CA_B2C/ShoppingArea/CatalogSection/CategorySubsection/WHRORNLaundryPairDisplay.jsp -->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#" xmlns:waistate="http://www.w3.org/2005/07/aaa" xml:lang="en" lang="en">
-
+<!-- /NARStorefrontAssetStore/GenericError.jsp -->
+<html lang="en" xml:lang="en">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>
-		Laundry Pairs Maytag  | Refrigeration, Cooking, Dishwashers & Laundry Appliances 		
+		Generic Error
 	</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
 	<!-- Start changes for  QC109 --><!-- start standard css include block -->
 		 <link href="/css/common1_1.css" rel="stylesheet" type="text/css" />
 		 <link href="/css/layout.css" rel="stylesheet" type="text/css" />
@@ -29,8 +25,8 @@
 <!-- end standard css include block -->
  				<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
  			 
-	
 	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'en-ca' "></script>
+	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
 
 <script type="text/javascript">
@@ -153,132 +149,9 @@ var currentprotocol = document.location.protocol;
 <!-- END WHRORNCommonJSToInclude.jspf -->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
 	<!-- END CommonJSToInclude.jspf -->
-	<script type="text/javascript" src="/javascript/content/maytag.fancybox.v1.js"></script>
-	<script type="text/javascript" src="/javascript/content/endeca_dynamic.js"></script>
-	
-	<script src="/javascript/product_list.js" type="text/javascript"></script>
-		
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/EndecaHelper.js"></script>
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/WHRORNEndecaHelper.js"></script>
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CompareProduct.js"></script>
-	
-	<script type="text/javascript">
-		dojo.addOnLoad(function() {
-			activateSortBarButtons();
-			initiateQuickViewHover();
-		});
-		dojo.addOnLoad(categoryDisplayJS.processBookmarkURL);
-		dojo.addOnLoad(function() { 
-			
-			
-			MessageHelper.setMessage("ERROR_RETRIEVE_PRICE", "The store has encountered a problem processing the last request. Please try again. If the problem persists, contact us for assistance.");
-			MessageHelper.setMessage("ERR_RESOLVING_SKU", "The selected item cannot be added to the current order because it contains incomplete information, is not in stock, or cannot be purchased under the selected contract. Ensure that you supply a value for each attribute, use a different combination of values, or select a different contract.");
-			MessageHelper.setMessage("QUANTITY_INPUT_ERROR", "The value in the Quantity field is invalid. Ensure the value is a positive integer and try again.");
-			MessageHelper.setMessage("WISHLIST_ADDED", "The item has been successfully added to your favourites.");
-			MessageHelper.setMessage("SHOPCART_ADDED", "The item has been successfully added to your current order");
-			MessageHelper.setMessage("ERROR_MESSAGE_TYPE", "Error: ");
-			MessageHelper.setMessage("ERROR_EMPTY_NUM", "Page number cannot be empty");
-			MessageHelper.setMessage("ERROR_PAGE_NUM", "Enter a valid page number");
-			MessageHelper.setMessage("ERROR_CONTRACT_EXPIRED_GOTO_ORDER", "The selected items cannot be added to the current order because the contracts for some of the order items are no longer available. In the Current Order page, select the available contracts that you want to apply to your order items.");
-			MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "The combination of city, province and postal code is not valid.");
-			MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "Due to system unavailability postal code cannot be validated now. Try again later.");
-			categoryDisplayJS.setCommonParameters('-300','10229','10579');
-			categoryDisplayJS.initHistory("CategoryDisplay_Widget", 'http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRORNLaundryPairOnlyResultsDisplayView?pageView=&catalogId=10579&beginIndex=&categoryId=102290058&langId=-300&SRC_sortById=&storeId=10229');
-			ServicesDeclarationJS.setCommonParameters('-300','10229','10579');
-			EndecaHelperJS.setCommonParameters('-300','10229','10579');
-			compareProductJS.setCommonParameters('-300','10229','10579');
-			compareProductJS.initializeCompareNow();
-		});
-	
-		dojo.require("dojo.cookie");
-		dojo.addOnLoad(function() {
-			dojo.query(".product-link").onclick(function(){ 
-		    	// Setting cookie for the refinement.
-		    	EndecaHelperJS.setActiveFilterCookie('ProdListRefinementsMtg');
-		    });
-		});
-	</script>
-	
-	
-	<link rel="canonical" href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/102290058/" />
-	
-	<!-- QC224 Chages added for compare START-->
-		<link href="/css/compare.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="/javascript/compare.js"></script>
-	<!-- QC224 Chages added for compare END-->
-
-<script type="text/javascript" src="//display-stg.ugc.bazaarvoice.com/static/maytagcanada/en_CA/bvapi.js"></script>
-
-
-
 </head>
-
+ 
 <body>
-    <!-- Google Tag Manager --><!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-MM4FFD'"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-MM4FFD');</script>
-	<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNLaundryPairDisplay, Mon Jun 01 13:46:07 EDT 2015] -->
-	
-<script type="text/javascript">
-	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
-	dojo.require("dojo.back");
-	dojo.back.init();
-</script>  
-<script type="text/javascript">
-	dojo.addOnLoad(function() {
-		wc.render.declareContext(
-			"CategoryDisplay_Context",
-			null,
-			"");
-	
-		dojo.require("wc.render.common");
-		wc.render.declareRefreshController({
-			id: "CategoryDisplay_Controller",
-			renderContext: wc.render.getContextById("CategoryDisplay_Context"),
-			url: "",
-			formId: ""
-
-		,renderContextChangedHandler: function(message, widget) {
-			var controller = this;
-			var renderContext = this.renderContext;
-				console.debug(controller.url);
-				console.debug(renderContext.properties);    			
-				widget.refresh(renderContext.properties);
-		}
-
-		,postRefreshHandler: function(widget) {
-			if (typeof gtmHelper != "undefined") gtmHelper.processScripts(); // gtm helper -- processes scripts returned from an ajax call
-			var controller = this;
-			var renderContext = this.renderContext;
-			EndecaHelperJS.updatePriceSlider();
-			cursor_clear();
-			// Re-bind the jquery events
-			activateSortBarButtons();
-			initiateToolTips();
-			bindAfterRefresh();
-			initiateQuickViewHover();
-			dojo.query(".product-link").onclick(function(){ 
-		    	EndecaHelperJS.setActiveFilterCookie('ProdListRefinementsMtg');
-		    });
-		    compareProductJS.initializeCompareNow();
-		    initTB();
-			// Go to top of page
-			//window.scrollTo(0,0);
-			
-			//QC 57: endeca_dynamic.js loaded after ajx call so that it can re bind all the events
-			init_endeca_dynamic_js();
-			}
-		});
-	});
-</script>
-	
 <!-- BEGIN StoreCommonUtilities.jspf -->
 <input id="closebutton" type="hidden" value="CLOSE">
 
@@ -348,8 +221,8 @@ var currentprotocol = document.location.protocol;
  
 <div id="fDiv"></div>
 
-<!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 01 13:45:14 EDT 2015] -->
+<!-- END StoreCommonUtilities.jspf --><!-- Header Nav Start --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jun 05 15:21:37 EDT 2015] -->
   
 
 
@@ -506,7 +379,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 01 13:44:57 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jun 05 15:21:37 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -709,6 +582,7 @@ function clearText(thefield){
 				</li>
 			</ul>
 		</li>
+		<li class="last ownercenter top" style="margin-right: -3px;"><a class="touchFix" href="http://performancecounts.maytag.ca/">Maytag &amp; Pan Am</a></li>
 	</ul>
 </div><!--  contentName: header_p2, displayType: standard, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/header_p2.xml, displayed=true, error=] }-->
 
@@ -796,718 +670,62 @@ dojo.addOnLoad(function() {
 http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579&amp;reloadURL=http%3A%2F%2Fcuat.maytag.ca%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FCategoryDisplay%3FSRC_searchConstraint%3D102290058%26catalogId%3D10579%26categoryId%3D102290058%26storeId%3D10229&amp;from=pageReload
 </div>
 <!-- QC 189 ML for Canada sites  End --><!-- END WHRORNHeaderDisplay.jspf --><!-- END LayoutContainerTop.jspf -->
-
-<div id="MessageArea" >
-	<br />
-	<span id="ErrorMessageText" class="error_msg" tabindex="-1"></span>
-	<br />
-	<br />  
-</div>
-
-<div id="page" class="ContentPage generic">
-	<div class="main-content-wrapper-top"></div>
-	<div id="main_content_wrapper">	
-		<!-- JSP File Name:  WHRORNBreadCrumbTrailDisplay.jspf --><!-- JSP File Name:  WHRORNEndecaBreadCrumbTrailDisplay.jsp -->
-
-<div id="breadcrumb-section">
-
-	
-		<ul id="breadcrumb-list">
-			<li id="breadcrumb-list-1" class="first"><a href="/">home</a></li>
-			<li id="breadcrumb-list-2"><a href="/">Laundry</a></li>					
-						</li>					
-						<li id="breadcrumb-list-3"><a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/102290049/">Laundry Appliances</a></li>					
-						</li>					
-						
-				<li id="breadcrumb-list-4" class="last"><a href="#">Laundry Pairs </a></li>
-			
-		</ul>
-		
-		<ul id="global_utilities">
-			<li class="print"><a href="javascript:EndecaHelperJS.printPreview();" class="print" onclick="fireFloodlight('2625291','mayta650','mtg-p159');">print</a></li>
-			<li class="share" class="share">
-				<a class="share" onclick="fireFloodlight('2625291','mayta650','mtg-s523');" href="http://www.addthis.com/bookmark.php" style="text-decoration: none;" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]');">share</a>
-			</li>
-	        
-			<li class="last contact"><a href="http://cuat.maytag.ca/en_CA/contact-us/" class="contact" onclick="fireFloodlight('2625291','mayta650','mtg-c208');">contact</a></li>
-		</ul>
-		
-	
-	
-</div>
-
-<!-- END JSP File Name:  WHRORNEndecaBreadCrumbTrailDisplay.jsp --><!-- END JSP File Name:  WHRORNBreadCrumbTrailDisplay.jspf -->
-	   
-		<div dojoType="wc.widget.RefreshArea" id="CategoryDisplay_Widget" controllerId="CategoryDisplay_Controller" role="wairole:region" waistate:live="polite" waistate:atomic="false" waistate:relevant="additions">
-			
-<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CatalogSearchDisplay.js"></script>
-
-<div id="ajaxRefreshURL" name="ajaxRefreshURL" style="display:none" >http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRORNLaundryPairOnlyResultsDisplayView?searchTerm=&catalogId=10579&langId=-300&storeId=10229</div>
-
-<script type="text/javascript">
-	EndecaHelperJS.setNavType('browse');
-	EndecaHelperJS.setRefinementValue('102290058');
-	EndecaHelperJS.setAjaxRefreshURLDivID('ajaxRefreshURL');
-	EndecaHelperJS.setPageSize('10');
-</script>
-
-
-<div style="position: relative;">
-	<!-- BEGIN: [WHRORNProductListFilterOptions, Mon Jun 01 13:46:07 EDT 2015] --> 
-<!--LeftNarrowNav-->
-<div id="endeca_leftNavContainer" class="endeca_leftNav">
-	<div id="leftNav_topBorder">&nbsp;</div>
-	<div id="btn_narrowBy">
-		<img src="/images/content/jumppage/endeca_pages/btn_narrow_by.png" alt="" />
-	</div>
-	<div id="leftNav_endeca_washers" class="leftNav_content">
-		
-								<div class="nav_sections">
-									<div class="dotted_line colorChooserDot">&nbsp;</div>
-									<div class="opt_list_container">
-										<div class="endeca_optWrap colorChooserWrap">
-											
-												<div class="endeca_textOpt inline">
-													<label id="refine_4294966220" class="label_check" for="sample-check"
-														 
-															onmousedown="javascript:setCurrentId('refine_4294966220');EndecaHelperJS.refreshProductsByFilter('102290058+4294966220'); "
-														>
-														<input type="checkbox" class="color-checkbox" /> 
-													</label> 
-													<img src="/digitalassets/ColorBars/M1-MT.png" width="25" height="15" /> 
-													<label class="c_name">
-														Metallic Slate
-													</label>
-												</div>
-											
-												<div class="endeca_textOpt inline">
-													<label id="refine_4294967221" class="label_check" for="sample-check"
-														 
-															onmousedown="javascript:setCurrentId('refine_4294967221');EndecaHelperJS.refreshProductsByFilter('102290058+4294967221'); "
-														>
-														<input type="checkbox" class="color-checkbox" /> 
-													</label> 
-													<img src="/digitalassets/ColorBars/WH-MT.png" width="25" height="15" /> 
-													<label class="c_name">
-														White
-													</label>
-												</div>
-											
-										</div>
-									</div>
-								</div>
-									
-	</div>
-</div>
-<!-- END: [WHRORNProductListFilterOptions, Mon Jun 01 13:46:07 EDT 2015] --> 
-
-</div>
+			<div id="page">
+		<!-- Header Nav End --><!-- Main Content Start -->
+     <div id="content_wrapper_border">
+          <!-- Content Start -->
+          <div id="box" class="my_account generic_error_container">
+          	<div id="errorPage">
+				<div id="WC_GenericError_1" class="contentgrad_header">
+					<div id="WC_GenericError_2" class="left_corner"></div>
+					<div id="WC_GenericError_3" class="left"><h1 class="myaccount_title">
+					Generic Error				
+					
+					</h1></div>
+					<div id="WC_GenericError_4" class="right_corner"></div>
+				</div>
 				
-
-	<div class="endeca_rightContainer">
-	 	<div id="espot_image">
-	     	<div class="endeca_headers" id="endeca_refigeratorsHeader">	     
-				<!-- Start ContentAreaESpot.jsp -->
-    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PLBIEspot">
-    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PLBIEspot">
-    	
-    		[PLBIEspot]
-  		
-  		</div>
-<div id="espot_image"><img src="/images/content/endeca_headers/Laundry_Pairs_Kind.png" /></div><!--  emsName: PLBIEspot, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLBI/SC_Laundry_Laundry_Appliances_Laundry_Pairs.xml, displayed=true, error=] }-->
-			  	  	
-			  	  
-
-</div>
-<!-- End ContentAreaESpot.jsp -->
-		  	</div>	
-      	</div>		   
-		<!-- BEGIN WHRORNPageControls.jspf --><!--SortView Bar--><!-- QC224 Changes made for the new style START --> 
-	 <div class="endeca_displayingViewAllIndicators">	
-		<ul id = "displaying_count">
-		<li>Displaying <span class="display_count_counts">8</span> out of<span class="display_count_counts">8</span></li>
-		</ul>
-
-		
-		
-	</div>
-	
-    <div class="endeca_sortViewDisplayBar_top">
-		<div class="sortView_content">
-		
-	</div>
- </div>
-<!-- QC224 Changes made for the new style END --><!--END - SortView Bar--><!-- END WHRORNPageControls.jspf -->
-		<div id="refrigerators_content" class="endeca_content">
-			<ul class="endeca_aplliancesList">
-				
-					<li class="applince  first">
-						<!-- BEGIN WHRORNCatalogEntryEndecaThumbnailDisplay.jspf--><!-- QC224 Change made to Value according to the new Compare page view START-->
-<input type="hidden" name="Comparelnk" id="Comparelnk" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=71610&langId=-300&storeId=10229"/>
-<!-- QC224 Change made to Value according to the new Compare page view END--><!-- QC224 Changes Made for sequence and new compare style START -->	
-<div>		
-<div class="endeca_applianceImg">		
-<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1505589/MHW3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505668','PLP');">
-
-	<img class="img_appliance" src="/digitalassets/MHW3100DW/AB-Default_290X290_HO.jpg" alt="Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C."/>	
-
-	 			<a class="endeca_quickView thickbox" href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRGRNProductQuickView?catalogId=10579&langId=-300&productId=1505589&storeId=10229&sku=MHW3100DW&TB_iframe=true&height=600&width=675&modal=false" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505668','PLP'); FSR.CPPS.set('QuickView','true')"><img src="/images/content/jumppage/endeca_pages/endeca_quickView.png"/></a>
-</br>
-</div>
-
-<br>
-<div class="color-swatches">
-			
-			<br/>
-			<div class="color_text">
-            	<span class="color_name"></span>
-            </div>     
-                         
-</div>
-</div>
-					
-		
-<div class="endeca_applinceInfo">
-	<ul>	
-		<li class="applinceInfo_title">
-			<a id="MHW3100DW-NAR_title" href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1505589/MHW3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505668','PLP');">
-				Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C.
-			</a><br>
-			<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1505589/MHW3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505668','PLP');">
-				MHW3100DW
-			</a>
-		</li>
-		
-			<li class="whatsInside">
-				<div>What's Inside:</div>
-			</li>
-		
-		<li class="insideList">
-			<ul>
-			
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Best cleaning in its class enabled by the PowerWash® cycle: :: Among leading competitive brand front-load and top-load washers, comparable cycles/settings." href="javascript:void(0)">
-								Best cleaning in its class enabled by the PowerWash® cycle
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="PowerWash® Cycle: :: Extra cleaning action and a thorough rinse power out tough stains like coffee and soda as well as ground-in mud. Select washers have a built-in water heater that delivers increased wash temperatures to ensure better soil and stain removal." href="javascript:void(0)">
-								PowerWash® Cycle
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Internal Heater: :: If you want to get clothes clean, you've got to get the temperature right. That's why Maxima® washers feature an internal heater to help detergent work harder and send stubborn stains packin'. This powerful internal heater contributes to the Best Cleaning in the industry enabled by the PowerWash® cycle<sup>3</sup>." href="javascript:void(0)">
-								Internal Heater
-							</a>
-						  	
-					</span></li>									
-					
-						<li><a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1505589/MHW3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505668','PLP');">- More...</a></li>
-					
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<div class="endeca_viewBuy_btns">
-<ul class="endeca_buy_buttons hidden ">
-	  		
-							<li class="prodprice">$1,049.99</li>
+				<div id="WC_GenericError_5" class="content">
+					<div id="WC_GenericError_6" class="info">
+																				
+														<span>Error information is listed below.  For further details, increase the  logging for your WebSphere Commerce system, and check the log file.</span>
+													
 							
-</ul>
-
-<ul class="endecaProdCompare ">
 			
-				<li class="prodprice">
-					MSRP:&nbsp;
-					<span>
-						$1,049.99
-					</span>
-				</li>
-				<div class="pr-category" id="pr-category-MHW3100DW">  
-    <a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1505589/MHW3100DW/#ratingsandreviews">
-		<div class="pr-snippet-MHW3100DW"></div>
-	</a>
-</div>
-
-
-				<li class="prodCompare">
-					
-							<span class="displayNone count1505668 counter">(<span class="valueCounter1505668"></span>
-		                                of 4)</span><br />   
-		                	<label id="complist_1505668" class="label_check " for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'71610','1505668', 'list' , 'complist');">
-                            	<input type="checkbox" name="sample-check" id="71610_1505668" value="1505668"/>
-		                	</label>
-		                	<a id="btn_complist_1505668" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'71610','1505668', 'list' , 'btn_complist');"
-		                                    class="compare"> Compare </a> 
+						<br /><br />
 						
-				</li>
-			
-				<li class="whereToBuy">
-					<a onclick="fireFloodlight('2625291','mayta650','mtgld503');" href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mhw3100dw">&nbsp;</a>
-				</li>
-			
-</ul>
-
-<!-- Start ContentAreaESpot.jsp -->
-    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PLPItemBottomRight">
-    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PLPItemBottomRight">
-    	
-    		[PLPItemBottomRight]
-  		
-  		</div>
-<img class="categoryTenYearBadge" src="/images/badges/10-year-warranty-en.png" /><!--  emsName: PLPItemBottomRight, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPItemBR/SC_Laundry_Laundry_Appliances_Laundry_Pairs.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPItemBR/default.xml, displayed=true, error=] }-->
-			  	  	
-			  	  
-
-</div>
-<!-- End ContentAreaESpot.jsp -->
-</div>
-<!-- QC224 Changes Made for sequence and new compare style END -->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('MHW3100DW', 'Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C.', 'Washers', 'Maytag', 'White', '1049.99', 'PLP', '1');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('1505668', 'MHW3100DW', 'Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C.', 'Washers', 'Maytag', 'White', '1049.99');</script><!-- END WHRORNCatalogEntryEndecaThumbnailDisplay.jspf-->
-					</li>
-					
-					<li class="applince  second">
-						<!-- BEGIN WHRORNCatalogEntryEndecaThumbnailDisplay.jspf--><!-- QC224 Change made to Value according to the new Compare page view START-->
-<input type="hidden" name="Comparelnk" id="Comparelnk" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=71615&langId=-300&storeId=10229"/>
-<!-- QC224 Change made to Value according to the new Compare page view END--><!-- QC224 Changes Made for sequence and new compare style START -->	
-<div>		
-<div class="endeca_applianceImg">		
-<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD3100DW]-1505709/MGD3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505733','PLP');">
-
-	<img class="img_appliance" src="/digitalassets/MGD3100DW/AB-Default_290X290_HO.jpg" alt="Maytag Maxima® Front Load High Efficiency Dryer with Large Capacity and Advanced Moisture Sensing – 7.4 cu. ft. I.E.C."/>	
-
-	 			<a class="endeca_quickView thickbox" href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRGRNProductQuickView?catalogId=10579&langId=-300&productId=1505709&storeId=10229&sku=MGD3100DW&TB_iframe=true&height=600&width=675&modal=false" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505733','PLP'); FSR.CPPS.set('QuickView','true')"><img src="/images/content/jumppage/endeca_pages/endeca_quickView.png"/></a>
-</br>
-</div>
-
-<br>
-<div class="color-swatches">
-			
-			<br/>
-			<div class="color_text">
-            	<span class="color_name"></span>
-            </div>     
-                         
-</div>
-</div>
-					
-		
-<div class="endeca_applinceInfo">
-	<ul>	
-		<li class="applinceInfo_title">
-			<a id="MGD3100DW-NAR_title" href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD3100DW]-1505709/MGD3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505733','PLP');">
-				Maytag Maxima® Front Load High Efficiency Dryer with Large Capacity and Advanced Moisture Sensing – 7.4 cu. ft. I.E.C.
-			</a><br>
-			<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD3100DW]-1505709/MGD3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505733','PLP');">
-				MGD3100DW
-			</a>
-		</li>
-		
-			<li class="whatsInside">
-				<div>What's Inside:</div>
-			</li>
-		
-		<li class="insideList">
-			<ul>
-			
-					<li>-&nbsp;<span>
 						
-						  	<a class="productPopup fancybox.ajax" title="Largest Loads, Evenly Dried&lt;sup&gt;3&lt;/sup&gt;: :: Count on these dryers to get your largest loads evenly dried every time." href="javascript:void(0)">
-								Largest Loads, Evenly Dried<sup>3</sup>
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
 						
-						  	<a class="productPopup fancybox.ajax" title="Advanced Moisture Sensing: :: Advanced Moisture Sensing uses sensor strips to measure moisture levels and temperatures, delivering exceptionally even results every time, even for the largest loads.*" href="javascript:void(0)">
-								Advanced Moisture Sensing
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
+							<span class="generic_error_developers">Store developers:</span>
+							<span>To view detailed error information, see the comments in the HTML source for this page.</span>
 						
-						  	<a class="productPopup fancybox.ajax" title="Extra Interior Fin: :: An extra interior fin creates a random tumbling pattern and keeps clothes movin' in the dryer drum for an exceptional drying performance." href="javascript:void(0)">
-								Extra Interior Fin
-							</a>
-						  	
-					</span></li>									
+						<!--
+					//********************************************************************
+					//*-------------------------------------------------------------------
 					
-						<li><a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD3100DW]-1505709/MGD3100DW/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505733','PLP');">- More...</a></li>
+					The following section is intended to aid store developers in debugging problems in the sample store.Error information is listed below.  For further details, increase the  logging for your WebSphere Commerce system, and check the log file.Exception Type:1Message Key:_ERR_CATGROUP_NOT_EXISTING_IN_STOREMessage:CMN3101E The system is unavailable due to &#034;102,290,058&#034;.System Message:The command was unable to process catalog group &#034;102,290,058&#034;. Either it does not exist in the catalog, or it cannot be processed in store &#034;10,229&#034;.Originating Command:Corrective Action:
 					
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<div class="endeca_viewBuy_btns">
-<ul class="endeca_buy_buttons hidden ">
-	  		
-							<li class="prodprice">$1,049.99</li>
+					//*-------------------------------------------------------------------
+					//********************************************************************
+					-->
+					
+										
+					</div>
+				</div>
 							
-</ul>
-
-<ul class="endecaProdCompare ">
-			
-				<li class="prodprice">
-					MSRP:&nbsp;
-					<span>
-						$1,049.99
-					</span>
-				</li>
-				<div class="pr-category" id="pr-category-MGD3100DW">  
-    <a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD3100DW]-1505709/MGD3100DW/#ratingsandreviews">
-		<div class="pr-snippet-MGD3100DW"></div>
-	</a>
+				<div id="WC_GenericError_8" class="footer">
+					<div id="WC_GenericError_9" class="left_corner"></div>
+					<div id="WC_GenericError_10" class="left"></div>
+					<div id="WC_GenericError_11" class="right_corner"></div>
+				</div>
+				</div>
+          </div>
+          <!-- Content End -->
+     </div>
+     <!-- Main Content End -->    
 </div>
-
-
-				<li class="prodCompare">
-					
-							<span class="displayNone count1505733 counter">(<span class="valueCounter1505733"></span>
-		                                of 4)</span><br />   
-		                	<label id="complist_1505733" class="label_check " for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'71615','1505733', 'list' , 'complist');">
-                            	<input type="checkbox" name="sample-check" id="71615_1505733" value="1505733"/>
-		                	</label>
-		                	<a id="btn_complist_1505733" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'71615','1505733', 'list' , 'btn_complist');"
-		                                    class="compare"> Compare </a> 
-						
-				</li>
-			
-				<li class="whereToBuy">
-					<a onclick="fireFloodlight('2625291','mayta650','mtgld503');" href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mgd3100dw">&nbsp;</a>
-				</li>
-			
-</ul>
-
-<!-- Start ContentAreaESpot.jsp -->
-    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PLPItemBottomRight">
-    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PLPItemBottomRight">
-    	
-    		[PLPItemBottomRight]
-  		
-  		</div>
-<img class="categoryTenYearBadge" src="/images/badges/10-year-warranty-en.png" /><!--  emsName: PLPItemBottomRight, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPItemBR/SC_Laundry_Laundry_Appliances_Laundry_Pairs.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPItemBR/default.xml, displayed=true, error=] }-->
-			  	  	
-			  	  
-
-</div>
-<!-- End ContentAreaESpot.jsp -->
-</div>
-<!-- QC224 Changes Made for sequence and new compare style END -->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('MGD3100DW', 'Maytag Maxima® Front Load High Efficiency Dryer with Large Capacity and Advanced Moisture Sensing – 7.4 cu. ft. I.E.C.', 'Dryers', 'Maytag', 'White', '1049.99', 'PLP', '2');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('1505733', 'MGD3100DW', 'Maytag Maxima® Front Load High Efficiency Dryer with Large Capacity and Advanced Moisture Sensing – 7.4 cu. ft. I.E.C.', 'Dryers', 'Maytag', 'White', '1049.99');</script><!-- END WHRORNCatalogEntryEndecaThumbnailDisplay.jspf-->
-					</li>
-					
-					<li class="applince ">
-						<!-- BEGIN WHRORNCatalogEntryEndecaThumbnailDisplay.jspf--><!-- QC224 Change made to Value according to the new Compare page view START-->
-<input type="hidden" name="Comparelnk" id="Comparelnk" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=71610&langId=-300&storeId=10229"/>
-<!-- QC224 Change made to Value according to the new Compare page view END--><!-- QC224 Changes Made for sequence and new compare style START -->	
-<div>		
-<div class="endeca_applianceImg">		
-<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW8100DC]-14506/MHW8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505741','PLP');">
-
-	<img class="img_appliance" src="/digitalassets/MHW8100DC/AB-Default_290X290_HO.jpg" alt="Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C."/>	
-
-	 			<a class="endeca_quickView thickbox" href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRGRNProductQuickView?catalogId=10579&langId=-300&productId=14506&storeId=10229&sku=MHW8100DC&TB_iframe=true&height=600&width=675&modal=false" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505741','PLP'); FSR.CPPS.set('QuickView','true')"><img src="/images/content/jumppage/endeca_pages/endeca_quickView.png"/></a>
-</br>
-</div>
-
-<br>
-<div class="color-swatches">
-			
-			<br/>
-			<div class="color_text">
-            	<span class="color_name"></span>
-            </div>     
-                         
-</div>
-</div>
-					
-		
-<div class="endeca_applinceInfo">
-	<ul>	
-		<li class="applinceInfo_title">
-			<a id="MHW8100DC-NAR_title" href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW8100DC]-14506/MHW8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505741','PLP');">
-				Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C.
-			</a><br>
-			<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW8100DC]-14506/MHW8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505741','PLP');">
-				MHW8100DC
-			</a>
-		</li>
-		
-			<li class="whatsInside">
-				<div>What's Inside:</div>
-			</li>
-		
-		<li class="insideList">
-			<ul>
-			
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Best Cleaning in the Industry enabled by PowerWash® Cycle: :: This cycle combines extra-cleaning action and a deep rinse to thoroughly clean dirty loads. The built-in water heater ensures enhanced soil and stain removal." href="javascript:void(0)">
-								Best Cleaning in the Industry enabled by PowerWash® Cycle
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="PowerWash® System: :: When it comes to keeping your duds looking dapper, you can count on the cleaning action of the PowerWash® system." href="javascript:void(0)">
-								PowerWash® System
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="PowerWash® Cycle: :: Extra cleaning action and a thorough rinse power out tough stains like coffee and soda as well as ground-in mud. Select washers have a built-in water heater that delivers increased wash temperatures to ensure better soil and stain removal." href="javascript:void(0)">
-								PowerWash® Cycle
-							</a>
-						  	
-					</span></li>									
-					
-						<li><a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW8100DC]-14506/MHW8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505741','PLP');">- More...</a></li>
-					
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<div class="endeca_viewBuy_btns">
-<ul class="endeca_buy_buttons hidden ">
-	  		
-							<li class="prodprice">$1,649.99</li>
-							
-</ul>
-
-<ul class="endecaProdCompare ">
-			
-				<li class="prodprice">
-					MSRP:&nbsp;
-					<span>
-						$1,649.99
-					</span>
-				</li>
-				<div class="pr-category" id="pr-category-MHW8100DC">  
-    <a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW8100DC]-14506/MHW8100DC/#ratingsandreviews">
-		<div class="pr-snippet-MHW8100DC"></div>
-	</a>
-</div>
-
-
-				<li class="prodCompare">
-					
-							<span class="displayNone count1505741 counter">(<span class="valueCounter1505741"></span>
-		                                of 4)</span><br />   
-		                	<label id="complist_1505741" class="label_check " for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'71610','1505741', 'list' , 'complist');">
-                            	<input type="checkbox" name="sample-check" id="71610_1505741" value="1505741"/>
-		                	</label>
-		                	<a id="btn_complist_1505741" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'71610','1505741', 'list' , 'btn_complist');"
-		                                    class="compare"> Compare </a> 
-						
-				</li>
-			
-				<li class="whereToBuy">
-					<a onclick="fireFloodlight('2625291','mayta650','mtgld503');" href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mhw8100dc">&nbsp;</a>
-				</li>
-			
-</ul>
-
-<!-- Start ContentAreaESpot.jsp -->
-    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PLPItemBottomRight">
-    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PLPItemBottomRight">
-    	
-    		[PLPItemBottomRight]
-  		
-  		</div>
-<img class="categoryTenYearBadge" src="/images/badges/10-year-warranty-en.png" /><!--  emsName: PLPItemBottomRight, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPItemBR/SC_Laundry_Laundry_Appliances_Laundry_Pairs.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPItemBR/default.xml, displayed=true, error=] }-->
-			  	  	
-			  	  
-
-</div>
-<!-- End ContentAreaESpot.jsp -->
-</div>
-<!-- QC224 Changes Made for sequence and new compare style END -->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('MHW8100DC', 'Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C.', 'Washers', 'Maytag', 'Metallic Slate', '1649.99', 'PLP', '3');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('1505741', 'MHW8100DC', 'Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C.', 'Washers', 'Maytag', 'Metallic Slate', '1649.99');</script><!-- END WHRORNCatalogEntryEndecaThumbnailDisplay.jspf-->
-					</li>
-					
-					<li class="applince ">
-						<!-- BEGIN WHRORNCatalogEntryEndecaThumbnailDisplay.jspf--><!-- QC224 Change made to Value according to the new Compare page view START-->
-<input type="hidden" name="Comparelnk" id="Comparelnk" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=71615&langId=-300&storeId=10229"/>
-<!-- QC224 Change made to Value according to the new Compare page view END--><!-- QC224 Changes Made for sequence and new compare style START -->	
-<div>		
-<div class="endeca_applianceImg">		
-<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD8100DC]-14503/MGD8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505738','PLP');">
-
-	<img class="img_appliance" src="/digitalassets/MGD8100DC/AB-Default_290X290_HO.jpg" alt="Maytag Maxima® Front Load Steam Dryer with SoundGuard® Stainless Steel Dryer Drum – 7.4 cu. ft. I.E.C."/>	
-
-	 			<a class="endeca_quickView thickbox" href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRGRNProductQuickView?catalogId=10579&langId=-300&productId=14503&storeId=10229&sku=MGD8100DC&TB_iframe=true&height=600&width=675&modal=false" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505738','PLP'); FSR.CPPS.set('QuickView','true')"><img src="/images/content/jumppage/endeca_pages/endeca_quickView.png"/></a>
-</br>
-</div>
-
-<br>
-<div class="color-swatches">
-			
-			<br/>
-			<div class="color_text">
-            	<span class="color_name"></span>
-            </div>     
-                         
-</div>
-</div>
-					
-		
-<div class="endeca_applinceInfo">
-	<ul>	
-		<li class="applinceInfo_title">
-			<a id="MGD8100DC-NAR_title" href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD8100DC]-14503/MGD8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505738','PLP');">
-				Maytag Maxima® Front Load Steam Dryer with SoundGuard® Stainless Steel Dryer Drum – 7.4 cu. ft. I.E.C.
-			</a><br>
-			<a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD8100DC]-14503/MGD8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505738','PLP');">
-				MGD8100DC
-			</a>
-		</li>
-		
-			<li class="whatsInside">
-				<div>What's Inside:</div>
-			</li>
-		
-		<li class="insideList">
-			<ul>
-			
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Largest Loads, Evenly Dried&lt;sup&gt;4&lt;/sup&gt;: :: Count on these dryers to get your largest loads evenly dried every time." href="javascript:void(0)">
-								Largest Loads, Evenly Dried<sup>4</sup>
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Advanced Moisture Sensing: :: Advanced Moisture Sensing uses sensor strips to measure moisture levels and temperatures, delivering exceptionally even results every time, even for the largest loads.*" href="javascript:void(0)">
-								Advanced Moisture Sensing
-							</a>
-						  	
-					</span></li>									
-					
-					<li>-&nbsp;<span>
-						
-						  	<a class="productPopup fancybox.ajax" title="Extra Interior Fin: :: An extra interior fin creates a random tumbling pattern and keeps clothes movin' in the dryer drum for an exceptional drying performance." href="javascript:void(0)">
-								Extra Interior Fin
-							</a>
-						  	
-					</span></li>									
-					
-						<li><a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD8100DC]-14503/MGD8100DC/" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('1505738','PLP');">- More...</a></li>
-					
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<div class="endeca_viewBuy_btns">
-<ul class="endeca_buy_buttons hidden ">
-	  		
-							<li class="prodprice">$1,549.99</li>
-							
-</ul>
-
-<ul class="endecaProdCompare ">
-			
-				<li class="prodprice">
-					MSRP:&nbsp;
-					<span>
-						$1,549.99
-					</span>
-				</li>
-				<div class="pr-category" id="pr-category-MGD8100DC">  
-    <a href="http://cuat.maytag.ca/en_CA/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MGD8100DC]-14503/MGD8100DC/#ratingsandreviews">
-		<div class="pr-snippet-MGD8100DC"></div>
-	</a>
-</div>
-
-
-				<li class="prodCompare">
-					
-							<span class="displayNone count1505738 counter">(<span class="valueCounter1505738"></span>
-		                                of 4)</span><br />   
-		                	<label id="complist_1505738" class="label_check " for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'71615','1505738', 'list' , 'complist');">
-                            	<input type="checkbox" name="sample-check" id="71615_1505738" value="1505738"/>
-		                	</label>
-		                	<a id="btn_complist_1505738" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'71615','1505738', 'list' , 'btn_complist');"
-		                                    class="compare"> Compare </a> 
-						
-				</li>
-			
-				<li class="whereToBuy">
-					<a onclick="fireFloodlight('2625291','mayta650','mtgld503');" href="/en_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=mgd8100dc">&nbsp;</a>
-				</li>
-			
-</ul>
-
-<!-- Start ContentAreaESpot.jsp -->
-    <div class="genericESpot" id="WC_ContentAreaESpot_div_1_PLPItemBottomRight">
-    	<div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_PLPItemBottomRight">
-    	
-    		[PLPItemBottomRight]
-  		
-  		</div>
-<img class="categoryTenYearBadge" src="/images/badges/10-year-warranty-en.png" /><!--  emsName: PLPItemBottomRight, store: MTG_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPItemBR/SC_Laundry_Laundry_Appliances_Laundry_Pairs.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPItemBR/default.xml, displayed=true, error=] }-->
-			  	  	
-			  	  
-
-</div>
-<!-- End ContentAreaESpot.jsp -->
-</div>
-<!-- QC224 Changes Made for sequence and new compare style END -->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('MGD8100DC', 'Maytag Maxima® Front Load Steam Dryer with SoundGuard® Stainless Steel Dryer Drum – 7.4 cu. ft. I.E.C.', 'Dryers', 'Maytag', 'Metallic Slate', '1549.99', 'PLP', '4');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('1505738', 'MGD8100DC', 'Maytag Maxima® Front Load Steam Dryer with SoundGuard® Stainless Steel Dryer Drum – 7.4 cu. ft. I.E.C.', 'Dryers', 'Maytag', 'Metallic Slate', '1549.99');</script><!-- END WHRORNCatalogEntryEndecaThumbnailDisplay.jspf-->
-					</li>
-					
-			</ul>
-		</div>
-		
-		<!-- BEGIN WHRORNPageControls.jspf --><!--SortView Bar--><!-- QC224 Changes made for the new style START --> 
-	 <div class="endeca_displayingViewAllIndicators">	
-		<ul id = "displaying_count">
-		<li>Displaying <span class="display_count_counts">8</span> out of<span class="display_count_counts">8</span></li>
-		</ul>
-
-		
-		
-	</div>
-	
-    <div class="endeca_sortViewDisplayBar_bottom">
-		<div class="sortView_content">
-		
-	</div>
- </div>
-<!-- QC224 Changes made for the new style END --><!--END - SortView Bar--><!-- END WHRORNPageControls.jspf -->
-	</div>
-
-<script type="text/javascript">
-	var prPLPArray = ",MHW3100DW,MGD3100DW,MHW8100DC,MGD8100DC";
-	//Removed BV.ui call
-</script>		
-		</div>
-	</div>
-	<div class="main-content-wrapper-bottom"></div>
-</div>
-
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 01 13:44:58 EDT 2015] -->
+<div id="page_shadow" class="shadow"/>
+ <!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jun 05 15:21:37 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">
@@ -1588,12 +806,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 		requestSubmitted = false;
 	}); 	
 </script>
-<!--  AddThis code --><!-- END LayoutContainerBottom.jspf -->
+<!--  AddThis code --><!-- END LayoutContainerBottom.jspf --><!-- Footer Start End -->
 
-<script type="text/javascript">
-	dojo.addOnLoad(function() { 
-		parseWidget("CategoryDisplay_Widget");
-	}); 
-</script>
 </body>
 </html>

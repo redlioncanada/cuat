@@ -1,0 +1,815 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- /NARStorefrontAssetStore/GenericError.jsp -->
+<html lang="fr" xml:lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Erreur générique
+	</title>
+	<!-- Start changes for  QC109 --><!-- start standard css include block -->
+		 <link href="/css/common1_1.css" rel="stylesheet" type="text/css" />
+		 <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+		 <link href="/css/site.css" rel="stylesheet" type="text/css"/>
+		 
+		 		<link href="/css/content/content.css" type="text/css" rel="stylesheet" />
+		 	
+		 	<link href="/css/content/content/endeca_pages.css" type="text/css" rel="stylesheet" />
+		 	<link href="/css/content/content/endeca_fancybox.css" type="text/css" rel="stylesheet">
+		 <!-- End changes for  QC109 -->
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<!--[if lte IE 7]> <link rel="stylesheet" href="/css/ie7.css" type="text/css"/> <![endif]-->  
+<!--[if IE 8]> <link rel="stylesheet" href="/css/ie8.css" type="text/css"/> <![endif]-->  
+
+<!-- end standard css include block -->
+ 				<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+ 			 
+	<script type="text/javascript" src="/wcsstore/dojo131/dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false, useCommentedJson: true,locale: 'fr-ca' "></script>
+	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
+	<!-- BEGIN CommonJSToInclude.jspf --><!-- BEGIN WHRORNCommonJSToInclude.jspf -->
+
+<script type="text/javascript">
+var absoluteURL = "http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/";
+var imageDirectoryPath = "/wcsstore/NARStorefrontAssetStore/";
+var styleDirectoryPath = "images/colors/color2/";
+
+//Summary: Returns the absolute URL to use for prefixing any Ajax URL call.
+//Description: Dojo does not handle the case where the parameters in the URL are delimeted by the "/" forward slash. Therefore, in order to
+//             workaround the issue, all AJAX requests must be done using absolute URLs rather than relative.
+//Returns: The absolute URL to use for prefixing any Ajax URL call.
+function getAbsoluteURL()
+{
+	if (absoluteURL != "") {
+		var currentURL = document.URL;
+		var currentProtocol = "";
+	
+		if (currentURL.indexOf("://") != -1) {
+			currentProtocol = currentURL.substring(0, currentURL.indexOf("://"));
+		}
+		
+		var savedProtocol = "";
+		if (absoluteURL.indexOf("://") != -1) {
+			savedProtocol = absoluteURL.substring(0, absoluteURL.indexOf("://"));
+		}
+		
+		if (currentProtocol != savedProtocol) {
+			absoluteURL = currentProtocol + absoluteURL.substring(absoluteURL.indexOf("://"));
+		}
+	}
+	
+	return absoluteURL;
+}
+//Summary: Returns the path pointing to the shared image directory.
+//Description: In order to get the image directory path in any javascript file, this function can be used.
+//Returns: The path to reference images.
+function getImageDirectoryPath()
+{
+	return imageDirectoryPath;
+}
+//Summary: Returns the path pointing to the directory containing color-dependant image files.
+//Description: In order to get the directory containing color-dependant image files in any javascript file, this function can be used.
+//Returns: The path to reference color-dependant image files.
+function getStyleDirectoryPath()
+{
+	return styleDirectoryPath;
+}
+</script>
+<!-- Start changes for QC 110 -->
+<script type="text/javascript">
+  var tb_branch = "/";
+</script>
+    
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesEventMapping.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CommonContextsDeclarations.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CommonControllersDeclaration.js"></script>
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/UserArea/MiniWishList.js"></script>
+<script src="/javascript/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/javascript/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="/javascript/jquery.easing.1.3.js"		type="text/javascript"></script>
+<script src="/javascript/jquery.query-2.1.7.js"		type="text/javascript"></script>
+<script src="/javascript/jquery.cookie.js"			type="text/javascript"></script>
+<script src="/javascript/jquery.highlight-3.js"		type="text/javascript"></script>
+<script src="/javascript/jquery-ui-1.8.10.custom.min.js" type="text/javascript"></script>
+<script src="/javascript/jcarousellite_1.0.1.js"    type="text/javascript"></script>
+<script src="/javascript/thickbox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  dojo.addOnLoad(function() {
+		CommonContextsJS.setCommonParameters('-301','10231','10581');
+		CommonControllersDeclarationJS.setCommonParameters('-301','10231','10581');
+		CommonControllersDeclarationJS.setControllerURL('MiniShoppingCartController', getAbsoluteURL()+'AjaxQuickCartDisplay?storeId=10231&catalogId=10581&langId=-301');
+		CommonControllersDeclarationJS.setControllerURL('HeaderGreetingsController', getAbsoluteURL()+'AjaxWHRHeaderGreetingsDisplay?storeId=10231&catalogId=10581&langId=-301');
+		CommonControllersDeclarationJS.setControllerURL('MiniWishListController', getAbsoluteURL()+'AjaxMiniWishListView?storeId=10231&catalogId=10581&langId=-301');
+		MiniWishListJS.setCommonParameters('-301','10231','10581','G');
+	});
+	/*Google Tag Manager dataLayer include in head*/
+  dataLayer = [];
+</script>
+
+
+<script src="/javascript/combined.js"				type="text/javascript"></script>
+<script src="/javascript/content/content.js" type="text/javascript"></script>
+<!-- End changes for QC110 --><!-- BEGIN: Floodlight javascript function :: Dart/Google tag -->
+<script type="text/javascript">
+var currentprotocol = document.location.protocol;
+
+	function fireFloodlight(src,type,cat) {
+		var axel = Math.random() + "";
+		var a = Math.floor(axel * 1000000000);
+		document.getElementById("fDiv").innerHTML = '<iframe id="fFrame" name="fFrame" src="" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+		document.getElementById('fFrame').src = currentprotocol + "//" + src + ".fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";ord=" + a + "?";
+	}
+
+	function fireFloodlight2(src,type,cat,qty,cost,orderId) {
+
+		document.getElementById("fDiv").innerHTML = '<iframe id="fFrame" name="fFrame" src="" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+		document.getElementById('fFrame').src = currentprotocol + "//" + src + ".fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";qty=" + qty + ";cost=" + cost + ";ord=" + orderId + "?";
+	}
+	function fireFloodlight3(src,type,cat){
+		var tag_url= currentprotocol + "//" + src + ".fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";ord=1;num="+Math.floor(Math.random()*10000000000000)+"?";
+		if(document.getElementById("DCLK_FLDiv")){
+			var flDiv=document.getElementById("DCLK_FLDiv");
+		} else {
+			var flDiv=document.body.appendChild(document.createElement("div"));
+			flDiv.id="DCLK_FLDiv";flDiv.style.display="none";
+		}
+		var DCLK_FLIframe=document.createElement("iframe");
+		DCLK_FLIframe.id="DCLK_FLIframe_"+Math.floor(Math.random()*10000000000000);
+		DCLK_FLIframe.src=tag_url;
+		flDiv.appendChild(DCLK_FLIframe);
+	}
+</script>
+<!-- END: Floodlight javascript function :: Dart/Google tag --><!--BEGIN Add Web Tracking Code to Whirlpool and Maytag-->
+	<script type="text/javascript" src="/javascript/wt_capi.js"></script>
+<!--END Add Web Tracking Code to Whirlpool and Maytag-->
+	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
+<!-- END WHRORNCommonJSToInclude.jspf -->
+	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
+	<!-- END CommonJSToInclude.jspf -->
+</head>
+ 
+<body>
+<!-- BEGIN StoreCommonUtilities.jspf -->
+<input id="closebutton" type="hidden" value="FERMER">
+
+<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/StoreCommonUtilities.js"></script>
+
+<div id="progress_bar_dialog" dojoType="dijit.Dialog">
+	<div id="progress_bar">
+		<div id="loading_popup">
+			<div class="top_left" id="WC_StoreCommonUtilities_div_1"><img src="/wcsstore/NARStorefrontAssetStore/images/colors/color2/transparent.gif" alt="Aucune image n'est disponible"/></div>
+		        <div class="top_right" id="WC_StoreCommonUtilities_div_2"><img src="/wcsstore/NARStorefrontAssetStore/images/colors/color2/transparent.gif" alt="Aucune image n'est disponible"/></div>
+		        <div class="header" id="WC_StoreCommonUtilities_div_3"></div>
+		        <div class="bodyarea" id="WC_StoreCommonUtilities_div_4">
+				<div class="bodycontent" id="WC_StoreCommonUtilities_div_5">
+					<img src="/wcsstore/NARStorefrontAssetStore/images/colors/color2/loading.gif" width="44" height="44" border="0" alt="Votre demande est en traitement."/>
+			        </div>
+			</div>
+			<div class="footer" id="WC_StoreCommonUtilities_div_6">
+				 <div class="bot_left" id="WC_StoreCommonUtilities_div_7"></div>
+				 <div class="bot_right" id="WC_StoreCommonUtilities_div_8"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">dojo.addOnLoad(function() { parseWidget("progress_bar_dialog"); } );</script>
+
+
+<script type="text/javascript">
+	if (typeof categoryDisplayJS != "undefined") {
+		categoryDisplayJS.allowAccessoryDialog = true;
+		categoryDisplayJS.allowZipCodeDialog = true;
+		categoryDisplayJS.allowAccessoryDialogRemove = false;
+		categoryDisplayJS.accessoriesPopupContentStrings = {
+			"ACCDLG_BUTTON_ADDTOCART": "Ajouter au panier",
+			"ACCDLG_BUTTON_ADDED": "Ajouté",
+			"ACCDLG_BUTTON_REMOVEFROMCART": "Supprimer",
+			"ACCDLG_BUTTON_SUBSCRIBED": "Abonné",
+			"ACCDLG_PLEASE_CHOOSE_PLAN": "Veuillez choisir un plan."
+		};
+	}
+
+
+
+	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+	if(mobileCookie){
+		var dom = document.domain.split('.');
+		while (dom.length > 2){
+		    dom.shift();
+		}
+		dom = '.' + dom.join('.')
+		document.cookie = "mobileBrowser=; expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain=" + dom + ";path=/";
+		
+				var gifLocation = "/images/ajax-loader.gif";
+			
+		var message = 'Vous allez être redirigé vers le site de bureau ...';
+		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
+	}
+
+	$(document).ready(function () {
+        var messageTimer = setInterval(function () { removeMessage() }, 3000);
+
+        function removeMessage() {
+            $('.takeover-message-wrapper').css({ 'display': 'none' });
+            clearInterval(messageTimer);
+        }
+    });
+</script>
+ 
+<div id="fDiv"></div>
+
+<!-- END StoreCommonUtilities.jspf --><!-- Header Nav Start --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jun 05 18:32:22 EDT 2015] -->
+  
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		if('false' == "true"){
+			showHeaderLinksInTwoLines();
+		}else{
+			showLinksInOneLine();
+		}
+		parseWidget("outerCartContainer");
+		if (typeof categoryDisplayJS != "undefined") {
+			categoryDisplayJS.userType = 'G';
+			categoryDisplayJS.allowAccessoryDialog = true;
+			categoryDisplayJS.allowZipCodeDialog = true;
+		}
+	});
+	
+	var storeId = '10231';
+	var langId = '-301';
+	var catalogId = '10581';
+
+	if('true' == "true")
+		var showProductCompare = false;
+	else
+		var showProductCompare = true;
+
+	dojo.addOnLoad(initShopcartTarget);
+	dojo.addOnLoad(showDropDownMenu);
+</script>
+
+<!-- /* R2 WishList functionality starts */ -->
+<script type="text/javascript">	
+	function initMiniWishList(){
+		parseWidget('outerMiniWishListContainer');				
+		if ('G' == 'R') {
+			MiniWishListJS.clearFromCookie('unRegWishListClientId');
+			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
+		} else {
+			var contextUserId = parseInt("-1002");
+			var cookieUserId = 0;
+			var guId = dojo.cookie('unRegWishListClientId');
+			if (guId != null && guId != "undefined" && guId != "") {
+				cookieUserId = parseInt(guId);
+			} 
+			if(cookieUserId > 0 && contextUserId < 0){			
+				MiniWishListJS.migrateUnregisteredUserWL();			
+			} else {
+				//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
+			}
+		}
+		var wishListCount = dojo.cookie('userWishListCount');
+		if (wishListCount != null && wishListCount != "undefined" && wishListCount != "") {
+			//cookie exist
+		} else {
+			//cookie does not exist
+			wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
+		}
+	}
+	dojo.addOnLoad(initMiniWishList);
+</script>
+
+<script type="text/javascript">
+	function refreshMiniWishListDropdown() {
+		wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
+	}
+</script>
+
+<!-- /* R2 WishList functionality ends */ -->
+<noscript id="no_script_alert">
+	<div>
+		<p>Your browser does not support JavaScript! Please enable Javascript to run in your browser and reload this page.</p>
+	</div>
+</noscript>
+<!-- QC 189 ML for NAR  Start -->
+<script src="/javascript/multi_lang_DropDown.js" type="text/javascript"></script>
+
+	<label for="languageSelection" class="nodisplay">Sélectionner la langue</label>
+	
+	<div id="languageDD" style="display:none;">
+		-300@en_CA:Canadian English@@-301@fr_CA:Canadian French@@
+		</div>
+		
+		<input type="hidden" id="langHiddenCmdCtxt" value ="-301" />
+		<input type="hidden" id="langHiddenLocale" value ="fr_CA" />
+        <input type="hidden" id="valueForCookie" value ="10231" />
+        <input type="hidden" id="displayAlertMessage" value ="Les données que vous avez entrées seront perdues. Voulez-vous continuer?" />
+<!-- QC 189 ML for NAR  End -->
+<div id="header-wrap">
+
+	<input type="hidden" name="storeIdentifier" value="KAD_CA_B2C" id="storeIdentifier"/>
+				
+	<div id="header">
+		<div id="logo" itemscope itemtype="http://schema.org/Brand">
+			
+					<a href="/fr_CA" title="KitchenAid"><img itemprop="logo" src="/wcs/images/img_logo.png" alt="KitchenAid"/></a>
+				
+		</div>
+		
+		<!-- START DYNAMIC CONTENT 1 --><!-- BEGIN WHRORNCatalogSearchForm.jspf-->
+<script type="text/javascript">
+function clearText(thefield){
+	if (thefield.defaultValue==thefield.value) thefield.value = "";
+}
+
+
+</script>
+
+
+
+
+<div id="header_search" >
+	<form name="CatalogSearchForm" action="/webapp/wcs/stores/servlet/WHRORNAjaxCatalogSearchView" method="get" id="CatalogSearchForm">
+	  	<input type="hidden" name="storeId" value= "10231" id="WC_CachedHeaderDisplay_FormInput_storeId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="catalogId" value='10581' id="WC_CachedHeaderDisplay_FormInput_catalogId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="langId" value="-301" id="WC_CachedHeaderDisplay_FormInput_langId_In_CatalogSearchForm_1"/>
+		<input type="hidden" name="beginIndex" value="0" id="WC_CachedHeaderDisplay_FormInput_beginIndex_In_CatalogSearchForm_1"/>
+		
+		<input type="text" name="searchTerm" placeholder='Recherche' id="search-text" class="search-textbox "/>
+		<button onclick="fireFloodlight('2625291','mayta650','mtg-l508');" id="search-submit" type="submit">Recherche</button>
+	</form>
+</div>
+<!-- END WHRORNCatalogSearchForm.jspf-->
+		
+		<div id="header_sub_nav_1"> 
+			<ul>
+				
+
+		<li class="first">
+			<a class="first"  href="https://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/LogonForm?catalogId=10581&amp;myAcctMain=1&amp;langId=-301&amp;storeId=10231" onclick="fireFloodlight('2625291','mayta650','mtg-l508');">Entrer</a>
+			OU
+			<a  href="https://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/LogonForm?catalogId=10581&amp;myAcctMain=1&amp;langId=-301&amp;storeId=10231" onclick="fireFloodlight('2625291','mayta650','mtg-m646');">S'INSCRIRE</a>
+		</li>
+	<!-- /* R2 WishList functionality starts March 03 2011 */ --><!--  <li class="first"></li> -->
+				
+				<li><a id="wishListHeaderAnchor" href="https://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/InterestItemDisplay?catalogId=10581&listId=.&langId=-301&storeId=10231" onmouseover="refreshMiniWishListDropdown();" onclick="">???HEADER_WISH_LIST???</a>					
+					
+					<div id="outerMiniWishListContainer" style="display:block;">
+						<div dojoType="dojo.dnd.Target" jsId="miniWishList_dndTarget" id="miniWishList_dndTarget" accept="item, product, package, bundle" >
+							<div dojoType="wc.widget.RefreshArea" id="MiniWishList" widgetId="MiniWishList" controllerId="MiniWishListController">								
+							
+							</div>
+						</div>
+					</div>
+					
+				</li>
+				<!-- <script type="text/javascript">
+					document.getElementById('wishListHeaderAnchor').innerHTML = '???HEADER_WISH_LIST???' + " (" + dojo.cookie('userWishListCount') + ")";
+				</script>-->
+								
+				<!-- /* R2 WishList functionality ends March 03 2011 */ -->
+				<li class="last">
+					
+						<div id="outerCartContainer" >
+							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
+								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jun 05 19:05:40 EDT 2015] -->
+
+<!-- If we get here from a generic error this service will fail so we need to catch the exception -->
+
+<a href="http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10581&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-301&amp;storeId=10231&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+		<span id="miniShopCartLeftCorner" class="left_corner">
+			Commande en cours
+		</span>
+		<span id="miniShopCartBody" class="body">
+			<span class="text">
+					 (0)
+			</span> 
+		</span>
+		<span id="miniShopCartRightCorner" class="right_corner"></span>	
+</a>
+
+<!-- Mark the position..will show our dialog here -->
+<div id="placeHolder"></div>
+<!--Added for PCR 175 : Increase in mini cart appearance time -->
+<input type="hidden" id="timeOutMiniCartDisplay" value= "10000" ></input>	
+<div id="quick_cart_container">
+	<div id="quick_cart">
+		<div class="container" id="WC_MiniShopCartDisplay_div_1">
+			<!-- Contains 3 div..PlaceHolder div, DropDownContents div and the recently added Product div -->
+			<div id ="MiniShopCartProductsList" style="display:none">
+				
+						<div class="list" id="MiniCartFocusReceiver2" tabindex="0" onkeydown="javaScript:determineFocus(event);">
+							Votre panier de commande est vide.
+						</div>
+						<div class="footer" id="WC_MiniShopCartDisplay_div_7"></div>
+					
+				<span tabindex="0" onfocus="javaScript: focusSetter();"></span>
+				<span tabindex="0"></span>
+				<div class="cart_shadow" id="WC_MiniShopCartDisplay_div_8"></div>
+			</div>
+
+			<div id = "MiniShopCartProductAdded" style="display:none">
+				
+			</div>
+		</div>
+	</div>
+	<div id="quick_cart_bottom"></div>
+	<!--[if lte IE 6.5]><iframe id="dropDownIFrame" scrolling="no" frameborder="0" src="/wcsstore/NARStorefrontAssetStore/images/empty.gif"></iframe><![endif]-->
+</div>
+
+								</div>
+							</div>
+						</div>
+					
+				</li>
+				
+			</ul>
+		</div>
+	 	
+	 	<div id="header_sub_nav_2">
+            <div class="header-sub-nav-options">
+            <ul class="header-options">
+                <!--li><a href="/sign-up-for-email/">NEWSLETTER</a></li-->
+                <!--li><a id="chatLink" href="/customer-service/live-chat/">LIVE CHAT</a></li-->
+                <li><a href="/fr_CA/trouver-un-marchand/">TROUVER UN MARCHAND</a></li>
+                <li><a href="/fr_CA/contactez-nous/">CONTACTEZ-NOUS</a></li>
+                <li><a href="/fr_CA/promotions/">OFFRES-SPECIALES</a></li>
+                <li>
+                    <div class="language-select">
+                        <select name="choose-color" class="choose-color">
+                        <option  value="white" id="KSM95WH" title="language">Language</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>  
+        </div>
+  </div>
+        <div class="header-social-channels">
+
+<div class="ka_smHolder">
+	<div class="ka_iconCon"><a class="ka_smLink" href="https://www.facebook.com/KitchenAidCanada" target="_blank"><img class="ka_smIcon" alt="Facebook" src="/images/facebook-link.png" /></a></div>
+	<div class="ka_iconCon"><a class="ka_smLink" href="https://twitter.com/kitchenaid_ca " target="_blank"><img class="ka_smIcon" alt="Twitter" src="/images/twitter-link.png" /></a></div>
+	<div class="ka_iconCon"><a class="ka_smLink" href="http://www.youtube.com/kitchenaidca" target="_blank"><img class="ka_smIcon" alt="You tube" src="/images/youtube-logo.png" /></a></div>
+	<div class="ka_iconCon"><a class="ka_smLink" href="http://www.pinterest.com/kitchenaidca/" target="_blank"><img class="ka_smIcon" alt="Pinterest" src="/images/pinterest-link.png" /></a></div>
+</div>
+        </div><!--  contentName: header_p1, displayType: standard, store: KAD_CA_B2C, locale: fr_CA, status: { [path=systemdefined/header_p1.xml, displayed=true, error=] }-->
+
+		  	  	
+			  	  	
+					<script type="text/javascript">
+						var uas = ""; 
+					</script>
+					<div id="header-main-nav">
+	<ul id="primary-sections">
+		<a href="/fr_CA/gros-electromenagers/"><li id="majors-primary" class="primary">GROS ÉLECTROMÉNAGERS</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/"><li id="smalls-primary" class="primary">APPAREILS DE COMPTOIR</li></a>
+		<a href="/fr_CA/accessoires-de-cuisson/"><li id="cookware-primary" class="primary">ACCESSOIRES DE CUISSON</li></a>
+		<li id="accessories-primary" class="primary">ACCESSOIRES</li>
+		<a href="/fr_CA/service-et-soutien-technique/"><li id="service-support-primary" class="primary">SERVICE ET SOUTIEN TECHNIQUE</li></a>
+		<a href="/fr_CA/inspirations-culinaires/"><li id="culinary-inspiration-primary" class="primary last" >INSPIRATIONS CULINAIRES</li></a>
+	</ul>
+	<ul id="majors-secondary" class="secondary">
+		<li class="active-bar-container fr-adjust"><div class="active-bar"></div></li>
+		<li class="sidethingy"><a href="/fr_CA/2_2_89/global_best-products.content.html"><img src="/images/consumer-reports/menu-image-fr.jpg" alt="produits les plus fortement recommandés" /></a></li>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/tables-de-cuisson-3/102310008/"><li id="cookingproducts-secondary" class="secondary-section">Tables de cuisson</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/lave-vaisselle-3/102310014/"><li id="dishwashers-secondary" class="secondary-section">Lave-vaisselle</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/broyeurs-et-compacteurs-3/102310299/"><li id="cooking-appliances-secondary" class="secondary-section">Broyeurs et compacteurs</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/hottes-et-ventilation-3/102310029/"><li id="countertop-appliances-secondary" class="secondary-section">Hottes et ventilation</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/fours-a-micro-ondes-3/102310037/"><li id="countertop-appliances-secondary" class="secondary-section">Fours à micro-ondes</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/cuisinieres-3/102310042/"><li id="countertop-appliances-secondary" class="secondary-section">Cuisinières</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/refrigerateurs-3/102310048/"><li id="ventilation-secondary" class="secondary-section">Réfrigérateurs</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/fours-encastres-3/102310003/"><li id="outdoor-kitchen-secondary" class="secondary-section">Fours encastrés</li></a>
+		<a href="/fr_CA/magasiner/gros-electromenagers-1/tiroirs-rechauds-3/102310057/"><li id="warming-drawers-secondary" class="secondary-section">Tiroirs-réchauds</li></a>
+		<a href="/fr_CA/2_2_89/global_best-products.content.html"><li id="warming-drawers-secondary" class="secondary-section">Produits recommand&eacute;s</li></a>
+	</ul>
+	<ul id="smalls-secondary" class="secondary">
+		<li class="active-bar-container fr-adjust"><div class="active-bar"></div></li>
+		<a href="/fr_CA/appareils-de-comptoir/pro-line/"><li  id="pro-line-series-secondary"  class="secondary-section">Série Pro Line</li></a>
+        <a href="/fr_CA/2_1_2_30_209/brand_small-appliances_Beverage-Maker_overview.content.html"><li  id="beverage-makers-secondary"  class="secondary-section">Appareils &agrave; boissons</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/melangeurs/"><li	id="blenders-secondary"	 class="secondary-section">Mélangeurs</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/cafetieres/"><li	id="coffeeproducts-secondary"  class="secondary-section">Cafetières</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/equipement-commercial/"><li  id="commericalproducts-secondary"  class="secondary-section">Équipement commercial</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/fours-de-comptoir/"><li  id="countertopovens-secondary"  class="secondary-section">Fours de comptoir</li></a>
+		<a href="/fr_CA/countertop-appliances/kettles/"><li	 id="electric-kettles-secondary"  class="secondary-section">Bouilloires électriques</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/robots-culinaires/"><li  id="foodprocessors-secondary"  class="secondary-section">Robots culinaires</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/melangeurs-a-main/"><li id="handblenders-secondary" class="secondary-section">Mélangeurs à main </li></a>
+		<a href="/fr_CA/appareils-de-comptoir/batteurs-a-main/"><li id="handmixers-secondary" class="secondary-section">Batteurs à main</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/mijoteuses/"><li id="slowcookers-secondary" class="secondary-section">Mijoteuses</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/accessoires-pour-batteur-sur-socle/"><li id="standmixerattachments-secondary" class="secondary-section">Accessoires pour batteur sur socle</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/batteurs-sur-socle/"><li id="standmixers-secondary" class="secondary-section">Batteurs sur socle</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/grille-pain/"><li id="toasters-secondary" class="secondary-section">Grille-pain</li></a>
+		<a href="/fr_CA/appareils-de-comptoir/gaufriers/"><li id="wafflemakers-secondary" class="secondary-section">Gaufriers</li></a>
+		<a href="/fr_CA/2_1_2_32_886/brand_small-appliances_sparkling-beverage-makers_overview.content.html"><li id="sparkling-secondary" class="secondary-section">Machine &agrave; boissons p&eacute;tillantes</li></a>
+		<a href="/fr_CA/2_1_2_31_173/brand_small-appliances_juicers_overview.content.html"><li id="juicer-secondary" class="secondary-section">Extracteur de jus</li></a>
+	</ul>
+	<ul id="cookware-secondary" class="secondary">
+		<li class="active-bar-container"><div class="active-bar"></div></li>
+		<a href="/fr_CA/kitchenware/bakeware"><li class="secondary-section">Moules et plats</li></a>
+		<a href="/fr_CA/kitchenware/cookware"><li class="secondary-section">Batteries de cuisine</li></a>
+		<a href="/fr_CA/kitchenware/tea-kettles"><li class="secondary-section">Bouilloires</li></a>
+	</ul>
+	<ul id="accessories-secondary" class="secondary">
+		<li class="active-bar-container fr-adjust"><div class="active-bar"></div></li>
+		<a href="/fr_CA/magasiner/accessoires-1/tables-de-cuisson-3/102310085/"><li class="secondary-section">Tables de cuisson</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/lave-vaisselle-3/102310066/"><li class="secondary-section">Lave-vaisselle</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/hottes-et-ventilation-3/102310162/"><li class="secondary-section">Hottes et ventilation</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/fours-a-micro-ondes-3/102310095/"><li class="secondary-section">Fours à micro-ondes</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/cuisinieres-3/102310308/"><li class="secondary-section">Cuisinières</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/refrigerateurs-3/102310075/"><li class="secondary-section">Réfrigérateurs</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/fours-encastres-3/102310301/"><li class="secondary-section">Fours encastrés</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/melangeurs-3/102310103/"><li class="secondary-section">Mélangeurs</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/cafetieres-3/102310104/"><li class="secondary-section">Cafetières</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/fours-de-comptoir-3/102310105/"><li class="secondary-section">Fours de comptoir</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/robots-culinaires-3/102310106/"><li class="secondary-section">Robots culinaires</li></a>
+<a href="/fr_CA/shop/accessories-1/stand-mixers-3/102310102/"><li class="secondary-section">Batteurs sur socle</li></a>
+		<a href="/fr_CA/magasiner/accessoires-1/melangeurs-a-main-3/102310107/"><li class="secondary-section">Mélangeurs à main</li></a>						 
+	</ul>
+	<ul id="service-support-secondary" class="secondary">
+		<li class="active-bar-container fr-adjust"><div class="active-bar"></div></li>
+		<a href="/fr_CA/service-et-soutien-technique/manuels/"><li class="secondary-section">Manuels et documentation</li></a>
+		<a href="/fr_CA/service-et-soutien-technique/mes-electromenagers/"><li class="secondary-section">Mes électroménagers</li></a>
+		<a href="/fr_CA/service-et-soutien-technique/enregistrement-dun-produit/"><li class="secondary-section">Enregistrement d’un produit</li></a>
+		<a href="/fr_CA/2_2_91/global_certified-care.content.html"><li class="secondary-section">Programmes de service prolongé</li></a>
+		<a href="/fr_CA/service-et-soutien-technique/pieces-de-rechange/" target="_blank"><li class="secondary-section">Pièces de rechange</li></a>
+		<a href="/fr_CA/service-et-soutien-technique/service-et-reparation/"><li class="secondary-section">Service et réparation</li></a>
+		<a href="/fr_CA/contactez-nous/"><li class="secondary-section">Contactez-nous</li></a>
+	</ul>
+	<ul id="culinary-inspiration-secondary" class="secondary">
+		<li class="active-bar-container fr-adjust"><div class="active-bar"></div></li>
+		<a href="/fr_CA/inspirations-culinaires/cuisines-modeles/"><li class="secondary-section">Cuisines modèles</li></a>
+		<a href="/fr_CA/inspirations-culinaires/partenaires-et-evenements/"><li class="secondary-section">Partenaires et événements</li></a>
+		<a href="/fr_CA/2_2_762/global_stand-mixer-buying-guide.content.html"><li class="secondary-section">Personnalisez votre batteur sur socle</li></a>
+	</ul>
+</div><!--  contentName: header_p2, displayType: standard, store: KAD_CA_B2C, locale: fr_CA, status: { [path=systemdefined/header_p2.xml, displayed=true, error=] }-->
+
+		  	  	
+			  	  	
+<script type="text/javascript">
+function showDiscontinuedProductSearchPopup() {
+	dijit.byId("discontinued_product_search_popup").show();
+}
+dojo.addOnLoad(function() {
+	parseWidget("discontinued_product_search_popup"); 
+});
+</script>
+<div id="discontinued_product_search_popup" dojoType="whr.ShadowDialog"  class="modalDialog" style="display:none" title="Recherche de produit discontinué" closable="false">
+	<form action="/webapp/wcs/stores/servlet/WHRORNAjaxCatalogSearchView" method="GET">
+		<input type="hidden" name="storeId" value="10231" />
+		<input type="hidden" name="catalogId" value="10581" />
+		<input type="hidden" name="langId" value="-301" />
+		<input type="hidden" name="beginIndex" value="0" />
+		<input type="hidden" name="searchFilterKey" value="DISCONTINUED" />
+					
+		<label for="discontinued_product_searchTerm">Veuillez entrer un critère de recherche</label>					
+		<input type="text" name="searchTerm" id="discontinued_product_searchTerm" placeholder="Search" /><input value="Search" type="submit"/> 
+	</form>
+</div>
+
+		<div id="zip_code_popup" dojoType="whr.ShadowDialog" class="modalDialog" style="display: none;"
+		     title="Veuillez indiquer votre code postal" closable="false">
+			<script type="text/javascript">
+				function popup_callGetPlantCodeByZip() {
+					var myZipcode = document.getElementById('popup_zipcodeTxt');
+					setCurrentId('popup_zipcodeTxt');
+					EndecaHelperJS.setAbsStoresWebPath(window.location.protocol+'//cuat.kitchenaid.ca/webapp/wcs/stores/servlet');
+					EndecaHelperJS.setStoreCountry('CA');
+					EndecaHelperJS.getPlantCodeByZip(true);
+					
+					if (typeof gtmHelper != "undefined") gtmHelper.setZipCode(document.getElementById("popup_zipcodeTxt").value);
+				}
+			</script>
+			<form method="post" action="javascript:popup_callGetPlantCodeByZip();">
+				<div class="cl-zip-code-search">
+					<div class="cl-zip">Pour ajouter cet article à votre panier, veuillez indiquer votre code postal.</div>
+					<div class="zipcode-container">
+					<!-- Maytag Canada Changes start for the Zip code uppercase conversion -->
+								<input class="zipcode-text" type="text" id="popup_zipcodeTxt" value="" maxlength="7"  style="text-transform:uppercase" />
+								<input class=" zipcode-button " type="submit" id="popup_zipcodeBtn" value="" />
+							
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<script type="text/javascript">
+			dojo.addOnLoad(function() {
+				parseWidget("zip_code_popup");
+				// add a dummy callback method that other functions can connect to upon successful zip code selection
+				dojo.mixin(dijit.byId("zip_code_popup"), { onZipCodeSelected: function(zipCode) {} });
+		        parseWidget("sap_unavailable_popup");
+				// these messages are needed for the zip code popup on all pages where it might appear
+				
+				MessageHelper.setMessage("ERROR_InvalidJurisdisctionCode", "Les renseignements concernant la ville, province et code postal ne sont pas valides.");
+				MessageHelper.setMessage("ERROR_WebserviceUnavailable_TryLater", "En raison de la non disponibilité du système, le code postal ne peut être validé maintenant. Veuillez essayer à nouveau plus tard.");
+			});
+		</script>
+		
+
+		
+	</div>
+
+	<input type="hidden" name="storeIdentifier" value="KAD_CA_B2C" id="storeIdentifier"/>
+
+</div>
+
+
+<!-- END of CachedORNHeaderDisplay.jsp  --><!-- Gladiator Phase 2 Change END 12/25 --><!-- QC 189 ML for NAR  Start -->
+<div id="displayAlert" style="display:none;">
+	false
+</div>
+<div id="displayDropDown" style="display:none;">
+	true
+</div>
+
+
+<div id="langReloadURL" style="display:none;">
+http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10581&amp;reloadURL=http%3A%2F%2Fcuat.kitchenaid.ca%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FProductDisplay%3FcatalogId%3D10581%26productId%3D2104866%26storeId%3D10231%26sku%3DKDTE104ESS&amp;from=pageReload
+</div>
+<!-- QC 189 ML for Canada sites  End --><!-- END WHRORNHeaderDisplay.jspf --><!-- END LayoutContainerTop.jspf -->
+			<div id="page">
+		<!-- Header Nav End --><!-- Main Content Start -->
+     <div id="content_wrapper_border">
+          <!-- Content Start -->
+          <div id="box" class="my_account generic_error_container">
+          	<div id="errorPage">
+				<div id="WC_GenericError_1" class="contentgrad_header">
+					<div id="WC_GenericError_2" class="left_corner"></div>
+					<div id="WC_GenericError_3" class="left"><h1 class="myaccount_title">
+					Erreur générique				
+					
+					</h1></div>
+					<div id="WC_GenericError_4" class="right_corner"></div>
+				</div>
+				
+				<div id="WC_GenericError_5" class="content">
+					<div id="WC_GenericError_6" class="info">
+																				
+														<span>L'information erronée est répertoriée ci-dessous. Pour de plus amples détails, augmentez la journalisation de votre système WebSphere Commerce et consultez le fichier journal.</span>
+													
+							
+			
+						<br /><br />
+						
+						
+						
+							<span class="generic_error_developers">Développeurs de magasins :</span>
+							<span>Les détails de l'information erronée figurent dans les commentaires de la source HTML pour cette page.</span>
+						
+						<!--
+					//********************************************************************
+					//*-------------------------------------------------------------------
+					
+					La section suivante vise à aider les développeurs de magasins à résoudre les problèmes de débogage dans l'exemple de magasin.L'information erronée est répertoriée ci-dessous. Pour de plus amples détails, augmentez la journalisation de votre système WebSphere Commerce et consultez le fichier journal.Type d'exception :1Clé de message :_ERR_CATENTRY_NOT_EXISTING_IN_STOREMessage :CMN3101E The system is unavailable due to &#034;2 104 866&#034;.Message système :Either the catalog entry &#034;2 104 866&#034; does not exist in the catalog, or it cannot be processed in store &#034;10 231&#034;.Commande d'origine :Correction :
+					
+					//*-------------------------------------------------------------------
+					//********************************************************************
+					-->
+					
+										
+					</div>
+				</div>
+							
+				<div id="WC_GenericError_8" class="footer">
+					<div id="WC_GenericError_9" class="left_corner"></div>
+					<div id="WC_GenericError_10" class="left"></div>
+					<div id="WC_GenericError_11" class="right_corner"></div>
+				</div>
+				</div>
+          </div>
+          <!-- Content End -->
+     </div>
+     <!-- Main Content End -->    
+</div>
+<div id="page_shadow" class="shadow"/>
+ <!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jun 05 18:32:24 EDT 2015] -->
+<!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
+	<div class="footer-header">
+	</div>
+	<!-- FOOTER FRAGMENT BEGINS -->
+	<div id="footer-nav">
+		<div id="footer-nav-level-one">
+			<ul>
+				<li class="header"><a href="/fr_CA/gros-electromenagers/">GROS ÉLECTROMÉNAGERS</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/tables-de-cuisson-3/102310008/">Tables de cuisson</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/lave-vaisselle-3/102310014/">Lave-vaisselle</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/broyeurs-et-compacteurs-3/102310299/">Broyeurs et compacteurs</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/hottes-et-ventilation-3/102310029/">Hottes et ventilation</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/fours-a-micro-ondes-3/102310037/">Fours à micro-ondes</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/cuisinieres-3/102310042/">Cuisinières</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/refrigerateurs-3/102310048/">Réfrigérateurs</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/fours-encastres-3/102310003/">Fours encastrés</a></li>
+				<li><a href="/fr_CA/magasiner/gros-electromenagers-1/tiroirs-rechauds-3/102310057/">Tiroirs-réchauds</a></li>
+				<!--li class="shop-footer"><a href="/fr_CA/shop/">Tiroirs-réchauds</a></li-->
+			</ul>
+			<ul>
+				<li class="header"><a href="/fr_CA/appareils-de-comptoir/">APPAREILS DE COMPTOIR</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/pro-line/">Série Pro Line</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/melangeurs/">Mélangeurs</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/cafetieres/">Cafetières</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/equipement-commercial/">Équipement commercial</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/fours-de-comptoir/">Fours de comptoir</a></li>
+				<li><a href="/fr_CA/countertop-appliances/kettles/">Bouilloires électriques</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/robots-culinaires/">Robots culinaires</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/melangeurs-a-main/">Mélangeurs à main </a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/batteurs-a-main/">Batteurs à main</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/mijoteuses/">Mijoteuses</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/accessoires-pour-batteur-sur-socle/">Accessoires pour batteur sur socle</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/batteurs-sur-socle/">Batteurs sur socle</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/grille-pain/">Grille-pain</a></li>
+				<li><a href="/fr_CA/appareils-de-comptoir/gaufriers/">Gaufriers</a></li>
+				<li><a href="/fr_CA/shop/-%5B4KSS1121ER%5D-2104367/4KSS1121ER/">Machine &agrave; boissons p&eacute;tillantes</a></li>
+				<li><a href="/fr_CA/shop/countertop-appliances-1/juicers-3/102310341/">Extracteur de jus</a></li>
+			</ul>
+			<ul>
+				<li class="header"><a href="/fr_CA/accessoires-de-cuisson/">Accessoires de cuisson</a></li>
+				 <li><a href="/fr_CA/magasiner/ustensiles-de-cuisine-1/accessoires-de-cuisson-3/102310174/">Accessoires de cuisson</a></li>
+				 <li><a href="/fr_CA/magasiner/ustensiles-de-cuisine-1/ustensiles-de-cuisine-3/102310335/">Batteries de cuisine</a></li>
+				 <li><a href="/fr_CA/magasiner/ustensiles-de-cuisine-1/bouilloires-3/102310218/">Bouilloires</a></li>
+			</ul>
+			<ul>
+				<li class="header"><a href="/fr_CA/customer-service/">SERVICE ET SOUTIEN TECHNIQUE</a></li>
+				<!--li><a href="/fr_CA/service-et-soutien-technique/faqs/">FAQs</a></li-->
+				<li><a href="/fr_CA/service-et-soutien-technique/manuels/">Manuels et documentation</a></li>
+				<li><a href="/fr_CA/service-et-soutien-technique/mes-electromenagers/">Mes électroménagers</a></li>
+				<li><a href="/fr_CA/service-et-soutien-technique/enregistrement-dun-produit/">Enregistrement d’un produit</a></li>
+				<li><a href="/fr_CA/service-et-soutien-technique/pieces-de-rechange/">Pièces de rechange</a></li>
+				<li><a href="/fr_CA/service-et-soutien-technique/service-et-reparation/">Service et réparation</a></li>
+				<li><a href="/fr_CA/2_2_91/global_certified-care.content.html">Programme d’entretien prolongé</a></li>
+				<li><a href="/fr_CA/contactez-nous/">Contactez-nous</a></li>
+			</ul>
+			<ul>
+				<li class="header"><a href="/fr_CA/culinary-inspiration/">INSPIRATIONS CULINAIRES</a></li>
+				<li><a href="/fr_CA/inspirations-culinaires/cuisines-modeles/">Cuisines modèles</a></li>
+				<li><a href="/fr_CA/inspirations-culinaires/partenaires-et-evenements/">Partenaires et événements</a></li>
+				<li class="header">JOIGNEZ-NOUS SUR</li>
+				<li>
+					<div class="footer-social-channels">
+						<div class="ka_smHolder">
+							<div class="ka_iconCon">
+								<a class="ka_smLink" href="https://www.facebook.com/KitchenAidCanada" target="_blank">
+									<img class="ka_smIcon" alt="Facebook" src="/images/facebook-link.png" />
+								</a>
+							</div>
+							<div class="ka_iconCon">
+								<a class="ka_smLink" href="https://twitter.com/kitchenaid_ca" target="_blank">
+									<img class="ka_smIcon" alt="Twitter" src="/images/twitter-link.png" />
+								</a>
+							</div>
+							<div class="ka_iconCon">
+								<a class="ka_smLink" href="http://www.youtube.com/kitchenaidca" target="_blank">
+									<img class="ka_smIcon" alt="You tube" src="/images/youtube-logo.png" />
+								</a>
+							</div>
+							<div class="ka_iconCon">
+								<a class="ka_smLink" href="http://www.pinterest.com/kitchenaidca/" target="_blank">
+									<img class="ka_smIcon" alt="Pinterest" src="/images/pinterest-link.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li class="header">RESSOURCES ADDITIONNELLES</li>
+				<li><a href="/fr_CA/2_2_101/lentreprise/">L'entreprise</a></li>
+				<li><a href="http://www.whirlpoolcareers.com/" target="_blank">Carrières</a></li>
+				<!--li><a href="/fr_CA/shop/cart/">Cart</a></li-->
+				<!--li><a href="/fr_CA/contact-us/">Contact Us</a></li-->
+				<!--li><a href="/fr_CA/experience-retail-center/">Experience Retail Center</a></li-->
+				<!--li><a href="/fr_CA/webapp/wcs/stores/servlet/LogonForm?catalogId=10552&myAcctMain=1&langId=-1&storeId=10202">My Account</a></li-->
+				<li><a href="/fr_CA/salle-de-presse/">Salle de presse</a></li>
+				<li><a href="http://www.whirlpoolcorp.com/shared/content/privacy/canada_privacy_statement_french.pdf">Politique de confidentialité</a></li>
+				<!--li><a href="/fr_CA/sign-up-for-email/">Sign Up for Email</a></li-->
+				<li><a href="/fr_CA/carte-du-site/">Carte du site </a></li>
+				<li><a href="/fr_CA/conditions-dutilisation/">Conditions d'utilisation</a></li>
+				<li class="footer-language">Canada | <a href="http://international.kitchenaid.com" target="_blank">Autres pays</a></li>
+			</ul>							 
+		</div>
+			<!-- FOOTER FRAGMENT ENDS -->
+		<p class="footer-legal">
+			®/™ ©<script type="text/javascript">var date = new Date();document.write(date.getFullYear());</script> KitchenAid. Tous droits réservés. Utilisée sous licence au  Canada. La forme du batteur sur socle est une marque déposée au Canada et ailleurs au monde
+		</p>
+	</div>
+</div>
+<link rel="stylesheet" href="https://cdn.powerreviews.com/repos/17711/pr/pwr/engine/pr_styles_review.css" id="prBaseStylesheet"/>
+<link rel="stylesheet" href="/css/powerreviews/pr_style_sheet.css" type="text/css" id="prMerchantOverrideStylesheet"/><!--  contentName: footer, displayType: standard, store: KAD_CA_B2C, locale: fr_CA, status: { [path=systemdefined/footer.xml, displayed=true, error=] }-->
+
+		  	  	
+			  	  	<!-- Gladiator Phase 2 END 12/18 --><!-- Gladiator Phase 2 END 12/26 --><!-- END FooterDisplay.jspf -->
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		//Make sure page is loaded at this point
+		//Set requestedSubmitted to false
+		requestSubmitted = false;
+	}); 	
+</script>
+<!--  AddThis code --><!-- END LayoutContainerBottom.jspf --><!-- Footer Start End -->
+
+</body>
+</html>
