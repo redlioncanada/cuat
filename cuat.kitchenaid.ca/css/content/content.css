@@ -1425,7 +1425,6 @@ h1.page_title {
 .category-share {
     float: right;
     padding: 0 0 20px;
-    width: 195px;
 	position: relative;
 	z-index: auto;
 }
@@ -2094,6 +2093,19 @@ html[lang=fr]
 }
 .category-page #photosVIdeosAttachments, .category-page #photosVIdeosStandMixers {
     width: 726px;
+}
+ul.blender-menu li {
+	margin-right: 30px;
+	color: #555555;
+	font-size: 12pt;
+	cursor: pointer;
+}
+ul.blender-menu li:first-child {
+	margin-right: 40px;
+	color: #c80500;
+	font-size: 20pt;
+	font-weight: 600;
+	cursor: default;
 }
 /* ==========================================================================
    FOOTER

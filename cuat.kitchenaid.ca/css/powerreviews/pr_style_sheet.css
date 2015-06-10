@@ -1,4 +1,4 @@
-﻿/* 05.07.2015 - 11:50:00 */
+﻿/* 06.02.2015 - 10:00:00 */
 /*SNIPPET - GLOBAL*/
 .pr-snippet,
 .pr-snippet-wrapper {
@@ -1752,6 +1752,12 @@ a.button.tagsuggest span {
 	width: 80% !important;
 }
 
+@media screen and (max-width: 460px) {
+	.prcontentwrap {
+		width: auto;
+	}
+}
+
 
 
 
@@ -1979,15 +1985,11 @@ h3.input_label {
 
 /*TEMP OVERRIDES FOR MOBILE*/
 body.mobile .pr-snippet-write-review,
-body.mobile .pr-snippet-write-first-review {
-	display: none;
+body.mobile .pr-snippet-write-first-review,
+body.mobile .pr-snapshot-no-ratings {
+	/*display: none;*/
 }
 
 body.mobile .pr-snippet-read-reviews {
 	border: 0;
-}
-
-body.mobile .pr-snapshot-write-review,
-body.mobile .pr-snapshot-no-ratings {
-	display: none;
 }

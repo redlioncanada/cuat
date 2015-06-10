@@ -8601,4 +8601,23 @@ text-decoration:none
 #cta-content #pdp-cta-compare{
 	margin-top: 10px;
 }
-/*PDP compare tray styles END*/
+/*PDP compare tray styles END */
+
+/*PDP Related Models START*/
+.related_models .ub-left, .related_models .ub-left, .related_models .ub-right{
+	background:none !important;
+}
+.related_models span.ub-center{
+	  background: url(/images/btn_where_to_buy.png) !important;
+  background-repeat: no-repeat !important;
+  width: 147px !important;
+  background-position: 0px 18px !important;
+  text-indent: -9999px !important;
+}
+html[lang="fr"] .related_models span.ub-center{
+	background:url(/images/btn_where_to_buy_PDP_FR.png) repeat-x -1px 14px !important;
+}
+
+.related_models, #manualsandliterature_tab{display:none !important;}
+.companion-item {display:none !important;}
+/*PDP Related Models END */

@@ -157,9 +157,7 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/javascript/wt_capi.js"></script>
 <!--END Add Web Tracking Code to Whirlpool and Maytag-->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-<!-- END WHRORNCommonJSToInclude.jspf -->
-	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-	<!-- END CommonJSToInclude.jspf -->  
+	<!-- END WHRORNCommonJSToInclude.jspf --><!-- END CommonJSToInclude.jspf -->  
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CatalogArea/CategoryDisplay.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/ServicesDeclaration.js"></script>
@@ -199,14 +197,14 @@ var currentprotocol = document.location.protocol;
 
 
 <body id="small-appliances" class="product-details-page" onLoad="">
-<!-- Google Tag Manager --><!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-	<!-- End Google Tag Manager --><!-- BEGIN StoreCommonUtilities.jspf -->
+<!-- Google Tag Manager -->
+			<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
+			<!-- End Google Tag Manager --><!-- BEGIN StoreCommonUtilities.jspf -->
 <input id="closebutton" type="hidden" value="FERMER">
 
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/StoreCommonUtilities.js"></script>
@@ -276,7 +274,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jun 05 18:32:22 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Jun 10 10:43:06 EDT 2015] -->
   
 
 
@@ -433,7 +431,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jun 05 19:47:07 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Jun 10 10:57:39 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -757,8 +755,10 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 </div>
 <!-- ||||||||||||||||||||||||||||||||||| End Breadcrumb ||||||||||||||||||||||||||||||||||||| --><!-- END JSP File Name:  WHRORNBreadCrumbTrailDisplay.jsp --><!-- END JSP File Name:  WHRORNBreadCrumbTrailDisplay.jspf -->
 		      <div id="main-container" class="small-appliances-details">
-		        
+		         
 <div id="inline-seo-pr" style="display:none;">
+
+    <input type="hidden" id="ilseoError" value="Property 'inlineSEO' not found on type com.whirlpool.commerce.catalog.beans.WHRProductDataBean"/>
 
 </div>
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/CheckoutArea/CheckoutHelper.js"></script>
@@ -776,6 +776,16 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 		categoryDisplayJS.setSelectedAttribute('Color', dropdownValue);
 	}
 </script>
+
+
+<script text="text/javascript">
+	function setCartDisplay(value,catentryId) {
+	var dropdownValue ="Color_"+value;
+	categoryDisplayJS.setCartDisplay(dropdownValue ,catentryId);
+	}
+</script>
+
+
 <script text="text/javascript">
 	function whereToBuy(partnum) {
 		var a= document.getElementById('wheretoBuyCid');
@@ -854,14 +864,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="carousel-previous" class="carousel-controls active">&nbsp;</div>
 				<div class="carousel-visible-items">
 					<ul class="carousel-items">
-						
+					
+					<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->
 						<li class="carousel-item photo">
 							<img src="/digitalassets/K45B/AB-Thumbnail_100X100_HO.jpg" name="/digitalassets/K45B/Standalone_1175X1290.jpg|KitchenAid® Fouet plat" class="open-module" alt="/K45B/AB-Thumbnail_100X100_HO.jpg" />
 						</li>
-						<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->    
-					
 						
-					</ul>
+  
+					
+ 				  </ul>
 				</div>
 				<div id="carousel-next" class="carousel-controls">&nbsp;</div>
 			</div>
@@ -875,19 +886,20 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 
 <div id="pr-pdp-snippet-K45B" class="pr-pdp">
 
-		<script type="text/javascript">
-		function activateTab () {
-	        $('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');
-	    };
-	
-		
-		POWERREVIEWS.display.snippet(document, {
-		    pr_page_id:"K45B",
-		    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=K45B&storeId=10231",
-		    pr_read_review:'javascript:(activateTab())'});
-		</script>
-	
+        <script type="text/javascript">
+        function activateTab () {
+            $('#ratingsandreviews_tab').click();$('html, body').animate({scrollTop: $('#ratingsandreviews_tab').offset().top + 'px'}, 'fast');
+        };
+    
+        
+        POWERREVIEWS.display.snippet(document, {
+            pr_page_id:"K45B",
+            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=K45B&storeId=10231&swhPageId=K45B",
+            pr_read_review:'javascript:(activateTab())'});
+        </script>
+    
 </div>
+
 			<div class="product-description">
 				<p>Le fouet plat est l'accessoire idéal pour mélanger les mélanges à pâte de consistance normale ou épaisse. Qu'il s'agisse d'une pâte à gâteau onctueuse ou d'une pâte à biscuit ferme, le fouet plat mélange rapidement et complètement. Convient aux modèles K45, KSM90, KSM103 et KSM110.</p>
 			</div>
@@ -969,9 +981,10 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
 	    pr_page_id:"K45B",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=K45B&storeId=10231"});
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=K45B&storeId=10231&swhPageId=K45B"});
 	</script>
-</div>		
+</div>
+		
 </div>
 <div class="product_tab_section_bottom"></div>
 
@@ -1132,8 +1145,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											Choisir une couleur
 										</label>
 										<div class="text-select">
+											
 											<select id="choose-color" name="choose-color" class="choose-color" onchange="changeFunc();whereToBuy(this.options[options.selectedIndex].id);">
-												
+											
 																		<option selected="selected" value="D'autre"
 																			id="K45B"
 																			title="$14,99">D'autre</option>
@@ -1236,10 +1250,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div id="carousel-previous" class="carousel-controls active">&nbsp;</div>
 			<div class="carousel-visible-items">
 				<ul class="carousel-items">
+					
+					<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->
 					<li class="module-item carousel-item photo">
 						<img src="/digitalassets/K45B/Standalone_1175X1290.jpg" name="/digitalassets/K45B/Standalone_1175X1290.jpg|KitchenAid® Fouet plat" class="open-module photo-module" alt="/K45B/Standalone_1175X1290.jpg"/>
 					</li>
-					<!-- REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos  --><!-- REQ0173358-Gallery Modal code changes Ends-->    
+					
+					
 					
 				</ul>
 			</div>
@@ -1257,12 +1274,14 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5k60&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
 <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5k60&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
-<!-- Twitter tag Code for Key Page Views - Product Page ends --><!-- End WHRORNCachedProductOnlyDisplay -->
+<!-- Twitter tag Code for Key Page Views - Product Page ends --><!-- End WHRORNCachedProductOnlyDisplay --> 
 <div id="inline-seo-pr" style="display:none;">
+
+    <input type="hidden" id="ilseoError" value="Property 'inlineSEO' not found on type com.whirlpool.commerce.catalog.beans.WHRProductDataBean"/>
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jun 05 18:32:24 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Jun 10 10:43:06 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

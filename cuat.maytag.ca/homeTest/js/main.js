@@ -18,12 +18,12 @@ $(function (){
 
 	function resetAnimations () {
 
-		$("#animationZero").animate({opacity:0},{duration:0, queue: false});
+		//$("#animationZero").animate({opacity:0},{duration:0, queue: false});
 		$("#animationOne").animate({opacity:0},{duration:0, queue: false});
 		$("#animationTwo").animate({opacity:0},{duration: 0, queue: false});
 		$("#animationThree").animate({opacity:0},{duration: 0, queue: false});
-		$("#aContainerFour div:nth-child(1)").animate({opacity:0},{duration: 0, queue: false});
-		$("#aContainerZero .light").animate({bottom: "-195px"},{duration: 0, queue: false});
+		$("#animationFour").animate({opacity:0},{duration: 0, queue: false});
+		//$("#aContainerZero .light").animate({bottom: "-195px"},{duration: 0, queue: false});
 		$("#aContainerOne .light").animate({bottom: "-195px"},{duration: 0, queue: false});
 		$("#aContainerTwo .light").animate({bottom: "-208px"},{duration: 0, queue: false});
 		$("#aContainerThree .light").animate({bottom: "-200px"},{duration: 0, queue: false});
@@ -34,12 +34,13 @@ $(function (){
 	function startAnimations () {
 
 
-		var firstSlide = $('.sliderControler li:nth-child(1) a');
+		var firstSlide = $('.sliderControler li:nth-child(2) a');
 		var secondSlide = $('.sliderControler li:nth-child(3) a');
 		var thirdSlide = $('.sliderControler li:nth-child(4) a');
 		var fourthSlide = $('.sliderControler li:nth-child(5) a');
-		var fifthSlide = $('.sliderControler li:nth-child(6) a');
+		//var fifthSlide = $('.sliderControler li:nth-child(6) a');
 
+/*
 		if (firstSlide.hasClass('active')) {
 			resetAnimations();
 			setTimeout(function(){
@@ -47,29 +48,32 @@ $(function (){
 				$("#aContainerZero .light").animate({bottom: "365px"},{duration: 300, queue: false});
 			},4000);
 		}
+*/
 		
+		if(firstSlide.hasClass('active')){
+			console.log("First Slide")
+			resetAnimations();
+			setTimeout(function(){
+				$("#animationTwo").animate({opacity:1},{duration: 350, queue: false});
+				$("#aContainerTwo .light").animate({bottom: "365px"},{duration: 300, queue: false});
+			},4000);
+		}
 		if(secondSlide.hasClass('active')){
 			resetAnimations();
 			setTimeout(function(){
 				$("#animationOne").animate({opacity:1},{duration: 350, queue: false});
-				$("#aContainerOne .light").animate({bottom: "365px"},{duration: 300, queue: false});
+				$("#aContainerOne .light").animate({bottom: "320px"},{duration: 300, queue: false});
 			},4000);
 		}
 		if(thirdSlide.hasClass('active')){
-			resetAnimations();
-			setTimeout(function(){
-				$("#animationTwo").animate({opacity:1},{duration: 350, queue: false});
-				$("#aContainerTwo .light").animate({bottom: "320px"},{duration: 300, queue: false});
-			},4000);
-		}
-		if(fourthSlide.hasClass('active')){
 			resetAnimations();
 			setTimeout(function(){
 				$("#animationThree").animate({opacity:1},{duration: 350, queue: false});
 				$("#aContainerThree .light").animate({bottom: "340px"},{duration: 300, queue: false});
 			},4000);
 		}
-		if(fifthSlide.hasClass('active')){
+
+		if(fourthSlide.hasClass('active')){
 			resetAnimations();
 			setTimeout(function(){
 				$("#aContainerFour div:nth-child(1)").animate({opacity:1},{duration: 350, queue: false});

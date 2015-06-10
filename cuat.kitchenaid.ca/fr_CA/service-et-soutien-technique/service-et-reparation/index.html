@@ -146,13 +146,13 @@ var currentprotocol = document.location.protocol;
 	<script type="text/javascript" src="/javascript/wt_capi.js"></script>
 <!--END Add Web Tracking Code to Whirlpool and Maytag-->
 	<script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/gtmHelper.js"></script>
-<!-- END WHRORNCommonJSToInclude.jspf --> 
+	<!-- END WHRORNCommonJSToInclude.jspf --> 
 
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/MessageHelper.js"></script>
 
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/OwnersCenter/OCAddressHelper.js"></script>
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/StoreCommonUtilities.js"></script>
-<!-- KAD EMS PHASE 2 Start to remove ensighten code --><!-- KAD EMS End --><!-- END OCCommonJSToInclude.jspf --><!-- BEGIN StoreCommonUtilities.jspf -->
+<!-- KAD EMS PHASE 2 Start to remove ensighten code --><!-- END OCCommonJSToInclude.jspf --><!-- BEGIN StoreCommonUtilities.jspf -->
 <input id="closebutton" type="hidden" value="FERMER">
 
 <script type="text/javascript" src="/wcsstore/NARStorefrontAssetStore/javascript/StoreCommonUtilities.js"></script>
@@ -231,14 +231,14 @@ var currentprotocol = document.location.protocol;
 	   
 </head>
 <body class="owner_center">  
-<!-- Google Tag Manager --><!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-	<!-- End Google Tag Manager --><!-- KAD EMS PHASE II Start Chnges added to get the SEO filename from WHRConfig --><!--  KAD EMS PHASE II End -->
+<!-- Google Tag Manager -->
+			<noscript><iframe src="//www.googletagmanager.com/ns.html?id='GTM-TR4MSL'"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
+			<!-- End Google Tag Manager --><!-- KAD EMS PHASE II Start Chnges added to get the SEO filename from WHRConfig --><!--  KAD EMS PHASE II End -->
 
 <seo:url var="seoCategoryDisplayURL" value="WHRTopCategoryDisplayViewL1">
 	<seo:param name="catalogId" value="10581"></seo:param>
@@ -300,7 +300,7 @@ var currentprotocol = document.location.protocol;
 	    });  
 	</script>
     <!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jun 05 18:32:22 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Jun 10 10:43:06 EDT 2015] -->
   
 
 
@@ -457,7 +457,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jun 05 18:35:01 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Jun 10 10:44:01 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -839,6 +839,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<span class="oc_required_field">*</span>Type d'électroménager:
 					</div>	
 					<div class="oc_entry_field_input">
+					<input type="hidden" name="langId" id="langId" value="-301"/>
 						<select class="registration_select_input"
 							id="appliance" name="appliance" 
 							value="">
@@ -846,11 +847,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							
 							<option value='WALL OVENS,ELECTRIC' onchange='PageTagHelperJS.setApplianceType("WALL OVENS,ELECTRIC");' 
 							 >
-							Four encastr&eacute; &eacute;lectrique</option>
+							Fours &eacute;lectriques encastr&eacute;s</option>
 							
 							<option value='WALL OVENS,GAS' onchange='PageTagHelperJS.setApplianceType("WALL OVENS,GAS");' 
 							 >
-							Four encastr&eacute; au gaz</option>
+							Fours encastr&eacute;s au gaz</option>
 							
 							<option value='REFRIGERATOR' onchange='PageTagHelperJS.setApplianceType("REFRIGERATOR");' 
 							 >
@@ -933,7 +934,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<div  id="serialNumberValidationErrorMsg" class="oc_entry_field_error"></div>
 				</div>
 				
-				<div class="oc_entry_field " id="typeOfProblemDiv" style="">
+				<div class="oc_entry_field" id="typeOfProblemDDDiv" style="display:block;">
+					<div class="oc_entry_field_label">
+						<span class="oc_required_field">*</span>Description du problème:
+					</div>	
+					<div class="oc_entry_field_input">
+						<select class="registration_select_input" id="typeOfProbDropDown" name="typeOfProbDropDown" value="">
+							<option value="" selected="selected">Select</option>
+						</select>
+					</div>
+					<div class="oc_entry_field_error" id="typeOfProblemDDValidationErrorMsg"></div>
+				</div>	
+		  		<!-- 		
+				
+		   -->
+				<div class="oc_entry_field " id="typeOfProblemDiv" style="display:none;">
 					<div class="oc_entry_field_label">						
 						<span class="oc_required_field">*</span>Décrire le problème:
 					</div>
@@ -1008,7 +1023,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	
 	}
 	</script>
-   <!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jun 05 18:32:24 EDT 2015] -->
+   <!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Jun 10 10:43:06 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>
