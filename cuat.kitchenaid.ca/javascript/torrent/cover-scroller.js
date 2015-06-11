@@ -57,6 +57,12 @@ var CoverScroller = (function (_Messenger) {
             }
         });
 
+        $('.color-picker li').mouseenter(function () {
+            $(this).find('div').eq(0).animate({ opacity: 1 }, 400);
+        }).mouseleave(function () {
+            if (this.curCover == 0) $(this).not('.selected').find('div').eq(0).animate({ opacity: 0.5 }, 400);
+        });
+
         this.redraw();
     }
 
@@ -86,6 +92,11 @@ var CoverScroller = (function (_Messenger) {
 
             var multiplier = this.curCover === 0 ? 1 : this.curCover;
             var colorTop = this.elHeight * multiplier + this.elHeight / 2 - parseInt($('.color-picker').height()) / 2;
+            if (this.curCover == 0) {
+                $('.color-picker li').not('.selected').find('div:first-child').css({ opacity: 0.5 });
+            } else {
+                $('.color-picker li div:first-child').css({ opacity: 1 });
+            }
             $('.color-picker').css({ top: colorTop });
 
             $.each($('.color-picker li'), function (i, v) {
