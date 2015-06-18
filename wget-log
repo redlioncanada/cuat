@@ -1,0 +1,87 @@
+Connecting to cuat.whirlpool.ca|158.52.8.13|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10135699]-1301398/W10135699/index.html'
+
+
+
+2015-06-16 11:16:26 (108 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10135699]-1301398/W10135699/index.html' saved [88093]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:26--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355049B]-1304991/W10355049B/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355049B]-1304991/W10355049B/index.html'
+
+
+
+2015-06-16 11:16:30 (91.0 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355049B]-1304991/W10355049B/index.html' saved [88412]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:30--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355010B]-1304396/W10355010B/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 'wget-log'
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355010B]-1304396/W10355010B/index.html'
+
+     0K .......... .......... .......... .......... ..........  214K
+    50K .......... .......... .......... ......                 301K=0.4s
+
+2015-06-16 11:16:34 (244 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355010B]-1304396/W10355010B/index.html' saved [88512]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:34--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355051B]-1304687/W10355051B/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355051B]-1304687/W10355051B/index.html'
+
+     0K .......... .......... .......... .......... .......... 97.1K
+    50K .......... .......... .......... ......                14.4K=3.0s
+
+2015-06-16 11:16:40 (28.5 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/laveuse-3/-[W10355051B]-1304687/W10355051B/index.html' saved [88154]
+
+--2015-06-16 11:16:40--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s%C3%A9cheuse-3/102280133/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/102280133/index.html'
+
+     0K .......... .......... .......... .......... ..........  135M
+    50K .......... .......... .......... .......                229M=0.001s
+
+2015-06-16 11:16:41 (164 MB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/102280133/index.html' saved [89579]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:41--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s%C3%A9cheuse-3/-[49971]-1300148/49971/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/-[49971]-1300148/49971/index.html'
+
+     0K .......... .......... .......... .......... ..........  116K
+    50K .......... .......... .......... .....                  188K=0.6s
+
+2015-06-16 11:16:44 (138 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/-[49971]-1300148/49971/index.html' saved [87859]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:44--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s%C3%A9cheuse-3/-[4396013RB]-1300121/4396013RB/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/-[4396013RB]-1300121/4396013RB/index.html'
+
+     0K .......... .......... .......... .......... ..........  106K
+    50K .......... .......... .......... .......                252K=0.6s
+
+2015-06-16 11:16:48 (140 KB/s) - 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/-[4396013RB]-1300121/4396013RB/index.html' saved [89402]
+
+Warning: wildcards not supported in HTTP.
+--2015-06-16 11:16:48--  http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s%C3%A9cheuse-3/-[W10473735]-1301478/W10473735/
+Reusing existing connection to cuat.whirlpool.ca:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-lessive-2/s\303\251cheuse-3/-[W10473735]-1301478/W10473735/index.html'
+
+     0K ...
