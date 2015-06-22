@@ -1838,6 +1838,11 @@ html[lang=fr]
 }
 .category-page .featured-list .featured-item .featured-item-image {
     padding: 10px 10px 0;
+    position: relative;
+}
+.new-badge {
+	position: absolute;
+	left: 10px;
 }
 .featured-item-image img {
 	max-width: 100%;

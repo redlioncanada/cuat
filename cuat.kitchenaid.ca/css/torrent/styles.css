@@ -731,8 +731,7 @@ body {
   height: 12px;
   width: 12px;
   border: 1px solid #FFF;
-  background-color: #1b1b1b;
-  opacity: 0.5;
+  background-color: rgba(27, 27, 27, 0.5);
   border-radius: 50%;
   z-index: 2;
   position: relative;
@@ -1227,9 +1226,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  #main-container .cover-wrapper {
-    top: 50px;
-  }
   #main-container body {
     font-size: 12pt !important;
   }
@@ -1759,4 +1755,10 @@ body {
   #main-container .cover-item-4 li > div:last-child p {
     font-size: 0.8em;
   }
+}
+.mobile body {
+  background-color: black !important;
+}
+.mobile #main-container {
+  background-color: black !important;
 }

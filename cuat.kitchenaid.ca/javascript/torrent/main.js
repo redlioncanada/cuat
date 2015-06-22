@@ -18,13 +18,13 @@ if (!isMobile) {
                     var dW = $('.blender-1').width();
                     var dX = parseInt($('.cover-item-1 .desktop .col-xs-3').eq(0).width()) - dW - parseInt($('.blender-1').css('margin-right'));
                     var dY = parseInt($('.blender-1').offset().top) - parseInt($('.blender-1').css('margin-top')) + parseInt($('.blender-1').css('margin-bottom'));
-                    var pW = $('#timeline').width();
-                    var pH = $('#timeline').height();
+                    var pW = $('#timeline img').width();
+                    var pH = $('#timeline img').height();
                     var xOffset = (pW - $(window).width()) / 2;
                     var yOffset = (pH - $(window).height()) / 2;
                     var oW = pW * 0.1944921875;
                     var oX = pW * 0.334890625 - xOffset;
-                    var oY = pH * 0.21188888888889 - yOffset + 58;
+                    var oY = pH * 0.21944444444444 + $('#timeline').offset().top - 4;
 
                     var blender = $('.blender-1').clone().css({ left: dX, top: dY, width: dW, position: 'absolute', zIndex: 6049 }).removeClass('blender-1').addClass('blender-2 timeline-animation').appendTo('body');
                     $('.blender-1').hide();
@@ -162,18 +162,18 @@ if (!isMobile) {
         border: true,
         mode: 'sequence'
     });
-    var scroller = new CoverScroller({ duration: 1.5 }, timeline); //handles scrolling of page
 } else {
     //inject meta tags
     $('head').append('<meta content=\'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\' name=\'viewport\' />').append('<meta content=\'True\' name=\'HandheldFriendly\' />');
 }
+var scroller = new CoverScroller({ duration: 1.5 }, timeline); //handles scrolling of page
 var circleLoader = new circleLoader();
 
 $(document).ready(function () {
     //set header position
-    if (isPhone) {
+    /*if (isPhone) {
         $('.cover-wrapper').css('top', '50px');
-    }
+    }*/
     if (isMobile) {
         $('#loader').fadeOut();
     }
@@ -292,7 +292,6 @@ $(document).ready(function () {
         });
 
         timeline.redraw();
-        $('#timeline img').animate({ marginTop: '-3%' });
 
         scroller.on('scroll', function () {
             //make sure blender is visible when a background is being displayed
@@ -301,8 +300,12 @@ $(document).ready(function () {
                     timeline.hideBorder();
                 }
 
+                if (this.curCover != 0) {
+                    $('#timeline').show();
+                }
+
                 //force correct positioning, temp
-                if (this.curCover == 0) $('#timeline *').stop(true).animate({ marginTop: '-3%' });else if (this.curCover == 3) $('#timeline *').stop(true).animate({ marginTop: '7%' });else if (this.curCover == 4) $('#timeline *').stop(true).animate({ marginTop: '4%' });else if (this.curCover == 11) $('#timeline *').stop(true).animate({ marginTop: '-7%' });else $('#timeline *').stop(true).animate({ marginTop: '0' });
+                if (this.curCover == 2) $('#timeline *').stop(true).animate({ marginTop: '7%' });else if (this.curCover == 3) $('#timeline *').stop(true).animate({ marginTop: '7%' });else if (this.curCover == 4) $('#timeline *').stop(true).animate({ marginTop: '4%' });else if (this.curCover == 11) $('#timeline *').stop(true).animate({ marginTop: '-7%' });else $('#timeline *').stop(true).animate({ marginTop: '0' });
 
                 //play the video
                 if (self.currentFrame != 0 && !(this.curCover == 11 && timeline.currentKeyframe > 11)) {
@@ -320,7 +323,7 @@ $(document).ready(function () {
             //push to ga
             var label = $('.cover-picker li').eq(this.curCover).find('.title').text();
             if (label == '') label = 'Homepage';
-            ga('send', 'event', 'scrollDepth', 'scrolledTo', label);
+            ga('send', 'event', 'Torrent-Scroll Depth', 'Scrolled To', label);
         });
 
         scroller.on('scrollEnd', function () {
@@ -472,17 +475,17 @@ $(document).ready(function () {
                 catPrefix = 'Play';
                 catSuffix = 'Video';
                 id = $('#play-video .slick').slick('slickCurrentSlide') + direction;
-                id = $('#play-video .slick-slide').eq(id).find('h3').text().trim();
+                id = $('#play-video .slick-slide').eq(id).find('h3').text();
                 break;
             case 'show-recipe':
                 catPrefix = 'Show';
                 catSuffix = 'Recipe';
                 id = $('#show-recipe .slick').slick('slickCurrentSlide') + direction;
-                id = $('#show-recipe .slick-slide').eq(id).find('.recipe-content > h3').text().trim();
+                id = $('#show-recipe .slick-slide').eq(id).find('.recipe-content > h3').text();
                 break;
         }
 
-        ga('send', 'event', 'torrentFeatureOverlays', 'clicked' + catPrefix + id + catSuffix, 'next' + catSuffix);
+        ga('send', 'event', 'Torrent-Feature Overlays', 'Clicked ' + catPrefix + ' ' + catSuffix, catSuffix + ' ' + id);
     }
 
     //on view recipes button click, show recipe
@@ -496,7 +499,7 @@ $(document).ready(function () {
     $('.color-picker li').click(function (e) {
         //push to ga
         var label = $(this).find('.text').text();
-        ga('send', 'event', 'pickYourColor', 'click', label);
+        ga('send', 'event', 'Torrent-Pick Your Color', 'Clicked', label);
 
         var source = $(e.currentTarget).attr('data-source');
         var color = $(e.currentTarget).attr('data-color');
@@ -511,8 +514,8 @@ $(document).ready(function () {
         var _this = this;
 
         //push to ga
-        var label = $(this).find('h3').text().trim();
-        ga('send', 'event', 'torrentFeatureOverlays', 'clickedPlay' + label, 'playVideo');
+        var label = $(this).find('h3').text();
+        ga('send', 'event', 'Torrent-Feature Overlays', 'Clicked Play Video', label);
 
         if (YT) {
             var _ret2 = (function () {

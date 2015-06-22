@@ -57,10 +57,10 @@ var CoverScroller = (function (_Messenger) {
             }
         });
 
-        $('.color-picker li').mouseenter(function () {
+        $('.cover-picker li').hover(function () {
             $(this).find('div').eq(0).animate({ opacity: 1 }, 400);
-        }).mouseleave(function () {
-            if (this.curCover == 0) $(this).not('.selected').find('div').eq(0).animate({ opacity: 0.5 }, 400);
+        }, function () {
+            if (_self.curCover == 0) $(this).find('div').eq(0).animate({ opacity: 0.5 }, 400);
         });
 
         this.redraw();
@@ -71,7 +71,8 @@ var CoverScroller = (function (_Messenger) {
     _createClass(CoverScroller, [{
         key: 'redraw',
         value: function redraw() {
-            var menuSize = isPhone ? 50 : 116; //magical
+            //let menuSize = isPhone ? 50 : 116;  //magical
+            var menuSize = 116;
             var height = $(window).height() - menuSize;
             var width = $(window).width();
 
@@ -93,9 +94,9 @@ var CoverScroller = (function (_Messenger) {
             var multiplier = this.curCover === 0 ? 1 : this.curCover;
             var colorTop = this.elHeight * multiplier + this.elHeight / 2 - parseInt($('.color-picker').height()) / 2;
             if (this.curCover == 0) {
-                $('.color-picker li').not('.selected').find('div:first-child').css({ opacity: 0.5 });
+                $('.cover-picker li').not('.selected').find('div:first-child').css({ opacity: 0.5 });
             } else {
-                $('.color-picker li div:first-child').css({ opacity: 1 });
+                $('.cover-picker li div:first-child').css({ opacity: 1 });
             }
             $('.color-picker').css({ top: colorTop });
 
@@ -159,6 +160,8 @@ var CoverScroller = (function (_Messenger) {
             if (isMobile) {
                 $('.cover-wrapper').animate({ scrollTop: $('.cover-item-' + (id + 1)).offset().top });
             } else {
+                if (id == 0) $('.cover-picker li div:first-child').animate({ opacity: 0.5 }, 400);else $('.cover-picker li div:first-child').animate({ opacity: 1 }, 400);
+
                 if (this.timeline.looping) {
                     this.timeline.stopLoop(this.direction);
                 }
