@@ -124,7 +124,7 @@ function getStyleDirectoryPath()
 		CommonControllersDeclarationJS.setControllerURL('MiniShoppingCartController', getAbsoluteURL()+'AjaxQuickCartDisplay?storeId=10229&catalogId=10579&langId=-300');
 		CommonControllersDeclarationJS.setControllerURL('HeaderGreetingsController', getAbsoluteURL()+'AjaxWHRHeaderGreetingsDisplay?storeId=10229&catalogId=10579&langId=-300');
 		CommonControllersDeclarationJS.setControllerURL('MiniWishListController', getAbsoluteURL()+'AjaxMiniWishListView?storeId=10229&catalogId=10579&langId=-300');
-		MiniWishListJS.setCommonParameters('-300','10229','10579','G');
+		MiniWishListJS.setCommonParameters('-300','10229','10579','R');
 	});
 	/*Google Tag Manager dataLayer include in head*/
   dataLayer = [];
@@ -280,7 +280,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 29 21:48:13 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 06:03:37 EDT 2015] -->
   
 
 
@@ -320,7 +320,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("-1002");
+			var contextUserId = parseInt("13521132");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -437,11 +437,11 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 29 21:48:07 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 11:14:08 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
-<a href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+<a href="https://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
 		<span id="miniShopCartLeftCorner" class="left_corner">
 			CART
 		</span>
@@ -870,11 +870,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                         
                          <!--  REQ0173358-Gallery Modal on Maytag.ca, Whirlpool.ca, and Kitchenaid.ca to show videos -->
 		                       <li class="carousel-item video">
-		                          <img src="/digitalassets/VideoThumbnails/May-Maxima.jpg" name="http://www.youtube.com/watch?v=FofJyQrWgh4" class="open-module video-module" alt="/VideoThumbnails/May-Maxima.jpg" />
-	                           </li>
-                           
-		                       <li class="carousel-item video">
-		                          <img src="/digitalassets/VideoThumbnails/May-SanitizeCycle.jpg" name="http://www.youtube.com/watch?v=PcUvUrbu8B8" class="open-module video-module" alt="/VideoThumbnails/May-SanitizeCycle.jpg" />
+		                          <img src="/digitalassets/VideoThumbnails/May-PowerWash.jpg" name="http://www.youtube.com/watch?v=LrJ-Xuwd980" class="open-module video-module" alt="/VideoThumbnails/May-PowerWash.jpg" />
 	                           </li>
                            
 		                       <li class="carousel-item video">
@@ -882,7 +878,11 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	                           </li>
                            
 		                       <li class="carousel-item video">
-		                          <img src="/digitalassets/VideoThumbnails/May-PowerWash.jpg" name="http://www.youtube.com/watch?v=LrJ-Xuwd980" class="open-module video-module" alt="/VideoThumbnails/May-PowerWash.jpg" />
+		                          <img src="/digitalassets/VideoThumbnails/May-SanitizeCycle.jpg" name="http://www.youtube.com/watch?v=PcUvUrbu8B8" class="open-module video-module" alt="/VideoThumbnails/May-SanitizeCycle.jpg" />
+	                           </li>
+                           
+		                       <li class="carousel-item video">
+		                          <img src="/digitalassets/VideoThumbnails/May-Maxima.jpg" name="http://www.youtube.com/watch?v=FofJyQrWgh4" class="open-module video-module" alt="/VideoThumbnails/May-Maxima.jpg" />
 	                           </li>
                            
                               <li class="carousel-item photo">
@@ -890,11 +890,15 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                               </li>
                               
                                     <li class="carousel-item photo">
-                                          <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_.jpg" />
+                                          <img src="/digitalassets/MHW3100DW/Open_100X100_P130793_68.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_68.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Open_100X100_P130793_68.jpg" />
                                     </li>
                               
                                     <li class="carousel-item photo">
-                                          <img src="/digitalassets/MHW3100DW/Console_100X100_P130793_140.jpg" name="/digitalassets/MHW3100DW/Console_1175X1290_P130793_140.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Console_100X100_P130793_140.jpg" />
+                                          <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_38.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_38.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_38.jpg" />
+                                    </li>
+                              
+                                    <li class="carousel-item photo">
+                                          <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_.jpg" />
                                     </li>
                               
                                     <li class="carousel-item photo">
@@ -902,25 +906,22 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                     </li>
                               
                                     <li class="carousel-item photo">
+                                          <img src="/digitalassets/MHW3100DW/Open_100X100_P130793_86.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_86.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Open_100X100_P130793_86.jpg" />
+                                    </li>
+                              
+                                    <li class="carousel-item photo">
                                           <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_48.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_48.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_48.jpg" />
+                                    </li>
+                              
+                                    <li class="carousel-item photo">
+                                          <img src="/digitalassets/MHW3100DW/Console_100X100_P130793_140.jpg" name="/digitalassets/MHW3100DW/Console_1175X1290_P130793_140.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Console_100X100_P130793_140.jpg" />
                                     </li>
                               
                                     <li class="carousel-item photo">
                                           <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_58.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_58.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_58.jpg" />
                                     </li>
-                              
-                                    <li class="carousel-item photo">
-                                          <img src="/digitalassets/MHW3100DW/Open_100X100_P130793_68.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_68.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Open_100X100_P130793_68.jpg" />
-                                    </li>
-                              
-                                    <li class="carousel-item photo">
-                                          <img src="/digitalassets/MHW3100DW/Open_100X100_P130793_86.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_86.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Open_100X100_P130793_86.jpg" />
-                                    </li>
-                              
-                                    <li class="carousel-item photo">
-                                          <img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_38.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_38.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module" alt="/MHW3100DW/Pair_100X100_P130793_38.jpg" />
-                                    </li>
-                              <!-- REQ0173358-Gallery Modal Ends -->                                              
+                              <!-- REQ0173358-Gallery Modal Ends -->                
+                      
                         </ul>
                   </div>
                   <div id="carousel-next" class="carousel-controls">&nbsp;</div>
@@ -1237,12 +1238,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										UL
+										CEE Tier
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Yes
+									Tier I
 								</div>
 								
 								
@@ -1251,12 +1252,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										CEE Tier
+										UL
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Tier I
+									Yes
 								</div>
 								
 								
@@ -1300,12 +1301,96 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
+										Automatic Load Size Sensing Technology
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
 										Hoses Included
 									
 							</div>
 							
 								<div class="spec_contents_info">
 									No
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Pedestal Options
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Details|Stackable
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Energy Factor
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									3.20
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Out of Balance Sensing
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Automatic Dispense System
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Bleach, Detergent, Fabric Softener
 								</div>
 								
 								
@@ -1328,68 +1413,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Energy Factor
+										Suspension System
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									3.2
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Display Type
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Cycle Indicator Lights with Digital Time Remaining
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Out of Balance Sensing
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Motor Drive Type
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Direct Drive
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Feedback-Status Indicators
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Add Garment, Clean Washer Reminder, Delay Wash, Door Locked, Estimated Time Remaining
+									2 Springs and 4 Dampers
 								</div>
 								
 								
@@ -1426,18 +1455,32 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Details|Stackable
+										Maytag Commercial Technology Components
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Yes
+									Corrosion Resistant Springs and Dampers
 								</div>
 								
 								
 						</div>
 					
 						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Feedback-Status Indicators
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Add Garment, Clean Washer Reminder, Delay Wash, Door Locked, Estimated Time Remaining
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Fan Fresh®-Fresh Hold®
@@ -1446,76 +1489,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									No
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Suspension System
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									2 Springs and 4 Dampers
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Automatic Load Size Sensing Technology
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Pedestal Options
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Automatic Dispense System
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Bleach, Detergent, Fabric Softener
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Drum Material
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Stainless Steel
 								</div>
 								
 								
@@ -1538,12 +1511,40 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
-										Maytag Commercial Technology Components
+										Motor Drive Type
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Corrosion Resistant Springs and Dampers
+									Direct Drive
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Drum Material
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Stainless Steel
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Display Type
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Cycle Indicator Lights with Digital Time Remaining
 								</div>
 								
 								
@@ -1559,20 +1560,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Washer Option Selections
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Control Lock, Delay Wash, EcoBoost&#8482;, End of Cycle Signal, Extra Rinse
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Number of Spin Speeds
 									
 							</div>
@@ -1584,35 +1571,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Number of Wash Cycles
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									8
-								</div>
-								
-								
-						</div>
-					
 						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Number of Soil Levels
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									3
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Water Factor
@@ -1626,15 +1585,29 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Soil Selections
+										Number of Soil Levels
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									Heavy, Light, Normal
+									3
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Washer Option Selections
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Control Lock, Delay Wash, EcoBoost&#8482;, End of Cycle Signal, Extra Rinse
 								</div>
 								
 								
@@ -1657,12 +1630,40 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
+										Soil Selections
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Heavy, Light, Normal
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
 										Temperature Combinations
 									
 							</div>
 							
 								<div class="spec_contents_info">
 									Cold, Hot, Warm
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Number of Wash Cycles
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									8
 								</div>
 								
 								
@@ -1678,12 +1679,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Depth
+										Depth With Door Open 90 Degree
 									
 							</div>
 							
 								<div class="spec_contents_info">
-									32 15/16
+									52 15/16
 								</div>
 								
 								
@@ -1706,40 +1707,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Width
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									27
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Minimum Height
 									
 							</div>
 							
 								<div class="spec_contents_info">
 									38 3/4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Depth With Door Open 90 Degree
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									52 15/16
 								</div>
 								
 								
@@ -1754,6 +1727,34 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									38 3/4
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Width
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									27
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Depth
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									32 15/16
 								</div>
 								
 								
@@ -1815,28 +1816,28 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                             <div class="manual_item top">
                                       
                         
-                        <h3>Dimension Guide</h3>
-                        <p>Detailed dimensions of your new appliance with space requirements for the area surrounding it.</p>
+                        <h3>Energy Guide</h3>
+                        <p>Information about the efficiency of your appliance, including energy consumption and annual costs to operate.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/MHW3100DW/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                        <p><a href="/digitalassets/MHW3100DW/Energy Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
                                             <div class="manual_item top">
-                                      
-                        
-                        <h3>Use & Care Guide</h3>
-                        <p>Comprehensive information about your new appliance - from getting started to cleaning and maintenance.</p>
-			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/MHW3100DW/Use and Care_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
-                  		</div>
-                  
-                                            <div class="manual_item">
                                       
                         
                         <h3>Installation Guide</h3>
                         <p>Instructions for unpacking and installing your appliance, including electrical requirements and necessary tools.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
                         <p><a href="/digitalassets/MHW3100DW/Installation Instruction_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                  		</div>
+                  
+                                            <div class="manual_item">
+                                      
+                        
+                        <h3>Dimension Guide</h3>
+                        <p>Detailed dimensions of your new appliance with space requirements for the area surrounding it.</p>
+			<!--Start:for qc231--><!--End:for qc231-->
+                        <p><a href="/digitalassets/MHW3100DW/Dimension Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
                                             <div class="manual_item">
@@ -1851,10 +1852,10 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
                                             <div class="manual_item bottom">
                                       
                         
-                        <h3>Energy Guide</h3>
-                        <p>Information about the efficiency of your appliance, including energy consumption and annual costs to operate.</p>
+                        <h3>Use & Care Guide</h3>
+                        <p>Comprehensive information about your new appliance - from getting started to cleaning and maintenance.</p>
 			<!--Start:for qc231--><!--End:for qc231-->
-                        <p><a href="/digitalassets/MHW3100DW/Energy Guide_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
+                        <p><a href="/digitalassets/MHW3100DW/Use and Care_EN.pdf" class="pdf_manual" onclick="">Download</a></p>
                   		</div>
                   
             <div class="manual_item bottom">
@@ -2252,13 +2253,13 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	<div id="product-detail-legal">
 		<ul>
 			
-					<li>(4) Bacteria tested were K. pneumonia, P. aureginosa and S. aureus.</li>
-				
 					<li>(2) See warranty for details.</li>
 				
-					<li>(3) Models MHW8100D, MHW7100D, MHW5100D. Based on 20-lb load, among leading front load brands, PowerWash® cycle vs. comparable cycles and default settings.</li>
+					<li>(4) Bacteria tested were K. pneumonia, P. aureginosa and S. aureus.</li>
 				
 					<li>(1) Models MHW5400D, MHW4300D, MHW4100D, MHW3100D. Based on 20-lb load, among leading front load brands, 4.2 cu. ft. capacity or less, PowerWash® cycle vs. comparable cycles and default settings.</li>
+				
+					<li>(3) Models MHW8100D, MHW7100D, MHW5100D. Based on 20-lb load, among leading front load brands, PowerWash® cycle vs. comparable cycles and default settings.</li>
 				
 		</ul>  
 	</div>
@@ -2269,7 +2270,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 		<div id="compare-tray-container" class="pdp">
 			<!-- WHRCompareTrayDisplay.jspf BEGIN -->
 
-<input type="hidden" id="categoryId" value="102110"/>
+<input type="hidden" id="categoryId" value="129110"/>
 <input type="hidden" id="tabCategoryId" value=""/>
 
 
@@ -2294,7 +2295,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	<div id="compare-tray-button">Compare</div>
 </div>
 
-<input type="hidden" id="compareTrayCompareLink" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=102110&langId=-300&storeId=10229"/>
+<input type="hidden" id="compareTrayCompareLink" value="http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRCompareProductsDisplay?catalogId=10579&categoryId=129110&langId=-300&storeId=10229"/>
 
 <!-- WHRCompareTrayDisplay.jspf END -->
 		</div>
@@ -2349,12 +2350,12 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								</div>
 							
 				<div id="pdp-cta-compare">
-					<label id="complist_1505668" class="label_check c_off" for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'102110','1505668', 'list', 'PDP');">
+					<label id="complist_1505668" class="label_check c_off" for="sample-check" onmousedown="javascript:compareProductJS.addProductToCompare(this,'129110','1505668', 'list', 'PDP');">
 						<input type="checkbox" name="sample-check"  id="addToCompare_1505668" value="1505589"/>
 					</label>
-					<a id="btn_complist_1505668" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'102110','1505668', 'list', 'PDP');" class="compare">Add to Compare</a> 
+					<a id="btn_complist_1505668" href="javascript:void(0)" onclick="javascript:compareProductJS.addProductToCompare(this,'129110','1505668', 'list', 'PDP');" class="compare">Add to Compare</a> 
 				</div>
-				<input type="hidden" id="compareCatGroupId" value="102110"/>
+				<input type="hidden" id="compareCatGroupId" value="129110"/>
 				<input type="hidden" id="compareCatEntId" value="1505668"/>
 			
 						</div>				
@@ -2400,11 +2401,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				
 				
 						<li class="module-item carousel-item video">
-							<img src="/digitalassets/VideoThumbnails/May-Maxima.jpg" name="http://www.youtube.com/watch?v=FofJyQrWgh4" class="open-module video-module" alt="/VideoThumbnails/May-Maxima.jpg" />
-						</li>
-					
-						<li class="module-item carousel-item video">
-							<img src="/digitalassets/VideoThumbnails/May-SanitizeCycle.jpg" name="http://www.youtube.com/watch?v=PcUvUrbu8B8" class="open-module video-module" alt="/VideoThumbnails/May-SanitizeCycle.jpg" />
+							<img src="/digitalassets/VideoThumbnails/May-PowerWash.jpg" name="http://www.youtube.com/watch?v=LrJ-Xuwd980" class="open-module video-module" alt="/VideoThumbnails/May-PowerWash.jpg" />
 						</li>
 					
 						<li class="module-item carousel-item video">
@@ -2412,7 +2409,11 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						</li>
 					
 						<li class="module-item carousel-item video">
-							<img src="/digitalassets/VideoThumbnails/May-PowerWash.jpg" name="http://www.youtube.com/watch?v=LrJ-Xuwd980" class="open-module video-module" alt="/VideoThumbnails/May-PowerWash.jpg" />
+							<img src="/digitalassets/VideoThumbnails/May-SanitizeCycle.jpg" name="http://www.youtube.com/watch?v=PcUvUrbu8B8" class="open-module video-module" alt="/VideoThumbnails/May-SanitizeCycle.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item video">
+							<img src="/digitalassets/VideoThumbnails/May-Maxima.jpg" name="http://www.youtube.com/watch?v=FofJyQrWgh4" class="open-module video-module" alt="/VideoThumbnails/May-Maxima.jpg" />
 						</li>
 					
 					
@@ -2421,11 +2422,15 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 					</li>
 					
 						<li class="module-item carousel-item photo">
-							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_.jpg" />
+							<img src="/digitalassets/MHW3100DW/Open_100X100_P130793_68.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_68.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Open_100X100_P130793_68.jpg" />
 						</li>
 					
 						<li class="module-item carousel-item photo">
-							<img src="/digitalassets/MHW3100DW/Console_100X100_P130793_140.jpg" name="/digitalassets/MHW3100DW/Console_1175X1290_P130793_140.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Console_100X100_P130793_140.jpg" />
+							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_38.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_38.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_38.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_.jpg" />
 						</li>
 					
 						<li class="module-item carousel-item photo">
@@ -2433,26 +2438,22 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						</li>
 					
 						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/MHW3100DW/Open_100X100_P130793_86.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_86.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Open_100X100_P130793_86.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
 							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_48.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_48.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_48.jpg" />
+						</li>
+					
+						<li class="module-item carousel-item photo">
+							<img src="/digitalassets/MHW3100DW/Console_100X100_P130793_140.jpg" name="/digitalassets/MHW3100DW/Console_1175X1290_P130793_140.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Console_100X100_P130793_140.jpg" />
 						</li>
 					
 						<li class="module-item carousel-item photo">
 							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_58.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_58.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_58.jpg" />
 						</li>
 					
-						<li class="module-item carousel-item photo">
-							<img src="/digitalassets/MHW3100DW/Open_100X100_P130793_68.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_68.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Open_100X100_P130793_68.jpg" />
-						</li>
 					
-						<li class="module-item carousel-item photo">
-							<img src="/digitalassets/MHW3100DW/Open_100X100_P130793_86.jpg" name="/digitalassets/MHW3100DW/Open_1175X1290_P130793_86.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Open_100X100_P130793_86.jpg" />
-						</li>
-					
-						<li class="module-item carousel-item photo">
-							<img src="/digitalassets/MHW3100DW/Pair_100X100_P130793_38.jpg" name="/digitalassets/MHW3100DW/Pair_1175X1290_P130793_38.jpg|Maytag Maxima® Front Load Washing Machine with Large Capacity and PowerWash® Cycle 4.8 cu. ft. I.E.C." class="open-module photo-module" alt="/MHW3100DW/Pair_100X100_P130793_38.jpg" />
-						</li>
-						
-
 				</ul>
 			</div>
 			<div id="carousel-next" class="carousel-controls">&nbsp;</div>
@@ -2473,7 +2474,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 		</div>
 		<br clear="all" />
 	</div>
-	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 29 21:48:08 EDT 2015] -->
+	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 06:03:38 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">
