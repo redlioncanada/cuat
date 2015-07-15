@@ -3,7 +3,7 @@ Scrapes cuat for all 3 brands, English and French, desktop and mobile. Pushes to
 
 
 #Run  
-run bash git-update.sh
+bash git-update.sh
 
 #Params  
 -username or -u, required, git username  
