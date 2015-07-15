@@ -9,4 +9,8 @@ bash git-update.sh
 -user or -u, required, git username  
 -password or -p, required, git password  
 -path or -a, required, target path
-pushonly, optional, skips scraping
+pushonly, optional, skips scraping  
+
+#Requires
+git
+wget
