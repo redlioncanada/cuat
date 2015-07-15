@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:25:23 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:43 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1040,17 +1049,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">S'attache à la prise du batteur sur socle</span>
+					<span class="header_desc">Système ExactSliceTM exclusif</span>
 				</h4>
-				<p>et utilise la puissance du moteur de ce dernier pour fonctionner.</p>
+				<p></p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Convient à tout modèle de batteur sur socle</span>
+					<span class="header_desc">S'attache à la prise du batteur sur socle</span>
 				</h4>
-				<p></p>
+				<p>et utilise la puissance du moteur de ce dernier pour fonctionner.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1058,10 +1067,25 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4>Tranchez des dés uniformes de 8 mm</h4>
-							<p></p>
+							<h4>S'attache à la prise du batteur sur socle</h4>
+							<p>et utilise la puissance du moteur de ce dernier pour fonctionner.</p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Convient à tout modèle de batteur sur socle</h4>
+							<p></p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Convient à tout modèle de batteur sur socle</h4>
+							<p></p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Tranchez des dés uniformes de 8 mm</h4>
+							<p></p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Tranchez de fin à épais</h4>
 							<p></p>
@@ -1071,19 +1095,19 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							<h4>Râpez pour une mouture fine ou grossière</h4>
 							<p></p>
 						</div>
-					
-						<div class="feature">	
-							<h4>Tranchez en julienne avec des lamelles longues et fine.</h4>
-							<p></p>
-						</div>
 						</div>												
 					
 						<div id="right-col">
 						<div class="feature first">	
-							<h4>Étui de rangement conçu pour contenir l'ensemble de tranchage en dés, les disques pour émincer/râper, pour  julienne et pour trancher</h4>
+							<h4>Tranchez en julienne avec des lamelles longues et fine.</h4>
 							<p></p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Étui de rangement conçu pour contenir l'ensemble de tranchage en dés, les disques pour émincer/râper, pour  julienne et pour trancher</h4>
+							<p></p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Wide Feed Tube</h4>
 							<p>Accommodates various sizes of food for less prep work.</p>
@@ -1092,6 +1116,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<div class="feature">	
 							<h4>KSM2FPA comprend</h4>
 							<p>Disque pour trancher, disque pour râper, ensemble de tranchage en dés, disque pour julienne, étui de rangement</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Garantie de remplacement sans souci d'un an</h4>
+							<p>Garantie de remplacement sans souci d'un an</p>
 						</div>
 					
 						<div class="feature">	
@@ -1248,7 +1277,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				19,99 $
+                  				24,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1497,7 +1526,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

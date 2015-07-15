@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:25:26 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:46 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -947,7 +956,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="Acier Inoxydable" title="Acier Inoxydable" src="/digitalassets/ColorBars/SS-off.gif" 
-											    name="KCO273SS|Acier Inoxydable|/digitalassets/KCO273SS/Standalone_1175X1290.jpg|$349,99|$349,99"									
+											    name="KCO273SS|Acier Inoxydable|/digitalassets/KCO273SS/Standalone_1175X1290.jpg|$379,99|$379,99"									
 												onclick="javascript:whereToBuy('KCO273SS');categoryDisplayJS.setSelectedAttribute('Color','Acier Inoxydable');javascript:categoryDisplayJS.setCartDisplay('Color_Acier Inoxydable','2100420');" />
 											
 										<script type="text/javascript">
@@ -1013,23 +1022,45 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Réglages mémorisés pour réchaud, cuisson, pizza, Asado, grillage, rôtisserie, biscuits, bagel et réchaud</span>
+					<span class="header_desc">Performance des fours traditionnels</span>
 				</h4>
-				<p>Servez le parfait rôti de boeuf, cuit à la perfection.  Savourez une pizza croustillante, faites rôtir le fromage sur les pâtes au four, conservez les aliments au chaud et faites griller six tranches de pain à la fois.</p>
+				<p>Utilisez votre four de comptoir pour cuire la pizza, faire rôtir les plats d'accompagnement, conserver les aliments chauds et griller le pain.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Modèle KCO273SS comprenant</span>
+					<span class="header_desc">Réglages mémorisés pour réchaud, cuisson, pizza, Asado, grillage, rôtisserie, biscuits, bagel et réchaud</span>
 				</h4>
-				<p>Une lèchefrite de 12 po à revêtement antiadhésif, une grille de rôtissage de 12 po, 1 clayette à refroidir et un platau d'égouttage.</p>
+				<p>Servez le parfait rôti de boeuf, cuit à la perfection.  Savourez une pizza croustillante, faites rôtir le fromage sur les pâtes au four, conservez les aliments au chaud et faites griller six tranches de pain à la fois.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
 			<h3>Caractéristiques additionnelles...</h3>
 			
 						<div id="left-col">
+						<div class="feature first">	
+							<h4>Réglages mémorisés pour réchaud, cuisson, pizza, Asado, grillage, rôtisserie, biscuits, bagel et réchaud</h4>
+							<p>Servez le parfait rôti de boeuf, cuit à la perfection.  Savourez une pizza croustillante, faites rôtir le fromage sur les pâtes au four, conservez les aliments au chaud et faites griller six tranches de pain à la fois.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>Modèle KCO273SS comprenant</h4>
+							<p>Une lèchefrite de 12 po à revêtement antiadhésif, une grille de rôtissage de 12 po, 1 clayette à refroidir et un platau d'égouttage.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Modèle KCO273SS comprenant</h4>
+							<p>Une lèchefrite de 12 po à revêtement antiadhésif, une grille de rôtissage de 12 po, 1 clayette à refroidir et un platau d'égouttage.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Capacité de 12 pouces</h4>
+							<p>Capacité suffisante pour cuire 2 pizzas de 12 po ou des poulets de cornouailles.  Cavité de four possédant un revêtement antiadhésif facile à nettoyer.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
 						<div class="feature first">	
 							<h4>Capacité de 12 pouces</h4>
 							<p>Capacité suffisante pour cuire 2 pizzas de 12 po ou des poulets de cornouailles.  Cavité de four possédant un revêtement antiadhésif facile à nettoyer.</p>
@@ -1039,16 +1070,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							<h4>Minuterie de 60 minutes</h4>
 							<p>Minuterie avec signal sonore vous rappelant que la cuisson est terminée.</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>Intérieur antiadhésif</h4>
 							<p></p>
 						</div>	
-						
-							</div>
-						
+						</div>									
+					
 		</div> 
 </div>
 <div class="product_tab_section_bottom"></div>
@@ -1436,33 +1464,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/"><img class="image_product_bootom" src="/digitalassets/KGM/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Moulin à grains en métal" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">KitchenAid® Moulin à grains en métal</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Moulin à grains en métal</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				189,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">Détails</a> </p>
-	             </li>
-	 
-		
-				<li class="recently_product " sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGSSA]-2100841/KGSSA/"><img class="image_product_bootom" src="/digitalassets/KGSSA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Jeu d’accessoires  2 pour batteur sur socle KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -1489,16 +1490,43 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	             </li>
 	 
 		
-				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/"><img class="image_product_bootom" src="/digitalassets/KSM1JA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Extracteur de jus et de sauce" /></a>
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/"><img class="image_product_bootom" src="/digitalassets/KGM/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Moulin à grains en métal" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/">KitchenAid® Extracteur de jus et de sauce</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">KitchenAid® Moulin à grains en métal</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Extracteur de jus et de sauce</p>
+	                	<p class="recently_product_id">KitchenAid® Moulin à grains en métal</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				199,99 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product last" sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KRAV]-2101069/KRAV/"><img class="image_product_bootom" src="/digitalassets/KRAV/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Machine à raviolis KitchenAid®" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KRAV]-2101069/KRAV/">KitchenAid® Machine à raviolis KitchenAid®</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® Machine à raviolis KitchenAid®</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1512,7 +1540,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KRAV]-2101069/KRAV/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -1534,7 +1562,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											349,99 $  
+											379,99 $  
 											</span>
 										</p>
 										
@@ -1551,7 +1579,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="Acier Inoxydable"
 																			id="KCO273SS"
-																			title="$349,99">Acier Inoxydable</option>
+																			title="$379,99">Acier Inoxydable</option>
 																	
 											</select>
 										</div>
@@ -1698,9 +1726,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '349,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '349,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102203', 'KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '349,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '379,99 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '379,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102203', 'KCO273SS', 'KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po', 'Fours de comptoir', 'KitchenAid', 'Acier Inoxydable', '379,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1714,7 +1742,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

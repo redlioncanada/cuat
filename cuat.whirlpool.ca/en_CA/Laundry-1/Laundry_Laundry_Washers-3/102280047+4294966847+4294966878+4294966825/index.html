@@ -237,7 +237,7 @@ var currentprotocol = document.location.protocol;
 			})(window,document,'script','dataLayer','GTM-P3TXNP');</script>
 			<!-- End Google Tag Manager -->
 	<input type="hidden" id="callReadyCOmpare" name="callReadyCOmpare" value="false" />
-<!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 16:18:25 EDT 2015] -->
+<!-- GENERATED: [WHRORNCategoryListDisplay, Wed Jul 15 11:01:16 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -335,6 +335,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -346,9 +348,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -362,7 +371,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 12:27:28 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Jul 15 11:01:14 EDT 2015] -->
   
 
 
@@ -519,7 +528,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 12:27:28 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Jul 15 11:01:07 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1408,7 +1417,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 		<div id="refrigerators_content" class="endeca_content">	
 		<!--QC146: Start json object for colour swatch display -->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Diamond Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDU\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDU&#034;,&#034;itemId&#034;:&#034;1304825&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDU]-1304784\/WFW97HEDU\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,699.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDW&#034;,&#034;itemId&#034;:&#034;1304826&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDW]-1304784\/WFW97HEDW\/&#034;}},{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,699.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDC&#034;,&#034;itemId&#034;:&#034;1304824&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDC]-1304784\/WFW97HEDC\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDBD\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDBD&#034;,&#034;itemId&#034;:&#034;1304823&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDBD]-1304784\/WFW97HEDBD\/&#034;}}],&#034;productId&#034;:&#034;1304784&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Diamond Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDU\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDU&#034;,&#034;itemId&#034;:&#034;1304759&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDU]-1304736\/WFW95HEDU\/&#034;}},{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,549.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDC&#034;,&#034;itemId&#034;:&#034;1304758&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDC]-1304736\/WFW95HEDC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,549.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDW&#034;,&#034;itemId&#034;:&#034;1304760&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDW]-1304736\/WFW95HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304736&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,449.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW87HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW87HEDC&#034;,&#034;itemId&#034;:&#034;1304756&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW87HEDC]-1304734\/WFW87HEDC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,449.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW87HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW87HEDW&#034;,&#034;itemId&#034;:&#034;1304757&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW87HEDW]-1304734\/WFW87HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304734&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,349.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8500DC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8500DC&#034;,&#034;itemId&#034;:&#034;1305052&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8500DC]-1305043\/WTW8500DC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,349.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8500DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8500DW&#034;,&#034;itemId&#034;:&#034;1305053&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8500DW]-1305043\/WTW8500DW\/&#034;}}],&#034;productId&#034;:&#034;1305043&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8000DW&#034;,&#034;itemId&#034;:&#034;1305191&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8000DW]-1305173\/WTW8000DW\/&#034;}}],&#034;productId&#034;:&#034;1305173&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW81HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW81HEDW&#034;,&#034;itemId&#034;:&#034;1304822&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW81HEDW]-1304782\/WFW81HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304782&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW72HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW72HEDW&#034;,&#034;itemId&#034;:&#034;1304754&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW72HEDW]-1304732\/WFW72HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304732&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,049.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW7000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW7000DW&#034;,&#034;itemId&#034;:&#034;1305190&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW7000DW]-1305172\/WTW7000DW\/&#034;}}],&#034;productId&#034;:&#034;1305172&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$999.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFC7500VW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFC7500VW&#034;,&#034;itemId&#034;:&#034;1303848&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFC7500VW]-1301714\/WFC7500VW\/&#034;}}],&#034;productId&#034;:&#034;1301714&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW5000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW5000DW&#034;,&#034;itemId&#034;:&#034;1304982&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW5000DW]-1304972\/WTW5000DW\/&#034;}}],&#034;productId&#034;:&#034;1304972&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW4915EW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW4915EW&#034;,&#034;itemId&#034;:&#034;1305235&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW4915EW]-1305203\/WTW4915EW\/&#034;}}],&#034;productId&#034;:&#034;1305203&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Diamond Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDU\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDU&#034;,&#034;itemId&#034;:&#034;1304825&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDU]-1304784\/WFW97HEDU\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,699.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDW&#034;,&#034;itemId&#034;:&#034;1304826&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDW]-1304784\/WFW97HEDW\/&#034;}},{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,699.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDC&#034;,&#034;itemId&#034;:&#034;1304824&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDC]-1304784\/WFW97HEDC\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW97HEDBD\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW97HEDBD&#034;,&#034;itemId&#034;:&#034;1304823&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW97HEDBD]-1304784\/WFW97HEDBD\/&#034;}}],&#034;productId&#034;:&#034;1304784&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Diamond Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDU\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDU&#034;,&#034;itemId&#034;:&#034;1304759&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDU]-1304736\/WFW95HEDU\/&#034;}},{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,549.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDC&#034;,&#034;itemId&#034;:&#034;1304758&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDC]-1304736\/WFW95HEDC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,549.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW95HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW95HEDW&#034;,&#034;itemId&#034;:&#034;1304760&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW95HEDW]-1304736\/WFW95HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304736&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,449.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW87HEDC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW87HEDC&#034;,&#034;itemId&#034;:&#034;1304756&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW87HEDC]-1304734\/WFW87HEDC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,449.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW87HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW87HEDW&#034;,&#034;itemId&#034;:&#034;1304757&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW87HEDW]-1304734\/WFW87HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304734&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Chrome Shadow&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,349.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8500DC\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8500DC&#034;,&#034;itemId&#034;:&#034;1305052&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8500DC]-1305043\/WTW8500DC\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,349.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8500DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8500DW&#034;,&#034;itemId&#034;:&#034;1305053&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8500DW]-1305043\/WTW8500DW\/&#034;}}],&#034;productId&#034;:&#034;1305043&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW8000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW8000DW&#034;,&#034;itemId&#034;:&#034;1305191&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW8000DW]-1305173\/WTW8000DW\/&#034;}}],&#034;productId&#034;:&#034;1305173&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW81HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW81HEDW&#034;,&#034;itemId&#034;:&#034;1304822&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW81HEDW]-1304782\/WFW81HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304782&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFW72HEDW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFW72HEDW&#034;,&#034;itemId&#034;:&#034;1304754&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFW72HEDW]-1304732\/WFW72HEDW\/&#034;}}],&#034;productId&#034;:&#034;1304732&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,049.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW7000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW7000DW&#034;,&#034;itemId&#034;:&#034;1305190&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW7000DW]-1305172\/WTW7000DW\/&#034;}}],&#034;productId&#034;:&#034;1305172&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$999.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WFC7500VW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WFC7500VW&#034;,&#034;itemId&#034;:&#034;1303848&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WFC7500VW]-1301714\/WFC7500VW\/&#034;}}],&#034;productId&#034;:&#034;1301714&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW5000DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW5000DW&#034;,&#034;itemId&#034;:&#034;1304982&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW5000DW]-1304972\/WTW5000DW\/&#034;}}],&#034;productId&#034;:&#034;1304972&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WTW4915EW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WTW4915EW&#034;,&#034;itemId&#034;:&#034;1305235&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WTW4915EW]-1305203\/WTW4915EW\/&#034;}}],&#034;productId&#034;:&#034;1305203&#034;}]
 			</div>
 		<!--QC146: End json object for colour swatch display -->
 		  <ul class="endeca_aplliancesList">
@@ -1447,6 +1456,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFW97HEDW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1492,9 +1504,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,699.99</li>
                     
-		<div class="pr-category" id="pr-category-WFW97HEDW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFW97HEDW]-1304784/WFW97HEDW/#ratingsandreviews">
-				<div class="pr-snippet-WFW97HEDW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1550,6 +1562,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFW95HEDU
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1595,9 +1610,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,649.99</li>
                     
-		<div class="pr-category" id="pr-category-WFW95HEDU">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFW95HEDU]-1304736/WFW95HEDU/#ratingsandreviews">
-				<div class="pr-snippet-WFW95HEDU"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1651,6 +1666,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFW87HEDW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1696,9 +1714,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,449.99</li>
                     
-		<div class="pr-category" id="pr-category-WFW87HEDW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFW87HEDW]-1304734/WFW87HEDW/#ratingsandreviews">
-				<div class="pr-snippet-WFW87HEDW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1752,6 +1770,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WTW8500DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1797,9 +1818,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,349.99</li>
                     
-		<div class="pr-category" id="pr-category-WTW8500DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WTW8500DW]-1305043/WTW8500DW/#ratingsandreviews">
-				<div class="pr-snippet-WTW8500DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1851,6 +1872,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WTW8000DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1896,9 +1920,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,149.99</li>
                     
-		<div class="pr-category" id="pr-category-WTW8000DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WTW8000DW]-1305173/WTW8000DW/#ratingsandreviews">
-				<div class="pr-snippet-WTW8000DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1950,6 +1974,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFW81HEDW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1995,9 +2022,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,149.99</li>
                     
-		<div class="pr-category" id="pr-category-WFW81HEDW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFW81HEDW]-1304782/WFW81HEDW/#ratingsandreviews">
-				<div class="pr-snippet-WFW81HEDW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2049,6 +2076,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFW72HEDW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2094,9 +2124,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,099.99</li>
                     
-		<div class="pr-category" id="pr-category-WFW72HEDW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFW72HEDW]-1304732/WFW72HEDW/#ratingsandreviews">
-				<div class="pr-snippet-WFW72HEDW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2148,6 +2178,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WTW7000DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2193,9 +2226,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,049.99</li>
                     
-		<div class="pr-category" id="pr-category-WTW7000DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WTW7000DW]-1305172/WTW7000DW/#ratingsandreviews">
-				<div class="pr-snippet-WTW7000DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2247,6 +2280,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WFC7500VW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2292,9 +2328,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$999.99</li>
                     
-		<div class="pr-category" id="pr-category-WFC7500VW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WFC7500VW]-1301714/WFC7500VW/#ratingsandreviews">
-				<div class="pr-snippet-WFC7500VW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2346,6 +2382,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WTW5000DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2391,9 +2430,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$899.99</li>
                     
-		<div class="pr-category" id="pr-category-WTW5000DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WTW5000DW]-1304972/WTW5000DW/#ratingsandreviews">
-				<div class="pr-snippet-WTW5000DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2445,6 +2484,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WTW4915EW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2490,9 +2532,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$799.99</li>
                     
-		<div class="pr-category" id="pr-category-WTW4915EW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/laundry-1/laundry-2/washers-3/-[WTW4915EW]-1305203/WTW4915EW/#ratingsandreviews">
-				<div class="pr-snippet-WTW4915EW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2570,7 +2612,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 </div>
 
 
-<input type="hidden" id="prPLPArray" value=",WFW97HEDW,WFW95HEDU,WFW87HEDW,WTW8500DW,WTW8000DW,WFW81HEDW,WFW72HEDW,WTW7000DW,WFC7500VW,WTW5000DW,WTW4915EW"/>
+<input type="hidden" id="prPLPArray" value=""/>
 
 		
 		</div>
@@ -2580,7 +2622,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 12:27:29 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Jul 15 11:01:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">
@@ -2980,9 +3022,6 @@ function () { overTooltip = false; }
 </script>
 <script type="text/javascript">
 
-    var pr_locale = "en_CA";
-    var pr_zip_location = "https://cdn.powerreviews.com/repos/17647/pr";
-    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
 
     $(document).ready(function () {
         function fireFloodlightOnLoadAllPages(cat) {

@@ -97,9 +97,7 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:454)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:516)
 	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:307)
-	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.ready(HttpInboundLink.java:278)
-	at com.ibm.ws.tcp.channel.impl.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:214)
-	at com.ibm.ws.tcp.channel.impl.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:113)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:84)
 	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
 	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
 	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
@@ -110,7 +108,7 @@ org.apache.jasper.el.JspELException: /NARStorefrontAssetStore/ShoppingArea/Catal
 	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1662)
 Caused by: com.ibm.commerce.exception.ECApplicationException: Product "2104401" is not viewable.
 	at com.whirlpool.commerce.catalog.beans.WHRProductDataBean.getEntitledItems(WHRProductDataBean.java:901)
-	at sun.reflect.GeneratedMethodAccessor1733.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor698.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
 	at java.lang.reflect.Method.invoke(Method.java:611)
 	at javax.el.BeanELResolver.getValue(BeanELResolver.java:65)
@@ -118,7 +116,7 @@ Caused by: com.ibm.commerce.exception.ECApplicationException: Product "2104401" 
 	at org.apache.el.parser.AstValue.getValue(AstValue.java:102)
 	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:263)
 	at org.apache.jasper.el.JspValueExpression.getValue(JspValueExpression.java:100)
-	... 75 more
+	... 73 more
 -->
 
 

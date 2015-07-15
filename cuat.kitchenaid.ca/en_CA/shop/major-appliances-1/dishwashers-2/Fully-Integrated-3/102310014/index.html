@@ -226,7 +226,7 @@ var currentprotocol = document.location.protocol;
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-TR4MSL');</script>
-			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 17:47:28 EDT 2015] -->
+			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Mon Jul 13 09:53:23 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -315,6 +315,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -326,9 +328,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -342,7 +351,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:47:17 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 06:03:08 EDT 2015] -->
   
 
 
@@ -365,7 +374,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -499,7 +508,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 17:52:39 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:33:30 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -842,7 +851,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	EndecaHelperJS.setPageSize('12');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Fri Jul 03 17:47:28 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Mon Jul 13 09:53:24 EDT 2015] --> 
 <!--Added to fix countertop accessory color filter issue  -->
 <div id="main-container" class="product-listing">	
 <div id="product_list_masthead" class="side-column">
@@ -930,6 +939,55 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 												<label>ProWash Cycle
 												</label>
 		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000786" type="checkbox" onclick="setCurrentId('refine_105000786');EndecaHelperJS.refreshProductsByFilter('102310014+105000786')"  >
+												<label>Dynamic Wash Arm
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000787" type="checkbox" onclick="setCurrentId('refine_105000787');EndecaHelperJS.refreshProductsByFilter('102310014+105000787')"  >
+												<label>Clean Water Wash System
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000818" type="checkbox" onclick="setCurrentId('refine_105000818');EndecaHelperJS.refreshProductsByFilter('102310014+105000818')"  >
+												<label>ProScrub&#8482; Upper Option
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000791" type="checkbox" onclick="setCurrentId('refine_105000791');EndecaHelperJS.refreshProductsByFilter('102310014+105000791')"  >
+												<label>Advanced ProDry&#8482; Option
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000793" type="checkbox" onclick="setCurrentId('refine_105000793');EndecaHelperJS.refreshProductsByFilter('102310014+105000793')"  >
+												<label>Third Level Rack
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000794" type="checkbox" onclick="setCurrentId('refine_105000794');EndecaHelperJS.refreshProductsByFilter('102310014+105000794')"  >
+												<label>SatinGlide Max Rails
+												</label>
+		                      			</div>	                      
+		                    			                    				
+										<div class="product-filtering-option">
+												
+												<input id="refine_105000795" type="checkbox" onclick="setCurrentId('refine_105000795');EndecaHelperJS.refreshProductsByFilter('102310014+105000795')"  >
+												<label>Fold-Shelf with Stemware Holder
+												</label>
+		                      			</div>	                      
 		                    		
 								</div>
 							
@@ -998,7 +1056,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
    </div>
 </div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Fri Jul 03 17:47:28 EDT 2015] --> 	
+<!-- END: [WHRORNProductListFilterOptions, Mon Jul 13 09:53:24 EDT 2015] --> 	
 	<div class="main-column">
 	    <div class="espot-listing-bottom-container">
           	<div class="espot-listing-bottom-content">
@@ -1051,7 +1109,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 		<div class="product-list-table-container">	
 		<!-- REQ0165238: Color Swatches on Kitchenaid.ca START-->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black Stainless&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$2,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM704EBS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM704EBS&#034;,&#034;itemId&#034;:&#034;33040&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM704EBS]-2104804\/KDTM704EBS\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$2,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM704ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM704ESS&#034;,&#034;itemId&#034;:&#034;2104827&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM704ESS]-2104804\/KDTM704ESS\/&#034;}}],&#034;productId&#034;:&#034;2104804&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black Stainless&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$2,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EBS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EBS&#034;,&#034;itemId&#034;:&#034;33039&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EBS]-12004\/KDTM404EBS\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EBL&#034;,&#034;itemId&#034;:&#034;12012&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EBL]-12004\/KDTM404EBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404ESS&#034;,&#034;itemId&#034;:&#034;12013&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404ESS]-12004\/KDTM404ESS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EWH&#034;,&#034;itemId&#034;:&#034;12014&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EWH]-12004\/KDTM404EWH\/&#034;}}],&#034;productId&#034;:&#034;12004&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Panel Ready&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM504EPA\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM504EPA&#034;,&#034;itemId&#034;:&#034;2104826&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM504EPA]-2104803\/KDTM504EPA\/&#034;}}],&#034;productId&#034;:&#034;2104803&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254EBL&#034;,&#034;itemId&#034;:&#034;12008&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254EBL]-12002\/KDTE254EBL\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254EWH&#034;,&#034;itemId&#034;:&#034;12010&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254EWH]-12002\/KDTE254EWH\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254ESS&#034;,&#034;itemId&#034;:&#034;12009&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254ESS]-12002\/KDTE254ESS\/&#034;}}],&#034;productId&#034;:&#034;12002&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,499.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM354ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM354ESS&#034;,&#034;itemId&#034;:&#034;12011&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM354ESS]-12003\/KDTM354ESS\/&#034;}}],&#034;productId&#034;:&#034;12003&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EBL&#034;,&#034;itemId&#034;:&#034;12005&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EBL]-12001\/KDTE204EBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204ESS&#034;,&#034;itemId&#034;:&#034;12006&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204ESS]-12001\/KDTE204ESS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EWH&#034;,&#034;itemId&#034;:&#034;12007&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EWH]-12001\/KDTE204EWH\/&#034;}}],&#034;productId&#034;:&#034;12001&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Panel Ready&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EPA\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EPA&#034;,&#034;itemId&#034;:&#034;2104825&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EPA]-2104802\/KDTE204EPA\/&#034;}}],&#034;productId&#034;:&#034;2104802&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104EBL&#034;,&#034;itemId&#034;:&#034;2104822&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104EBL]-2104801\/KDTE104EBL\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104EWH&#034;,&#034;itemId&#034;:&#034;2104824&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104EWH]-2104801\/KDTE104EWH\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104ESS&#034;,&#034;itemId&#034;:&#034;2104823&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104ESS]-2104801\/KDTE104ESS\/&#034;}}],&#034;productId&#034;:&#034;2104801&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DWH&#034;,&#034;itemId&#034;:&#034;2104002&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DWH]-2103977\/KDFE104DWH\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DSS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DSS&#034;,&#034;itemId&#034;:&#034;2104001&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DSS]-2103977\/KDFE104DSS\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DBL&#034;,&#034;itemId&#034;:&#034;2104000&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DBL]-2103977\/KDFE104DBL\/&#034;}}],&#034;productId&#034;:&#034;2103977&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black Stainless&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$2,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM704EBS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM704EBS&#034;,&#034;itemId&#034;:&#034;33040&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM704EBS]-2104804\/KDTM704EBS\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$2,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM704ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM704ESS&#034;,&#034;itemId&#034;:&#034;2104827&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM704ESS]-2104804\/KDTM704ESS\/&#034;}}],&#034;productId&#034;:&#034;2104804&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black Stainless&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$2,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EBS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EBS&#034;,&#034;itemId&#034;:&#034;33039&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EBS]-12004\/KDTM404EBS\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EBL&#034;,&#034;itemId&#034;:&#034;12012&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EBL]-12004\/KDTM404EBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404ESS&#034;,&#034;itemId&#034;:&#034;12013&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404ESS]-12004\/KDTM404ESS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM404EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM404EWH&#034;,&#034;itemId&#034;:&#034;12014&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM404EWH]-12004\/KDTM404EWH\/&#034;}}],&#034;productId&#034;:&#034;12004&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Panel Ready&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM504EPA\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM504EPA&#034;,&#034;itemId&#034;:&#034;2104826&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM504EPA]-2104803\/KDTM504EPA\/&#034;}}],&#034;productId&#034;:&#034;2104803&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254EBL&#034;,&#034;itemId&#034;:&#034;12008&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254EBL]-12002\/KDTE254EBL\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254EWH&#034;,&#034;itemId&#034;:&#034;12010&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254EWH]-12002\/KDTE254EWH\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE254ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE254ESS&#034;,&#034;itemId&#034;:&#034;12009&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE254ESS]-12002\/KDTE254ESS\/&#034;}}],&#034;productId&#034;:&#034;12002&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,499.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTM354ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTM354ESS&#034;,&#034;itemId&#034;:&#034;12011&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTM354ESS]-12003\/KDTM354ESS\/&#034;}}],&#034;productId&#034;:&#034;12003&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EBL&#034;,&#034;itemId&#034;:&#034;12005&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EBL]-12001\/KDTE204EBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204ESS&#034;,&#034;itemId&#034;:&#034;12006&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204ESS]-12001\/KDTE204ESS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EWH&#034;,&#034;itemId&#034;:&#034;12007&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EWH]-12001\/KDTE204EWH\/&#034;}}],&#034;productId&#034;:&#034;12001&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Panel Ready&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE204EPA\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE204EPA&#034;,&#034;itemId&#034;:&#034;2104825&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE204EPA]-2104802\/KDTE204EPA\/&#034;}}],&#034;productId&#034;:&#034;2104802&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104EBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104EBL&#034;,&#034;itemId&#034;:&#034;2104822&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104EBL]-2104801\/KDTE104EBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104ESS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104ESS&#034;,&#034;itemId&#034;:&#034;2104823&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104ESS]-2104801\/KDTE104ESS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDTE104EWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDTE104EWH&#034;,&#034;itemId&#034;:&#034;2104824&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDTE104EWH]-2104801\/KDTE104EWH\/&#034;}}],&#034;productId&#034;:&#034;2104801&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DBL\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DBL&#034;,&#034;itemId&#034;:&#034;2104000&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DBL]-2103977\/KDFE104DBL\/&#034;}},{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DSS\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DSS&#034;,&#034;itemId&#034;:&#034;2104001&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DSS]-2103977\/KDFE104DSS\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,199.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/KDFE104DWH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;KDFE104DWH&#034;,&#034;itemId&#034;:&#034;2104002&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.kitchenaid.ca\/en_CA\/shop\/-[KDFE104DWH]-2103977\/KDFE104DWH\/&#034;}}],&#034;productId&#034;:&#034;2103977&#034;}]
 			</div>		
 		<!-- REQ0165238: Color Swatches on Kitchenaid.ca END-->
 					<div id="compare-url" compareurl="/webapp/wcs/stores/servlet/WHRREDCompareProductDisplay?catalogId=10581&langId=-300&storeId=10231&categoryId=131064"/>
@@ -1065,9 +1123,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTM704ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM704ESS]-2104804/KDTM704ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTM704ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1162,9 +1220,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTM704ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM704ESS]-2104804/KDTM704ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTM704ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -1303,9 +1361,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTM404ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM404ESS]-12004/KDTM404ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTM404ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1404,9 +1462,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTM404ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM404ESS]-12004/KDTM404ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTM404ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -1549,9 +1607,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTM504EPA">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM504EPA]-2104803/KDTM504EPA/#ratingsandreviews">
-				<div class="pr-snippet-KDTM504EPA"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1644,9 +1702,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTM504EPA">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM504EPA]-2104803/KDTM504EPA/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTM504EPA"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -1783,9 +1841,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTE254ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE254ESS]-12002/KDTE254ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTE254ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1882,9 +1940,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTE254ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE254ESS]-12002/KDTE254ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTE254ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -2025,9 +2083,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTM354ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM354ESS]-12003/KDTM354ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTM354ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2120,9 +2178,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTM354ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTM354ESS]-12003/KDTM354ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTM354ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -2259,9 +2317,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTE204ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE204ESS]-12001/KDTE204ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTE204ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2358,9 +2416,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTE204ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE204ESS]-12001/KDTE204ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTE204ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -2501,9 +2559,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTE204EPA">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE204EPA]-2104802/KDTE204EPA/#ratingsandreviews">
-				<div class="pr-snippet-KDTE204EPA"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2596,9 +2654,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTE204EPA">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE204EPA]-2104802/KDTE204EPA/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTE204EPA"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -2735,9 +2793,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDTE104ESS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE104ESS]-2104801/KDTE104ESS/#ratingsandreviews">
-				<div class="pr-snippet-KDTE104ESS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2834,9 +2892,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDTE104ESS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDTE104ESS]-2104801/KDTE104ESS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDTE104ESS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -2977,9 +3035,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<div class="content_container">
 				<div class="ratings_container">
 					    
-		<div class="pr-category" id="pr-category-KDFE104DSS">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDFE104DSS]-2103977/KDFE104DSS/#ratingsandreviews">
-				<div class="pr-snippet-KDFE104DSS"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -3009,9 +3067,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					
 							<img class="selected" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104001','PLP'); changeColor('2103977', 'Stainless Steel', this);" src="/digitalassets/ColorBars/SS-off.gif">
 						
-							<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104002','PLP'); changeColor('2103977', 'White', this);" src="/digitalassets/ColorBars/WH-off.gif">
-						
 							<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104000','PLP'); changeColor('2103977', 'Black', this);" src="/digitalassets/ColorBars/BL-off.gif">
+						
+							<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104002','PLP'); changeColor('2103977', 'White', this);" src="/digitalassets/ColorBars/WH-off.gif">
 						
 				</div>
 				<br/>
@@ -3076,9 +3134,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								<tr>
 									<td class="no_border_bottom">
 										
-	   <div class="pr-category" id="pr-category-KDFE104DSS">  
+	   <div class="pr-category" id="pr-category-">  
             <a href="http://cuat.kitchenaid.ca/en_CA/shop/major-appliances-1/dishwashers-2/dishwashers-3/-[KDFE104DSS]-2103977/KDFE104DSS/#ratingsandreviews">
-                <div id="pr-snippet-list-KDFE104DSS"></div>
+                <div id="pr-snippet-list-"></div>
             </a>
         </div>
 	
@@ -3122,9 +3180,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							
 									<img class="selected" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104001','PLP'); changeColor('2103977', 'Stainless Steel', this);" src="/digitalassets/ColorBars/SS-off.gif">
 								
-									<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104002','PLP'); changeColor('2103977', 'White', this);" src="/digitalassets/ColorBars/WH-off.gif">
-								
 									<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104000','PLP'); changeColor('2103977', 'Black', this);" src="/digitalassets/ColorBars/BL-off.gif">
+								
+									<img class="" onclick="if (typeof gtmHelper != 'undefined') gtmHelper.sendProductClick('2104002','PLP'); changeColor('2103977', 'White', this);" src="/digitalassets/ColorBars/WH-off.gif">
 								
 						</div>	
 						<!-- REQ0165238: Color Swatches on Kitchenaid.ca-->	
@@ -3260,7 +3318,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	   </div>			 
 	</div>
 
-<input type="hidden" id="prPLPArray" value=",KDTM704ESS,KDTM404ESS,KDTM504EPA,KDTE254ESS,KDTM354ESS,KDTE204ESS,KDTE204EPA,KDTE104ESS,KDFE104DSS"/>
+<input type="hidden" id="prPLPArray" value=""/>
 		
 				</div>
 			</div>
@@ -3268,7 +3326,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     </div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:47:18 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 06:03:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

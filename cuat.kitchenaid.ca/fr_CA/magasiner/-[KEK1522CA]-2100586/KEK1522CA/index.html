@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:24:48 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:24 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -942,7 +951,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<h1 class="product-title">KitchenAid® Bouilloire électrique série Pro-Line®</h1>
 			
 
-<div id="pr-pdp-snippet-KEK1522CA" class="pr-pdp">
+<div id="pr-pdp-snippet-KEK1522MS" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -951,8 +960,8 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"KEK1522CA",
-            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KEK1522CA&storeId=10231&swhPageId=KEK1522CA",
+            pr_page_id:"KEK1522MS",
+            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KEK1522MS&storeId=10231&swhPageId=KEK1522CA",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -971,15 +980,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_2" class="color swatch" alt="Frosted Pearl White" title="Frosted Pearl White" src="/digitalassets/ColorBars/FP-off.gif"
-												name="KEK1522FP|Frosted Pearl White|/digitalassets/KEK1522FP/Standalone_1175X1290.jpg|$179,99|$179,99"
+												name="KEK1522FP|Frosted Pearl White|/digitalassets/KEK1522FP/Standalone_1175X1290.jpg|$199,99|$179,99"
 												onclick="javascript:whereToBuy('KEK1522FP');categoryDisplayJS.setSelectedAttribute('Color','Frosted Pearl White');javascript:categoryDisplayJS.setCartDisplay('Color_Frosted Pearl White','2100586');" />
 										
 											<img id="swatch_color_3" class="color swatch" alt="Onyx Noir" title="Onyx Noir" src="/digitalassets/ColorBars/OB-off.gif"
-												name="KEK1522OB|Onyx Noir|/digitalassets/KEK1522OB/Standalone_1175X1290.jpg|$179,99|$179,99"
+												name="KEK1522OB|Onyx Noir|/digitalassets/KEK1522OB/Standalone_1175X1290.jpg|$199,99|$179,99"
 												onclick="javascript:whereToBuy('KEK1522OB');categoryDisplayJS.setSelectedAttribute('Color','Onyx Noir');javascript:categoryDisplayJS.setCartDisplay('Color_Onyx Noir','2100586');" />
 										
 											<img id="swatch_color_1" class="color swatch selected" alt="Candy Apple Red" title="Candy Apple Red" src="/digitalassets/ColorBars/CK-off.gif" 
-											    name="KEK1522CA|Candy Apple Red|/digitalassets/KEK1522CA/Standalone_1175X1290.jpg|$179,99|$179,99"									
+											    name="KEK1522CA|Candy Apple Red|/digitalassets/KEK1522CA/Standalone_1175X1290.jpg|$199,99|$179,99"									
 												onclick="javascript:whereToBuy('KEK1522CA');categoryDisplayJS.setSelectedAttribute('Color','Candy Apple Red');javascript:categoryDisplayJS.setCartDisplay('Color_Candy Apple Red','2100586');" />
 											
 										<script type="text/javascript">
@@ -989,7 +998,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 										</script>
 									
 											<img id="swatch_color_4" class="color swatch" alt="Medallion Silver" title="Medallion Silver" src="/digitalassets/ColorBars/MF-off.gif"
-												name="KEK1522MS|Medallion Silver|/digitalassets/KEK1522MS/Standalone_1175X1290.jpg|$179,99|$179,99"
+												name="KEK1522MS|Medallion Silver|/digitalassets/KEK1522MS/Standalone_1175X1290.jpg|$199,99|$179,99"
 												onclick="javascript:whereToBuy('KEK1522MS');categoryDisplayJS.setSelectedAttribute('Color','Medallion Silver');javascript:categoryDisplayJS.setCartDisplay('Color_Medallion Silver','2100586');" />
 										
 				</div>
@@ -1057,15 +1066,32 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Régulateur de température et indicateur</span>
+					<span class="header_desc">Bouilloire électrique de 1440 W</span>
 				</h4>
-				<p>Le régulateur et l'indicateur de température facilitent l'utilisation. Un levier coulissant régle la température de 50 à 100 degrés Celsius. L'indicateur fournir une lecture précise de la température de l'eau.</p>
+				<p>Bouilloire électrique de 1440 W boue 1,5 litre d'eau rapidement et silencieusement.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
 			<h3>Caractéristiques additionnelles...</h3>
 			
 						<div id="left-col">
+						<div class="feature first">	
+							<h4>Régulateur de température et indicateur</h4>
+							<p>Le régulateur et l'indicateur de température facilitent l'utilisation. Un levier coulissant régle la température de 50 à 100 degrés Celsius. L'indicateur fournir une lecture précise de la température de l'eau.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>Régulateur de température et indicateur</h4>
+							<p>Le régulateur et l'indicateur de température facilitent l'utilisation. Un levier coulissant régle la température de 50 à 100 degrés Celsius. L'indicateur fournir une lecture précise de la température de l'eau.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Parois doubles</h4>
+							<p>Les parois doubles agissent à titre de matériau isolant pour conserver l'eau chaude plus longtemps tout en conservant l'extérieur froid au toucher.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
 						<div class="feature first">	
 							<h4>Parois doubles</h4>
 							<p>Les parois doubles agissent à titre de matériau isolant pour conserver l'eau chaude plus longtemps tout en conservant l'extérieur froid au toucher.</p>
@@ -1075,16 +1101,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							<h4>Poignée ergonomique</h4>
 							<p>Conçue pour un confort maximal.</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>Bouton de déverrouillage du couvercle</h4>
 							<p>Pour un remplissage d’eau pratique et rapide</p>
 						</div>	
-						
-							</div>
-						
+						</div>									
+					
 		</div> 
 </div>
 <div class="product_tab_section_bottom"></div>
@@ -1223,11 +1246,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-KEK1522CA" class="pr-pdp-tab">
+<div id="pr-pdp-tab-KEK1522MS" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"KEK1522CA",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KEK1522CA&storeId=10231&swhPageId=KEK1522CA"});
+	    pr_page_id:"KEK1522MS",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KEK1522MS&storeId=10231&swhPageId=KEK1522CA"});
 	</script>
 </div>
 		
@@ -1305,7 +1328,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				299,99 $
+                  				329,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1332,7 +1355,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				299,99 $
+                  				329,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1359,7 +1382,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				399,99 $
+                  				429,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1416,7 +1439,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											179,99 $  
+											199,99 $  
 											</span>
 										</p>
 										
@@ -1433,19 +1456,19 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option value="Frosted Pearl White"
 																			id="KEK1522FP"
-																			title="$179,99">Frosted Pearl White</option>
+																			title="$199,99">Frosted Pearl White</option>
 																	
 																		<option value="Onyx Noir"
 																			id="KEK1522OB"
-																			title="$179,99">Onyx Noir</option>
+																			title="$199,99">Onyx Noir</option>
 																	
 																		<option selected="selected" value="Candy Apple Red"
 																			id="KEK1522CA"
-																			title="$179,99">Candy Apple Red</option>
+																			title="$199,99">Candy Apple Red</option>
 																	
 																		<option value="Medallion Silver"
 																			id="KEK1522MS"
-																			title="$179,99">Medallion Silver</option>
+																			title="$199,99">Medallion Silver</option>
 																	
 											</select>
 										</div>
@@ -1568,12 +1591,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102390', 'KEK1522FP', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Frosted Pearl White', '179,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102392', 'KEK1522OB', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Onyx Noir', '179,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '179,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '179,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102389', 'KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '179,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102391', 'KEK1522MS', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Medallion Silver', '179,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102390', 'KEK1522FP', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Frosted Pearl White', '199,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102392', 'KEK1522OB', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Onyx Noir', '199,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '199,99 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '199,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102389', 'KEK1522CA', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Candy Apple Red', '199,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102391', 'KEK1522MS', 'KitchenAid® Bouilloire électrique série Pro-Line®', 'Pro Line® Series', 'KitchenAid', 'Medallion Silver', '199,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1587,7 +1610,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

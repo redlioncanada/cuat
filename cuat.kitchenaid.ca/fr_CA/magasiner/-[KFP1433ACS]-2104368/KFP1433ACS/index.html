@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:25:27 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:47 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -906,7 +915,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<h1 class="product-title">KitchenAid®  Robot culinaire de 14 tasses Architect™</h1>
 			
 
-<div id="pr-pdp-snippet-KFP1433ACS" class="pr-pdp">
+<div id="pr-pdp-snippet-KFP1433ACA" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -915,8 +924,8 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"KFP1433ACS",
-            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KFP1433ACS&storeId=10231&swhPageId=KFP1433ACS",
+            pr_page_id:"KFP1433ACA",
+            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KFP1433ACA&storeId=10231&swhPageId=KFP1433ACS",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -1005,19 +1014,43 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Disque éminceur réglable</span>
+					<span class="header_desc">La goulotte d'alimentation Ultra Wide Mouth™</span>
 				</h4>
-				<p>Disque éminceur réglable de mince (1 mm) à épais (6 mm)</p>
+				<p>Peut recevoir des tomates, des concombres et des pommes de terre à peine coupés.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">3 réglages de la puissance : « LOW » (bas), « HIGH » (haut), « PULSE » (impulsions)</span>
+					<span class="header_desc">Disque éminceur réglable</span>
 				</h4>
-				<p>Trois vitesses assurent le tranchage précis des aliments mous et durs. La vitesse « LOW » convient mieux pour les aliments comme les tomates, les champignons ou les bananes. La vitesse « HIGH » convient mieux pour les aliments comme les pommes de terre et les carottes ou pour râper le fromage.</p>
+				<p>Disque éminceur réglable de mince (1 mm) à épais (6 mm)</p>
 			</div> 
 	</div> <!-- End top features div -->
+		<div id="additional_features">
+			<h3>Caractéristiques additionnelles...</h3>
+			
+						<div id="left-col">
+						<div class="feature first">	
+							<h4>Disque éminceur réglable</h4>
+							<p>Disque éminceur réglable de mince (1 mm) à épais (6 mm)</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>3 réglages de la puissance : « LOW » (bas), « HIGH » (haut), « PULSE » (impulsions)</h4>
+							<p>Trois vitesses assurent le tranchage précis des aliments mous et durs. La vitesse « LOW » convient mieux pour les aliments comme les tomates, les champignons ou les bananes. La vitesse « HIGH » convient mieux pour les aliments comme les pommes de terre et les carottes ou pour râper le fromage.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
+							<h4>3 réglages de la puissance : « LOW » (bas), « HIGH » (haut), « PULSE » (impulsions)</h4>
+							<p>Trois vitesses assurent le tranchage précis des aliments mous et durs. La vitesse « LOW » convient mieux pour les aliments comme les tomates, les champignons ou les bananes. La vitesse « HIGH » convient mieux pour les aliments comme les pommes de terre et les carottes ou pour râper le fromage.</p>
+						</div>	
+						
+							</div>
+						
+		</div> 
 </div>
 <div class="product_tab_section_bottom"></div>
 
@@ -1064,11 +1097,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-KFP1433ACS" class="pr-pdp-tab">
+<div id="pr-pdp-tab-KFP1433ACA" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"KFP1433ACS",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KFP1433ACS&storeId=10231&swhPageId=KFP1433ACS"});
+	    pr_page_id:"KFP1433ACA",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KFP1433ACA&storeId=10231&swhPageId=KFP1433ACS"});
 	</script>
 </div>
 		
@@ -1132,6 +1165,33 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13JD]-2100679/KFP13JD/"><img class="image_product_bootom" src="/digitalassets/KFP13JD/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Julienne Disc" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13JD]-2100679/KFP13JD/">KitchenAid® Julienne Disc</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® Julienne Disc</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				32,99 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13JD]-2100679/KFP13JD/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO223CU]-2100419/KCO223CU/"><img class="image_product_bootom" src="/digitalassets/KCO223CU/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Four de comptoir à cuisson par convection de 12 pouces  KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -1146,7 +1206,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				199,99 $
+                  				229,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1173,7 +1233,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				349,99 $
+                  				379,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1185,7 +1245,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	             </li>
 	 
 		
-				<li class="recently_product " sku="sku20">  
+				<li class="recently_product last" sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KAICA]-2100236/KAICA/"><img class="image_product_bootom" src="/digitalassets/KAICA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Sorbetière KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -1209,33 +1269,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
 	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KAICA]-2100236/KAICA/">Détails</a> </p>
-	             </li>
-	 
-		
-				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/"><img class="image_product_bootom" src="/digitalassets/KGM/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Moulin à grains en métal" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">KitchenAid® Moulin à grains en métal</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Moulin à grains en métal</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				189,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -1415,7 +1448,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

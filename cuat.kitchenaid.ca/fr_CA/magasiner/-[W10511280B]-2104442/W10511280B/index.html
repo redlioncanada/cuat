@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:07:45 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:41:19 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -972,33 +981,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/"><img class="image_product_bootom" src="/digitalassets/No Image Available/AB-Thumbnail_100X100_HO.jpg" alt="Trousse de garniture de 27 po pour fours à micro-ondes de comptoir" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/">Trousse de garniture de 27 po pour fours à micro-ondes de comptoir</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">Trousse de garniture de 27 po pour fours à micro-ondes de comptoir</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				129,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/">Détails</a> </p>
-	             </li>
-	 
-		
-				<li class="recently_product " sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2160AS]-2101747/MK2160AS/"><img class="image_product_bootom" src="/digitalassets/MK2160AS/AB-Thumbnail_100X100_HO.jpg" alt="Trousse de garniture de 30 po pour four à micro-ondes" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -1022,6 +1004,33 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
 	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2160AS]-2101747/MK2160AS/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/"><img class="image_product_bootom" src="/digitalassets/No Image Available/AB-Thumbnail_100X100_HO.jpg" alt="Trousse de garniture de 27 po pour fours à micro-ondes de comptoir" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/">Trousse de garniture de 27 po pour fours à micro-ondes de comptoir</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">Trousse de garniture de 27 po pour fours à micro-ondes de comptoir</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				129,99 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[MK2167AS]-2101748/MK2167AS/">Détails</a> </p>
 	             </li>
 	 
 		
@@ -1234,7 +1243,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

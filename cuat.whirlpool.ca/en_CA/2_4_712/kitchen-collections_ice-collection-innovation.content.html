@@ -220,6 +220,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -231,9 +233,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -247,7 +256,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- Header Nav Start --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 12:27:28 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Jul 15 11:01:14 EDT 2015] -->
   
 
 
@@ -404,7 +413,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 12:27:28 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Jul 15 11:01:07 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -872,38 +881,38 @@ var addthis_config = {"data_track_addressbar":true};
 <div class="clear">&nbsp;</div>
 <ul>
 <li>
-<div class="innovationOneIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-01.png" alt="induction cooking" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/PowerBurner">&nbsp;</a>
+<div class="innovationOneIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-01.png" alt="induction cooking" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/PowerBurner">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce white">A 17,000 BTU Flex Power<sup>&trade;</sup> burner generates high heat<br />needed for rapid boiling and searing and provides uniform<br />cooking at lower temperatures for your most delicate dishes.</span></div>
 </li>
 <li>
-<div class="innovationTwoIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-02.png" alt="time savour" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/TimeSavorPlus">&nbsp;</a>
+<div class="innovationTwoIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-02.png" alt="time savour" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/TimeSavorPlus">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce white">Roast up to 30% faster* with the TimeSavor<sup>&trade;</sup><br />Plus true convection cooking system. The rear<br />fan and third heating element circulate hot air to<br />seal in more flavour and juices.</span> <span class="tabDetailsIce">*Versus a conventional oven with a 12-14 lb turkey.</span></div>
 </li>
 <li>
-<div class="innovationThreeIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-03.png" alt="ice dispencing system" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/IndoorIceAK12">&nbsp;</a>
+<div class="innovationThreeIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-03.png" alt="ice dispencing system" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/IndoorIceAK12">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce">Get 30% more freezer space versus previous models.<br />And, the ice bucket tilts out or can be removed with<br />one hand and placed on the counter.</span> <span class="tabDetailsIce" style="margin: 65px 0 0;">*Compared to previous wash system.</span></div>
 </li>
 <li>
 <div class="innovationFourIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/aqua-innovation.png" alt="aqua lift technology" /></span>
-<div class="absolute"><a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/Aqualift">&nbsp;</a></div>
+<div class="absolute"><a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/Aqualift">&nbsp;</a></div>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce white">Now it takes minutes not hours to get a great clean<br />that's odour-free with AquaLift<sup>&reg;</sup> self-clean technology.<br />Using just a little water and a low-heat temperature,<br />our most energy-efficient cleaning cycle* is done<br />in only 50 minutes**.</span> <span class="tabDetailsIce">*Versus traditional self clean cycle.<br />**Based on average cleaning time of self-clean cycle<br />with water only on moderately soiled oven.</span></div>
 </li>
 <li>
-<div class="innovationFiveIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-05.png" alt="sensor cycle" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/SensorCycle">&nbsp;</a>
+<div class="innovationFiveIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-05.png" alt="sensor cycle" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/SensorCycle">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce">The Sensor cycle automatically selects the right wash<br />and dry settings for your load and cleans tough soils<br />35% better* while using just the right amount of time,<br />energy and water.</span> <span class="tabDetailsIce">*Compared to previous wash system.</span></div>
 </li>
 <li>
-<div class="innovationSixIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-06.png" alt="power scour option" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/PowerScour">&nbsp;</a>
+<div class="innovationSixIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-06.png" alt="power scour option" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/PowerScour">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce white">Forty targeted spray jets scour away baked-on foods.<br />Twice the coverage cleans even your large pots and<br />pans without soaking or scrubbing.</span></div>
 </li>
 <li>
-<div class="innovationSevenIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-07.png" alt="microedge spil control shelves" /></span> <a class="playImageIce fancybox.iframe" href="http://demos.whirlpool.com/features/MicroEdgeAK12">&nbsp;</a>
+<div class="innovationSevenIce"><span class="tabHeadingIce yellow fl-left"><img src="/images/content/kitchen/ice_collection/innovation-07.png" alt="microedge spil control shelves" /></span> <a class="playImageIce fancybox.iframe" href="https://demos.whirlpool.com/features/MicroEdgeAK12">&nbsp;</a>
 <div class="clear">&nbsp;</div>
 <span class="tabDescIce">Get the industry's most shelf space on a single shelf among<br />leading brands. This exclusive innovation gives you 25%<br />more usable shelf space, and cleaning is easier with<br />microscopic etching that helps spills from spreading.</span> <span class="tabDetailsIce">*Compared to Whirlpool<sup>&reg;</sup> side-by-side and french door models without MicroEdge<sup>TM</sup> shelves.</span></div>
 </li>
@@ -919,7 +928,7 @@ var addthis_config = {"data_track_addressbar":true};
 		<div class="main-content-wrapper-bottom"></div>
 	</div>
 	
-	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 12:27:29 EDT 2015] -->
+	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Jul 15 11:01:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">
@@ -1319,9 +1328,6 @@ function () { overTooltip = false; }
 </script>
 <script type="text/javascript">
 
-    var pr_locale = "en_CA";
-    var pr_zip_location = "https://cdn.powerreviews.com/repos/17647/pr";
-    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
 
     $(document).ready(function () {
         function fireFloodlightOnLoadAllPages(cat) {

@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:47:17 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 06:03:08 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 17:59:29 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:36:53 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -937,7 +946,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="Stainless Steel" title="Stainless Steel" src="/digitalassets/ColorBars/SS-off.gif" 
-											    name="KSC6223SS|Stainless Steel|/digitalassets/KSC6223SS/Standalone_1175X1290.jpg|$149.99|$149.99"									
+											    name="KSC6223SS|Stainless Steel|/digitalassets/KSC6223SS/Standalone_1175X1290.jpg|$179.99|$179.99"									
 												onclick="javascript:whereToBuy('KSC6223SS');categoryDisplayJS.setSelectedAttribute('Color','Stainless Steel');javascript:categoryDisplayJS.setCartDisplay('Color_Stainless Steel','2101132');" />
 											
 										<script type="text/javascript">
@@ -1003,17 +1012,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">4 Temperature Settings</span>
+					<span class="header_desc">6-Quart Removable, Oval-Shaped Ceramic Vessel</span>
 				</h4>
-				<p>Helps ensure that your food will be ready to serve when you're ready. After the slow cooker’s programmed cooking time elapses, it automatically defaults to keep warm mode for up to four hours.</p>
+				<p>The large capacity is perfect for small and large recipes from soups to roasts.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">24-Hour Programmability</span>
+					<span class="header_desc">4 Temperature Settings</span>
 				</h4>
-				<p>Program the slow cooker for a specific cooking time up to 24 hours in 30-minute increments. After the time ends, the slow cooker automatically goes into keep warm mode for up to four hours.</p>
+				<p>Helps ensure that your food will be ready to serve when you're ready. After the slow cooker’s programmed cooking time elapses, it automatically defaults to keep warm mode for up to four hours.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1021,20 +1030,33 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
+							<h4>4 Temperature Settings</h4>
+							<p>Helps ensure that your food will be ready to serve when you're ready. After the slow cooker’s programmed cooking time elapses, it automatically defaults to keep warm mode for up to four hours.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>24-Hour Programmability</h4>
+							<p>Program the slow cooker for a specific cooking time up to 24 hours in 30-minute increments. After the time ends, the slow cooker automatically goes into keep warm mode for up to four hours.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>24-Hour Programmability</h4>
+							<p>Program the slow cooker for a specific cooking time up to 24 hours in 30-minute increments. After the time ends, the slow cooker automatically goes into keep warm mode for up to four hours.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
 							<h4>Keep Warm</h4>
 							<p>High, medium and low settings for any recipe and keep warm function for up to four hours after finished cooking.</p>
 						</div>	
 						
-							</div>
-						
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>Digital Display</h4>
 							<p>See at-a-glance how much cooking time remains before your dish is ready for serving.</p>
 						</div>	
-						
-							</div>
-						
+						</div>									
+					
 		</div> 
 </div>
 <div class="product_tab_section_bottom"></div>
@@ -1252,7 +1274,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$349.99
+                  				$379.99
 							</p>
                	 		</li>
                 		<li>
@@ -1344,7 +1366,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="Stainless Steel"
 																			id="KSC6223SS"
-																			title="$149.99">Stainless Steel</option>
+																			title="$179.99">Stainless Steel</option>
 																	
 											</select>
 										</div>
@@ -1472,7 +1494,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:47:18 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 06:03:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

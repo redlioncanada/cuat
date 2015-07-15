@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:25:36 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:51 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -943,7 +952,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="Cocoa Silver" title="Cocoa Silver" src="/digitalassets/ColorBars/C1-off.gif" 
-											    name="KHB2561ACS|Cocoa Silver|/digitalassets/KHB2561ACS/Standalone_1175X1290.jpg|$149,99|$149,99"									
+											    name="KHB2561ACS|Cocoa Silver|/digitalassets/KHB2561ACS/Standalone_1175X1290.jpg|$159,99|$159,99"									
 												onclick="javascript:whereToBuy('KHB2561ACS');categoryDisplayJS.setSelectedAttribute('Color','Cocoa Silver');javascript:categoryDisplayJS.setCartDisplay('Color_Cocoa Silver','2100849');" />
 											
 										<script type="text/javascript">
@@ -1009,23 +1018,45 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Premiers couvre-lames interchangeables de l'industrie</span>
+					<span class="header_desc">Tige à mélanger de 8 po amovible</span>
 				</h4>
-				<p>Premiers couvre-lames interchangeables de l'industrie avec couvercles de protection aux innombrables possibilités.  Trois couvre-lames interchangeables facilitant le broyage de la glace, la réduction en purée des soupes et la préparation des boissons fouettées.</p>
+				<p>Tige à mélanger 8 po amovible se verrouillant dans le corps du moteur pour faciliter les mélanges dans les récipients plus profonds.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Poignée à prise douce</span>
+					<span class="header_desc">Premiers couvre-lames interchangeables de l'industrie</span>
 				</h4>
-				<p>Poignée à prise douce, confortable et antidérapante.</p>
+				<p>Premiers couvre-lames interchangeables de l'industrie avec couvercles de protection aux innombrables possibilités.  Trois couvre-lames interchangeables facilitant le broyage de la glace, la réduction en purée des soupes et la préparation des boissons fouettées.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
 			<h3>Caractéristiques additionnelles...</h3>
 			
 						<div id="left-col">
+						<div class="feature first">	
+							<h4>Premiers couvre-lames interchangeables de l'industrie</h4>
+							<p>Premiers couvre-lames interchangeables de l'industrie avec couvercles de protection aux innombrables possibilités.  Trois couvre-lames interchangeables facilitant le broyage de la glace, la réduction en purée des soupes et la préparation des boissons fouettées.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>Poignée à prise douce</h4>
+							<p>Poignée à prise douce, confortable et antidérapante.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Poignée à prise douce</h4>
+							<p>Poignée à prise douce, confortable et antidérapante.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Accessoire pour fouetter</h4>
+							<p>L'accessoire pour fouetter peut être utiliser pour monter rapidement les oeufs en neige, fouetter la crème ou émulsifier les vinaigrettes et la mayonnaise.  Lavable dans le panier supérieur du lave-vaisselle.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
 						<div class="feature first">	
 							<h4>Accessoire pour fouetter</h4>
 							<p>L'accessoire pour fouetter peut être utiliser pour monter rapidement les oeufs en neige, fouetter la crème ou émulsifier les vinaigrettes et la mayonnaise.  Lavable dans le panier supérieur du lave-vaisselle.</p>
@@ -1035,14 +1066,12 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							<h4>Accessoire pour hacher 2 1/2 tasses sans BPA avec couvercle</h4>
 							<p>Accessoire pour hacher et récipient pratique de 2 1/2 tasses, sans BPA, avec couvercle verrouillable idéal pour hacher les épices, noix, fromage ou charcuterie.</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>Pichet de 1 litre sans BPA</h4>
 							<p>Récipient de 1 litre, sans BPA, parfait pour mélanger une double portion de boisson fouettée ou de la nourriture pour bébé.  Le récipient est muni d'une poignée pratique et d'un couvercle pare-éclaboussures. Lavable dans le panier supérieur du lave-vaisselle.</p>
-						</div>	
-						
+						</div>
+					
 						<div class="feature">	
 							<h4>Étui de rangement</h4>
 							<p>L'étui de rangement conserve les accessoires bien rangés et protégés.</p>
@@ -1322,7 +1351,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											149,99 $  
+											159,99 $  
 											</span>
 										</p>
 										
@@ -1339,7 +1368,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="Cocoa Silver"
 																			id="KHB2561ACS"
-																			title="$149,99">Cocoa Silver</option>
+																			title="$159,99">Cocoa Silver</option>
 																	
 											</select>
 										</div>
@@ -1482,9 +1511,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '149,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '149,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102708', 'KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '149,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '159,99 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '159,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102708', 'KHB2561ACS', 'KitchenAid® Mélangeur à main à 5 vitesses de la série Architect de KitchenAid®', 'Mélangeurs à main', 'KitchenAid', 'Cocoa Silver', '159,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1498,7 +1527,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

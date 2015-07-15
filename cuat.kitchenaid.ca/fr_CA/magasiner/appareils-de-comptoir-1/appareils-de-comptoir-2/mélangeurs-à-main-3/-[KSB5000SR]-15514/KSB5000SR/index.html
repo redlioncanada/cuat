@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:06:50 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:40:58 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1073,17 +1082,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Des recettes prégrogrammées</span>
+					<span class="header_desc">Technologie à entraînement magnétique avec système MagnaLock™</span>
 				</h4>
-				<p>Mélange facilité par la simple pression d'un bouton. Quatre recettes pré-programmées (jus, soupes/sauces, lait frappées et boissons glacées/fouettées) offrent la possibilité de glisser le pichet, pousser le bouton puis laisser faire. Chaque programme est unique et possède toute une série de vitesses conçues pour des recettes  précises offrant ainsi des résultats extraordinaires. Le mélangeur est également muni de vitesses réglables et un mode de pulsion.</p>
+				<p>La technologie à entraînement magnétique révolutionnaire du mélangeur Torrent™ verrouille le pichet en place  pour  une expérience inédite dans le confort de chez-vous. Le pichet se place et se retire facilement, tout comme une cafetière pour une conception discrète.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Tube d'alimentation et entonnoir</span>
+					<span class="header_desc">Des recettes prégrogrammées</span>
 				</h4>
-				<p>L’alimentation par le haut permet d’ajouter des ingrédients lors du processus de mélange, en utilisant une tasse à mesurer lavable au lave-vaisselle. Vous pouvez également contrôler le niveau du mélange sans recommencer. Préparez des soupes ou des beurres plus texturés avec des morceaux  en ajoutant des ingrédients à la fin du processus.</p>
+				<p>Mélange facilité par la simple pression d'un bouton. Quatre recettes pré-programmées (jus, soupes/sauces, lait frappées et boissons glacées/fouettées) offrent la possibilité de glisser le pichet, pousser le bouton puis laisser faire. Chaque programme est unique et possède toute une série de vitesses conçues pour des recettes  précises offrant ainsi des résultats extraordinaires. Le mélangeur est également muni de vitesses réglables et un mode de pulsion.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1091,27 +1100,47 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4>Moteur à puissance maximale de 1,8 HP</h4>
-							<p>Le moteur à puissance maximale de 1,8 HP produit des  textures lisses et très épaisses.</p>
+							<h4>Tube d'alimentation et entonnoir</h4>
+							<p>L’alimentation par le haut permet d’ajouter des ingrédients lors du processus de mélange, en utilisant une tasse à mesurer lavable au lave-vaisselle. Vous pouvez également contrôler le niveau du mélange sans recommencer. Préparez des soupes ou des beurres plus texturés avec des morceaux  en ajoutant des ingrédients à la fin du processus.</p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Tube d'alimentation et entonnoir</h4>
+							<p>L’alimentation par le haut permet d’ajouter des ingrédients lors du processus de mélange, en utilisant une tasse à mesurer lavable au lave-vaisselle. Vous pouvez également contrôler le niveau du mélange sans recommencer. Préparez des soupes ou des beurres plus texturés avec des morceaux  en ajoutant des ingrédients à la fin du processus.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Moteur à puissance maximale de 1,8 HP</h4>
+							<p>Le moteur à puissance maximale de 1,8 HP produit des  textures lisses et très épaisses.</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Système de mélange à tourbillon</h4>
 							<p>Système de mélange à tourbillon assurant que tous les ingrédients sont mélangés rapidement et efficacement. Robuste moteur, pichet monocoque à base losange sans BPA, lames en acier inoxydable et commandes électroniques créant un puissant tourbillon pour assurer l'homogénéité du mélange.</p>
 						</div>
 					
 						<div class="feature">	
-							<h4>Pichet et couvercle lavables au lave-vaisselle.</h4>
-							<p>Le pichet de 60 onces et le tube d'alimentation sont sans BPA et lavables au lave-vaisselle pour un nettoyage pratique.</p>
+							<h4>Système de mélange à tourbillon</h4>
+							<p>Système de mélange à tourbillon assurant que tous les ingrédients sont mélangés rapidement et efficacement. Robuste moteur, pichet monocoque à base losange sans BPA, lames en acier inoxydable et commandes électroniques créant un puissant tourbillon pour assurer l'homogénéité du mélange.</p>
 						</div>
 						</div>												
 					
 						<div id="right-col">
 						<div class="feature first">	
-							<h4>Conception unique et épurée</h4>
-							<p>Le style élégant du mélangeur Torrent™ s'adapte sous les placards de votre cuisine de sorte que vous puissiez l'exposer en permanence sur votre comptoir.</p>
+							<h4>Pichet et couvercle lavables au lave-vaisselle.</h4>
+							<p>Le pichet de 60 onces et le tube d'alimentation sont sans BPA et lavables au lave-vaisselle pour un nettoyage pratique.</p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Conception unique et épurée</h4>
+							<p>Le style élégant du mélangeur Torrent™ s'adapte sous les placards de votre cuisine de sorte que vous puissiez l'exposer en permanence sur votre comptoir.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Conception unique et épurée</h4>
+							<p>Le style élégant du mélangeur Torrent™ s'adapte sous les placards de votre cuisine de sorte que vous puissiez l'exposer en permanence sur votre comptoir.</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Commande Intelli-Speed®</h4>
 							<p>La technologie Intelli-Speed® se règle automatiquement sur la vitesse optimale, vous permettant de réduire des légumes en purée, mélanger des laits frappés très épais, piler de la glace et plus encore.</p>
@@ -1348,7 +1377,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				159,99 $
+                  				169,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1375,7 +1404,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				249,99 $
+                  				269,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1645,7 +1674,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

@@ -237,7 +237,7 @@ var currentprotocol = document.location.protocol;
 			})(window,document,'script','dataLayer','GTM-P3TXNP');</script>
 			<!-- End Google Tag Manager -->
 	<input type="hidden" id="callReadyCOmpare" name="callReadyCOmpare" value="false" />
-<!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 16:18:42 EDT 2015] -->
+<!-- GENERATED: [WHRORNCategoryListDisplay, Wed Jul 15 11:01:33 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -335,6 +335,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -346,9 +348,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -362,7 +371,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 12:27:28 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Wed Jul 15 11:01:14 EDT 2015] -->
   
 
 
@@ -519,7 +528,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 12:27:28 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Wed Jul 15 11:01:07 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1317,7 +1326,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 		<div id="refrigerators_content" class="endeca_content">	
 		<!--QC146: Start json object for colour swatch display -->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Monochromatic Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WSZ57L18DM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WSZ57L18DM&#034;,&#034;itemId&#034;:&#034;1305034&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WSZ57L18DM]-1305004\/WSZ57L18DM\/&#034;}},{&#034;Color&#034;:&#034;White Ice&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WSZ57L18DH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WSZ57L18DH&#034;,&#034;itemId&#034;:&#034;1305033&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WSZ57L18DH]-1305004\/WSZ57L18DH\/&#034;}}],&#034;productId&#034;:&#034;1305004&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Monochromatic Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF79R18DM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF79R18DM&#034;,&#034;itemId&#034;:&#034;1305038&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF79R18DM]-1305008\/WZF79R18DM\/&#034;}}],&#034;productId&#034;:&#034;1305008&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF79R20DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF79R20DW&#034;,&#034;itemId&#034;:&#034;1305039&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF79R20DW]-1305009\/WZF79R20DW\/&#034;}}],&#034;productId&#034;:&#034;1305009&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF56R16DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF56R16DW&#034;,&#034;itemId&#034;:&#034;1305037&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF56R16DW]-1305007\/WZF56R16DW\/&#034;}}],&#034;productId&#034;:&#034;1305007&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC5422DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC5422DW&#034;,&#034;itemId&#034;:&#034;1305155&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC5422DW]-1305141\/WZC5422DW\/&#034;}}],&#034;productId&#034;:&#034;1305141&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,049.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC3122DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC3122DW&#034;,&#034;itemId&#034;:&#034;1305128&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC3122DW]-1305093\/WZC3122DW\/&#034;}}],&#034;productId&#034;:&#034;1305093&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC5415DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC5415DW&#034;,&#034;itemId&#034;:&#034;1305154&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC5415DW]-1305140\/WZC5415DW\/&#034;}}],&#034;productId&#034;:&#034;1305140&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC3115DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC3115DW&#034;,&#034;itemId&#034;:&#034;1305127&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC3115DW]-1305092\/WZC3115DW\/&#034;}}],&#034;productId&#034;:&#034;1305092&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Monochromatic Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WSZ57L18DM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WSZ57L18DM&#034;,&#034;itemId&#034;:&#034;1305034&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WSZ57L18DM]-1305004\/WSZ57L18DM\/&#034;}},{&#034;Color&#034;:&#034;White Ice&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WSZ57L18DH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WSZ57L18DH&#034;,&#034;itemId&#034;:&#034;1305033&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WSZ57L18DH]-1305004\/WSZ57L18DH\/&#034;}}],&#034;productId&#034;:&#034;1305004&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Monochromatic Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,399.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF79R18DM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF79R18DM&#034;,&#034;itemId&#034;:&#034;1305038&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF79R18DM]-1305008\/WZF79R18DM\/&#034;}}],&#034;productId&#034;:&#034;1305008&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,299.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF79R20DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF79R20DW&#034;,&#034;itemId&#034;:&#034;1305039&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF79R20DW]-1305009\/WZF79R20DW\/&#034;}}],&#034;productId&#034;:&#034;1305009&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,149.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZF56R16DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZF56R16DW&#034;,&#034;itemId&#034;:&#034;1305037&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZF56R16DW]-1305007\/WZF56R16DW\/&#034;}}],&#034;productId&#034;:&#034;1305007&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,099.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC5422DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC5422DW&#034;,&#034;itemId&#034;:&#034;1305155&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC5422DW]-1305141\/WZC5422DW\/&#034;}}],&#034;productId&#034;:&#034;1305141&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,049.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC3122DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC3122DW&#034;,&#034;itemId&#034;:&#034;1305128&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC3122DW]-1305093\/WZC3122DW\/&#034;}}],&#034;productId&#034;:&#034;1305093&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$899.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC5415DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC5415DW&#034;,&#034;itemId&#034;:&#034;1305154&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC5415DW]-1305140\/WZC5415DW\/&#034;}}],&#034;productId&#034;:&#034;1305140&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/WZC3115DW\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;WZC3115DW&#034;,&#034;itemId&#034;:&#034;1305127&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/en_CA\/-[WZC3115DW]-1305092\/WZC3115DW\/&#034;}}],&#034;productId&#034;:&#034;1305092&#034;}]
 			</div>
 		<!--QC146: End json object for colour swatch display -->
 		  <ul class="endeca_aplliancesList">
@@ -1352,6 +1361,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WSZ57L18DM
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1397,9 +1409,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,849.99</li>
                     
-		<div class="pr-category" id="pr-category-WSZ57L18DM">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WSZ57L18DM]-1305004/WSZ57L18DM/#ratingsandreviews">
-				<div class="pr-snippet-WSZ57L18DM"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1451,6 +1463,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZF79R18DM
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1496,9 +1511,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,399.99</li>
                     
-		<div class="pr-category" id="pr-category-WZF79R18DM">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZF79R18DM]-1305008/WZF79R18DM/#ratingsandreviews">
-				<div class="pr-snippet-WZF79R18DM"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1550,6 +1565,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZF79R20DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1595,9 +1613,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,299.99</li>
                     
-		<div class="pr-category" id="pr-category-WZF79R20DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZF79R20DW]-1305009/WZF79R20DW/#ratingsandreviews">
-				<div class="pr-snippet-WZF79R20DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1649,6 +1667,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZF56R16DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1694,9 +1715,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,149.99</li>
                     
-		<div class="pr-category" id="pr-category-WZF56R16DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZF56R16DW]-1305007/WZF56R16DW/#ratingsandreviews">
-				<div class="pr-snippet-WZF56R16DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1748,6 +1769,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZC5422DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1793,9 +1817,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,099.99</li>
                     
-		<div class="pr-category" id="pr-category-WZC5422DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZC5422DW]-1305141/WZC5422DW/#ratingsandreviews">
-				<div class="pr-snippet-WZC5422DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1847,6 +1871,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZC3122DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1892,9 +1919,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$1,049.99</li>
                     
-		<div class="pr-category" id="pr-category-WZC3122DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZC3122DW]-1305093/WZC3122DW/#ratingsandreviews">
-				<div class="pr-snippet-WZC3122DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1946,6 +1973,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZC5415DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1991,9 +2021,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$899.99</li>
                     
-		<div class="pr-category" id="pr-category-WZC5415DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZC5415DW]-1305140/WZC5415DW/#ratingsandreviews">
-				<div class="pr-snippet-WZC5415DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2045,6 +2075,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">WZC3115DW
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2090,9 +2123,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">MSRP:&nbsp;$849.99</li>
                     
-		<div class="pr-category" id="pr-category-WZC3115DW">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/en_CA/kitchen-1/refrigeration-2/freezers-3/-[WZC3115DW]-1305092/WZC3115DW/#ratingsandreviews">
-				<div class="pr-snippet-WZC3115DW"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -2170,7 +2203,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 </div>
 
 
-<input type="hidden" id="prPLPArray" value=",WSZ57L18DM,WZF79R18DM,WZF79R20DW,WZF56R16DW,WZC5422DW,WZC3122DW,WZC5415DW,WZC3115DW"/>
+<input type="hidden" id="prPLPArray" value=""/>
 
 		
 		</div>
@@ -2180,7 +2213,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 12:27:29 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Wed Jul 15 11:01:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">
@@ -2580,9 +2613,6 @@ function () { overTooltip = false; }
 </script>
 <script type="text/javascript">
 
-    var pr_locale = "en_CA";
-    var pr_zip_location = "https://cdn.powerreviews.com/repos/17647/pr";
-    var pr_style_sheet = "/css/powerreviews/pr_style_sheet.css";
 
     $(document).ready(function () {
         function fireFloodlightOnLoadAllPages(cat) {

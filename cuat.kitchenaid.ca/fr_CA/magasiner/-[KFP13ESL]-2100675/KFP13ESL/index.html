@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:07:56 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:41:29 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -915,7 +924,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="D'autre" title="D'autre" src="/digitalassets/ColorBars/NC-off.gif" 
-											    name="KFP13ESL|D'autre|/digitalassets/KFP13ESL/Standalone_1175X1290.jpg|$34,99|$34,99"									
+											    name="KFP13ESL|D'autre|/digitalassets/KFP13ESL/Standalone_1175X1290.jpg|$38,49|$38,49"									
 												onclick="javascript:whereToBuy('KFP13ESL');categoryDisplayJS.setSelectedAttribute('Color','D'autre');javascript:categoryDisplayJS.setCartDisplay('Color_D'autre','2100675');" />
 											
 										<script type="text/javascript">
@@ -1010,21 +1019,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13BL]-2100672/KFP13BL/"><img class="image_product_bootom" src="/digitalassets/KFP13BL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Lame polyvalente pour robot culinaire de 13 tasses KitchenAid®" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/"><img class="image_product_bootom" src="/digitalassets/KFP09WBOB/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13BL]-2100672/KFP13BL/">KitchenAid® Lame polyvalente pour robot culinaire de 13 tasses KitchenAid®</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/">KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Lame polyvalente pour robot culinaire de 13 tasses KitchenAid®</p>
+	                	<p class="recently_product_id">KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				34,99 $
+                  				46,19 $
 							</p>
                	 		</li>
                 		<li>
@@ -1032,7 +1041,34 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13BL]-2100672/KFP13BL/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/"><img class="image_product_bootom" src="/digitalassets/No Image Available/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® KitchenAId® Internal Adjustable Slicing Disc" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/">KitchenAid® KitchenAId® Internal Adjustable Slicing Disc</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® KitchenAId® Internal Adjustable Slicing Disc</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				46,19 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/">Détails</a> </p>
 	             </li>
 	 
 		
@@ -1051,7 +1087,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				41,99 $
+                  				46,19 $
 							</p>
                	 		</li>
                 		<li>
@@ -1063,49 +1099,22 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	             </li>
 	 
 		
-				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/"><img class="image_product_bootom" src="/digitalassets/KFP09WBOB/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/">KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">KitchenAid®  BPA-Free 9-Cup Work Bowl with Handle</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				41,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09WBOB]-2103874/KFP09WBOB/">Détails</a> </p>
-	             </li>
-	 
-		
 				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/"><img class="image_product_bootom" src="/digitalassets/No Image Available/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® KitchenAId® Internal Adjustable Slicing Disc" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13SC]-2100683/KFP13SC/"><img class="image_product_bootom" src="/digitalassets/KFP13SC/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Coffret pour accessoires KitchenAid® (pour robot culinaire de 13 tasses)" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/">KitchenAid® KitchenAId® Internal Adjustable Slicing Disc</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13SC]-2100683/KFP13SC/">KitchenAid® Coffret pour accessoires KitchenAid® (pour robot culinaire de 13 tasses)</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® KitchenAId® Internal Adjustable Slicing Disc</p>
+	                	<p class="recently_product_id">KitchenAid® Coffret pour accessoires KitchenAid® (pour robot culinaire de 13 tasses)</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				41,99 $
+                  				54,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1113,7 +1122,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP09ASL]-2103869/KFP09ASL/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KFP13SC]-2100683/KFP13SC/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -1135,7 +1144,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											34,99 $  
+											38,49 $  
 											</span>
 										</p>
 										
@@ -1152,7 +1161,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="D'autre"
 																			id="KFP13ESL"
-																			title="$34,99">D'autre</option>
+																			title="$38,49">D'autre</option>
 																	
 											</select>
 										</div>
@@ -1267,9 +1276,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '34,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '34,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102514', 'KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '34,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '38,49 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '38,49 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102514', 'KFP13ESL', 'KitchenAid® Levier de tranchage externe réglable KitchenAid® pour robot culinaire de 13 tasses', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '38,49 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1283,7 +1292,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

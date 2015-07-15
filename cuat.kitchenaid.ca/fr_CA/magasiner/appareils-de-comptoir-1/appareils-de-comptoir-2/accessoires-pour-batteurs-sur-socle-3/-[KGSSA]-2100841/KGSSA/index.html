@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:06:33 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:40:53 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -985,17 +994,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</span>
+					<span class="header_desc">Installation facile sur la prise d'accessoires du batteur sur socle.</span>
 				</h4>
-				<p>Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</p>
+				<p>Installation facile sur la prise d'accessoires du batteur sur socle.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Jeu d'accessoires pour le batteur sur socle KitchenAid®</span>
+					<span class="header_desc">Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</span>
 				</h4>
-				<p>Jeu d'accessoires pour le batteur sur socle KitchenAid®</p>
+				<p>Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1003,12 +1012,28 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
+							<h4>Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</h4>
+							<p>Conçu pour s'adapter à tous les batteurs sur socle de KitchenAid® fabriqués après 1990.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>Jeu d'accessoires pour le batteur sur socle KitchenAid®</h4>
+							<p>Jeu d'accessoires pour le batteur sur socle KitchenAid®</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
+							<h4>Jeu d'accessoires pour le batteur sur socle KitchenAid®</h4>
+							<p>Jeu d'accessoires pour le batteur sur socle KitchenAid®</p>
+						</div>	
+						
+						<div class="feature">	
 							<h4>Comprend un hachoir (FGA), un bloc râpeur/éminceur (RVSA), un poussoir à saucisses (SSA)</h4>
 							<p></p>
 						</div>	
-						
-							</div>
-						
+						</div>									
+					
 		</div> 
 </div>
 <div class="product_tab_section_bottom"></div>
@@ -1158,7 +1183,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					</div>
 					
 					<div class="product_desc">Préparez des saucisses avec un goût et une nutrition superbes. Comprend une goulotte de 3/8 po pour les petits chapelets de saucisses et une goulotte de 5/8 po pour les plus larges. Conçu pour utilisation avec l’accessoire de broyeur d'aliments.</div>			
-					<div class="product_price">Vente: $19,99</div>
+					<div class="product_price">Vente: $24,99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[SSA]-2101772/SSA/" class="view_details">En savoir plus</a>
 						
@@ -1229,21 +1254,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/"><img class="image_product_bootom" src="/digitalassets/KSM1JA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Extracteur de jus et de sauce" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/"><img class="image_product_bootom" src="/digitalassets/KGM/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Moulin à grains en métal" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/">KitchenAid® Extracteur de jus et de sauce</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">KitchenAid® Moulin à grains en métal</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Extracteur de jus et de sauce</p>
+	                	<p class="recently_product_id">KitchenAid® Moulin à grains en métal</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				249,99 $
+                  				199,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1251,7 +1276,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM1JA]-2104310/KSM1JA/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGM]-2100805/KGM/">Détails</a> </p>
 	             </li>
 	 
 		
@@ -1506,7 +1531,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

@@ -115,7 +115,7 @@ function getStyleDirectoryPath()
 		CommonControllersDeclarationJS.setControllerURL('MiniShoppingCartController', getAbsoluteURL()+'AjaxQuickCartDisplay?storeId=10229&catalogId=10579&langId=-300');
 		CommonControllersDeclarationJS.setControllerURL('HeaderGreetingsController', getAbsoluteURL()+'AjaxWHRHeaderGreetingsDisplay?storeId=10229&catalogId=10579&langId=-300');
 		CommonControllersDeclarationJS.setControllerURL('MiniWishListController', getAbsoluteURL()+'AjaxMiniWishListView?storeId=10229&catalogId=10579&langId=-300');
-		MiniWishListJS.setCommonParameters('-300','10229','10579','R');
+		MiniWishListJS.setCommonParameters('-300','10229','10579','G');
 	});
 	/*Google Tag Manager dataLayer include in head*/
   dataLayer = [];
@@ -238,7 +238,7 @@ var currentprotocol = document.location.protocol;
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-MM4FFD');</script>
-			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 08:01:19 EDT 2015] -->
+			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Mon Jul 13 15:35:24 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -336,6 +336,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -347,9 +349,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -363,7 +372,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 06:03:37 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 15:34:55 EDT 2015] -->
   
 
 
@@ -403,7 +412,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13521132");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -520,11 +529,11 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 11:14:08 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 15:34:49 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
-<a href="https://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+<a href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
 		<span id="miniShopCartLeftCorner" class="left_corner">
 			CART
 		</span>
@@ -865,7 +874,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 	EndecaHelperJS.setPageSize('10');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Fri Jul 03 08:01:19 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Mon Jul 13 15:35:24 EDT 2015] --> 
 <!--LeftNarrowNav-->
 <div id="endeca_leftNavContainer" class="endeca_leftNav">
 	<div id="leftNav_topBorder">&nbsp;</div>
@@ -922,7 +931,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 							
 	</div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Fri Jul 03 08:01:19 EDT 2015] --> 
+<!-- END: [WHRORNProductListFilterOptions, Mon Jul 13 15:35:24 EDT 2015] --> 
 		
 	<div class="endeca_rightContainer">
 	 	<div id="espot_image">
@@ -1041,7 +1050,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 		<div id="refrigerators_content" class="endeca_content">
 		<!--REQ0165238: Color Swatches on Maytag.ca -->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$12.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/P1KG6R1B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;P1KG6R1B&#034;,&#034;itemId&#034;:&#034;1505679&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[P1KG6R1B]-1505603\/P1KG6R1B\/&#034;}}],&#034;productId&#034;:&#034;1505603&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$16.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/P1KG6S1B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;P1KG6S1B&#034;,&#034;itemId&#034;:&#034;1505680&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[P1KG6S1B]-1505604\/P1KG6S1B\/&#034;}}],&#034;productId&#034;:&#034;1505604&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$5.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10355049B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10355049B&#034;,&#034;itemId&#034;:&#034;1505827&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10355049B]-1505815\/W10355049B\/&#034;}}],&#034;productId&#034;:&#034;1505815&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$394.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250642\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250642&#034;,&#034;itemId&#034;:&#034;1505161&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250642]-1502548\/W10250642\/&#034;}}],&#034;productId&#034;:&#034;1502548&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$358.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250639\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250639&#034;,&#034;itemId&#034;:&#034;1505158&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250639]-1502545\/W10250639\/&#034;}}],&#034;productId&#034;:&#034;1502545&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$346.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250643\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250643&#034;,&#034;itemId&#034;:&#034;1505162&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250643]-1502549\/W10250643\/&#034;}}],&#034;productId&#034;:&#034;1502549&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$298.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250640\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250640&#034;,&#034;itemId&#034;:&#034;1505159&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250640]-1502546\/W10250640\/&#034;}}],&#034;productId&#034;:&#034;1502546&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$275.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250638\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250638&#034;,&#034;itemId&#034;:&#034;1505157&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250638]-1502544\/W10250638\/&#034;}}],&#034;productId&#034;:&#034;1502544&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$275.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250641\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250641&#034;,&#034;itemId&#034;:&#034;1505160&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250641]-1502547\/W10250641\/&#034;}}],&#034;productId&#034;:&#034;1502547&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$215.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/No Image Available\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10292394&#034;,&#034;itemId&#034;:&#034;1505191&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10292394]-1502578\/W10292394\/&#034;}}],&#034;productId&#034;:&#034;1502578&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;Price&#034;:&#034;$12.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/P1KG6R1B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;P1KG6R1B&#034;,&#034;itemId&#034;:&#034;1505679&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[P1KG6R1B]-1505603\/P1KG6R1B\/&#034;}}],&#034;productId&#034;:&#034;1505603&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;Price&#034;:&#034;$16.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/P1KG6S1B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;P1KG6S1B&#034;,&#034;itemId&#034;:&#034;1505680&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[P1KG6S1B]-1505604\/P1KG6S1B\/&#034;}}],&#034;productId&#034;:&#034;1505604&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$5.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10355049B\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10355049B&#034;,&#034;itemId&#034;:&#034;1505827&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10355049B]-1505815\/W10355049B\/&#034;}}],&#034;productId&#034;:&#034;1505815&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$394.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250642\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250642&#034;,&#034;itemId&#034;:&#034;1505161&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250642]-1502548\/W10250642\/&#034;}}],&#034;productId&#034;:&#034;1502548&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$358.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250639\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250639&#034;,&#034;itemId&#034;:&#034;1505158&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250639]-1502545\/W10250639\/&#034;}}],&#034;productId&#034;:&#034;1502545&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$346.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250643\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250643&#034;,&#034;itemId&#034;:&#034;1505162&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250643]-1502549\/W10250643\/&#034;}}],&#034;productId&#034;:&#034;1502549&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$298.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250640\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250640&#034;,&#034;itemId&#034;:&#034;1505159&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250640]-1502546\/W10250640\/&#034;}}],&#034;productId&#034;:&#034;1502546&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$275.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250638\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250638&#034;,&#034;itemId&#034;:&#034;1505157&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250638]-1502544\/W10250638\/&#034;}}],&#034;productId&#034;:&#034;1502544&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$275.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10250641\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10250641&#034;,&#034;itemId&#034;:&#034;1505160&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10250641]-1502547\/W10250641\/&#034;}}],&#034;productId&#034;:&#034;1502547&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Other&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$215.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/No Image Available\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10292394&#034;,&#034;itemId&#034;:&#034;1505191&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[W10292394]-1502578\/W10292394\/&#034;}}],&#034;productId&#034;:&#034;1502578&#034;}]
 			</div>
 			<!--REQ0165238: Color Swatches on Maytag.ca -->
 			<ul class="endeca_aplliancesList">
@@ -2143,7 +2152,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 06:03:38 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 15:34:50 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">

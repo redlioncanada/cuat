@@ -237,7 +237,7 @@ var currentprotocol = document.location.protocol;
 			})(window,document,'script','dataLayer','GTM-P3TXNP');</script>
 			<!-- End Google Tag Manager -->
 	<input type="hidden" id="callReadyCOmpare" name="callReadyCOmpare" value="false" />
-<!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 16:59:16 EDT 2015] -->
+<!-- GENERATED: [WHRORNCategoryListDisplay, Mon Jul 13 14:29:17 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -335,6 +335,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -346,9 +348,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -362,7 +371,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 12:28:14 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 14:28:19 EDT 2015] -->
   
 
 
@@ -519,7 +528,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 12:28:14 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 14:27:57 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1281,7 +1290,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 		<div id="refrigerators_content" class="endeca_content">	
 		<!--QC146: Start json object for colour swatch display -->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$940.05&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285449\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285449&#034;,&#034;itemId&#034;:&#034;1303570&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285449]-1301460\/W10285449\/&#034;}}],&#034;productId&#034;:&#034;1301460&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$777.35&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272078\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272078&#034;,&#034;itemId&#034;:&#034;1303561&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272078]-1301451\/W10272078\/&#034;}}],&#034;productId&#034;:&#034;1301451&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$717.59&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285447\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285447&#034;,&#034;itemId&#034;:&#034;1303568&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285447]-1301458\/W10285447\/&#034;}}],&#034;productId&#034;:&#034;1301458&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$633.87&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285448\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285448&#034;,&#034;itemId&#034;:&#034;1303569&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285448]-1301459\/W10285448\/&#034;}}],&#034;productId&#034;:&#034;1301459&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$478.39&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272071\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272071&#034;,&#034;itemId&#034;:&#034;1303556&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272071]-1301446\/W10272071\/&#034;}}],&#034;productId&#034;:&#034;1301446&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$394.67&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272076\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272076&#034;,&#034;itemId&#034;:&#034;1303560&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272076]-1301450\/W10272076\/&#034;}}],&#034;productId&#034;:&#034;1301450&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$358.79&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115777\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115777&#034;,&#034;itemId&#034;:&#034;1303506&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115777]-1301396\/W10115777\/&#034;}}],&#034;productId&#034;:&#034;1301396&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$320.52&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115776\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115776&#034;,&#034;itemId&#034;:&#034;1303505&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115776]-1301395\/W10115776\/&#034;}}],&#034;productId&#034;:&#034;1301395&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$298.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115773\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115773&#034;,&#034;itemId&#034;:&#034;1303504&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115773]-1301394\/W10115773\/&#034;}}],&#034;productId&#034;:&#034;1301394&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$283.21&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10655450\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10655450&#034;,&#034;itemId&#034;:&#034;10504&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10655450]-10502\/W10655450\/&#034;}}],&#034;productId&#034;:&#034;10502&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$275.07&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272070\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272070&#034;,&#034;itemId&#034;:&#034;1303555&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272070]-1301445\/W10272070\/&#034;}}],&#034;productId&#034;:&#034;1301445&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$199.72&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272081\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272081&#034;,&#034;itemId&#034;:&#034;1303564&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272081]-1301454\/W10272081\/&#034;}}],&#034;productId&#034;:&#034;1301454&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$940.05&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285449\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285449&#034;,&#034;itemId&#034;:&#034;1303570&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285449]-1301460\/W10285449\/&#034;}}],&#034;productId&#034;:&#034;1301460&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$777.35&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272078\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272078&#034;,&#034;itemId&#034;:&#034;1303561&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272078]-1301451\/W10272078\/&#034;}}],&#034;productId&#034;:&#034;1301451&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$717.59&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285447\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285447&#034;,&#034;itemId&#034;:&#034;1303568&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285447]-1301458\/W10285447\/&#034;}}],&#034;productId&#034;:&#034;1301458&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$633.87&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10285448\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10285448&#034;,&#034;itemId&#034;:&#034;1303569&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10285448]-1301459\/W10285448\/&#034;}}],&#034;productId&#034;:&#034;1301459&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$478.39&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272071\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272071&#034;,&#034;itemId&#034;:&#034;1303556&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272071]-1301446\/W10272071\/&#034;}}],&#034;productId&#034;:&#034;1301446&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$394.67&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272076\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272076&#034;,&#034;itemId&#034;:&#034;1303560&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272076]-1301450\/W10272076\/&#034;}}],&#034;productId&#034;:&#034;1301450&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$358.79&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115777\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115777&#034;,&#034;itemId&#034;:&#034;1303506&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115777]-1301396\/W10115777\/&#034;}}],&#034;productId&#034;:&#034;1301396&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$320.52&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115776\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115776&#034;,&#034;itemId&#034;:&#034;1303505&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115776]-1301395\/W10115776\/&#034;}}],&#034;productId&#034;:&#034;1301395&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$298.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10115773\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10115773&#034;,&#034;itemId&#034;:&#034;1303504&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10115773]-1301394\/W10115773\/&#034;}}],&#034;productId&#034;:&#034;1301394&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;Price&#034;:&#034;$283.21&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10655450\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10655450&#034;,&#034;itemId&#034;:&#034;10504&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10655450]-10502\/W10655450\/&#034;}}],&#034;productId&#034;:&#034;10502&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$275.07&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272070\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272070&#034;,&#034;itemId&#034;:&#034;1303555&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272070]-1301445\/W10272070\/&#034;}}],&#034;productId&#034;:&#034;1301445&#034;},{&#034;Colors&#034;:[{&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$199.72&#034;,&#034;Image&#034;:&#034;\/digitalassets\/W10272081\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;W10272081&#034;,&#034;itemId&#034;:&#034;1303564&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.whirlpool.ca\/fr_CA\/-[W10272081]-1301454\/W10272081\/&#034;}}],&#034;productId&#034;:&#034;1301454&#034;}]
 			</div>
 		<!--QC146: End json object for colour swatch display -->
 		  <ul class="endeca_aplliancesList">
@@ -1312,6 +1321,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10285449
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1335,12 +1347,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">940,05 $</li>
                     
-		<div class="pr-category" id="pr-category-W10285449">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10285449]-1301460/W10285449/#ratingsandreviews">
-				<div class="pr-snippet-W10285449"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301460" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301460" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10285449">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1373,6 +1389,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10272078
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1396,12 +1415,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">777,35 $</li>
                     
-		<div class="pr-category" id="pr-category-W10272078">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10272078]-1301451/W10272078/#ratingsandreviews">
-				<div class="pr-snippet-W10272078"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301451" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301451" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10272078">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1434,6 +1457,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10285447
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1457,12 +1483,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">717,59 $</li>
                     
-		<div class="pr-category" id="pr-category-W10285447">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10285447]-1301458/W10285447/#ratingsandreviews">
-				<div class="pr-snippet-W10285447"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301458" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301458" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10285447">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1495,6 +1525,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10285448
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1518,12 +1551,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">633,87 $</li>
                     
-		<div class="pr-category" id="pr-category-W10285448">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10285448]-1301459/W10285448/#ratingsandreviews">
-				<div class="pr-snippet-W10285448"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301459" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301459" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10285448">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1556,6 +1593,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10272071
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1579,12 +1619,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">478,39 $</li>
                     
-		<div class="pr-category" id="pr-category-W10272071">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10272071]-1301446/W10272071/#ratingsandreviews">
-				<div class="pr-snippet-W10272071"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301446" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301446" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10272071">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1617,6 +1661,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10272076
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1640,12 +1687,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">394,67 $</li>
                     
-		<div class="pr-category" id="pr-category-W10272076">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10272076]-1301450/W10272076/#ratingsandreviews">
-				<div class="pr-snippet-W10272076"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301450" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301450" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10272076">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1678,6 +1729,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10115777
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1701,12 +1755,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">358,79 $</li>
                     
-		<div class="pr-category" id="pr-category-W10115777">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10115777]-1301396/W10115777/#ratingsandreviews">
-				<div class="pr-snippet-W10115777"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301396" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301396" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10115777">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1739,6 +1797,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10115776
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1762,12 +1823,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">320,52 $</li>
                     
-		<div class="pr-category" id="pr-category-W10115776">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10115776]-1301395/W10115776/#ratingsandreviews">
-				<div class="pr-snippet-W10115776"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301395" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301395" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10115776">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1800,6 +1865,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10115773
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1823,12 +1891,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">298,99 $</li>
                     
-		<div class="pr-category" id="pr-category-W10115773">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10115773]-1301394/W10115773/#ratingsandreviews">
-				<div class="pr-snippet-W10115773"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301394" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301394" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10115773">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1861,6 +1933,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10655450
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1880,12 +1955,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">283,21 $</li>
                     
-		<div class="pr-category" id="pr-category-W10655450">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10655450]-10502/W10655450/#ratingsandreviews">
-				<div class="pr-snippet-W10655450"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_10502" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_10502" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10655450">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1918,6 +1997,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10272070
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -1941,12 +2023,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">275,07 $</li>
                     
-		<div class="pr-category" id="pr-category-W10272070">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10272070]-1301445/W10272070/#ratingsandreviews">
-				<div class="pr-snippet-W10272070"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301445" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301445" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10272070">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -1979,6 +2065,9 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
             </li>
             <li class="prodModel">W10272081
             </li>
+            
+            <!-- REQ0315364 - Add Energy Guide Logo for WP_US starts -->
+            
             <li class="insideList"> 
                 <ul>
                     
@@ -2002,12 +2091,16 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
                                        
                 <li class="prodprice">199,72 $</li>
                     
-		<div class="pr-category" id="pr-category-W10272081">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.whirlpool.ca/fr_CA/accessories-1/accessoires-de-cuisine-2/four-encastré-et-cuisinière-3/-[W10272081]-1301454/W10272081/#ratingsandreviews">
-				<div class="pr-snippet-W10272081"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	<!--Shop outlet button for discontinued products-->
+                    	<li class="whereToBuy" id ="colorSwatchWhereToBuy_1301454" style="display: none;">
+	                        <a id="wheretoBuyCid" class="colorSwatchWhereToBuy_1301454" onclick="fireFloodlight('2625291','mayta650','mtgac508');trackWhereToBuy('CategoryPage');" href="/fr_CA/2_2_1_1/support_where-to-buy_where-to-buy.content.html?sku=w10272081">&nbsp;</a>
+	                    </li>
+                    
         </ul>
     </div>
 </li>
@@ -2074,7 +2167,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
 </div>
 
 
-<input type="hidden" id="prPLPArray" value=",W10285449,W10272078,W10285447,W10285448,W10272071,W10272076,W10115777,W10115776,W10115773,W10655450,W10272070,W10272081"/>
+<input type="hidden" id="prPLPArray" value=""/>
 
 		
 		</div>
@@ -2084,7 +2177,7 @@ http://cuat.whirlpool.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 12:28:15 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 14:27:57 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- QC224 Changes Added for the error popup when more than 4 products are selected START -->
 	<div class="product_compare_error_main_box generic_popup" id="compare_product_error"
         style="display: none;">

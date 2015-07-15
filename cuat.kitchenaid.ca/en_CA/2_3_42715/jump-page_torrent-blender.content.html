@@ -219,6 +219,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -230,9 +232,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -246,7 +255,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- Header Nav Start --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:47:17 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 06:03:08 EDT 2015] -->
   
 
 
@@ -269,7 +278,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -403,7 +412,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 17:50:03 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:32:22 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -687,6 +696,7 @@ body {font-size: 10px !important;}
   z-index: 6000;
   background-color: white;
 }
+.mobile .main-page {background-color: black;}
 #header-wrap {position:initial;}
 #header_sub_nav_1 {height: 36px;}
 #header_sub_nav_2 {top: 0px;}
@@ -730,7 +740,7 @@ body {font-size: 10px !important;}
 </div>
 <div class="youtube-embed" data-id="NZqdJ9Zt-aA">
 <div>
-<h3>KitchenAid Torrent<sup>&trade;</sup> Magnetic Drive Blender</h3>
+<h3>KitchenAid Torrent<sup>&trade;</sup> Industry First Magnetic Drive Blender</h3>
 <img src="/images/torrent/poster4.jpg" /></div>
 </div>
 </div>
@@ -803,14 +813,14 @@ body {font-size: 10px !important;}
 </div>
 <div>
 <div class="recipe-wrapper grey">
-<div class="recipe-background" onclick="ga('send', 'event', 'Torrent-Recipe Overlay', 'Clicked Close Overlay', 'Peaches and Green Smoothie');"></div>
+<div class="recipe-background" onclick="ga('send', 'event', 'Torrent-Recipe Overlay', 'Clicked Close Overlay', 'Peaches&nbsp;and&nbsp;Green&nbsp;Smoothie');"></div>
 <div class="close-x animate-all" onclick="ga('send', 'event', 'Torrent-Recipe Overlay', 'Clicked Close Overlay', 'Peaches and Green Smoothie');"><img src="/images/torrent/modalclosebtn.png" /></div>
 <img class="recipe-overlay" src="/images/torrent/recipe-header-2.jpg" /> <img class="recipe-icon" src="/images/torrent/glass-icon.png" />
 <div class="download-recipes animate-all en"><a onclick="ga('send', 'event', 'Torrent-Recipe Overlay', 'Clicked Download Recipe Book', 'Peaches and Green Smoothie');" href="/images/torrent/pdf/torrent-recipes.pdf" target="_blank">
 <div>DOWNLOAD RECIPE BOOK</div>
 </a></div>
 <div class="recipe-content en">
-<h3>PEACHES&nbsp;AND&nbsp;GREEN&nbsp;SMOOTHIE</h3>
+<h3>PEACHES AND GREEN SMOOTHIE</h3>
 <div class="left">
 <h3>INGREDIENTS</h3>
 <p>Makes 2 servings</p>
@@ -1511,7 +1521,7 @@ body {font-size: 10px !important;}
 		<div class="main-content-wrapper-bottom"></div>
 	</div>
 	
-	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:47:18 EDT 2015] -->
+	<!-- Footer Start Start --><!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 06:03:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

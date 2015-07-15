@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:03:19 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:39:33 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -995,7 +1004,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="White Chocolate" title="White Chocolate" src="/digitalassets/ColorBars/LW-off.gif" 
-											    name="KSMCB5LW|White Chocolate|/digitalassets/No Image Available/Standalone_1175X1290.png|$84,99|$84,99"									
+											    name="KSMCB5LW|White Chocolate|/digitalassets/No Image Available/Standalone_1175X1290.png|$89,99|$89,99"									
 												onclick="javascript:whereToBuy('KSMCB5LW');categoryDisplayJS.setSelectedAttribute('Color','White Chocolate');javascript:categoryDisplayJS.setCartDisplay('Color_White Chocolate','2104407');" />
 											
 										<script type="text/javascript">
@@ -1005,19 +1014,19 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 										</script>
 									
 											<img id="swatch_color_2" class="color swatch" alt="Glacier Blue" title="Glacier Blue" src="/digitalassets/ColorBars/GB-off.gif"
-												name="KSMCB5GB|Glacier Blue|/digitalassets/KSMCB5GB/Standalone_1175X1290.jpg|$84,99|$84,99"
+												name="KSMCB5GB|Glacier Blue|/digitalassets/KSMCB5GB/Standalone_1175X1290.jpg|$89,99|$89,99"
 												onclick="javascript:whereToBuy('KSMCB5GB');categoryDisplayJS.setSelectedAttribute('Color','Glacier Blue');javascript:categoryDisplayJS.setCartDisplay('Color_Glacier Blue','2104407');" />
 										
 											<img id="swatch_color_3" class="color swatch" alt="Jaune Majestueux" title="Jaune Majestueux" src="/digitalassets/ColorBars/MY-off.gif"
-												name="KSMCB5MY|Jaune Majestueux|/digitalassets/KSMCB5MY/Standalone_1175X1290.jpg|$84,99|$84,99"
+												name="KSMCB5MY|Jaune Majestueux|/digitalassets/KSMCB5MY/Standalone_1175X1290.jpg|$89,99|$89,99"
 												onclick="javascript:whereToBuy('KSMCB5MY');categoryDisplayJS.setSelectedAttribute('Color','Jaune Majestueux');javascript:categoryDisplayJS.setCartDisplay('Color_Jaune Majestueux','2104407');" />
 										
 											<img id="swatch_color_4" class="color swatch" alt="Regal Purple" title="Regal Purple" src="/digitalassets/ColorBars/RP-off.gif"
-												name="KSMCB5RP|Regal Purple|/digitalassets/No Image Available/Standalone_1175X1290.png|$84,99|$84,99"
+												name="KSMCB5RP|Regal Purple|/digitalassets/No Image Available/Standalone_1175X1290.png|$89,99|$89,99"
 												onclick="javascript:whereToBuy('KSMCB5RP');categoryDisplayJS.setSelectedAttribute('Color','Regal Purple');javascript:categoryDisplayJS.setCartDisplay('Color_Regal Purple','2104407');" />
 										
 											<img id="swatch_color_5" class="color swatch" alt="Black Matte" title="Black Matte" src="/digitalassets/ColorBars/B9-off.gif"
-												name="KSMCB5BM|Black Matte|/digitalassets/KSMCB5BM/Standalone_1175X1290.jpg|$84,99|$84,99"
+												name="KSMCB5BM|Black Matte|/digitalassets/KSMCB5BM/Standalone_1175X1290.jpg|$89,99|$89,99"
 												onclick="javascript:whereToBuy('KSMCB5BM');categoryDisplayJS.setSelectedAttribute('Color','Black Matte');javascript:categoryDisplayJS.setCartDisplay('Color_Black Matte','2104407');" />
 										
 				</div>
@@ -1134,21 +1143,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KN25WPBH]-2103937/KN25WPBH/"><img class="image_product_bootom" src="/digitalassets/KN25WPBH/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Bol poli avec poignée" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/"><img class="image_product_bootom" src="/digitalassets/KSMC5QBOWL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KN25WPBH]-2103937/KN25WPBH/">KitchenAid® Bol poli avec poignée</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/">KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Bol poli avec poignée</p>
+	                	<p class="recently_product_id">KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				89,99 $
+                  				98,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1156,7 +1165,34 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KN25WPBH]-2103937/KN25WPBH/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC7QBOWL]-2101256/KSMC7QBOWL/"><img class="image_product_bootom" src="/digitalassets/KSMC7QBOWL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 7 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC7QBOWL]-2101256/KSMC7QBOWL/">KitchenAid® 7 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® 7 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				98,99 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC7QBOWL]-2101256/KSMC7QBOWL/">Détails</a> </p>
 	             </li>
 	 
 		
@@ -1175,7 +1211,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				89,99 $
+                  				98,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1187,7 +1223,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	             </li>
 	 
 		
-				<li class="recently_product " sku="sku20">  
+				<li class="recently_product last" sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC8QBOWL]-2103911/KSMC8QBOWL/"><img class="image_product_bootom" src="/digitalassets/KSMC8QBOWL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 8 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -1202,7 +1238,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				89,99 $
+                  				98,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1211,33 +1247,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
 	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC8QBOWL]-2103911/KSMC8QBOWL/">Détails</a> </p>
-	             </li>
-	 
-		
-				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/"><img class="image_product_bootom" src="/digitalassets/KSMC5QBOWL/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/">KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">KitchenAid® 5 Quart NSF Certified Polished Stainless Steel Bowl with J Hook Handle</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				89,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSMC5QBOWL]-2103909/KSMC5QBOWL/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -1259,7 +1268,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											84,99 $  
+											89,99 $  
 											</span>
 										</p>
 										
@@ -1276,23 +1285,23 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="White Chocolate"
 																			id="KSMCB5LW"
-																			title="$84,99">White Chocolate</option>
+																			title="$89,99">White Chocolate</option>
 																	
 																		<option value="Glacier Blue"
 																			id="KSMCB5GB"
-																			title="$84,99">Glacier Blue</option>
+																			title="$89,99">Glacier Blue</option>
 																	
 																		<option value="Jaune Majestueux"
 																			id="KSMCB5MY"
-																			title="$84,99">Jaune Majestueux</option>
+																			title="$89,99">Jaune Majestueux</option>
 																	
 																		<option value="Regal Purple"
 																			id="KSMCB5RP"
-																			title="$84,99">Regal Purple</option>
+																			title="$89,99">Regal Purple</option>
 																	
 																		<option value="Black Matte"
 																			id="KSMCB5BM"
-																			title="$84,99">Black Matte</option>
+																			title="$89,99">Black Matte</option>
 																	
 											</select>
 										</div>
@@ -1423,13 +1432,13 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '84,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '84,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104434', 'KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '84,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104836', 'KSMCB5GB', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Glacier Blue', '84,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104837', 'KSMCB5MY', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Jaune Majestueux', '84,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104838', 'KSMCB5RP', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Regal Purple', '84,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104835', 'KSMCB5BM', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Black Matte', '84,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '89,99 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '89,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104434', 'KSMCB5LW', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'White Chocolate', '89,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104836', 'KSMCB5GB', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Glacier Blue', '89,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104837', 'KSMCB5MY', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Jaune Majestueux', '89,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104838', 'KSMCB5RP', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Regal Purple', '89,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104835', 'KSMCB5BM', 'KitchenAid® 5-Qt. Tilt-Head Ceramic Bowl', 'Batteurs sur socle', 'KitchenAid', 'Black Matte', '89,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1443,7 +1452,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

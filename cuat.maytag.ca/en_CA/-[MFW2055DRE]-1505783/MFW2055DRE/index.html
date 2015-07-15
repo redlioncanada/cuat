@@ -253,6 +253,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -264,9 +266,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -280,7 +289,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 06:03:37 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 15:34:55 EDT 2015] -->
   
 
 
@@ -320,7 +329,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13521132");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -437,11 +446,11 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 11:14:08 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 15:34:49 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
-<a href="https://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+<a href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
 		<span id="miniShopCartLeftCorner" class="left_corner">
 			CART
 		</span>
@@ -909,7 +918,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 			<h1 class="product-title">19.6 cu ft French Door Refrigerator with Strongbox™ Door Bins</h1>
 			
 
-<div id="pr-pdp-snippet-MFW2055DRE" class="pr-pdp">
+<div id="pr-pdp-snippet-MFW2055DRM" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -918,8 +927,8 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"MFW2055DRE",
-            pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MFW2055DRE&storeId=10229&swhPageId=MFW2055DRE",
+            pr_page_id:"MFW2055DRM",
+            pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MFW2055DRM&storeId=10229&swhPageId=MFW2055DRE",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -1280,6 +1289,34 @@ baking soda at reducing common food odors by actively circulating air through a 
 								
 						</div>
 					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Amps
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									10
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Volts
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									115V
+								</div>
+								
+								
+						</div>
+					
 			</div>
 		</div>	
 	
@@ -1287,6 +1324,34 @@ baking soda at reducing common food odors by actively circulating air through a 
 			<h3 onclick="" id="spec_header_2" class="">Dimensions</h3>
 			<div id="spec_2" class="spec_contents ">
 				
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Height to Top of Cabinet
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									67 1/2
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Depth Excluding Handles
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									32 1/4
+								</div>
+								
+								
+						</div>
+					
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
@@ -1366,34 +1431,6 @@ baking soda at reducing common food odors by actively circulating air through a 
 							
 								<div class="spec_contents_info">
 									28
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Height to Top of Cabinet
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									67 1/2
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Depth Excluding Handles
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									32 1/4
 								</div>
 								
 								
@@ -1713,11 +1750,11 @@ baking soda at reducing common food odors by actively circulating air through a 
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-MFW2055DRE" class="pr-pdp-tab">
+<div id="pr-pdp-tab-MFW2055DRM" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"MFW2055DRE",
-	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MFW2055DRE&storeId=10229&swhPageId=MFW2055DRE"});
+	    pr_page_id:"MFW2055DRM",
+	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MFW2055DRM&storeId=10229&swhPageId=MFW2055DRE"});
 	</script>
 </div>
 		
@@ -2154,7 +2191,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 		</div>
 		<br clear="all" />
 	</div>
-	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 06:03:38 EDT 2015] -->
+	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 15:34:50 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">

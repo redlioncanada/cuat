@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:25:59 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:43:01 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -902,7 +911,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<h1 class="product-title">KitchenAid® Batteur sur socle à tête inclinable Ultra Power Plus™</h1>
 			
 
-<div id="pr-pdp-snippet-KSM100PSOB" class="pr-pdp">
+<div id="pr-pdp-snippet-KSM100PSER" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -911,8 +920,8 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"KSM100PSOB",
-            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KSM100PSOB&storeId=10231&swhPageId=KSM100PSOB",
+            pr_page_id:"KSM100PSER",
+            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KSM100PSER&storeId=10231&swhPageId=KSM100PSOB",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -1001,17 +1010,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">commande coulissante à 10 vitesses</span>
+					<span class="header_desc">Prise pour accessoires professionnels</span>
 				</h4>
-				<p>Varie d'un fouettage très rapide à un mélange très lent.</p>
+				<p>La prise pour accessoires de style professionnel transforme votre batteur sur socle en centre culinaire. À l'aide de 12 accessoires facultatifs, préparez des pâtes fraîches, râpez du fromage parmesan en quelques secondes ou préparez votre crème glacée maison.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Couvercle verseur compris</span>
+					<span class="header_desc">commande coulissante à 10 vitesses</span>
 				</h4>
-				<p>Couvercle verseur compris</p>
+				<p>Varie d'un fouettage très rapide à un mélange très lent.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1019,10 +1028,20 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
-							<h4>Comprend un fouet plat, un crochet pétrisseur et un fouet fin.</h4>
-							<p>Comprend un fouet plat, un crochet pétrisseur et un fouet fin.</p>
+							<h4>commande coulissante à 10 vitesses</h4>
+							<p>Varie d'un fouettage très rapide à un mélange très lent.</p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Couvercle verseur compris</h4>
+							<p>Couvercle verseur compris</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Comprend un fouet plat, un crochet pétrisseur et un fouet fin.</h4>
+							<p>Comprend un fouet plat, un crochet pétrisseur et un fouet fin.</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Prise pour accessoires</h4>
 							<p>La prise pour accessoires transforme votre batteur sur socle en centre culinaire. Douze accessoires facultatifs utilisent la puissance du batteur sur socle pour vous permettre de préparer des fusilli ou de râper tout un bloc de fromage parmesan en quelques secondes.</p>
@@ -1031,10 +1050,15 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					
 						<div id="right-col">
 						<div class="feature first">	
-							<h4>Capacité de pétrissage de deux pains</h4>
-							<p>Capacité de pétrissage de deux pains</p>
+							<h4>Prise pour accessoires</h4>
+							<p>La prise pour accessoires transforme votre batteur sur socle en centre culinaire. Douze accessoires facultatifs utilisent la puissance du batteur sur socle pour vous permettre de préparer des fusilli ou de râper tout un bloc de fromage parmesan en quelques secondes.</p>
 						</div>	
 						
+						<div class="feature">	
+							<h4>Capacité de pétrissage de deux pains</h4>
+							<p>Capacité de pétrissage de deux pains</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Assemblé avec fierté à Greenville, Ohio</h4>
 							<p>Assemblé avec fierté à Greenville, Ohio</p>
@@ -1109,11 +1133,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-KSM100PSOB" class="pr-pdp-tab">
+<div id="pr-pdp-tab-KSM100PSER" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"KSM100PSOB",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KSM100PSOB&storeId=10231&swhPageId=KSM100PSOB"});
+	    pr_page_id:"KSM100PSER",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-301&partNumber=KSM100PSER&storeId=10231&swhPageId=KSM100PSOB"});
 	</script>
 </div>
 		
@@ -1218,7 +1242,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				16,99 $
+                  				18,69 $
 							</p>
                	 		</li>
                 		<li>
@@ -1245,7 +1269,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				16,99 $
+                  				18,69 $
 							</p>
                	 		</li>
                 		<li>
@@ -1272,7 +1296,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				84,99 $
+                  				89,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1456,7 +1480,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

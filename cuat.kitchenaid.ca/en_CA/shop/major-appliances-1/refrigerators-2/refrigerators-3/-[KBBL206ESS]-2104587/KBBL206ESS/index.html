@@ -188,7 +188,7 @@ var currentprotocol = document.location.protocol;
      
     <meta property="og:title" content="???PAGE_TITLE_TEXT???" />
     <meta property="og:description" content="???LEAR_ABOUT_METADATA_TEXT???" />
-    <meta property="og:image" content="http://cuat.kitchenaid.ca/digitalassets/KBBL206ESS/Standalone_244X312.jpg" />    
+    <meta property="og:image" content="http://cuat.kitchenaid.ca/digitalassets/KBBL206ESS/AB-Default_290X290_HO.jpg" />    
     <meta property="og:url" content="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBL206ESS]-2104587/KBBL206ESS/" />
     <meta property="og:type" content="???FB_OG_TYPE_PRODUCT???" />
     <!-- Facebook ends -->
@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jun 29 22:03:55 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 06:03:08 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jun 29 22:06:19 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:32:12 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -730,7 +739,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     		[PLPDBREDEspot]
   		
   		</div>
-<!--  emsName: PLPDBREDEspot, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPDBRED/KBBL206ESS.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPDBRED/79099.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPDBRED/default.xml, displayed=false, error=class java.io.FileNotFoundException] }-->
+<!--  emsName: PLPDBREDEspot, store: KAD_CA_B2C, locale: en_CA, status: { [path=systemdefined/PLPDBRED/KBBL206ESS.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPDBRED/131099.xml, displayed=false, error=class java.io.FileNotFoundException]  [path=systemdefined/PLPDBRED/default.xml, displayed=false, error=class java.io.FileNotFoundException] }-->
 			  	  	
 			  	  
 
@@ -748,10 +757,10 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					</li>
 					<li class="compare-now">
 						
-						<a onclick="" href="javascript:compareProductJS.addtoCompareProduct('79098','2104587');" class="compare-add">
+						<a onclick="" href="javascript:compareProductJS.addtoCompareProduct('131098','2104587');" class="compare-add">
 							add to compare
 						</a>
-						<a href="http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNCompareProductsDisplay?catalogId=10581&categoryId=79098&langId=-300&storeId=10231" class="compare-now" style="display:none;">
+						<a href="http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNCompareProductsDisplay?catalogId=10581&categoryId=131098&langId=-300&storeId=10231" class="compare-now" style="display:none;">
 							compare now
 						</a>
 					</li>
@@ -939,7 +948,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="Stainless Steel" title="Stainless Steel" src="/digitalassets/ColorBars/SS-off.gif" 
-											    name="KBBL206ESS|Stainless Steel|/digitalassets/KBBL206ESS/Standalone_1175X1290.jpg|$8,999.99|$8,999.99"									
+											    name="KBBL206ESS|Stainless Steel|/digitalassets/KBBL206ESS/Standalone_1175X1290.jpg|$9,499.99|$9,499.99"									
 												onclick="javascript:whereToBuy('KBBL206ESS');categoryDisplayJS.setSelectedAttribute('Color','Stainless Steel');javascript:categoryDisplayJS.setCartDisplay('Color_Stainless Steel','2104587');" />
 											
 										<script type="text/javascript">
@@ -1076,20 +1085,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Width
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									35 1/4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Energy Star® Qualified
 									
 							</div>
@@ -1101,7 +1096,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Total Capacity
@@ -1115,35 +1110,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Depth
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									27 3/4
-								</div>
-								
-								
-						</div>
-					
 						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Height
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									83 3/8
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Freezer Capacity
@@ -1157,7 +1124,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										CEE Tier
@@ -1171,7 +1138,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Refrigerator Capacity
@@ -1195,48 +1162,6 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Width
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									35 1/4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Width of Cabinet Only
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									35 1/4
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Depth Closed Excluding Handles
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									25 1/8
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Height
 									
 							</div>
@@ -1248,7 +1173,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Depth
@@ -1262,7 +1187,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Depth Excluding Doors
@@ -1276,7 +1201,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Depth With Door Open 90 Degree
@@ -1290,7 +1215,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Height To Top Of Cabinet
@@ -1304,7 +1229,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Cutout Depth
@@ -1318,7 +1243,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Cutout Width
@@ -1332,7 +1257,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Cutout Height
@@ -1346,7 +1271,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Width with Doors Closed
@@ -1355,6 +1280,48 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 							
 								<div class="spec_contents_info">
 									36 1/4
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Width
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									35 1/4
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Width of Cabinet Only
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									35 1/4
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Depth Closed Excluding Handles
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									25 1/8
 								</div>
 								
 								
@@ -1749,7 +1716,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<div class="product_image">
 		        		
 		        			<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[8212547RP]-2100168/8212547RP/">
-		            			<img src="/digitalassets/8212547RP/Standalone_244X312.jpg" alt="Refrigerator Water Supply Kit" />
+		            			<img src="/digitalassets/8212547RP/AB-Default_290X290_HO.jpg" alt="Refrigerator Water Supply Kit" />
 		            		</a>
 		            	
 					</div>
@@ -1806,21 +1773,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBR206ESS]-2104589/KBBR206ESS/"><img class="image_product_bootom" src="/digitalassets/KBBR206ESS/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36" Width" /></a>
+				  <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBL306EPA]-2104521/KBBL306EPA/"><img class="image_product_bootom" src="/digitalassets/KBBL306EPA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® 20.9 Cu. Ft. 36" Width Built-In Panel Ready Platinum Interior Bottom Mount Refrigerator" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBR206ESS]-2104589/KBBR206ESS/">KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36" Width</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBL306EPA]-2104521/KBBL306EPA/">KitchenAid® 20.9 Cu. Ft. 36" Width Built-In Panel Ready Platinum Interior Bottom Mount Refrigerator</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36" Width</p>
+	                	<p class="recently_product_id">KitchenAid® 20.9 Cu. Ft. 36" Width Built-In Panel Ready Platinum Interior Bottom Mount Refrigerator</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$8,999.99
+                  				$9,499.99
 							</p>
                	 		</li>
                 		<li>
@@ -1828,7 +1795,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBR206ESS]-2104589/KBBR206ESS/">View product details</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/en_CA/shop/-[KBBL306EPA]-2104521/KBBL306EPA/">View product details</a> </p>
 	             </li>
 	 
 		
@@ -1847,7 +1814,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$9,099.99
+                  				$9,599.99
 							</p>
                	 		</li>
                 		<li>
@@ -1874,7 +1841,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$9,099.99
+                  				$9,599.99
 							</p>
                	 		</li>
                 		<li>
@@ -1901,7 +1868,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$9,299.99
+                  				$9,799.99
 							</p>
                	 		</li>
                 		<li>
@@ -1931,7 +1898,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											$8,999.99  
+											$9,499.99  
 											</span>
 										</p>
 										
@@ -1948,7 +1915,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="Stainless Steel"
 																			id="KBBL206ESS"
-																			title="$8,999.99">Stainless Steel</option>
+																			title="$9,499.99">Stainless Steel</option>
 																	
 											</select>
 										</div>
@@ -2078,9 +2045,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$8,999.99', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$8,999.99');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104618', 'KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$8,999.99');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$9,499.99', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$9,499.99');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2104618', 'KBBL206ESS', 'KitchenAid® Built-In Stainless Bottom Mount Refrigerator 20.9 Cu. Ft. 36&#034; Width', 'Refrigerators', 'KitchenAid', 'Stainless Steel', '$9,499.99');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -2094,7 +2061,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jun 29 22:03:56 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 06:03:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

@@ -238,7 +238,7 @@ var currentprotocol = document.location.protocol;
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-MM4FFD');</script>
-			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Fri Jul 03 17:12:50 EDT 2015] -->
+			<!-- End Google Tag Manager --><!-- GENERATED: [WHRORNCategoryListDisplay, Mon Jul 13 15:35:11 EDT 2015] -->
 	
 <script type="text/javascript">
 	<!-- Do not try putting this under a dojo.addonload, since dojo.back: Not initialised, You should call dojo.back.init() from a <script> block that lives inside the <body> tag to prevent bugs on IE. -->
@@ -336,6 +336,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -347,9 +349,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -363,7 +372,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 06:03:37 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 15:34:55 EDT 2015] -->
   
 
 
@@ -403,7 +412,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13521132");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -520,11 +529,11 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 11:14:08 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 15:34:49 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
-<a href="https://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+<a href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
 		<span id="miniShopCartLeftCorner" class="left_corner">
 			CART
 		</span>
@@ -865,7 +874,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 	EndecaHelperJS.setPageSize('10');
 </script>
 
-<!-- BEGIN: [WHRORNProductListFilterOptions, Fri Jul 03 17:12:50 EDT 2015] --> 
+<!-- BEGIN: [WHRORNProductListFilterOptions, Mon Jul 13 15:35:11 EDT 2015] --> 
 
 		<div id="priceSliderVars" style="display:none;">
 			{
@@ -1174,7 +1183,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 										
 	</div>
 </div>
-<!-- END: [WHRORNProductListFilterOptions, Fri Jul 03 17:12:50 EDT 2015] --> 
+<!-- END: [WHRORNProductListFilterOptions, Mon Jul 13 15:35:11 EDT 2015] --> 
 		
 	<div class="endeca_rightContainer">
 	 	<div id="espot_image">
@@ -1282,7 +1291,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 		<div id="refrigerators_content" class="endeca_content">
 		<!--REQ0165238: Color Swatches on Maytag.ca -->
 			<div id="jsonColors" style="display:none;"> 
-				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBL1957DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBL1957DEM&#034;,&#034;itemId&#034;:&#034;1505727&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBL1957DEM]-1505700\/MBL1957DEM\/&#034;}}],&#034;productId&#034;:&#034;1505700&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBR1957DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBR1957DEM&#034;,&#034;itemId&#034;:&#034;1505728&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBR1957DEM]-1505701\/MBR1957DEM\/&#034;}}],&#034;productId&#034;:&#034;1505701&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEM&#034;,&#034;itemId&#034;:&#034;1505621&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEM]-1505544\/MBF2258DEM\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEE\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEE&#034;,&#034;itemId&#034;:&#034;1505619&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEE]-1505544\/MBF2258DEE\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEH&#034;,&#034;itemId&#034;:&#034;1505620&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEH]-1505544\/MBF2258DEH\/&#034;}}],&#034;productId&#034;:&#034;1505544&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBB1957DEE\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBB1957DEE&#034;,&#034;itemId&#034;:&#034;1505722&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBB1957DEE]-1505698\/MBB1957DEE\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBB1957DEH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBB1957DEH&#034;,&#034;itemId&#034;:&#034;1505723&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBB1957DEH]-1505698\/MBB1957DEH\/&#034;}}],&#034;productId&#034;:&#034;1505698&#034;}]
+				[{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBL1957DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBL1957DEM&#034;,&#034;itemId&#034;:&#034;1505727&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBL1957DEM]-1505700\/MBL1957DEM\/&#034;}}],&#034;productId&#034;:&#034;1505700&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,649.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBR1957DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBR1957DEM&#034;,&#034;itemId&#034;:&#034;1505728&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBR1957DEM]-1505701\/MBR1957DEM\/&#034;}}],&#034;productId&#034;:&#034;1505701&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Stainless Steel&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,849.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEM\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEM&#034;,&#034;itemId&#034;:&#034;1505621&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEM]-1505544\/MBF2258DEM\/&#034;}},{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEE\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEE&#034;,&#034;itemId&#034;:&#034;1505619&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEE]-1505544\/MBF2258DEE\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,799.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBF2258DEH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBF2258DEH&#034;,&#034;itemId&#034;:&#034;1505620&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBF2258DEH]-1505544\/MBF2258DEH\/&#034;}}],&#034;productId&#034;:&#034;1505544&#034;},{&#034;Colors&#034;:[{&#034;Color&#034;:&#034;Black&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBB1957DEE\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBB1957DEE&#034;,&#034;itemId&#034;:&#034;1505722&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBB1957DEE]-1505698\/MBB1957DEE\/&#034;}},{&#034;Color&#034;:&#034;White&#034;,&#034;Attributes&#034;:{&#034;buyable&#034;:&#034;0&#034;,&#034;whereToBuy&#034;:&#034;1&#034;,&#034;Price&#034;:&#034;$1,599.99&#034;,&#034;Image&#034;:&#034;\/digitalassets\/MBB1957DEH\/AB-Default_290X290_HO.jpg&#034;,&#034;SKU&#034;:&#034;MBB1957DEH&#034;,&#034;itemId&#034;:&#034;1505723&#034;,&#034;Url&#034;:&#034;http:\/\/cuat.maytag.ca\/en_CA\/-[MBB1957DEH]-1505698\/MBB1957DEH\/&#034;}}],&#034;productId&#034;:&#034;1505698&#034;}]
 			</div>
 			<!--REQ0165238: Color Swatches on Maytag.ca -->
 			<ul class="endeca_aplliancesList">
@@ -1380,9 +1389,9 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 					</span>
 				</li>
 				    
-		<div class="pr-category" id="pr-category-MBL1957DEM">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/refrigeration-2/refrigerators-3/-[MBL1957DEM]-1505700/MBL1957DEM/#ratingsandreviews">
-				<div class="pr-snippet-MBL1957DEM"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1516,9 +1525,9 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 					</span>
 				</li>
 				    
-		<div class="pr-category" id="pr-category-MBR1957DEM">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/refrigeration-2/refrigerators-3/-[MBR1957DEM]-1505701/MBR1957DEM/#ratingsandreviews">
-				<div class="pr-snippet-MBR1957DEM"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1656,9 +1665,9 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 					</span>
 				</li>
 				    
-		<div class="pr-category" id="pr-category-MBF2258DEM">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/refrigeration-2/refrigerators-3/-[MBF2258DEM]-1505544/MBF2258DEM/#ratingsandreviews">
-				<div class="pr-snippet-MBF2258DEM"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1794,9 +1803,9 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 					</span>
 				</li>
 				    
-		<div class="pr-category" id="pr-category-MBB1957DEH">  
+		<div class="pr-category" id="pr-category-">  
 		    <a href="http://cuat.maytag.ca/en_CA/kitchen-1/refrigeration-2/refrigerators-3/-[MBB1957DEH]-1505698/MBB1957DEH/#ratingsandreviews">
-				<div class="pr-snippet-MBB1957DEH"></div>
+				<div class="pr-snippet-"></div>
 			</a>
 		</div>
 	
@@ -1891,7 +1900,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
 <!-- QC224 Changes made for the new style END --><!--END - SortView Bar--><!-- END WHRORNPageControls.jspf -->
 	</div>
 
-<input type="hidden" id="prPLPArray" value=",MBL1957DEM,MBR1957DEM,MBF2258DEM,MBB1957DEH"/>
+<input type="hidden" id="prPLPArray" value=""/>
 		
 		</div>
     </div>
@@ -1899,7 +1908,7 @@ http://cuat.maytag.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=10579
     <div class="main-content-wrapper-bottom"></div>
 </div>
 
-<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 06:03:38 EDT 2015] -->
+<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 15:34:50 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">

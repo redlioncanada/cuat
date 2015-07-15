@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:08:03 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:42:47 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -915,7 +924,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				<div id="color-swatches">
 					
 											<img id="swatch_color_1" class="color swatch selected" alt="D'autre" title="D'autre" src="/digitalassets/ColorBars/NC-off.gif" 
-											    name="KFP13JD|D'autre|/digitalassets/KFP13JD/Standalone_1175X1290.jpg|$29,99|$29,99"									
+											    name="KFP13JD|D'autre|/digitalassets/KFP13JD/Standalone_1175X1290.jpg|$32,99|$32,99"									
 												onclick="javascript:whereToBuy('KFP13JD');categoryDisplayJS.setSelectedAttribute('Color','D'autre');javascript:categoryDisplayJS.setCartDisplay('Color_D'autre','2100679');" />
 											
 										<script type="text/javascript">
@@ -1010,21 +1019,21 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[FGA]-2100179/FGA/"><img class="image_product_bootom" src="/digitalassets/FGA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Broyeur d'aliments" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO223CU]-2100419/KCO223CU/"><img class="image_product_bootom" src="/digitalassets/KCO223CU/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Four de comptoir à cuisson par convection de 12 pouces  KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[FGA]-2100179/FGA/">KitchenAid® Broyeur d'aliments</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO223CU]-2100419/KCO223CU/">KitchenAid® Four de comptoir à cuisson par convection de 12 pouces  KitchenAid®</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Broyeur d'aliments</p>
+	                	<p class="recently_product_id">KitchenAid® Four de comptoir à cuisson par convection de 12 pouces  KitchenAid®</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				89,99 $
+                  				229,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1032,26 +1041,26 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[FGA]-2100179/FGA/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO223CU]-2100419/KCO223CU/">Détails</a> </p>
 	             </li>
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[JE]-2100206/JE/"><img class="image_product_bootom" src="/digitalassets/JE/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Presse-agrumes KitchenAid®" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO273SS]-2100420/KCO273SS/"><img class="image_product_bootom" src="/digitalassets/KCO273SS/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[JE]-2100206/JE/">KitchenAid® Presse-agrumes KitchenAid®</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO273SS]-2100420/KCO273SS/">KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Presse-agrumes KitchenAid®</p>
+	                	<p class="recently_product_id">KitchenAid® Four de comptoir numérique à convection KitchenAid® de 12 po</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				49,99 $
+                  				379,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1059,20 +1068,20 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[JE]-2100206/JE/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCO273SS]-2100420/KCO273SS/">Détails</a> </p>
 	             </li>
 	 
 		
 				<li class="recently_product " sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCM112OB]-2100389/KCM112OB/"><img class="image_product_bootom" src="/digitalassets/KCM112OB/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Cafetière de 10 tasses avec verseuse thermique KitchenAid®" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KAICA]-2100236/KAICA/"><img class="image_product_bootom" src="/digitalassets/KAICA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Sorbetière KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCM112OB]-2100389/KCM112OB/">KitchenAid® Cafetière de 10 tasses avec verseuse thermique KitchenAid®</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KAICA]-2100236/KAICA/">KitchenAid® Sorbetière KitchenAid®</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Cafetière de 10 tasses avec verseuse thermique KitchenAid®</p>
+	                	<p class="recently_product_id">KitchenAid® Sorbetière KitchenAid®</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
@@ -1086,26 +1095,26 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KCM112OB]-2100389/KCM112OB/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KAICA]-2100236/KAICA/">Détails</a> </p>
 	             </li>
 	 
 		
 				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM150PSAC]-2101195/KSM150PSAC/"><img class="image_product_bootom" src="/digitalassets/KSM150PSAC/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Batteur sur socle à tête inclinable KitchenAid de 4,7 L (5 pintes) de la série Artisan" /></a>
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGSSA]-2100841/KGSSA/"><img class="image_product_bootom" src="/digitalassets/KGSSA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Jeu d’accessoires  2 pour batteur sur socle KitchenAid®" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
 	              <ul class="recently_product_ul">
 	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM150PSAC]-2101195/KSM150PSAC/">KitchenAid® Batteur sur socle à tête inclinable KitchenAid de 4,7 L (5 pintes) de la série Artisan</a> </p>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGSSA]-2100841/KGSSA/">KitchenAid® Jeu d’accessoires  2 pour batteur sur socle KitchenAid®</a> </p>
 	              	</li>
 	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Batteur sur socle à tête inclinable KitchenAid de 4,7 L (5 pintes) de la série Artisan</p>
+	                	<p class="recently_product_id">KitchenAid® Jeu d’accessoires  2 pour batteur sur socle KitchenAid®</p>
 	              	</li>
 	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				549,99 $
+                  				199,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -1113,7 +1122,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
                 		</li>
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM150PSAC]-2101195/KSM150PSAC/">Détails</a> </p>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KGSSA]-2100841/KGSSA/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -1135,7 +1144,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 									<div class="product-detail-price">
 										<p class="offer-price">
 											<span class="offer-price-amount">
-											29,99 $  
+											32,99 $  
 											</span>
 										</p>
 										
@@ -1152,7 +1161,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 											
 																		<option selected="selected" value="D'autre"
 																			id="KFP13JD"
-																			title="$29,99">D'autre</option>
+																			title="$32,99">D'autre</option>
 																	
 											</select>
 										</div>
@@ -1267,9 +1276,9 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 	</div>
 </div>
 <!-- MODULE FRAGMENT ENDS --><!-- Removed elements with sBvOutputSummary and sBvOutputReviews-->
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '29,99 $', 'PDP', '1');</script>
-<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '29,99 $');</script>
-<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102518', 'KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '29,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addImpression('KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '32,99 $', 'PDP', '1');</script>
+<script type="text/javascript">if (typeof gtmHelper != "undefined") gtmHelper.addProduct('KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '32,99 $');</script>
+<script type="text/javascript" class="gtmhScript">if (typeof gtmHelper != "undefined") gtmHelper.addData('2102518', 'KFP13JD', 'KitchenAid® Julienne Disc', 'Fabricants de produits alimentaires', 'KitchenAid', 'D&#039;autre', '32,99 $');</script><!-- Twitter tag Code for Key Page Views - Product Page -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
@@ -1283,7 +1292,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

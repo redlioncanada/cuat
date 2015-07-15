@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'Vous allez être redirigé vers le site de bureau ...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:59:39 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 10:06:13 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-301';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 18:07:11 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:41:06 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1202,17 +1211,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Prise pour accessoires</span>
+					<span class="header_desc">Offert en plus de 10 couleurs</span>
 				</h4>
-				<p>La prise pour accessoires transforme votre batteur sur socle en centre culinaire. Douze accessoires facultatifs utilisent la puissance du batteur sur socle pour vous permettre de préparer des fusilli ou de râper tout un bloc de fromage parmesan en quelques secondes.</p>
+				<p>Choisissez parmi toute la gamme de couleurs celle correspondant le plus à votre style et à votre personnalité.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Bol à mélanger 6 pintes en acier inoxydable avec poignée ergonomique</span>
+					<span class="header_desc">Prise pour accessoires</span>
 				</h4>
-				<p>Le bol de 6 pintes en acier inoxydable possède une capacité suffisante pour mélanger une pâte produisant 13 douzaines de biscuits, 8 pains ou réduire en purée 8 lb de pommes de terre. Le bol est également lavable au lave-vaisselle.</p>
+				<p>La prise pour accessoires transforme votre batteur sur socle en centre culinaire. Douze accessoires facultatifs utilisent la puissance du batteur sur socle pour vous permettre de préparer des fusilli ou de râper tout un bloc de fromage parmesan en quelques secondes.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1220,22 +1229,52 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
+							<h4>Prise pour accessoires</h4>
+							<p>La prise pour accessoires transforme votre batteur sur socle en centre culinaire. Douze accessoires facultatifs utilisent la puissance du batteur sur socle pour vous permettre de préparer des fusilli ou de râper tout un bloc de fromage parmesan en quelques secondes.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>Bol à mélanger 6 pintes en acier inoxydable avec poignée ergonomique</h4>
+							<p>Le bol de 6 pintes en acier inoxydable possède une capacité suffisante pour mélanger une pâte produisant 13 douzaines de biscuits, 8 pains ou réduire en purée 8 lb de pommes de terre. Le bol est également lavable au lave-vaisselle.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Bol à mélanger 6 pintes en acier inoxydable avec poignée ergonomique</h4>
+							<p>Le bol de 6 pintes en acier inoxydable possède une capacité suffisante pour mélanger une pâte produisant 13 douzaines de biscuits, 8 pains ou réduire en purée 8 lb de pommes de terre. Le bol est également lavable au lave-vaisselle.</p>
+						</div>
+					
+						<div class="feature">	
 							<h4>Mouvement de malaxage planétaire de 67 points</h4>
 							<p>Le mouvement de malaxage planétaire de 67 points signifie que le contact entre le batteur et le bol s'effectue 67 fois par rotation. La rotation du fouet, du crochet pétrisseur ou du fouet métallique couvre tout le bol procurant un mélange homogène.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>Mouvement de malaxage planétaire de 67 points</h4>
+							<p>Le mouvement de malaxage planétaire de 67 points signifie que le contact entre le batteur et le bol s'effectue 67 fois par rotation. La rotation du fouet, du crochet pétrisseur ou du fouet métallique couvre tout le bol procurant un mélange homogène.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
+							<h4>Modèle à bol relevable</h4>
+							<p>Le modèle à bol relevable est muni d'une base solide assurant la stabilité du bol lors du malaxage d'ingrédients lourds. Un levier soulève le bol en position efficace pour assurer un meilleur contact entre le batteur et le bol.</p>
 						</div>	
 						
 						<div class="feature">	
 							<h4>Modèle à bol relevable</h4>
 							<p>Le modèle à bol relevable est muni d'une base solide assurant la stabilité du bol lors du malaxage d'ingrédients lourds. Un levier soulève le bol en position efficace pour assurer un meilleur contact entre le batteur et le bol.</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>Commande à semi-conducteurs de 10 vitesses</h4>
 							<p>Suffisamment puissant pour  mélanger les ingrédients secs et humides, pétrir la pâte à pain ou fouetter la crème.</p>
-						</div>	
-						
+						</div>
+					
+						<div class="feature">	
+							<h4>Comprend un crochet pétrisseur en spirale Powerknead™, un fouet plat et un fouet métallique en acier inoxydable.</h4>
+							<p>Comprend un crochet pétrisseur en spirale Powerknead™, un fouet plat et un fouet métallique en acier inoxydable.</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Comprend un crochet pétrisseur en spirale Powerknead™, un fouet plat et un fouet métallique en acier inoxydable.</h4>
 							<p>Comprend un crochet pétrisseur en spirale Powerknead™, un fouet plat et un fouet métallique en acier inoxydable.</p>
@@ -1778,7 +1817,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					<div class="product_desc">Cet accessoire en métal moud le blé, l'avoine, le maïs, le riz et d'autres grains à faible teneur en humidité et en huile. 
 L'utilisation de grains fraîchement moulus donne un goût et une texture riches à vos produits de boulangerie.
 Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bienfaits possibles du grain. La consistance peut varier de « concassée » à extra-fine. Comprend une brosse de nettoyage.</div>			
-					<div class="product_price">Vente: $189,99</div>
+					<div class="product_price">Vente: $199,99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KGM]-2100805/KGM/" class="view_details">En savoir plus</a>
 						
@@ -1974,7 +2013,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 					</div>
 					
 					<div class="product_desc">Grâce aux accessoires KitchenAid® facilitant la préparation de pâtes fraîches, vous pouvez maintenant en faire de grandes quantités, et c'est à ce moment que ce séchoir pour pâtes fraîches devient indispensable.</div>			
-					<div class="product_price">Vente: $49,99</div>
+					<div class="product_price">Vente: $54,99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KPDR]-2101056/KPDR/" class="view_details">En savoir plus</a>
 						
@@ -2033,7 +2072,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Ce fouet plat revêtu est l'accessoire idéal pour mélanger les pâtes régulières et épaisses. Des préparations pour gâteau aux pâtes à biscuits, le fouet plat mélange rapidement et complètement. Convient aux modèles KV, KP26, KT et KD.</div>			
-					<div class="product_price">Vente: $18,99</div>
+					<div class="product_price">Vente: $20,89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN256CBT]-2103936/KN256CBT/" class="view_details">En savoir plus</a>
 					
@@ -2058,7 +2097,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Ce fouet plat poli est l'accessoire idéal pour mélanger les pâtes régulières et épaisses. Des préparations pour gâteau aux pâtes à biscuits, le fouet plat mélange rapidement et complètement. Convient aux modèles KV, KP26, KT et KD.</div>			
-					<div class="product_price">Vente: $18,99</div>
+					<div class="product_price">Vente: $20,89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN256BBT]-2103935/KN256BBT/" class="view_details">En savoir plus</a>
 					
@@ -2083,7 +2122,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Ce crochet pétrisseur revêtu mélange et pétrit la pâte à levure, ce qui vous permet de gagner du temps et d'éviter les efforts du pétrissage à la main. Il convient aux modèles KV, KP26, KT et KD.</div>			
-					<div class="product_price">Vente: $20,99</div>
+					<div class="product_price">Vente: $23,09</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN256CDH]-2103905/KN256CDH/" class="view_details">En savoir plus</a>
 					
@@ -2108,7 +2147,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">La conception unique en spirale de ce crochet pétrisseur reproduit le pétrissage à la main avec une force puissante pétrissant 20 % plus de pâte du pain à la levure comparativement à nos modèles précédents. Ce crochet pétrisseur poli convient aux modèles KV, KP26M1X.</div>			
-					<div class="product_price">Vente: $20,99</div>
+					<div class="product_price">Vente: $23,09</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KNS256BDH]-2103939/KNS256BDH/" class="view_details">En savoir plus</a>
 					
@@ -2133,7 +2172,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Le fouet métallique incorpore une quantité maximale d'air dans les mélanges, ce qui permet d'obtenir de la crème fouettée et des gâteaux des anges plus mousseux. Il s'adapte aux modèles dont le numéro commence par KV25, KD26, KP26 ou KT26.</div>			
-					<div class="product_price">Vente: $24,99</div>
+					<div class="product_price">Vente: $27,49</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN256WW]-2103875/KN256WW/" class="view_details">En savoir plus</a>
 					
@@ -2158,7 +2197,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Grâce à ce fouet à 11 rayons en acier inoxydable, vous obtiendrez un volume maximal en moins de temps. Résultat : de la crème fouettée, des blancs d'œuf et de la pâte à gâteau plus légère et mousseuse. Il convient aux modèles de la série Professional 5™ Plus (commençant par KV) et à tous les modèles de 6 pintes (commençant par KP, KB, KD et KT).</div>			
-					<div class="product_price">Vente: $28,99</div>
+					<div class="product_price">Vente: $31,89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN211WW]-2103934/KN211WW/" class="view_details">En savoir plus</a>
 					
@@ -2183,7 +2222,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Ce bol à mélanger en acier inoxydable doté d’une poignée ergonomique est à la fois joli et durable. Il convient aux modèles dont le numéro commence par KD26, KP26 ou KT26.</div>			
-					<div class="product_price">Vente: $89,99</div>
+					<div class="product_price">Vente: $98,99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN2B6PEH]-2103906/KN2B6PEH/" class="view_details">En savoir plus</a>
 					
@@ -2208,7 +2247,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Ce bol à mélanger en acier inoxydable poli est doté d'une poignée solide qui facilite la manipulation. À utiliser avec les batteurs sur socle à bol relevable de 4,73 l (5 pintes).</div>			
-					<div class="product_price">Vente: $89,99</div>
+					<div class="product_price">Vente: $98,99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN25WPBH]-2103937/KN25WPBH/" class="view_details">En savoir plus</a>
 					
@@ -2233,7 +2272,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Fouet et bol de 3 pintes de KitchenAid®</div>			
-					<div class="product_price">Vente: $71,99</div>
+					<div class="product_price">Vente: $79,19</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN3CW]-2101034/KN3CW/" class="view_details">En savoir plus</a>
 					
@@ -2258,7 +2297,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						</a>		
 					</div>
 					<div class="product_desc">Couvercle verseur de batteur sur socle KitchenAid®</div>			
-					<div class="product_price">Vente: $29,99</div>
+					<div class="product_price">Vente: $32,99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-3/-[KN256PS]-2101032/KN256PS/" class="view_details">En savoir plus</a>
 					
@@ -2352,6 +2391,33 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 			 
 		
 				<li class="recently_product " sku="sku20">  
+				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/"><img class="image_product_bootom" src="/digitalassets/KSM7586PCA/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes" /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/">KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				699,99 $
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">incluant les taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM7586PCA]-2101235/KSM7586PCA/">Détails</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product " sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSM6521XFP]-2104153/KSM6521XFP/"><img class="image_product_bootom" src="/digitalassets/KSM6521XFP/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Batteur sur socle à bol relevable série Pro-Line® KitchenAid® 7 pintes" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -2405,7 +2471,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 	             </li>
 	 
 		
-				<li class="recently_product " sku="sku20">  
+				<li class="recently_product last" sku="sku20">  
 				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSC6223SS]-2101132/KSC6223SS/"><img class="image_product_bootom" src="/digitalassets/KSC6223SS/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Mijoteuse 6 pintes Kitchenaid® avec couvercle de verre" /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -2420,7 +2486,7 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				149,99 $
+                  				179,99 $
 							</p>
                	 		</li>
                 		<li>
@@ -2429,33 +2495,6 @@ Lorsque vous cuisinez avec de la farine moulue maison, vous obtenez tous les bie
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
 	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSC6223SS]-2101132/KSC6223SS/">Détails</a> </p>
-	             </li>
-	 
-		
-				<li class="recently_product last" sku="sku20">  
-				  <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSC6222ACS]-2101130/KSC6222ACS/"><img class="image_product_bootom" src="/digitalassets/KSC6222ACS/AB-Thumbnail_100X100_HO.jpg" alt="KitchenAid® Mijoteuse de 6 pintes de la série Architect avec couvercle Easy Serve" /></a>
-	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
-	              
-	              <ul class="recently_product_ul">
-	              	<li>
-	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSC6222ACS]-2101130/KSC6222ACS/">KitchenAid® Mijoteuse de 6 pintes de la série Architect avec couvercle Easy Serve</a> </p>
-	              	</li>
-	              	<li>
-	                	<p class="recently_product_id">KitchenAid® Mijoteuse de 6 pintes de la série Architect avec couvercle Easy Serve</p>
-	              	</li>
-	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
-						<li>
-                  			<p class="recently_actual_price">
-                  			
-                  				199,99 $
-							</p>
-               	 		</li>
-                		<li>
-                  			<p class="recently_product_taxes">incluant les taxes</p>
-                		</li>
-					<!-- END CatalogEntryPriceDisplay.jspf-->
-	              </ul>
-	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.kitchenaid.ca/fr_CA/magasiner/-[KSC6222ACS]-2101130/KSC6222ACS/">Détails</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -2722,7 +2761,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:59:39 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 10:06:14 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-container">
 	<div class="footer-header">
 	</div>

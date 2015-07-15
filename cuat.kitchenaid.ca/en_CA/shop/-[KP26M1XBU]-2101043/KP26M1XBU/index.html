@@ -247,6 +247,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -258,9 +260,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -274,7 +283,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 17:47:17 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 06:03:08 EDT 2015] -->
   
 
 
@@ -297,7 +306,7 @@ var currentprotocol = document.location.protocol;
 	var langId = '-300';
 	var catalogId = '10581';
 
-	if('true' == "true")
+	if('' == "true")
 		var showProductCompare = false;
 	else
 		var showProductCompare = true;
@@ -431,7 +440,7 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 17:59:11 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 17:36:44 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
@@ -1084,7 +1093,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			<h1 class="product-title">KitchenAid Professional 600 Series 6 Quart Bowl-Lift Stand Mixer</h1>
 			
 
-<div id="pr-pdp-snippet-KP26M1XBU" class="pr-pdp">
+<div id="pr-pdp-snippet-KP26M1XER" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -1093,8 +1102,8 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"KP26M1XBU",
-            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KP26M1XBU&storeId=10231&swhPageId=KP26M1XBU",
+            pr_page_id:"KP26M1XER",
+            pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KP26M1XER&storeId=10231&swhPageId=KP26M1XBU",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -1216,17 +1225,17 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">Power Hub</span>
+					<span class="header_desc">Over 10 Colors Available</span>
 				</h4>
-				<p>The power hub turns your stand mixer into a culinary center. With more than 12 optional attachments use the power of your stand mixer to help you make fusilli pasta from scratch, shred a block of parmesan cheese in seconds and so much more.</p>
+				<p>Choose from all the color options to find the one that best matches your style and personality.</p>
 			</div> 
 			<div class="feature last">
 				 			
 				<h4>
 					<span class="header_topic"></span>
-					<span class="header_desc">6-Qt. Stainless Steel Bowl with Comfortable Handle</span>
+					<span class="header_desc">Power Hub</span>
 				</h4>
-				<p>6-Qt. stainless steel bowl with comfortable handle offers enough capacity to mix dough for 13 dozen cookies, 8 loaves of bread or 8 pounds of mashed potatoes in a single batch. The bowl is also dishwasher-safe for quick and easy cleanup.</p>
+				<p>The power hub turns your stand mixer into a culinary center. With more than 12 optional attachments use the power of your stand mixer to help you make fusilli pasta from scratch, shred a block of parmesan cheese in seconds and so much more.</p>
 			</div> 
 	</div> <!-- End top features div -->
 		<div id="additional_features">
@@ -1234,22 +1243,52 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 			
 						<div id="left-col">
 						<div class="feature first">	
+							<h4>Power Hub</h4>
+							<p>The power hub turns your stand mixer into a culinary center. With more than 12 optional attachments use the power of your stand mixer to help you make fusilli pasta from scratch, shred a block of parmesan cheese in seconds and so much more.</p>
+						</div>	
+						
+						<div class="feature">	
+							<h4>6-Qt. Stainless Steel Bowl with Comfortable Handle</h4>
+							<p>6-Qt. stainless steel bowl with comfortable handle offers enough capacity to mix dough for 13 dozen cookies, 8 loaves of bread or 8 pounds of mashed potatoes in a single batch. The bowl is also dishwasher-safe for quick and easy cleanup.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>6-Qt. Stainless Steel Bowl with Comfortable Handle</h4>
+							<p>6-Qt. stainless steel bowl with comfortable handle offers enough capacity to mix dough for 13 dozen cookies, 8 loaves of bread or 8 pounds of mashed potatoes in a single batch. The bowl is also dishwasher-safe for quick and easy cleanup.</p>
+						</div>
+					
+						<div class="feature">	
 							<h4>67-Point Planetary Mixing Action</h4>
 							<p>67-Point Planetary Mixing Action means 67 touchpoints per rotation around the bowl for thorough ingredient incorporation. The beater, dough hook or wire whip rotates  around the bowl, giving incredible bowl coverage for comprehensive mixing.</p>
+						</div>
+					
+						<div class="feature">	
+							<h4>67-Point Planetary Mixing Action</h4>
+							<p>67-Point Planetary Mixing Action means 67 touchpoints per rotation around the bowl for thorough ingredient incorporation. The beater, dough hook or wire whip rotates  around the bowl, giving incredible bowl coverage for comprehensive mixing.</p>
+						</div>
+						</div>												
+					
+						<div id="right-col">
+						<div class="feature first">	
+							<h4>Bowl-Lift Design</h4>
+							<p>The bowl-lift design provides sturdy bowl support for stability when mixing heavy ingredients or large batches. The lever smoothly raises the mixing bowl into position for efficient beater-to-bowl contact.</p>
 						</div>	
 						
 						<div class="feature">	
 							<h4>Bowl-Lift Design</h4>
 							<p>The bowl-lift design provides sturdy bowl support for stability when mixing heavy ingredients or large batches. The lever smoothly raises the mixing bowl into position for efficient beater-to-bowl contact.</p>
 						</div>
-						</div>												
 					
-						<div id="right-col">
-						<div class="feature first">	
+						<div class="feature">	
 							<h4>10 Speeds</h4>
 							<p>Powerful enough for nearly any task or recipe, whether you’re stirring wet and dry ingredients together, kneading bread dough or whipping cream.</p>
-						</div>	
-						
+						</div>
+					
+						<div class="feature">	
+							<h4>Includes Powerknead™ Spiral Dough Hook, Flat Beater, and Stainless Steel Wire Whip</h4>
+							<p>Includes Powerknead™ Spiral Dough Hook, Flat Beater, and Stainless Steel Wire Whip</p>
+						</div>
+					
 						<div class="feature">	
 							<h4>Includes Powerknead™ Spiral Dough Hook, Flat Beater, and Stainless Steel Wire Whip</h4>
 							<p>Includes Powerknead™ Spiral Dough Hook, Flat Beater, and Stainless Steel Wire Whip</p>
@@ -1567,11 +1606,11 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-KP26M1XBU" class="pr-pdp-tab">
+<div id="pr-pdp-tab-KP26M1XER" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"KP26M1XBU",
-	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KP26M1XBU&storeId=10231&swhPageId=KP26M1XBU"});
+	    pr_page_id:"KP26M1XER",
+	    pr_write_review:"http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10581&langId=-300&partNumber=KP26M1XER&storeId=10231&swhPageId=KP26M1XBU"});
 	</script>
 </div>
 		
@@ -1837,7 +1876,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					</div>
 					
 					<div class="product_desc">This all-metal attachment grinds wheat, oats, corn, rice, and other low-moisture, low-oil grains. #Using freshly milled grains brings a hearty taste and texture to your baked goods.#When you bake with home ground flour you will get all of the good you could possible get from a grain.  Choose from 'cracked' to extra-fine consistency. Includes a cleaning brush.</div>			
-					<div class="product_price">MSRP: $189.99</div>
+					<div class="product_price">MSRP: $199.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KGM]-2100805/KGM/" class="view_details">VIEW DETAILS</a>
 						
@@ -2033,7 +2072,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 					</div>
 					
 					<div class="product_desc">With how easy KitchenAid® attachments make it to create homemade pasta, the drying rack makes it even more convenient to work with large batches of pasta.</div>			
-					<div class="product_price">MSRP: $49.99</div>
+					<div class="product_price">MSRP: $54.99</div>
 					<div class="product_actions">
 						<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KPDR]-2101056/KPDR/" class="view_details">VIEW DETAILS</a>
 						
@@ -2092,7 +2131,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The nylon-coated flat beater is perfect for quickly and thoroughly mashing potatoes, mixing cake batter and cookie dough and so much more. The flat beater is top-rack dishwasher safe. Fits models KV25G and KP26M1X.</div>			
-					<div class="product_price">MSRP: $18.99</div>
+					<div class="product_price">MSRP: $20.89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN256CBT]-2103936/KN256CBT/" class="view_details">VIEW DETAILS</a>
 					
@@ -2117,7 +2156,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The burnished metal flat beater is perfect for quickly and thoroughly mashing potatoes, mixing cake batter and cookie dough and so much more. Fits models KV25G and KP26M1X.</div>			
-					<div class="product_price">MSRP: $18.99</div>
+					<div class="product_price">MSRP: $20.89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN256BBT]-2103935/KN256BBT/" class="view_details">VIEW DETAILS</a>
 					
@@ -2142,7 +2181,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The nylon-coated C-dough hook mixes and kneads yeast dough with ease, saving you both the time and effort of hand kneading. The dough hook is top-rack dishwasher safe. Fits model KP26M1X.</div>			
-					<div class="product_price">MSRP: $20.99</div>
+					<div class="product_price">MSRP: $23.09</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN256CDH]-2103905/KN256CDH/" class="view_details">VIEW DETAILS</a>
 					
@@ -2167,7 +2206,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The unique design of the PowerKnead™ Spiral Dough Hook replicates hand kneading with a powerful force that kneads 25% more yeast bread dough incredibly efficiently. Fits models KV25G and KP26M1X.</div>			
-					<div class="product_price">MSRP: $20.99</div>
+					<div class="product_price">MSRP: $23.09</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KNS256BDH]-2103939/KNS256BDH/" class="view_details">VIEW DETAILS</a>
 					
@@ -2192,7 +2231,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The 6-wire whip quickly incorporates air into ingredients for fluffy whipped cream, perfect boiled frostings and cakes with whipped egg whites. Fits models KV25G & KP26M1X.</div>			
-					<div class="product_price">MSRP: $24.99</div>
+					<div class="product_price">MSRP: $27.49</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN256WW]-2103875/KN256WW/" class="view_details">VIEW DETAILS</a>
 					
@@ -2217,7 +2256,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">This stainless steel whip's 11-wire design ensures that you'll get maximum volume in less time, for lighter, fluffier whipped cream, egg whites and cake batters. It fits Professional 5™ Plus Series models (starting with KV) and all 6-quart mixer models (starting with KP, KB, KD and KT).</div>			
-					<div class="product_price">MSRP: $28.99</div>
+					<div class="product_price">MSRP: $31.89</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN211WW]-2103934/KN211WW/" class="view_details">VIEW DETAILS</a>
 					
@@ -2242,7 +2281,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">Offers enough capacity to mix dough for 13 dozen cookies, 8 loaves of bread or 8 pounds of mashed potatoes in a single batch. The bowl is also dishwasher-safe for quick and easy cleanup. Fits model KP26M1X.</div>			
-					<div class="product_price">MSRP: $89.99</div>
+					<div class="product_price">MSRP: $98.99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN2B6PEH]-2103906/KN2B6PEH/" class="view_details">VIEW DETAILS</a>
 					
@@ -2267,7 +2306,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">Offers enough capacity to mix dough for 9 dozen cookies, 4 loaves of bread or 7 pounds of mashed potatoes in a single batch. The bowl is also dishwasher-safe for quick and easy cleanup. Fits model KV25G.</div>			
-					<div class="product_price">MSRP: $89.99</div>
+					<div class="product_price">MSRP: $98.99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN25WPBH]-2103937/KN25WPBH/" class="view_details">VIEW DETAILS</a>
 					
@@ -2292,7 +2331,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The 3-quart stainless steel bowl & combi-whip make your stand mixer even more versatile. The smaller bowl is perfect for when you need two bowls for a recipe or for smaller tasks like whipping egg whites. Fits models KV25G and KP26M1X.</div>			
-					<div class="product_price">MSRP: $71.99</div>
+					<div class="product_price">MSRP: $79.19</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN3CW]-2101034/KN3CW/" class="view_details">VIEW DETAILS</a>
 					
@@ -2317,7 +2356,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						</a>		
 					</div>
 					<div class="product_desc">The one-piece pouring shield fits onto your mixing bowl to help you add ingredients without making a mess. It also helps keep lightweight ingredients like flour from flying out of the bowl when you’re mixing. The pouring shield is dishwasher safe. Fits models KV25G &KP26M1X</div>			
-					<div class="product_price">MSRP: $29.99</div>
+					<div class="product_price">MSRP: $32.99</div>
 					<div class="product_actions">
 					<a onclick="" href="http://cuat.kitchenaid.ca/en_CA/shop/-3/-[KN256PS]-2101032/KN256PS/" class="view_details">VIEW DETAILS</a>
 					
@@ -2397,7 +2436,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$71.99
+                  				$79.19
 							</p>
                	 		</li>
                 		<li>
@@ -2424,7 +2463,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$89.99
+                  				$98.99
 							</p>
                	 		</li>
                 		<li>
@@ -2451,7 +2490,7 @@ http://cuat.kitchenaid.ca/webapp/wcs/stores/servlet/WHRStoreRedirect?catalogId=1
 						<li>
                   			<p class="recently_actual_price">
                   			
-                  				$89.99
+                  				$98.99
 							</p>
                	 		</li>
                 		<li>
@@ -2726,7 +2765,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 
 </div>
 		      </div>
-		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 17:47:18 EDT 2015] -->
+		<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 06:03:08 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><!--on staging tag-->		 
 <div id="footer-container">
 	<div class="footer-header">

@@ -253,6 +253,8 @@ var currentprotocol = document.location.protocol;
 
 
 	var mobileCookie = document.cookie && document.cookie.indexOf("mobileBrowser") >= 0;
+    /* KA, Rosetta, Release Date: July Release -- Start
+     * FS - WM-2219 disable spinner with responsive-check class */
 	if(mobileCookie){
 		var dom = document.domain.split('.');
 		while (dom.length > 2){
@@ -264,9 +266,16 @@ var currentprotocol = document.location.protocol;
 				var gifLocation = "/images/ajax-loader.gif";
 			
 		var message = 'You Are Being Redirected To The Desktop Site...';
-		$('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');
-	}
 
+		$(document).ready(function () {
+			if ($('.responsive-check').length){
+                console.log('responsive');
+			}else{
+			  $('body').append('<div class="takeover-message-wrapper"><div class="takeover-message-content"><img src="'+gifLocation+'" title="loading" alt="loading" /><p>'+message+'</p></div></div>');    
+			}
+		});
+	}
+	/*KA, Rosetta, Release Date: July Release -- End */
 	$(document).ready(function () {
         var messageTimer = setInterval(function () { removeMessage() }, 3000);
 
@@ -280,7 +289,7 @@ var currentprotocol = document.location.protocol;
 <div id="fDiv"></div>
 
 <!-- END StoreCommonUtilities.jspf --><!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN WHRORNHeaderDisplay.jspf --><!-- Gladiator Phase 2 Change START 12/25 --><!-- HOST: [server1] -->
-<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Fri Jul 03 06:03:37 EDT 2015] -->
+<!-- GENERATED: [CachedORNHeaderDisplay.jsp, Mon Jul 13 15:34:55 EDT 2015] -->
   
 
 
@@ -320,7 +329,7 @@ var currentprotocol = document.location.protocol;
 			MiniWishListJS.clearFromCookie('unRegWishListClientId');
 			//wc.render.updateContext("MiniWishListContext",{refreshMiniWishList: "true"});
 		} else {
-			var contextUserId = parseInt("13521132");
+			var contextUserId = parseInt("-1002");
 			var cookieUserId = 0;
 			var guId = dojo.cookie('unRegWishListClientId');
 			if (guId != null && guId != "undefined" && guId != "") {
@@ -437,11 +446,11 @@ function clearText(thefield){
 						<div id="outerCartContainer" >
 							<div dojoType="dojo.dnd.Target" jsId="miniShopCart_dndTarget" id="miniShopCart_dndTarget" accept="item, product, package, bundle" >
 								<div dojoType="wc.widget.RefreshArea" id="MiniShoppingCart" widgetId="MiniShoppingCart" controllerId="MiniShoppingCartController" onmouseover="showMiniShopCartDropDown('placeHolder','quick_cart_container','orderItemsList');"  role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
-									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Fri Jul 03 11:14:08 EDT 2015] -->
+									<!-- Start - JSP File Name: MiniShopCartDisplay.jsp --><!-- GENERATED: [MiniShopCartDisplay, Mon Jul 13 15:34:49 EDT 2015] -->
 
 <!-- If we get here from a generic error this service will fail so we need to catch the exception -->
 
-<a href="https://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
+<a href="http://cuat.maytag.ca/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10579&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-300&amp;storeId=10229&amp;URL=AjaxOrderItemDisplayView" tabindex="0" id="shoppingCartBar" waistate:controls="ShopCartDisplay"   onKeyPress="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');" onclick="showMiniShopCartDropDown1(event,'placeHolder','quick_cart_container','orderItemsList');">
 		<span id="miniShopCartLeftCorner" class="left_corner">
 			CART
 		</span>
@@ -961,7 +970,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 			<h1 class="product-title">Maytag Maxima® Front Load Steam Washer with Overnight Wash & Dry Cycle 5.2 cu. ft. I.E.C.</h1>
 			
 
-<div id="pr-pdp-snippet-MHW7100DW" class="pr-pdp">
+<div id="pr-pdp-snippet-MHW7100DC" class="pr-pdp">
 
         <script type="text/javascript">
         function activateTab () {
@@ -970,8 +979,8 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
     
         
         POWERREVIEWS.display.snippet(document, {
-            pr_page_id:"MHW7100DW",
-            pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MHW7100DW&storeId=10229&swhPageId=MHW7100DW",
+            pr_page_id:"MHW7100DC",
+            pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MHW7100DC&storeId=10229&swhPageId=MHW7100DW",
             pr_read_review:'javascript:(activateTab())'});
         </script>
     
@@ -1005,16 +1014,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 				<span class="product-color">White</span>
 				&nbsp;-&nbsp; 
 				<span class="product-part-number">MHW7100DW</span>
-			</div>
-		
-			<div class="companion-item pdp">
-			    <div class="companion-item-title">
-			       <span>???COMPANION_ITEM_TITLE???</span>
-			       ???COMPANION_ITEM_DRYER???                   
-			   </div>
-			   <div class="companion-item-cta">
-			       <a href="http://cuat.maytag.ca/en_CA/-[MHW7100DW]-1505595/MHW7100DW/"><span class="companion-item-model">MHW7100DW</span>???COMPANION_ITEM_LINK???&nbsp;<span class="chevron">&rsaquo;</span></a>
-			   </div>
 			</div>
 		
         
@@ -1295,6 +1294,48 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
+										Amps
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									15 or 20
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Hz
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									60 Hz
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Volts
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									120 V
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
 										CEE Tier
 									
 							</div>
@@ -1306,7 +1347,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										UL
@@ -1320,7 +1361,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Energy Star® Qualified
@@ -1334,7 +1375,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Capacity (IEC)
@@ -1358,216 +1399,6 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
-										Automatic Load Size Sensing Technology
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Hoses Included
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									No
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Pedestal Options
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Details|Stackable
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Energy Factor
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									3.20
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Feedback-Status Indicators
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Add Garment, Clean Washer Reminder, Delay Wash, Door Locked, Estimated Time Remaining, Fresh Hold&#174;, Sensing, Steaming
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Out of Balance Sensing
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Yes
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Automatic Dispense System
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Bleach, Detergent, Fabric Softener
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Eco Monitor
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									No
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Suspension System
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									2 Springs and 4 Dampers
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										LED Color
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Amber
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Advanced Vibration Control
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Advanced Vibration Control&#8482; Plus
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Maytag Commercial Technology Components
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Pump Impeller, Corrosion Resistant Springs and Dampers
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
-										Fan Fresh®-Fresh Hold®
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Fresh Hold&#174;
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line odd">	
-							<div class="spec_contents_label">						
-								
-										Sound Package
-									
-							</div>
-							
-								<div class="spec_contents_info">
-									Quiet Series&#8482;
-								</div>
-								
-								
-						</div>
-					
-						<div class="spec_contents_line even">	
-							<div class="spec_contents_label">						
-								
 										Motor Drive Type
 									
 							</div>
@@ -1579,7 +1410,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line odd">	
+						<div class="spec_contents_line even">	
 							<div class="spec_contents_label">						
 								
 										Drum Material
@@ -1593,7 +1424,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 								
 						</div>
 					
-						<div class="spec_contents_line even">	
+						<div class="spec_contents_line odd">	
 							<div class="spec_contents_label">						
 								
 										Display Type
@@ -1602,6 +1433,216 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 							
 								<div class="spec_contents_info">
 									Cycle Indicator Lights with Digital Time Remaining
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Automatic Load Size Sensing Technology
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Hoses Included
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									No
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Pedestal Options
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Details|Stackable
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Energy Factor
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									3.20
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Feedback-Status Indicators
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Add Garment, Clean Washer Reminder, Delay Wash, Door Locked, Estimated Time Remaining, Fresh Hold&#174;, Sensing, Steaming
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Out of Balance Sensing
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Yes
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Automatic Dispense System
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Bleach, Detergent, Fabric Softener
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Eco Monitor
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									No
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Suspension System
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									2 Springs and 4 Dampers
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										LED Color
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Amber
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Advanced Vibration Control
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Advanced Vibration Control&#8482; Plus
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Maytag Commercial Technology Components
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Pump Impeller, Corrosion Resistant Springs and Dampers
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line odd">	
+							<div class="spec_contents_label">						
+								
+										Fan Fresh®-Fresh Hold®
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Fresh Hold&#174;
+								</div>
+								
+								
+						</div>
+					
+						<div class="spec_contents_line even">	
+							<div class="spec_contents_label">						
+								
+										Sound Package
+									
+							</div>
+							
+								<div class="spec_contents_info">
+									Quiet Series&#8482;
 								</div>
 								
 								
@@ -1865,11 +1906,11 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 <div class="product_tab_section_middle">	
 
 
-<div id="pr-pdp-tab-MHW7100DW" class="pr-pdp-tab">
+<div id="pr-pdp-tab-MHW7100DC" class="pr-pdp-tab">
 	<script type="text/javascript">
 	POWERREVIEWS.display.engine(document,{
-	    pr_page_id:"MHW7100DW",
-	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MHW7100DW&storeId=10229&swhPageId=MHW7100DW"});
+	    pr_page_id:"MHW7100DC",
+	    pr_write_review:"http://cuat.maytag.ca/webapp/wcs/stores/servlet/PowerReviewsWARView?catalogId=10579&langId=-300&partNumber=MHW7100DC&storeId=10229&swhPageId=MHW7100DW"});
 	</script>
 </div>
 		
@@ -2174,7 +2215,7 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 	             </li>
 	 
 		
-				<li class="recently_product last" sku="sku20">  
+				<li class="recently_product " sku="sku20">  
 				  <a href="http://cuat.maytag.ca/en_CA/-[MHW5400DW]-14504/MHW5400DW/"><img class="image_product_bootom" src="/digitalassets/MHW5400DW/AB-Thumbnail_100X100_HO.jpg" alt="Maytag Maxima® High Efficiency Steam Washing Machine with Fresh Hold® Option 4.8 cu. ft. I.E.C." /></a>
 	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
 	              
@@ -2199,6 +2240,34 @@ document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2625291;ty
 					<!-- END CatalogEntryPriceDisplay.jspf-->
 	              </ul>
 	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.maytag.ca/en_CA/-[MHW5400DW]-14504/MHW5400DW/">Details</a> </p>
+	             </li>
+	 
+		
+				<li class="recently_product last" sku="sku20">  
+				  <a href="http://cuat.maytag.ca/en_CA/-[MHW8100DW]-14506/MHW8100DW/"><img class="image_product_bootom" src="/digitalassets/MHW8100DW/AB-Thumbnail_100X100_HO.jpg" alt="Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C." /></a>
+	              <!-- AndresC add HTML {class added for manipulation} - for CSS in product detail page in bauknect May 4 -->
+	              
+	              <ul class="recently_product_ul">
+	              	<li>
+	                	<p> <a sku="sku5" class="recently-product-name" href="http://cuat.maytag.ca/en_CA/-[MHW8100DW]-14506/MHW8100DW/">Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C.</a> </p>
+	              	</li>
+	              	<li>
+	                	<p class="recently_product_id">Maytag Maxima® Front Load Washer with Steam and PowerWash® System – 5.2 cu. ft. I.E.C.</p>
+	              	</li>
+	              	<!-- BEGIN CatalogEntryPriceDisplay.jspf-->
+						<li>
+                  			<p class="recently_actual_price">
+                  			
+                  				BASE MSRP&nbsp;
+								$1,749.99
+							</p>
+               	 		</li>
+                		<li>
+                  			<p class="recently_product_taxes">inc. taxes</p>
+                		</li>
+					<!-- END CatalogEntryPriceDisplay.jspf-->
+	              </ul>
+	              <p class="recently_prod_detail_viewthis"> <a href="http://cuat.maytag.ca/en_CA/-[MHW8100DW]-14506/MHW8100DW/">Details</a> </p>
 	             </li>
 	
 	   	</ul>
@@ -2452,7 +2521,7 @@ twttr.conversion.trackPid('l5k60', { tw_sale_amount: 0, tw_order_quantity: 0 });
 		</div>
 		<br clear="all" />
 	</div>
-	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Fri Jul 03 06:03:38 EDT 2015] -->
+	<!-- BEGIN LayoutContainerBottom.jspf --><!-- BEGIN FooterDisplay.jspf --><!-- Gladiator Phase 2 START 12/26 --><!-- JSP File Name: CachedFooterDisplay.jsp --><!-- GENERATED: [CachedFooterDisplay, Mon Jul 13 15:34:50 EDT 2015] -->
 <!-- search functionality in footer for swash --><!-- search functionality ends for swash --><!-- Gladiator Phase 2 START 12/18 --><div id="footer-wrap" style="clear:both">
 	<div id="footer">
 		<div id="footer-menu">
